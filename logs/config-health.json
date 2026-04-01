@@ -1,0 +1,22 @@
+{
+  "entries": {
+    "C:\\Users\\Texeira\\.openclaw\\openclaw.json": {
+      "lastKnownGood": {
+        "hash": "209e06fa0255f493f7f6356a5b413d080394f1e2e6f6651a511617e9dad8d842",
+        "bytes": 2084,
+        "mtimeMs": 1775066178220.8057,
+        "ctimeMs": 1775066178223.8066,
+        "dev": "1183166964",
+        "ino": "45880421203986870",
+        "mode": 438,
+        "nlink": 1,
+        "uid": 0,
+        "gid": 0,
+        "hasMeta": true,
+        "gatewayMode": "local",
+        "observedAt": "2026-04-01T17:56:18.238Z"
+      },
+      "lastObservedSuspiciousSignature": null
+    }
+  }
+}

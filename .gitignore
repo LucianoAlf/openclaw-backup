@@ -1,0 +1,11 @@
+﻿# Sessões e tokens
+agents/main/sessions/
+*.session
+*.token
+session.json
+
+# Logs
+*.log
+
+# Backups locais
+*.bak
