@@ -1,0 +1,15 @@
+# Credenciais e dados sensíveis
+.env
+*.pem
+*.key
+*.json.secret
+
+# Arquivos de sessão e cache do OpenClaw
+.openclaw/
+
+# Memória diária (pode conter contexto privado)
+memory/
+
+# Arquivos temporários
+*.tmp
+*.log
