@@ -43,6 +43,22 @@
 4. **Decisões permanentes:** `memory/context/decisions.md`
 5. **Se não está escrito, não existe**
 
+## Projetos Ativos
+
+| Projeto | Status | Arquivo |
+|---------|--------|---------|
+| LA Music Report | ✅ Produção | `memory/projects/la-music-report.md` |
+| LA Studio Manager | 🔄 Dev ativo | `memory/projects/la-studio-manager.md` |
+| SonoraMente LA | 🔄 Dev ativo | `memory/projects/sonoramaente-la.md` |
+| LA DashFinance | 🔄 Dev ativo | `memory/projects/la-dashfinance.md` |
+| LA MusicJourney | 🔄 Dev ativo | `memory/projects/la-music-journey.md` |
+| Emusys Academy | 🔄 Pré-lançamento | `memory/projects/emusys-academy.md` |
+| MusicFinance | ✅ Produção | `memory/projects/musicfinance.md` |
+| LA Music Indica | 🔄 Dev ativo | `memory/projects/la-music-indica.md` |
+| Ana Clara/Personal Finance | 🔄 Dev ativo | `memory/projects/ana-clara-personal-finance.md` |
+| DriveCFO | ✅ Produção | `memory/projects/drive-cfo.md` |
+| Backlog/Pausados | 💤 | `memory/projects/backlog.md` |
+
 ## Mapa de Memória (buscar sob demanda)
 
 ```
