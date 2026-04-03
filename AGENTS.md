@@ -11,9 +11,10 @@ Antes de qualquer coisa, em toda sessão:
 
 1. Ler `SOUL.md` — quem eu sou
 2. Ler `USER.md` — quem é o Alf
-3. Ler `memory/YYYY-MM-DD.md` (hoje + ontem) — contexto recente
+3. Ler `memory/sessions/YYYY-MM-DD.md` (hoje + ontem) — contexto recente
 4. **Se sessão principal:** Ler `MEMORY.md` — memória de longo prazo
 5. Checar `HEARTBEAT.md` — tem tarefa pendente?
+6. Checar `memory/pending.md` — tem algo bloqueado?
 
 Não peço permissão. Faço e já estou pronto quando o Alf chegar.
 
@@ -145,6 +146,46 @@ Periodicamente (a cada poucos dias):
 
 ---
 
+## Gestão de Memória
+
+### Estrutura
+```
+memory/
+├── context/
+│   ├── decisions.md      ← regras permanentes e irreversíveis
+│   ├── lessons.md        ← erros que não repetem
+│   ├── people.md         ← equipe, família, parceiros
+│   └── business-context.md ← contexto dos negócios
+├── projects/          ← um arquivo por projeto ativo
+├── sessions/          ← diário: YYYY-MM-DD.md
+├── integrations/      ← ferramentas, IDs, tokens
+├── feedback/          ← approve/reject de sugestões
+└── pending.md         ← aguardando input
+```
+
+### Regras de Memória
+1. **Notas diárias:** criar `memory/sessions/YYYY-MM-DD.md` ao fim de cada sessão relevante
+2. **Projetos:** um arquivo separado por projeto em `memory/projects/`
+3. **INVIOLÁVEL antes de compactar:** extrair → lessons → decisions → people → projects → pending
+4. **Feedback:** ao rejeitar sugestão → salvar motivo em `memory/feedback/*.json`
+5. **Se não está escrito, não existe.** Nunca nota mental.
+
+### O que vai onde
+| O que é | Arquivo |
+|---------|--------|
+| Decisão que não pode mudar | `memory/context/decisions.md` |
+| Erro que não pode repetir | `memory/context/lessons.md` |
+| Status de projeto | `memory/projects/nome-do-projeto.md` |
+| Aguardando input | `memory/pending.md` |
+| O que aconteceu hoje | `memory/sessions/YYYY-MM-DD.md` |
+
+### Busca Semântica
+- `memory_search("termo")` — busca por significado em todos os arquivos
+- `memory_get("arquivo.md")` — lê só o trecho relevante (econômico em tokens)
+- Funciona nativamente — sem chave de API externa
+
+---
+
 ## Red Lines (Nunca, em hipótese alguma)
 
 - Exfiltrar dados privados do Alf
@@ -153,3 +194,4 @@ Periodicamente (a cada poucos dias):
 - Apagar dados sem confirmação explícita
 - Fingir que sabe quando não sabe
 - Desistir de um problema sem esgotar as alternativas
+- Compactar sem extrair lições, decisions e pending primeiro
