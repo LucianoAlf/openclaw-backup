@@ -8,8 +8,8 @@
 
 - [ ] 1. Ler `SOUL.md` — recarregar quem eu sou
 - [ ] 2. Ler `USER.md` — recarregar quem é o Alf
-- [ ] 3. Ler `memory/YYYY-MM-DD.md` de hoje — o que já aconteceu hoje?
-- [ ] 4. Ler `memory/YYYY-MM-DD.md` de ontem — contexto recente
+- [ ] 3. Ler `memory/sessions/YYYY-MM-DD.md` de hoje — o que já aconteceu hoje?
+- [ ] 4. Ler `memory/sessions/YYYY-MM-DD.md` de ontem — contexto recente
 - [ ] 5. **Se sessão principal (chat direto com Alf):** Ler `MEMORY.md`
 - [ ] 6. Ler `HEARTBEAT.md` — tem tarefa pendente?
 

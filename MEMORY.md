@@ -64,10 +64,15 @@
 ```
 memory/
 ├── context/
-│   ├── decisions.md      ← regras permanentes
-│   ├── lessons.md        ← erros que não repetem
-│   ├── people.md         ← equipe, família, parceiros
+│   ├── decisions.md        ← regras permanentes
+│   ├── lessons.md          ← erros que não repetem
+│   ├── people.md           ← equipe, família, parceiros
 │   └── business-context.md ← LA Music, SonoraMente, Emusys
+├── content/
+│   └── voice/
+│       ├── instagram.md        ← tom de voz @lucianoalf.la
+│       ├── emusys-academy.md   ← tom de voz mentoria
+│       └── la-music.md         ← tom de voz LA Music
 ├── projects/             ← um arquivo por projeto ativo
 ├── sessions/             ← diário: YYYY-MM-DD.md
 │   ├── 2026-04-01.md
