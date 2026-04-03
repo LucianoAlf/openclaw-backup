@@ -69,17 +69,20 @@ memory/
 │   ├── people.md           ← equipe, família, parceiros
 │   └── business-context.md ← LA Music, SonoraMente, Emusys
 ├── content/
-│   └── voice/
-│       ├── instagram.md        ← tom de voz @lucianoalf.la
-│       ├── emusys-academy.md   ← tom de voz mentoria
-│       └── la-music.md         ← tom de voz LA Music
+│   ├── voice/
+│   │   ├── instagram.md        ← tom de voz @lucianoalf.la
+│   │   ├── emusys-academy.md   ← tom de voz mentoria
+│   │   └── la-music.md         ← tom de voz LA Music
+│   ├── ideas.md            ← ideias de conteúdo capturadas
+│   └── drafts/             ← rascunhos de posts, scripts, newsletters
 ├── projects/             ← um arquivo por projeto ativo
 ├── sessions/             ← diário: YYYY-MM-DD.md
 │   ├── 2026-04-01.md
 │   ├── 2026-04-02.md
 │   └── 2026-04-03.md
 ├── integrations/
-│   └── integrations-map.md ← IDs, tokens, endpoints
+│   ├── integrations-map.md ← ferramentas, IDs, endpoints
+│   └── credentials-map.md  ← onde cada credencial fica
 ├── feedback/             ← approve/reject de sugestões
 └── pending.md            ← aguardando ação
 ```
