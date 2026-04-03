@@ -1,22 +1,78 @@
-# MEMORY.md — Memória de Longo Prazo do Alfredo 🎩
+# MEMORY.md — Índice Central do Alfredo 🎩
 
-## Quem sou
-- **Alfredo** — assistente pessoal do Alf
-- Nascido em 01/04/2026
-- Batizado pelo próprio Alf na primeira conversa
+> Este é o único arquivo carregado automaticamente em toda sessão.
+> Todos os outros são buscados sob demanda via `memory_search` + `memory_get`.
+
+---
+
+## Identidade
+
+- **Eu:** Alfredo — assistente pessoal do Alf, parceiro, copiloto
+- **Nascido:** 01/04/2026
+- **Batizado por:** Luciano Alf na primeira conversa
 
 ## Quem é o Alf
-- Luciano Teixeira, 48 anos, Rio de Janeiro
-- CEO e fundador da **LA Music** — rede de 3 escolas de música no RJ
-- 1200+ alunos, 70+ funcionários (42 professores)
-- **LA Music Kids**: bebês (6 meses) até 11 anos
-- **LA Music School**: 12+ anos e adultos
-- Aniversário 14 anos da LA Music: **23/07/2026**
-- Mentor de empresários (foco: donos de escolas de música)
-- Músico profissional 30+ anos, guitarrista, compositor, escritor, professor
 
-## Lições aprendidas
-_(a preencher conforme vivências)_
+- **Luciano Teixeira**, 48 anos, Rio de Janeiro (UTC-3)
+- CEO e fundador da **LA Music** — 3 escolas de música no RJ
+- 1.200+ alunos | 70+ colaboradores | 42 professores
+- Músico, mentor, dev citizen, escritor, professor
+- **Aniversário:** 25 de janeiro (1978)
+- **Aniversário LA Music:** 23/07/2026 → 14 anos
 
-## Preferências do Alf
-_(a preencher conforme descubro)_
+## Canal Principal
+
+- **Telegram:** @lucianoalf_bot (atual, mas pouco usado)
+- **WhatsApp:** canal principal desejado — em configuração (5521981278047)
+- **Anne** não usa Telegram — só WhatsApp
+
+## Integrações Ativas
+
+| Ferramenta | Status | Onde está |
+|------------|--------|-----------|
+| TickTick | ✅ Ativo | `.env` → `TICKTICK_TOKEN` |
+| GitHub | ✅ Ativo | `.env` → `GITHUB_TOKEN` |
+| OpenAI Embeddings | ✅ Ativo | `.env` → `OPENAI_API_KEY` |
+| WhatsApp | ⏳ Pendente | Aguardando número dedicado |
+
+## Regras Invioláveis
+
+1. **Nunca subir `.env` pro GitHub**
+2. **Nunca executar ação financeira** — só analisar e alertar
+3. **Antes de compactação:** extrair lessons, decisions, people, projects, pending
+4. **Decisões permanentes:** `memory/context/decisions.md`
+5. **Se não está escrito, não existe**
+
+## Mapa de Memória (buscar sob demanda)
+
+```
+memory/
+├── context/
+│   ├── decisions.md      ← regras permanentes
+│   ├── lessons.md        ← erros que não repetem
+│   ├── people.md         ← equipe, família, parceiros
+│   └── business-context.md ← LA Music, SonoraMente, Emusys
+├── projects/             ← um arquivo por projeto ativo
+├── sessions/             ← diário: YYYY-MM-DD.md
+│   ├── 2026-04-01.md
+│   ├── 2026-04-02.md
+│   └── 2026-04-03.md
+├── integrations/
+│   └── integrations-map.md ← IDs, tokens, endpoints
+├── feedback/             ← approve/reject de sugestões
+└── pending.md            ← aguardando ação
+```
+
+## O que Carregar em Cada Sessão
+
+| Sempre carregado | Buscado sob demanda |
+|-----------------|---------------------|
+| SOUL.md | memory/context/*.md |
+| USER.md | memory/projects/*.md |
+| AGENTS.md | memory/sessions/ (hoje + ontem) |
+| MEMORY.md (este) | memory/integrations/*.md |
+| HEARTBEAT.md | memory/pending.md |
+
+---
+
+_Atualizado: 2026-04-03_

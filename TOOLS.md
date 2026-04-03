@@ -37,4 +37,13 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+### TickTick
+- **Token:** salvo em `.env` como `TICKTICK_TOKEN`
+- **API base:** `https://api.ticktick.com/open/v1`
+- **Listas:** 📝 Notas Alf | 🏠 Pessoal Alf | 💼 Trabalho Alf | 💸 Contas Pessoais (ID: 67158c51db647de6536f46dc) | 💡 Mentorias
+- **Acesso:** leitura + escrita (marcar como concluído via POST /task/{id} com status:2)
+- ⚠️ Sempre checar `.env` antes de dizer que não tem acesso.
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.
