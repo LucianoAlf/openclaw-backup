@@ -30,7 +30,7 @@
 
 | Ferramenta | Status | Onde está |
 |------------|--------|-----------|
-| TickTick | ✅ Ativo | `.env` → `TICKTICK_TOKEN` |
+| TickTick | ✅ Ativo | `.env` → `TICKTICK_TOKEN` | **Agenda principal do Alf** (não usa Google Calendar) |
 | GitHub | ✅ Ativo | `.env` → `GITHUB_TOKEN` |
 | OpenAI Embeddings | ✅ Ativo | `.env` → `OPENAI_API_KEY` |
 | WhatsApp | ⏳ Pendente | Aguardando número dedicado |

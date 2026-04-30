@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "audio-handler": {
+      "version": "1.0.0",
+      "installedAt": 1777506576452
+    },
+    "openclaw-whisper-voice": {
+      "version": "1.0.0",
+      "installedAt": 1777508082384
+    }
+  }
+}
