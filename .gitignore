@@ -13,3 +13,4 @@ memory/
 # Arquivos temporários
 *.tmp
 *.log
+.env
