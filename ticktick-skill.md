@@ -141,3 +141,57 @@ O TickTick do Alf deve ficar:
 
 Se houver dúvida, o Alfredo decide pela melhor lista possível na origem.
 Se errar, corrige na hora.
+
+---
+
+## Escopo desta skill
+
+Esta skill cobre principalmente:
+- classificação correta por lista/projeto
+- decisão de onde cada item deve nascer
+- regras simples de organização operacional
+
+Ela **não substitui** a documentação técnica e operacional complementar do TickTick.
+
+Quando o pedido envolver modelagem de card, checklist nativo, payload da API, recorrência, hábitos, migração de formato, create vs update ou qualquer alteração estrutural, consultar as referências abaixo antes de agir.
+
+### Referências complementares obrigatórias
+
+#### 1. Capacidades técnicas da API
+Ler:
+- `memory/governanca/ticktick-capacidades.md`
+
+Usar quando precisar confirmar:
+- o que a API suporta
+- campos válidos
+- limitações reais
+- comportamento de `desc`, `items[]`, `repeatFlag`, `priority`, tags, hábitos etc.
+
+#### 2. Patterns reutilizáveis de payload
+Ler:
+- `memory/governanca/ticktick-payload-patterns.md`
+
+Usar quando precisar criar ou adaptar:
+- rituais
+- 1:1s
+- campanhas
+- boss battles
+- hábitos
+- ações CEO
+- tarefas com recorrência, lembretes, prioridade e checklist
+
+#### 3. Regras de execução confiável
+Ler:
+- `memory/governanca/ticktick-execution-rules.md`
+
+Usar quando precisar evitar erros de execução, especialmente em casos de:
+- cards já existentes
+- migração de formato
+- preservação de contexto
+- padrão visual aprovado pelo Alf
+- decisão entre atualizar vs apagar e recriar
+- validação de card piloto antes de replicar em lote
+
+## Regra final
+Se o pedido for só classificação de lista, esta skill basta.
+Se o pedido entrar em modelagem técnica ou alteração estrutural de card, esta skill deve apontar para as referências acima antes da execução.
