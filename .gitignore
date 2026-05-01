@@ -1,19 +1,59 @@
-# Credenciais e dados sensíveis
+# Credenciais e segredos
 .env
 *.pem
 *.key
 *.json.secret
 
-# Arquivos de sessão e cache do OpenClaw
+# Estado interno / cache OpenClaw
 .openclaw/
+.clawhub/lock.json
 
-# Memória diária (pode conter contexto privado)
-memory/
+# Clones/repos externos dentro do workspace
+LA-Organizer/
 
-# Mas força a inclusão da pasta governanca (CEO Quest)
+# Artefatos / bundles / binários gerados
+*.eszip
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.zip
+*.tar
+*.gz
+
+# Logs e temporários
+*.tmp
+*.log
+tmp_*
+temp_*
+*.bak
+
+# Rascunhos intermediários / versões ajustadas
+*-ajustada.md
+*-ajustado.md
+priorizacao-inteligente.md
+priorizacao-inteligente-final.md
+ticktick-skill.md
+LA-Organizer-UI-SYSTEM.md
+TOM-VISION.md
+
+# Mantém o núcleo do agente
+!AGENTS.md
+!BOOT.md
+!BOOTSTRAP.md
+!HEARTBEAT.md
+!IDENTITY.md
+!MEMORY.md
+!SOUL.md
+!TOOLS.md
+!USER.md
+!pluggy_client.py
+
+# Mantém memória e governança
+!memory/
+!memory/**
 !memory/governanca/
 !memory/governanca/**
 
-# Arquivos temporários
-*.tmp
-*.log
+# Mantém skills
+!skills/
+!skills/**
