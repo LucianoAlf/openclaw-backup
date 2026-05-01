@@ -10,7 +10,10 @@
 # Memória diária (pode conter contexto privado)
 memory/
 
+# Mas força a inclusão da pasta governanca (CEO Quest)
+!memory/governanca/
+!memory/governanca/**
+
 # Arquivos temporários
 *.tmp
 *.log
-.env
