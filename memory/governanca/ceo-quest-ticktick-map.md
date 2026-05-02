@@ -432,12 +432,82 @@ Para o Ritual da Virada, o padrão aprovado foi:
 
 ---
 
-## 8. Próximo passo recomendado
+## 8. Taxonomia operacional atual do TickTick
+
+Estrutura atual validada pelo Alf:
+
+- `🏠 Pessoal Alf` → vida pessoal, autocuidado, rotina pessoal
+- `💸 Contas Pessoais` → contas, pagamentos e vencimentos pessoais
+- `🔥 CEO Quest` → governança, campanhas, time, rituais, prioridades executivas
+- `💡 Mentorias` → mentorias, preparação, follow-up de mentorados
+- `🎬 Emusys Academy` → entregas, vídeo-aulas, grupo, materiais e obrigações da Academy
+- `💼 Trabalho Operacional` → trabalho profissional que não entra no guarda-chuva do CEO Quest
+- `📝 Notas Alf` → captura / inbox / rascunhos não classificados
+
+## 9. Regra oficial de destino no TickTick
+
+### Vai para `🔥 CEO Quest`
+- campanhas estratégicas (ex.: SonoraMente)
+- ações CEO
+- cobranças
+- destravamentos
+- 1:1s com líderes
+- ritual semanal
+- prioridades estratégicas da semana
+- itens ligados à governança da LA Music e negócios sob guarda-chuva CEO Quest
+
+### Vai para `🏠 Pessoal Alf`
+- compromissos pessoais
+- rotina pessoal
+- autocuidado
+- lembretes pessoais sem natureza financeira
+
+### Vai para `💸 Contas Pessoais`
+- contas
+- boletos
+- faturas
+- lembretes de pagamento
+
+### Vai para `💡 Mentorias`
+- reuniões de mentoria
+- preparação de encontros
+- follow-ups de mentorados
+
+### Vai para `🎬 Emusys Academy`
+- gravação de aulas
+- roteiro de aulas
+- entregas da Academy
+- atividades ligadas ao grupo/comunidade
+- materiais e frentes próprias da Academy
+
+### Vai para `💼 Trabalho Operacional`
+- trabalho profissional que não é CEO Quest
+- tarefas operacionais sem natureza de governança
+- execução geral fora de campanha/time/gestão executiva
+
+### Vai para `📝 Notas Alf`
+- apenas captura inicial
+- ideias soltas
+- rascunhos
+- itens ainda sem classificação
+
+### Regra crítica
+`📝 Notas Alf` **não é moradia definitiva**.
+Tudo que virar compromisso, tarefa ou frente real deve ser reclassificado para a lista correta.
+
+## 10. Regra semântica por canal
+
+- **WhatsApp** = trilha pessoal (`Pessoal Alf`, `Contas Pessoais`)
+- **Telegram tópico 218** = trilha CEO Quest
+- **outras frentes de trabalho** podem ganhar tópicos próprios quando tiverem cadência e contexto suficiente (ex.: Emusys Academy)
+
+## 11. Próximo passo recomendado
 
 Antes de automatizar em lote:
 1. criar **1 card piloto oficial** do Ritual da Virada no TickTick
 2. validar o visual no app
 3. aprovar o padrão
 4. só então usar esse formato como molde fixo de todo domingo
+5. respeitar sempre a taxonomia oficial acima
 
 Essa é a forma certa de não transformar o backbone do CEO Quest em bagunça.

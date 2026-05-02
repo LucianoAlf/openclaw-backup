@@ -679,6 +679,7 @@ Quando o CEO Quest precisar:
 - definir payload
 - replicar padrão visual
 - decidir entre create vs update
+- escolher a lista/categoria correta
 
 é obrigatório consultar a documentação especializada do stack TickTick:
 
@@ -686,12 +687,13 @@ Quando o CEO Quest precisar:
 - `ticktick-capacidades.md` → capacidades confirmadas da API
 - `ticktick-payload-patterns.md` → payloads reutilizáveis e patterns aprovados
 - `ticktick-execution-rules.md` → regras de execução confiável e anti-erro
-- `ceo-quest-ticktick-map.md` → divisão oficial entre TickTick, memória e sincronização do CEO Quest
+- `ceo-quest-ticktick-map.md` → divisão oficial entre TickTick, memória, canais e taxonomia do CEO Quest
 
 ### Regra de segurança
 - Não improvisar payload de TickTick dentro da skill do CEO Quest
 - Não reinterpretar card aprovado visualmente
 - Não duplicar na skill do CEO Quest o que já é fonte de verdade no stack documental do TickTick
+- Não jogar item estratégico em lista errada por conveniência (`Notas Alf` não é moradia final)
 
 ### 3. LA Organizer — painel futuro
 É o tabuleiro visual.
