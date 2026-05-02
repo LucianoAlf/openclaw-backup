@@ -13,6 +13,24 @@
 - registrar ritual de domingo
 - mostrar prioridades por reino
 - servir de base para leitura executiva, auditoria e aconselhamento
+- sustentar o fechamento diário das 22h
+- sustentar consultas sob demanda com status, barra e próxima ação
+
+## Regras oficiais de leitura
+### Percentual
+- itens concluídos / itens totais = progresso
+
+### Status
+- 🟢 ON FIRE
+- 🟡 ON TRACK
+- ⚠️ EM RISCO
+- 🔴 ATRASADA
+- ⛔ TRAVADA
+
+### Barra
+- `██████████ 100%`
+- `██████░░░░ 60%`
+- `███░░░░░░░ 30%`
 
 ## Reinos principais do painel diário
 1. 🌱 Pessoal Alf

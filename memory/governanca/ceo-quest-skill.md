@@ -480,6 +480,138 @@ No MVP simplificado:
 
 ---
 
+## 11.1 Fechamento diário, consulta sob demanda e progresso oficial
+
+### Regra aprovada de percentual
+O percentual oficial do CEO Quest segue a **Opção A**:
+
+- itens concluídos / itens totais = progresso
+- Ex.: 4 de 10 = 40%
+
+Sem subjetividade.
+Sem malabarismo.
+Transparente.
+
+### Janela oficial do fechamento do dia
+- **21h** → risk check
+- **22h** → close day / fechamento oficial do dia
+
+### Template oficial — Fechamento diário
+
+```text
+🎮 CEO Quest — Fechamento do Dia
+
+Data: DD/MM
+Streak: 🔥 X dias
+Presença CEO: ✅ Validada / ❌ Não validada
+
+🎯 Quest principal do dia
+
+<nome da quest/card>
+Status: ✅ CONCLUÍDA / 🟡 EM ANDAMENTO / 🔴 FALHOU
+Progresso: ██████░░░░ 60%
+
+✅ O que avançou hoje
+
+• item 1
+• item 2
+• item 3
+
+⚠️ O que travou ou ficou pendente
+
+• item 1
+• item 2
+
+📊 Status das campanhas
+
+<Campanha 1> — ████░░░░░░ 40% — 🟡 ON TRACK
+<Campanha 2> — ██░░░░░░░░ 20% — ⚠️ EM RISCO
+
+⏰ Próxima ação obrigatória
+
+Amanhã: <ação concreta>
+
+🧠 Provocação do dia
+
+<provocação curta e direta>
+```
+
+### Template oficial — Consulta sob demanda
+
+Quando o Alf perguntar:
+- “como tá o SonoraMente?”
+- “como tá o jurídico?”
+- “como tá aquela tarefa?”
+
+responder assim:
+
+```text
+📌 <Nome da tarefa / campanha>
+
+Status: 🟢 ON FIRE / 🟡 ON TRACK / ⚠️ EM RISCO / 🔴 ATRASADA / ⛔ TRAVADA
+Progresso: ████░░░░░░ 40%
+
+✅ Concluído
+
+• item 1
+• item 2
+
+⏳ Falta executar
+
+• item 1
+• item 2
+• item 3
+
+⏰ Prazo
+
+<leitura objetiva do prazo>
+
+👉 Próxima ação
+
+<ação concreta>
+```
+
+### Regras oficiais de status
+- 🟢 **ON FIRE** → avanço forte, acima do esperado
+- 🟡 **ON TRACK** → dentro do esperado
+- ⚠️ **EM RISCO** → ainda dentro do prazo, mas precisa mexer logo
+- 🔴 **ATRASADA** → prazo estourou ou muito comprometido
+- ⛔ **TRAVADA** → depende de terceiro, bloqueio externo ou decisão que não saiu
+
+### Regras oficiais da barra de progresso
+Formato:
+- `██████████ 100%`
+- `██████░░░░ 60%`
+- `███░░░░░░░ 30%`
+
+Base:
+- total de checklists concluídos / total de checklists do card
+
+### Regras oficiais de presença CEO
+O dia conta como presença CEO quando houver pelo menos uma destas:
+- cobrança real
+- decisão real
+- verificação real
+- destravamento real
+- avanço concreto em campanha estratégica
+
+### Regras oficiais de progresso de campanha
+No começo, sem fórmula maluca:
+- leitura por checklist/card
+- visão executiva
+- soma simples dos cards principais quando aplicável
+
+### Regras oficiais de tom
+O relatório precisa ser:
+- curto
+- claro
+- visual
+- com alguns emojis
+- com negritos nos pontos-chave
+- sem linguagem corporativa chata
+
+---
+
 ## 12. Comportamento do Alfredo na fase 1
 
 Fase 1 = automação da streak.

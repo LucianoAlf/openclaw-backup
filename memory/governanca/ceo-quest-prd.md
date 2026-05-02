@@ -158,6 +158,31 @@ Alfredo conduz o ritual uma pergunta por vez. Alf responde por áudio. Sistema r
 **RF-017 — Geração de weekly review**
 Ao final do ritual, sistema gera arquivo `weekly-review-YYYY-MM-DD.md` com todas as respostas + métricas + 3 prioridades.
 
+**RF-018 — Fechamento diário oficial**
+Às 22h, o sistema deve devolver no tópico CEO Quest o fechamento oficial do dia com:
+- streak
+- presença CEO
+- quest principal do dia
+- progresso por checklist simples
+- o que avançou
+- o que travou
+- status das campanhas
+- próxima ação obrigatória
+- provocação curta do dia
+
+**RF-019 — Consulta sob demanda padronizada**
+Quando o Alf perguntar sobre tarefa, campanha ou frente estratégica, o sistema deve responder com:
+- status oficial (`ON FIRE`, `ON TRACK`, `EM RISCO`, `ATRASADA`, `TRAVADA`)
+- barra de progresso
+- concluído
+- falta executar
+- prazo
+- próxima ação
+
+**RF-020 — Regra oficial de percentual**
+O progresso oficial do CEO Quest usa cálculo simples:
+- itens concluídos / itens totais
+
 ### 2.4 Feedback diário e acompanhamento
 
 **RF-018 — Fechamento diário oficial**
