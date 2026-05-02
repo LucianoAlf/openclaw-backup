@@ -104,10 +104,10 @@ Para contar como ação CEO, a interação precisa ter pelo menos 1 destes 3 ele
 - Verificação objetiva de status
 
 **RF-006 — Verificação noturna**
-Diariamente às 22h, o sistema deve verificar se houve ação CEO no dia e atualizar a streak.
+Diariamente às 20h, o sistema deve verificar se houve ação CEO no dia e atualizar a streak.
 
 **RF-007 — Alerta de risco**
-Diariamente às 21h, se nenhuma ação CEO foi registrada, o sistema deve enviar alerta com 3 opções:
+Diariamente às 19h, se nenhuma ação CEO foi registrada, o sistema deve enviar alerta com 3 opções:
 - Mandar áudio agora
 - Registrar ação que aconteceu offline
 - Aceitar pausa (com motivo)
@@ -126,7 +126,7 @@ Sistema deve celebrar marcos: 7, 14, 30, 60, 100 dias com mensagem dedicada e b�
 ### 2.2 Briefing matinal
 
 **RF-011 — Briefing diário (seg-quinta)**
-Diariamente às 7h da manhã (segunda a quinta), o sistema deve enviar mensagem no tópico CEO Quest com:
+Diariamente às 8h da manhã (segunda a quinta), o sistema deve enviar mensagem no tópico CEO Quest com:
 - Streak atual em destaque
 - Resumo de 3 reinos prioritários (Pessoal, Pedagógico, Comercial+Marketing) — 1 linha cada
 - Ação concreta sugerida (de 30 segundos)
@@ -140,7 +140,7 @@ Sexta-feira, formato diferenciado:
 - Ação de fim de semana
 
 **RF-013 — Convite de domingo**
-Domingo 7h, convite para Ritual da Virada com tempo estimado e camadas.
+Domingo 8h, convite para Ritual da Virada com tempo estimado e camadas.
 
 **RF-014 — Sábado silencioso**
 Sábado não envia briefing. Descanso é parte do jogo.
@@ -148,9 +148,9 @@ Sábado não envia briefing. Descanso é parte do jogo.
 ### 2.3 Ritual de domingo
 
 **RF-015 — Estrutura em 3 camadas**
-- **7h-8h** — Pessoal (corpo + mente): academia, meditação, leitura
-- **8h-8h30** — Fechamento: 5 perguntas pessoais + 5 perguntas CEO (versão completa: 7+7)
-- **8h30-9h** — Planejamento: hábitos da semana + 3 prioridades por frente
+- **8h-9h** — Pessoal (corpo + mente): academia, meditação, leitura
+- **9h-9h30** — Fechamento: 5 perguntas pessoais + 5 perguntas CEO (versão completa: 7+7)
+- **9h30-10h** — Planejamento: hábitos da semana + 3 prioridades por frente
 
 **RF-016 — Condução por áudio**
 Alfredo conduz o ritual uma pergunta por vez. Alf responde por áudio. Sistema registra.
@@ -158,9 +158,44 @@ Alfredo conduz o ritual uma pergunta por vez. Alf responde por áudio. Sistema r
 **RF-017 — Geração de weekly review**
 Ao final do ritual, sistema gera arquivo `weekly-review-YYYY-MM-DD.md` com todas as respostas + métricas + 3 prioridades.
 
-### 2.4 Sistema de XP e Ranks
+### 2.4 Feedback diário e acompanhamento
 
-**RF-018 — XP por categoria**
+**RF-018 — Fechamento diário oficial**
+Diariamente às 20h, o sistema deve entregar um fechamento do dia com:
+- quest principal do dia
+- status da quest
+- progresso percentual por checklist
+- o que avançou
+- o que travou ou ficou pendente
+- status das campanhas
+- próxima ação obrigatória
+- provocação final
+- validação ou não da presença CEO
+
+**RF-019 — Consulta sob demanda**
+Quando Alf perguntar sobre uma tarefa, frente, Boss ou Campanha, o sistema deve responder com:
+- status atual
+- barra de progresso
+- itens concluídos
+- itens pendentes
+- leitura objetiva do prazo
+- próxima ação concreta
+
+**RF-020 — Regra oficial de percentual**
+O percentual oficial do CEO Quest deve ser calculado por checklist simples:
+- itens concluídos / itens totais = progresso
+
+**RF-021 — Status oficiais de andamento**
+O sistema deve usar 5 status oficiais:
+- ON FIRE
+- ON TRACK
+- EM RISCO
+- ATRASADA
+- TRAVADA
+
+### 2.5 Sistema de XP e Ranks
+
+**RF-022 — XP por categoria**
 Cada ação gera XP em uma categoria específica:
 - 🎓 XP Pedagógico
 - 💰 XP Comercial
@@ -168,14 +203,14 @@ Cada ação gera XP em uma categoria específica:
 - 🐉 XP Boss Battle
 - ⚡ XP CEO Geral
 
-**RF-019 — Faixas de pontuação**
+**RF-023 — Faixas de pontuação**
 - Pontos fáceis (manutenção): 1-3 XP
 - Pontos médios (cobrança): 5-10 XP
 - Pontos pesados (governança real): 15-25 XP
 - Pontos raros (level up): 50+ XP
 - Penalidades: -5 a -15 XP
 
-**RF-020 — Progressão de ranks (musical)**
+**RF-024 — Progressão de ranks (musical)**
 1. 🎸 Garagem (0-500 XP)
 2. 🎤 Bandleader (501-1.500)
 3. 🎹 Maestro (1.501-3.500)
@@ -184,43 +219,43 @@ Cada ação gera XP em uma categoria específica:
 6. 🌍 Visionário (10.001-15.000)
 7. 🚀 Legado (15.001+)
 
-**RF-021 — Critério de subida de rank**
+**RF-025 — Critério de subida de rank**
 Subir de rank exige 3 critérios juntos:
 - XP mínimo do rank
 - Streak mínimo de CEO Quest
 - Pelo menos 1 Boss Battle concluído
 
-### 2.5 Boss Battles e Campanhas
+### 2.6 Boss Battles e Campanhas
 
-**RF-022 — Critério de Boss Battle**
+**RF-026 — Critério de Boss Battle**
 Algo só vira Boss se bater os 4 critérios:
 1. Muda o patamar da empresa
 2. Dura 4+ semanas
 3. Tem 3+ fases sequenciais
 4. Tem risco real se não acontecer
 
-**RF-023 — Limite de Boss Battles ativos**
+**RF-027 — Limite de Boss Battles ativos**
 Máximo 3 Boss Battles ativos simultaneamente.
 
-**RF-024 — Critério de Campanha**
+**RF-028 — Critério de Campanha**
 Algo vira Campanha se bater os 4 critérios:
 1. Dura 3+ meses
 2. Contém 3+ Boss Battles internos
 3. Tem múltiplas frentes paralelas
 4. Muda identidade ou modelo de negócio
 
-**RF-025 — Limite de Campanha ativa**
+**RF-029 — Limite de Campanha ativa**
 Máximo 1 Campanha ativa por vez.
 
-**RF-026 — Cerimônia de ativação**
+**RF-030 — Cerimônia de ativação**
 Boss/Campanha novo gera mensagem cerimonial com nome, fases, dono, XP, badge previsto.
 
-**RF-027 — Cerimônia de pausa/cancelamento**
+**RF-031 — Cerimônia de pausa/cancelamento**
 Boss/Campanha pode ser pausado ou cancelado sem culpa, com mensagem cerimonial registrando motivo + aprendizado.
 
-### 2.6 Conquistas (Badges)
+### 2.7 Conquistas (Badges)
 
-**RF-028 — Sistema de badges**
+**RF-032 — Sistema de badges**
 Sistema deve desbloquear conquistas ao bater marcos específicos:
 - 🎯 Primeira semana completa
 - 🔥 Streak de 4, 8, 12, 30 semanas
@@ -231,21 +266,21 @@ Sistema deve desbloquear conquistas ao bater marcos específicos:
 - 🏰 Dungeon Master (5 Boss no total)
 - 👑 Fundador-CEO (chegou no Nível 5)
 
-### 2.7 Loots Reais
+### 2.8 Loots Reais
 
-**RF-029 — Definição de Loot Real**
+**RF-033 — Definição de Loot Real**
 Alf define recompensa concreta no início de cada quest/Boss/marco:
 - Equipamento musical
 - Jantar especial
 - Final de semana fora
 - Tempo livre sem culpa
 
-**RF-030 — Cobrança de Loot**
+**RF-034 — Cobrança de Loot**
 Quando marco é atingido, sistema lembra do Loot definido e provoca a auto-cobrança.
 
-### 2.8 Painel Visual (Web App)
+### 2.9 Painel Visual (Web App)
 
-**RF-031 — Dashboard principal**
+**RF-035 — Dashboard principal**
 Tela inicial mostra:
 - Streak grande no centro
 - Rank atual com identidade visual
@@ -255,27 +290,27 @@ Tela inicial mostra:
 - Conquistas recentes
 - Loot pendente
 
-**RF-032 — Histórico**
+**RF-036 — Histórico**
 Visualização de evolução temporal:
 - Streak ao longo dos meses
 - XP por semana
 - Boss Battles concluídos
 - Conquistas desbloqueadas
 
-**RF-033 — Detalhe por reino**
+**RF-037 — Detalhe por reino**
 Drill-down em cada um dos 8 reinos com:
 - Tarefas pendentes
 - Pessoas-chave do reino
 - XP acumulado
 - Próximas ações sugeridas
 
-**RF-034 — Tabuleiro do jogo**
+**RF-038 — Tabuleiro do jogo**
 Visualização gamificada com mapa dos 8 reinos, Boss Battles como dragões, Campanha como expansão de território, ranks como classes.
 
-**RF-035 — Integração com TickTick**
+**RF-039 — Integração com TickTick**
 Painel deve refletir tarefas do TickTick em tempo real (read-only) — TickTick continua sendo fonte operacional de verdade.
 
-**RF-036 — Health Check Mensal**
+**RF-040 — Health Check Mensal**
 Primeira segunda do mês, painel apresenta diagnóstico do mês anterior e oferece ajustes de cadência.
 
 ---
@@ -486,7 +521,7 @@ CEO Quest **não duplica tarefas** — TickTick é a fonte de verdade operaciona
 **Entregas:**
 
 **2.1 Briefing matinal automatizado**
-- Cron de 7h da manhã (seg-sex) no tópico 218
+- Cron de 8h da manhã (seg-sex) no tópico 218
 - Template padrão (3 reinos + ação sugerida)
 - Variação de sexta (quick check)
 - Variação de domingo (convite ritual)
@@ -494,7 +529,7 @@ CEO Quest **não duplica tarefas** — TickTick é a fonte de verdade operaciona
 - Mensagens condicionais: streak em risco, marco atingido, Boss caído
 
 **2.2 Ritual de domingo automatizado**
-- Cron de 7h domingo (apenas sugestão, ritual é voluntário)
+- Cron de 8h domingo (apenas sugestão, ritual é voluntário)
 - Condução por áudio das 5+5 perguntas (versão MVP)
 - Geração automática do `weekly-review-YYYY-MM-DD.md`
 - Atualização do scorecard
@@ -817,8 +852,8 @@ ABRIL 2026          MAIO          JUNHO         JULHO         AGOSTO        SETE
 | **Loot Real** | Recompensa concreta auto-definida pelo Alf |
 | **Game Master** | Papel do Alfredo no sistema |
 | **Marco zero** | Mensagem inicial do dia 1 ("CEO Quest ON. Streak: 0") |
-| **Risk-check** | Verificação automática às 21h se houve ação no dia |
-| **Close-day** | Fechamento automático do dia às 22h |
+| **Risk-check** | Verificação automática às 19h se houve ação no dia |
+| **Close-day** | Fechamento automático do dia às 20h |
 | **Ritual da Virada** | Ritual de domingo manhã com 3 camadas |
 | **Pause vs Quebra** | Pausa = comunicada antes, congela streak. Quebra = silêncio, zera. |
 

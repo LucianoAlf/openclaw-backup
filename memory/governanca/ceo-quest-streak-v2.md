@@ -19,7 +19,7 @@ Não é enfeite. Não é documento morto. Já executa regra real.
 - **ação pessoal**
 - **pausa**
 
-#### 2. Usa `game_date()` com virada às 7h
+#### 2. Usa `game_date()` com virada às 7h (estado atual do código, ainda desalinhado com a nova janela oficial do jogo)
 Esse é um acerto forte.
 Antes de 7h, o jogo ainda considera o dia anterior.
 Isso cola com a realidade do Alf melhor do que a virada civil da meia-noite.
@@ -293,13 +293,34 @@ Não é sofisticar. É:
 
 ---
 
+## 6.1 Janela oficial atual do CEO Quest
+
+A partir do ajuste operacional mais recente, a janela oficial do jogo passa a ser:
+- **início do dia:** 08h
+- **risk check:** 19h
+- **fechamento do dia:** 20h
+- **fim do dia:** 20h
+
+### Impacto técnico
+O script atual ainda carrega a lógica anterior de virada e horários.
+Isso significa que a implementação precisa ser revisada para alinhar:
+- `game_date()`
+- `risk_check()`
+- `close_day()`
+- quaisquer mensagens automáticas dependentes da janela do dia
+
+### Regra prática
+A semântica oficial do jogo agora é 08h–20h.
+Se o código ainda estiver em 7h / 21h / 22h, o código está atrasado em relação à regra — e deve ser corrigido.
+
 ## 7. Proposta objetiva de evolução (sem quebrar o MVP)
 
 ## v1.1 — ajustes mínimos importantes
-1. domingo conta ritual como ação CEO
-2. pausa congela em vez de zerar
-3. ampliar vocabulário de detecção
-4. registrar `Última pausa` corretamente
+1. alinhar a janela oficial do jogo para 08h / 19h / 20h
+2. domingo conta ritual como ação CEO
+3. pausa congela em vez de zerar
+4. ampliar vocabulário de detecção
+5. registrar `Última pausa` corretamente
 
 ## v1.2 — robustez de evidência
 1. guardar origem da evidência

@@ -399,8 +399,8 @@ Bora?
 - não envia briefing
 
 ### Mensagens condicionais
-#### Streak em risco (21h)
-Se chegar 21h sem ação registrada:
+#### Streak em risco (19h)
+Se chegar 19h sem ação registrada:
 - avisar risco
 - oferecer 3 saídas:
   1. mandar áudio agora
@@ -477,6 +477,12 @@ No MVP simplificado:
 
 Fase 1 = automação da streak.
 
+### Janela oficial do dia
+- **Início do dia:** 08h
+- **Risk check:** 19h
+- **Fechamento oficial:** 20h
+- **Fim do dia:** 20h
+
 ### Regra de postura
 **silencioso, só registra.**
 
@@ -484,8 +490,8 @@ Fase 1 = automação da streak.
 - detectar ação CEO
 - registrar evidência
 - atualizar arquivos
-- checar streak às 22h
-- alertar às 21h só se houver risco real
+- checar streak às 20h
+- alertar às 19h só se houver risco real
 - comemorar marcos
 
 ### O que evitar
@@ -547,22 +553,112 @@ No futuro, o módulo CEO Quest no LA Organizer deve mostrar:
 
 ## 14. MVP oficial
 
-O MVP do CEO Quest tem 3 peças:
+O MVP do CEO Quest tem 4 peças:
 
 1. **Streak**
 2. **Briefing matinal**
 3. **Ritual de domingo**
+4. **Feedback diário e consulta sob demanda**
 
 ### Ordem de implementação
 1. streak
 2. briefing
 3. ritual
-4. scorecard completo
-5. painel visual
+4. feedback diário
+5. scorecard completo
+6. painel visual
 
 ### Regra de implementação
 Uma camada por vez.
 Sem construir decoração antes do coração.
+
+### Modelo oficial do feedback do CEO Quest
+
+#### Fechamento diário — 20h
+Formato oficial:
+
+```text
+🎮 CEO Quest — Fechamento do Dia
+Data: DD/MM
+Streak: 🔥 X dias
+Presença CEO: ✅ Validada / ❌ Não validada
+
+🎯 Quest principal do dia
+<nome da quest/card>
+Status: ✅ CONCLUÍDA / 🟡 EM ANDAMENTO / 🔴 FALHOU
+Progresso: ██████░░░░ 60%
+
+✅ O que avançou hoje
+- item 1
+- item 2
+
+⚠️ O que travou ou ficou pendente
+- item 1
+- item 2
+
+📊 Status das campanhas
+<Campanha 1> — ████░░░░░░ 40% — 🟡 ON TRACK
+<Campanha 2> — ██░░░░░░░░ 20% — ⚠️ EM RISCO
+
+⏰ Próxima ação obrigatória
+Amanhã: <ação concreta>
+
+🧠 Provocação do dia
+<provocação curta e direta>
+```
+
+#### Consulta sob demanda
+Quando o Alf perguntar “como tá o SonoraMente?”, “como tá o jurídico?” ou “como tá aquela tarefa?”, responder com:
+
+```text
+📌 <Nome da tarefa / campanha>
+Status: 🟢 ON FIRE / 🟡 ON TRACK / ⚠️ EM RISCO / 🔴 ATRASADA / ⛔ TRAVADA
+Progresso: ████░░░░░░ 40%
+
+✅ Concluído
+- item 1
+- item 2
+
+⏳ Falta executar
+- item 1
+- item 2
+
+⏰ Prazo
+<leitura objetiva do prazo>
+
+👉 Próxima ação
+<ação concreta>
+```
+
+#### Regra oficial de progresso
+- percentual = **itens concluídos / itens totais do checklist**
+- sem subjetividade
+- sem pesos manuais por enquanto
+
+#### Barras de progresso
+Usar formato simples e legível:
+- `██████████ 100%`
+- `██████░░░░ 60%`
+- `███░░░░░░░ 30%`
+
+#### Status oficiais
+- 🟢 **ON FIRE** — avanço acima do esperado
+- 🟡 **ON TRACK** — dentro do esperado
+- ⚠️ **EM RISCO** — ainda dentro do prazo, mas precisa mexer logo
+- 🔴 **ATRASADA** — prazo estourado ou muito comprometido
+- ⛔ **TRAVADA** — depende de terceiro, bloqueio externo ou decisão que não saiu
+
+#### Regra de presença CEO
+O fechamento diário deve indicar se houve ou não presença CEO validada no dia.
+
+#### Provocação / desafio
+Todo fechamento pode terminar com:
+- provocação curta
+- pergunta desconfortável
+- chamada de responsabilidade
+
+Sem virar sermão.
+Com força de Game Master.
 
 ---
 
