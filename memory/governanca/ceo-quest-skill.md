@@ -530,6 +530,30 @@ No TickTick:
 
 O Alfredo usa TickTick como fonte operacional de verdade.
 
+### Ponte obrigatória com a documentação TickTick
+A `ceo-quest-skill.md` **não carrega dentro dela** toda a modelagem operacional do TickTick.
+
+Quando o CEO Quest precisar:
+- criar tarefa
+- atualizar card
+- modelar ritual semanal
+- definir payload
+- replicar padrão visual
+- decidir entre create vs update
+
+é obrigatório consultar a documentação especializada do stack TickTick:
+
+- `ticktick-skill.md` → classificação + hub de navegação
+- `ticktick-capacidades.md` → capacidades confirmadas da API
+- `ticktick-payload-patterns.md` → payloads reutilizáveis e patterns aprovados
+- `ticktick-execution-rules.md` → regras de execução confiável e anti-erro
+- `ceo-quest-ticktick-map.md` → divisão oficial entre TickTick, memória e sincronização do CEO Quest
+
+### Regra de segurança
+- Não improvisar payload de TickTick dentro da skill do CEO Quest
+- Não reinterpretar card aprovado visualmente
+- Não duplicar na skill do CEO Quest o que já é fonte de verdade no stack documental do TickTick
+
 ### 3. LA Organizer — painel futuro
 É o tabuleiro visual.
 
