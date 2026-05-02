@@ -510,29 +510,38 @@ CEO Quest **não duplica tarefas** — TickTick é a fonte de verdade operaciona
 - Reunião semanal de 15 min entre Alf e Alfredo (no domingo) pra ajustar detector
 - Métricas reportadas no scorecard semanalmente
 
-### FASE 2 — Tração (briefing + ritual)
+### FASE 2 — Tração operacional
 
-**Objetivo:** Tornar o jogo proativo e cíclico.
+**Objetivo:** Tornar o jogo proativo, cíclico e visível.
 
-**Status:** 🔲 Não iniciado
+**Status:** 🟢 Ativado
 
-**Trigger pra iniciar:** Critérios de saída da Fase 1 atingidos.
+**Entregas ativas:**
 
-**Entregas:**
+**2.1 Ritual de domingo automatizado**
+- Cron de 8h domingo no tópico 218
+- Convite oficial do Ritual da Virada
+- Condução em formato 5+5 (pessoal + CEO)
+- Revisão da semana anterior
+- Planejamento da semana seguinte
+- Atualização do `weekly-review.md`
 
-**2.1 Briefing matinal automatizado**
+**2.2 Briefing matinal automatizado**
 - Cron de 8h da manhã (seg-sex) no tópico 218
 - Template padrão (3 reinos + ação sugerida)
 - Variação de sexta (quick check)
-- Variação de domingo (convite ritual)
 - Sábado: silêncio
 - Mensagens condicionais: streak em risco, marco atingido, Boss caído
 
-**2.2 Ritual de domingo automatizado**
-- Cron de 8h domingo (apenas sugestão, ritual é voluntário)
-- Condução por áudio das 5+5 perguntas (versão MVP)
-- Geração automática do `weekly-review-YYYY-MM-DD.md`
-- Atualização do scorecard
+**2.3 Scorecard expandido**
+- consolidação semanal de streak, ritual, prioridades e KPIs principais
+- leitura de progresso por reino
+- base para auditoria e feedback executivo
+
+**2.4 XP, ranks e painéis**
+- sistema de progressão ativo como camada motivacional do jogo
+- marcos, badges e ranks documentados
+- painel visual previsto no ecossistema LA Organizer / Supabase
 
 **2.3 Health Check Mensal**
 - Primeira segunda do mês

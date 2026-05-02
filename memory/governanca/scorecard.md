@@ -3,8 +3,16 @@
 ## MVP ativo
 - Hub central: Telegram
 - Banco operacional: TickTick
-- Automação ativa na fase 1: streak
-- Ordem planejada: streak → briefing → ritual → scorecard → painel
+- Automação ativa: streak, briefing, ritual
+- Scorecard expandido: ativo
+- XP / ranking / painéis: direção operacional ativa
+- Ordem histórica: streak → briefing → ritual → scorecard → painel
+
+## Função do scorecard expandido
+- consolidar streak semanal
+- registrar ritual de domingo
+- mostrar prioridades por reino
+- servir de base para leitura executiva, auditoria e aconselhamento
 
 ## Reinos principais do painel diário
 1. 🌱 Pessoal Alf

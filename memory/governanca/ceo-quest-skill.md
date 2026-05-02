@@ -553,24 +553,26 @@ No futuro, o módulo CEO Quest no LA Organizer deve mostrar:
 
 ## 14. MVP oficial
 
-O MVP do CEO Quest tem 4 peças:
+O MVP operacional atual do CEO Quest tem 6 peças:
 
 1. **Streak**
 2. **Briefing matinal**
 3. **Ritual de domingo**
 4. **Feedback diário e consulta sob demanda**
+5. **Scorecard expandido**
+6. **XP / ranking / painéis**
 
-### Ordem de implementação
-1. streak
-2. briefing
-3. ritual
-4. feedback diário
-5. scorecard completo
-6. painel visual
+### Estado atual
+- streak: ativo
+- briefing matinal: ativado
+- ritual de domingo: ativado
+- feedback diário: ativo sob evento
+- scorecard expandido: ativado como camada oficial
+- XP / ranking / painéis: ativados como direção operacional do jogo
 
 ### Regra de implementação
 Uma camada por vez.
-Sem construir decoração antes do coração.
+O coração veio primeiro. Agora o jogo entra em fase visível.
 
 ### Modelo oficial do feedback do CEO Quest
 

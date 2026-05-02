@@ -270,25 +270,25 @@ Co-criação por **22 perguntas estruturadas** entre Alf e Alfredo no Telegram, 
 
 ## 4. Estado do CEO Quest
 
-### Fase atual: Fase 1 — Coração (streak silencioso)
+### Fase atual: Fase 2 — Tração operacional
 
 **O que está rodando:**
 - Detector heurístico de ação CEO em mensagens
 - Log diário registrando evidências
-- Cron de risk-check às 21h
-- Cron de close-day às 22h
-- Marco zero 7h do dia 1 de maio
+- Cron de risk-check diário
+- Cron de close-day diário
+- Tópico dedicado do CEO Quest (218)
+- Ritual semanal de domingo às 8h no tópico 218
+- Briefing matinal diário como próxima camada operacional ativa
+- Scorecard expandido como camada oficial de leitura do jogo
+- XP, ranking e painéis como direção ativa do CEO Quest
 
-**O que está documentado mas ainda não automatizado:**
-- Briefing matinal (Fase 2 — ativar após 1 semana de streak)
-- Ritual de domingo (Fase 3 — ativar após 2 semanas)
-- Sistema completo de XP, conquistas, ranks (Fase 4 — ativar após 1 mês)
-- Painel visual no LA Organizer (Fase 5 — 1-2 meses)
-
-**Princípios da Fase 1:**
-- Alfredo silencioso, só registra
-- Marco zero amanhã: "🎮 CEO Quest ON. Streak: 0 dias. Hoje começa. Bora?"
-- Validar detector em uso real durante 7 dias
+**Princípios da fase atual:**
+- Streak continua sendo o coração do sistema
+- Ritual de domingo está ativo como cadência semanal oficial
+- Briefing diário passa a fazer parte do jogo operacional
+- Scorecard e progressão deixam o jogo visível
+- CEO Quest continua isolado no tópico 218
 - Refinar antes de avançar para Fase 2
 
 ### Estrutura definida
