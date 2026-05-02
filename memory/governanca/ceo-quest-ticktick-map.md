@@ -337,43 +337,28 @@ Se não gerar task, só a memória registra.
 
 ---
 
-## 5. Formato oficial recomendado para o Ritual de Domingo no TickTick
+## 5. Formato oficial aprovado para o Ritual de Domingo no TickTick
 
-Com base nas regras mais novas de modelagem, o ritual precisa de padrão fixo.
+Com base no teste visual validado no app, o ritual tem padrão fixo.
 
-## Estrutura visual recomendada
+## Estrutura visual aprovada
 
 ### `title`
 `Ritual da Virada — Review + Planejamento da Semana`
 
 ### `desc`
-```text
-Responsável: Alf
+O **texto inteiro do ritual** fica no `desc`, com:
+- abertura
+- blocos pessoais
+- blocos CEO
+- fechamento
+- saída final do ritual
 
-Objetivo: revisar a semana anterior, fechar pendências e distribuir as prioridades da nova semana.
-```
-
-### `content`
-```text
-🌱 Bloco Pessoal
-1. Como me senti essa semana?
-2. O que conquistei?
-3. O que ficou faltando?
-4. Vivi alinhado com meus valores?
-5. O que espero da próxima semana?
-
-💼 Bloco CEO
-1. Como foi minha semana como CEO?
-2. Quais entregas saíram do time?
-3. Onde fui omisso?
-4. Os 3 projetos prioritários avançaram?
-5. O que precisa sair de mim na semana nova?
-
-📋 Fechamento e Planejamento
-- O que ficou pendente da semana anterior?
-- O que vai para a próxima semana?
-- Quais são as prioridades por dia?
-```
+### `items[]`
+Checklist leve apenas no final:
+- revisar a semana anterior
+- definir prioridades da nova semana
+- distribuir a semana no TickTick
 
 ### `tags`
 - `CEO Quest`
@@ -388,19 +373,21 @@ Objetivo: revisar a semana anterior, fechar pendências e distribuir as priorida
 - semanal domingo
 
 ### `reminders`
-Sugestão:
-- domingo 8h
-- ou sábado à noite + domingo 8h
+Padrão aprovado:
+- 30 minutos antes
+- na hora
 
-## Observação estrutural
-Para o ritual, **texto longo em `content` faz mais sentido do que checklist pesado**.
+## Regra estrutural oficial
+Para o Ritual da Virada, o padrão aprovado foi:
+- **não usar `content` como corpo principal**
+- usar o **texto completo no `desc`**
+- manter apenas um checklist final leve em `items[]`
 
-Mas, se o Alf aprovar visualmente, pode haver uma versão híbrida com `desc + content + 3 itens finais`, por exemplo:
-- revisar semana anterior
-- definir prioridades da nova semana
-- distribuir por dia
-
-Só não inventar isso sem validar visualmente antes.
+## Regra de operação
+- o card é criado/garantido no TickTick
+- a condução do ritual acontece no **tópico CEO Quest (218)**
+- o que for aprendido e decidido vai para `weekly-review.md`
+- as tarefas derivadas do ritual descem para o TickTick como execução da semana
 
 ---
 

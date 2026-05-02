@@ -465,11 +465,18 @@ No MVP simplificado:
 - trabalho: 3 prioridades por frente
 
 ### Função do Alfredo no ritual
-- conduzir por áudio, uma pergunta por vez
+- criar/garantir o card recorrente oficial do ritual no TickTick
+- conduzir por áudio, uma pergunta por vez, no tópico CEO Quest (218)
 - sem pressão
 - registrar respostas
 - consolidar resumo
 - atualizar scorecard e weekly review
+
+### Regra de execução do ritual
+- o **TickTick guarda o card oficial recorrente do Ritual da Virada**
+- o **tópico CEO Quest (218)** é onde o ritual é conduzido com o Alf
+- o padrão visual e o payload do ritual seguem a documentação TickTick especializada
+- este chat pessoal não é o cockpit do ritual; aqui é só configuração/manutenção
 
 ---
 

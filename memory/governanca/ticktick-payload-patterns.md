@@ -75,7 +75,7 @@ Evitar update incremental em tarefa sensível quando houver checklist.
 
 ---
 
-## 3. Pattern — Ritual semanal CEO Quest
+## 3. Pattern — Ritual semanal CEO Quest (padrão aprovado)
 
 ### Uso
 Revisão semanal pessoal + trabalho.
@@ -84,25 +84,48 @@ Revisão semanal pessoal + trabalho.
 - domingo de manhã
 - ritual recorrente
 - reflexão + planejamento
+- card oficial recorrente do Ritual da Virada
+
+### Status
+**Aprovado visualmente no app do TickTick pelo Alf.**
+
+### Estrutura aprovada
+- `title` curto
+- **todo o ritual no `desc`**
+- checklist final leve em `items[]`
+- recorrência semanal no domingo
+- lembretes no próprio horário do ritual
 
 ### Payload
 ```json
 {
-  "title": "Revisão da semana — pessoal e trabalho",
+  "title": "Ritual da Virada — Review + Planejamento da Semana",
   "projectId": "<PROJECT_ID>",
-  "content": "🌱 Pessoal\n1. Como me senti essa semana?\n2. O que conquistei?\n3. O que ficou faltando?\n4. Vivi alinhado com meus valores?\n5. O que espero da próxima semana?\n\n💼 Trabalho\n1. Como foi minha semana como CEO?\n2. Quais entregas saíram do time?\n3. Onde fui omisso?\n4. Os 3 projetos prioritários avançaram?\n5. O que precisa sair de mim na semana nova?",
-  "startDate": "2026-05-04T11:00:00+0000",
-  "dueDate": "2026-05-04T13:00:00+0000",
+  "desc": "🌅 RITUAL DA VIRADA\n\nEste é o momento de fechar a semana anterior com honestidade e entrar na nova semana com direção.\n\n━━━━━━━━━━━━━━━━━━━━━━\n🌱 BLOCO 1 — PESSOAL\n━━━━━━━━━━━━━━━━━━━━━━\n\n1. Como me senti essa semana?\n\n2. O que conquistei?\n\n3. O que ficou faltando?\n\n4. Vivi alinhado com meus valores?\n\n5. O que espero da próxima semana?\n\n━━━━━━━━━━━━━━━━━━━━━━\n🎯 BLOCO 2 — CEO\n━━━━━━━━━━━━━━━━━━━━━━\n\n1. Como foi minha semana como CEO?\n\n2. Quais entregas saíram do time?\n\n3. Onde fui omisso?\n\n4. Os 3 projetos prioritários avançaram?\n\n5. O que precisa sair de mim na semana nova?\n\n━━━━━━━━━━━━━━━━━━━━━━\n📋 BLOCO 3 — FECHAMENTO E PLANEJAMENTO\n━━━━━━━━━━━━━━━━━━━━━━\n\nPendências da semana anterior\nO que ficou aberto e não pode sumir?\n\nTransbordo para a nova semana\nO que precisa entrar na próxima semana?\n\nDistribuição da semana\nO que vai acontecer em cada dia?\n\n━━━━━━━━━━━━━━━━━━━━━━\n✅ SAÍDA FINAL DO RITUAL\n━━━━━━━━━━━━━━━━━━━━━━\n\nAo terminar este ritual, eu preciso sair com:\n\n• clareza sobre a semana passada\n• pendências visíveis\n• prioridades definidas\n• semana distribuída no TickTick",
+  "startDate": "2026-05-03T11:00:00+0000",
+  "dueDate": "2026-05-03T13:00:00+0000",
   "timeZone": "America/Sao_Paulo",
   "priority": 5,
   "reminders": ["TRIGGER:-PT30M", "TRIGGER:PT0S"],
   "repeatFlag": "RRULE:FREQ=WEEKLY;BYDAY=SU",
-  "tags": ["CEO Quest", "Ritual Semanal"]
+  "tags": ["CEO Quest", "Ritual Semanal", "Review", "Planejamento"],
+  "items": [
+    {"title": "Revisar a semana anterior", "status": 0},
+    {"title": "Definir prioridades da nova semana", "status": 0},
+    {"title": "Distribuir a semana no TickTick", "status": 0}
+  ]
 }
 ```
 
 ### Observação
-Versão ideal sem checklist. Ritual é melhor como card de texto longo.
+Para o Ritual da Virada, o padrão aprovado foi:
+- **não usar `content` como corpo principal**
+- usar o **texto completo no `desc`**
+- manter apenas um checklist leve no fim
+
+### Regra operacional
+Esse card é criado/garantido no TickTick e o ritual é conduzido no **tópico CEO Quest (218)**.
+A conversa acontece no tópico. O TickTick guarda o container recorrente oficial.
 
 ---
 
