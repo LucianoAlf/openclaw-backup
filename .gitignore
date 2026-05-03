@@ -17,3 +17,9 @@ memory/
 # Arquivos temporários
 *.tmp
 *.log
+
+# Sessões de browser (não versionar)
+storage_state.json
+*storage_state*
+browser_profile_*
+*.session.json
