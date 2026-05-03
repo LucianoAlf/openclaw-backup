@@ -354,6 +354,14 @@ O **texto inteiro do ritual** fica no `desc`, com:
 - fechamento
 - saída final do ritual
 
+### Bloco pessoal oficial
+As perguntas oficiais do bloco pessoal são:
+1. **Cumpri o que planejei pra semana ou ficou coisa importante de fora?**
+2. **O que me fez bem de verdade essa semana?**
+3. **O que me desgastou ou me tirou do eixo?**
+4. **O que eu negligenciei no meu pessoal que não posso repetir?**
+5. **O que eu não posso deixar de fazer nesta próxima semana?**
+
 ### `items[]`
 Checklist leve apenas no final:
 - revisar a semana anterior

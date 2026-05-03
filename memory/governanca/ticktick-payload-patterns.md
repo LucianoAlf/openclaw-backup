@@ -123,6 +123,18 @@ Para o Ritual da Virada, o padrão aprovado foi:
 - usar o **texto completo no `desc`**
 - manter apenas um checklist leve no fim
 
+### Bloco pessoal oficial (conteúdo)
+O conteúdo oficial do bloco pessoal do ritual passa a ser:
+1. **Cumpri o que planejei pra semana ou ficou coisa importante de fora?**
+2. **O que me fez bem de verdade essa semana?**
+3. **O que me desgastou ou me tirou do eixo?**
+4. **O que eu negligenciei no meu pessoal que não posso repetir?**
+5. **O que eu não posso deixar de fazer nesta próxima semana?**
+
+### Regra de segurança de formatação
+Como o card do TickTick já foi validado visualmente no app, alterações nesse bloco devem ser feitas **com extremo cuidado** para não quebrar a renderização aprovada.
+Se houver dúvida, o ajuste fino do texto dentro do card pode ser feito manualmente pelo Alf no TickTick, preservando a estrutura visual validada.
+
 ### Regra operacional
 Esse card é criado/garantido no TickTick e o ritual é conduzido no **tópico CEO Quest (218)**.
 A conversa acontece no tópico. O TickTick guarda o container recorrente oficial.

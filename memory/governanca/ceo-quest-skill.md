@@ -472,6 +472,15 @@ No MVP simplificado:
 - consolidar resumo
 - atualizar scorecard e weekly review
 
+### Bloco pessoal oficial do Ritual da Virada
+As 5 perguntas pessoais padrão passam a ser:
+
+1. **Cumpri o que planejei pra semana ou ficou coisa importante de fora?**
+2. **O que me fez bem de verdade essa semana?**
+3. **O que me desgastou ou me tirou do eixo?**
+4. **O que eu negligenciei no meu pessoal que não posso repetir?**
+5. **O que eu não posso deixar de fazer nesta próxima semana?**
+
 ### Regra de execução do ritual
 - o **TickTick guarda o card oficial recorrente do Ritual da Virada**
 - o **tópico CEO Quest (218)** é onde o ritual é conduzido com o Alf
