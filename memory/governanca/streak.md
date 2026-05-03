@@ -20,3 +20,4 @@
 |---|---|---:|---|
 | 2026-04-30 | contou | 1 | 21:47 — manda áudio pro Quintela cobrando o LA Educa |
 | 2026-05-01 | quebrou | 0 | sem ação CEO registrada |
+| 2026-05-02 | congelado | 0 | sábado — streak congelada |
