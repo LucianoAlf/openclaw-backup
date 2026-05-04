@@ -3,7 +3,7 @@
 ## Status atual
 - Streak ativo: 0 dias
 - Maior streak histórico: 1 dias
-- Última quebra: 2026-05-01 (motivo: sem ação CEO registrada)
+- Última quebra: 2026-05-03 (motivo: sem ação CEO registrada)
 - Última pausa: —
 - Regra ativa: um dia conta se houver pelo menos 1 evidência concreta de ação CEO sobre alguém do círculo de responsabilidade, registrada pelo Alfredo no próprio dia, com cobrança/verificação/direção real.
 
@@ -21,3 +21,4 @@
 | 2026-04-30 | contou | 1 | 21:47 — manda áudio pro Quintela cobrando o LA Educa |
 | 2026-05-01 | quebrou | 0 | sem ação CEO registrada |
 | 2026-05-02 | congelado | 0 | sábado — streak congelada |
+| 2026-05-03 | quebrou | 0 | sem ação CEO registrada |
