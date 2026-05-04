@@ -8,7 +8,7 @@
 
 - [ ] **WhatsApp** — número dedicado (chip/eSIM) para conectar no OpenClaw. Número pessoal Alf: 5521981278047
 - [x] **Agenda** — TickTick é a agenda do Alf (não Google Calendar)
-- [ ] **Crons TickTick (grupo HQ Alf)** — verificar se os 3 crons criados na sessão do grupo estão ativos e funcionando
+- [x] **Crons TickTick (grupo HQ Alf)** — revisados e endurecidos para consulta real à API do TickTick, com timezone America/Sao_Paulo e regra explícita de não inventar resposta (2026-05-04)
 - [ ] **Projetos ativos** — atualizar status de cada projeto em `memory/projects/` com detalhes mais precisos (roadmap, próximos passos reais)
 
 ## Aguardando Terceiros
