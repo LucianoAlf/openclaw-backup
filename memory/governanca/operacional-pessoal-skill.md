@@ -87,3 +87,11 @@ Antes de qualquer novo compromisso:
 - verificar colisão direta
 - verificar se a duração estimada invade outro compromisso
 - se houver dúvida, perguntar antes de gravar
+
+## Regra de testes e estabilidade no WhatsApp
+
+Quando o gateway WhatsApp estiver oscilando ou quando um cron estiver em validação manual:
+- evitar disparar o mesmo cron várias vezes em sequência curta
+- validar uma saída antes de forçar outra
+- se houver duplicidade após reconnect, tratar primeiro como risco de transporte/execução antes de concluir que o prompt está duplicando sozinho
+- só aprofundar investigação de idempotência se a duplicidade reaparecer sem novo disparo manual
