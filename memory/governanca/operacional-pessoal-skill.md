@@ -67,6 +67,8 @@ Listas principais:
 5. Entregar mensagem limpa, sem prefixo técnico.
 6. Se não houver itens numa seção, dizer isso explicitamente.
 7. Ao criar novo compromisso a partir de print/áudio, checar conflito antes.
+8. Deduplicar itens semanticamente idênticos no briefing e nas pendências.
+9. A resposta final deve conter apenas o texto que o Alf deve receber, sem cabeçalho operacional escondido.
 
 ## Regra de captura de compromisso
 
