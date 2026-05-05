@@ -63,21 +63,25 @@ Regra-mãe:
 
 ---
 
-## 4. Os 3 reinos do painel principal
+## 4. Reinos existem, mas não mandam mais na manhã
 
-Os 3 reinos que precisam aparecer no painel principal diário são:
+Os reinos continuam como camada estratégica do CEO Quest.
 
-1. 🌱 **Pessoal Alf**
-2. 🎓 **Pedagógico**
-3. 💰 **Comercial + Marketing**
+Eles servem para:
+- leitura de longo prazo
+- scorecard
+- narrativa do jogo
+- organização de frentes de governança
 
-Critério:
+Mas **não** são mais o molde obrigatório do briefing matinal.
 
-- são os reinos onde a presença do Alf é mais insubstituível
-- são os reinos que mais movem a streak central
-- são os reinos que mais mudam o jogo quando ele revisita com constância
-
-Os outros reinos ficam em camadas secundárias de consulta e governança, conforme cadência.
+Na manhã do CEO Quest, o que manda é:
+1. streak
+2. hoje no tabuleiro
+3. pendência viva
+4. ação CEO do dia
+5. próxima ação
+6. performance
 
 ---
 
@@ -444,6 +448,42 @@ Quando Boss cair:
 
 ---
 
+
+## 10.1 Separação obrigatória entre trilhas
+
+### Trilha operacional pessoal
+Não é CEO Quest.
+
+Existe para entregar:
+- compromissos do dia
+- contas do dia
+- leitura curta da semana
+- pendências do dia anterior
+- fechamento operacional pessoal
+
+Horários atuais:
+- 7h = briefing operacional pessoal
+- 7h30 = pendências do dia anterior
+- 19h30 = fechamento operacional pessoal
+
+### Trilha CEO Quest
+É a trilha de jogo e presença CEO.
+
+Entrega:
+- briefing matinal de jogo
+- fechamento CEO do dia
+- ritual da virada
+- leitura de streak, tabuleiro, pendência viva e performance
+
+Horários atuais:
+- 8h = briefing CEO Quest
+- 20h = fechamento CEO Quest
+- domingo 8h = ritual da virada
+
+### Regra-mãe
+As duas trilhas consultam TickTick real, mas com leituras diferentes.
+Nunca misturar briefing operacional pessoal com mensagem do jogo.
+
 ## 11. Ritual de domingo — 7h
 
 ### Janela ideal
@@ -680,8 +720,8 @@ Na fase 1, o Alf deve sentir o streak crescer organicamente.
 O CEO Quest deve acontecer no canal onde o Alf realmente responde melhor.
 
 Estado atual:
-- **WhatsApp** = canal principal do briefing matinal e da tração cotidiana
-- **Telegram** = pode continuar como canal complementar, histórico ou cockpit secundário enquanto fizer sentido
+- **WhatsApp** = canal principal de toda a operação do CEO Quest
+- **Telegram 218** = descontinuado como cockpit principal do jogo
 
 No canal principal do jogo:
 - briefing matinal

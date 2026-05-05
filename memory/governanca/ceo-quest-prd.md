@@ -107,10 +107,13 @@ Para contar como ação CEO, a interação precisa ter pelo menos 1 destes 3 ele
 Diariamente às 20h, o sistema deve verificar se houve ação CEO no dia e atualizar a streak.
 
 **RF-007 — Alerta de risco**
-Diariamente às 19h, se nenhuma ação CEO foi registrada, o sistema deve enviar alerta com 3 opções:
-- Mandar áudio agora
-- Registrar ação que aconteceu offline
-- Aceitar pausa (com motivo)
+No desenho atual, o alerta intermediário das 19h foi desativado para não competir com a trilha operacional pessoal das 19h30 e com o fechamento CEO Quest das 20h.
+
+Regra vigente:
+- o sistema pode reintroduzir pré-alerta no futuro se houver necessidade real
+- por enquanto, o fluxo oficial da noite é:
+  - 19h30 = fechamento operacional pessoal
+  - 20h = fechamento CEO Quest
 
 **RF-008 — Pausa vs Quebra**
 - **Pausa:** comunicada antes ou no dia, motivo extraordinário, máx 5 dias por trimestre, streak congela
@@ -156,10 +159,13 @@ Sábado não envia briefing. Descanso é parte do jogo.
 
 ### 2.3 Ritual de domingo
 
-**RF-015 — Estrutura em 3 camadas**
-- **8h-9h** — Pessoal (corpo + mente): academia, meditação, leitura
-- **9h-9h30** — Fechamento: 5 perguntas pessoais + 5 perguntas CEO (versão completa: 7+7)
-- **9h30-10h** — Planejamento: hábitos da semana + 3 prioridades por frente
+**RF-015 — Estrutura do ritual de domingo**
+- condução no WhatsApp às 8h
+- 5 perguntas pessoais + 5 perguntas CEO
+- revisão da semana anterior
+- pendências que ficaram
+- o que vai para a próxima semana
+- distribuição das prioridades da semana por dia
 
 **RF-016 — Condução por áudio**
 Alfredo conduz o ritual uma pergunta por vez. Alf responde por áudio. Sistema registra.
@@ -168,14 +174,11 @@ Alfredo conduz o ritual uma pergunta por vez. Alf responde por áudio. Sistema r
 Ao final do ritual, sistema gera arquivo `weekly-review-YYYY-MM-DD.md` com todas as respostas + métricas + 3 prioridades.
 
 **RF-018 — Fechamento diário oficial**
-Às 22h, o sistema deve devolver no tópico CEO Quest o fechamento oficial do dia com:
+Às 20h, o sistema deve devolver no WhatsApp o fechamento oficial do dia do CEO Quest, separado da trilha operacional pessoal, com:
 - streak
 - presença CEO
-- quest principal do dia
-- progresso por checklist simples
 - o que avançou
 - o que travou
-- status das campanhas
 - próxima ação obrigatória
 - provocação curta do dia
 
@@ -703,8 +706,8 @@ Tarefas continuam no TickTick. CEO Quest é camada de gamificação acima — n�
 O CEO Quest deve operar no canal em que o Alf realmente responde melhor no dia a dia.
 
 Estado atual da decisão:
-- **WhatsApp** = canal principal do briefing matinal e da tração cotidiana do jogo
-- **Telegram** = pode continuar existindo como canal secundário, histórico ou cockpit complementar enquanto fizer sentido
+- **WhatsApp** = canal principal de toda a operação do CEO Quest
+- **Telegram tópico 218** = descontinuado como cockpit principal do jogo
 - Painel Web continua sendo camada futura de visualização contemplativa, não operação principal
 
 Regra de produto:
