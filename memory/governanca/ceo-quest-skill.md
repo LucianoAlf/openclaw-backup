@@ -347,15 +347,28 @@ Sem honestidade, o jogo morre.
 
 ### Papel do briefing
 É o touchpoint mais importante do MVP.
-Se for chato, o jogo morre.
-Se for bom, o jogo puxa o Alf espontaneamente.
+Se for chato, artificial ou genérico, o jogo morre.
+Se for real, útil e ancorado no tabuleiro vivo, o jogo puxa o Alf espontaneamente.
 
-### Template padrão (segunda a quinta)
+### Regra central da manhã
+O briefing matinal deve nascer do:
+- TickTick de hoje
+- backlog vivo
+- pendências/atrasos
+- itens planejados na semana
+- performance recente do jogo
+
+### O que sai do centro
+Os reinos continuam existindo como camada estratégica do CEO Quest, mas **não são mais o molde obrigatório do briefing diário**.
+
+### Estrutura padrão (segunda a quinta)
 - saudação curta com dia e data
 - streak no topo
-- 3 reinos principais
-- 1 linha por reino
-- ação de 30 segundos
+- hoje no tabuleiro
+- pendência viva
+- ação CEO do dia
+- próxima ação
+- leitura curta de performance
 - termina com “Bora?”
 
 ### Template ideal
@@ -366,24 +379,32 @@ Se for bom, o jogo puxa o Alf espontaneamente.
 
 ━━━━━━━━━━━━━━━━━━
 
-🎯 Pra hoje:
+🎯 Hoje no tabuleiro
+[2-4 linhas com o que realmente está vivo hoje]
 
-🎓 Pedagógico
-[headline curta]
+⚠️ Pendência viva
+[o que ficou pendente/atrasado e precisa de atenção]
 
-💰 Comercial
-[headline curta]
+🎯 Ação CEO do dia
+[ação concreta de presença CEO]
 
-🌱 Pessoal
-[headline curta]
+⏭️ Próxima ação
+[o próximo passo imediato e útil]
 
-━━━━━━━━━━━━━━━━━━
-
-⚡️ Ação de 30 segundos:
-[ação sugerida]
+📊 Performance
+[leitura curta de como o jogo está andando]
 
 Bora?
 ```
+
+### Regras obrigatórias
+- não inventar eixo do dia no chute
+- não florear
+- não virar agenda genérica
+- não listar a semana inteira
+- priorizar o que está vivo hoje no TickTick
+- se houver atraso ou item empurrado, isso entra antes de interpretação bonita
+- a ação CEO do dia deve nascer de algo real
 
 ### Sexta
 - versão de quick check
@@ -655,10 +676,14 @@ Na fase 1, o Alf deve sentir o streak crescer organicamente.
 
 ## 13. Operação em 3 camadas
 
-### 1. Telegram — hub central
-É onde o jogo acontece.
+### 1. Canal principal do jogo
+O CEO Quest deve acontecer no canal onde o Alf realmente responde melhor.
 
-No Telegram:
+Estado atual:
+- **WhatsApp** = canal principal do briefing matinal e da tração cotidiana
+- **Telegram** = pode continuar como canal complementar, histórico ou cockpit secundário enquanto fizer sentido
+
+No canal principal do jogo:
 - briefing matinal
 - provocações do Alfredo
 - quick check de sexta

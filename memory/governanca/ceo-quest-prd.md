@@ -126,18 +126,27 @@ Sistema deve celebrar marcos: 7, 14, 30, 60, 100 dias com mensagem dedicada e b�
 ### 2.2 Briefing matinal
 
 **RF-011 — Briefing diário (seg-quinta)**
-Diariamente às 8h da manhã (segunda a quinta), o sistema deve enviar mensagem no tópico CEO Quest com:
+Diariamente às 8h da manhã (segunda a quinta), o sistema deve enviar o briefing do CEO Quest no canal principal ativo do jogo, com base no TickTick real e no backlog vivo.
+
+Estrutura obrigatória:
 - Streak atual em destaque
-- Resumo de 3 reinos prioritários (Pessoal, Pedagógico, Comercial+Marketing) — 1 linha cada
-- Ação concreta sugerida (de 30 segundos)
-- Convite "Bora?" no final
+- Hoje no tabuleiro
+- Pendência viva
+- Ação CEO do dia
+- Próxima ação
+- Leitura curta de performance
+
+Regras:
+- Não inventar eixo do dia no chute
+- Não usar reinos fixos como molde obrigatório da manhã
+- O briefing deve nascer do que está vivo hoje no TickTick, do que ficou pendente/atrasado e do que foi planejado na semana
 
 **RF-012 — Quick check de sexta**
 Sexta-feira, formato diferenciado:
-- Resumo da semana
-- Pendência crítica única
-- Pergunta de honestidade: "foi CEO presente essa semana?"
-- Ação de fim de semana
+- resumo da semana
+- pendência crítica única
+- pergunta de honestidade: "foi CEO presente essa semana?"
+- ação de fechamento/continuidade
 
 **RF-013 — Convite de domingo**
 Domingo 8h, convite para Ritual da Virada com tempo estimado e camadas.
@@ -690,8 +699,16 @@ CEO Quest é repositório próprio (`github.com/LucianoAlf/ceo-quest`), não sub
 ### DP-003 — TickTick como fonte de verdade operacional
 Tarefas continuam no TickTick. CEO Quest é camada de gamificação acima — não duplica gestão de tarefas.
 
-### DP-004 — Telegram como hub conversacional
-Toda interação ativa do jogo (briefing, ritual, marcos) acontece no Telegram, tópico 218. Painel Web é pra visualização contemplativa, não pra operação.
+### DP-004 — Canal principal do jogo orientado por aderência real
+O CEO Quest deve operar no canal em que o Alf realmente responde melhor no dia a dia.
+
+Estado atual da decisão:
+- **WhatsApp** = canal principal do briefing matinal e da tração cotidiana do jogo
+- **Telegram** = pode continuar existindo como canal secundário, histórico ou cockpit complementar enquanto fizer sentido
+- Painel Web continua sendo camada futura de visualização contemplativa, não operação principal
+
+Regra de produto:
+A aderência do Alf ao jogo vale mais que a elegância arquitetural de manter o cockpit no Telegram.
 
 ### DP-005 — Markdown como storage primário
 Dados ficam em arquivos `.md` no workspace do Alfredo. Versionáveis, legíveis, sem dependência de banco.

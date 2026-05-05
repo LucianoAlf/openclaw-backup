@@ -86,9 +86,17 @@ Ele é o **container operacional recorrente** da revisão semanal.
 O briefing é melhor como:
 - mensagem de cockpit
 - provocação diária
-- leitura do estado do jogo
+- leitura do estado real do tabuleiro
 
 Se virar um card todo dia, polui o TickTick.
+
+### Regra nova
+O briefing matinal deve ser construído a partir de:
+- o que está no TickTick pra hoje
+- o que ficou pendente/atrasado
+- o que foi planejado na semana
+- qual é a ação CEO real do dia
+- como o Alf está performando no jogo
 
 ### Exceção
 Se o briefing gerar ação concreta, aí sim nasce task.
@@ -505,9 +513,17 @@ Tudo que virar compromisso, tarefa ou frente real deve ser reclassificado para a
 
 ## 10. Regra semântica por canal
 
-- **WhatsApp** = trilha pessoal (`Pessoal Alf`, `Contas Pessoais`)
-- **Telegram tópico 218** = trilha CEO Quest
+### Estado anterior
+- WhatsApp = trilha pessoal
+- Telegram tópico 218 = trilha CEO Quest
+
+### Estado atual da decisão
+- **WhatsApp** = canal principal do CEO Quest matinal e da tração cotidiana do jogo
+- **Telegram** = canal complementar / histórico / cockpit secundário enquanto fizer sentido
 - **outras frentes de trabalho** podem ganhar tópicos próprios quando tiverem cadência e contexto suficiente (ex.: Emusys Academy)
+
+### Regra prática
+A aderência real do Alf ao jogo vale mais do que manter o cockpit no Telegram por elegância arquitetural.
 
 ## 11. Próximo passo recomendado
 
