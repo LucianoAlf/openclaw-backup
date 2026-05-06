@@ -5,7 +5,7 @@ import sys
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 from zoneinfo import ZoneInfo
 from urllib.request import Request, urlopen
 
@@ -25,8 +25,12 @@ class TaskView:
     project_name: str
     title: str
     status: int
+    kind: Optional[str]
+    timezone: Optional[str]
+    is_all_day: bool
     local_date: Optional[str]
-    local_time: Optional[str]
+    start_local: Optional[str]
+    end_local: Optional[str]
     raw_due: Optional[str]
     raw_start: Optional[str]
 
@@ -63,14 +67,18 @@ def parse_dt(value: Optional[str]) -> Optional[datetime]:
 def normalize(task: dict, project_key: str, project_name: str) -> TaskView:
     due = parse_dt(task.get('dueDate'))
     start = parse_dt(task.get('startDate'))
-    chosen = due or start
+    chosen = start or due
     return TaskView(
         project_key=project_key,
         project_name=project_name,
         title=task.get('title', ''),
         status=int(task.get('status', 0)),
+        kind=task.get('kind'),
+        timezone=task.get('timeZone'),
+        is_all_day=bool(task.get('isAllDay')),
         local_date=chosen.strftime('%Y-%m-%d') if chosen else None,
-        local_time=chosen.strftime('%H:%M') if chosen and not task.get('isAllDay') else None,
+        start_local=start.strftime('%H:%M') if start and not task.get('isAllDay') else None,
+        end_local=due.strftime('%H:%M') if due and not task.get('isAllDay') else None,
         raw_due=task.get('dueDate'),
         raw_start=task.get('startDate'),
     )
