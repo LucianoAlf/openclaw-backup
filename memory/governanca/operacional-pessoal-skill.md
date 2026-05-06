@@ -52,6 +52,15 @@ Entregar:
 
 TickTick real via API oficial.
 
+A leitura da agenda só é considerada válida quando reconstruída com:
+- `startDate` = início
+- `dueDate` = fim
+- timezone `America/Sao_Paulo`
+- cobertura de itens `TEXT` + `CHECKLIST`
+- leitura de `items[]` quando houver checklist interno
+
+Leituras parciais/cruas da API não devem ser usadas para responder compromissos críticos.
+
 Listas principais:
 - Contas Pessoais — `67158c51db647de6536f46dc`
 - Pessoal Alf — `643c0518525047536b6594d0`

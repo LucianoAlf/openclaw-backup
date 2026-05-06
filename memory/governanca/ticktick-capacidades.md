@@ -29,6 +29,16 @@ Hoje está **confirmado em campo** que a API v1 consegue sustentar, para o CEO Q
 ### Conclusão central
 A API v1 oficial já resolve uma parte grande do backend operacional do CEO Quest sem depender de API não-oficial.
 
+### Regra crítica para leitura da agenda (validada em 2026-05-06)
+Para a agenda pessoal do Alf bater com o app do TickTick, a renderização precisa usar:
+- `startDate` como início
+- `dueDate` como fim
+- conversão para `America/Sao_Paulo`
+- inclusão de itens `TEXT` e `CHECKLIST`
+- leitura de `items[]` quando o card tiver checklist interno
+
+Usar `dueDate` como referência principal única quebra a agenda e omite/bloca itens recorrentes e blocos de checklist.
+
 ---
 
 ## 2. Capacidades confirmadas
