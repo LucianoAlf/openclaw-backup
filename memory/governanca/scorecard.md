@@ -1,7 +1,7 @@
 # CEO Quest Scorecard
 
 ## MVP ativo
-- Hub central: Telegram
+- Hub central: WhatsApp
 - Banco operacional: TickTick
 - Automação ativa: streak, briefing, ritual
 - Scorecard expandido: ativo
@@ -13,7 +13,7 @@
 - registrar ritual de domingo
 - mostrar prioridades por reino
 - servir de base para leitura executiva, auditoria e aconselhamento
-- sustentar o fechamento diário das 22h
+- sustentar o fechamento diário das 20h
 - sustentar consultas sob demanda com status, barra e próxima ação
 
 ## Regras oficiais de leitura
