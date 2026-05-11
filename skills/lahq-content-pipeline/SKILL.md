@@ -70,17 +70,19 @@ A skill não é receita fixa. Use direção de arte.
 
 ### Logo como composição
 
-A logo/símbolo pode ser recurso gráfico, não marca d’água fixa:
+A logo completa oficial é assinatura de marca. O símbolo solo é recurso gráfico.
 
-- variar tamanho, posição, opacidade, corte e rotação leve;
+- manter a logomarca completa oficial presente e legível, especialmente em School;
+- não usar o símbolo `LA` grande como substituto da logomarca completa;
+- variar tamanho, posição, opacidade, corte e rotação leve do símbolo solo;
 - usar versão colorida, vazada ou monocromática conforme contraste;
-- deixar grande, vazando a tela, atrás de halftone/glow/gradiente/sombra;
+- deixar o símbolo solo grande, vazando a tela, atrás de halftone/glow/gradiente/sombra;
 - fazer parecer parte da composição, não carimbo repetido;
 - antes de renderizar, definir posição/escala do símbolo card a card; se vários cards ficarem com LA no mesmo lado/tamanho, reprovar e variar.
 
 ### Imagens
 
-Imagens são recurso de impacto, não regra de quantidade.
+Imagens são recurso de impacto, não regra de quantidade — e não são lugar para economizar quando o tema pede.
 
 A capa precisa vender o carrossel: se o tema pedir, comece com uma foto forte, grande, desejável, com cara de campanha.
 
@@ -93,7 +95,9 @@ Escolha livremente conforme conceito:
 - collage quando fizer sentido;
 - card tipográfico sem foto.
 
-Não fixar “2 fotos”, “4 fotos” ou alternância com/sem foto. Use quantas imagens a direção pedir. O erro é repetir fórmula visual sem intenção. A imagem deve vender sensação, energia e desejo.
+Não fixar “2 fotos”, “4 fotos” ou alternância com/sem foto. Use quantas imagens a direção pedir. O erro é repetir fórmula visual sem intenção.
+
+Para carrossel técnico/instrumental, evitar reaproveitar a mesma imagem em vários cards. Cada lâmina deve ter função visual própria quando possível: hero, macro da técnica, detalhe do instrumento, professor/aluno, palco, prática/metrônomo, CTA. A imagem deve vender sensação, energia e desejo.
 
 ### Carrossel contínuo
 
@@ -109,7 +113,7 @@ Quando fizer sentido, criar sensação de arte única recortada em cards:
 1. **Nina / direção** — conceito, objetivo, estrutura, ritmo e direção visual.
 2. **Theo / copy** — títulos curtos, corpo enxuto, CTA no tom da marca.
 3. **Luna / imagem** — gerar/selecionar imagens sem texto, sem logo e sem watermark.
-4. **Diego / montagem** — compor em `1080x1440`, usando assets oficiais, DS e refs.
+4. **Diego / montagem** — compor em `1080x1440`, usando assets oficiais, DS e refs. Evitar vício de componente: placa/card pink pode aparecer, mas precisa profundidade, sombra, variação de escala/ângulo e não pode virar muleta repetida.
 5. **Tina + Nina-approve / QA** — checar marca, legibilidade, coerência visual e entrega. Olhar o preview grid antes de enviar; se aparecer padrão mecânico repetido (ex.: LA sempre no mesmo canto/tamanho), revisar.
 
 ## QA final antes de entregar
@@ -121,7 +125,7 @@ Perguntas obrigatórias:
 - A capa dá vontade de passar pro lado?
 - A primeira lâmina tem força de campanha ou parece template?
 - A composição varia de verdade entre os cards?
-- O uso de foto está a favor da ideia, sem fórmula fixa?
+- O uso de foto está a favor da ideia, sem fórmula fixa nem reaproveitamento preguiçoso?
 - O símbolo/logo está integrado à direção de arte, não carimbado?
 - A marca é reconhecível mesmo sem explicar?
 - O texto é legível no celular?
