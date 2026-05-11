@@ -1,0 +1,15 @@
+{
+  "output": "/root/.openclaw/workspace/outputs/la-equacoes-valor-v1",
+  "slides": [
+    "/root/.openclaw/workspace/outputs/la-equacoes-valor-v1/png/la-equacoes-valor-01.png",
+    "/root/.openclaw/workspace/outputs/la-equacoes-valor-v1/png/la-equacoes-valor-02.png",
+    "/root/.openclaw/workspace/outputs/la-equacoes-valor-v1/png/la-equacoes-valor-03.png",
+    "/root/.openclaw/workspace/outputs/la-equacoes-valor-v1/png/la-equacoes-valor-04.png",
+    "/root/.openclaw/workspace/outputs/la-equacoes-valor-v1/png/la-equacoes-valor-05.png",
+    "/root/.openclaw/workspace/outputs/la-equacoes-valor-v1/png/la-equacoes-valor-06.png",
+    "/root/.openclaw/workspace/outputs/la-equacoes-valor-v1/png/la-equacoes-valor-07.png",
+    "/root/.openclaw/workspace/outputs/la-equacoes-valor-v1/png/la-equacoes-valor-08.png"
+  ],
+  "preview": "/root/.openclaw/workspace/outputs/la-equacoes-valor-v1/preview-grid.jpg",
+  "note": "NotebookLM auth expired; used local memory/context."
+}

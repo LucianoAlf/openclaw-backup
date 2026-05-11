@@ -1,0 +1,20 @@
+{
+  "output": "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v4-correct-ds",
+  "slides": [
+    "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v4-correct-ds/png/la-school-respiracao-rock-v4-01.png",
+    "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v4-correct-ds/png/la-school-respiracao-rock-v4-02.png",
+    "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v4-correct-ds/png/la-school-respiracao-rock-v4-03.png",
+    "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v4-correct-ds/png/la-school-respiracao-rock-v4-04.png",
+    "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v4-correct-ds/png/la-school-respiracao-rock-v4-05.png",
+    "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v4-correct-ds/png/la-school-respiracao-rock-v4-06.png",
+    "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v4-correct-ds/png/la-school-respiracao-rock-v4-07.png",
+    "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v4-correct-ds/png/la-school-respiracao-rock-v4-08.png"
+  ],
+  "preview": "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v4-correct-ds/preview-grid.jpg",
+  "rules": [
+    "NO light/beige theme",
+    "official SVG logo only",
+    "DS v2 Prompt/pink/dark",
+    "footer @lamusicschool"
+  ]
+}

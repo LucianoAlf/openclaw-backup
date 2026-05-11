@@ -930,3 +930,9 @@ Ele existe para criar um CEO que:
 
 Se o jogo parar de servir a essa transformação, ele perdeu a função.
 Se servir, ele deixa de ser sistema e vira identidade.
+
+## Nota operacional — Ritual da Virada
+
+- Execução padrão de domingo: fechamento semanal, pendências, próxima semana e distribuição por dia.
+- A entrega ao Alf deve sair limpa, sem prefixos técnicos, sem destino e sem instruções de envio.
+- O ritual continua separado da trilha operacional pessoal.

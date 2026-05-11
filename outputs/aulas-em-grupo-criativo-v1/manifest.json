@@ -1,0 +1,15 @@
+{
+  "output": "/root/.openclaw/workspace/outputs/aulas-em-grupo-criativo-v1",
+  "slides": [
+    "/root/.openclaw/workspace/outputs/aulas-em-grupo-criativo-v1/png/aulas-em-grupo-01.png",
+    "/root/.openclaw/workspace/outputs/aulas-em-grupo-criativo-v1/png/aulas-em-grupo-02.png",
+    "/root/.openclaw/workspace/outputs/aulas-em-grupo-criativo-v1/png/aulas-em-grupo-03.png",
+    "/root/.openclaw/workspace/outputs/aulas-em-grupo-criativo-v1/png/aulas-em-grupo-04.png",
+    "/root/.openclaw/workspace/outputs/aulas-em-grupo-criativo-v1/png/aulas-em-grupo-05.png",
+    "/root/.openclaw/workspace/outputs/aulas-em-grupo-criativo-v1/png/aulas-em-grupo-06.png",
+    "/root/.openclaw/workspace/outputs/aulas-em-grupo-criativo-v1/png/aulas-em-grupo-07.png",
+    "/root/.openclaw/workspace/outputs/aulas-em-grupo-criativo-v1/png/aulas-em-grupo-08.png"
+  ],
+  "preview": "/root/.openclaw/workspace/outputs/aulas-em-grupo-criativo-v1/preview-grid.jpg",
+  "note": "NotebookLM auth expired; content based on web research/general pedagogy."
+}

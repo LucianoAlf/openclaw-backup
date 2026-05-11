@@ -1,0 +1,16 @@
+{
+  "kind": "LAHQ carousel final",
+  "brand": "LA Music School",
+  "format": "Instagram carousel 4:5 1080x1350",
+  "slides": [
+    "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v3/png/la-school-respiracao-rock-carousel-01.png",
+    "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v3/png/la-school-respiracao-rock-carousel-02.png",
+    "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v3/png/la-school-respiracao-rock-carousel-03.png",
+    "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v3/png/la-school-respiracao-rock-carousel-04.png",
+    "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v3/png/la-school-respiracao-rock-carousel-05.png",
+    "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v3/png/la-school-respiracao-rock-carousel-06.png",
+    "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v3/png/la-school-respiracao-rock-carousel-07.png",
+    "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v3/png/la-school-respiracao-rock-carousel-08.png"
+  ],
+  "pipeline": "/root/.openclaw/workspace/outputs/la-school-respiracao-rock-v3/LAHQ_PIPELINE.md"
+}

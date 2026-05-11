@@ -1,5 +1,26 @@
 # Log Diário — CEO Quest
 
+## 2026-05-10
+
+### Ações de cobrança/verificação com time
+- (vazio)
+
+### Decisões tomadas
+- (vazio)
+
+### Tarefas criadas/atualizadas
+- (vazio)
+
+### Ações pessoais
+- (vazio)
+
+### Ritual de domingo
+- 11:00 — Ritual da Virada iniciado; revisão semanal em andamento; aguardando respostas do Alf
+- 20:00 — Fechamento CEO Quest em andamento; fechamento da semana ainda não consolidado; aguardando respostas do Alf
+
+### Skips / pausas
+- (vazio)
+
 ## 2026-05-09
 
 ### Ações de cobrança/verificação com time

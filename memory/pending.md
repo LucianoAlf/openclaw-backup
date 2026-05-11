@@ -1,5 +1,9 @@
 # Pendências
 
+- Status: pacote instalado, MCP registrado, skill instalada, Gateway reiniciado.
+- Opções: (1) autorização explícita do Alf para habilitar o browser gerenciado do OpenClaw em config protegida; (2) autenticação manual por arquivo de cookies em canal seguro.
+# Pendências
+
 > Itens aguardando input, acesso ou decisão.
 
 ---

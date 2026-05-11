@@ -1,0 +1,10 @@
+from pathlib import Path
+p=Path('outputs/la-kids-aulas-em-turma-v4-LAHQ/carousel.html')
+s=p.read_text()
+s=s.replace('font-size:39px;line-height:1.08', 'font-size:44px;line-height:1.03')
+s=s.replace('font-size:44px}.button', 'font-size:46px}.button')
+s=s.replace('width:360px;height:370px;', 'width:410px;height:410px;')
+s=s.replace('right:55px;bottom:135px;', 'right:45px;bottom:125px;')
+s=s.replace('bottom:42px;', 'bottom:54px;')
+p.write_text(s)
+print('polished')
