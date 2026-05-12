@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset='utf-8'><style>
+@font-face { font-family:Prompt; src:url('file:///root/.openclaw/workspace/repos/la-hq-agents/shared/brand-assets/fonts/school/Prompt-Regular.ttf') format('truetype'); font-weight:400; }
+@font-face { font-family:Prompt; src:url('file:///root/.openclaw/workspace/repos/la-hq-agents/shared/brand-assets/fonts/school/Prompt-Medium.ttf') format('truetype'); font-weight:500; }
+@font-face { font-family:Prompt; src:url('file:///root/.openclaw/workspace/repos/la-hq-agents/shared/brand-assets/fonts/school/Prompt-SemiBold.ttf') format('truetype'); font-weight:600; }
+@font-face { font-family:Prompt; src:url('file:///root/.openclaw/workspace/repos/la-hq-agents/shared/brand-assets/fonts/school/Prompt-Bold.ttf') format('truetype'); font-weight:700; }
+@font-face { font-family:Prompt; src:url('file:///root/.openclaw/workspace/repos/la-hq-agents/shared/brand-assets/fonts/school/Prompt-Black.ttf') format('truetype'); font-weight:900; }
+*{box-sizing:border-box} html,body{margin:0;width:1080px;height:1440px;overflow:hidden;font-family:Prompt,sans-serif}
+.slide{position:relative;width:1080px;height:1440px;overflow:hidden;color:#fff;background:#0A0A0A;isolation:isolate} .slide.light{background:#E8E8E8;color:#0A0A0A} .slide.pink{background:linear-gradient(145deg,#E91451 0%,#B01545 100%);color:#fff}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.18) saturate(1.12);z-index:-8} .dark .bg{opacity:.62} .pink .bg{opacity:.18;mix-blend-mode:multiply} .light .bg{opacity:.19;filter:grayscale(1) contrast(1.2)}
+.overlay{position:absolute;inset:0;z-index:-7;background:radial-gradient(circle at 70% 24%,rgba(233,20,81,.42),transparent 32%),linear-gradient(180deg,rgba(10,10,10,.05),rgba(10,10,10,.82))} .light .overlay{background:radial-gradient(circle at 80% 18%,rgba(233,20,81,.20),transparent 34%)} .pink .overlay{background:radial-gradient(circle at 75% 18%,rgba(255,255,255,.16),transparent 30%)}
+.logo{position:absolute;top:54px;left:62px;width:250px;max-height:90px;z-index:20} .logo.center{left:50%;transform:translateX(-50%);width:310px}
+/* Regra refinada: 1 LA oficial dominante por card, não repetição solta. */
+.wm{position:absolute;pointer-events:none;z-index:-4;object-fit:contain} .wm.right-big{width:760px;right:-260px;top:170px;transform:rotate(-8deg);opacity:.115} .wm.right-soft{width:680px;right:-210px;top:245px;transform:rotate(-6deg);opacity:.095} .wm.center-soft{width:760px;right:-180px;top:350px;transform:rotate(-10deg);opacity:.085} .light .wm{opacity:.105} .pink .wm{opacity:.145}
+.halftone{position:absolute;right:-70px;top:145px;width:540px;height:540px;opacity:.50;z-index:-3;background-image:radial-gradient(circle,#E91451 0 5px,transparent 6px);background-size:28px 28px;mask-image:radial-gradient(circle,#000 20%,transparent 73%)} .light .halftone{opacity:.30} .pink .halftone{opacity:.22;background-image:radial-gradient(circle,#0A0A0A 0 5px,transparent 6px)}
+.stroke-num{position:absolute;left:42px;top:390px;font-size:250px;line-height:.8;font-weight:900;color:transparent;-webkit-text-stroke:3px rgba(233,20,81,.22);transform:rotate(-5deg);z-index:-2}
+.content{position:absolute;left:64px;right:64px;top:218px;z-index:10} .content.low{top:612px}
+.badge{display:inline-block;background:#E91451;color:#fff;font-weight:900;font-size:24px;letter-spacing:2.5px;padding:13px 22px;border-radius:14px;box-shadow:10px 10px 0 rgba(0,0,0,.46);margin-bottom:26px} .pink .badge{background:#0A0A0A}
+.title{font-size:106px;font-weight:900;line-height:.88;letter-spacing:-5px;text-transform:uppercase;margin:0;max-width:950px} .title .pinkword{color:#E91451} .pink .title .pinkword{color:#fff}
+.outline{display:block;color:transparent;font-size:91px;font-weight:900;line-height:.9;letter-spacing:-4px;text-transform:uppercase;margin-top:10px;-webkit-text-stroke:3px #fff} .light .outline{-webkit-text-stroke-color:#0A0A0A}
+.bodycopy{margin-top:34px;max-width:770px;font-size:35px;line-height:1.14;font-weight:500} .light .bodycopy{color:#222}
+.kicker{margin-top:30px;display:inline-block;border:2px solid currentColor;border-radius:999px;padding:14px 24px;font-size:24px;font-weight:800}
+.card{background:#E91451;color:#fff;border-radius:22px;padding:38px 44px;display:inline-block;box-shadow:18px 18px 0 rgba(0,0,0,.52);max-width:910px} .pink .card{background:#0A0A0A}
+.pattern-bars{position:absolute;bottom:62px;left:50%;transform:translateX(-50%);width:420px;height:58px;background:repeating-linear-gradient(105deg,transparent 0 16px,rgba(255,255,255,.9) 17px 25px);opacity:.95;z-index:11} .light .pattern-bars{background:repeating-linear-gradient(105deg,transparent 0 16px,rgba(10,10,10,.86) 17px 25px)}
+.footer{position:absolute;bottom:94px;left:50%;transform:translateX(-50%);background:#E91451;color:#fff;border-radius:999px;padding:18px 46px;font-size:30px;font-weight:900;z-index:18;box-shadow:0 14px 0 rgba(0,0,0,.38);letter-spacing:.5px} .pink .footer{background:#0A0A0A}
+.chev{position:absolute;bottom:113px;left:54px;color:#E91451;font-size:56px;font-weight:900;letter-spacing:-8px;transform:skewX(-12deg);z-index:13} .pink .chev{color:#fff}
+.num{position:absolute;right:64px;bottom:86px;font-size:30px;font-weight:900;opacity:.72;z-index:19}
+</style></head><body>
+<section class='slide dark'>
+<img class='bg' src='file:///root/.openclaw/workspace/outputs/la-school-paradiddle-skill-test-v2/assets/lahq-paradiddle-drums-assets---8d5b4434-6aae-4171-81ec-953cbae6b6d8.png'><div class='overlay'></div><img class='wm right-soft' src='file:///root/.openclaw/workspace/repos/la-hq-agents/shared/brand-assets/logos/school/logo-la-music-dark-solo-vazada.svg'><div class='halftone'></div><div class='stroke-num'>05</div>
+<img class='logo ' src='file:///root/.openclaw/workspace/repos/la-hq-agents/shared/brand-assets/logos/school/logo-la-music-dark-completa.svg'>
+<div class='content low'><div class='badge'>TREINO CERTO</div><h1 class='title'>COMECE A 60 BPM<span class='outline'>sem pressa</span></h1><div class='bodycopy'>Pad, metrônomo e som limpo. Se embolou, baixa o BPM. Técnica não aceita mentira.</div><div class='kicker'>5 minutos por dia > 1 hora torta</div></div>
+<div class='chev'>&gt;&gt;&gt;&gt;</div><div class='pattern-bars'></div><div class='footer'>@lamusicschool</div><div class='num'>05/08</div>
+</section></body></html>

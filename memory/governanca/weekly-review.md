@@ -11,3 +11,7 @@
 - Status atual: **aguardando respostas do Alf para consolidar o fechamento**
 - Fechamento 20h: CEO Quest validado como presença do dia, mas o fechamento semanal segue pendente de respostas
 - Próxima atualização deste arquivo: após as respostas do ritual e a consolidação da semana
+
+## Atualização — 2026-05-11
+- Fechamento CEO Quest das 20h concluído sem ação CEO registrada no dia
+- Streak quebrada no fechamento oficial; revisão semanal permanece aberta até a consolidação do ritual

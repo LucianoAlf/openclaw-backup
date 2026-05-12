@@ -1,0 +1,32 @@
+<!doctype html><html><head><meta charset='utf-8'><style>
+@font-face { font-family:Prompt; src:url('file:///root/.openclaw/workspace/repos/la-hq-agents/shared/brand-assets/fonts/school/Prompt-Regular.ttf') format('truetype'); font-weight:400; }
+@font-face { font-family:Prompt; src:url('file:///root/.openclaw/workspace/repos/la-hq-agents/shared/brand-assets/fonts/school/Prompt-Medium.ttf') format('truetype'); font-weight:500; }
+@font-face { font-family:Prompt; src:url('file:///root/.openclaw/workspace/repos/la-hq-agents/shared/brand-assets/fonts/school/Prompt-SemiBold.ttf') format('truetype'); font-weight:600; }
+@font-face { font-family:Prompt; src:url('file:///root/.openclaw/workspace/repos/la-hq-agents/shared/brand-assets/fonts/school/Prompt-Bold.ttf') format('truetype'); font-weight:700; }
+@font-face { font-family:Prompt; src:url('file:///root/.openclaw/workspace/repos/la-hq-agents/shared/brand-assets/fonts/school/Prompt-Black.ttf') format('truetype'); font-weight:900; }
+*{box-sizing:border-box} html,body{margin:0;width:1080px;height:1440px;overflow:hidden;font-family:Prompt,sans-serif}
+.slide{position:relative;width:1080px;height:1440px;overflow:hidden;background:#0A0A0A;color:#fff;isolation:isolate} .light{background:#E8E8E8;color:#0A0A0A} .pink{background:linear-gradient(145deg,#E91451 0%,#B01545 100%);color:#fff}
+.logo{position:absolute;top:54px;left:62px;width:248px;max-height:90px;z-index:30} .logo.center{left:50%;transform:translateX(-50%);width:310px}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.16) saturate(1.08);z-index:-9} .photo .bg{opacity:.56} .dark.photo .bg{opacity:.58}
+.hero-person{position:absolute;z-index:-5;object-fit:cover;filter:contrast(1.12) saturate(1.06)} .hero1 .hero-person{height:1260px;right:-140px;bottom:0;opacity:.92} .hero2 .hero-person{height:1260px;left:-610px;bottom:0;opacity:.35;filter:contrast(1.15) saturate(1.2)}
+.overlay{position:absolute;inset:0;z-index:-8;background:radial-gradient(circle at 74% 20%,rgba(233,20,81,.36),transparent 32%),linear-gradient(180deg,rgba(10,10,10,.08),rgba(10,10,10,.82))} .light .overlay{background:radial-gradient(circle at 80% 18%,rgba(233,20,81,.18),transparent 34%)} .pink .overlay{background:radial-gradient(circle at 75% 18%,rgba(255,255,255,.15),transparent 32%)}
+.wm{position:absolute;object-fit:contain;pointer-events:none;z-index:-6} .wm.big-right{width:910px;right:-360px;top:135px;opacity:.115;transform:rotate(-8deg)} .wm.big-left{width:870px;left:-360px;top:250px;opacity:.13;transform:rotate(8deg)} .wm.color{width:760px;right:-280px;bottom:130px;opacity:.16;transform:rotate(-10deg)} .pink .wm{opacity:.16} .light .wm{opacity:.14}
+.halftone{position:absolute;right:-80px;top:110px;width:560px;height:560px;opacity:.46;z-index:-4;background-image:radial-gradient(circle,#E91451 0 5px,transparent 6px);background-size:28px 28px;mask-image:radial-gradient(circle,#000 20%,transparent 73%)} .pink .halftone{background-image:radial-gradient(circle,#0A0A0A 0 5px,transparent 6px);opacity:.22} .light .halftone{opacity:.30}
+.content{position:absolute;left:64px;right:64px;top:210px;z-index:15} .content.low{top:585px} .content.mid{top:360px}
+.card{background:#E91451;color:#fff;border-radius:24px;padding:40px 46px;max-width:900px;display:inline-block;box-shadow:18px 18px 0 rgba(0,0,0,.50)} .pink .card{background:#0A0A0A} .light .card{box-shadow:18px 18px 0 rgba(0,0,0,.22)}
+.badge{display:inline-block;background:#E91451;color:#fff;font-weight:900;font-size:24px;letter-spacing:2.5px;padding:13px 22px;border-radius:14px;box-shadow:10px 10px 0 rgba(0,0,0,.46);margin-bottom:26px} .pink .badge{background:#0A0A0A}
+.title{font-size:105px;font-weight:900;line-height:.88;letter-spacing:-5px;text-transform:uppercase;margin:0;max-width:900px} .pinkword{color:#E91451} .pink .pinkword{color:#fff}
+.outline{display:block;color:transparent;font-size:90px;font-weight:900;line-height:.9;letter-spacing:-4px;text-transform:uppercase;margin-top:10px;-webkit-text-stroke:3px #fff} .light .outline{-webkit-text-stroke-color:#0A0A0A}
+.bodycopy{margin-top:32px;max-width:800px;font-size:38px;line-height:1.13;font-weight:600} .light .bodycopy{color:#222}
+.kicker{margin-top:30px;display:inline-block;border:2px solid currentColor;border-radius:999px;padding:16px 28px;font-size:27px;font-weight:800}
+.chev{position:absolute;bottom:113px;left:54px;color:#E91451;font-size:56px;font-weight:900;letter-spacing:-8px;transform:skewX(-12deg);z-index:16} .pink .chev{color:#fff}
+.footer{position:absolute;bottom:94px;left:50%;transform:translateX(-50%);background:#E91451;color:#fff;border-radius:999px;padding:18px 46px;font-size:30px;font-weight:900;z-index:22;box-shadow:0 14px 0 rgba(0,0,0,.38);letter-spacing:.5px} .pink .footer{background:#0A0A0A}
+.bars{position:absolute;bottom:62px;left:50%;transform:translateX(-50%);width:420px;height:58px;background:repeating-linear-gradient(105deg,transparent 0 16px,rgba(255,255,255,.9) 17px 25px);opacity:.95;z-index:18} .light .bars{background:repeating-linear-gradient(105deg,transparent 0 16px,rgba(10,10,10,.86) 17px 25px)}
+.num{position:absolute;right:64px;bottom:86px;font-size:30px;font-weight:900;opacity:.72;z-index:24}
+</style></head><body>
+<section class='slide pink type'>
+<div class='overlay'></div><img class='wm big-right' src='file:///root/.openclaw/workspace/repos/la-hq-agents/shared/brand-assets/logos/school/logo-la-music-dark-solo-vazada.svg'><div class='halftone'></div>
+<img class='logo ' src='file:///root/.openclaw/workspace/repos/la-hq-agents/shared/brand-assets/logos/school/logo-la-music-dark-completa.svg'>
+<div class='content'><div class='badge'>MOVIMENTO</div><h1 class='title'>NÃO ANDE<span class='outline'>à toa</span></h1><div class='bodycopy'>Todo passo precisa ter intenção: chegar, abrir, marcar, respirar.</div><div class='kicker'>Movimento sem motivo distrai</div></div>
+<div class='chev'>&gt;&gt;&gt;&gt;</div><div class='bars'></div><div class='footer'>@lamusicschool</div><div class='num'>07/08</div>
+</section></body></html>

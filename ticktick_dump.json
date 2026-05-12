@@ -1,0 +1,952 @@
+{
+  "Contas Pessoais": {
+    "project": {
+      "id": "67158c51db647de6536f46dc",
+      "name": "💸Contas Pessoais",
+      "color": "#FF6161",
+      "sortOrder": 16384,
+      "viewMode": "list",
+      "permission": "write",
+      "kind": "TASK"
+    },
+    "tasks": [
+      {
+        "id": "68b44780df542a9d02fd4b41",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 655360,
+        "title": "Pacote Móvel Tim",
+        "content": "",
+        "desc": "",
+        "startDate": "2026-07-01T12:00:00.000+0000",
+        "dueDate": "2026-07-01T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT5M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=1",
+        "completedTime": "2026-04-03T17:42:15.920+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "shds8su2",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-06T03:17:51.024+0000"
+      },
+      {
+        "id": "68b35357175452c635bc9b22",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 786432,
+        "title": "Conta de Luz Home",
+        "content": "",
+        "desc": "",
+        "startDate": "2026-06-09T12:00:00.000+0000",
+        "dueDate": "2026-06-09T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT5M",
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=9",
+        "completedTime": "2026-04-03T17:42:13.407+0000",
+        "status": 0,
+        "tags": [
+          "gcal"
+        ],
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "ha4gav99",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-10T14:03:35.915+0000"
+      },
+      {
+        "id": "69cfff098f08908161d317de",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 1310720,
+        "title": "Plano saúde Amil",
+        "content": "",
+        "desc": "",
+        "startDate": "2026-06-07T12:00:00.000+0000",
+        "dueDate": "2026-06-07T12:45:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=7",
+        "completedTime": "2026-04-07T22:41:00.138+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "4wkmp5we",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-08T01:25:11.000+0000"
+      },
+      {
+        "id": "69d6b77d8f08274391e563c0",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 65536,
+        "title": "Parcela BYD Anne",
+        "content": "R$3.583,92",
+        "desc": "",
+        "startDate": "2026-06-07T12:00:00.000+0000",
+        "dueDate": "2026-06-07T12:45:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:PT0S",
+          "TRIGGER:-PT1440M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=7",
+        "completedTime": "2026-04-10T09:28:15.102+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "7m3yyc7n",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-08T01:17:27.000+0000"
+      },
+      {
+        "id": "69cfff088f08908161d317cc",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 1376256,
+        "title": "Ajuda Mensal Alessya",
+        "content": "",
+        "startDate": "2026-06-05T12:00:00.000+0000",
+        "dueDate": "2026-06-05T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=5",
+        "completedTime": "2026-04-08T11:12:14.240+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "g15acmta",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-05T19:35:06.000+0000"
+      },
+      {
+        "id": "681b777ca10cf12c107972ff",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 1638400,
+        "title": "Internet Casa 7 Link",
+        "content": "",
+        "desc": "",
+        "startDate": "2026-05-25T12:00:00.000+0000",
+        "dueDate": "2026-05-25T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT60M",
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT5M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=25",
+        "completedTime": "2026-04-03T17:42:16.759+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "2kberfpf",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "681b79d3a10cf12c10797347",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 1835008,
+        "title": "Gás Naturgy",
+        "content": "",
+        "desc": "",
+        "startDate": "2026-05-25T12:00:00.000+0000",
+        "dueDate": "2026-05-25T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT5M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=25",
+        "completedTime": "2026-04-03T17:42:17.601+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "bsj8gumc",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "69cfff118f08cefa875cc53c",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 458752,
+        "title": "Cartão MagaLu",
+        "content": "Débito automático. Pago em 25/04/2026. Valor deste mês: R$ 94,79.",
+        "startDate": "2026-05-25T12:00:00.000+0000",
+        "dueDate": "2026-05-25T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=25",
+        "completedTime": "2026-04-25T01:58:25.814+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "987ky2um",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "69cfff138f08274390886b30",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 327680,
+        "title": "Cartão C6 Bank",
+        "startDate": "2026-05-25T12:00:00.000+0000",
+        "dueDate": "2026-05-25T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=25",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "0v3z84pa",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "69cfff148f08cefa875cc582",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 262144,
+        "title": "Gás Naturgy",
+        "content": "Pago em 25/04/2026. Valor pago: R$ 115,58.",
+        "startDate": "2026-05-25T12:00:00.000+0000",
+        "dueDate": "2026-05-25T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=25",
+        "completedTime": "2026-04-25T01:59:58.352+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "d23j7g2x",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "69cfff158f08274390886b95",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 131072,
+        "title": "Internet Casa 7 Link",
+        "startDate": "2026-05-25T12:00:00.000+0000",
+        "dueDate": "2026-05-25T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=25",
+        "completedTime": "2026-04-15T10:10:17.028+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "vgozlucb",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "69eb7ee68f08c322e59e705b",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 196608,
+        "title": "Internet de casa da empresa 7link",
+        "content": "Pago em 25/04/2026. Valor pago: R$ 99,00.",
+        "startDate": "2026-05-25T12:00:00.000+0000",
+        "dueDate": "2026-05-25T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=25",
+        "completedTime": "2026-04-25T01:58:27.435+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "d427o0lb",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "681b7c2aa10cf12c107973f6",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 2293760,
+        "title": "Cartão C6 Bank",
+        "content": "",
+        "desc": "",
+        "startDate": "2026-05-25T12:00:00.000+0000",
+        "dueDate": "2026-05-25T12:30:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT5M",
+          "TRIGGER:-PT60M",
+          "TRIGGER:-PT1440M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=25",
+        "completedTime": "2026-04-03T17:42:18.440+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "1u404sn5",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "681b7c58a10cf12c10797407",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 2228224,
+        "title": "Cartão Nubank",
+        "content": "",
+        "desc": "",
+        "startDate": "2026-05-22T12:00:00.000+0000",
+        "dueDate": "2026-05-22T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT5M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=22",
+        "completedTime": "2026-04-03T17:12:20.705+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "dwvkfhcj",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "69cfff128f08cefa875cc549",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 393216,
+        "title": "Cartão Nubank",
+        "content": "Pago em 22/04/2026. Valor pago: R$ 8.406,81.",
+        "startDate": "2026-05-22T12:00:00.000+0000",
+        "dueDate": "2026-05-22T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=22",
+        "completedTime": "2026-04-23T14:20:27.198+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "m9vuvhvd",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "68b355c5175452c635bc9e46",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 2359296,
+        "title": "Cartão MagaLu",
+        "content": "",
+        "desc": "",
+        "startDate": "2026-05-21T12:00:00.000+0000",
+        "dueDate": "2026-05-21T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT60M",
+          "TRIGGER:-PT5M",
+          "TRIGGER:-PT1440M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=21",
+        "completedTime": "2026-04-03T17:42:05.765+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "xlfsbdem",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "681b7bb9a10cf12c107973cb",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 2424832,
+        "title": "Cartão Itau Platinum",
+        "content": "",
+        "desc": "",
+        "startDate": "2026-05-18T12:00:00.000+0000",
+        "dueDate": "2026-05-18T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT5M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=18",
+        "completedTime": "2026-04-03T17:42:06.598+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "m2wjicux",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "69cfff118f08cefa875cc530",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 720896,
+        "title": "Cartão Itau Platinum",
+        "startDate": "2026-05-18T12:00:00.000+0000",
+        "dueDate": "2026-05-18T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=18",
+        "completedTime": "2026-04-20T14:07:16.314+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "mnc2sw0w",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "68b35588175452c635bc9db0",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 1703936,
+        "title": "Ajuda mensal Mãe",
+        "content": "",
+        "desc": "",
+        "startDate": "2026-05-15T12:00:00.000+0000",
+        "dueDate": "2026-05-15T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT5M",
+          "TRIGGER:-PT60M",
+          "TRIGGER:-PT1440M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=15",
+        "completedTime": "2026-04-03T17:42:07.437+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "p7xror22",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "68b35596175452c635bc9dd3",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 2162688,
+        "title": "Cartão Pão de Açucar",
+        "content": "",
+        "desc": "",
+        "startDate": "2026-05-15T12:00:00.000+0000",
+        "dueDate": "2026-05-15T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT60M",
+          "TRIGGER:-PT5M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=15",
+        "completedTime": "2026-04-03T17:42:08.269+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "9avg10ah",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "68b355a0175452c635bc9df5",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 1900544,
+        "title": "Condomínio Buona Vitta",
+        "content": "",
+        "desc": "",
+        "startDate": "2026-05-15T12:00:00.000+0000",
+        "dueDate": "2026-05-15T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT5M",
+          "TRIGGER:-PT60M",
+          "TRIGGER:-PT1440M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=15",
+        "completedTime": "2026-04-06T14:19:25.848+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "bk1d1t88",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "69cfff0f8f087c1862988494",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 917504,
+        "title": "Ajuda mensal Mãe",
+        "startDate": "2026-05-15T12:00:00.000+0000",
+        "dueDate": "2026-05-15T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=15",
+        "completedTime": "2026-04-15T11:24:47.431+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "ybdu3k0k",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "69cfff108f08908161d31854",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 851968,
+        "title": "Cartão Pão de Açucar",
+        "startDate": "2026-05-15T12:00:00.000+0000",
+        "dueDate": "2026-05-15T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=15",
+        "completedTime": "2026-04-16T14:21:53.099+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "amj9d3nq",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "69dfc55a3ef4e6d8d3728c21",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 0,
+        "title": "Pagamento Cirurgia Lala parte",
+        "content": "Dr Ciro - R$1230",
+        "desc": "",
+        "startDate": "2026-05-15T12:00:00.000+0000",
+        "dueDate": "2026-05-15T12:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 5,
+        "reminders": [
+          "TRIGGER:PT0S"
+        ],
+        "repeatFlag": "",
+        "status": 0,
+        "tags": [
+          "gcal"
+        ],
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "hbuhuh5z",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:52:47.239+0000"
+      },
+      {
+        "id": "68e414bfa4f4833ff89852f3",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 589824,
+        "title": "2ª Parcela de Pagamento de Divida Ativa",
+        "content": "",
+        "desc": "",
+        "startDate": "2026-05-10T12:00:00.000+0000",
+        "dueDate": "2026-05-10T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 5,
+        "reminders": [
+          "TRIGGER:-PT5M",
+          "TRIGGER:-P1D",
+          "TRIGGER:-PT30M",
+          "TRIGGER:PT0S"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;COUNT=3;INTERVAL=1;BYMONTHDAY=10",
+        "completedTime": "2026-04-03T17:42:12.488+0000",
+        "status": 0,
+        "tags": [
+          "gcal"
+        ],
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "plskffpe",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-06T16:03:14.000+0000"
+      },
+      {
+        "id": "69cfff0c8f082743908869c1",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 1114112,
+        "title": "Colégio Isaac",
+        "startDate": "2026-05-10T12:00:00.000+0000",
+        "dueDate": "2026-05-10T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=10",
+        "completedTime": "2026-04-10T17:40:52.478+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "gcx0rbw3",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "69cfff0d8f08cefa875cc4c7",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 1048576,
+        "title": "Condomínio Front Park",
+        "startDate": "2026-05-10T12:00:00.000+0000",
+        "dueDate": "2026-05-10T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=10",
+        "completedTime": "2026-04-10T17:40:53.310+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "q1mde6y8",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      },
+      {
+        "id": "69cfff0d8f087c186298847c",
+        "projectId": "67158c51db647de6536f46dc",
+        "sortOrder": 983040,
+        "title": "PG Creuza",
+        "startDate": "2026-05-10T12:00:00.000+0000",
+        "dueDate": "2026-05-10T13:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 0,
+        "reminders": [
+          "TRIGGER:-PT1440M",
+          "TRIGGER:-PT60M"
+        ],
+        "repeatFlag": "RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=10",
+        "completedTime": "2026-04-10T17:40:54.139+0000",
+        "status": 0,
+        "columnId": "6715df055b783ef4276c5d04",
+        "etag": "sa9w2v6d",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-03T17:57:07.320+0000"
+      }
+    ],
+    "columns": [
+      {
+        "id": "6715df055b783ef4276c5d04",
+        "projectId": "67158c51db647de6536f46dc",
+        "name": "Não Classificado",
+        "sortOrder": -1
+      }
+    ]
+  },
+  "Pessoal Alf": {
+    "project": {
+      "id": "643c0518525047536b6594d0",
+      "name": "🏠Pessoal Alf",
+      "color": "#3876E4",
+      "sortOrder": 8192,
+      "permission": "write",
+      "kind": "TASK"
+    },
+    "tasks": [
+      {
+        "id": "69f757138f0885d1c651418d",
+        "projectId": "643c0518525047536b6594d0",
+        "sortOrder": -6597069766656,
+        "title": "Bloco Pessoal — Fechamento da semana pessoal",
+        "content": "Responsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.\n\nResponsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.",
+        "desc": "Responsável: Alf\n\nObjetivo: encerrar a semana pessoal sem deixar o eixo solto.",
+        "startDate": "2026-05-08T11:00:00.000+0000",
+        "dueDate": "2026-05-08T12:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 3,
+        "repeatFlag": "",
+        "status": 0,
+        "items": [
+          {
+            "id": "69f757138f0885d1c651418e",
+            "status": 0,
+            "title": "Tomar o remédio",
+            "sortOrder": 0,
+            "isAllDay": false,
+            "timeZone": "America/Sao_Paulo"
+          },
+          {
+            "id": "69f757138f0885d1c651418f",
+            "status": 0,
+            "title": "Fazer movimento físico",
+            "sortOrder": 0,
+            "isAllDay": false,
+            "timeZone": "America/Sao_Paulo"
+          },
+          {
+            "id": "69f757138f0885d1c6514190",
+            "status": 0,
+            "title": "Revisar como foi a semana pessoal",
+            "sortOrder": 0,
+            "isAllDay": false,
+            "timeZone": "America/Sao_Paulo"
+          },
+          {
+            "id": "69f757138f0885d1c6514191",
+            "status": 0,
+            "title": "Anotar o que funcionou",
+            "sortOrder": 0,
+            "isAllDay": false,
+            "timeZone": "America/Sao_Paulo"
+          },
+          {
+            "id": "69f757138f0885d1c6514192",
+            "status": 0,
+            "title": "Anotar o que não funcionou",
+            "sortOrder": 0,
+            "isAllDay": false,
+            "timeZone": "America/Sao_Paulo"
+          }
+        ],
+        "tags": [
+          "ceo-quest",
+          "semana-teste",
+          "pessoal-alf"
+        ],
+        "etag": "1iieckx4",
+        "kind": "CHECKLIST",
+        "modifiedTime": "2026-05-03T14:09:23.981+0000"
+      }
+    ],
+    "columns": [
+      {
+        "id": "643c17db525047536b6597c0",
+        "projectId": "643c0518525047536b6594d0",
+        "name": "Not Sectioned",
+        "sortOrder": -1
+      }
+    ]
+  },
+  "Trabalho Operacional": {
+    "project": {
+      "id": "643c0518525047536b6594d1",
+      "name": "💼Trabalho Operacional",
+      "color": "#F2B04B",
+      "sortOrder": 393216,
+      "viewMode": "kanban",
+      "permission": "write",
+      "kind": "TASK"
+    },
+    "tasks": [
+      {
+        "id": "69f757148f08eac4e9c72c33",
+        "projectId": "643c0518525047536b6594d1",
+        "sortOrder": -4398046511104,
+        "title": "Bloco Governança — Fechamento da semana de execução",
+        "desc": "Responsável: Alf\n\nObjetivo: revisar o que avançou na semana e preparar o próximo Ritual da Virada.",
+        "startDate": "2026-05-08T13:00:00.000+0000",
+        "dueDate": "2026-05-08T18:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 5,
+        "status": 0,
+        "items": [
+          {
+            "id": "69f757148f08eac4e9c72c34",
+            "status": 0,
+            "title": "Revisar entregas da semana",
+            "sortOrder": 0,
+            "isAllDay": false,
+            "timeZone": "America/Sao_Paulo"
+          },
+          {
+            "id": "69f757148f08eac4e9c72c35",
+            "status": 0,
+            "title": "Revisar follow-ups dos líderes",
+            "sortOrder": 0,
+            "isAllDay": false,
+            "timeZone": "America/Sao_Paulo"
+          },
+          {
+            "id": "69f757148f08eac4e9c72c36",
+            "status": 0,
+            "title": "Revisar SonoraMente",
+            "sortOrder": 0,
+            "isAllDay": false,
+            "timeZone": "America/Sao_Paulo"
+          },
+          {
+            "id": "69f757148f08eac4e9c72c37",
+            "status": 0,
+            "title": "Anotar travas e aprendizados",
+            "sortOrder": 0,
+            "isAllDay": false,
+            "timeZone": "America/Sao_Paulo"
+          },
+          {
+            "id": "69f757148f08eac4e9c72c38",
+            "status": 0,
+            "title": "Preparar pontos para o ritual de domingo",
+            "sortOrder": 0,
+            "isAllDay": false,
+            "timeZone": "America/Sao_Paulo"
+          }
+        ],
+        "tags": [
+          "governanca",
+          "ceo-quest",
+          "fechamento-semana"
+        ],
+        "etag": "ijwwtf98",
+        "kind": "CHECKLIST",
+        "modifiedTime": "2026-05-03T14:09:24.203+0000"
+      },
+      {
+        "id": "69fa023f8f086d028b9eb8e0",
+        "projectId": "643c0518525047536b6594d1",
+        "sortOrder": -6597069766656,
+        "title": "SafeBrasil — renovação de certificado digital",
+        "content": "Responsável: Alf\n\nVideoconferência rápida para renovação de certificado digital.\n  \n",
+        "desc": "",
+        "startDate": "2026-05-06T18:20:00.000+0000",
+        "dueDate": "2026-05-06T18:35:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 3,
+        "reminders": [
+          "TRIGGER:PT0S",
+          "TRIGGER:-PT15M"
+        ],
+        "status": 0,
+        "tags": [
+          "certificado-digital",
+          "safebrasil"
+        ],
+        "columnId": "",
+        "etag": "j1jj0f5t",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-05T14:46:30.000+0000"
+      }
+    ],
+    "columns": [
+      {
+        "id": "643d379acc86a03f8b9fc0c7",
+        "projectId": "643c0518525047536b6594d1",
+        "name": "Not Sectioned",
+        "sortOrder": 0
+      }
+    ]
+  },
+  "Mentorias": {
+    "project": {
+      "id": "67fbc6398f08b12415f506c4",
+      "name": "💡Mentorias",
+      "color": "#35D870",
+      "sortOrder": 147456,
+      "viewMode": "list",
+      "kind": "TASK"
+    },
+    "tasks": [
+      {
+        "id": "69f2ac368f08a37c895f9301",
+        "projectId": "67fbc6398f08b12415f506c4",
+        "sortOrder": -36009008889856,
+        "title": "Mentoria com Fabiola",
+        "content": "Compromisso com a mentorada Fabiola.",
+        "desc": "",
+        "startDate": "2026-05-13T11:30:00.000+0000",
+        "dueDate": "2026-05-13T12:30:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 3,
+        "reminders": [
+          "TRIGGER:-PT30M"
+        ],
+        "repeatFlag": "",
+        "status": 0,
+        "columnId": "",
+        "etag": "p51frzcl",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-05T01:29:52.000+0000"
+      },
+      {
+        "id": "69f947bb8f08cbca66dce713",
+        "projectId": "67fbc6398f08b12415f506c4",
+        "sortOrder": -37108520517632,
+        "title": "Mentoria com Levi",
+        "content": "Responsável: Alf\n\nObjetivo: mentoria com o Levi, remarcada para terça que vem às 9h.\n  \n",
+        "desc": "",
+        "startDate": "2026-05-12T12:00:00.000+0000",
+        "dueDate": "2026-05-12T14:00:00.000+0000",
+        "timeZone": "America/Sao_Paulo",
+        "isAllDay": false,
+        "priority": 5,
+        "reminders": [
+          "TRIGGER:-P1D",
+          "TRIGGER:PT0S",
+          "TRIGGER:-PT30M"
+        ],
+        "repeatFlag": "",
+        "status": 0,
+        "tags": [
+          "gcal",
+          "mentoria",
+          "levi"
+        ],
+        "columnId": "",
+        "etag": "pqypv6xy",
+        "kind": "TEXT",
+        "modifiedTime": "2026-05-05T01:29:42.000+0000"
+      }
+    ],
+    "columns": []
+  }
+}
