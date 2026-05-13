@@ -1,0 +1,13 @@
+from pathlib import Path
+p=Path('/root/.openclaw/workspace/render_student_photo_school_post.py')
+s=p.read_text()
+s=s.replace("opacity:.58;mix-blend-mode:screen", "opacity:.46;mix-blend-mode:screen")
+s=s.replace("opacity:.42;mask-image", "opacity:.25;mask-image")
+s=s.replace("top:198px;width:500px", "top:214px;width:470px")
+s=s.replace("font-size:92px;line-height:.84;letter-spacing:-5px", "font-size:84px;line-height:.84;letter-spacing:-4.5px")
+s=s.replace("max-width:430px;font-size:29px", "max-width:440px;font-size:31px")
+s=s.replace("<div class=\"sub\">Cada acorde carrega alma. Cada aluno tem um som pra mostrar.</div>", "<div class=\"sub\">Cada acorde carrega alma.<br>Cada aluno tem um som pra mostrar.</div>")
+s=s.replace("<div class=\"pluses\"><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span></div>", "")
+s=s.replace("<div class=\"tag\">LA Music School</div>", "")
+s=s.replace("bottom:160px", "bottom:148px")
+p.write_text(s)

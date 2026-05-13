@@ -1,0 +1,13 @@
+from pathlib import Path
+p=Path('/root/.openclaw/workspace/render_drummer_real_photo_school_post.py')
+s=p.read_text()
+s=s.replace("filter:contrast(1.12) saturate(1.13)", "filter:contrast(1.09) saturate(1.14) brightness(1.08)")
+s=s.replace("rgba(0,0,0,.88) 100%", "rgba(0,0,0,.82) 100%")
+s=s.replace("background:radial-gradient(ellipse at 38% 43%,rgba(255,230,230,.16),transparent 24%)", "background:radial-gradient(ellipse at 37% 42%,rgba(255,230,230,.24),transparent 28%)")
+s=s.replace("font-size:19px", "font-size:22px")
+s=s.replace("padding:14px 31px", "padding:16px 34px")
+s=s.replace("width:23px;height:23px", "width:25px;height:25px")
+s=s.replace("bottom:46px", "bottom:42px")
+s=s.replace("font-size:31px", "font-size:33px")
+s=s.replace("opacity:.38;mix-blend-mode:screen", "opacity:.32;mix-blend-mode:screen")
+p.write_text(s)

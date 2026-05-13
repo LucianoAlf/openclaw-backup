@@ -1,0 +1,7 @@
+from pathlib import Path
+p=Path('/root/.openclaw/workspace/render_static_stage_attitude_post.py')
+s=p.read_text()
+s=s.replace("h1{margin:0;font-weight:900;text-transform:uppercase;font-size:112px;line-height:.84;letter-spacing:-6px;text-shadow:0 7px 20px rgba(0,0,0,.82)}.outline{color:transparent;-webkit-text-stroke:3.2px #fff;text-stroke:3.2px #fff}", "h1{margin:0;font-weight:900;text-transform:uppercase;font-size:106px;line-height:.84;letter-spacing:-5.5px;text-shadow:0 7px 20px rgba(0,0,0,.86)}.outline{color:transparent;-webkit-text-stroke:4.1px #fff;text-stroke:4.1px #fff;text-shadow:0 5px 16px rgba(0,0,0,.95)}")
+s=s.replace(".edge{position:absolute;inset:0;z-index:3;background:radial-gradient(ellipse at 20% 70%,rgba(233,20,81,.45),transparent 36%),radial-gradient(ellipse at 85% 18%,rgba(116,10,40,.46),transparent 34%);mix-blend-mode:screen;opacity:.62}", ".edge{position:absolute;inset:0;z-index:3;background:radial-gradient(ellipse at 20% 70%,rgba(233,20,81,.45),transparent 36%),radial-gradient(ellipse at 85% 18%,rgba(116,10,40,.46),transparent 34%);mix-blend-mode:screen;opacity:.62}.faceLight{position:absolute;inset:0;z-index:4;background:radial-gradient(ellipse at 53% 24%,rgba(255,210,220,.22),transparent 22%);mix-blend-mode:screen;pointer-events:none}")
+s=s.replace("<div class=\"shade\"></div><div class=\"edge\"></div><div class=\"logo\">", "<div class=\"shade\"></div><div class=\"edge\"></div><div class=\"faceLight\"></div><div class=\"logo\">")
+p.write_text(s)
