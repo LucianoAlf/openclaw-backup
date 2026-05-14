@@ -41,7 +41,13 @@ Quando perceber tarefa recorrente/isolada que não precisa do contexto completo,
 ### Push pro GitHub: só quando Alf pedir (02/04/2026)
 Não fazer push automático. Commitar local está liberado. Push só sob solicitação explícita.
 
+### LAHQ: memória operacional no OpenClaw; memória de agentes no `semantic_memory` (13/05/2026)
+Para o Alfredo, a memória principal continua sendo OpenClaw (`MEMORY.md`, `memory/*`, `memory_search`). No Supabase LAHQ, usar `semantic_memory` apenas para aprendizados dos agentes/pipeline LAHQ (Nina/Theo/Luna/Diego/Tina, refs, decisões de conteúdo, padrões de campanha). Não usar `shared_memory`; tabela fica deprecated para evitar duplicidade e confusão.
+
+### LAHQ Supabase é fonte da verdade para conteúdo/assets/publicação (13/05/2026)
+Para produção LAHQ — imagens estáticas, carrosséis, vídeos/Reels/Stories, outputs, assets, aprovações, publicação Instagram e métricas — usar o Supabase LAHQ como fonte de verdade. O Supabase “Agente Alfredo” fica deprecated para esse domínio.
+
 ---
 
 *Adicione decisões conforme forem sendo tomadas.*
-*Última atualização: 2026-04-03*
+*Última atualização: 2026-05-13*

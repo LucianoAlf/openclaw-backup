@@ -63,6 +63,32 @@
 
 ---
 
+## Instagram Graph API — LAHQ
+
+- **Status:** ✅ credenciais disponíveis na VPS LAHQ
+- **Arquivo:** `/home/lahq/.env`
+- **School:** `IG_USER_ID_SCHOOL = 17841401761485758` + `IG_TOKEN_SCHOOL`
+- **Kids:** `IG_USER_ID_KIDS = 17841404041835860` + `IG_TOKEN_KIDS`
+- **App Meta:** `META_APP_ID` + `META_APP_SECRET`
+- **Fluxo:**
+  1. Upload da imagem → `POST /{ig-user-id}/media`
+  2. Publicar → `POST /{ig-user-id}/media_publish`
+- **Referência:** `scripts/tina.js` já implementa esse fluxo.
+- **Regra:** publicação pública no Instagram sempre exige aprovação explícita do Alf antes de executar.
+
+---
+
+## Supabase LAHQ
+
+- **Status:** ✅ fonte da verdade para LAHQ/Instagram/assets/outputs
+- **Project ID:** `tmslaunhmjifsjvbizje`
+- **URL:** `https://tmslaunhmjifsjvbizje.supabase.co`
+- **Credenciais locais:** `.env` → `SUPABASE_LAHQ_URL`, `SUPABASE_LAHQ_PROJECT_ID`, `SUPABASE_LAHQ_ANON_KEY`, `SUPABASE_LAHQ_SERVICE_ROLE`, `SUPABASE_LAHQ_ACCESS_TOKEN`
+- **Regra:** não salvar valores reais de keys/tokens em memória ou Git.
+- **Decisão:** centralizar a frente LAHQ no Supabase LAHQ; o Supabase “Agente Alfredo” fica deprecated para esse domínio até migração/validação final.
+
+---
+
 ## Infraestrutura VPS
 
 - **Cloudflare Tunnel ID:** `2de0fe7b`
@@ -72,4 +98,4 @@
 
 ---
 
-_Atualizado: 2026-04-03_
+_Atualizado: 2026-05-13_
