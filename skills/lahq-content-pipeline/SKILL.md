@@ -1,6 +1,6 @@
 ---
 name: lahq-content-pipeline
-description: Produzir carrosséis, posts e peças visuais LAHQ para LA Music School, LA Music Kids e SonoraMente usando repo canônico, brand guides, design systems, refs ouro, logos oficiais e workflow compacto Nina/Theo/Luna/Diego/Tina. Use quando o usuário pedir carrossel, post, feed, story, peça visual ou conteúdo de marca LA Music/School/Kids/SonoraMente.
+description: Produzir carrosséis, posts e peças visuais LAHQ para LA Music School, LA Music Kids e SonoraMente usando repo canônico, brand guides, design systems, refs ouro, logos oficiais e o workflow novo baseado em skills. Use quando o usuário pedir carrossel, post, feed, story, peça visual ou conteúdo de marca LA Music/School/Kids/SonoraMente.
 ---
 
 # LAHQ Content Pipeline
@@ -120,13 +120,15 @@ Quando fizer sentido, criar sensação de arte única recortada em cards:
 - cada card ainda precisa funcionar sozinho;
 - usar como recurso premium, não padrão obrigatório.
 
-## Workflow compacto LAHQ
+## Workflow novo baseado em skills
 
-1. **Nina / direção** — conceito, objetivo, estrutura, ritmo e direção visual.
-2. **Theo / copy** — títulos curtos, corpo enxuto, CTA no tom da marca.
-3. **Luna / imagem** — gerar/selecionar imagens sem texto, sem logo e sem watermark.
-4. **Diego / montagem** — compor em `1080x1440`, usando assets oficiais, DS e refs. Evitar vício de componente: placa/card pink pode aparecer, mas precisa profundidade, sombra, variação de escala/ângulo e não pode virar muleta repetida.
-5. **Tina + Nina-approve / QA** — checar marca, legibilidade, coerência visual e entrega. Olhar o preview grid antes de enviar; se aparecer padrão mecânico repetido (ex.: LA sempre no mesmo canto/tamanho), revisar.
+As skills substituem o pipeline legado de agentes. Não depender de nomes/personas antigas nem tentar ressuscitar o fluxo multiagente.
+
+1. **Direção** — conceito, objetivo, estrutura, ritmo e direção visual.
+2. **Copy** — títulos curtos, corpo enxuto, CTA no tom da marca.
+3. **Imagem** — gerar/selecionar imagens sem texto, sem logo e sem watermark.
+4. **Montagem** — compor em `1080x1440`, usando assets oficiais, DS e refs. Evitar vício de componente: placa/card pink pode aparecer, mas precisa profundidade, sombra, variação de escala/ângulo e não pode virar muleta repetida.
+5. **QA** — checar marca, legibilidade, coerência visual e entrega. Olhar o preview grid antes de enviar; se aparecer padrão mecânico repetido (ex.: LA sempre no mesmo canto/tamanho), revisar.
 
 ## QA final antes de entregar
 

@@ -1,6 +1,6 @@
 ---
 name: lahq-copy-publication
-description: Criar copy/caption e preparar publicação Instagram LAHQ para LA Music School, LA Music Kids e SonoraMente em feed estático, carrossel, stories, reels e vídeos. Use quando o usuário pedir legenda, copy, hashtags, CTA, publicar, agendar, subir no Instagram, feed, story, reels, vídeo ou empacotar conteúdo aprovado para Supabase/Tina.
+description: Criar copy/caption e preparar publicação Instagram LAHQ para LA Music School, LA Music Kids e SonoraMente em feed estático, carrossel, stories, reels e vídeos. Use quando o usuário pedir legenda, copy, hashtags, CTA, publicar, agendar, subir no Instagram, feed, story, reels, vídeo ou empacotar conteúdo aprovado para Supabase/script de publicação.
 ---
 
 # LAHQ Copy + Publication
@@ -18,21 +18,21 @@ Repo LAHQ:
 ```
 
 Arquivos úteis:
-- Theo copy: `theo/skills/copy-redes-sociais.md`
-- Tom por marca: `theo/skills/tom-de-voz-por-marca.md`
-- Tina publicação: `tina/skills/publicacao-instagram.md`
-- Tina script atual: `scripts/tina.js`
+- Copy redes sociais: `theo/skills/copy-redes-sociais.md` (referência legada; usar só se agregar)
+- Tom por marca: `theo/skills/tom-de-voz-por-marca.md` (referência legada; usar só se agregar)
+- Publicação Instagram: `tina/skills/publicacao-instagram.md` (referência legada; usar só se agregar)
+- Script atual de publicação: `scripts/tina.js`
 - Content pipeline: `skills/lahq-content-pipeline/SKILL.md`
 - School específica: `skills/lahq-school-content/SKILL.md`
 
 ## Ordem obrigatória
 
 1. Confirmar marca e formato.
-2. Confirmar que o criativo foi aprovado pelo Alf/Nina.
+2. Confirmar que o criativo foi aprovado pelo Alf.
 3. Escrever copy/caption no tom da marca.
 4. Montar hashtags e CTA.
 5. Registrar output aprovado no Supabase LAHQ quando necessário.
-6. Rodar Tina em dry-run.
+6. Rodar o script de publicação em dry-run.
 7. Rodar live **só depois de aprovação explícita**.
 8. Confirmar permalink e salvar memória.
 
@@ -54,7 +54,7 @@ Arquivos úteis:
 - Asset: 9:16 (`1080x1920`) imagem ou vídeo curto.
 - Copy visual curta; legenda externa geralmente não é o foco.
 - CTA: sticker/link/DM quando disponível; se não, inserir CTA visual no story.
-- Atenção: confirmar se o script atual publica stories; se não publicar, registrar e avisar que precisa extensão da Tina.
+- Atenção: confirmar se o script atual publica stories; se não publicar, registrar e avisar que precisa extensão do publicador.
 
 ### 4. Reels
 - Asset: vídeo vertical 9:16; capa/thumbnail se houver.
@@ -137,9 +137,9 @@ Exemplo School guitarra:
 ]
 ```
 
-## Registro para Tina
+## Registro para publicação
 
-O script `scripts/tina.js` busca uma task `publishing` pendente para Tina e um `output` aprovado.
+O script `scripts/tina.js` é legado no nome, mas deve ser tratado apenas como motor técnico de publicação. Ele busca uma task `publishing` pendente e um `output` aprovado.
 
 Mínimo esperado:
 - `outputs.approval_status = 'approved'`
@@ -167,7 +167,7 @@ Só após dry-run OK e aprovação explícita:
 ssh -i ~/.ssh/openclaw_lahq root@89.116.73.186 "cd /home/lahq && node scripts/tina.js --live"
 ```
 
-Depois confirmar permalink via Graph API ou logs da Tina e salvar em memória.
+Depois confirmar permalink via Graph API ou logs do script e salvar em memória.
 
 ## QA antes do live
 

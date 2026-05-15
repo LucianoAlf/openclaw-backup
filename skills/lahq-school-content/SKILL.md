@@ -274,13 +274,15 @@ Precisa dar vontade de arrastar.
 - Footer/handle claro.
 - Convite com energia: “vem tocar”, “experimenta”, “sobe no palco”, “toca com a gente”.
 
-## Workflow LAHQ aplicado
+## Workflow School aplicado
 
-1. **Nina / direção** — conceito, narrativa, ritmo, emoção e direção visual por card.
-2. **Theo / copy** — gancho curto, frase musical, CTA humano e direto.
-3. **Luna / imagem** — foto/visual sem texto, sem logo fake, sem watermark indevido.
-4. **Diego / montagem** — composição 1080x1440 ou formato pedido, usando DS, logo e assets oficiais.
-5. **Tina + Nina-approve / QA** — comparar com refs ouro e reprovar se parecer template.
+As skills são o pipeline atual. Não usar nomes/personas do LAHQ legado como dependência criativa.
+
+1. **Direção** — conceito, narrativa, ritmo, emoção e direção visual por card.
+2. **Copy** — gancho curto, frase musical, CTA humano e direto.
+3. **Imagem** — foto/visual sem texto, sem logo fake, sem watermark indevido.
+4. **Montagem** — composição 1080x1440 ou formato pedido, usando DS, logo e assets oficiais.
+5. **QA** — comparar com refs ouro e reprovar se parecer template.
 
 ## QA School obrigatório
 
