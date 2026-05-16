@@ -27,3 +27,7 @@
 ## Atualização — 2026-05-14
 - Fechamento CEO Quest das 20h concluído sem ação CEO registrada no dia
 - Streak permanece em 0 após nova quebra; revisão semanal continua aberta até o Ritual da Virada ser consolidado
+
+## Atualização — 2026-05-15
+- Fechamento CEO Quest das 20h concluído sem ação CEO registrada no dia
+- Streak permanece em 0 após nova quebra; revisão semanal continua aberta até o Ritual da Virada ser consolidado

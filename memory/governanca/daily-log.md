@@ -1,5 +1,25 @@
 # Log Diário — CEO Quest
 
+## 2026-05-15
+
+### Ações de cobrança/verificação com time
+- (vazio)
+
+### Decisões tomadas
+- (vazio)
+
+### Tarefas criadas/atualizadas
+- (vazio)
+
+### Ações pessoais
+- (vazio)
+
+### Ritual de domingo
+- (vazio)
+
+### Skips / pausas
+- 20:00 — fechamento CEO Quest sem ação CEO registrada; streak quebrada no fechamento oficial
+
 ## 2026-05-14
 
 ### Ações de cobrança/verificação com time

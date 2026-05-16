@@ -6,7 +6,7 @@
 - Automação ativa: streak, briefing, ritual
 - Scorecard expandido: ativo
 - XP / ranking / painéis: direção operacional ativa
-- Último fechamento 20h: 2026-05-14 — sem ação CEO registrada
+- Último fechamento 20h: 2026-05-15 — sem ação CEO registrada
 - Ordem histórica: streak → briefing → ritual → scorecard → painel
 
 ## Função do scorecard expandido
