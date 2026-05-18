@@ -35,3 +35,8 @@
 ## Atualização — 2026-05-16
 - Sábado; streak congelada no fechamento CEO Quest
 - Nenhuma ação CEO nova registrada; revisão semanal permanece aberta
+
+## Atualização — 2026-05-17
+- Domingo; Ritual da Virada conduzido às 11:00
+- Fechamento CEO Quest das 20h consolidado com presença CEO validada
+- Fechamento da semana segue aberto; aguardando respostas do Alf para consolidar pendências e distribuir prioridades da semana atual

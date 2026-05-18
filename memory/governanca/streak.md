@@ -1,7 +1,7 @@
 # CEO Quest Streak
 
 ## Status atual
-- Streak ativo: 0 dias
+- Streak ativo: 1 dias
 - Maior streak histórico: 1 dias
 - Última quebra: 2026-05-15 (motivo: sem ação CEO registrada)
 - Última pausa: —
@@ -35,3 +35,4 @@
 | 2026-05-14 | quebrou | 0 | sem ação CEO registrada |
 | 2026-05-15 | quebrou | 0 | sem ação CEO registrada |
 | 2026-05-16 | congelado | 0 | sábado — streak congelada |
+| 2026-05-17 | contou | 1 | domingo — Ritual da Virada conduzido às 11:00; fechamento 20h validado |

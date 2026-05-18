@@ -936,3 +936,4 @@ Se servir, ele deixa de ser sistema e vira identidade.
 - Execução padrão de domingo: fechamento semanal, pendências, próxima semana e distribuição por dia.
 - A entrega ao Alf deve sair limpa, sem prefixos técnicos, sem destino e sem instruções de envio.
 - O ritual continua separado da trilha operacional pessoal.
+- 2026-05-17: Ritual da Virada conduzido às 11h; fechamento semanal segue em consolidação.
