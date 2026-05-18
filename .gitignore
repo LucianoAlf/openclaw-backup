@@ -23,3 +23,13 @@ storage_state.json
 *storage_state*
 browser_profile_*
 *.session.json
+.env.*
+*.env
+*.env.*
+.env.bak*
+*secret*
+*credentials*
+.env.local
+**/.env.local
+**/.env
+**/.env.*
