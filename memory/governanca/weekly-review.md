@@ -40,3 +40,7 @@
 - Domingo; Ritual da Virada conduzido às 11:00
 - Fechamento CEO Quest das 20h consolidado com presença CEO validada
 - Fechamento da semana segue aberto; aguardando respostas do Alf para consolidar pendências e distribuir prioridades da semana atual
+
+## Atualização — 2026-05-18
+- Segunda; fechamento CEO Quest das 20h concluído sem ação CEO registrada
+- Streak zerada no fechamento oficial; revisão semanal continua aberta até nova consolidação
