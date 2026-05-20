@@ -3,7 +3,7 @@
 ## Status atual
 - Streak ativo: 0 dias
 - Maior streak histórico: 1 dias
-- Última quebra: 2026-05-18 (motivo: sem ação CEO registrada)
+- Última quebra: 2026-05-19 (motivo: sem ação CEO registrada)
 - Última pausa: —
 - Regra ativa: um dia conta se houver pelo menos 1 evidência concreta de ação CEO sobre alguém do círculo de responsabilidade, registrada pelo Alfredo no próprio dia, com cobrança/verificação/direção real.
 
@@ -37,3 +37,4 @@
 | 2026-05-16 | congelado | 0 | sábado — streak congelada |
 | 2026-05-17 | contou | 1 | domingo — Ritual da Virada conduzido às 11:00; fechamento 20h validado |
 | 2026-05-18 | quebrou | 0 | sem ação CEO registrada |
+| 2026-05-19 | quebrou | 0 | sem ação CEO registrada |
