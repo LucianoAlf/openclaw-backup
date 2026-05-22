@@ -1,0 +1,19 @@
+{
+  "w": 1080,
+  "h": 1350,
+  "text": "01/01\nPRA QUEM SABE O QUE QUER\nSUBA NO\nPALCO\nDE VERDADE\n\nAula com técnica, banda e presença. Toque melhor.\n\nVOZ · GUITARRA · BATERIA\nMATRÍCULAS ABERTAS PARA QUEM QUER EVOLUIR\n>>>>\nLA MUSIC SCHOOL · ROCK · TÉCNICA · PALCO\n@LAMUSICSCHOOL\n///////",
+  "imgs": [
+    {
+      "src": "./assets/logos/logo-la-music-dark-solo-vazada.svg",
+      "ok": true,
+      "w": 85,
+      "h": 97
+    },
+    {
+      "src": "./assets/logos/logo-la-music-dark-completa.svg",
+      "ok": true,
+      "w": 237,
+      "h": 97
+    }
+  ]
+}

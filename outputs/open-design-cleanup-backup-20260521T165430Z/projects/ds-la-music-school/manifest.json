@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "od-design-system-project/v1",
+  "id": "la-music-school",
+  "name": "LA Music School",
+  "category": "LAHQ · Feed/Carrossel · School",
+  "description": "Prompt, pink #E91451, halftone, atitude rock/técnica e logos oficiais da LA Music School.",
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.css"
+  },
+  "assetsDir": "assets"
+}

@@ -1,0 +1,148 @@
+{
+  "status": {
+    "id": "066b3de6-1069-48da-a5f9-19c1c56835d9",
+    "projectId": "lahq-od-real-mpftvgeb-jj39d7",
+    "conversationId": "6871faf5-21b1-4181-b958-474b839b616c",
+    "assistantMessageId": null,
+    "agentId": "codex",
+    "appliedPluginSnapshotId": null,
+    "pluginId": null,
+    "status": "succeeded",
+    "createdAt": 1779388338185,
+    "updatedAt": 1779388564993,
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "errorCode": null
+  },
+  "files": {
+    "files": [
+      {
+        "name": "index.html",
+        "path": "index.html",
+        "type": "file",
+        "size": 11172,
+        "mtime": 1779388490773.5417,
+        "kind": "html",
+        "mime": "text/html; charset=utf-8",
+        "artifactKind": "html",
+        "artifactManifest": {
+          "version": 1,
+          "kind": "html",
+          "title": "index.html",
+          "entry": "index.html",
+          "renderer": "html",
+          "status": "complete",
+          "exports": [
+            "html",
+            "pdf",
+            "zip"
+          ],
+          "metadata": {
+            "inferred": true
+          }
+        }
+      },
+      {
+        "name": "assets/fonts/Madelina.ttf",
+        "path": "assets/fonts/Madelina.ttf",
+        "type": "file",
+        "size": 101936,
+        "mtime": 1779388387944.964,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/Volkswagen-Heavy.otf",
+        "path": "assets/fonts/Volkswagen-Heavy.otf",
+        "type": "file",
+        "size": 33480,
+        "mtime": 1779388387943.964,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/Volkswagen-Bold.otf",
+        "path": "assets/fonts/Volkswagen-Bold.otf",
+        "type": "file",
+        "size": 35156,
+        "mtime": 1779388387942.9639,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/Volkswagen-Medium_Regular.ttf",
+        "path": "assets/fonts/Volkswagen-Medium_Regular.ttf",
+        "type": "file",
+        "size": 40800,
+        "mtime": 1779388387941.9639,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/Volkswagen-Regular.otf",
+        "path": "assets/fonts/Volkswagen-Regular.otf",
+        "type": "file",
+        "size": 35376,
+        "mtime": 1779388387940.9639,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/logos/logo-la-music-kids-light-completa.svg",
+        "path": "assets/logos/logo-la-music-kids-light-completa.svg",
+        "type": "file",
+        "size": 13745,
+        "mtime": 1779388387938.9639,
+        "kind": "sketch",
+        "mime": "image/svg+xml",
+        "artifactKind": "svg",
+        "artifactManifest": {
+          "version": 1,
+          "kind": "svg",
+          "title": "assets/logos/logo-la-music-kids-light-completa.svg",
+          "entry": "assets/logos/logo-la-music-kids-light-completa.svg",
+          "renderer": "svg",
+          "status": "complete",
+          "exports": [
+            "svg",
+            "zip"
+          ],
+          "metadata": {
+            "inferred": true
+          }
+        }
+      },
+      {
+        "name": "assets/logos/logo-la-music-kids-dark-completa.svg",
+        "path": "assets/logos/logo-la-music-kids-dark-completa.svg",
+        "type": "file",
+        "size": 13727,
+        "mtime": 1779388387937.9639,
+        "kind": "sketch",
+        "mime": "image/svg+xml",
+        "artifactKind": "svg",
+        "artifactManifest": {
+          "version": 1,
+          "kind": "svg",
+          "title": "assets/logos/logo-la-music-kids-dark-completa.svg",
+          "entry": "assets/logos/logo-la-music-kids-dark-completa.svg",
+          "renderer": "svg",
+          "status": "complete",
+          "exports": [
+            "svg",
+            "zip"
+          ],
+          "metadata": {
+            "inferred": true
+          }
+        }
+      }
+    ]
+  }
+}

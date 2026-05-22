@@ -244,6 +244,7 @@ Não repetir o mesmo tema/componente sem intenção.
 Para cada lâmina, decidir antes de renderizar:
 
 - objetivo do card;
+- papel narrativo no arco geral: tese, tensão, progressão, virada, resolução ou CTA;
 - emoção principal: Paixão, Empatia, Coragem ou Excelência;
 - tema visual;
 - arquitetura tipográfica;
@@ -264,8 +265,19 @@ Precisa dar vontade de arrastar.
 ### Cards intermediários
 
 - Cada card deve ter uma função própria.
+- Um card precisa puxar o próximo; frases soltas/repetidas viram template.
 - Variar composição sem perder marca.
 - Técnica precisa ser clara, mas com desejo.
+
+### Conteúdo técnico
+
+Em tema técnico, a imagem precisa provar o assunto.
+
+- Palhetada: mão, palheta, cordas, braço do instrumento, ataque, setas D/U, metrônomo ou professor corrigindo gesto.
+- Canto/voz: boca/postura/respiração/microfone/diafragma/expressão de canto real, não pose genérica.
+- Bateria: baquetas, mão, pad/caixa/prato, rudimento visível, movimento real.
+
+Foto bonita mas desconectada reprova. Se não houver asset certo, declarar “não temos asset certo” e propor busca/produção/geração dirigida antes de improvisar.
 
 ### Card final
 
@@ -279,10 +291,12 @@ Precisa dar vontade de arrastar.
 As skills são o pipeline atual. Não usar nomes/personas do LAHQ legado como dependência criativa.
 
 1. **Direção** — conceito, narrativa, ritmo, emoção e direção visual por card.
-2. **Copy** — gancho curto, frase musical, CTA humano e direto.
-3. **Imagem** — foto/visual sem texto, sem logo fake, sem watermark indevido.
-4. **Montagem** — composição 1080x1440 ou formato pedido, usando DS, logo e assets oficiais.
+2. **Copy com arco** — tese → tensão → progressão → resolução → CTA. Sem arco, não renderiza.
+3. **Imagem** — foto/visual sem texto, sem logo fake, sem watermark indevido; precisa provar o assunto.
+4. **Montagem** — composição 1080x1440 ou formato pedido, usando DS, logo e assets oficiais. Para peça premium, preferir HTML/CSS controlado + render headless; IA não gera card final com texto/logo/layout.
 5. **QA** — comparar com refs ouro e reprovar se parecer template.
+
+Refs ouro são régua de qualidade, não banco de imagem. Use para direção, ritmo e comparação — não para recortar asset aleatório.
 
 ## QA School obrigatório
 
@@ -299,7 +313,9 @@ Perguntas duras:
 - A tipografia está fazendo direção de arte ou só preenchendo espaço?
 - Tem sólido + outline, hierarquia e ritmo tipográfico?
 - A capa dá vontade de passar pro lado?
+- Existe ligação narrativa entre lâminas?
 - Tem música real, palco, instrumento, corpo ou atitude?
+- Em conteúdo técnico, a foto/asset prova o tema específico?
 - O conteúdo carrega Paixão, Empatia, Coragem ou Excelência?
 - O texto é legível no celular?
 - Parece campanha premium ou template de Canva?

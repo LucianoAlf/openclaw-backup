@@ -1,0 +1,45 @@
+:root {
+  --design-system-la-music-school-background: #fbfaf7;
+  --design-system-la-music-school-surface: #ffffff;
+  --design-system-la-music-school-surface-muted: #f4f1ec;
+  --design-system-la-music-school-foreground: #1f1d1b;
+  --design-system-la-music-school-muted: #706b65;
+  --design-system-la-music-school-border: #ddd8d0;
+  --design-system-la-music-school-accent: #d66f4d;
+  --design-system-la-music-school-success: #5d8f5a;
+  --design-system-la-music-school-font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --design-system-la-music-school-font-serif: Georgia, "Times New Roman", serif;
+  --design-system-la-music-school-font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --design-system-la-music-school-radius-sm: 6px;
+  --design-system-la-music-school-radius-md: 10px;
+  --design-system-la-music-school-radius-lg: 16px;
+  --design-system-la-music-school-space-1: 4px;
+  --design-system-la-music-school-space-2: 8px;
+  --design-system-la-music-school-space-3: 12px;
+  --design-system-la-music-school-space-4: 16px;
+  --design-system-la-music-school-space-6: 24px;
+  --design-system-la-music-school-space-8: 32px;
+
+  --color-background: var(--design-system-la-music-school-background);
+  --color-surface: var(--design-system-la-music-school-surface);
+  --color-background-soft: var(--design-system-la-music-school-surface-muted);
+  --color-text: var(--design-system-la-music-school-foreground);
+  --color-text-1: var(--design-system-la-music-school-foreground);
+  --color-text-secondary: var(--design-system-la-music-school-muted);
+  --color-border: var(--design-system-la-music-school-border);
+  --color-primary: var(--design-system-la-music-school-accent);
+  --color-primary-soft: color-mix(in srgb, var(--design-system-la-music-school-accent) 14%, transparent);
+  --font-family: var(--design-system-la-music-school-font-sans);
+  --code-font-family: var(--design-system-la-music-school-font-mono);
+  --radius-control: var(--design-system-la-music-school-radius-sm);
+  --radius-card: var(--design-system-la-music-school-radius-md);
+  --space-2: var(--design-system-la-music-school-space-2);
+  --space-3: var(--design-system-la-music-school-space-3);
+  --space-4: var(--design-system-la-music-school-space-4);
+}
+
+.od-design-system-preview {
+  color: var(--design-system-la-music-school-foreground);
+  background: var(--design-system-la-music-school-background);
+  font-family: var(--design-system-la-music-school-font-sans);
+}

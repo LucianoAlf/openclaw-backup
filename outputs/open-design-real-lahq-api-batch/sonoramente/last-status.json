@@ -1,0 +1,158 @@
+{
+  "status": {
+    "id": "0b9139fa-78a3-4c1f-b770-f41b83de38cf",
+    "projectId": "lahq-od-real-mpfu0es2-c0mgzs",
+    "conversationId": "bdfd0bcd-1d3c-49d2-8dab-46e69b2bc412",
+    "assistantMessageId": null,
+    "agentId": "codex",
+    "appliedPluginSnapshotId": null,
+    "pluginId": null,
+    "status": "succeeded",
+    "createdAt": 1779388569059,
+    "updatedAt": 1779388739368,
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "errorCode": null
+  },
+  "files": {
+    "files": [
+      {
+        "name": "index.html",
+        "path": "index.html",
+        "type": "file",
+        "size": 10339,
+        "mtime": 1779388687697.068,
+        "kind": "html",
+        "mime": "text/html; charset=utf-8",
+        "artifactKind": "html",
+        "artifactManifest": {
+          "version": 1,
+          "kind": "html",
+          "title": "index.html",
+          "entry": "index.html",
+          "renderer": "html",
+          "status": "complete",
+          "exports": [
+            "html",
+            "pdf",
+            "zip"
+          ],
+          "metadata": {
+            "inferred": true
+          }
+        }
+      },
+      {
+        "name": "assets/fonts/Playfair-Display-normal-600-latin.woff2",
+        "path": "assets/fonts/Playfair-Display-normal-600-latin.woff2",
+        "type": "file",
+        "size": 123672,
+        "mtime": 1779388618885.2488,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/Playfair-Display-normal-700-latin.woff2",
+        "path": "assets/fonts/Playfair-Display-normal-700-latin.woff2",
+        "type": "file",
+        "size": 123536,
+        "mtime": 1779388618885.2488,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/DM-Sans-normal-400-latin.woff2",
+        "path": "assets/fonts/DM-Sans-normal-400-latin.woff2",
+        "type": "file",
+        "size": 48280,
+        "mtime": 1779388618884.2488,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/DM-Sans-normal-500-latin.woff2",
+        "path": "assets/fonts/DM-Sans-normal-500-latin.woff2",
+        "type": "file",
+        "size": 48308,
+        "mtime": 1779388618884.2488,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/DM-Sans-normal-600-latin.woff2",
+        "path": "assets/fonts/DM-Sans-normal-600-latin.woff2",
+        "type": "file",
+        "size": 48280,
+        "mtime": 1779388618884.2488,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/DM-Sans-normal-700-latin.woff2",
+        "path": "assets/fonts/DM-Sans-normal-700-latin.woff2",
+        "type": "file",
+        "size": 48200,
+        "mtime": 1779388618884.2488,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/logos/logo-sonoramente-horizontal-white.svg",
+        "path": "assets/logos/logo-sonoramente-horizontal-white.svg",
+        "type": "file",
+        "size": 11810,
+        "mtime": 1779388618882.2488,
+        "kind": "sketch",
+        "mime": "image/svg+xml",
+        "artifactKind": "svg",
+        "artifactManifest": {
+          "version": 1,
+          "kind": "svg",
+          "title": "assets/logos/logo-sonoramente-horizontal-white.svg",
+          "entry": "assets/logos/logo-sonoramente-horizontal-white.svg",
+          "renderer": "svg",
+          "status": "complete",
+          "exports": [
+            "svg",
+            "zip"
+          ],
+          "metadata": {
+            "inferred": true
+          }
+        }
+      },
+      {
+        "name": "assets/logos/logo-sonoramente-horizontal-color.svg",
+        "path": "assets/logos/logo-sonoramente-horizontal-color.svg",
+        "type": "file",
+        "size": 11812,
+        "mtime": 1779388618880.2488,
+        "kind": "sketch",
+        "mime": "image/svg+xml",
+        "artifactKind": "svg",
+        "artifactManifest": {
+          "version": 1,
+          "kind": "svg",
+          "title": "assets/logos/logo-sonoramente-horizontal-color.svg",
+          "entry": "assets/logos/logo-sonoramente-horizontal-color.svg",
+          "renderer": "svg",
+          "status": "complete",
+          "exports": [
+            "svg",
+            "zip"
+          ],
+          "metadata": {
+            "inferred": true
+          }
+        }
+      }
+    ]
+  }
+}

@@ -52,3 +52,7 @@
 ## Atualização — 2026-05-20
 - Quarta; fechamento CEO Quest das 20h concluído sem ação CEO registrada
 - Streak permanece em 0; revisão semanal segue aberta até nova consolidação
+
+## Atualização — 2026-05-21
+- Quinta; fechamento CEO Quest das 20h concluído sem ação CEO registrada
+- Streak permanece em 0; revisão semanal segue aberta até nova consolidação

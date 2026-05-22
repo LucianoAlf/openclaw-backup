@@ -1,0 +1,8 @@
+{
+  "name": "la-music-kids-design-system",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "preview": "open index.html"
+  }
+}

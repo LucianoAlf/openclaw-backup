@@ -1,0 +1,45 @@
+{
+  "w": 1080,
+  "h": 1350,
+  "text": "CUIDADO COM BASE E AFETO\nMúsica como ponte para o desenvolvimento\n\nNo vínculo sonoro, a criança encontra ritmo, escuta e segurança para avançar no seu próprio tempo.\n\nUma abordagem humanizada que une estímulo musical, observação clínica e acolhimento familiar para apoiar crianças com TEA e atrasos de desenvolvimento.\n\ncuidado\ndesenvolvimento\nmúsica\n\nPara pais que buscam um caminho terapêutico sensível, estruturado e respeitoso para acompanhar cada progresso.\n\nOnde o Som Cuida da Mente\nSONORAMENTE LA",
+  "imgs": [
+    {
+      "src": "./assets/logos/logo-sonoramente-horizontal-color.svg",
+      "ok": true,
+      "w": 300,
+      "h": 67
+    }
+  ],
+  "fonts": [
+    {
+      "family": "DM Sans",
+      "status": "loaded",
+      "weight": "400"
+    },
+    {
+      "family": "DM Sans",
+      "status": "loaded",
+      "weight": "500"
+    },
+    {
+      "family": "DM Sans",
+      "status": "loaded",
+      "weight": "600"
+    },
+    {
+      "family": "DM Sans",
+      "status": "loaded",
+      "weight": "700"
+    },
+    {
+      "family": "Playfair Display",
+      "status": "unloaded",
+      "weight": "600"
+    },
+    {
+      "family": "Playfair Display",
+      "status": "loaded",
+      "weight": "700"
+    }
+  ]
+}

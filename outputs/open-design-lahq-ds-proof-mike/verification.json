@@ -1,0 +1,90 @@
+[
+  {
+    "id": "la-music-school",
+    "view": "preview",
+    "url": "http://127.0.0.1:18456/api/design-systems/user:la-music-school/preview",
+    "screenshot": "/root/.openclaw/workspace/outputs/open-design-lahq-ds-proof-mike/la-music-school-preview.png",
+    "bodyFont": "Prompt, system-ui, sans-serif",
+    "h1Font": "Prompt, system-ui, sans-serif",
+    "imgCount": 8,
+    "dataImgCount": 8,
+    "fontChecks": {
+      "Prompt": true
+    },
+    "text": "DESIGN SYSTEM PREVIEW · USER:LA-MUSIC-SCHOOL\nLA Music School — Design System\n\nSurface: web\n\nBrand logos / official assets\nlogo-la-music-dark-completa-vazada.svg\nlogo-la-music-dark-completa.svg\nlogo-la-music-dark-solo-vazada.svg\nlogo-la-music-dark-solo.svg\nlogo-la-music-light-completa-vazada.svg\nlogo-la-music-light-completa.svg\nlogo-la-music-light-solo-vazada.svg\nlogo-la-music-light-solo.svg\nPalette\nTypography\nDISPLAY\nThe grid carries weight; the line carries pace.\nBODY\nBody copy reads at sixteen"
+  },
+  {
+    "id": "la-music-school",
+    "view": "showcase",
+    "url": "http://127.0.0.1:18456/api/design-systems/user:la-music-school/showcase",
+    "screenshot": "/root/.openclaw/workspace/outputs/open-design-lahq-ds-proof-mike/la-music-school-showcase.png",
+    "bodyFont": "Prompt, system-ui, sans-serif",
+    "h1Font": "Prompt, system-ui, sans-serif",
+    "imgCount": 9,
+    "dataImgCount": 9,
+    "fontChecks": {
+      "Prompt": true
+    },
+    "text": "Product\nWorkspace\nPricing\nDocs\nCustomers\nSign in\nGet started →\nLA MUSIC SCHOOL — DESIGN SYSTEM · LIVE PREVIEW\nThe system that makes LA Music School — Design System feel like LA Music School — Design System.\n\nSurface: web\n\nStart a free trial →\nSee it in action\n4.9 · App Store rating\nSOC 2 · Type II compliant\n120k+ active teams\nTRUSTED BY TEAMS SHIPPING SERIOUS WORK\nWHAT IT DOES\nEvery primitive a fast team needs.\n\nA system styled entirely from the tokens of LA Music School — Design System — palett"
+  },
+  {
+    "id": "la-music-kids",
+    "view": "preview",
+    "url": "http://127.0.0.1:18456/api/design-systems/user:la-music-kids/preview",
+    "screenshot": "/root/.openclaw/workspace/outputs/open-design-lahq-ds-proof-mike/la-music-kids-preview.png",
+    "bodyFont": "Volkswagen, system-ui, sans-serif",
+    "h1Font": "Volkswagen, system-ui, sans-serif",
+    "imgCount": 8,
+    "dataImgCount": 8,
+    "fontChecks": {
+      "Volkswagen": true,
+      "Madelina": true
+    },
+    "text": "DESIGN SYSTEM PREVIEW · USER:LA-MUSIC-KIDS\nLA Music Kids — Design System\n\nSurface: web\n\nBrand logos / official assets\nlogo-la-music-kids-dark-completa-vazada.svg\nlogo-la-music-kids-dark-completa.svg\nlogo-la-music-kids-dark-solo-vazada.svg\nlogo-la-music-kids-dark-solo.svg\nlogo-la-music-kids-light-completa-vazada.svg\nlogo-la-music-kids-light-completa.svg\nlogo-la-music-kids-light-solo-vazada.svg\nlogo-la-music-kids-light-solo.svg\nPalette\nTypography\nDISPLAY\nThe grid carries weight; the line carries p"
+  },
+  {
+    "id": "la-music-kids",
+    "view": "showcase",
+    "url": "http://127.0.0.1:18456/api/design-systems/user:la-music-kids/showcase",
+    "screenshot": "/root/.openclaw/workspace/outputs/open-design-lahq-ds-proof-mike/la-music-kids-showcase.png",
+    "bodyFont": "Volkswagen, system-ui, sans-serif",
+    "h1Font": "Volkswagen, system-ui, sans-serif",
+    "imgCount": 9,
+    "dataImgCount": 9,
+    "fontChecks": {
+      "Volkswagen": true,
+      "Madelina": true
+    },
+    "text": "Product\nWorkspace\nPricing\nDocs\nCustomers\nSign in\nGet started →\nLA MUSIC KIDS — DESIGN SYSTEM · LIVE PREVIEW\nThe system that makes LA Music Kids — Design System feel like LA Music Kids — Design System.\n\nSurface: web\n\nStart a free trial →\nSee it in action\n4.9 · App Store rating\nSOC 2 · Type II compliant\n120k+ active teams\nTRUSTED BY TEAMS SHIPPING SERIOUS WORK\nWHAT IT DOES\nEvery primitive a fast team needs.\n\nA system styled entirely from the tokens of LA Music Kids — Design System — palette, typog"
+  },
+  {
+    "id": "la-music-sonoramente",
+    "view": "preview",
+    "url": "http://127.0.0.1:18456/api/design-systems/user:la-music-sonoramente/preview",
+    "screenshot": "/root/.openclaw/workspace/outputs/open-design-lahq-ds-proof-mike/la-music-sonoramente-preview.png",
+    "bodyFont": "\"DM Sans\", Inter, system-ui, sans-serif",
+    "h1Font": "\"Playfair Display\", Georgia, serif",
+    "imgCount": 8,
+    "dataImgCount": 8,
+    "fontChecks": {
+      "Playfair Display": true,
+      "DM Sans": true
+    },
+    "text": "DESIGN SYSTEM PREVIEW · USER:LA-MUSIC-SONORAMENTE\nSonoraMente LA — Design System\n\nSurface: web\n\nBrand logos / official assets\nlogo-sonoramente-horizontal-black.svg\nlogo-sonoramente-horizontal-color.svg\nlogo-sonoramente-horizontal-white.svg\nlogo-sonoramente-solo-black.svg\nlogo-sonoramente-solo-color.svg\nlogo-sonoramente-solo-white.svg\nlogo-sonoramente-vertical-black.svg\nlogo-sonoramente-vertical-color.svg\nPalette\nTypography\nDISPLAY\nThe grid carries weight; the line carries pace.\nBODY\nBody copy re"
+  },
+  {
+    "id": "la-music-sonoramente",
+    "view": "showcase",
+    "url": "http://127.0.0.1:18456/api/design-systems/user:la-music-sonoramente/showcase",
+    "screenshot": "/root/.openclaw/workspace/outputs/open-design-lahq-ds-proof-mike/la-music-sonoramente-showcase.png",
+    "bodyFont": "\"DM Sans\", Inter, system-ui, sans-serif",
+    "h1Font": "\"Playfair Display\", Georgia, serif",
+    "imgCount": 9,
+    "dataImgCount": 9,
+    "fontChecks": {
+      "Playfair Display": true,
+      "DM Sans": true
+    },
+    "text": "Product\nWorkspace\nPricing\nDocs\nCustomers\nSign in\nGet started →\nSONORAMENTE LA — DESIGN SYSTEM · LIVE PREVIEW\nThe system that makes SonoraMente LA — Design System feel like SonoraMente LA — Design System.\n\nSurface: web\n\nStart a free trial →\nSee it in action\n4.9 · App Store rating\nSOC 2 · Type II compliant\n120k+ active teams\nTRUSTED BY TEAMS SHIPPING SERIOUS WORK\nWHAT IT DOES\nEvery primitive a fast team needs.\n\nA system styled entirely from the tokens of SonoraMente LA — Design System — palette, t"
+  }
+]

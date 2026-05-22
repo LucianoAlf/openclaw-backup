@@ -1,0 +1,17 @@
+{
+  "projectId": "mike-single-run-image2-card-mpfvwm74",
+  "runId": "a110b8ee-7217-436e-83b1-b26d886ca90a",
+  "status": "succeeded",
+  "files": [
+    "index.html",
+    "assets/fonts/Prompt-Black.ttf",
+    "assets/fonts/Prompt-ExtraBold.ttf",
+    "assets/fonts/Prompt-Bold.ttf",
+    "assets/fonts/Prompt-SemiBold.ttf",
+    "assets/fonts/Prompt-Medium.ttf",
+    "assets/fonts/Prompt-Regular.ttf",
+    "assets/logos/logo-la-music-dark-completa.svg",
+    "assets/generated/stage-photo.png"
+  ],
+  "out": "/home/mike/.openclaw/workspace/outputs/open-design-mike-single-run-image2-card"
+}

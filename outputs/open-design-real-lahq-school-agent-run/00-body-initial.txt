@@ -1,0 +1,5257 @@
+Home
+Star
+·
+48.8K
+Join Discord
+Local CLI
+·
+Codex CLI
+·
+GPT-5.5
+Use everywhere
+Open Design
+What do you want to design?
+
+Describe what you want to generate, then press Enter.
+
+Prototype
+Live artifact
+Slide deck
+Image
+Video
+HyperFrames
+Audio
+Recent projects
+View all
+C
+Prototype
+Crie uma arte/post 1080x1350 para LA Music School
+Not started
+·
+2m ago
+L
+Prototype
+LA Music School — Seu som merece palco
+Not started
+·
+18m ago
+L
+Prototype
+LA Music School — Seu som merece palco
+Not started
+·
+19m ago
+L
+Prototype
+LA Music School — Seu som merece palco
+Not started
+·
+20m ago
+L
+Prototype
+LA Music School — Seu som merece palco
+Not started
+·
+21m ago
+L
+Prototype
+LA Music School — Seu som merece palco
+Not started
+·
+21m ago
+Community
+Browse registry
+Saved
+0
+All
+386
+Prototype
+60
+Slides
+59
+Image
+47
+Video
+48
+HyperFrames
+13
+Audio
+1
+example.html
+Official
+瑞士国际主义 Deck
+
+16 列网格 + 单一饱和 accent + 22 个锁死版面 (Klein Blue / Lemon / Mint / Safety Orange)
+
+example
+deck
+marketing
+Details
+Use
+Save
+瑞士国际主义 Deck
+Official
+example.html
+Official
+归藏编辑墨水 Deck
+
+电子杂志 × 电子墨水; 10 个版面 + 5 套调色板 (墨水/靛蓝瓷/森林墨/牛皮纸/沙丘)
+
+example
+deck
+marketing
+Details
+Use
+Save
+归藏编辑墨水 Deck
+Official
+example.html
+Official
+Magazine Poster
+
+An editorial-style poster — newsprint paper, dateline, oversized serif headline with a struck-through word and italic accent, a 2-column body block, and 6 numbered sections with annotated pull-quote captions. Reads like a Sunday-paper full-page essay or a thoughtful launch poster. Use when the brief asks for "magazine poster", "editorial poster", "newsprint", "essay layout", or "manifesto".
+
+example
+prototype
+marketing
+Details
+Use
+Save
+Magazine Poster
+Official
+example.html
+Official
+Kami 羊皮纸文档
+
+暖羊皮纸底 (#f5f4ed) + 墨蓝单色 accent (#1B365D) + 单一衬线字体, 编辑级排印
+
+example
+prototype
+personal
+Details
+Use
+Save
+Kami 羊皮纸文档
+Official
+example.html
+Official
+Web Prototype Taste Brutalist
+
+Swiss industrial-print web prototype. Newsprint canvas, monolithic black grotesque, viewport-bleeding numerals, hairline grid dividers, hazard-red accent, ASCII syntax decoration. Distilled from Leonxlnx/taste-skill `brutalist-skill` (Swiss Industrial Print mode).
+
+example
+prototype
+design
+Details
+Use
+Save
+Web Prototype Taste Brutalist
+Official
+example.html
+Official
+Hyperframes 视频脚本
+
+Hyperframes / Remotion 兼容的连续帧动画, 可自动播放
+
+example
+video
+hyperframes
+Details
+Use
+Save
+Hyperframes 视频脚本
+Official
+example.html
+Official
+故障艺术标题帧
+
+数字故障 / 像散偏移 / 数据腐败标题, 适合视频转场 / cyberpunk hero
+
+example
+video
+glitch
+Details
+Use
+Save
+故障艺术标题帧
+Official
+example.html
+Official
+VFX 文字光标
+
+光标拖光 + 彩色像散射线 + 定向光斑, 适合视频片头逐字揭示金句
+
+example
+video
+vfx
+Details
+Use
+Save
+VFX 文字光标
+Official
+example.html
+Official
+品牌 Logo 收尾帧
+
+Logo 分块组装入场 + glow bloom + tagline 揭示, 适合视频片尾 / 品牌闭幕
+
+example
+video
+logo
+Details
+Use
+Save
+品牌 Logo 收尾帧
+Official
+example.html
+Official
+1920 画布自由 Deck
+
+锁死 1920×1080 画布, React 组件级自由组合, 不绑模板
+
+example
+deck
+design
+Details
+Use
+Save
+1920 画布自由 Deck
+Official
+Official
+3D Animated Boy Building Lego
+
+A multi-shot video prompt in 3D animation style describing a boy carefully assembling Lego pieces in a room, featuring time-lapse effects.
+
+video-template
+video
+general
+Details
+Use
+Save
+3D Animated Boy Building Lego
+Official
+Official
+A Decade of Refinement Glow-Up
+
+A transformation prompt for Seedance 2.0 showing a man's transition from a casual 2016 setting to a luxurious 2026 Dubai lifestyle while maintaining character consistency.
+
+video-template
+video
+advertising
+Details
+Use
+Save
+A Decade of Refinement Glow-Up
+Official
+Official
+Ancient Guardian Dragon Rescue
+
+A detailed multi-shot cinematic prompt for a story about a girl in a rainy village saved by an emerging dragon, focusing on VFX and atmospheric sound.
+
+video-template
+video
+general
+Details
+Use
+Save
+Ancient Guardian Dragon Rescue
+Official
+Official
+Ancient Indian Kingdom FPV Video
+
+A fast-paced FPV drone-style cinematic prompt depicting a mystical Indian kingdom with temples and jungles.
+
+video-template
+video
+general
+Details
+Use
+Save
+Ancient Indian Kingdom FPV Video
+Official
+Official
+Animation transfer and camera tracking prompt
+
+A technical prompt for Seedance 2.0 that applies a specific motion reference to a character while maintaining fixed camera tracking.
+
+video-template
+video
+general
+Details
+Use
+Save
+Animation transfer and camera tracking prompt
+Official
+Official
+Character Intro Motion Graphics Sequence
+
+A complex, multi-stage motion graphics prompt for introducing a team of characters with specific UI overlays and transitions, designed for the Seedance 2.0 model.
+
+video-template
+video
+motion-graphics
+Details
+Use
+Save
+Character Intro Motion Graphics Sequence
+Official
+Official
+Cinematic Birthday Celebration Sequence
+
+A highly detailed multi-shot video prompt for a birthday sequence, focusing on character consistency and emotional storytelling.
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Cinematic Birthday Celebration Sequence
+Official
+Official
+Cinematic Dragon Interaction & Flight
+
+A detailed storyboard-style prompt for a video featuring a woman's emotional interaction with a dragon followed by a cinematic flight sequence.
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Cinematic Dragon Interaction & Flight
+Official
+Official
+Cinematic East Asian Woman Hand Dance
+
+A highly detailed multi-shot cinematic video prompt for a stylized hand dance, featuring time-coded instructions for camera movement and character actions.
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Cinematic East Asian Woman Hand Dance
+Official
+Official
+Cinematic Emotional Face Close-up
+
+A highly detailed technical prompt for Seedance 2.0 focusing on realistic skin textures and a series of complex emotional facial transitions.
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Cinematic Emotional Face Close-up
+Official
+Official
+Cinematic Marine Biologist Exploration
+
+A detailed cinematic video prompt for an underwater scene featuring a marine biologist discovering an ancient shipwreck in a coral reef.
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Cinematic Marine Biologist Exploration
+Official
+Official
+Cinematic Music Podcast and Guitar Technique
+
+An advanced cinematic prompt for generating a 4K music podcast video, with specific focus on guitar technique, pinch harmonics, and studio aesthetics.
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Cinematic Music Podcast and Guitar Technique
+Official
+Official
+Cinematic Route Navigation Guide
+
+A structured multi-scene prompt designed for Seedance to create a consistent walking navigation video featuring a recurring tour guide character and smooth transitions between real-world locations.
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Cinematic Route Navigation Guide
+Official
+Official
+Cinematic Street Racing Sequence for Seedance 2
+
+A detailed, multi-shot prompt designed for Seedance 2 to generate a cinematic street racing sequence at night, focusing on intense driver focus, dynamic camera work, and explosive acceleration, struct
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Cinematic Street Racing Sequence for Seedance 2
+Official
+Official
+Cinematic vampire alley fight sequence
+
+A comprehensive action prompt for a short film scene involving dynamic camera movements and high-speed combat in a neon-lit alley.
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Cinematic vampire alley fight sequence
+Official
+Official
+Crimson Horizon Sci-Fi Cinematic Sequence
+
+A comprehensive 9-shot cinematic video sequence for a sci-fi film titled 'Crimson Horizon', detailing everything from a rocket launch to an eerie alien encounter on Mars.
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Crimson Horizon Sci-Fi Cinematic Sequence
+Official
+Official
+Cyberpunk Game Trailer Script
+
+An extensive video generation prompt for a cyberpunk game trailer, detailing character design, UI animations, and environmental transitions from a white void to a favela.
+
+video-template
+video
+general
+Details
+Use
+Save
+Cyberpunk Game Trailer Script
+Official
+Official
+Forbidden City Cat Satire
+
+A complex dark comedy prompt for Seedance 2.0 featuring an orange cat official and a hyena emperor in a satirical Qing dynasty setting.
+
+video-template
+video
+general
+Details
+Use
+Save
+Forbidden City Cat Satire
+Official
+Official
+Hollywood Haute Couture Fantasy Video Prompt
+
+A detailed, multi-scene video generation prompt for Seedance 2.0, designed to create a Hollywood Haute Couture Fantasy film. The prompt specifies style, resolution (8K), rendering engine (Unreal Engin
+
+video-template
+video
+vfx-fantasy
+Details
+Use
+Save
+Hollywood Haute Couture Fantasy Video Prompt
+Official
+Official
+Hunched Character Animation
+
+Instruction for Seedance 2 to create an in-place walking animation for a specific character reference.
+
+video-template
+video
+general
+Details
+Use
+Save
+Hunched Character Animation
+Official
+Official
+HyperFrames: $0 → $10K Money Counter Hype (9:16)
+
+A 6-second vertical 1080×1920 HyperFrames hype clip — Apple-style $0 → $10,000 counter with green flash, money burst particles, cash-stack icon, kicker headline. Built on the HyperFrames `apple-money-count` catalog block.
+
+video-template
+video
+short-form
+Details
+Use
+Save
+HyperFrames: $0 → $10K Money Counter Hype (9:16)
+Official
+Official
+HyperFrames: 12-Second App Showcase — Three Floating Phones
+
+A 12-second 16:9 app showcase composition — three floating iPhone screens hover in 3D space, each rotating in turn to surface a different feature, beat-synced label callouts, end logo lockup. Built directly on the HyperFrames `app-showcase` catalog block.
+
+video-template
+video
+product
+Details
+Use
+Save
+HyperFrames: 12-Second App Showcase — Three Floating Phones
+Official
+Official
+HyperFrames: 30-Second Brand Sizzle Reel
+
+A 30-second 16:9 HyperFrames sizzle reel — fast cuts, beat-synced kinetic typography, audio-reactive scale on display words, shader transitions between five scenes, end-card with logo bloom. Modelled on the aisoc-hype archetype from the student kit.
+
+video-template
+video
+marketing
+Details
+Use
+Save
+HyperFrames: 30-Second Brand Sizzle Reel
+Official
+Official
+HyperFrames: 30-Second SaaS Product Promo (Linear-style)
+
+A 30-second HyperFrames composition modelled on Linear/ClickUp-style product films — UI 3D reveals, beat-synced kinetic typography, animated UI screenshots, end-card with logo outro. Built from HF catalog blocks (ui-3d-reveal, app-showcase, logo-outro) plus shader transitions between scenes.
+
+video-template
+video
+marketing
+Details
+Use
+Save
+HyperFrames: 30-Second SaaS Product Promo (Linear-style)
+Official
+Official
+HyperFrames: 4-Second Cinematic Logo Outro
+
+A 4-second 16:9 logo outro — piece-by-piece wordmark assembly with bloom, shimmer sweep across the final lockup, soft grain overlay, single-line CTA. Built on the HyperFrames `logo-outro`, `shimmer-sweep`, and `grain-overlay` blocks.
+
+video-template
+video
+branding
+Details
+Use
+Save
+HyperFrames: 4-Second Cinematic Logo Outro
+Official
+Official
+HyperFrames: 5-Second Minimal Product Reveal
+
+A 5-second HyperFrames composition for a high-end product reveal — dark canvas, single warm accent, slow push-in title card, kinetic kicker line, restrained motion. The agent renders MP4 from HTML+GSAP via puppeteer; no stock footage needed.
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+HyperFrames: 5-Second Minimal Product Reveal
+Official
+Official
+HyperFrames: 9:16 Social Overlay Stack (X · Reddit · Spotify · Instagram)
+
+A 15-second vertical 1080×1920 HyperFrames composition that stacks four animated social cards over a face-cam loop — an X post, a Reddit reaction, a Spotify now-playing card, and an Instagram-follow CTA at the end. Each card is a HyperFrames catalog block; the choreography is the value-add.
+
+video-template
+video
+short-form
+Details
+Use
+Save
+HyperFrames: 9:16 Social Overlay Stack (X · Reddit · Spotify · Instagram)
+Official
+Official
+HyperFrames: 9:16 TikTok Talking-Head with Karaoke Captions
+
+A vertical 1080×1920 HyperFrames short — TTS-narrated talking-head over a face-cam loop, with karaoke-style word-synced captions, animated lower third, and a tiktok-follow overlay at the end. Mirrors the may-shorts-19 archetype from the HyperFrames student kit.
+
+video-template
+video
+short-form
+Details
+Use
+Save
+HyperFrames: 9:16 TikTok Talking-Head with Karaoke Captions
+Official
+Official
+HyperFrames: Animated Bar-Chart Race (NYT-style)
+
+A 12-second 16:9 data infographic — animated bar + line chart with staggered category reveal, NYT-style serif headline, footnote source, kinetic value labels. Built directly on the HyperFrames `data-chart` catalog block.
+
+video-template
+video
+data
+Details
+Use
+Save
+HyperFrames: Animated Bar-Chart Race (NYT-style)
+Official
+Official
+HyperFrames: Apple-Style Flight Map (Origin → Destination)
+
+An 8-second 16:9 cinematic flight-route map — realistic terrain zoom, animated plane gliding from origin to destination along a curved path, labelled cities, kinetic distance counter. Built directly on the HyperFrames `nyc-paris-flight` catalog block, repurposable for any city pair.
+
+video-template
+video
+travel
+Details
+Use
+Save
+HyperFrames: Apple-Style Flight Map (Origin → Destination)
+Official
+Official
+HyperFrames: Website-to-Video Pipeline (15-Second Marketing Cut)
+
+A 15-second 16:9 HyperFrames composition that captures a live website at three viewport sizes, then animates between them with a chromatic radial split between scenes. Mirrors the hyperframes-sizzle student-kit archetype where the site is the source asset.
+
+video-template
+video
+marketing
+Details
+Use
+Save
+HyperFrames: Website-to-Video Pipeline (15-Second Marketing Cut)
+Official
+Official
+Live-Action Anime Adaptation: Water vs. Thunder Breathing Duel
+
+A highly detailed, 15-second prompt for generating a live-action adaptation of an anime-style duel, featuring 'Water Breathing' (blue water dragon) versus 'Thunder Breathing' (golden lightning). The p
+
+video-template
+video
+anime
+Details
+Use
+Save
+Live-Action Anime Adaptation: Water vs. Thunder Breathing Duel
+Official
+Official
+Luxury Supercar Cinematic Narrative
+
+A highly detailed multi-shot cinematic prompt for Seedance 2.0 involving a stylish man, Dobermans, and a vintage supercar in a misty mountain setting.
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Luxury Supercar Cinematic Narrative
+Official
+Official
+Magical Academy Storyboard Sequence
+
+A detailed storyboard-style prompt for a cinematic sequence depicting a magical girl at an academy, covering arrival, discovery of power, and a magical duel.
+
+video-template
+video
+advertising
+Details
+Use
+Save
+Magical Academy Storyboard Sequence
+Official
+Official
+Modern Rural Aesthetics Healing Short Film Video Prompt
+
+A detailed, three-shot prompt for Seedance 2.0 to generate a healing, cinematic short film in the Modern Rural Aesthetics style. It specifies the style (Cinematic Commercial, 4K/8K, Extreme Macro, nat
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Modern Rural Aesthetics Healing Short Film Video Prompt
+Official
+Official
+Nightclub Flyer Atmospheric Animation
+
+A subtle animation prompt for Seedance 2.0 to bring background and lighting elements to life while keeping the subject locked
+
+video-template
+video
+general
+Details
+Use
+Save
+Nightclub Flyer Atmospheric Animation
+Official
+Official
+Retro HK Wuxia Film Aesthetic
+
+A complex multi-part video prompt recreating 80s-90s Hong Kong Wuxia film aesthetics, featuring a character transformation from a cat to a human with stylized shots.
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Retro HK Wuxia Film Aesthetic
+Official
+Official
+Seedance 2.0: 15-Second Cinematic Japanese Romance Short Film
+
+A highly detailed, 15-second multi-scene prompt for Seedance 2.0, designed to generate a cinematic, ultra-realistic Japanese high school pure love short film. The prompt specifies scene setting (empty
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Seedance 2.0: 15-Second Cinematic Japanese Romance Short Film
+Official
+Official
+Seedance 2.0: 80-Year-Old Rapper MV
+
+A detailed, 15-second prompt for Seedance 2.0 to generate a 16:9 horizontal street rap music video (MV) featuring an 80-year-old woman. The prompt specifies the style (neon purple/blue cool tones, exp
+
+video-template
+video
+general
+Details
+Use
+Save
+Seedance 2.0: 80-Year-Old Rapper MV
+Official
+Official
+Soul-Switching Mirror Magic Sequence
+
+A narrative video prompt describing a magical soul-switching event at a mirror, with specific camera instructions and emotional cues for each segment.
+
+video-template
+video
+vfx-fantasy
+Details
+Use
+Save
+Soul-Switching Mirror Magic Sequence
+Official
+Official
+Toaster Rocket Jumpscare
+
+A prompt for a realistic home-video style shot of an old man being jumpscared by a toaster launching bread like a rocket.
+
+video-template
+video
+general
+Details
+Use
+Save
+Toaster Rocket Jumpscare
+Official
+Official
+Video - Three Kingdoms ARPG - Guan Yu Slays Yan Liang (Seedance 2.0)
+
+A ~10s in-engine cinematic action sequence bringing the companion image template game-screenshot-three-kingdoms-guanyu-slaying-yanliang to life. Guan Yu (关羽) rides his Red Hare horse straight into an enemy battle line, raises the Green Dragon Crescent Blade, and executes a single clean cleave of the opposing general Yan Liang. Tuned for Seedance 2.0 — tight camera discipline, one decisive strike, clean horse-and-blade physics, photoreal lighting, absolutely no gore on-screen (the strike is implied by a gold qi flash, not by any blood). Designed as the direct video companion to the matching image template so the still and the clip can be served as a pair. Reference image: the Guan Yu slaying-Yan-Liang screenshot template.
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Video - Three Kingdoms ARPG - Guan Yu Slays Yan Liang (Seedance 2.0)
+Official
+Official
+Video - Three Kingdoms ARPG - Lyu Bu Yuanmen Archery (Seedance 2.0)
+
+A ~10s in-engine cinematic action sequence bringing the companion image template game-screenshot-three-kingdoms-lyubu-yuanmen-archery to life. Lyu Bu (吕布) stands at the center of a dusty military encampment between two facing armies, draws a red-lacquered longbow, holds a bead-on-draw, then looses a single gold-glowing qi-imbued arrow down the range toward a distant halberd planted in the ground. Tuned for Seedance 2.0 — tight camera discipline, a single decisive beat, crisp HUD-safe framing, clean bow/arrow physics, wind + dust + banner motion, and in-game-screenshot color grading. Designed as the direct video companion to the matching image template so the still and the clip can be served as a pair. Reference image: the Lyu Bu yuanmen-archery screenshot template.
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Video - Three Kingdoms ARPG - Lyu Bu Yuanmen Archery (Seedance 2.0)
+Official
+Official
+Video - Three Kingdoms ARPG - Zhao Yun Cradle Escape (Seedance 2.0)
+
+A ~12s in-engine cinematic action sequence bringing the companion image template game-screenshot-three-kingdoms-zhaoyun-cradle-escape to life. Zhao Yun (赵云) rides his warhorse through a broken Changban battlefield, cradling the infant heir A Dou in the crook of his left arm and wielding his spear in the right, parrying an incoming strike with a single PERFECT DODGE and vaulting past a fallen war-chariot to clear a path. Tuned for Seedance 2.0 — tight camera discipline, single continuous beat, believable one-arm spearwork, clean horse physics, and absolutely no visible harm to the infant. Designed as the direct video companion to the matching image template so the still and the clip can be served as a pair. Reference image: the Zhao Yun cradle-escape screenshot template.
+
+video-template
+video
+cinematic
+Details
+Use
+Save
+Video - Three Kingdoms ARPG - Zhao Yun Cradle Escape (Seedance 2.0)
+Official
+Official
+Vintage Disney Style Pirate Crocodile Animation
+
+A multi-scene narrative prompt for a classic vintage Disney-style animation featuring a crocodile pirate and bird pirates on a ship.
+
+video-template
+video
+general
+Details
+Use
+Save
+Vintage Disney Style Pirate Crocodile Animation
+Official
+Official
+Wasteland Factory Chase
+
+A cinematic prompt for a high-speed desert wasteland scene featuring a moving industrial factory on legs and a rebel bike chase.
+
+video-template
+video
+general
+Details
+Use
+Save
+Wasteland Factory Chase
+Official
+Official
+3D Stone Staircase Evolution Infographic
+
+Transforms a flat evolutionary timeline into a realistic 3D stone staircase infographic with detailed organism renders and structured side panels.
+
+image-template
+image
+infographic
+Details
+Use
+Save
+3D Stone Staircase Evolution Infographic
+Official
+Official
+Anime Martial Arts Battle Illustration
+
+Generates a dynamic, high-impact anime illustration of two female characters fighting in a traditional dojo with elemental energy effects.
+
+image-template
+image
+anime-manga
+Details
+Use
+Save
+Anime Martial Arts Battle Illustration
+Official
+Official
+Beat-Synced Outfit Transformation Dance
+
+A prompt for Seedance 2.0 that coordinates a character dance following breakdown frames while performing a beat-synced outfit change.
+
+video-template
+video
+general
+Details
+Use
+Save
+Beat-Synced Outfit Transformation Dance
+Official
+Official
+E-commerce Live Stream UI Mockup
+
+Generates a realistic social media live stream interface overlaying a portrait, featuring customizable chat messages, gift popups, and a product purchase card.
+
+image-template
+image
+app-web-design
+Details
+Use
+Save
+E-commerce Live Stream UI Mockup
+Official
+Official
+Game Screenshot - Anime Fighting Game: Captain Ryuuga vs Kaze Renshin
+
+An in-game fighting game key visual / combat screenshot in the style of Street Fighter 6 or Tekken 8 intro art. Two anime-style male warriors square off in the center of a dramatic nighttime Chinese temple courtyard — a shirtless straw-hat pirate with a warm orange-red fire aura on the left, and a spiky-haired martial artist in an orange gi charging a massive crackling blue lightning energy sphere on the right. Ships with a complete fighting-game HUD (dual health bars, round timer, P1/P2 portrait panels with named fighters and emblems, per-side combo counters and max gauges). Warm-orange vs cool-blue split color grading matches the rival-fighter convention of the genre. Tuned for gpt-image-2 at 16:9.
+
+image-template
+image
+game-ui
+Details
+Use
+Save
+Game Screenshot - Anime Fighting Game: Captain Ryuuga vs Kaze Renshin
+Official
+Official
+Game Screenshot - Three Kingdoms ARPG: Guan Yu Slaying Yan Liang
+
+An in-game action-RPG screenshot of the iconic Three Kingdoms scene where Guan Yu rides his Red Hare warhorse through a torrential-rain battlefield and charges toward the enemy general Yan Liang. Rendered in the cinematic photoreal style of Black Myth: Wukong, Unreal Engine 5, third-person tracking camera from behind-and-left of the mounted hero. Full boss-fight HUD (portrait, minimap with dense enemy dots, skill hotbar with a finisher prompt, floating boss HP bar on the enemy general) turns the scene into a AAA ARPG combat moment. Tuned for gpt-image-2 at 16:9.
+
+image-template
+image
+game-ui
+Details
+Use
+Save
+Game Screenshot - Three Kingdoms ARPG: Guan Yu Slaying Yan Liang
+Official
+Official
+Game Screenshot - Three Kingdoms ARPG: Lü Bu's Yuanmen Archery
+
+An in-game action-RPG screenshot of the famous Three Kingdoms scene where Lü Bu shoots down a distant halberd at the camp gate to stop a battle. Rendered in the cinematic photoreal style of Black Myth: Wukong, Unreal Engine 5 Nanite/Lumen, third-person over-the-shoulder gameplay camera. Full in-game HUD overlay (HP + qi bars, minimap, skill hotbar, lock-on target marker with distance readout to the far halberd) makes it read as a real next-gen ARPG capture rather than a cutscene. Tuned for gpt-image-2 at 16:9.
+
+image-template
+image
+game-ui
+Details
+Use
+Save
+Game Screenshot - Three Kingdoms ARPG: Lü Bu's Yuanmen Archery
+Official
+Official
+Game Screenshot - Three Kingdoms ARPG: Zhao Yun's Cradle Escape at Changbanpo
+
+An in-game action-RPG screenshot of the legendary Three Kingdoms scene where Zhao Yun cradles the infant Liu Chan in one arm and fights his way through enemy lines with a spear in the other at Changbanpo. Rendered in the cinematic photoreal style of Black Myth: Wukong combined with Elden Ring, Unreal Engine 5 with full Nanite, Lumen ray-tracing, and volumetric god-rays. The emotional core — one arm protecting the swaddled baby, one arm fighting for life — is reinforced by a full HUD overlay including a dedicated ESCORT protection bar for the baby, a combo counter, and mid-air damage-number popups on flung enemies. Tuned for gpt-image-2 at 16:9.
+
+image-template
+image
+game-ui
+Details
+Use
+Save
+Game Screenshot - Three Kingdoms ARPG: Zhao Yun's Cradle Escape at Changbanpo
+Official
+Official
+Game UI - Ancient China Open-World MMO HUD
+
+Generates an in-game HUD screenshot mockup for a AAA ancient-China open-world MMO, in the cinematic photoreal style of Black Myth: Wukong. A beautiful female swordswoman protagonist anchors the center of the frame in a misty mountain ancient-shrine scene, surrounded by a complete MMO HUD: top-left character portrait with HP/MP/stamina bars and buff icons, bottom-center skill hotbar with Chinese-calligraphy skill icons, top-right minimap with quest markers, right-side quest tracker panel, bottom-left scrolling chat window, floating world-space NPC nameplates and quest exclamation mark. Rendered as a realistic monitor screenshot, 16:9, suitable for pitch decks, gamescom-style key art, and Xiaohongshu/bilibili game teasers.
+
+image-template
+image
+game-ui
+Details
+Use
+Save
+Game UI - Ancient China Open-World MMO HUD
+Official
+Official
+Illustrated City Food Map
+
+Generates a hand-drawn, watercolor-style tourist map featuring numbered local food specialties, landmarks, and a legend.
+
+image-template
+image
+illustration
+Details
+Use
+Save
+Illustrated City Food Map
+Official
+Official
+Illustration - Crayon Kid-Drawing Rework
+
+A style-transfer prompt that reworks any reference image (product shot, screenshot, portrait, UI mockup) into a hand-drawn crayon illustration that feels like it was made by a 10-year-old. Replaces the original palette with bright playful crayon colors on clean white paper, and sprinkles childlike whimsy — castles, candy, stars, clouds, rainbows — to amplify the innocent storybook vibe. Works as an image-to-image edit in GPT-image-2 (requires uploading a reference image alongside the prompt); well-suited to website screenshots, brand key art, product photos, and portraits.
+
+image-template
+image
+illustration
+Details
+Use
+Save
+Illustration - Crayon Kid-Drawing Rework
+Official
+Official
+Infographic - Otaku Dance Choreography Breakdown (Gokuraku Jodo, 16 Panels)
+
+A single vertical 2:3 poster composed as a 4×4 grid of 16 connected square panels, forming a full choreography breakdown chart for the famous Japanese otaku dance song 極楽浄土 (Gokuraku Jodo). Each panel shows the same cute half-realistic anime idol girl (pink twin-tails, sailor-collar school-idol uniform) performing one signature pose from the dance, full-body, on a pastel-pink background with a small Japanese caption strip at the bottom and a numbered circle at the top-left. Explicitly engineered as a POSE REFERENCE sheet for AI video generation — every silhouette is crisp and unambiguous, no motion lines or background clutter. Tuned for gpt-image-2, aspect 2:3. Category: Infographic.
+
+image-template
+image
+infographic
+Details
+Use
+Save
+Infographic - Otaku Dance Choreography Breakdown (Gokuraku Jodo, 16 Panels)
+Official
+Official
+Momotaro Explainer Slide in Hybrid Style
+
+A prompt that combines the simple, warm aesthetic of Irasutoya illustrations with the high-information density characteristic of Japanese government slides.
+
+image-template
+image
+illustration
+Details
+Use
+Save
+Momotaro Explainer Slide in Hybrid Style
+Official
+Official
+Notion-style Team Dashboard (Live Artifact)
+
+Single-screen Notion-native team dashboard mockup — KPI grid, 7-day sparkline, activity feed, and linked-database task table. Visual companion to the live-artifact skill; pair with it for refreshable / connector-backed runs, or use standalone as a still mockup.
+
+image-template
+image
+live-artifact
+Details
+Use
+Save
+Notion-style Team Dashboard (Live Artifact)
+Official
+Official
+Profile / Avatar - Anime Girl to Cinematic Photo
+
+This prompt turns a character reference illustration into a realistic, warm-toned vintage interior portrait while preserving the original outfit, pose, and cat.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Anime Girl to Cinematic Photo
+Official
+Official
+Profile / Avatar - Casual Fashion Grid Photoshoot
+
+A structured JSON prompt for a 4-photo collage of a casual fashion photoshoot with detailed subject and lighting parameters.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Casual Fashion Grid Photoshoot
+Official
+Official
+Profile / Avatar - Cinematic South Asian Male Portrait with Vultures
+
+A detailed cinematic portrait of a young South Asian man in a moody, dark fantasy setting surrounded by vultures and ravens.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Cinematic South Asian Male Portrait with Vultures
+Official
+Official
+Profile / Avatar - Cyberpunk Anime Portrait with Neon Face Text
+
+A stylish neon-soaked anime portrait for posters, social media art, or futuristic branding visuals.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Cyberpunk Anime Portrait with Neon Face Text
+Official
+Official
+Profile / Avatar - Elegant Fantasy Girl in Violet Garden
+
+This prompt generates a polished anime-style fantasy portrait of an elegant woman with glossy styled hair, ornate violet-black clothing, and a flower-filled magical garden setting, ideal for character
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Elegant Fantasy Girl in Violet Garden
+Official
+Official
+Profile / Avatar - Ethereal Blue-Haired Fantasy Portrait
+
+This prompt generates a soft, luminous anime-style fantasy character portrait, ideal for creating elegant vertical key art or character illustrations with flowing hair and a dreamy spring atmosphere.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Ethereal Blue-Haired Fantasy Portrait
+Official
+Official
+Profile / Avatar - Glamorous Woman in Black Portrait
+
+This prompt generates a photorealistic luxury-style portrait of an elegant woman in a plunging black outfit, ideal for fashion editorial or beauty imagery.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Glamorous Woman in Black Portrait
+Official
+Official
+Profile / Avatar - Hyper-Realistic Selfie Texture Prompts
+
+Detailed prompt snippets for generating realistic skin textures and authentic phone selfie framing, focusing on visible pores and natural lighting.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Hyper-Realistic Selfie Texture Prompts
+Official
+Official
+Profile / Avatar - Lavender Fantasy Mage Portrait
+
+This prompt generates a polished anime-style fantasy portrait of an elegant mage princess with glossy blonde hair, purple flowers, and ornate crystal attire, ideal for character art or magical illustr
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Lavender Fantasy Mage Portrait
+Official
+Official
+Profile / Avatar - Monochrome Studio Portrait
+
+A high-end commercial photography prompt for a monochrome portrait with a distinctive split-background and dramatic studio lighting.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Monochrome Studio Portrait
+Official
+Official
+Profile / Avatar - Old Photo Restoration to DSLR Portrait
+
+This prompt restores a damaged vintage 4-person family photo into a clean, colorized, high-resolution realistic portrait for photo repair and enhancement.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Old Photo Restoration to DSLR Portrait
+Official
+Official
+Profile / Avatar - Poetic Woman in Garden Portrait
+
+This prompt generates a realistic editorial-style portrait of a bookish young woman in a sunlit garden, ideal for lifestyle photography, literary branding, or elegant character imagery.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Poetic Woman in Garden Portrait
+Official
+Official
+Profile / Avatar - Professional Identity Portrait Wallpaper
+
+Generates a high-resolution, premium wallpaper featuring a subject in professional attire with career-related activities and typography.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Professional Identity Portrait Wallpaper
+Official
+Official
+Profile / Avatar - Realistically Imperfect AI Selfie
+
+A creative prompt used with GPT Image 2 to generate a 'failed' selfie that looks like an accidental, low-quality smartphone snapshot.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Realistically Imperfect AI Selfie
+Official
+Official
+Profile / Avatar - Signed Marker Portrait on Shikishi
+
+This generates a lively signed marker-style portrait on a square shikishi board, useful for fan-art autographs, commemorative illustration posts, and personalized thank-you visuals.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Signed Marker Portrait on Shikishi
+Official
+Official
+Profile / Avatar - Snow Rabbit Empress Portrait
+
+A realistic fantasy portrait prompt for generating a regal rabbit-themed woman in ornate winter hanfu standing in a snowy mountain temple setting.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Snow Rabbit Empress Portrait
+Official
+Official
+Profile / Avatar - Snow Rabbit Mask Hanfu Portrait
+
+This prompt generates a cinematic winter fantasy portrait of a masked woman in a rabbit-themed white Hanfu, ideal for elegant character art and atmospheric AI showcase imagery.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Snow Rabbit Mask Hanfu Portrait
+Official
+Official
+Profile / Avatar - Snowy Rabbit Hanfu Portrait
+
+This prompt generates an ultra-detailed fantasy beauty portrait of a rabbit-eared woman in embroidered hanfu, ideal for elegant character art, costume design, or cinematic AI portrait showcases.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Snowy Rabbit Hanfu Portrait
+Official
+Official
+Profile / Avatar - Snowy Rabbit Spirit Portrait
+
+This prompt generates a serene fantasy portrait of an anonymous rabbit-eared woman in winter, ideal for atmospheric character art and stylized profile illustrations.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Snowy Rabbit Spirit Portrait
+Official
+Official
+Profile / Avatar - Song Dynasty Hanfu Portrait
+
+An optimized prompt for generating a detailed and realistic portrait of a beauty in Song Dynasty traditional Hanfu within an ancient courtyard.
+
+image-template
+image
+profile-avatar
+Details
+Use
+Save
+Profile / Avatar - Song Dynasty Hanfu Portrait
+Official
+Official
+Sequence and Movement Instruction for Martial Arts Video
+
+A video prompt for Seedance 2.0 that instructs the model to animate a sequence based on a character sheet, focusing on specific movements and steps.
+
+video-template
+video
+general
+Details
+Use
+Save
+Sequence and Movement Instruction for Martial Arts Video
+Official
+Official
+Social Media Post - Anime Pokémon Shop Outfit Teaser Poster
+
+This prompt generates a soft pastel anime fashion announcement poster featuring a blurred-face girl in a blue dress inside a Pokémon store, ideal for outfit reveal teasers and character promo visuals.
+
+image-template
+image
+social-media-post
+Details
+Use
+Save
+Social Media Post - Anime Pokémon Shop Outfit Teaser Poster
+Official
+Official
+Social Media Post - Cinematic Elevator Scene
+
+A prompt for generating a moody, cinematic scene of a woman inside a metallic elevator with realistic lighting and reflections.
+
+image-template
+image
+social-media-post
+Details
+Use
+Save
+Social Media Post - Cinematic Elevator Scene
+Official
+Official
+Social Media Post - Confused Elf Girl at Pastel Desk
+
+This prompt generates a soft pastel anime illustration of an elf girl typing at her computer in a cozy kawaii workspace, ideal for social posts, wallpapers, or streamer-themed art.
+
+image-template
+image
+social-media-post
+Details
+Use
+Save
+Social Media Post - Confused Elf Girl at Pastel Desk
+Official
+Official
+Social Media Post - Editorial Fashion Photography
+
+A moody, fashion-focused prompt for a minimalist studio scene with soft lighting and warm tones.
+
+image-template
+image
+social-media-post
+Details
+Use
+Save
+Social Media Post - Editorial Fashion Photography
+Official
+Official
+Social Media Post - Fashion Editorial Collage
+
+A highly detailed 2x2 photo collage prompt for fashion editorial shots, focusing on consistent styling, specific lighting, and facial features from a reference photo.
+
+image-template
+image
+social-media-post
+Details
+Use
+Save
+Social Media Post - Fashion Editorial Collage
+Official
+Official
+Social Media Post - PSG Transfer Announcement Poster
+
+A bold, professional football signing poster for announcing a player's move to Paris Saint-Germain on social media or sports promo graphics.
+
+image-template
+image
+social-media-post
+Details
+Use
+Save
+Social Media Post - PSG Transfer Announcement Poster
+Official
+Official
+Social Media Post - Sensational Girl Dance Storyboard (8 Shots)
+
+A full 8-shot storyboard prompt set for generating a coherent frame-by-frame dance sequence of a stylish character. Includes shared global style tokens, a reusable negative prompt, and eight per-shot prompts (opening pose, hip groove, body wave, beat-drop waist twist, side hip sway, hair flick, power stance, finishing pose). Tuned for GPT-Image-2 tier models: concise vocabulary, no sensitive phrasing, consistent framing and lighting language across shots so the frames feel like one continuous choreography.
+
+image-template
+image
+social-media-post
+Details
+Use
+Save
+Social Media Post - Sensational Girl Dance Storyboard (8 Shots)
+Official
+Official
+Social Media Post - Showa Day Retro Culture Magazine Cover
+
+A warm editorial-style Japanese holiday feature page combining anime character art, nostalgic Showa-era street imagery, and magazine-style informational layout for seasonal cultural promotions.
+
+image-template
+image
+social-media-post
+Details
+Use
+Save
+Social Media Post - Showa Day Retro Culture Magazine Cover
+Official
+Official
+Social Media Post - Social Media Fashion Outfit Generation
+
+A prompt to generate a week's worth of fashion blogger-style outfit recommendations based on a character profile, complete with item labels and prices.
+
+image-template
+image
+social-media-post
+Details
+Use
+Save
+Social Media Post - Social Media Fashion Outfit Generation
+Official
+Official
+Social Media Post - Travel Snapshot Collage Prompt
+
+A detailed prompt for creating a nostalgic, 12-frame collage of smartphone-style travel photos depicting a solo journey.
+
+image-template
+image
+social-media-post
+Details
+Use
+Save
+Social Media Post - Travel Snapshot Collage Prompt
+Official
+Official
+Social Media Post - Vintage Sign-Painter Sketch
+
+Generates a hand-drawn marker sketch on paper with realistic details like graphite lines and ink bleed, perfect for vintage lettering styles.
+
+image-template
+image
+social-media-post
+Details
+Use
+Save
+Social Media Post - Vintage Sign-Painter Sketch
+Official
+Official
+Traditional Dance Performance
+
+A comprehensive video prompt for Seedance 2.0 to generate a graceful traditional dance based on choreography and identity reference images.
+
+video-template
+video
+advertising
+Details
+Use
+Save
+Traditional Dance Performance
+Official
+Official
+Viral K-pop Dance Choreography
+
+A detailed prompt for Seedance 2.0 to animate a character performing a dance based on a 16-panel storyboard reference.
+
+video-template
+video
+social-meme
+Details
+Use
+Save
+Viral K-pop Dance Choreography
+Official
+Official
+VR Headset Exploded View Poster
+
+Generates a high-tech exploded view diagram of a VR headset with detailed component callouts and promotional text.
+
+image-template
+image
+social-media-post
+Details
+Use
+Save
+VR Headset Exploded View Poster
+Official
+example.html
+Official
+Image Poster
+
+Single-image generation skill for posters, key art, and editorial illustrations. Defaults to gpt-image-2 but is provider-agnostic — the same workflow drives Flux, Imagen, or Midjourney via the active upstream tooling. Output is one or more PNG/JPEG files saved to the project folder.
+
+example
+image
+design
+Details
+Use
+Save
+Image Poster
+Official
+example.html
+Official
+macOS 通知横幅
+
+拟真 macOS 通知 banner + app icon + 标题正文, 适合 video overlay / 产品发布预告
+
+example
+video
+macos
+Details
+Use
+Save
+macOS 通知横幅
+Official
+example.html
+Official
+Video Shortform
+
+Short-form video generation skill — 3-10 second clips for product reveals, motion teasers, ambient loops. Defaults to Seedance 2 but works the same with Kling 3 / 4, Veo 3 or Sora 2. Output is one MP4 saved to the project folder. When the workspace also ships an interactive-video / hyperframes skill, prefer composing several short shots into a single timeline rather than one long monolithic clip.
+
+example
+video
+marketing
+Details
+Use
+Save
+Video Shortform
+Official
+example.html
+Official
+NYT 风数据图表帧
+
+NYT-newsroom 排版 + 错峰揭示动画 + 编辑级图表 (折线/柱/范围带)
+
+example
+video
+data
+Details
+Use
+Save
+NYT 风数据图表帧
+Official
+example.html
+Official
+便利贴流程图帧
+
+SVG 曲线连接 + 便利贴节点 + 光标交互, 像白板 brainstorm
+
+example
+video
+operations
+Details
+Use
+Save
+便利贴流程图帧
+Official
+example.html
+Official
+流体背景 Hero 帧
+
+WebGL 风流体置换背景 + 顶部叠加金句, 适合视频片头 / landing hero / 海报
+
+example
+video
+liquid
+Details
+Use
+Save
+流体背景 Hero 帧
+Official
+example.html
+Official
+胶片漏光电影帧
+
+胶片漏光 + 颗粒噪点 + 16:9 letterbox + 衬线大字, 电影感开场 / 章节卡
+
+example
+video
+cinema
+Details
+Use
+Save
+胶片漏光电影帧
+Official
+example.html
+Official
+Html Ppt Course Module
+
+Online-course / workshop module deck — warm paper background + Playfair serif, persistent left sidebar of learning objectives, MCQ self-check page. Use for teaching modules, training materials, workshop slides.
+
+example
+deck
+education
+Details
+Use
+Save
+Html Ppt Course Module
+Official
+example.html
+Official
+Html Ppt Dir Key Nav Minimal
+
+8 页极简方向键 keynote — 每页一个独立单色背景（靛 / 奶 / 绛 / 翠 / 灰 / 紫 / 白 / 炭），各自配色，160px display 标题 + 4px 短粗 accent 线分隔、箭头 → 前缀的 Mono 列表、左下 ← → kbd 提示 + 右下页码、巨大呼吸留白。适合"有话要说但没什么可看"的 keynote、launch、公开演讲。
+
+example
+deck
+personal
+Details
+Use
+Save
+Html Ppt Dir Key Nav Minimal
+Official
+example.html
+Official
+Html Ppt Graphify Dark Graph
+
+暗底知识图谱 deck — #06060c→#0e1020 深夜渐变 + 漂浮 blur orbs、封面 SVG 力导向图谱、彩虹渐变标题、JetBrains Mono 命令行高亮、glass-morphism 卡片。适合 dev-tool / CLI / 知识图谱 / 数据可视化的发布会，"AI-native + 科幻 + 暖色" 调子。
+
+example
+deck
+engineering
+Details
+Use
+Save
+Html Ppt Graphify Dark Graph
+Official
+example.html
+Official
+Html Ppt Hermes Cyber Terminal
+
+暗终端 honest-review deck — #0a0c10 黑底 + 56px 赛博网格 + CRT 暗角 + 扫描线、窗口红绿灯 chrome、`$ prompt` 命令行标题、薄荷绿 #7ed3a4 大字、JetBrains Mono、stroke-only 柱状图、blinking 光标、琥珀/绿/红三档 tag、暗色代码块。适合 CLI / agent / dev tool 测评（含 trace、diff、benchmark）。
+
+example
+deck
+engineering
+Details
+Use
+Save
+Html Ppt Hermes Cyber Terminal
+Official
+example.html
+Official
+Html Ppt Knowledge Arch Blueprint
+
+奶油蓝图架构 deck — 奶油纸 #F0EAE0 底色 + 单一锈红 #B5392A 高亮、48px 蓝图网格 mask、2px 黑边硬卡片、pipeline 步骤盒（其中一个抬高）、右侧锈红 insight callout、Playfair 衬线大字、SVG 虚线反馈环。零渐变零软阴影，认真且印刷友好。
+
+example
+deck
+engineering
+Details
+Use
+Save
+Html Ppt Knowledge Arch Blueprint
+Official
+example.html
+Official
+Html Ppt Obsidian Claude Gradient
+
+GitHub 暗紫渐变 deck — GitHub-dark #0d1117 + 紫蓝 radial 环境光 + 60px 网格 mask、居中布局、紫色 pill 标签、三色渐变标题（#a855f7→#60a5fa→#34d399）、GitHub 风代码 palette、紫色左边框高亮块。适合开发者工作流 / MCP / Agent / dev tool 教程，类似 GitHub Blog / Linear Changelog。
+
+example
+deck
+engineering
+Details
+Use
+Save
+Html Ppt Obsidian Claude Gradient
+Official
+example.html
+Official
+Html Ppt Pitch Deck
+
+Investor-ready 10-slide HTML pitch deck — white + blue→purple gradient hero, big numbers, traction bar chart, $4.5M-style ask page. Use when the user wants a fundraising deck, seed-round pitch, or VC meeting slides.
+
+example
+deck
+finance
+Details
+Use
+Save
+Html Ppt Pitch Deck
+Official
+example.html
+Official
+Html Ppt Presenter Mode Reveal
+
+演讲者模式专用 deck — tokyo-night 默认主题，5 套主题 T 键切换，每页带 150-300 字逐字稿示例（<aside class="notes">），按 S 打开 popup（CURRENT / NEXT / SCRIPT / TIMER 四张磁吸卡片）。用于技术分享、公开演讲、课程讲解，怕忘词或要提词器的场景。
+
+example
+deck
+engineering
+Details
+Use
+Save
+Html Ppt Presenter Mode Reveal
+Official
+example.html
+Official
+Html Ppt Product Launch
+
+Launch keynote deck — dark hero + light content, warm orange→peach accent, feature cards, pricing tiers, CTA. Use when announcing a product, launching a feature, or doing a keynote-style reveal.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Product Launch
+Official
+example.html
+Official
+Html Ppt Tech Sharing
+
+Conference / internal tech-talk deck — GitHub-dark, JetBrains Mono, terminal code blocks, agenda + Q&A pages. Use for engineering presentations, internal sharing sessions, conference talks, and code-heavy walkthroughs.
+
+example
+deck
+engineering
+Details
+Use
+Save
+Html Ppt Tech Sharing
+Official
+example.html
+Official
+Html Ppt Testing Safety Alert
+
+红琥珀警示 deck — 顶/底 45° 红黑 hazard 条纹、红色删除线否定标题、L1/L2/L3 绿/琥珀/红 tier 卡片、圆点状态 alert box、policy-yaml 代码块（红左边框 + bad 关键词高亮）、红绿 checklist、Q1 事故堆叠柱状图。适合安全 / 风险 / 事故复盘 / 红队 / 上线前 AI 评审 / policy-as-code。
+
+example
+deck
+engineering
+Details
+Use
+Save
+Html Ppt Testing Safety Alert
+Official
+example.html
+Official
+Html Ppt Weekly Report
+
+Team weekly / status-update deck — corporate clarity, 8-cell KPI grid, shipped list, 8-week bar chart, next-week table. Use for 周报, business reviews, team status updates, and exec dashboards.
+
+example
+deck
+operations
+Details
+Use
+Save
+Html Ppt Weekly Report
+Official
+example.html
+Official
+Html Ppt Xhs Pastel Card
+
+柔和马卡龙慢生活 deck — 奶油 #fef8f1 底 + 三个柔光 blob、Playfair 斜体衬线 display 标题混 sans 正文、28px 圆角马卡龙卡片（桃 / 薄荷 / 天 / 紫 / 柠 / 玫）、Playfair 斜体 01-04 序号、SVG donut 图、chip+page 顶栏。适合生活方式 / 个人成长 / 慢生活 / 情绪类内容，"杂志、手作、不太科技"的感觉。
+
+example
+deck
+personal
+Details
+Use
+Save
+Html Ppt Xhs Pastel Card
+Official
+example.html
+Official
+Html Ppt Xhs Post
+
+小红书 / Instagram 风 9 页 3:4 竖版图文（810×1080）— 暖色 pastel、虚线 sticker 卡片、底部页码点点。用于发小红书图文、Instagram carousel、品牌种草内容。
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Xhs Post
+Official
+example.html
+Official
+Html Ppt Xhs White Editorial
+
+白底杂志风 deck — 纯白背景 + 顶部 10 色彩虹 bar、80-110px display 标题、紫→蓝→绿→橙→粉渐变文字、马卡龙软卡片组（粉/紫/蓝/绿/橙）、黑底白字 .focus pill、引用大块。同时适合发小红书图文 + 横版 PPT 双用。
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Xhs White Editorial
+Official
+example.html
+Official
+Html Ppt Zhangzara 8 Bit Orbit
+
+8-Bit Orbit — Pixel-art neon arcade aesthetic on a deep navy void. Anything that should feel like a CRT screen at 2am: cyberpunk, gaming, web3, indie dev tools, hackathon demos.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara 8 Bit Orbit
+Official
+example.html
+Official
+Html Ppt Zhangzara Biennale Yellow
+
+Biennale Yellow — Solar yellow on warm parchment with deep indigo serif and atmospheric sun-glow gradients. Anything that should feel like an art-biennale poster or a museum's annual programme: exhibition decks, arts-institution announcements, design conference brochures, curatorial pitches, literary publications, studio retrospectives.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Biennale Yellow
+Official
+example.html
+Official
+Html Ppt Zhangzara Block Frame
+
+BlockFrame — Neobrutalist deck with pastel-neon color blocks and chunky black borders. Anything that should feel pop-graphic and design-led: indie SaaS launches, agency credentials, creative reviews, brand redesigns.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Block Frame
+Official
+example.html
+Official
+Html Ppt Zhangzara Blue Professional
+
+Blue Professional — Cream paper background with electric cobalt blue accents; clean modern professional. Anything that should feel modern-considered and lightly authoritative: B2B SaaS pitches, consulting deliverables, advisory updates, investor reports.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Blue Professional
+Official
+example.html
+Official
+Html Ppt Zhangzara Bold Poster
+
+Bold Poster — Editorial poster aesthetic with massive Shrikhand display and a single fire-engine red accent. Anything that should land like a magazine cover: brand manifestos, founder vision decks, editorial / cultural pitches, creative reviews.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Bold Poster
+Official
+example.html
+Official
+Html Ppt Zhangzara Broadside
+
+Broadside — Dark editorial canvas with a single fire orange accent and bilingual Latin/Chinese type stack. Anything that should land like a broadside newspaper headline: brand manifestos, magazine and cultural pitches, design talks, bilingual EN/CN decks, founder vision statements.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Broadside
+Official
+example.html
+Official
+Html Ppt Zhangzara Capsule
+
+Capsule — Modular pill-shaped cards on warm bone with a full pastel-pop palette. Anything that should feel modular, modern, and a little Y2K: lifestyle brands, creator portfolios, DTC launches, beauty / wellness, agency credentials.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Capsule
+Official
+example.html
+Official
+Html Ppt Zhangzara Cartesian
+
+Cartesian — Quiet warm-neutral palette with classical Playfair serifs; tasteful and unhurried. Anything that should feel quiet, considered, and grown-up: investment theses, white papers, advisory work, longform research, gallery / cultural decks.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Cartesian
+Official
+example.html
+Official
+Html Ppt Zhangzara Cobalt Grid
+
+Cobalt Grid — Electric cobalt italic serifs on a graph-paper canvas, anchored by stair-stepped pixel-glitch decorations and slim hairline rules. Anything that should feel like a quietly serious design / research bulletin, art publication, or curated trend report.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Cobalt Grid
+Official
+example.html
+Official
+Html Ppt Zhangzara Coral
+
+Coral — Cream and coral on near-black, set in oversized Bebas Neue. Anything that should feel warm-graphic and editorial: fashion, beauty, fitness, F&B, lifestyle brands, agency credentials.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Coral
+Official
+example.html
+Official
+Html Ppt Zhangzara Creative Mode
+
+Creative Mode — Cream paper canvas with confident multi-color (green, pink, orange, yellow) accents and Archivo Black display. Anything that should feel design-led and confident: creative agency pitches, design studio decks, ad shop credentials, brand creative reviews, art-direction reviews.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Creative Mode
+Official
+example.html
+Official
+Html Ppt Zhangzara Daisy Days
+
+Daisy Days — Cheerful pastel deck with hand-drawn daisies, stars, and rainbows. Friendly, soft, and warm. Anything that should feel friendly, soft, and joyful: educational content, kids and family, wellness programs, community workshops, creator portfolios for craft / illustration.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Daisy Days
+Official
+example.html
+Official
+Html Ppt Zhangzara Editorial Tri Tone
+
+Editorial Tri-Tone — Three-color editorial system: dusty pink, mustard cream, and deep burgundy, set in Bricolage + Instrument Serif. Anything that should feel like a fashion-magazine spread: editorial pitches, fashion brand decks, lifestyle media, art direction reviews.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Editorial Tri Tone
+Official
+example.html
+Official
+Html Ppt Zhangzara Grove
+
+Grove — Forest-green canvas with cream type, classical Playfair serifs, and a single rust accent. Anything that should feel organic, considered, and grown-up: sustainability and wellness brands, outdoor / nature products, wineries and restaurants, literary or arts decks, advisory deliverables, bilingual EN/CN reports.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Grove
+Official
+example.html
+Official
+Html Ppt Zhangzara Long Table
+
+Long Table — Warm cream and rust-red supper-club aesthetic with bold uppercase grotesk headlines, italic Fraunces, and pill-shaped outlined buttons. Anything that should feel like a warm, intimate, modern hospitality / community brand: supper clubs, dinner series, small restaurants, creative-studio events, membership pitches, lifestyle and wine brands.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Long Table
+Official
+example.html
+Official
+Html Ppt Zhangzara Mat
+
+Mat — Dark sage canvas with bone paper and burnt-orange accent; mid-century modern with wood undertones. Anything that should feel mid-century, tactile, and intentional: design studio credentials, architecture / interior brands, ceramics / craft / furniture, advisory decks.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Mat
+Official
+example.html
+Official
+Html Ppt Zhangzara Monochrome
+
+Monochrome — Ivory ledger paper with all-black type; Lora serif headlines, Jost body, no color at all. Anything that should feel like a hand-typeset ledger: user research synthesis, white papers, longform reports, academic and policy briefs, advisory deliverables, bilingual EN/CN reports.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Monochrome
+Official
+example.html
+Official
+Html Ppt Zhangzara Neo Grid Bold
+
+Neo-Grid Bold — Editorial neo-brutalism with a single neon yellow accent on off-white paper. Anything that should feel confident and editorial-graphic: design-led pitches, brand work, founder talks, conference keynotes.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Neo Grid Bold
+Official
+example.html
+Official
+Html Ppt Zhangzara Peoples Platform
+
+People's Platform (Block & Bold) — Activist poster energy: blue, orange, red on cream, with Alfa Slab + Caveat Brush. Anything that should feel honest, loud, and graphic: cultural commentary, manifestos, civic and community decks, design talks, campaign pitches.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Peoples Platform
+Official
+example.html
+Official
+Html Ppt Zhangzara Pin And Paper
+
+Pin & Paper — Yellow paper with safety-pin illustrations, ink-blue handwritten Caveat, paper-grain texture. Anything that should feel hand-crafted, warm, and literary: qualitative research findings, founder reflections, longform brand stories, workshop debriefs.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Pin And Paper
+Official
+example.html
+Official
+Html Ppt Zhangzara Pink Script
+
+Pink Script — After Hours — Black canvas, hot pink accent, pearl-cream paper, Instrument Serif headlines: late-night editorial luxury. Anything that should feel nocturnal, intentional, and a little luxe: fashion brand decks, creator personal brands, after-hours / nightlife / spirits launches, luxury product reveals, editorial features.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Pink Script
+Official
+example.html
+Official
+Html Ppt Zhangzara Playful
+
+Playful — Sun-warm peach background with Syne display: a friendly indie launch deck. Anything that should feel warm, indie, and approachable: creator portfolios, indie product launches, lifestyle brands, small-business pitches, newsletter / community decks.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Playful
+Official
+example.html
+Official
+Html Ppt Zhangzara Raw Grid
+
+Raw Grid — Neo-brutalist deck with thick borders, offset shadows, and a pink/sage/ink palette. Anything that should feel direct and graphic-confident: founder pitches, accelerator demos, brand decks, indie launches, creator portfolios.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Raw Grid
+Official
+example.html
+Official
+Html Ppt Zhangzara Retro Windows
+
+Retro Windows — Windows 95 chrome: gray title bars, MS Sans Serif, pixel typography, full nostalgia. Anything that should feel knowingly nostalgic: retro gaming, Y2K-aesthetic brands, creator portfolios with a 90s vibe, tech-history talks, deliberately tongue-in-cheek decks.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Retro Windows
+Official
+example.html
+Official
+Html Ppt Zhangzara Retro Zine
+
+Retro Zine — Beige paper with green accent and Bebas Neue + Caveat: a riso-printed zine in HTML form. Anything that should feel printed, lo-fi, and crafted: indie zines and publications, music / arts brands, creator portfolios, small-batch craft launches, community decks.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Retro Zine
+Official
+example.html
+Official
+Html Ppt Zhangzara Sakura Chroma
+
+Sakura Chroma — Vintage Japanese cassette-package aesthetic: cream paper, diagonal rainbow ribbons, condensed bold type, JIS-style spec checkboxes. Anything that should feel like a vintage Japanese cassette package or a TDK / Sony / Sakura Color product catalogue: indie hardware brand decks, music-label release schedules, analog studio retrospectives, zine and magazine pitches, kawaii-tech product launches, creative-studio annual reports.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Sakura Chroma
+Official
+example.html
+Official
+Html Ppt Zhangzara Scatterbrain
+
+Scatterbrain — Post-it inspired: pastel sticky notes, Caveat handwriting, Shrikhand and Zilla Slab type stack. Anything that should feel like a designer's whiteboard: brainstorms, workshops, creative-agency credentials, design-thinking sessions, ideation pitches, art-direction reviews.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Scatterbrain
+Official
+example.html
+Official
+Html Ppt Zhangzara Signal
+
+Signal — Deep navy canvas with bone paper and a single muted-gold accent; institutional with quiet weight. Anything that should feel weighty, considered, and credibly institutional: investor decks, board presentations, consulting deliverables, legal / policy briefs, advisory pitches.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Signal
+Official
+example.html
+Official
+Html Ppt Zhangzara Soft Editorial
+
+Soft Editorial — Cormorant Garamond serif on warm paper with sage, blush, and lemon accents. Anything that should feel literary, elegant, and unhurried: editorial features, longform brand stories, gallery / museum decks, advisory deliverables, wedding / lifestyle media, founder essays.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Soft Editorial
+Official
+example.html
+Official
+Html Ppt Zhangzara Stencil Tablet
+
+Stencil & Tablet — Bone paper with stencil-cut headlines and a six-color earth palette: archaeology meets brand. Anything that should feel archival, tactile, and weighty-graphic: museum and cultural-institution decks, art / architecture brands, longform research, heritage and craft brands, manifestos.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Stencil Tablet
+Official
+example.html
+Official
+Html Ppt Zhangzara Studio
+
+Studio — Black canvas with electric-yellow type; high-voltage design studio aesthetic. Anything that should feel electric and design-led: studio credentials, creative agency pitches, brand showcases, art-direction reviews, fashion / sneaker brand work.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Studio
+Official
+example.html
+Official
+Html Ppt Zhangzara Vellum
+
+Vellum — Deep navy canvas with warm-yellow italic Cormorant serifs and a single dusty teal accent. A quiet, scholarly aesthetic. Anything that should feel scholarly, literary, and quietly intelligent: research synthesis, white papers, academic and policy briefs, advisory deliverables, longform editorial pieces, founder reflections.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt Zhangzara Vellum
+Official
+example.html
+Official
+Ib Pitch Book
+
+Investment-banking pitch book for strategic alternatives — trading comps, precedent transactions, valuation football field, DCF sensitivity, strategic-options matrix, process recommendation. Built by adapting `assets/template.html` so IB-specific chrome, disclosure bands, and source labels are preserved. Use for Board / sell-side discussion materials. Not a VC fundraising deck (see html-ppt-pitch-deck). Workflow adapted from Anthropic financial-services Pitch Agent (Apache-2.0).
+
+example
+deck
+finance
+Details
+Use
+Save
+Ib Pitch Book
+Official
+example.html
+Official
+Kami Deck
+
+Produce a print-grade slide deck in the kami (紙 / 纸) design system — warm parchment background (or ink-blue for cover / chapter slides), serif at one weight, ink-blue accent ≤ 5% per slide, no italic. Horizontal magazine swipe pagination (←/→ · wheel · swipe · ESC overview). One self-contained HTML file, zero dependencies beyond Google Fonts.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Kami Deck
+Official
+example.html
+Official
+Open Design Landing Deck
+
+Produce a single-file slide deck in the Atelier Zero visual language (warm-paper background, italic-serif emphasis spans, coral terminating dots, surreal collage plates) — Open Design's brand deck recipe. The deck uses **horizontal magazine-style swipe pagination** (←/→, wheel, swipe), a per-slide chrome strip with brand mark and slide counter, an ESC overview grid, a coral progress bar, and inherits the canonical stylesheet + 16-slot image library from the sister `open-design-landing` skill.
+
+example
+deck
+marketing
+Details
+Use
+Save
+Open Design Landing Deck
+Official
+example.html
+Official
+Simple Deck
+
+Single-file horizontal-swipe HTML deck. Built by copying the seed `assets/template.html` (which carries the proven 5-rule iframe nav script) and pasting slide layouts from `references/layouts.md`. Pitch decks, product overviews, study material — when you don't need the magazine aesthetic of `magazine-web-ppt`.
+
+example
+deck
+product
+Details
+Use
+Save
+Simple Deck
+Official
+example.html
+Official
+Weekly Update
+
+Single-file horizontal-swipe slide deck for a weekly team update — shipped, in flight, blocked, metrics, asks. 6–8 slides. Use when the brief mentions "weekly update", "team update slides", "weekly status", "周报演示".
+
+example
+deck
+operations
+Details
+Use
+Save
+Weekly Update
+Official
+example.html
+Official
+Keynote 风格 PPT
+
+苹果 Keynote 级别幻灯片, 一屏一卡, 键盘左右切换
+
+example
+deck
+marketing
+Details
+Use
+Save
+Keynote 风格 PPT
+Official
+H
+Official
+Hatch Pet
+
+Create, repair, validate, preview, and package Codex-compatible animated pet spritesheets from character art, screenshots, generated images, or visual references. Use when a user wants to hatch a Codex pet, create a custom animated pet, or build a built-in pet asset with an 8x9 atlas, transparent unused cells, row-by-row animation prompts, QA contact sheets, preview videos, and pet.json packaging. This skill composes the installed $imagegen system skill for visual generation and uses bundled scripts for deterministic spritesheet assembly.
+
+example
+image
+personal
+Details
+Use
+Save
+Hatch Pet
+Official
+example.html
+Official
+Hyperframes
+
+Create video compositions, animations, title cards, overlays, captions, voiceovers, audio-reactive visuals, and scene transitions in HyperFrames HTML. Use when asked to build any HTML-based video content, add captions or subtitles synced to audio, generate text-to-speech narration, create audio-reactive animation (beat sync, glow, pulse driven by music), add animated text highlighting (marker sweeps, hand-drawn circles, burst lines, scribble, sketchout), or add transitions between scenes (crossfades, wipes, reveals, shader transitions). Covers composition authoring, timing, media, and the full video production workflow. For CLI commands (init, lint, preview, render, transcribe, tts) see the hyperframes-cli skill.
+
+example
+video
+hyperframes
+Details
+Use
+Save
+Hyperframes
+Official
+example.html
+Official
+Audio Jingle
+
+Audio generation skill — jingles, beds, voiceover, and sound effects. Routes music requests to Suno V5 / Udio / Lyria, speech to MiniMax TTS / FishAudio / ElevenLabs V3, and SFX to ElevenLabs SFX or AudioCraft. Output is one MP3/WAV file saved to the project folder.
+
+example
+audio
+marketing
+Details
+Use
+Save
+Audio Jingle
+Official
+example.html
+Official
+Blog Post
+
+A long-form article / blog post — masthead, hero image placeholder, article body with figures and pull quotes, author byline, related posts. Use when the brief asks for "blog", "article", "post", "essay", or "case study".
+
+example
+prototype
+marketing
+Details
+Use
+Save
+Blog Post
+Official
+example.html
+Official
+Clinical Case Report
+
+Structured medical case presentation for clinical rounds, conferences, and documentation. Generates SOAP-format or narrative case reports with physiologically accurate vitals, labs, and evidence-based plans. Use when the brief mentions "case report", "case presentation", "SOAP note", "clinical case", "ward rounds", "case summary", or "patient presentation".
+
+example
+prototype
+healthcare
+Details
+Use
+Save
+Clinical Case Report
+Official
+example.html
+Official
+Critique
+
+Run a 5-dimension expert design review on any HTML artifact in the project — Philosophy / Visual hierarchy / Detail / Functionality / Innovation, each scored 0–10. Outputs a single self-contained HTML report with a radar chart, evidence-backed scores, and three lists: Keep / Fix / Quick-wins. Use when the brief asks for a "design review", "design critique", "5 维度评审", "design audit", or "what's wrong with my design".
+
+example
+prototype
+design
+Details
+Use
+Save
+Critique
+Official
+example.html
+Official
+Dashboard
+
+Admin / analytics dashboard in a single HTML file. Fixed left sidebar, top bar with user/search, main grid of KPI cards and one or two charts. Use when the brief asks for a "dashboard", "admin", "analytics", or "control panel" screen.
+
+example
+prototype
+operations
+Details
+Use
+Save
+Dashboard
+Official
+example.html
+Official
+Dating Web
+
+A consumer-feeling dating / matchmaking dashboard — left rail navigation, ticker bar of community signals, headline KPIs, a 30-day mutual-matches bar chart, and a match-rate trend block. Editorial typography, restrained accent. Use when the brief asks for a "dating site", "matchmaking", "community dashboard", "social network dashboard", or any consumer product where the data is the story.
+
+example
+prototype
+personal
+Details
+Use
+Save
+Dating Web
+Official
+example.html
+Official
+Digital Eguide
+
+A two-spread digital e-guide preview — page 1 is a cover (display title, author, "What's inside" stats, table of contents teaser); page 2 is a spread (lesson body with pull-quote and a step list). Lifestyle / creator brand tone. Use when the brief asks for an "e-guide", "digital guide", "lookbook", "lead magnet", "creator guide", "playbook", "PDF guide", or "电子指南".
+
+example
+prototype
+marketing
+Details
+Use
+Save
+Digital Eguide
+Official
+example.html
+Official
+Docs Page
+
+A documentation page — inline-start nav, scrollable article body, inline-end table of contents. Use when the brief mentions "docs", "documentation", "guide", "API reference", or "tutorial".
+
+example
+prototype
+engineering
+Details
+Use
+Save
+Docs Page
+Official
+example.html
+Official
+Email Marketing
+
+A brand product-launch email — masthead with wordmark, hero image block, headline lockup with skewed-italic accent, body copy, primary CTA, and a specifications grid. Pure HTML email layout (centered single column, table fallback). Use when the brief asks for an "email", "newsletter blast", "MJML", "product launch email", or "email template".
+
+example
+prototype
+marketing
+Details
+Use
+Save
+Email Marketing
+Official
+example.html
+Official
+Eng Runbook
+
+An engineering runbook — service overview, alerts table, dashboards links, common procedures with copy-pasteable commands, on-call rotation, and an incident-response checklist. Use when the brief mentions "runbook", "ops doc", "on-call guide", "SRE doc", or "运维手册".
+
+example
+prototype
+engineering
+Details
+Use
+Save
+Eng Runbook
+Official
+example.html
+Official
+Finance Report
+
+Quarterly / monthly financial report — masthead with KPIs, revenue and burn charts, P&L summary table, top-line highlights, and an outlook paragraph. Use when the brief mentions "financial report", "Q3 report", "MRR review", "P&L", or "财报".
+
+example
+prototype
+finance
+Details
+Use
+Save
+Finance Report
+Official
+example.html
+Official
+Flowai Live Dashboard Template
+
+Team-management dashboard skill in the FlowAI aesthetic — three tabs (Team Members, Team Details, Activity Log), KPI stat row, member table, role distribution bar chart, online presence and activity sparklines, and a top-contributors panel, all in a single self-contained HTML file with light/dark theming, hoverable chart tooltips, click-to-zoom panels, and CSV export. Use when the brief asks for a team / workspace admin dashboard, an interactive admin dashboard with charts, or names FlowAI.
+
+example
+prototype
+operations
+Details
+Use
+Save
+Flowai Live Dashboard Template
+Official
+example.html
+Official
+Gamified App
+
+A multi-frame gamified mobile-app prototype — three phone frames on a dark showcase stage. Frame 1: cover / poster, Frame 2: today's quests with XP ribbons and a level bar, Frame 3: quest detail. Vivid quest tiles, level ribbon, bottom tab bar. Use when the brief asks for a "gamified app", "habit tracker", "RPG-style life app", "level-up app", "daily quests", "XP / streak app", or "ELI5-style explainer app".
+
+example
+prototype
+personal
+Details
+Use
+Save
+Gamified App
+Official
+example.html
+Official
+Github Dashboard
+
+GitHub repository analytics dashboard — stars, forks, contributors, issues, pull requests, recent activity, and top contributors. Use when the brief asks for a GitHub repo dashboard, open-source growth report, repository health page, or GitHub analytics view.
+
+example
+prototype
+operation
+Details
+Use
+Save
+Github Dashboard
+Official
+example.html
+Official
+Hr Onboarding
+
+A new-hire onboarding plan as a single page — first week schedule, buddy + manager intro, learning track, equipment checklist, and "you're set when…" outcomes. Use when the brief mentions "onboarding", "new hire", "first week plan", or "入职".
+
+example
+prototype
+hr
+Details
+Use
+Save
+Hr Onboarding
+Official
+example.html
+Official
+Html Ppt Taste Brutalist
+
+16:9 HTML deck in tactical-telemetry / CRT-terminal taste. Deactivated-CRT charcoal slides, white-phosphor monospace, hazard-red accent, scanline overlay, ASCII syntax, density over decoration. Distilled from Leonxlnx/taste-skill `brutalist-skill` (Tactical Telemetry mode).
+
+example
+prototype
+design
+Details
+Use
+Save
+Html Ppt Taste Brutalist
+Official
+example.html
+Official
+Html Ppt Taste Editorial
+
+16:9 HTML deck in editorial-minimalist taste. Warm cream slides, serif display + grotesque body, hairline rules, monospace meta, generous macro-whitespace, one accent. Distilled from Leonxlnx/taste-skill `minimalist-skill`.
+
+example
+prototype
+design
+Details
+Use
+Save
+Html Ppt Taste Editorial
+Official
+example.html
+Official
+Invoice
+
+A printable invoice page — sender + recipient block, line items table, tax breakdown, totals, and payment instructions. Use when the brief mentions "invoice", "bill", "billing statement", or "发票".
+
+example
+prototype
+finance
+Details
+Use
+Save
+Invoice
+Official
+example.html
+Official
+iPhone × MacBook 立体展架
+
+iPhone + MacBook 仿 GLTF 静态展架, 屏幕内嵌真实 HTML 内容, 玻璃镜头折射, 360° 转盘构图
+
+example
+prototype
+product
+Details
+Use
+Save
+iPhone × MacBook 立体展架
+Official
+example.html
+Official
+Kami Landing
+
+Produce a print-grade single-page kami (紙 / 纸) document — warm parchment canvas, ink-blue accent, serif at one weight, no italic, no cool grays. The output reads like a professional white paper or studio one-pager, not an app UI. Multilingual by design (EN · zh-CN · ja). One self-contained HTML file, zero dependencies.
+
+example
+prototype
+marketing
+Details
+Use
+Save
+Kami Landing
+Official
+example.html
+Official
+Kanban Board
+
+Kanban / task board with columns (To do / In progress / In review / Done), draggable-looking cards, assignee avatars, swimlanes, and a top filter bar. Use when the brief mentions "kanban", "task board", "sprint board", "trello", "看板".
+
+example
+prototype
+operations
+Details
+Use
+Save
+Kanban Board
+Official
+example.html
+Official
+Live Dashboard
+
+Notion-style team dashboard rendered as a Live Artifact. A single-page, self-contained HTML dashboard with KPIs, a 7-day sparkline, a real-time activity feed and a linked-database task table — wired to Notion via the Composio connector catalog. Refreshes on demand and when the artifact is opened. Falls back to seeded mock data when no connector is bound, so it works offline / in screenshots / in the picker preview.
+
+example
+prototype
+operation
+Details
+Use
+Save
+Live Dashboard
+Official
+example.html
+Official
+Meeting Notes
+
+Meeting notes page — title bar with attendees, agenda checklist, decisions block, action items table with owners + dates, and a "next meeting" footer. Use when the brief mentions "meeting notes", "minutes", "1:1 notes", "all-hands recap", or "会议纪要".
+
+example
+prototype
+operations
+Details
+Use
+Save
+Meeting Notes
+Official
+example.html
+Official
+Mobile App
+
+A mobile-app screen rendered inside a pixel-accurate iPhone 15 Pro frame on the page. Built by copying the seed `assets/template.html` and pasting one screen archetype from `references/layouts.md`. Use when the brief asks for "mobile app", "iOS app", "Android app", "phone screen", or "app UI".
+
+example
+prototype
+design
+Details
+Use
+Save
+Mobile App
+Official
+example.html
+Official
+Mobile Onboarding
+
+A multi-screen mobile onboarding flow rendered as three phone frames side by side — splash, value-prop, sign-in. Status bar, swipe dots, primary CTA. Use when the brief mentions "mobile onboarding", "iOS onboarding", "phone signup", or "移动端引导".
+
+example
+prototype
+design
+Details
+Use
+Save
+Mobile Onboarding
+Official
+example.html
+Official
+Motion Frames
+
+A single-frame motion-design composition with looping CSS animations — rotating type ring, animated globe, ticking timer, parallax labels. Renders as a hero video poster you can hand straight to HyperFrames or any keyframe-based exporter. Use when the brief asks for "motion design", "animated hero", "loop", "video poster", "title card", or pairs Open Claude Design with HyperFrames for a kinetic export.
+
+example
+prototype
+marketing
+Details
+Use
+Save
+Motion Frames
+Official
+example.html
+Official
+Open Design Landing
+
+Produce a world-class single-page editorial landing site in the Atelier Zero visual language (Monocle / Apartamento / Études editorial collage) — the same aesthetic Open Design uses for its own marketing surface. The agent fills a typed `inputs.json` from a brand brief, optionally generates 16 collage assets via gpt-image-2, then runs a pure-function composer that emits a self-contained HTML file; a separate path can mirror the Astro marketing site in `apps/landing-page/`. Drop-in scroll-reveal motion and a Headroom-style sticky nav are wired automatically.
+
+example
+prototype
+marketing
+Details
+Use
+Save
+Open Design Landing
+Official
+example.html
+Official
+Orbit General
+
+Open Orbit briefing skill — selected by the Orbit pipeline when the user has two or more connectors connected. Pulls the past 24 hours of activity from every authenticated connector (GitHub, Linear, Notion, Slack, 飞书, Calendar, Gmail, Drive, Sentry, Vercel, …) and renders a single adaptive bento-grid dashboard at the top of "我的设计". Each connector module picks its own UI form (list, avatar stack, status ring, heatmap, file grid, alert card, …) based on the data shape it returns, so the layout scales as Orbit's connector ecosystem grows. This skill should not be triggered manually — it is invoked by Orbit's daily-digest scheduler against the user's live connector data.
+
+example
+prototype
+orbit
+Details
+Use
+Save
+Orbit General
+Official
+example.html
+Official
+Orbit Github
+
+Open Orbit briefing skill — selected by the Orbit pipeline when GitHub is the user's only connected connector, or when the user explicitly scopes their daily digest to GitHub. Pulls the past 24 hours of PRs, review requests, issues, CI runs, and merges from the user's authenticated GitHub connection and renders them in a layout that mirrors GitHub's native Notifications + PR-diff visual language. This skill should not be triggered manually — it is invoked by Orbit's daily-digest scheduler against live GitHub data.
+
+example
+prototype
+orbit
+Details
+Use
+Save
+Orbit Github
+Official
+example.html
+Official
+Orbit Gmail
+
+Open Orbit briefing skill — selected by the Orbit pipeline when Gmail is the user's only connected connector, or when the user explicitly scopes their daily digest to Gmail. Pulls the past 24 hours of inbox activity (replies awaited, mentions, cc, auto- categorized bulk) from the user's authenticated Gmail connection and renders the digest as the Orbit Daily Digest email opened inside Gmail's reading view. This skill should not be triggered manually — it is invoked by Orbit's daily-digest scheduler against live Gmail data.
+
+example
+prototype
+orbit
+Details
+Use
+Save
+Orbit Gmail
+Official
+example.html
+Official
+Orbit Linear
+
+Open Orbit briefing skill — selected by the Orbit pipeline when Linear is the user's only connected connector, or when the user explicitly scopes their daily digest to Linear. Pulls the past 24 hours of issue movement, status changes, assignments, and cycle progress from the user's authenticated Linear connection and renders the digest in Linear's native Inbox + cycle-progress visual language. This skill should not be triggered manually — it is invoked by Orbit's daily-digest scheduler against live Linear data.
+
+example
+prototype
+orbit
+Details
+Use
+Save
+Orbit Linear
+Official
+example.html
+Official
+Orbit Notion
+
+Open Orbit briefing skill — selected by the Orbit pipeline when Notion is the user's only connected connector, or when the user explicitly scopes their daily digest to Notion. Pulls the past 24 hours of document edits, comments, mentions, and database row changes from the user's authenticated Notion connection and renders the digest as a native Notion page (callout / toggle / database table primitives). This skill should not be triggered manually — it is invoked by Orbit's daily-digest scheduler against live Notion data.
+
+example
+prototype
+orbit
+Details
+Use
+Save
+Orbit Notion
+Official
+example.html
+Official
+Pm Spec
+
+Product spec / PRD as a single page — problem, success metrics, scope, user stories, design notes, rollout plan, open questions. Use when the brief mentions "PRD", "spec", "product spec", "feature brief", or "需求文档".
+
+example
+prototype
+product
+Details
+Use
+Save
+Pm Spec
+Official
+example.html
+Official
+Pricing Page
+
+A standalone pricing page — header, plan tiers, feature comparison table, and an FAQ. Use when the brief asks for "pricing", "plans", "subscription tiers", or a "compare plans" page.
+
+example
+prototype
+sales
+Details
+Use
+Save
+Pricing Page
+Official
+example.html
+Official
+Saas Landing
+
+Single-page SaaS landing with hero, features, social proof, pricing, and CTA. Respects the active DESIGN.md color/typography/layout tokens. Trigger keywords: "saas landing", "marketing page", "product landing".
+
+example
+prototype
+marketing
+Details
+Use
+Save
+Saas Landing
+Official
+example.html
+Official
+Social Carousel
+
+A three-card social-media carousel laid out as 1080×1080 squares — three cinematic, on-brand panels with display headlines that connect across the series ("onwards." → "to the next one." → "looking ahead."). Each card has a brand mark, a number / total, a caption, and a "loop" affordance. Use when the brief asks for a "carousel post", "social carousel", "Instagram carousel", "LinkedIn series", "X thread cards", or "三连发".
+
+example
+prototype
+marketing
+Details
+Use
+Save
+Social Carousel
+Official
+example.html
+Official
+Social Media Dashboard
+
+Creator-facing social media analytics dashboard in a single HTML file. A platform switcher (X / LinkedIn / YouTube / Instagram), a row of KPI cards (followers, engagement rate, likes, reposts), a follower-growth chart, a "top post this week" preview, and a trending topics / top comments side panel. Use when the brief mentions a "social media dashboard", "creator analytics", "social analytics", or names specific platforms (X, Twitter, LinkedIn, YouTube, Instagram, TikTok) together with metrics like followers, engagement, likes, reposts.
+
+example
+prototype
+creator
+Details
+Use
+Save
+Social Media Dashboard
+Official
+example.html
+Official
+Social Media Matrix Tracker Template
+
+社媒矩阵数据追踪面板模板（Social Media Matrix Tracker）。 Use when users ask for a cinematic, data-dense social media analytics dashboard with multi-platform metrics, interactive charts, hover insights, range compare, and dark/light theme switching in a single HTML artifact.
+
+example
+template
+live-artifacts
+Details
+Use
+Save
+Social Media Matrix Tracker Template
+Official
+example.html
+Official
+Sprite Animation
+
+A pixel / sprite-style animated explainer slide — full-bleed cream stage, bold display year, animated pixel-art mascot (e.g. Hanafuda card, mushroom, or 8-bit console), kinetic Japanese display type, ticking timeline ribbon. Reads like a single frame of an educational motion video — looping CSS keyframes, no JS, ready to be screen-recorded into a vertical video. Use when the brief asks for a "sprite animation", "pixel-art video", "8-bit explainer", "history of X explainer", "kinetic typography history", "Nintendo-style", "精灵图动画", "像素动画", or "复古动画".
+
+example
+prototype
+marketing
+Details
+Use
+Save
+Sprite Animation
+Official
+example.html
+Official
+Team Okrs
+
+OKR tracker page — quarter banner, three objectives with their key results as progress bars, owner avatars, status pills, and a "this quarter at a glance" sidebar. Use when the brief mentions "OKRs", "key results", "objectives", or "目标".
+
+example
+prototype
+product
+Details
+Use
+Save
+Team Okrs
+Official
+example.html
+Official
+Trading Analysis Dashboard Template
+
+Professional trading analysis dashboard template (single-file HTML) with light/dark theme switch, dense market panels, chart interactions, demo/live playback, and command palette behavior. Use when users ask for a Wall-Street-style analytics terminal, trading cockpit, or high-tech financial dashboard template with realistic data layout.
+
+example
+template
+live-artifacts
+Details
+Use
+Save
+Trading Analysis Dashboard Template
+Official
+example.html
+Official
+Tweaks
+
+Wrap any HTML artifact with a side panel of live, parameterized controls — accent color, type scale, density, motion, theme — that rewrite CSS custom properties in real time and persist to localStorage. Lets the user explore variants of a design without re-prompting the agent. Use when the brief asks for "variants", "side-by-side options", "tweak this", "let me adjust", "live knobs", or "实时调参".
+
+example
+prototype
+design
+Details
+Use
+Save
+Tweaks
+Official
+example.html
+Official
+Waitlist Page
+
+Minimal pre-launch landing with email capture, brand logo, and optional decorative layer. Reads DESIGN.md for colors, typography, and layout rules. Best for: product launches, beta signups, early access programs, indie projects.
+
+example
+prototype
+marketing
+Details
+Use
+Save
+Waitlist Page
+Official
+example.html
+Official
+Web Prototype
+
+General-purpose desktop web prototype. Single self-contained HTML file built by copying the seed `assets/template.html` and pasting section layouts from `references/layouts.md`. Default for any landing / marketing / docs / SaaS page when no more specific skill matches.
+
+example
+prototype
+design
+Details
+Use
+Save
+Web Prototype
+Official
+example.html
+Official
+Web Prototype Taste Editorial
+
+Editorial-minimalist web prototype. Warm monochrome canvas, serif display + grotesque body, 1px hairline borders, muted pastel chips, generous macro-whitespace, ambient micro-motion. Distilled from Leonxlnx/taste-skill `minimalist-skill`.
+
+example
+prototype
+design
+Details
+Use
+Save
+Web Prototype Taste Editorial
+Official
+example.html
+Official
+Web Prototype Taste Soft
+
+Apple-tier soft web prototype. Silver/cream canvas, double-bezel cards, button-in-button CTAs, generous squircle radii, spring motion, ambient mesh. Distilled from Leonxlnx/taste-skill `soft-skill` + sections 4–8 of `taste-skill`.
+
+example
+prototype
+design
+Details
+Use
+Save
+Web Prototype Taste Soft
+Official
+example.html
+Official
+Wireframe Sketch
+
+A hand-drawn wireframe exploration — graph-paper background, marker / pencil tone, multiple tab labels for variants, sticky-note annotations, scribbled chart placeholders, hatched fills. Reads like a designer's whiteboard before any pixels are committed. Use when the brief asks for "wireframe", "sketch wireframe", "hand-drawn", "lo-fi", "whiteboard", "草稿", or "手绘原型".
+
+example
+prototype
+design
+Details
+Use
+Save
+Wireframe Sketch
+Official
+example.html
+Official
+杂志文章
+
+Huashu / huashu-md-html-inspired magazine article layout for turning Markdown or notes into a polished long-form HTML essay.
+
+example
+prototype
+marketing
+Details
+Use
+Save
+杂志文章
+Official
+example.html
+Official
+Reddit 帖子卡
+
+拟真 Reddit 帖子卡 + 上下投票 + 评论数, 适合视频叠加 / 故事分享
+
+example
+prototype
+marketing
+Details
+Use
+Save
+Reddit 帖子卡
+Official
+example.html
+Official
+Spotify 正在播放卡
+
+Spotify Now Playing 风格卡: 专辑封面 + 进度条 + 播放控制, 适配视频叠加 / 个人主页
+
+example
+prototype
+personal
+Details
+Use
+Save
+Spotify 正在播放卡
+Official
+example.html
+Official
+Twitter 分享卡
+
+推特金句 / 数据卡, 适合配推文
+
+example
+prototype
+marketing
+Details
+Use
+Save
+Twitter 分享卡
+Official
+example.html
+Official
+X (Twitter) 帖子卡
+
+拟真 X 推文卡片 + 互动数据 (likes/reposts/views), 适配视频叠加或图卡分享
+
+example
+prototype
+marketing
+Details
+Use
+Save
+X (Twitter) 帖子卡
+Official
+example.html
+Official
+小红书图文卡片
+
+小红书风格知识卡片, 多张联排可滑动浏览
+
+example
+prototype
+marketing
+Details
+Use
+Save
+小红书图文卡片
+Official
+example.html
+Official
+数据可视化报告
+
+把 CSV/Excel/JSON 数据转成漂亮的可视化报告页
+
+example
+prototype
+finance
+Details
+Use
+Save
+数据可视化报告
+Official
+example.html
+Official
+极简简历
+
+现代极简简历, A4 单页, 适合打印或导出 PDF
+
+example
+prototype
+personal
+Details
+Use
+Save
+极简简历
+Official
+example.html
+Official
+营销海报
+
+竖版海报 / 朋友圈分享图, 强视觉冲击
+
+example
+prototype
+marketing
+Details
+Use
+Save
+营销海报
+Official
+index.html
+Official
+Guizang Ppt
+
+生成"电子杂志 × 电子墨水"风格的横向翻页网页 PPT（单 HTML 文件），含 WebGL 流体背景、衬线标题 + 非衬线正文、章节幕封、数据大字报、图片网格等模板。当用户需要制作分享 / 演讲 / 发布会风格的网页 PPT，或提到"杂志风 PPT"、"horizontal swipe deck"、"editorial magazine"、"e-ink presentation"时使用。
+
+example
+deck
+marketing
+Details
+Use
+Save
+Guizang Ppt
+Official
+index.html
+Official
+Html Ppt
+
+HTML PPT Studio — author professional static HTML presentations in many styles, layouts, and animations, all driven by templates. Use when the user asks for a presentation, PPT, slides, keynote, deck, slideshow, "幻灯片", "演讲稿", "做一份 PPT", "做一份 slides", a reveal-style HTML deck, a 小红书 图文, or any kind of multi-slide pitch/report/sharing document that should look tasteful and be usable with keyboard navigation. Triggers include keywords like "presentation", "ppt", "slides", "deck", "keynote", "reveal", "slideshow", "幻灯片", "演讲稿", "分享稿", "小红书图文", "talk slides", "pitch deck", "tech sharing", "technical presentation".
+
+example
+deck
+marketing
+Details
+Use
+Save
+Html Ppt
+Official
+index.html
+Official
+Replit Deck
+
+Single-file horizontal-swipe HTML deck in the style of Replit Slides's landing-page template gallery. Eight distinct themes (helix, holm, vance, bevel, world-dark, world-mint, atlas, bluehouse) — each a complete visual system (palette + type + accent) captured from replit.com/slides. Pick one theme, do not mix. For pitch decks, board reports, brand memos, campaign reveals — when the user explicitly wants "Replit Slides style".
+
+example
+deck
+product
+Details
+Use
+Save
+Replit Deck
+Official
+brief-preview.html
+Official
+Design Brief
+
+Parse a structured design brief written in I-Lang protocol format into a concrete design spec. Eliminates ambiguity from vague requests like "make it professional" by requiring explicit dimensions: palette, typography, layout, mood, density, and constraints. Trigger keywords: "design brief", "create a design brief", "ilang brief", "structured brief".
+
+example
+design-system
+planning
+Details
+Use
+Save
+Design Brief
+Official
+Dashboard card from Figma
+Official
+Figma migration (default scenario)
+
+Default reference pipeline for the figma-migration taskKind.
+
+scenario
+figma-migration
+phase-6
+Details
+Use
+Save
+Figma migration (default scenario)
+Official
+Generated plugin manifest
+Official
+Plugin authoring
+
+Guided scenario for creating a local Open Design plugin folder that can be added to My plugins.
+
+scenario
+plugin-authoring
+my-plugins
+Details
+Use
+Save
+Plugin authoring
+Official
+jQuery → React 18 migration summary
+Official
+Code migration (default scenario)
+
+Default reference pipeline for the code-migration taskKind, with patch-edit ↔ build-test devloop and diff-review handoff.
+
+scenario
+code-migration
+Details
+Use
+Save
+Code migration (default scenario)
+Official
+SaaS launch landing page
+Official
+New generation (default scenario)
+
+Default reference pipeline for the new-generation taskKind.
+
+scenario
+new-generation
+Details
+Use
+Save
+New generation (default scenario)
+Official
+Hero copy tune cycle (before/after)
+Official
+Tune & collaborate (default scenario)
+
+Default reference pipeline for the tune-collab taskKind.
+
+scenario
+tune-collab
+Details
+Use
+Save
+Tune & collaborate (default scenario)
+Official
+Official
+Agentic
+
+Conversational AI-first interface with minimal controls, clear outcomes, and delegated task flows for agentic workflows.
+
+design-system
+design
+themed-unique
+Details
+Use
+Save
+Agentic
+Official
+Official
+Airbnb
+
+Travel marketplace. Warm coral accent, photography-driven, rounded UI.
+
+design-system
+design
+e-commerce-retail
+Details
+Use
+Save
+Airbnb
+Official
+Official
+Airtable
+
+Spreadsheet-database hybrid. Colorful, friendly, structured data aesthetic.
+
+design-system
+design
+design-creative
+Details
+Use
+Save
+Airtable
+Official
+Official
+Ant
+
+Structured, enterprise-focused design system emphasizing clarity, consistency, and efficiency for data-dense web applications.
+
+design-system
+design
+professional-corporate
+Details
+Use
+Save
+Ant
+Official
+Official
+Apple
+
+Consumer electronics. Premium white space, SF Pro, cinematic imagery.
+
+design-system
+design
+media-consumer
+Details
+Use
+Save
+Apple
+Official
+Official
+Application
+
+App dashboard with purple-themed aesthetic, top-bar navigation, card-based layouts, and developer-first workflows.
+
+design-system
+design
+professional-corporate
+Details
+Use
+Save
+Application
+Official
+Official
+Arc Browser
+
+"The browser that browses for you." Translucent surfaces, gradient warmth, sidebar-first layout.
+
+design-system
+design
+productivity-saas
+Details
+Use
+Save
+Arc Browser
+Official
+Official
+Artistic
+
+High-contrast, expressive style with creative typography and bold color choices for visually striking interfaces.
+
+design-system
+design
+creative-artistic
+Details
+Use
+Save
+Artistic
+Official
+Official
+Atelier Zero
+
+A magazine-grade, collage-driven visual system: warm paper canvas, surreal plaster-and-architecture imagery, oversized display type, hairline rules, Roman-numeral section markers, and tiny editorial annotations. Inspired by the production v
+
+design-system
+design
+editorial-studio
+Details
+Use
+Save
+Atelier Zero
+Official
+Official
+Bento
+
+Modular grid layout with card-like blocks, clear hierarchy, soft spacing, and subtle visual contrast for organized, scannable interfaces.
+
+design-system
+design
+layout-structure
+Details
+Use
+Save
+Bento
+Official
+Official
+Binance.US
+
+Crypto exchange. Bold yellow accent on monochrome, trading-floor urgency.
+
+design-system
+design
+fintech-crypto
+Details
+Use
+Save
+Binance.US
+Official
+Official
+BMW
+
+Luxury automotive. Dark premium surfaces, precise German engineering aesthetic.
+
+design-system
+design
+automotive
+Details
+Use
+Save
+BMW
+Official
+Official
+BMW M
+
+Motorsport performance sub-brand. Near-black cockpit surfaces, BMW M tricolor accents, sharp engineering geometry.
+
+design-system
+design
+automotive
+Details
+Use
+Save
+BMW M
+Official
+Official
+Bold
+
+Strong visual presence with heavyweight typography, high-contrast colors, and commanding layouts.
+
+design-system
+design
+bold-expressive
+Details
+Use
+Save
+Bold
+Official
+Official
+Brutalism
+
+Raw, anti-design aesthetic inspired by concrete architecture with unadorned elements, jarring layouts, and functional minimalism.
+
+design-system
+design
+bold-expressive
+Details
+Use
+Save
+Brutalism
+Official
+Official
+Bugatti
+
+Hypercar brand. Cinema-black canvas, monochrome austerity, monumental display type.
+
+design-system
+design
+automotive
+Details
+Use
+Save
+Bugatti
+Official
+Official
+Cafe
+
+Cozy cafe-inspired interface with warm tones, soft typography, and clean layouts for a relaxed browsing experience.
+
+design-system
+design
+creative-artistic
+Details
+Use
+Save
+Cafe
+Official
+Official
+Cal.com
+
+Open-source scheduling. Clean neutral UI, developer-oriented simplicity.
+
+design-system
+design
+productivity-saas
+Details
+Use
+Save
+Cal.com
+Official
+Official
+Canva
+
+Visual creation platform. Vivid purple-blue gradient, generous spacing, friendly geometry.
+
+design-system
+design
+design-creative
+Details
+Use
+Save
+Canva
+Official
+Official
+Claude (Anthropic)
+
+Anthropic's AI assistant. Warm terracotta accent, clean editorial layout.
+
+design-system
+design
+ai-llm
+Details
+Use
+Save
+Claude (Anthropic)
+Official
+Official
+Clay
+
+Creative agency. Organic shapes, soft gradients, art-directed layout.
+
+design-system
+design
+design-creative
+Details
+Use
+Save
+Clay
+Official
+Official
+Claymorphism
+
+Soft, rounded 3D-like shapes mimicking malleable clay with playful, puffy elements and colorful surfaces.
+
+design-system
+design
+morphism-effects
+Details
+Use
+Save
+Claymorphism
+Official
+Official
+Clean
+
+Simplicity-focused design with ample whitespace, legible typography, and a limited color palette to reduce visual clutter.
+
+design-system
+design
+modern-minimal
+Details
+Use
+Save
+Clean
+Official
+Official
+ClickHouse
+
+Fast analytics database. Yellow-accented, technical documentation style.
+
+design-system
+design
+backend-data
+Details
+Use
+Save
+ClickHouse
+Official
+Official
+Cohere
+
+Enterprise AI platform. Vibrant gradients, data-rich dashboard aesthetic.
+
+design-system
+design
+ai-llm
+Details
+Use
+Save
+Cohere
+Official
+Official
+Coinbase
+
+Crypto exchange. Clean blue identity, trust-focused, institutional feel.
+
+design-system
+design
+fintech-crypto
+Details
+Use
+Save
+Coinbase
+Official
+Official
+Colorful
+
+Vibrant, high-contrast palettes and gradients for engaging, memorable, and modern user experiences.
+
+design-system
+design
+bold-expressive
+Details
+Use
+Save
+Colorful
+Official
+Official
+Composio
+
+Tool integration platform. Modern dark with colorful integration icons.
+
+design-system
+design
+backend-data
+Details
+Use
+Save
+Composio
+Official
+Official
+Contemporary
+
+Current-era minimalist design with bento grids, dark mode support, and high-performance accessible layouts.
+
+design-system
+design
+modern-minimal
+Details
+Use
+Save
+Contemporary
+Official
+Official
+Corporate
+
+Professional, brand-aligned design with structured grids, minimalist layouts, and consistent enterprise patterns.
+
+design-system
+design
+professional-corporate
+Details
+Use
+Save
+Corporate
+Official
+Official
+Cosmic
+
+Futuristic sci-fi aesthetic with dark themes, vibrant neon accents, and immersive spatial elements.
+
+design-system
+design
+creative-artistic
+Details
+Use
+Save
+Cosmic
+Official
+Official
+Creative
+
+Playful, character-driven design with expressive typography and bold graphics for landing pages and creative projects.
+
+design-system
+design
+creative-artistic
+Details
+Use
+Save
+Creative
+Official
+Official
+Cursor
+
+AI-first code editor. Sleek dark interface, gradient accents.
+
+design-system
+design
+developer-tools
+Details
+Use
+Save
+Cursor
+Official
+Official
+Dashboard
+
+Dark-themed cloud-platform aesthetic with modular grids, glass-like panels, and strong data hierarchy for productivity dashboards.
+
+design-system
+design
+professional-corporate
+Details
+Use
+Save
+Dashboard
+Official
+Official
+Discord
+
+Voice / chat platform. Deep blurple, dark-first surfaces, playful accent moments.
+
+design-system
+design
+productivity-saas
+Details
+Use
+Save
+Discord
+Official
+Official
+Dithered
+
+Dot-pattern rendering technique that simulates shades with a limited palette for nostalgic, retro, high-contrast visuals.
+
+design-system
+design
+retro-nostalgic
+Details
+Use
+Save
+Dithered
+Official
+Official
+Doodle
+
+Hand-drawn, sketch-like style with doodles, handwritten fonts, and imperfect lines for a playful, informal feel.
+
+design-system
+design
+creative-artistic
+Details
+Use
+Save
+Doodle
+Official
+Official
+Dramatic
+
+High-contrast, theatrical design with bold layouts, immersive visuals, and unconventional compositions that command attention.
+
+design-system
+design
+bold-expressive
+Details
+Use
+Save
+Dramatic
+Official
+Official
+Duolingo
+
+Language-learning platform. Bright owl green, chunky shadows, gamified joy.
+
+design-system
+design
+productivity-saas
+Details
+Use
+Save
+Duolingo
+Official
+Official
+Editorial
+
+Magazine-inspired editorial layout with refined serif typography, structured grids, and elegant reading experiences.
+
+design-system
+design
+creative-artistic
+Details
+Use
+Save
+Editorial
+Official
+Official
+Elegant
+
+Graceful, refined aesthetic with delicate typography, minimal palettes, and polished layouts that exude sophistication.
+
+design-system
+design
+professional-corporate
+Details
+Use
+Save
+Elegant
+Official
+Official
+ElevenLabs
+
+AI voice platform. Dark cinematic UI, audio-waveform aesthetics.
+
+design-system
+design
+ai-llm
+Details
+Use
+Save
+ElevenLabs
+Official
+Official
+Energetic
+
+Dynamic, vibrant style with thick borders, geometric shapes, high-contrast colors, and expressive typography conveying motion and vitality.
+
+design-system
+design
+bold-expressive
+Details
+Use
+Save
+Energetic
+Official
+Official
+Enterprise
+
+Clean, high-contrast enterprise design for data-driven workflows with intuitive drag-and-drop patterns and structured layouts.
+
+design-system
+design
+professional-corporate
+Details
+Use
+Save
+Enterprise
+Official
+Official
+Expo
+
+React Native platform. Dark theme, tight letter-spacing, code-centric.
+
+design-system
+design
+developer-tools
+Details
+Use
+Save
+Expo
+Official
+Official
+Expressive
+
+Vibrant, personality-driven design with bold colors, playful graphics, and dynamic layouts that balance creativity with structure.
+
+design-system
+design
+bold-expressive
+Details
+Use
+Save
+Expressive
+Official
+Official
+Fantasy
+
+Game-inspired fantasy aesthetic with bold, premium visuals, rich color palettes, and immersive thematic elements.
+
+design-system
+design
+creative-artistic
+Details
+Use
+Save
+Fantasy
+Official
+Official
+Ferrari
+
+Luxury automotive. Chiaroscuro editorial, Ferrari Red accents, cinematic black.
+
+design-system
+design
+automotive
+Details
+Use
+Save
+Ferrari
+Official
+Official
+Figma
+
+Collaborative design tool. Vibrant multi-color, playful yet professional.
+
+design-system
+design
+design-creative
+Details
+Use
+Save
+Figma
+Official
+Official
+Flat
+
+Two-dimensional minimalist style with vibrant colors, clean typography, and no 3D effects for fast, user-friendly interfaces.
+
+design-system
+design
+modern-minimal
+Details
+Use
+Save
+Flat
+Official
+Official
+Framer
+
+Website builder. Bold black and blue, motion-first, design-forward.
+
+design-system
+design
+design-creative
+Details
+Use
+Save
+Framer
+Official
+Official
+Friendly
+
+Approachable, intuitive design with rounded elements, ample whitespace, and soft pastel color palettes.
+
+design-system
+design
+creative-artistic
+Details
+Use
+Save
+Friendly
+Official
+Official
+Futuristic
+
+Forward-looking design with tech-inspired typography, modern layouts, and a sleek, innovation-driven aesthetic.
+
+design-system
+design
+themed-unique
+Details
+Use
+Save
+Futuristic
+Official
+Official
+GitHub
+
+Code-forward platform. Functional density, blue-on-white precision, Primer foundations.
+
+design-system
+design
+developer-tools
+Details
+Use
+Save
+GitHub
+Official
+Official
+Glassmorphism
+
+Frosted glass effect with translucent layers, subtle blur, and luminous borders for depth and modern elegance.
+
+design-system
+design
+morphism-effects
+Details
+Use
+Save
+Glassmorphism
+Official
+Official
+Gradient
+
+Smooth color transitions and gradient-rich surfaces for modern, playful interfaces with visual depth.
+
+design-system
+design
+morphism-effects
+Details
+Use
+Save
+Gradient
+Official
+Official
+HashiCorp
+
+Infrastructure automation. Enterprise-clean, black and white.
+
+design-system
+design
+backend-data
+Details
+Use
+Save
+HashiCorp
+Official
+Official
+Hugging Face
+
+ML community hub. Sunny yellow accent, monospace identity, cheerful and dense.
+
+design-system
+design
+ai-llm
+Details
+Use
+Save
+Hugging Face
+Official
+Official
+IBM
+
+Enterprise technology. Carbon design system, structured blue palette.
+
+design-system
+design
+media-consumer
+Details
+Use
+Save
+IBM
+Official
+Official
+Intercom
+
+Customer messaging. Friendly blue palette, conversational UI patterns.
+
+design-system
+design
+productivity-saas
+Details
+Use
+Save
+Intercom
+Official
+Official
+kami (紙 / 纸)
+
+Editorial paper system: warm parchment canvas, ink-blue accent, serif-led hierarchy. Built for resumes, one-pagers, white papers, portfolios, slide decks — anything that should feel like high-quality print rather than UI. Multilingual by de
+
+design-system
+design
+editorial-print
+Details
+Use
+Save
+kami (紙 / 纸)
+Official
+Official
+Kraken
+
+Crypto trading. Purple-accented dark UI, data-dense dashboards.
+
+design-system
+design
+fintech-crypto
+Details
+Use
+Save
+Kraken
+Official
+Official
+Lamborghini
+
+Supercar brand. True black surfaces, gold accents, dramatic uppercase typography.
+
+design-system
+design
+automotive
+Details
+Use
+Save
+Lamborghini
+Official
+Official
+Levels
+
+Conversion-focused design that removes friction and guides users toward action through clarity, trust, and speed.
+
+design-system
+design
+layout-structure
+Details
+Use
+Save
+Levels
+Official
+Official
+Lingo
+
+Playful, minimal design with bright colors, rounded shapes, tactile 3D borders, and friendly illustrations for approachable interfaces.
+
+design-system
+design
+creative-artistic
+Details
+Use
+Save
+Lingo
+Official
+Official
+Lovable
+
+AI full-stack builder. Playful gradients, friendly dev aesthetic.
+
+design-system
+design
+developer-tools
+Details
+Use
+Save
+Lovable
+Official
+Official
+Luxury
+
+High-end dark aesthetic with bold headings, monochromatic palette, and premium feel for luxury brand experiences.
+
+design-system
+design
+professional-corporate
+Details
+Use
+Save
+Luxury
+Official
+Official
+Mastercard
+
+Global payments network. Warm cream canvas, orbital pill shapes, editorial warmth.
+
+design-system
+design
+fintech-crypto
+Details
+Use
+Save
+Mastercard
+Official
+Official
+Material
+
+Google's Material Design with layered surfaces, dynamic theming, built-in motion, and responsive cross-platform patterns.
+
+design-system
+design
+professional-corporate
+Details
+Use
+Save
+Material
+Official
+Official
+Meta (Store)
+
+Tech retail store. Photography-first, binary light/dark surfaces, Meta Blue CTAs.
+
+design-system
+design
+e-commerce-retail
+Details
+Use
+Save
+Meta (Store)
+Official
+Official
+Minimal
+
+Stripped-back design emphasizing whitespace, clean typography, and restrained color for maximum clarity and focus.
+
+design-system
+design
+modern-minimal
+Details
+Use
+Save
+Minimal
+Official
+Official
+Mintlify
+
+Documentation platform. Clean, green-accented, reading-optimized.
+
+design-system
+design
+productivity-saas
+Details
+Use
+Save
+Mintlify
+Official
+Official
+Miro
+
+Visual collaboration. Bright yellow accent, infinite canvas aesthetic.
+
+design-system
+design
+design-creative
+Details
+Use
+Save
+Miro
+Official
+Official
+Mission Control Design System
+
+Space/aerospace mission monitoring. Dark command center, amber telemetry, monospace precision. Functional clarity above all else.
+
+design-system
+design
+developer-tools
+Details
+Use
+Save
+Mission Control Design System
+Official
+Official
+Mistral AI
+
+Open-weight LLM provider. French-engineered minimalism, purple-toned.
+
+design-system
+design
+ai-llm
+Details
+Use
+Save
+Mistral AI
+Official
+Official
+Modern
+
+Contemporary editorial style with serif typography, minimal palettes, and clean layouts for polished digital products.
+
+design-system
+design
+modern-minimal
+Details
+Use
+Save
+Modern
+Official
+Official
+MongoDB
+
+Document database. Green leaf branding, developer documentation focus.
+
+design-system
+design
+backend-data
+Details
+Use
+Save
+MongoDB
+Official
+Official
+Mono
+
+Monospace-driven, matrix-inspired design with high-contrast elements, compact density, and a hacker-chic aesthetic.
+
+design-system
+design
+modern-minimal
+Details
+Use
+Save
+Mono
+Official
+Official
+Neobrutalism
+
+Modern take on brutalism with bold borders, vivid accent colors, and raw, high-contrast layouts on warm surfaces.
+
+design-system
+design
+bold-expressive
+Details
+Use
+Save
+Neobrutalism
+Official
+Official
+Neon
+
+Electric neon glow effects with high-contrast color pairings for bold, attention-grabbing interfaces.
+
+design-system
+design
+morphism-effects
+Details
+Use
+Save
+Neon
+Official
+Official
+Neumorphism
+
+Soft, extruded UI elements with inner and outer shadows on monochromatic surfaces for a tactile, embedded look.
+
+design-system
+design
+morphism-effects
+Details
+Use
+Save
+Neumorphism
+Official
+Official
+Neutral Modern
+
+A clean, product-oriented default. Use when the brief doesn't call for a specific mood — good for B2B tools, dashboards, and utility pages.
+
+design-system
+design
+starter
+Details
+Use
+Save
+Neutral Modern
+Official
+Official
+Nike
+
+Athletic retail. Monochrome UI, massive uppercase type, full-bleed photography.
+
+design-system
+design
+e-commerce-retail
+Details
+Use
+Save
+Nike
+Official
+Official
+Notion
+
+All-in-one workspace. Warm minimalism, serif headings, soft surfaces.
+
+design-system
+design
+productivity-saas
+Details
+Use
+Save
+Notion
+Official
+Official
+NVIDIA
+
+GPU computing. Green-black energy, technical power aesthetic.
+
+design-system
+design
+media-consumer
+Details
+Use
+Save
+NVIDIA
+Official
+Official
+OpenAI
+
+Calm, near-monochrome system anchored in deep teal-black with generous white space and editorial typography.
+
+design-system
+design
+ai-llm
+Details
+Use
+Save
+OpenAI
+Official
+Official
+Pacman
+
+Retro arcade-inspired design with pixel fonts, dotted borders, playful high-contrast colors, and 8-bit game aesthetics.
+
+design-system
+design
+themed-unique
+Details
+Use
+Save
+Pacman
+Official
+Official
+Paper
+
+Paper-textured, print-inspired design with minimal colors, clean serif/sans typography, and tactile surface qualities.
+
+design-system
+design
+retro-nostalgic
+Details
+Use
+Save
+Paper
+Official
+Official
+Perspective
+
+Spatial depth design with isometric views, vanishing points, and layered elements that guide attention through 3D-like realism.
+
+design-system
+design
+layout-structure
+Details
+Use
+Save
+Perspective
+Official
+Official
+PlayStation
+
+Gaming console retail. Three-surface channel layout, quiet-authority display type, cyan hover-scale.
+
+design-system
+design
+media-consumer
+Details
+Use
+Save
+PlayStation
+Official
+Official
+PostHog
+
+Product analytics. Playful hedgehog branding, developer-friendly dark UI.
+
+design-system
+design
+backend-data
+Details
+Use
+Save
+PostHog
+Official
+Official
+Premium
+
+Apple-inspired premium aesthetic with precise spacing, modern typography, and a refined, polished visual language.
+
+design-system
+design
+professional-corporate
+Details
+Use
+Save
+Premium
+Official
+Official
+Professional
+
+Polished, business-ready design with modern typography, structured layouts, and a trustworthy visual identity.
+
+design-system
+design
+professional-corporate
+Details
+Use
+Save
+Professional
+Official
+Official
+Publication
+
+Print-inspired visual language for books, magazines, and reports with editorial grids and expressive typography.
+
+design-system
+design
+creative-artistic
+Details
+Use
+Save
+Publication
+Official
+Official
+Raycast
+
+Productivity launcher. Sleek dark chrome, vibrant gradient accents.
+
+design-system
+design
+developer-tools
+Details
+Use
+Save
+Raycast
+Official
+Official
+Refined
+
+Carefully curated, modern minimal style with elegant serif typography and understated, sophisticated palettes.
+
+design-system
+design
+modern-minimal
+Details
+Use
+Save
+Refined
+Official
+Official
+Renault
+
+French automotive. Vibrant aurora gradients, NouvelR typography, bold energy.
+
+design-system
+design
+automotive
+Details
+Use
+Save
+Renault
+Official
+Official
+Retro
+
+Throwback design with vintage-inspired typography, high-contrast retro palettes, and nostalgic visual elements.
+
+design-system
+design
+retro-nostalgic
+Details
+Use
+Save
+Retro
+Official
+Official
+Revolut
+
+Digital banking. Sleek dark interface, gradient cards, fintech precision.
+
+design-system
+design
+fintech-crypto
+Details
+Use
+Save
+Revolut
+Official
+Official
+Sentry
+
+Error monitoring. Dark dashboard, data-dense, pink-purple accent.
+
+design-system
+design
+backend-data
+Details
+Use
+Save
+Sentry
+Official
+Official
+Shadcn
+
+Shadcn/ui-inspired design with minimal, clean components, monochrome palette, and utility-first patterns.
+
+design-system
+design
+modern-minimal
+Details
+Use
+Save
+Shadcn
+Official
+Official
+Shopify
+
+E-commerce platform. Dark-first cinematic, neon green accent, ultra-light type.
+
+design-system
+design
+e-commerce-retail
+Details
+Use
+Save
+Shopify
+Official
+Official
+Simple
+
+Straightforward, no-frills design with clean typography, neutral colors, and intuitive layouts that stay out of the way.
+
+design-system
+design
+modern-minimal
+Details
+Use
+Save
+Simple
+Official
+Official
+Skeumorphism
+
+Real-world mimicry with textured surfaces, 3D effects, and familiar physical metaphors for intuitive digital interfaces.
+
+design-system
+design
+morphism-effects
+Details
+Use
+Save
+Skeumorphism
+Official
+Official
+Sleek
+
+Modern minimalist aesthetic with clean lines, intentional color palette, subtle interactions, and consistent spacing.
+
+design-system
+design
+modern-minimal
+Details
+Use
+Save
+Sleek
+Official
+Official
+SpaceX
+
+Space technology. Stark black and white, full-bleed imagery, futuristic.
+
+design-system
+design
+media-consumer
+Details
+Use
+Save
+SpaceX
+Official
+Official
+Spacious
+
+Generous whitespace, consistent padding, and grid-based layouts for clean, readable, and breathing interfaces.
+
+design-system
+design
+layout-structure
+Details
+Use
+Save
+Spacious
+Official
+Official
+Spotify
+
+Music streaming. Vibrant green on dark, bold type, album-art-driven.
+
+design-system
+design
+media-consumer
+Details
+Use
+Save
+Spotify
+Official
+Official
+Starbucks
+
+Global coffee retail brand. Four-tier green system, warm cream canvas, full-pill buttons.
+
+design-system
+design
+e-commerce-retail
+Details
+Use
+Save
+Starbucks
+Official
+Official
+Storytelling
+
+Narrative-driven design using visuals, copy, and interaction to guide users through engaging, emotionally resonant journeys.
+
+design-system
+design
+creative-artistic
+Details
+Use
+Save
+Storytelling
+Official
+Official
+Stripe
+
+Payment infrastructure. Signature purple gradients, weight-300 elegance.
+
+design-system
+design
+fintech-crypto
+Details
+Use
+Save
+Stripe
+Official
+Official
+Supabase
+
+Open-source Firebase alternative. Dark emerald theme, code-first.
+
+design-system
+design
+backend-data
+Details
+Use
+Save
+Supabase
+Official
+Official
+Superhuman
+
+Fast email client. Premium dark UI, keyboard-first, purple glow.
+
+design-system
+design
+developer-tools
+Details
+Use
+Save
+Superhuman
+Official
+Official
+Tesla
+
+Electric automotive. Radical subtraction, full-viewport photography, near-zero UI.
+
+design-system
+design
+automotive
+Details
+Use
+Save
+Tesla
+Official
+Official
+Tetris
+
+Classic block-game inspired design with playful colors, bold display fonts, and compact, high-energy layouts.
+
+design-system
+design
+themed-unique
+Details
+Use
+Save
+Tetris
+Official
+Official
+The Verge
+
+Tech editorial media. Acid-mint and ultraviolet accents, Manuka display, rave-flyer story tiles.
+
+design-system
+design
+media-consumer
+Details
+Use
+Save
+The Verge
+Official
+Official
+Together AI
+
+Open-source AI infrastructure. Technical, blueprint-style design.
+
+design-system
+design
+ai-llm
+Details
+Use
+Save
+Together AI
+Official
+Official
+Totality Festival
+
+Surface: web A cosmic-premium, glassmorphic dark system that captures the visceral awe of a solar eclipse — obsidian surfaces, amber "corona" highlights, and cyan atmospheric accents.
+
+design-system
+design
+themed-unique
+Details
+Use
+Save
+Totality Festival
+Official
+Official
+Uber
+
+Mobility platform. Bold black and white, tight type, urban energy.
+
+design-system
+design
+media-consumer
+Details
+Use
+Save
+Uber
+Official
+Official
+Urdu Modern (Indus Script System)
+
+Urdu-first digital experiences with native RTL support,Nastaliq typography, and bilingual harmony.
+
+design-system
+design
+editorial-personal-publication
+Details
+Use
+Save
+Urdu Modern (Indus Script System)
+Official
+Official
+Vibrant
+
+Lively, colorful design with bold playful typography, warm accents, and dynamic visual energy.
+
+design-system
+design
+bold-expressive
+Details
+Use
+Save
+Vibrant
+Official
+Official
+Vintage
+
+1950s-1990s nostalgia with skeuomorphic touches, grainy textures, retro color palettes, and pixel-style typography.
+
+design-system
+design
+retro-nostalgic
+Details
+Use
+Save
+Vintage
+Official
+Official
+Vodafone
+
+Global telecom brand. Monumental uppercase display, Vodafone Red chapter bands.
+
+design-system
+design
+media-consumer
+Details
+Use
+Save
+Vodafone
+Official
+Official
+VoltAgent
+
+AI agent framework. Void-black canvas, emerald accent, terminal-native.
+
+design-system
+design
+ai-llm
+Details
+Use
+Save
+VoltAgent
+Official
+Official
+Warm Editorial
+
+A serif-led magazine aesthetic. Terracotta accent on warm off-white paper — good for long-form, editorial, and brand-led marketing pages.
+
+design-system
+design
+starter
+Details
+Use
+Save
+Warm Editorial
+Official
+Official
+Warp
+
+Modern terminal. Dark IDE-like interface, block-based command UI.
+
+design-system
+design
+developer-tools
+Details
+Use
+Save
+Warp
+Official
+Official
+Webflow
+
+Visual web builder. Blue-accented, polished marketing site aesthetic.
+
+design-system
+design
+design-creative
+Details
+Use
+Save
+Webflow
+Official
+Official
+WIRED
+
+Tech magazine. Paper-white broadsheet density, custom serif display, mono kickers, ink-blue links.
+
+design-system
+design
+media-consumer
+Details
+Use
+Save
+WIRED
+Official
+Official
+xAI
+
+Elon Musk's AI lab. Stark monochrome, futuristic minimalism.
+
+design-system
+design
+ai-llm
+Details
+Use
+Save
+xAI
+Official
+Official
+Xiaohongshu
+
+Lifestyle UGC social platform. Singular brand red, generous radius, content-first.
+
+design-system
+design
+media-consumer
+Details
+Use
+Save
+Xiaohongshu
+Official
+Official
+Zapier
+
+Automation platform. Warm orange, friendly illustration-driven.
+
+design-system
+design
+productivity-saas
+Details
+Use
+Save
+Zapier
+Official
+Official
+Linear
+
+Project management. Ultra-minimal, precise, purple accent.
+
+design-system
+design
+productivity-saas
+Details
+Use
+Save
+Linear
+Official
+Official
+MiniMax
+
+AI model provider. Bold dark interface with neon accents.
+
+design-system
+design
+ai-llm
+Details
+Use
+Save
+MiniMax
+Official
+Official
+Ollama
+
+Run LLMs locally. Terminal-first, monochrome simplicity.
+
+design-system
+design
+ai-llm
+Details
+Use
+Save
+Ollama
+Official
+Official
+OpenCode
+
+AI coding platform. Developer-centric dark theme.
+
+design-system
+design
+ai-llm
+Details
+Use
+Save
+OpenCode
+Official
+Official
+Pinterest
+
+Visual discovery. Red accent, masonry grid, image-first.
+
+design-system
+design
+media-consumer
+Details
+Use
+Save
+Pinterest
+Official
+Official
+Replicate
+
+Run ML models via API. Clean white canvas, code-forward.
+
+design-system
+design
+ai-llm
+Details
+Use
+Save
+Replicate
+Official
+Official
+Resend
+
+Email API. Minimal dark theme, monospace accents.
+
+design-system
+design
+productivity-saas
+Details
+Use
+Save
+Resend
+Official
+Official
+Runway
+
+AI video generation. Cinematic dark UI, media-rich layout.
+
+design-system
+design
+ai-llm
+Details
+Use
+Save
+Runway
+Official
+Official
+Sanity
+
+Headless CMS. Red accent, content-first editorial layout.
+
+design-system
+design
+backend-data
+Details
+Use
+Save
+Sanity
+Official
+Official
+Vercel
+
+Frontend deployment. Black and white precision, Geist font.
+
+design-system
+design
+developer-tools
+Details
+Use
+Save
+Vercel
+Official
+Official
+Wise
+
+Money transfer. Bright green accent, friendly and clear.
+
+design-system
+design
+fintech-crypto
+Details
+Use
+Save
+Wise
+Official
+D
+Official
+Dcf Valuation
+
+Discounted cash flow valuation and intrinsic value analysis for public companies. Use when the brief asks for DCF, fair value, intrinsic value, price target, undervalued or overvalued analysis, or "what is this company worth?"
+
+example
+prototype
+design
+Details
+Use
+Save
+Dcf Valuation
+Official
+L
+Official
+Last30days
+
+Recent community and social trend research over the last 30 days. Use when the brief asks what people are saying now, recent sentiment, community reactions, social proof, launch reaction, trend scan, or last-30-days context.
+
+example
+prototype
+design
+Details
+Use
+Save
+Last30days
+Official
+index.html
+Official
+Live Artifact
+
+Create refreshable, auditable Open Design artifacts backed by connector or local data. Trigger when the user asks for live dashboards, refreshable reports, synced views, or reusable data-backed artifacts.
+
+example
+prototype
+live
+Details
+Use
+Save
+Live Artifact
+Official
+example.html
+Official
+Pptx Html Fidelity Audit
+
+Audit a python-pptx export against its source HTML deck, identify layout/content drift (footer overflow, cropped content, missing italic/em, lost styling, off-rhythm spacing), and re-export with strict footer-rail + cursor-flow layout discipline. Use this skill whenever the user has a .pptx that was generated from an HTML slide deck and asks to compare/audit/verify/fix the export — including phrases like "compare ppt with html", "fidelity audit", "fix the pptx", "ppt is cut off", "footer overlap", "italic missing in pptx", "re-export the deck", "pptx-html-fidelity-audit", or any case where a python-pptx → HTML round-trip needs verification or repair. Also trigger when the user shows you a deck.html and a deck.pptx side by side and is debugging visual differences.
+
+example
+utility
+engineering
+Details
+Use
+Save
+Pptx Html Fidelity Audit
+Official
+X
+Official
+X Research
+
+X/Twitter public sentiment research for recent market, company, product, or community discourse. Use when the brief asks what people are saying on X, Twitter sentiment, CT sentiment, public opinion, expert posts, or social reaction around a stock, sector, company, product, or market event.
+
+example
+prototype
+design
+Details
+Use
+Save
+X Research
+Official
+C
+Official
+Contribute Plugin to Open Design
+
+Opens a pull request that adds a local Open Design plugin to the Open Design community catalog using the GitHub CLI.
+
+share
+github
+github-pr
+Details
+Use
+Save
+Contribute Plugin to Open Design
+Official
+D
+Official
+Design refine
+
+Baseline Refine plugin for improving an existing Open Design artifact with a focused critique, small patch, and handoff summary.
+
+scenario
+refine
+tune
+Details
+Use
+Save
+Design refine
+Official
+E
+Official
+Export to Next.js
+
+Starter downstream export plugin for turning an accepted Open Design artifact into a Next.js App Router handoff.
+
+scenario
+export
+downstream
+Details
+Use
+Save
+Export to Next.js
+Official
+E
+Official
+Export to React
+
+Starter downstream export plugin for turning an accepted Open Design artifact into a React component handoff.
+
+scenario
+export
+downstream
+Details
+Use
+Save
+Export to React
+Official
+E
+Official
+Export to Vue
+
+Starter downstream export plugin for turning an accepted Open Design artifact into a Vue 3 single-file component handoff.
+
+scenario
+export
+downstream
+Details
+Use
+Save
+Export to Vue
+Official
+M
+Official
+Media generation (default scenario)
+
+Default scenario plugin for image, video, and audio projects. Routes through the media-* atoms based on the project kind and wraps the result in a live artifact.
+
+scenario
+media-generation
+image
+Details
+Use
+Save
+Media generation (default scenario)
+Official
+P
+Official
+Publish Plugin to GitHub
+
+Creates a public GitHub repository for a local Open Design plugin using the GitHub CLI.
+
+share
+publish
+github
+Details
+Use
+Save
+Publish Plugin to GitHub
+Official
+PRIVACY
+Help us improve Open Design
+
+Open Design can share usage data with our team to help us improve. This includes:
+
+Anonymous metrics
+Run counts, token usage, error rate, duration. No prompts, no project data.
+Conversation and tool content
+Your prompts, assistant responses, tool inputs, and tool outputs (truncated before send). API keys, tokens, JWTs, emails, IPs, and credit-card numbers are stripped automatically before send.
+
+Data sharing is on by default. You can turn it off any time in Settings → Privacy. We never upload the contents of your generated artifact files.
+
+Read the privacy policy
+I get it

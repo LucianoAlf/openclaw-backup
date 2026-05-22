@@ -1,0 +1,168 @@
+{
+  "st": {
+    "id": "fa1bb57c-220b-48fe-bcbf-435fcbf21243",
+    "projectId": "mike-image2-card-mpfvfhbj",
+    "conversationId": "9a309084-8c7b-4f78-ae49-820c3a1c7151",
+    "assistantMessageId": null,
+    "agentId": "codex",
+    "appliedPluginSnapshotId": null,
+    "pluginId": null,
+    "status": "succeeded",
+    "createdAt": 1779390952162,
+    "updatedAt": 1779391274744,
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "errorCode": null
+  },
+  "fl": {
+    "files": [
+      {
+        "name": "index.html",
+        "path": "index.html",
+        "type": "file",
+        "size": 9122,
+        "mtime": 1779391207859.6362,
+        "kind": "html",
+        "mime": "text/html; charset=utf-8",
+        "artifactKind": "html",
+        "artifactManifest": {
+          "version": 1,
+          "kind": "html",
+          "title": "index.html",
+          "entry": "index.html",
+          "renderer": "html",
+          "status": "complete",
+          "exports": [
+            "html",
+            "pdf",
+            "zip"
+          ],
+          "metadata": {
+            "inferred": true
+          }
+        }
+      },
+      {
+        "name": "assets/logos/logo-la-music-light-solo-vazada.svg",
+        "path": "assets/logos/logo-la-music-light-solo-vazada.svg",
+        "type": "file",
+        "size": 2440,
+        "mtime": 1779391000446.383,
+        "kind": "sketch",
+        "mime": "image/svg+xml",
+        "artifactKind": "svg",
+        "artifactManifest": {
+          "version": 1,
+          "kind": "svg",
+          "title": "assets/logos/logo-la-music-light-solo-vazada.svg",
+          "entry": "assets/logos/logo-la-music-light-solo-vazada.svg",
+          "renderer": "svg",
+          "status": "complete",
+          "exports": [
+            "svg",
+            "zip"
+          ],
+          "metadata": {
+            "inferred": true
+          }
+        }
+      },
+      {
+        "name": "assets/logos/logo-la-music-dark-completa.svg",
+        "path": "assets/logos/logo-la-music-dark-completa.svg",
+        "type": "file",
+        "size": 8750,
+        "mtime": 1779391000442.383,
+        "kind": "sketch",
+        "mime": "image/svg+xml",
+        "artifactKind": "svg",
+        "artifactManifest": {
+          "version": 1,
+          "kind": "svg",
+          "title": "assets/logos/logo-la-music-dark-completa.svg",
+          "entry": "assets/logos/logo-la-music-dark-completa.svg",
+          "renderer": "svg",
+          "status": "complete",
+          "exports": [
+            "svg",
+            "zip"
+          ],
+          "metadata": {
+            "inferred": true
+          }
+        }
+      },
+      {
+        "name": "assets/fonts/Prompt-Black.ttf",
+        "path": "assets/fonts/Prompt-Black.ttf",
+        "type": "file",
+        "size": 170136,
+        "mtime": 1779391000437.383,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/Prompt-ExtraBold.ttf",
+        "path": "assets/fonts/Prompt-ExtraBold.ttf",
+        "type": "file",
+        "size": 169920,
+        "mtime": 1779391000434.383,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/Prompt-Bold.ttf",
+        "path": "assets/fonts/Prompt-Bold.ttf",
+        "type": "file",
+        "size": 172528,
+        "mtime": 1779391000430.383,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/Prompt-SemiBold.ttf",
+        "path": "assets/fonts/Prompt-SemiBold.ttf",
+        "type": "file",
+        "size": 169024,
+        "mtime": 1779391000424.383,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/Prompt-Medium.ttf",
+        "path": "assets/fonts/Prompt-Medium.ttf",
+        "type": "file",
+        "size": 170148,
+        "mtime": 1779391000420.383,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/Prompt-Regular.ttf",
+        "path": "assets/fonts/Prompt-Regular.ttf",
+        "type": "file",
+        "size": 162624,
+        "mtime": 1779391000413.383,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "references/generated-stage-photo.png",
+        "path": "references/generated-stage-photo.png",
+        "type": "file",
+        "size": 1725836,
+        "mtime": 1779390951936.5574,
+        "kind": "image",
+        "mime": "image/png",
+        "artifactManifest": null
+      }
+    ]
+  }
+}

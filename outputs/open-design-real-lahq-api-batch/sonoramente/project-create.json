@@ -1,0 +1,17 @@
+{
+  "project": {
+    "id": "lahq-od-real-mpfu0es2-c0mgzs",
+    "name": "SonoraMente LA · música como ponte terapêutica",
+    "skillId": "la-music-carousel",
+    "designSystemId": "user:la-music-sonoramente",
+    "pendingPrompt": "Crie uma arte/post 1080x1350 para SonoraMente LA usando OBRIGATORIAMENTE o design system user:la-music-sonoramente e a skill la-music-carousel. Tema: cuidado, desenvolvimento e música como ponte terapêutica. Precisa ter estética acolhedora, premium, clínica humanizada, Playfair/DM Sans quando indicado pelo DS, logo oficial, paleta SonoraMente correta. Não use visual escolar/rock/infantil exagerado, não use pink School dominante, não use placeholder/lorem. Entregue HTML final renderizável com a peça visual.",
+    "metadata": {
+      "kind": "freeform",
+      "intent": "lahq-real-open-design-test",
+      "skipDiscoveryBrief": true
+    },
+    "createdAt": 1779388568889,
+    "updatedAt": 1779388568889
+  },
+  "conversationId": "bdfd0bcd-1d3c-49d2-8dab-46e69b2bc412"
+}

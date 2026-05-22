@@ -1,0 +1,844 @@
+{
+  "generatedAt": "2026-05-21T08:00:00-03:00",
+  "today": "2026-05-21",
+  "weekEnd": "2026-05-27",
+  "report": {
+    "CEO Quest": {
+      "projectTitle": "🔥Ceo Quest",
+      "count": 14,
+      "tasks": [
+        {
+          "id": "69f4fbd28f08a37c899d12e1",
+          "title": "SonoraMente — Inauguração MVP",
+          "startDate": "2026-05-30T15:00:00.000+0000",
+          "dueDate": "2026-05-30T15:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-30",
+          "local": "2026-05-30 12:00"
+        },
+        {
+          "id": "69f4fbd18f085b684d2ad09a",
+          "title": "SonoraMente — Checklist final de abertura",
+          "startDate": "2026-05-28T15:00:00.000+0000",
+          "dueDate": "2026-05-28T15:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-28",
+          "local": "2026-05-28 12:00"
+        },
+        {
+          "id": "69f4fbd18f08a688d2a24a9f",
+          "title": "SonoraMente — Materiais e lançamento",
+          "startDate": "2026-05-24T15:00:00.000+0000",
+          "dueDate": "2026-05-24T15:00:00.000+0000",
+          "status": 0,
+          "priority": 3,
+          "date": "2026-05-24",
+          "local": "2026-05-24 12:00"
+        },
+        {
+          "id": "69f6018e8f0885d1c636e72f",
+          "title": "Ritual da Virada — Review + Planejamento da Semana",
+          "startDate": "2026-05-24T12:00:00.000+0000",
+          "dueDate": "2026-05-24T13:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-24",
+          "local": "2026-05-24 09:00"
+        },
+        {
+          "id": "69f4fbd18f0885d1c6235423",
+          "title": "SonoraMente — Aplicação da marca no ambiente",
+          "startDate": "2026-05-20T15:00:00.000+0000",
+          "dueDate": "2026-05-20T15:00:00.000+0000",
+          "status": 0,
+          "priority": 3,
+          "date": "2026-05-20",
+          "local": "2026-05-20 12:00"
+        },
+        {
+          "id": "69f4fbd18f085b684d2ad080",
+          "title": "SonoraMente — Sistema pronto para operação assistida",
+          "startDate": "2026-05-18T15:00:00.000+0000",
+          "dueDate": "2026-05-18T15:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-18",
+          "local": "2026-05-18 12:00"
+        },
+        {
+          "id": "69f4fbd18f0885d1c6235411",
+          "title": "SonoraMente — Obra e estrutura física do MVP",
+          "startDate": "2026-05-16T15:00:00.000+0000",
+          "dueDate": "2026-05-16T15:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-16",
+          "local": "2026-05-16 12:00"
+        },
+        {
+          "id": "69f4fbd08f08a37c899d12b1",
+          "title": "SonoraMente — Comercial mínimo do MVP",
+          "startDate": "2026-05-10T15:00:00.000+0000",
+          "dueDate": "2026-05-10T16:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-10",
+          "local": "2026-05-10 12:00"
+        },
+        {
+          "id": "69f4fbd08f085b684d2ad066",
+          "title": "SonoraMente — Fluxo operacional do paciente",
+          "startDate": "2026-05-08T15:00:00.000+0000",
+          "dueDate": "2026-05-08T15:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-08",
+          "local": "2026-05-08 12:00"
+        },
+        {
+          "id": "69f757138f08be467e91c7a2",
+          "title": "Bloco SonoraMente — Escopo clínico e fluxo",
+          "startDate": "2026-05-07T13:00:00.000+0000",
+          "dueDate": "2026-05-07T18:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-07",
+          "local": "2026-05-07 10:00"
+        },
+        {
+          "id": "69f4fbd08f085b684d2ad054",
+          "title": "SonoraMente — Escopo clínico mínimo do MVP",
+          "startDate": "2026-05-06T15:00:00.000+0000",
+          "dueDate": "2026-05-06T15:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-06",
+          "local": "2026-05-06 12:00"
+        },
+        {
+          "id": "69f757128f08cbca66a0b116",
+          "title": "SonoraMente — Contato com Geraldo",
+          "startDate": "2026-05-05T18:00:00.000+0000",
+          "dueDate": "2026-05-05T19:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-05",
+          "local": "2026-05-05 15:00"
+        },
+        {
+          "id": "69f4fbd08f0885d1c62353f6",
+          "title": "SonoraMente — Validação jurídica do MVP",
+          "startDate": "2026-05-05T15:00:00.000+0000",
+          "dueDate": "2026-05-05T16:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-05",
+          "local": "2026-05-05 12:00"
+        },
+        {
+          "id": "69f757128f086d028b01c1cd",
+          "title": "Bloco SonoraMente — Validação jurídica do MVP",
+          "startDate": "2026-05-05T13:00:00.000+0000",
+          "dueDate": "2026-05-05T18:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-05",
+          "local": "2026-05-05 10:00"
+        }
+      ],
+      "today": [],
+      "overdue": [
+        {
+          "id": "69f4fbd18f0885d1c6235423",
+          "title": "SonoraMente — Aplicação da marca no ambiente",
+          "startDate": "2026-05-20T15:00:00.000+0000",
+          "dueDate": "2026-05-20T15:00:00.000+0000",
+          "status": 0,
+          "priority": 3,
+          "date": "2026-05-20",
+          "local": "2026-05-20 12:00"
+        },
+        {
+          "id": "69f4fbd18f085b684d2ad080",
+          "title": "SonoraMente — Sistema pronto para operação assistida",
+          "startDate": "2026-05-18T15:00:00.000+0000",
+          "dueDate": "2026-05-18T15:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-18",
+          "local": "2026-05-18 12:00"
+        },
+        {
+          "id": "69f4fbd18f0885d1c6235411",
+          "title": "SonoraMente — Obra e estrutura física do MVP",
+          "startDate": "2026-05-16T15:00:00.000+0000",
+          "dueDate": "2026-05-16T15:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-16",
+          "local": "2026-05-16 12:00"
+        },
+        {
+          "id": "69f4fbd08f08a37c899d12b1",
+          "title": "SonoraMente — Comercial mínimo do MVP",
+          "startDate": "2026-05-10T15:00:00.000+0000",
+          "dueDate": "2026-05-10T16:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-10",
+          "local": "2026-05-10 12:00"
+        },
+        {
+          "id": "69f4fbd08f085b684d2ad066",
+          "title": "SonoraMente — Fluxo operacional do paciente",
+          "startDate": "2026-05-08T15:00:00.000+0000",
+          "dueDate": "2026-05-08T15:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-08",
+          "local": "2026-05-08 12:00"
+        },
+        {
+          "id": "69f757138f08be467e91c7a2",
+          "title": "Bloco SonoraMente — Escopo clínico e fluxo",
+          "startDate": "2026-05-07T13:00:00.000+0000",
+          "dueDate": "2026-05-07T18:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-07",
+          "local": "2026-05-07 10:00"
+        },
+        {
+          "id": "69f4fbd08f085b684d2ad054",
+          "title": "SonoraMente — Escopo clínico mínimo do MVP",
+          "startDate": "2026-05-06T15:00:00.000+0000",
+          "dueDate": "2026-05-06T15:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-06",
+          "local": "2026-05-06 12:00"
+        },
+        {
+          "id": "69f757128f08cbca66a0b116",
+          "title": "SonoraMente — Contato com Geraldo",
+          "startDate": "2026-05-05T18:00:00.000+0000",
+          "dueDate": "2026-05-05T19:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-05",
+          "local": "2026-05-05 15:00"
+        },
+        {
+          "id": "69f4fbd08f0885d1c62353f6",
+          "title": "SonoraMente — Validação jurídica do MVP",
+          "startDate": "2026-05-05T15:00:00.000+0000",
+          "dueDate": "2026-05-05T16:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-05",
+          "local": "2026-05-05 12:00"
+        },
+        {
+          "id": "69f757128f086d028b01c1cd",
+          "title": "Bloco SonoraMente — Validação jurídica do MVP",
+          "startDate": "2026-05-05T13:00:00.000+0000",
+          "dueDate": "2026-05-05T18:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-05",
+          "local": "2026-05-05 10:00"
+        }
+      ],
+      "week": [
+        {
+          "id": "69f4fbd18f08a688d2a24a9f",
+          "title": "SonoraMente — Materiais e lançamento",
+          "startDate": "2026-05-24T15:00:00.000+0000",
+          "dueDate": "2026-05-24T15:00:00.000+0000",
+          "status": 0,
+          "priority": 3,
+          "date": "2026-05-24",
+          "local": "2026-05-24 12:00"
+        },
+        {
+          "id": "69f6018e8f0885d1c636e72f",
+          "title": "Ritual da Virada — Review + Planejamento da Semana",
+          "startDate": "2026-05-24T12:00:00.000+0000",
+          "dueDate": "2026-05-24T13:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-24",
+          "local": "2026-05-24 09:00"
+        }
+      ]
+    },
+    "Mentorias": {
+      "projectTitle": "💡Mentorias",
+      "count": 1,
+      "tasks": [
+        {
+          "id": "6a0c9b7c8f089495b6795dd2",
+          "title": "DERMATOLOGIA - CLINICA HUMMANA MAIS CAMPO GRANDE",
+          "startDate": "2026-05-20T17:00:00.000+0000",
+          "dueDate": "2026-05-20T18:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-20",
+          "local": "2026-05-20 14:00"
+        }
+      ],
+      "today": [],
+      "overdue": [
+        {
+          "id": "6a0c9b7c8f089495b6795dd2",
+          "title": "DERMATOLOGIA - CLINICA HUMMANA MAIS CAMPO GRANDE",
+          "startDate": "2026-05-20T17:00:00.000+0000",
+          "dueDate": "2026-05-20T18:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-20",
+          "local": "2026-05-20 14:00"
+        }
+      ],
+      "week": []
+    },
+    "Emusys Academy": {
+      "projectTitle": "🎬Emusys Academy",
+      "count": 0,
+      "tasks": [],
+      "today": [],
+      "overdue": [],
+      "week": []
+    },
+    "Trabalho Operacional": {
+      "projectTitle": "💼Trabalho Operacional",
+      "count": 0,
+      "tasks": [],
+      "today": [],
+      "overdue": [],
+      "week": []
+    },
+    "Pessoal Alf": {
+      "projectTitle": "🏠Pessoal Alf",
+      "count": 0,
+      "tasks": [],
+      "today": [],
+      "overdue": [],
+      "week": []
+    },
+    "Contas Pessoais": {
+      "projectTitle": "💸Contas Pessoais",
+      "count": 27,
+      "tasks": [
+        {
+          "id": "68b44780df542a9d02fd4b41",
+          "title": "Pacote Móvel Tim",
+          "startDate": "2026-07-01T12:00:00.000+0000",
+          "dueDate": "2026-07-01T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-07-01",
+          "local": "2026-07-01 09:00"
+        },
+        {
+          "id": "68b35357175452c635bc9b22",
+          "title": "Conta de Luz Home",
+          "startDate": "2026-06-09T12:00:00.000+0000",
+          "dueDate": "2026-06-09T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-06-09",
+          "local": "2026-06-09 09:00"
+        },
+        {
+          "id": "69cfff098f08908161d317de",
+          "title": "Plano saúde Amil",
+          "startDate": "2026-06-07T12:00:00.000+0000",
+          "dueDate": "2026-06-07T12:45:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-06-07",
+          "local": "2026-06-07 09:00"
+        },
+        {
+          "id": "69d6b77d8f08274391e563c0",
+          "title": "Parcela BYD Anne",
+          "startDate": "2026-06-07T12:00:00.000+0000",
+          "dueDate": "2026-06-07T12:45:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-06-07",
+          "local": "2026-06-07 09:00"
+        },
+        {
+          "id": "69cfff088f08908161d317cc",
+          "title": "Ajuda Mensal Alessya",
+          "startDate": "2026-06-05T12:00:00.000+0000",
+          "dueDate": "2026-06-05T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-06-05",
+          "local": "2026-06-05 09:00"
+        },
+        {
+          "id": "681b777ca10cf12c107972ff",
+          "title": "Internet Casa 7 Link",
+          "startDate": "2026-05-25T12:00:00.000+0000",
+          "dueDate": "2026-05-25T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-25",
+          "local": "2026-05-25 09:00"
+        },
+        {
+          "id": "681b79d3a10cf12c10797347",
+          "title": "Gás Naturgy",
+          "startDate": "2026-05-25T12:00:00.000+0000",
+          "dueDate": "2026-05-25T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-25",
+          "local": "2026-05-25 09:00"
+        },
+        {
+          "id": "69cfff118f08cefa875cc53c",
+          "title": "Cartão MagaLu",
+          "startDate": "2026-05-25T12:00:00.000+0000",
+          "dueDate": "2026-05-25T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-25",
+          "local": "2026-05-25 09:00"
+        },
+        {
+          "id": "69cfff138f08274390886b30",
+          "title": "Cartão C6 Bank",
+          "startDate": "2026-05-25T12:00:00.000+0000",
+          "dueDate": "2026-05-25T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-25",
+          "local": "2026-05-25 09:00"
+        },
+        {
+          "id": "69cfff148f08cefa875cc582",
+          "title": "Gás Naturgy",
+          "startDate": "2026-05-25T12:00:00.000+0000",
+          "dueDate": "2026-05-25T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-25",
+          "local": "2026-05-25 09:00"
+        },
+        {
+          "id": "69cfff158f08274390886b95",
+          "title": "Internet Casa 7 Link",
+          "startDate": "2026-05-25T12:00:00.000+0000",
+          "dueDate": "2026-05-25T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-25",
+          "local": "2026-05-25 09:00"
+        },
+        {
+          "id": "69eb7ee68f08c322e59e705b",
+          "title": "Internet de casa da empresa 7link",
+          "startDate": "2026-05-25T12:00:00.000+0000",
+          "dueDate": "2026-05-25T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-25",
+          "local": "2026-05-25 09:00"
+        },
+        {
+          "id": "681b7c2aa10cf12c107973f6",
+          "title": "Cartão C6 Bank",
+          "startDate": "2026-05-25T12:00:00.000+0000",
+          "dueDate": "2026-05-25T12:30:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-25",
+          "local": "2026-05-25 09:00"
+        },
+        {
+          "id": "681b7c58a10cf12c10797407",
+          "title": "Cartão Nubank",
+          "startDate": "2026-05-22T12:00:00.000+0000",
+          "dueDate": "2026-05-22T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-22",
+          "local": "2026-05-22 09:00"
+        },
+        {
+          "id": "69cfff128f08cefa875cc549",
+          "title": "Cartão Nubank",
+          "startDate": "2026-05-22T12:00:00.000+0000",
+          "dueDate": "2026-05-22T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-22",
+          "local": "2026-05-22 09:00"
+        },
+        {
+          "id": "68b355c5175452c635bc9e46",
+          "title": "Cartão MagaLu",
+          "startDate": "2026-05-21T12:00:00.000+0000",
+          "dueDate": "2026-05-21T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-21",
+          "local": "2026-05-21 09:00"
+        },
+        {
+          "id": "681b7bb9a10cf12c107973cb",
+          "title": "Cartão Itau Platinum",
+          "startDate": "2026-05-18T12:00:00.000+0000",
+          "dueDate": "2026-05-18T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-18",
+          "local": "2026-05-18 09:00"
+        },
+        {
+          "id": "69cfff118f08cefa875cc530",
+          "title": "Cartão Itau Platinum",
+          "startDate": "2026-05-18T12:00:00.000+0000",
+          "dueDate": "2026-05-18T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-18",
+          "local": "2026-05-18 09:00"
+        },
+        {
+          "id": "68b35588175452c635bc9db0",
+          "title": "Ajuda mensal Mãe",
+          "startDate": "2026-05-15T12:00:00.000+0000",
+          "dueDate": "2026-05-15T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-15",
+          "local": "2026-05-15 09:00"
+        },
+        {
+          "id": "68b35596175452c635bc9dd3",
+          "title": "Cartão Pão de Açucar",
+          "startDate": "2026-05-15T12:00:00.000+0000",
+          "dueDate": "2026-05-15T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-15",
+          "local": "2026-05-15 09:00"
+        },
+        {
+          "id": "68b355a0175452c635bc9df5",
+          "title": "Condomínio Buona Vitta",
+          "startDate": "2026-05-15T12:00:00.000+0000",
+          "dueDate": "2026-05-15T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-15",
+          "local": "2026-05-15 09:00"
+        },
+        {
+          "id": "69cfff0f8f087c1862988494",
+          "title": "Ajuda mensal Mãe",
+          "startDate": "2026-05-15T12:00:00.000+0000",
+          "dueDate": "2026-05-15T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-15",
+          "local": "2026-05-15 09:00"
+        },
+        {
+          "id": "69cfff108f08908161d31854",
+          "title": "Cartão Pão de Açucar",
+          "startDate": "2026-05-15T12:00:00.000+0000",
+          "dueDate": "2026-05-15T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-15",
+          "local": "2026-05-15 09:00"
+        },
+        {
+          "id": "68e414bfa4f4833ff89852f3",
+          "title": "2ª Parcela de Pagamento de Divida Ativa",
+          "startDate": "2026-05-10T12:00:00.000+0000",
+          "dueDate": "2026-05-10T13:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-10",
+          "local": "2026-05-10 09:00"
+        },
+        {
+          "id": "69cfff0c8f082743908869c1",
+          "title": "Colégio Isaac",
+          "startDate": "2026-05-10T12:00:00.000+0000",
+          "dueDate": "2026-05-10T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-10",
+          "local": "2026-05-10 09:00"
+        },
+        {
+          "id": "69cfff0d8f08cefa875cc4c7",
+          "title": "Condomínio Front Park",
+          "startDate": "2026-05-10T12:00:00.000+0000",
+          "dueDate": "2026-05-10T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-10",
+          "local": "2026-05-10 09:00"
+        },
+        {
+          "id": "69cfff0d8f087c186298847c",
+          "title": "PG Creuza",
+          "startDate": "2026-05-10T12:00:00.000+0000",
+          "dueDate": "2026-05-10T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-10",
+          "local": "2026-05-10 09:00"
+        }
+      ],
+      "today": [
+        {
+          "id": "68b355c5175452c635bc9e46",
+          "title": "Cartão MagaLu",
+          "startDate": "2026-05-21T12:00:00.000+0000",
+          "dueDate": "2026-05-21T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-21",
+          "local": "2026-05-21 09:00"
+        }
+      ],
+      "overdue": [
+        {
+          "id": "681b7bb9a10cf12c107973cb",
+          "title": "Cartão Itau Platinum",
+          "startDate": "2026-05-18T12:00:00.000+0000",
+          "dueDate": "2026-05-18T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-18",
+          "local": "2026-05-18 09:00"
+        },
+        {
+          "id": "69cfff118f08cefa875cc530",
+          "title": "Cartão Itau Platinum",
+          "startDate": "2026-05-18T12:00:00.000+0000",
+          "dueDate": "2026-05-18T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-18",
+          "local": "2026-05-18 09:00"
+        },
+        {
+          "id": "68b35588175452c635bc9db0",
+          "title": "Ajuda mensal Mãe",
+          "startDate": "2026-05-15T12:00:00.000+0000",
+          "dueDate": "2026-05-15T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-15",
+          "local": "2026-05-15 09:00"
+        },
+        {
+          "id": "68b35596175452c635bc9dd3",
+          "title": "Cartão Pão de Açucar",
+          "startDate": "2026-05-15T12:00:00.000+0000",
+          "dueDate": "2026-05-15T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-15",
+          "local": "2026-05-15 09:00"
+        },
+        {
+          "id": "68b355a0175452c635bc9df5",
+          "title": "Condomínio Buona Vitta",
+          "startDate": "2026-05-15T12:00:00.000+0000",
+          "dueDate": "2026-05-15T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-15",
+          "local": "2026-05-15 09:00"
+        },
+        {
+          "id": "69cfff0f8f087c1862988494",
+          "title": "Ajuda mensal Mãe",
+          "startDate": "2026-05-15T12:00:00.000+0000",
+          "dueDate": "2026-05-15T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-15",
+          "local": "2026-05-15 09:00"
+        },
+        {
+          "id": "69cfff108f08908161d31854",
+          "title": "Cartão Pão de Açucar",
+          "startDate": "2026-05-15T12:00:00.000+0000",
+          "dueDate": "2026-05-15T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-15",
+          "local": "2026-05-15 09:00"
+        },
+        {
+          "id": "68e414bfa4f4833ff89852f3",
+          "title": "2ª Parcela de Pagamento de Divida Ativa",
+          "startDate": "2026-05-10T12:00:00.000+0000",
+          "dueDate": "2026-05-10T13:00:00.000+0000",
+          "status": 0,
+          "priority": 5,
+          "date": "2026-05-10",
+          "local": "2026-05-10 09:00"
+        },
+        {
+          "id": "69cfff0c8f082743908869c1",
+          "title": "Colégio Isaac",
+          "startDate": "2026-05-10T12:00:00.000+0000",
+          "dueDate": "2026-05-10T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-10",
+          "local": "2026-05-10 09:00"
+        },
+        {
+          "id": "69cfff0d8f08cefa875cc4c7",
+          "title": "Condomínio Front Park",
+          "startDate": "2026-05-10T12:00:00.000+0000",
+          "dueDate": "2026-05-10T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-10",
+          "local": "2026-05-10 09:00"
+        },
+        {
+          "id": "69cfff0d8f087c186298847c",
+          "title": "PG Creuza",
+          "startDate": "2026-05-10T12:00:00.000+0000",
+          "dueDate": "2026-05-10T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-10",
+          "local": "2026-05-10 09:00"
+        }
+      ],
+      "week": [
+        {
+          "id": "681b777ca10cf12c107972ff",
+          "title": "Internet Casa 7 Link",
+          "startDate": "2026-05-25T12:00:00.000+0000",
+          "dueDate": "2026-05-25T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-25",
+          "local": "2026-05-25 09:00"
+        },
+        {
+          "id": "681b79d3a10cf12c10797347",
+          "title": "Gás Naturgy",
+          "startDate": "2026-05-25T12:00:00.000+0000",
+          "dueDate": "2026-05-25T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-25",
+          "local": "2026-05-25 09:00"
+        },
+        {
+          "id": "69cfff118f08cefa875cc53c",
+          "title": "Cartão MagaLu",
+          "startDate": "2026-05-25T12:00:00.000+0000",
+          "dueDate": "2026-05-25T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-25",
+          "local": "2026-05-25 09:00"
+        },
+        {
+          "id": "69cfff138f08274390886b30",
+          "title": "Cartão C6 Bank",
+          "startDate": "2026-05-25T12:00:00.000+0000",
+          "dueDate": "2026-05-25T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-25",
+          "local": "2026-05-25 09:00"
+        },
+        {
+          "id": "69cfff148f08cefa875cc582",
+          "title": "Gás Naturgy",
+          "startDate": "2026-05-25T12:00:00.000+0000",
+          "dueDate": "2026-05-25T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-25",
+          "local": "2026-05-25 09:00"
+        },
+        {
+          "id": "69cfff158f08274390886b95",
+          "title": "Internet Casa 7 Link",
+          "startDate": "2026-05-25T12:00:00.000+0000",
+          "dueDate": "2026-05-25T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-25",
+          "local": "2026-05-25 09:00"
+        },
+        {
+          "id": "69eb7ee68f08c322e59e705b",
+          "title": "Internet de casa da empresa 7link",
+          "startDate": "2026-05-25T12:00:00.000+0000",
+          "dueDate": "2026-05-25T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-25",
+          "local": "2026-05-25 09:00"
+        },
+        {
+          "id": "681b7c2aa10cf12c107973f6",
+          "title": "Cartão C6 Bank",
+          "startDate": "2026-05-25T12:00:00.000+0000",
+          "dueDate": "2026-05-25T12:30:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-25",
+          "local": "2026-05-25 09:00"
+        },
+        {
+          "id": "681b7c58a10cf12c10797407",
+          "title": "Cartão Nubank",
+          "startDate": "2026-05-22T12:00:00.000+0000",
+          "dueDate": "2026-05-22T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-22",
+          "local": "2026-05-22 09:00"
+        },
+        {
+          "id": "69cfff128f08cefa875cc549",
+          "title": "Cartão Nubank",
+          "startDate": "2026-05-22T12:00:00.000+0000",
+          "dueDate": "2026-05-22T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-22",
+          "local": "2026-05-22 09:00"
+        },
+        {
+          "id": "68b355c5175452c635bc9e46",
+          "title": "Cartão MagaLu",
+          "startDate": "2026-05-21T12:00:00.000+0000",
+          "dueDate": "2026-05-21T13:00:00.000+0000",
+          "status": 0,
+          "priority": 0,
+          "date": "2026-05-21",
+          "local": "2026-05-21 09:00"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "projectId": "mike-school-photo-mpfv2fqd",
+  "runId": "55d0de7d-45c2-431d-b59a-1ca4cc7f5f4b",
+  "status": "succeeded",
+  "files": [
+    "index.html",
+    "assets/fonts/Prompt-Black.ttf",
+    "assets/fonts/Prompt-ExtraBold.ttf",
+    "assets/fonts/Prompt-Bold.ttf",
+    "assets/fonts/Prompt-SemiBold.ttf",
+    "assets/fonts/Prompt-Medium.ttf",
+    "assets/fonts/Prompt-Regular.ttf",
+    "assets/logos/logo-la-music-light-solo-vazada.svg",
+    "assets/logos/logo-la-music-dark-completa.svg",
+    "references/guitarist-stage.jpg"
+  ],
+  "html": "index.html",
+  "out": "/home/mike/.openclaw/workspace/outputs/open-design-mike-school-photo",
+  "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Fapy_Lafertin%2C_guitarist_on_stage_in_London%2C_1983.jpg"
+}

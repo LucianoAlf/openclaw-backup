@@ -47,7 +47,16 @@ Para o Alfredo, a memória principal continua sendo OpenClaw (`MEMORY.md`, `memo
 ### LAHQ Supabase é fonte da verdade para conteúdo/assets/publicação (13/05/2026)
 Para produção LAHQ — imagens estáticas, carrosséis, vídeos/Reels/Stories, outputs, assets, aprovações, publicação Instagram e métricas — usar o Supabase LAHQ como fonte de verdade. O Supabase “Agente Alfredo” fica deprecated para esse domínio.
 
+### Mike/LAHQ: visual pesado fora do chat principal (21/05/2026)
+Mike deve operar com fluxo visual separado do Telegram/chat principal. Chamadas diretas de `image_generate`, render ou Chrome no chat travaram sessão em `blocked_tool_call`, enfileiraram mensagens e deram aparência de “mudez”. O chat principal fica para direção, copy, HTML/preflight e status; imagem/render pesado vai para worker/subtarefa assíncrona.
+
+### LAHQ School premium: HTML/CSS + assets oficiais + QA, não imagem final por IA (21/05/2026)
+Carrossel School de qualidade Alfredo não deve ser peça final gerada por IA com texto/logo/layout embutido. O método canônico é: direção criativa, copy, assets oficiais ou imagem sem texto, composição em HTML/CSS controlado, render headless, preview grid e QA contra refs ouro. IA pode apoiar asset/foto, mas não substituir montagem final.
+
+### LAHQ: refs ouro são régua, não banco de imagem (21/05/2026)
+Refs ouro servem para comparar força visual, ritmo, composição, acabamento e padrão de qualidade. Não recortar/reutilizar fotos/assets das refs como matéria-prima aleatória. Se não houver asset certo, declarar o problema e propor busca, produção ou geração dirigida.
+
 ---
 
 *Adicione decisões conforme forem sendo tomadas.*
-*Última atualização: 2026-05-13*
+*Última atualização: 2026-05-21*

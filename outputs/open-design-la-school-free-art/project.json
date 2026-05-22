@@ -1,0 +1,44 @@
+{
+  "project": {
+    "project": {
+      "id": "lahq-school-palco-1779386073",
+      "name": "LA Music School \u2014 Seu som merece palco",
+      "skillId": "la-music-carousel",
+      "designSystemId": null,
+      "pendingPrompt": "Crie uma arte de campanha para LA Music School usando o Design System oficial: Prompt, dark/pink, logo oficial, halftone, energia de palco e CTA.",
+      "metadata": {
+        "kind": "lahq-open-design-art",
+        "brand": "la-music-school",
+        "skipDiscoveryBrief": true
+      },
+      "createdAt": 1779386073564,
+      "updatedAt": 1779386073564
+    },
+    "conversationId": "d468d16c-83a8-4909-aca3-68d5c23e6ec4"
+  },
+  "file": {
+    "file": {
+      "name": "index.html",
+      "path": "index.html",
+      "size": 694724,
+      "mtime": 1779386073575.5261,
+      "kind": "html",
+      "mime": "text/html; charset=utf-8",
+      "artifactKind": "html",
+      "artifactManifest": {
+        "version": 1,
+        "kind": "html",
+        "title": "LA Music School \u2014 Seu som merece palco",
+        "entry": "index.html",
+        "renderer": "html",
+        "status": "complete",
+        "exports": [
+          "html"
+        ],
+        "createdAt": "2026-05-21T17:54:33.574Z",
+        "updatedAt": "2026-05-21T17:54:33.574Z"
+      }
+    }
+  },
+  "projectId": "lahq-school-palco-1779386073"
+}

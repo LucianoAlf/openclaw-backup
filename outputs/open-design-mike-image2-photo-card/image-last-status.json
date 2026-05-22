@@ -1,0 +1,32 @@
+{
+  "st": {
+    "id": "91c42241-ca82-432d-b4bf-ca00ea379a9d",
+    "projectId": "mike-image2-photo-mpfvd7oj",
+    "conversationId": "dff596ff-99bf-4f40-9720-915a4f3ca84a",
+    "assistantMessageId": null,
+    "agentId": "codex",
+    "appliedPluginSnapshotId": null,
+    "pluginId": null,
+    "status": "succeeded",
+    "createdAt": 1779390846262,
+    "updatedAt": 1779390951177,
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "errorCode": null
+  },
+  "fl": {
+    "files": [
+      {
+        "name": "la-music-school-stage-guitar.png",
+        "path": "la-music-school-stage-guitar.png",
+        "type": "file",
+        "size": 1725836,
+        "mtime": 1779390941244.5957,
+        "kind": "image",
+        "mime": "image/png",
+        "artifactManifest": null
+      }
+    ]
+  }
+}

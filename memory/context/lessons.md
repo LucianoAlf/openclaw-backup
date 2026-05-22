@@ -29,6 +29,18 @@ Quando ele joga uma ideia no ar — perguntar: "Quer capturar pra depois ou já 
 ### LAHQ School: skill não é enfeite, é processo obrigatório
 Erro de 13/05/2026: Alfredo leu as skills, mas bypassou o workflow criativo e gerou carrossel técnico/E2E com qualidade baixa. Para LAHQ School, antes de registrar/publicar qualquer output: consultar runbook + DS canônico + refs ouro, montar direção Nina, copy Theo, composição Diego, e reprovar internamente se o QA não bater pelo menos 8,5. Teste E2E técnico não pode ser apresentado como peça criativa final.
 
+### Mike/LAHQ: habilidade carregada não garante execução correta
+2026-05-20/21: Mike tinha skills instaladas/ready, mas nem sempre elas entravam no prompt ou viravam método real. Em agente especializado, validar três camadas: skill existe, skill é carregada no contexto e o agente segue a ordem operacional. Para conteúdo School: carregar skill/runbook/DS/brand guide/refs, fazer preflight, montar HTML/CSS, renderizar e olhar preview grid antes de chamar de final.
+
+### LAHQ School técnico: imagem precisa provar o assunto
+2026-05-20: Em conteúdo técnico de guitarra/palhetada, Mike usou imagem com leitura de cantora/performance genérica. Isso destrói credibilidade. Foto bonita mas errada reprova. Palhetada precisa mostrar mão, palheta, cordas, braço do instrumento, gesto técnico, professor corrigindo ou recurso visual equivalente. Se não houver asset certo, dizer que não há asset certo e pedir/buscar/gerar dirigido.
+
+### LAHQ carrossel: copy precisa ter arco, não cards soltos
+2026-05-21: Alf rejeitou carrossel voz/palco por parecer template, com textos ruins e frases soltas. Antes de renderizar, a copy precisa formar campanha com tese → tensão → progressão → resolução → CTA. Se as lâminas parecem dicas independentes sem ligação narrativa, reprovar no preflight.
+
+### LAHQ visual pesado bloqueia conversa se rodar no chat principal
+2026-05-21: `image_generate`/render pesado deixou Mike em `blocked_tool_call` e travou o Telegram. Para agentes conversacionais, render/imagem/Chrome devem ir para worker assíncrono, subtarefa ou fila com status, nunca várias gerações pesadas diretas no chat principal.
+
 ---
 
 ## ⏳ Táticas (revisar/deletar após 30 dias)
@@ -39,4 +51,4 @@ Desde março 2026, busca semântica não precisa de chave externa. A OpenAI conf
 ---
 
 *Revisão mensal: deletar táticas vencidas.*
-*Última atualização: 2026-05-13*
+*Última atualização: 2026-05-21*

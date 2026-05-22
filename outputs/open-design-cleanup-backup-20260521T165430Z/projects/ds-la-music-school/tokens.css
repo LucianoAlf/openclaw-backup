@@ -1,0 +1,7 @@
+@font-face{font-family:Prompt;src:url('./assets/fonts/Prompt-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:Prompt;src:url('./assets/fonts/Prompt-Medium.ttf') format('truetype');font-weight:500;font-display:swap}
+@font-face{font-family:Prompt;src:url('./assets/fonts/Prompt-SemiBold.ttf') format('truetype');font-weight:600;font-display:swap}
+@font-face{font-family:Prompt;src:url('./assets/fonts/Prompt-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:Prompt;src:url('./assets/fonts/Prompt-ExtraBold.ttf') format('truetype');font-weight:800;font-display:swap}
+@font-face{font-family:Prompt;src:url('./assets/fonts/Prompt-Black.ttf') format('truetype');font-weight:900;font-display:swap}
+:root{--background:#0A0A0A;--surface:#141414;--foreground:#FFFFFF;--accent:#E91451;--pink-primary:#E91451;--pink-dark:#B01545;--pink-deep:#740A28;--pink-light:#F06292;--black:#0A0A0A;--black-card:#141414;--dark-la:#373435;--gray-light:#E8E8E8;--gray-mid:#9E9E9E;--white:#FFFFFF;--font-display:'Prompt',system-ui,sans-serif;--font-body:'Prompt',system-ui,sans-serif;--radius-pill:999px;--radius-card:20px;}

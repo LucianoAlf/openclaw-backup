@@ -1,0 +1,12 @@
+{
+  "onboardingCompleted": false,
+  "agentId": null,
+  "skillId": null,
+  "designSystemId": "default",
+  "orbit": {
+    "enabled": false,
+    "time": "08:00",
+    "templateSkillId": "orbit-general"
+  },
+  "customInstructions": null
+}

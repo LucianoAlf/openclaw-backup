@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LA Music School — Design System</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #0a0a0a;
+      --surface: #fff;
+      --fg: #ffffff;
+      --muted: #706b65;
+      --border: #141414;
+      --accent: #e91451;
+    }
+    body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--fg); font: 16px/1.5 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    main { width: min(960px, calc(100vw - 48px)); margin: 48px auto; }
+    h1 { margin: 0 0 14px; font-size: 42px; line-height: 1.04; letter-spacing: 0; }
+    h2 { margin: 32px 0 14px; font-size: 26px; }
+    h3 { margin: 0; font-size: 20px; }
+    p { color: var(--muted); }
+    .lead { max-width: 680px; font-size: 19px; }
+    .eyebrow { margin: 0 0 10px; color: var(--accent); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .palette, .swatch-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin: 32px 0; }
+    .swatch { min-height: 126px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--surface); }
+    .swatch b { display: block; height: 76px; background: var(--color); border-bottom: 1px solid var(--border); }
+    .swatch span { display: block; padding: 10px 12px 2px; font-weight: 700; }
+    .swatch code { display: block; padding: 0 12px 12px; color: var(--muted); }
+    .section-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding: 0; list-style: none; }
+    .section-list li, article { display: grid; gap: 6px; padding: 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
+    .section-list span, article span { color: var(--muted); }
+    .type-sample { border-bottom: 1px solid var(--border); padding: 26px 0; }
+    .type-sample small { color: var(--muted); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .spacing-list { display: grid; gap: 16px; margin: 28px 0; }
+    .spacing-list div { display: grid; grid-template-columns: 100px 60px 1fr; gap: 16px; align-items: center; }
+    .spacing-list b { display: block; height: 22px; border-radius: 4px; background: var(--accent); }
+    .radius-list { display: flex; gap: 16px; }
+    .radius-list span { width: 96px; height: 72px; display: grid; place-items: center; background: var(--surface); border: 1px solid var(--border); }
+    .logo-frame { padding: 34px; margin: 20px 0; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+    .logo-frame.dark { background: var(--fg); }
+    .component-preview { display: grid; grid-template-columns: 240px 1fr; min-height: calc(100vh - 96px); background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+    .component-preview aside { display: grid; align-content: start; gap: 10px; padding: 20px; background: #f3f1ec; border-right: 1px solid var(--border); }
+    button { border: 1px solid var(--border); background: var(--surface); color: var(--fg); border-radius: 7px; padding: 10px 14px; font-weight: 700; }
+    button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .component-preview section { padding: 48px; }
+    .component-row { display: flex; gap: 10px; margin: 24px 0; }
+    .component-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 28px 0; }
+    .component-grid label { display: grid; gap: 8px; color: var(--muted); font-size: 13px; }
+    input, textarea { width: 100%; box-sizing: border-box; border: 1px solid var(--border); background: var(--surface); color: var(--fg); border-radius: 7px; padding: 10px 12px; font: inherit; }
+    textarea { min-height: 92px; resize: vertical; }
+    @media (max-width: 760px) { .palette, .swatch-grid, .section-list, .component-preview, .component-grid { grid-template-columns: 1fr; } main { width: min(100vw - 28px, 960px); margin: 24px auto; } }
+  </style>
+</head>
+<body><main class="overview">
+      <p class="eyebrow">Open Design system</p>
+      <h1>LA Music School — Design System</h1>
+      <p class="lead">---
+name: LA Music School
+category: LAHQ · Feed/Carrossel · School
+description: Prompt, pink #E91451, halftone, atitude rock/técnica e logos oficiais da LA Music School.
+surface: image
+colors:
+  background: &#39;#0A0A0A&#39;
+  surface: &#39;#141414&#39;
+  </p>
+      <div class="palette">
+        <div class="swatch" style="--color:#0a0a0a"><b></b><span>Background</span><code>#0a0a0a</code></div>
+        <div class="swatch" style="--color:#141414"><b></b><span>Border</span><code>#141414</code></div>
+        <div class="swatch" style="--color:#ffffff"><b></b><span>Foreground</span><code>#ffffff</code></div>
+        <div class="swatch" style="--color:#e91451"><b></b><span>Accent</span><code>#e91451</code></div>
+      </div>
+      <ul class="section-list"><li><strong>Open Design Palette Contract</strong><span>- **Background:** `#0A0A0A`
+- **Surface:** `#141414`
+- **Foreground:** `#FFFFFF`
+- **Accent:** `#E91451`</span></li><li><strong>Brand Identity</strong><span>- **Name:** LA Music School
+- **Tagline:** Pra Quem Sabe o Que Quer!
+- **Tone:** Direto, técnico, atitude rock, impactante. Fala como músico, não como empresa.
+</span></li><li><strong>Colors</strong><span>### Primary
+- **Pink Primary:** `#E91451` — A COR da marca. Títulos, CTAs, pills, destaques. Sempre UMA palavra em pink por título.
+- **Pink Dark (Wine):** `#B0</span></li><li><strong>Typography</strong><span>### Font Family
+**Prompt** — família ÚNICA. Disponível no Google Fonts (OFL). 18 pesos de Thin 100 a Black 900 com itálicas.
+
+### Scale
+| Element | Weight | Siz</span></li><li><strong>Layout</strong><span>### Canvas
+- **Instagram carousel:** 1080×1440px (3:4)
+- **Render HD:** 2160×2880px (2x)
+- **Safe zones:** 180px topo/base, 50px laterais
+
+### Grid
+- Título pos</span></li><li><strong>Signature Elements</strong><span>### 1. Halftone Dots (PRINCIPAL)
+Bolinhas em degradê como textura. ~80% das peças usam. Variações:
+- Dots pretos em fundo pink
+- Dots pink em fundo dark
+- Gradi</span></li></ul>
+    </main></body>
+</html>

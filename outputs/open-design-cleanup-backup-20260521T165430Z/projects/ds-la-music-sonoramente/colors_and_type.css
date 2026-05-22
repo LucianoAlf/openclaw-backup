@@ -1,0 +1,45 @@
+:root {
+  --sonoramente-la-design-system-background: #faf8ff;
+  --sonoramente-la-design-system-surface: #ffffff;
+  --sonoramente-la-design-system-surface-muted: #f4f1ec;
+  --sonoramente-la-design-system-foreground: #3d1a6e;
+  --sonoramente-la-design-system-muted: #706b65;
+  --sonoramente-la-design-system-border: #ffffff;
+  --sonoramente-la-design-system-accent: #5b2d8e;
+  --sonoramente-la-design-system-success: #5d8f5a;
+  --sonoramente-la-design-system-font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --sonoramente-la-design-system-font-serif: Georgia, "Times New Roman", serif;
+  --sonoramente-la-design-system-font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --sonoramente-la-design-system-radius-sm: 6px;
+  --sonoramente-la-design-system-radius-md: 10px;
+  --sonoramente-la-design-system-radius-lg: 16px;
+  --sonoramente-la-design-system-space-1: 4px;
+  --sonoramente-la-design-system-space-2: 8px;
+  --sonoramente-la-design-system-space-3: 12px;
+  --sonoramente-la-design-system-space-4: 16px;
+  --sonoramente-la-design-system-space-6: 24px;
+  --sonoramente-la-design-system-space-8: 32px;
+
+  --color-background: var(--sonoramente-la-design-system-background);
+  --color-surface: var(--sonoramente-la-design-system-surface);
+  --color-background-soft: var(--sonoramente-la-design-system-surface-muted);
+  --color-text: var(--sonoramente-la-design-system-foreground);
+  --color-text-1: var(--sonoramente-la-design-system-foreground);
+  --color-text-secondary: var(--sonoramente-la-design-system-muted);
+  --color-border: var(--sonoramente-la-design-system-border);
+  --color-primary: var(--sonoramente-la-design-system-accent);
+  --color-primary-soft: color-mix(in srgb, var(--sonoramente-la-design-system-accent) 14%, transparent);
+  --font-family: var(--sonoramente-la-design-system-font-sans);
+  --code-font-family: var(--sonoramente-la-design-system-font-mono);
+  --radius-control: var(--sonoramente-la-design-system-radius-sm);
+  --radius-card: var(--sonoramente-la-design-system-radius-md);
+  --space-2: var(--sonoramente-la-design-system-space-2);
+  --space-3: var(--sonoramente-la-design-system-space-3);
+  --space-4: var(--sonoramente-la-design-system-space-4);
+}
+
+.od-design-system-preview {
+  color: var(--sonoramente-la-design-system-foreground);
+  background: var(--sonoramente-la-design-system-background);
+  font-family: var(--sonoramente-la-design-system-font-sans);
+}

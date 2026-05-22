@@ -1,0 +1,64 @@
+Home
+Crie uma landing page premium em HTML para
+Crie uma landing page premium em HTML para
+freeform
+Choose design system
+F
+交付给 File Manager
+Thu, May 21, 2026
+You
+just now
+PLUGIN
+Default design router
+@0.1.0
+new-generation
+Crie uma landing page premium em HTML para a LA Music School vender aula experimental de guitarra. Visual dark, energia de palco, hero forte, 3 benefícios, prova social e CTA claro. Gere um protótipo visual completo.
+OpenAI API · gpt-4o-mini
+just now
+
+Entendi! Vou criar uma landing page premium para a LA Music School, focando na venda de aulas experimentais de guitarra. A página terá um visual escuro, transmitir energia de palco e incluirá:
+
+Um hero forte com uma chamada para ação impactante.
+Três benefícios claros das aulas.
+Um trecho de prova social (depoimentos ou selos).
+Um CTA claro.
+
+Vou preparar um protótipo visual em HTML agora. Um momento!
+
+<question-form id="discovery">
+{
+"description": "Para criar esta landing page de forma mais precisa, preciso confirmar alguns detalhes.",
+"questions": [
+{
+"id": "targetAudience",
+"label": "Qual é o público-alvo principal?",
+"type": "text",
+"placeholder": "Ex: jovens, adultos, iniciantes, músicos avançados..."
+
+Working
+3.7s
+@
+3656b8ad-71f4-484b-9d8c-ea47ae70469e
+Stop
+Design Files
+New sketch
+Paste
+Upload
+Creations will appear here
+New sketch
+⤓ DROP FILES HERE
+Images, docs, references, or folders — the agent will use them as context.
+PRIVACY
+Help us improve Open Design
+
+Open Design can share usage data with our team to help us improve. This includes:
+
+Anonymous metrics
+Run counts, token usage, error rate, duration. No prompts, no project data.
+Conversation and tool content
+Your prompts, assistant responses, tool inputs, and tool outputs (truncated before send). API keys, tokens, JWTs, emails, IPs, and credit-card numbers are stripped automatically before send.
+
+Data sharing is on by default. You can turn it off any time in Settings → Privacy. We never upload the contents of your generated artifact files.
+
+Read the privacy policy
+I get it

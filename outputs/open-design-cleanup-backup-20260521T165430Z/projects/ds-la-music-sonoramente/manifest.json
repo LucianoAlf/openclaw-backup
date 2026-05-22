@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "od-design-system-project/v1",
+  "id": "la-music-sonoramente",
+  "name": "SonoraMente LA",
+  "category": "LAHQ · Feed/Carrossel · SonoraMente",
+  "description": "Playfair Display, DM Sans, roxos terapêuticos, cuidado premium e logos oficiais SonoraMente.",
+  "files": {
+    "design": "DESIGN.md",
+    "tokens": "tokens.css"
+  },
+  "assetsDir": "assets"
+}

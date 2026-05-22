@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LA Music School - Carrossel V3</title>
+  <link rel="stylesheet" href="carousel.css">
+  <style>
+    body {
+      display: block;
+      padding: 32px;
+      background: #111;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+    .panel {
+      color: #fff;
+      text-decoration: none;
+    }
+    .thumb {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      border: 1px solid rgba(255,255,255,.14);
+      background: #0a0a0a;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+    .thumb iframe {
+      width: 1080px;
+      height: 1440px;
+      border: 0;
+      transform: scale(0.24);
+      transform-origin: top left;
+      pointer-events: none;
+    }
+    .label {
+      font-size: 18px;
+      letter-spacing: .02em;
+      color: rgba(255,255,255,.82);
+    }
+    .title {
+      margin-top: 6px;
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: 28px;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+    }
+    @media (max-width: 1200px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="grid">
+    <a class="panel" href="card-01.html">
+      <div class="thumb"><iframe src="card-01.html" title="Card 1"></iframe></div>
+      <div class="label">01 / capa</div>
+      <div class="title">Sua guitarra merece o palco.</div>
+    </a>
+    <a class="panel" href="card-02.html">
+      <div class="thumb"><iframe src="card-02.html" title="Card 2"></iframe></div>
+      <div class="label">02 / técnica</div>
+      <div class="title">A técnica é só o começo.</div>
+    </a>
+    <a class="panel" href="card-03.html">
+      <div class="thumb"><iframe src="card-03.html" title="Card 3"></iframe></div>
+      <div class="label">03 / CTA</div>
+      <div class="title">Toca mais alto.</div>
+    </a>
+  </main>
+</body>
+</html>

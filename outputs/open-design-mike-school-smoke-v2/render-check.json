@@ -1,0 +1,52 @@
+{
+  "w": 1080,
+  "h": 1350,
+  "text": "01/01\nSMOKE TEST\nAULA\nEXPERIMENTAL\n\nSuba no palco de verdade.\n\n@lamusicschool\n///////\n>>>>",
+  "overflow": [],
+  "imgs": [
+    {
+      "src": "./assets/logos/logo-la-music-dark-solo-vazada.svg",
+      "ok": true,
+      "w": 85,
+      "h": 97
+    },
+    {
+      "src": "./assets/logos/logo-la-music-dark-completa.svg",
+      "ok": true,
+      "w": 237,
+      "h": 97
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Prompt",
+      "status": "loaded",
+      "weight": "400"
+    },
+    {
+      "family": "Prompt",
+      "status": "unloaded",
+      "weight": "500"
+    },
+    {
+      "family": "Prompt",
+      "status": "loaded",
+      "weight": "600"
+    },
+    {
+      "family": "Prompt",
+      "status": "unloaded",
+      "weight": "700"
+    },
+    {
+      "family": "Prompt",
+      "status": "loaded",
+      "weight": "800"
+    },
+    {
+      "family": "Prompt",
+      "status": "loaded",
+      "weight": "900"
+    }
+  ]
+}

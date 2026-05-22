@@ -1,0 +1,40 @@
+{
+  "w": 1080,
+  "h": 1350,
+  "text": "MUSICALIZAÇÃO INFANTIL\nMÚSICA\nQUE VIRA\nmágica\nDE INFÂNCIA\n\nPara pais que querem sensibilidade, ritmo e descoberta em uma experiência musical feita para crescer junto com a criança.\n\nAulas para 6 meses a 12 anos\n@lamusickids",
+  "imgs": [
+    {
+      "src": "./assets/logos/logo-la-music-kids-dark-completa.svg",
+      "ok": true,
+      "w": 302,
+      "h": 109
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Volkswagen",
+      "status": "loaded",
+      "weight": "400"
+    },
+    {
+      "family": "Volkswagen",
+      "status": "loaded",
+      "weight": "500"
+    },
+    {
+      "family": "Volkswagen",
+      "status": "loaded",
+      "weight": "700"
+    },
+    {
+      "family": "Volkswagen",
+      "status": "loaded",
+      "weight": "800"
+    },
+    {
+      "family": "Madelina",
+      "status": "loaded",
+      "weight": "400"
+    }
+  ]
+}

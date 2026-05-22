@@ -1,0 +1,17 @@
+{
+  "project": {
+    "id": "lahq-od-real-mpftvgeb-jj39d7",
+    "name": "LA Music Kids · magia musical premium",
+    "skillId": "la-music-carousel",
+    "designSystemId": "user:la-music-kids",
+    "pendingPrompt": "Crie uma arte/post 1080x1350 para LA Music Kids usando OBRIGATORIAMENTE o design system user:la-music-kids e a skill la-music-carousel. Tema: musicalização infantil que parece mágica de infância, mas com design premium LAHQ. Use logo oficial, fontes oficiais do Kids, paleta Kids correta, formas orgânicas, alegria sofisticada. Não use visual adolescente/rock, não use School pink dominante, não use placeholder/lorem. Entregue HTML final renderizável com a peça visual.",
+    "metadata": {
+      "kind": "freeform",
+      "intent": "lahq-real-open-design-test",
+      "skipDiscoveryBrief": true
+    },
+    "createdAt": 1779388337878,
+    "updatedAt": 1779388337878
+  },
+  "conversationId": "6871faf5-21b1-4181-b958-474b839b616c"
+}

@@ -125,10 +125,14 @@ Quando fizer sentido, criar sensação de arte única recortada em cards:
 As skills substituem o pipeline legado de agentes. Não depender de nomes/personas antigas nem tentar ressuscitar o fluxo multiagente.
 
 1. **Direção** — conceito, objetivo, estrutura, ritmo e direção visual.
-2. **Copy** — títulos curtos, corpo enxuto, CTA no tom da marca.
-3. **Imagem** — gerar/selecionar imagens sem texto, sem logo e sem watermark.
-4. **Montagem** — compor em `1080x1440`, usando assets oficiais, DS e refs. Evitar vício de componente: placa/card pink pode aparecer, mas precisa profundidade, sombra, variação de escala/ângulo e não pode virar muleta repetida.
+2. **Copy com arco** — antes do layout, escrever a progressão do carrossel: tese → tensão → desenvolvimento → resolução → CTA. Se parecer lista de dicas soltas, reprovar.
+3. **Imagem/asset certo** — gerar/selecionar imagens sem texto, sem logo e sem watermark. A imagem precisa provar o assunto, não só “ficar bonita”. Se não houver asset certo, declarar e propor busca/produção/geração dirigida.
+4. **Montagem controlada** — compor em `1080x1440`, preferencialmente HTML/CSS + assets oficiais + render headless para carrosséis premium. Não usar IA para gerar card final com texto/logo/layout embutido.
 5. **QA** — checar marca, legibilidade, coerência visual e entrega. Olhar o preview grid antes de enviar; se aparecer padrão mecânico repetido (ex.: LA sempre no mesmo canto/tamanho), revisar.
+
+### Regra de execução pesada
+
+Não rodar várias gerações de imagem, Chrome ou render pesado dentro do chat principal quando houver risco de travar a conversa. Para produção pesada, usar worker/subtarefa/fila, avisar status e manter o chat responsivo.
 
 ## QA final antes de entregar
 
@@ -144,6 +148,8 @@ Perguntas obrigatórias:
 - A marca é reconhecível mesmo sem explicar?
 - O texto é legível no celular?
 - O copy tem gancho, frase curta e CTA claro?
+- Existe arco entre as lâminas ou são cards soltos?
+- A imagem/asset prova o assunto específico?
 - Isso faz o olho brilhar?
 
 Se a resposta honesta for “não”, revise antes de entregar.

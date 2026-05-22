@@ -1,0 +1,143 @@
+{
+  "st": {
+    "id": "a110b8ee-7217-436e-83b1-b26d886ca90a",
+    "projectId": "mike-single-run-image2-card-mpfvwm74",
+    "conversationId": "a1f9cac4-4d55-444f-9df8-af80fbcd9727",
+    "assistantMessageId": null,
+    "agentId": "codex",
+    "appliedPluginSnapshotId": null,
+    "pluginId": null,
+    "status": "succeeded",
+    "createdAt": 1779391751584,
+    "updatedAt": 1779392275096,
+    "exitCode": 0,
+    "signal": null,
+    "error": null,
+    "errorCode": null
+  },
+  "fl": {
+    "files": [
+      {
+        "name": "index.html",
+        "path": "index.html",
+        "type": "file",
+        "size": 8564,
+        "mtime": 1779392206766.653,
+        "kind": "html",
+        "mime": "text/html; charset=utf-8",
+        "artifactKind": "html",
+        "artifactManifest": {
+          "version": 1,
+          "kind": "html",
+          "title": "index.html",
+          "entry": "index.html",
+          "renderer": "html",
+          "status": "complete",
+          "exports": [
+            "html",
+            "pdf",
+            "zip"
+          ],
+          "metadata": {
+            "inferred": true
+          }
+        }
+      },
+      {
+        "name": "assets/fonts/Prompt-Black.ttf",
+        "path": "assets/fonts/Prompt-Black.ttf",
+        "type": "file",
+        "size": 170136,
+        "mtime": 1779392117347.8743,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/Prompt-ExtraBold.ttf",
+        "path": "assets/fonts/Prompt-ExtraBold.ttf",
+        "type": "file",
+        "size": 169920,
+        "mtime": 1779392117342.8743,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/Prompt-Bold.ttf",
+        "path": "assets/fonts/Prompt-Bold.ttf",
+        "type": "file",
+        "size": 172528,
+        "mtime": 1779392117337.8743,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/Prompt-SemiBold.ttf",
+        "path": "assets/fonts/Prompt-SemiBold.ttf",
+        "type": "file",
+        "size": 169024,
+        "mtime": 1779392117332.8743,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/Prompt-Medium.ttf",
+        "path": "assets/fonts/Prompt-Medium.ttf",
+        "type": "file",
+        "size": 170148,
+        "mtime": 1779392117329.8743,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/fonts/Prompt-Regular.ttf",
+        "path": "assets/fonts/Prompt-Regular.ttf",
+        "type": "file",
+        "size": 162624,
+        "mtime": 1779392117325.8743,
+        "kind": "binary",
+        "mime": "application/octet-stream",
+        "artifactManifest": null
+      },
+      {
+        "name": "assets/logos/logo-la-music-dark-completa.svg",
+        "path": "assets/logos/logo-la-music-dark-completa.svg",
+        "type": "file",
+        "size": 8750,
+        "mtime": 1779392117322.8743,
+        "kind": "sketch",
+        "mime": "image/svg+xml",
+        "artifactKind": "svg",
+        "artifactManifest": {
+          "version": 1,
+          "kind": "svg",
+          "title": "assets/logos/logo-la-music-dark-completa.svg",
+          "entry": "assets/logos/logo-la-music-dark-completa.svg",
+          "renderer": "svg",
+          "status": "complete",
+          "exports": [
+            "svg",
+            "zip"
+          ],
+          "metadata": {
+            "inferred": true
+          }
+        }
+      },
+      {
+        "name": "assets/generated/stage-photo.png",
+        "path": "assets/generated/stage-photo.png",
+        "type": "file",
+        "size": 1652145,
+        "mtime": 1779391933155.2947,
+        "kind": "image",
+        "mime": "image/png",
+        "artifactManifest": null
+      }
+    ]
+  }
+}

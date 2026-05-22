@@ -1,0 +1,369 @@
+@font-face {
+  font-family: "Prompt";
+  src: url("assets/fonts/Prompt-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Prompt";
+  src: url("assets/fonts/Prompt-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Prompt";
+  src: url("assets/fonts/Prompt-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
+:root {
+  --bg: #0a0a0a;
+  --surface: #141414;
+  --fg: #ffffff;
+  --muted: #e8e8e8;
+  --border: rgba(255, 255, 255, 0.14);
+  --accent: #e91451;
+  --dark: #373435;
+  --shadow: rgba(0, 0, 0, 0.46);
+  --font-display: "Prompt", sans-serif;
+  --font-body: "Prompt", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  background: #111;
+  color: var(--fg);
+  font-family: var(--font-body);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artboard {
+  position: relative;
+  width: 1080px;
+  height: 1440px;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 16%, rgba(233, 20, 81, 0.24), transparent 30%),
+    linear-gradient(180deg, #161616 0%, #0b0b0b 100%);
+  isolation: isolate;
+}
+
+.photo {
+  position: absolute;
+  inset: 0;
+  background-image: var(--photo);
+  background-size: cover;
+  background-position: var(--photo-pos, center);
+  transform: scale(var(--photo-scale, 1.06));
+  filter: saturate(1.04) contrast(1.06) brightness(0.76);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.35) 26%, rgba(0, 0, 0, 0.68) 100%),
+    radial-gradient(circle at 50% 24%, rgba(233, 20, 81, 0.28), transparent 34%);
+}
+
+.frame-lines::before,
+.frame-lines::after {
+  content: "";
+  position: absolute;
+  inset: 56px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  pointer-events: none;
+}
+
+.frame-lines::after {
+  inset: 88px 88px 86px 88px;
+  border-color: rgba(233, 20, 81, 0.25);
+  mix-blend-mode: screen;
+}
+
+.toplock {
+  position: absolute;
+  inset: 34px 0 auto;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+
+.logo-band {
+  width: min(820px, 82vw);
+  padding: 14px 24px 10px;
+  background: rgba(10, 10, 10, 0.58);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo-band img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-copy,
+.middle-copy,
+.cta-copy {
+  position: absolute;
+  left: 72px;
+  right: 72px;
+  z-index: 3;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 38px;
+  height: 2px;
+  background: var(--accent);
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.94;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.title.hero {
+  font-size: 93px;
+  max-width: 850px;
+}
+
+.title.mid {
+  font-size: 78px;
+  max-width: 780px;
+}
+
+.title.cta {
+  font-size: 84px;
+  max-width: 720px;
+}
+
+.subline {
+  margin-top: 16px;
+  font-size: 34px;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.hero-copy {
+  top: 520px;
+}
+
+.hero-copy .subline {
+  max-width: 520px;
+}
+
+.cta-prompt {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 16px 22px 15px;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+  background: rgba(233, 20, 81, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.cta-prompt::after {
+  content: "→";
+  font-size: 30px;
+  line-height: 1;
+}
+
+.middle-copy {
+  top: 160px;
+  width: 68%;
+}
+
+.pill-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+
+.pill {
+  padding: 14px 18px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+}
+
+.accent-line {
+  width: 118px;
+  height: 6px;
+  margin: 28px 0 24px;
+  background: var(--accent);
+}
+
+.negative-symbol {
+  position: absolute;
+  inset: auto 0 0 auto;
+  width: 540px;
+  height: 540px;
+  opacity: 0.18;
+  pointer-events: none;
+  transform: translate(64px, 68px);
+  z-index: 1;
+}
+
+.negative-symbol svg {
+  width: 100%;
+  height: 100%;
+}
+
+.negative-symbol path {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.78);
+  stroke-width: 14;
+}
+
+.texture {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(233, 20, 81, 0.26), transparent 10%),
+    radial-gradient(circle at 78% 40%, rgba(233, 20, 81, 0.16), transparent 12%),
+    radial-gradient(circle at 60% 74%, rgba(255, 255, 255, 0.06), transparent 11%);
+  mix-blend-mode: screen;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.footer-note {
+  position: absolute;
+  left: 72px;
+  right: 72px;
+  bottom: 74px;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+}
+
+.footer-note .micro {
+  font-size: 24px;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.direct-band {
+  padding: 18px 22px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.96);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.card-01 .photo {
+  --photo: url("assets/photos/guitarrista-anonimo-palco.png");
+  --photo-pos: 56% 22%;
+  --photo-scale: 1.08;
+}
+
+.card-01 .hero-copy {
+  top: 520px;
+}
+
+.card-02 .photo {
+  --photo: url("assets/photos/guitarrista-anonimo-palco.png");
+  --photo-pos: 46% 30%;
+  --photo-scale: 1.16;
+  filter: saturate(1.15) contrast(1.1) brightness(0.55) blur(1px);
+}
+
+.card-02 .overlay {
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.66) 0%, rgba(0, 0, 0, 0.58) 42%, rgba(0, 0, 0, 0.84) 100%),
+    radial-gradient(circle at 50% 12%, rgba(233, 20, 81, 0.34), transparent 32%);
+}
+
+.card-02 .middle-copy {
+  top: 214px;
+}
+
+.card-02 .pill-row {
+  margin-top: 40px;
+}
+
+.card-02 .accent-line {
+  margin-top: 0;
+}
+
+.card-03 .photo {
+  --photo: url("assets/photos/guitarrista-anonimo-palco.png");
+  --photo-pos: 50% 18%;
+  --photo-scale: 1.04;
+  filter: saturate(1.04) contrast(1.05) brightness(0.62);
+}
+
+.card-03 .overlay {
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.62) 44%, rgba(0, 0, 0, 0.88) 100%),
+    linear-gradient(90deg, rgba(233, 20, 81, 0.16) 0%, transparent 18%, transparent 82%, rgba(233, 20, 81, 0.16) 100%);
+}
+
+.card-03 .cta-copy {
+  top: 560px;
+}
+
+.card-03 .direct-band {
+  background: rgba(233, 20, 81, 0.1);
+}
+
+.card-03 .negative-symbol {
+  inset: auto auto 60px -90px;
+  transform: none;
+  opacity: 0.12;
+}
+
+@media (max-width: 1120px) {
+  body {
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: auto;
+  }
+  .artboard {
+    transform: scale(0.65);
+    transform-origin: top left;
+  }
+}

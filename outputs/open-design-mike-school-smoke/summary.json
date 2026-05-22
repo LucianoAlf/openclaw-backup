@@ -1,0 +1,18 @@
+{
+  "projectId": "mike-school-smoke-mpfuhipr",
+  "runId": "2e42714e-0535-4592-879e-61743aab93b1",
+  "status": "succeeded",
+  "files": [
+    "index.html",
+    "assets/logos/logo-la-music-dark-solo.svg",
+    "assets/logos/logo-la-music-dark-completa.svg",
+    "assets/fonts/Prompt-Black.ttf",
+    "assets/fonts/Prompt-ExtraBold.ttf",
+    "assets/fonts/Prompt-Bold.ttf",
+    "assets/fonts/Prompt-SemiBold.ttf",
+    "assets/fonts/Prompt-Medium.ttf",
+    "assets/fonts/Prompt-Regular.ttf"
+  ],
+  "html": "index.html",
+  "out": "/home/mike/.openclaw/workspace/outputs/open-design-mike-school-smoke"
+}
