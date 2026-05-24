@@ -11,7 +11,7 @@ Status: pending | resolved | promoted | wont_fix
 
 **Logged**: 2026-05-22T13:29:45Z
 **Priority**: high
-**Status**: pending
+**Status**: promoted
 **Area**: workflow
 
 ### Summary
@@ -21,7 +21,7 @@ Copy técnica genérica não se resolve só com skill de escrita; precisa de pes
 Alf apontou que Mike e Alfredo falharam em copy por falta de conteúdo validável sobre o tema. A etapa correta é Research Gate → brief técnico → copy, especialmente para LA Music School.
 
 ### Suggested Action
-Incluir .learnings e Evolution Loop para capturar lacunas de pesquisa e promover uma regra/skill de Research Gate quando o padrão amadurecer.
+Promovido em 2026-05-23 para `memory/context/lessons.md` e `skills/lahq-content-pipeline/SKILL.md`: Research Gate obrigatório antes de copy técnica LAHQ/School.
 
 ### Metadata
 - Source: user_feedback

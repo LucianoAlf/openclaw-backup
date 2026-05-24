@@ -8,7 +8,7 @@ Padrões aprovados pelo Alf/time que devem ser repetidos com critério.
 
 **Logged**: 2026-05-22T14:06:42Z
 **Priority**: high
-**Status**: pending
+**Status**: promoted
 **Area**: lahq-pipeline
 
 ### Summary
@@ -29,7 +29,7 @@ Usar como marco, não como aprovação cega: próximo teste precisa ser carrosse
 
 **Logged**: 2026-05-22T16:38:37Z
 **Priority**: high
-**Status**: pending
+**Status**: promoted
 **Area**: lahq-school-visual-qa
 
 ### Summary
@@ -72,6 +72,9 @@ Alf deu nota 10 ao Mike no carrossel Palhetada Alternada e confirmou que o bast�
 
 ### Rule
 Não disputar execução especializada quando outro agente estiver melhor posicionado. Alfredo deve orquestrar, auditar e pensar estrategicamente; Mike executa LAHQ/marketing, com Alfredo disponível quando o Alf chamar.
+
+### Evolution Loop
+Promovido em 2026-05-23 para `memory/context/decisions.md`: Mike assume execução LAHQ/marketing; Alfredo orquestra/audita.
 
 ### Metadata
 - Tags: mike, lahq, handoff, strategic-role, approved-pattern

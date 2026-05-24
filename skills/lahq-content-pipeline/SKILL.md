@@ -125,10 +125,13 @@ Quando fizer sentido, criar sensação de arte única recortada em cards:
 As skills substituem o pipeline legado de agentes. Não depender de nomes/personas antigas nem tentar ressuscitar o fluxo multiagente.
 
 1. **Direção** — conceito, objetivo, estrutura, ritmo e direção visual.
-2. **Copy com arco** — antes do layout, escrever a progressão do carrossel: tese → tensão → desenvolvimento → resolução → CTA. Se parecer lista de dicas soltas, reprovar.
-3. **Imagem/asset certo** — gerar/selecionar imagens sem texto, sem logo e sem watermark. A imagem precisa provar o assunto, não só “ficar bonita”. Se não houver asset certo, declarar e propor busca/produção/geração dirigida.
-4. **Montagem controlada** — compor em `1080x1440`, preferencialmente HTML/CSS + assets oficiais + render headless para carrosséis premium. Não usar IA para gerar card final com texto/logo/layout embutido.
-5. **QA** — checar marca, legibilidade, coerência visual e entrega. Olhar o preview grid antes de enviar; se aparecer padrão mecânico repetido (ex.: LA sempre no mesmo canto/tamanho), revisar.
+2. **Research Gate** — antes da copy, pesquisar ou reunir base validável do tema. Para School técnico (guitarra, canto, palco, performance, estudo), não escrever de repertório raso: levantar conceitos concretos, vocabulário correto, erros comuns, exercícios e imagens/assets que provem o assunto. Se a pesquisa não sustentar o card, declarar lacuna e buscar mais antes de renderizar.
+3. **Brief técnico** — transformar a pesquisa em bullets úteis para copy/layout: tese, tensão, mecanismo, exemplos visuais e CTA.
+4. **Copy com arco** — antes do layout, escrever a progressão do carrossel: tese → tensão → desenvolvimento → resolução → CTA. Se parecer lista de dicas soltas, reprovar.
+5. **Imagem/asset certo** — gerar/selecionar imagens sem texto, sem logo e sem watermark. A imagem precisa provar o assunto, não só “ficar bonita”. Se não houver asset certo, declarar e propor busca/produção/geração dirigida.
+6. **Matriz visual/preflight** — definir card a card: foto protagonista, close técnico, gráfico/tipográfico, light/dark/P&B, bloco pink, CTA. Pedir aprovação quando o fluxo exigir antes de render pesado.
+7. **Montagem controlada** — compor em `1080x1440`, preferencialmente HTML/CSS + assets oficiais + render headless para carrosséis premium. Não usar IA para gerar card final com texto/logo/layout embutido.
+8. **QA** — checar marca, legibilidade, coerência visual e entrega. Olhar o preview grid e os PNGs exportados reais antes de enviar; se aparecer padrão mecânico repetido (ex.: LA sempre no mesmo canto/tamanho), revisar.
 
 ### Regra de execução pesada
 
@@ -158,10 +161,12 @@ Se a resposta honesta for “não”, revise antes de entregar.
 
 Para carrossel:
 
-- PNGs individuais;
-- preview grid;
-- pacote `.tar.gz` quando houver múltiplos arquivos;
+- PNGs individuais em alta resolução (`1080x1440` ou tamanho definido no projeto);
+- preview grid apenas como visão geral;
+- pacote `.tar.gz` ou `.zip` quando houver múltiplos arquivos;
 - nota curta do que foi gerado.
+
+Não validar qualidade final por screenshot comprimido de Telegram/WhatsApp. Se o usuário só viu screenshot, entregar o pacote/PNGs reais antes de considerar aprovado.
 
 Salvar em:
 

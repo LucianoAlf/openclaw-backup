@@ -8,7 +8,7 @@ Feedbacks diretos do Alf/time que precisam virar aprendizado ou decisão depois.
 
 **Logged**: 2026-05-22T14:14:34Z
 **Priority**: high
-**Status**: pending
+**Status**: promoted
 **Area**: lahq-pipeline
 
 ### Summary
@@ -27,13 +27,16 @@ Brief pede narrativa/storytelling conectando todos os cards, capa/headline impac
 ### Metadata
 - Source: user_feedback
 - Tags: mike, school, test-of-fire, research-gate, carousel
+
+### Evolution Loop
+Promovido em 2026-05-23: consolidado em lições/skill LAHQ conforme aplicável.
 ---
 
 ## [FDB-20260522-003] Mike render posture/stage presence — big quality jump
 
 **Logged**: 2026-05-22T16:17:45Z
 **Priority**: high
-**Status**: pending
+**Status**: promoted
 **Area**: visual-copy-qa
 
 ### Summary
@@ -54,13 +57,16 @@ Mike entregou preview grid do teste de fogo sobre postura e presença de palco c
 ### Metadata
 - Source: user_feedback
 - Tags: mike, school, test-of-fire, visual-qa, approved-pattern
+
+### Evolution Loop
+Promovido em 2026-05-23: consolidado em lições/skill LAHQ conforme aplicável.
 ---
 
 ## [FDB-20260522-004] Mike preflight palhetada alternada — pipeline correto
 
 **Logged**: 2026-05-22T16:50:46Z
 **Priority**: high
-**Status**: pending
+**Status**: promoted
 **Area**: lahq-school-copy-research
 
 ### Summary
@@ -75,13 +81,16 @@ Card 6 precisa evitar frase confusa sobre "escapar do caminho" sem visual muito 
 ### Metadata
 - Source: user_feedback
 - Tags: mike, school, palhetada-alternada, preflight, research-gate
+
+### Evolution Loop
+Promovido em 2026-05-23: consolidado em lições/skill LAHQ conforme aplicável.
 ---
 
 ## [FDB-20260522-005] Mike render palhetada alternada — avaliação visual
 
 **Logged**: 2026-05-22T17:39:41Z
 **Priority**: high
-**Status**: pending
+**Status**: promoted
 **Area**: lahq-school-visual-qa
 
 ### Summary
@@ -102,13 +111,16 @@ Mike entregou preview grid do carrossel School palhetada alternada com boa evolu
 ### Metadata
 - Source: user_feedback
 - Tags: mike, school, palhetada, render-qa, visual-matrix
+
+### Evolution Loop
+Promovido em 2026-05-23: consolidado em lições/skill LAHQ conforme aplicável.
 ---
 
 ## [FDB-20260522-006] Mike output low resolution / validation package
 
 **Logged**: 2026-05-22T17:40:27Z
 **Priority**: high
-**Status**: pending
+**Status**: promoted
 **Area**: lahq-render-delivery
 
 ### Summary
@@ -120,4 +132,7 @@ Mike deve entregar PNGs individuais em alta resolução, preview grid só como v
 ### Metadata
 - Source: user_feedback
 - Tags: mike, render, resolution, delivery, qa
+
+### Evolution Loop
+Promovido em 2026-05-23: consolidado em lições/skill LAHQ conforme aplicável.
 ---

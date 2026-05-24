@@ -41,3 +41,4 @@
 | 2026-05-20 | quebrou | 0 | sem ação CEO registrada |
 | 2026-05-21 | quebrou | 0 | sem ação CEO registrada |
 | 2026-05-22 | quebrou | 0 | sem ação CEO registrada |
+| 2026-05-23 | congelado | 0 | sábado — streak congelada |

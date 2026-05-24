@@ -50,5 +50,12 @@ Desde março 2026, busca semântica não precisa de chave externa. A OpenAI conf
 
 ---
 
+
+### LAHQ School: Research Gate antes de copy técnica
+2026-05-23: Feedback recorrente do Alf/Mike mostrou que copy técnica genérica nasce de falta de pesquisa, não só de escrita fraca. Para conteúdo School técnico (guitarra, canto, palco, performance, estudo), a ordem obrigatória é: pesquisar/reunir base técnica validável → transformar em brief técnico → escrever copy com arco → preflight → render. Se o tema envolver técnica específica e não houver repertório/fonte/asset que prove o assunto, não improvisar frase bonita: pesquisar mais, declarar lacuna ou pedir direção.
+
+### LAHQ entrega visual: validar em alta, não por screenshot
+2026-05-23: Preview grid serve para visão geral, não para validar qualidade final. Carrosséis/render LAHQ precisam entregar PNGs individuais em alta resolução + pacote `.tar.gz`/`.zip`; screenshot comprimido de Telegram/WhatsApp não prova nitidez, legibilidade mobile ou acabamento. QA final deve olhar arquivos exportados reais.
+
 *Revisão mensal: deletar táticas vencidas.*
-*Última atualização: 2026-05-21*
+*Última atualização: 2026-05-23*

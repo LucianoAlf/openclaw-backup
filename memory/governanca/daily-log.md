@@ -1,5 +1,25 @@
 # Log Diário — CEO Quest
 
+## 2026-05-23
+
+### Ações de cobrança/verificação com time
+- (vazio)
+
+### Decisões tomadas
+- Fechamento CEO Quest marcado como congelado oficial; streak mantida em 0 no sábado
+
+### Tarefas criadas/atualizadas
+- Streak, scorecard e revisão semanal alinhados ao fechamento de 20h de sábado
+
+### Ações pessoais
+- (vazio)
+
+### Ritual de domingo
+- (vazio)
+
+### Skips / pausas
+- 20:00 — sábado; streak congelada no fechamento CEO Quest
+
 ## 2026-05-22
 
 ### Ações de cobrança/verificação com time

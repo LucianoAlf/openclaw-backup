@@ -1,0 +1,19 @@
+{
+  "project": {
+    "id": "643c0518525047536b6594d0",
+    "name": "🏠Pessoal Alf",
+    "color": "#3876E4",
+    "sortOrder": 8192,
+    "permission": "write",
+    "kind": "TASK"
+  },
+  "tasks": [],
+  "columns": [
+    {
+      "id": "643c17db525047536b6597c0",
+      "projectId": "643c0518525047536b6594d0",
+      "name": "Not Sectioned",
+      "sortOrder": -1
+    }
+  ]
+}
