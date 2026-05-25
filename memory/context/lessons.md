@@ -59,3 +59,9 @@ Desde março 2026, busca semântica não precisa de chave externa. A OpenAI conf
 
 *Revisão mensal: deletar táticas vencidas.*
 *Última atualização: 2026-05-23*
+
+## 2026-05-24 — Nubank vence dia 21
+- Não repetir o erro: Cartão Nubank do Alf vence todo dia **21**. O TickTick estava cadastrado como dia 22 e isso induziu resposta errada. Corrigido no TickTick para recorrência mensal no dia 21.
+
+## 2026-05-24 — Não chamar vencimento futuro de aberto/vencido
+- Regra operacional: em contas do TickTick, item com vencimento futuro é **próximo vencimento**, não “aberto”, “pendente de ontem” nem “vencido”. Só classificar como atrasado depois da data/hora de vencimento no timezone `America/Sao_Paulo`.

@@ -1,0 +1,18 @@
+{
+    "programs": [
+
+    ],
+    "streams": [
+        {
+            "codec_type": "video",
+            "width": 848,
+            "height": 478
+        },
+        {
+            "codec_type": "audio"
+        }
+    ],
+    "format": {
+        "duration": "5.125000"
+    }
+}
