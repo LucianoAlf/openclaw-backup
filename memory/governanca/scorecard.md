@@ -6,7 +6,7 @@
 - Automação ativa: streak, briefing, ritual
 - Scorecard expandido: ativo
 - XP / ranking / painéis: direção operacional ativa
-- Último fechamento 20h: 2026-05-24 — domingo; streak contada, revisão semanal ainda aberta aguardando respostas do Alf
+- Último fechamento 20h: 2026-05-25 — segunda; streak zerada, revisão semanal ainda aberta aguardando respostas do Alf
 - Ordem histórica: streak → briefing → ritual → scorecard → painel
 
 ## Função do scorecard expandido
