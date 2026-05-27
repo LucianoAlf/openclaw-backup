@@ -1,0 +1,98 @@
+Pixel AI news #002 — A IA virou camada de execucao
+-->
+A IA parou de aconselhar e começou a executar. Veja o que mudou na semana — e o que isso pede da sua operação.
+Edição 002
+Pixel AI news · Semanal · 10 min
+A IA parou de aconselhar e começou a  executar.
+Três movimentos da semana mostram o mesmo padrão — e o que isso pede da sua operação.
+01  Atualizações  ·
+02  Build in Pixel  ·
+03  Case externo  ·
+04  Comunidade  ·
+05  Ferramenta
+01 · Atualizações da semana
+A IA está descendo do conselho pra execução.
+Três movimentos esta semana apontam pro mesmo lugar:  o assistente saiu da janela do chat, virou agente que age, e o compute por trás disso passou a ser contratado.  A IA deixou de ser "interlocutor que responde" — passou a ser "operação que entrega".
+A · Execução
+Gemini ganhou "Extended Thinking" — e passou a executar dentro de Canva, Instacart e OpenTable
+Não é mais o assistente que sugere o que fazer; é o assistente que abre o OpenTable, reserva a mesa, edita o post no Canva e fecha o pedido no Instacart. Na prática: o ChatGPT/Gemini do colaborador deixou de ser "ferramenta de pesquisa" e virou "operador de tarefas" — e tudo que ainda é dado de boca pro time agora pode ir direto pro agente.
+B · Memória
+Grok ganhou "Skills" — você ensina uma vez, ele lembra pra sempre
+Em vez de explicar do zero toda vez o tom da sua marca, o padrão do seu relatório ou o jeito que sua empresa fecha venda, você ensina uma vez como "skill" — e o modelo aplica em toda interação seguinte. É a diferença entre estagiário todo dia novo e funcionário que aprendeu seu jeito. Universal pra quem tem padrão repetível: copy, atendimento, follow-up, brief comercial.
+C · Infraestrutura
+OpenAI lançou "Guaranteed Capacity" — empresa contrata compute por 1 a 3 anos
+Antes, IA era custo variável: usou, pagou. Agora vai virar contrato anual — igual energia elétrica ou link de internet dedicado. Quem tá levando IA pra dentro do core do negócio (agente que processa pedido, chatbot que faz triagem 24/7) já precisa pensar em capacidade reservada — não em "esperar o ChatGPT estar disponível".
+O takeaway
+A IA virou camada de ação, não de conselho.  O que era "conversa que sugere" virou "agente que entrega" — e a infraestrutura por trás disso já tá sendo contratada como linha de custo fixa. A pergunta deixou de ser  "o que a IA faz?" . A pergunta agora é  "que tarefa do meu time eu já posso transferir pra um agente que executa, lembra do meu jeito, e roda com compute garantido?"
+02 · Build in Pixel
+O que  nós  estamos construindo essa semana.
+Toda semana a gente abre a caixa-preta da Pixel — o que tá rodando dentro de casa, o que tá em pipeline, o que aprendemos errando. E, mais importante: como você pode levar a mesma coisa pro seu negócio.
+▸   Marketing OS
+Como funciona
+É um sistema operacional que automatiza o marketing da sua empresa. É o mesmo sistema que fez a Pixel investir mais de  R$ 150 mil em tráfego por mês , com mais de  90 criativos por semana , tudo sendo administrado por apenas  UMA PESSOA .
+E agora nós estamos estruturando isso para ser aplicado em  QUALQUER NEGÓCIO .
+O que ele faz na prática:
+→  Gera criativos para anúncios — estáticos, carrosséis, roteiros de vídeo
+→  Monitora performance no Meta Ads
+→  Sugere modificações de campanha
+→  Te atualiza sobre os resultados
+→  Coleta aprendizados — ficando mais inteligente a cada ciclo
+Como você pode fazer o mesmo
+Em duas semanas nós vamos disponibilizar isso dentro do Hub — e esse será o tema da nossa  imersão de junho . Fica ligado: na próxima semana confirmamos a data de lançamento e da imersão.
+03 · Case externo da semana
+A distribuidora de autopeças que colocou um  agente  dentro do WhatsApp da equipe.
+A Cema Distribuidora opera 7 unidades, 32 vendedores e cerca de 45 mil SKUs atendendo lojistas, oficinas e aplicadores. O CEO, Felipe Macedo, compartilhou esta semana o método que ele aplicou — e o gancho não é receita: é o desenho do problema.
+O gargalo era invisível: quando o vendedor não achava a peça, ele perguntava pra colega, googlava, abria catálogo em PDF, consultava sistema. Em média,  5 minutos ou mais por dúvida . E quando não encontrava, dizia que a empresa não tinha o produto — mesmo tendo.
+A solução foi colocar o agente dentro do canal onde a equipe já vivia: o WhatsApp.  Felipe construiu o "Megamente":
+1.    Alimentou a base de conhecimento.  Catálogo de produtos da empresa, PDFs das marcas, tabelas de aplicação, códigos e referências — tudo dentro do second brain do agente.
+2.    Conectou ao sistema.  Integração com a API do site/ERP da Cema pra validar código próprio, consultar estoque por filial e enviar link com foto.
+3.    Colocou no canal certo.  O Megamente entrou nos grupos de WhatsApp da equipe — o lugar onde o vendedor já fazia a pergunta pra colega.
+4.    Mediu o impacto.  Tempo médio de pesquisa caiu de 5+ minutos pra menos de 1. Vendedor novo passou a vender com a mesma assertividade do veterano. Conhecimento técnico saiu da cabeça do experiente e virou ativo da empresa.
+Por que isso importa
+A jogada do Felipe não foi criar uma ferramenta nova — foi  colocar inteligência no canal onde o trabalho já acontece . A pergunta da semana: que conhecimento na sua empresa hoje vive na cabeça do "funcionário que sabe tudo" — e em que canal (WhatsApp, e-mail, sistema interno) ele poderia virar agente acessível pro time inteiro?
+04 · Comunidade
+O que rolou no Hub esta semana.
+▸   Graziele (Youniq) automatizou propostas de RH — R$ 90 mil em contratos a partir de 1 workflow
+Graziele Salaberry toca a Youniq há 13 anos. 25 anos de experiência em desenvolvimento humano, processo robusto, método próprio — e ainda assim cada proposta personalizada custava  2 horas ou mais . Não por falta de método; por excesso de cuidado. Personalizar de verdade, com escuta ativa de reunião, leva tempo.
+Ela montou um workflow com  Gemini + Claude + Canva : a reunião termina, o Gemini transcreve. Uma skill no Claude lê a transcrição, confirma as dores que o cliente expôs e monta a proposta completa — já formatada no Canva. Tempo de proposta:  10 minutos.  Volume: 3+ propostas por dia. Aproximadamente  110 horas economizadas por mês.
+O detalhe que ela compartilhou e que importa mais do que a velocidade: numa reunião recente, o agente identificou na transcrição uma dor que o cliente nem havia colocado no briefing — employer branding. A proposta saiu além do escopo de RH.  O contrato fechou.
+A frase que ficou
+"Fui buscar eficiência. Encontrei um novo negócio."
+Resultado direto até agora:  R$ 90 mil em contratos gerados  — e a percepção de que o método pode virar produto. "Não terceirizei minha expertise pra IA. Eu a multipliquei."
+▸   Marcus (Toriba Agro) usa agente como copiloto técnico — e a fazenda ganhou um QA
+Marcus Almeida tem negócios em saúde, franquia e agropecuária. A dor concreta dele: vendas de touros parceladas em até 30x, controle em Excel, e uma parcela de  R$ 1.500 que deixou de ser cobrada  num leilão de 40 animais por falha de planilha. Ele precisava de um ERP agropecuário que conectasse rebanho, financeiro, vendas, cobrança e estoque vivo num fluxo só.
+O Marcus usou o Skip pra construção e o agente dele, o  Capitão , como copiloto técnico — mas não pra escrever código. O Capitão atua como camada entre o problema de negócio e a execução: traduz a necessidade em prompt técnico, recebe a resposta do Skip, audita o sistema publicado e pressiona pelo que ficou quebrado. Não aceita "feito" só porque o output parece bonito.
+Resultado: prompt que antes levava 2 horas pra ficar utilizável agora sai em 15 minutos. Cadência de  10 a 12 ciclos por dia  entre refinamento, execução e auditoria. ERP ainda não acabou — mas a virada não foi mágica no código, foi na clareza.  Agente bem usado reduz dependência de terceiro pra estruturar, revisar e validar — e isso vale pra qualquer construção complexa, dentro ou fora do agro.
+05 · Ferramenta da semana
+Gemini 3.5 Flash.
+O Google lançou esta semana a 3.5 Flash — versão otimizada pra volume e custo baixo. Em português direto: é o modelo certo pra rodar nas tarefas repetitivas do dia a dia da operação, onde você não precisa do "topo de gama" mas precisa de algo confiável e barato em escala.
+O Flash agora dá conta de workflows agentic (sequência de passos), tarefas longas e código simples — capacidades que antes só rolavam no modelo top.
+Casos de uso
+Triagem em volume
+Caixa de e-mail, lead inbound, ticket de suporte — qualquer volume que entra na empresa todo dia. O Flash classifica, etiqueta, prioriza e direciona pro responsável. O caro fica pra resposta; a triagem fica barata.
+Resumo de chamadas de venda
+Reunião comercial gravada vira resumo + lista de objeções + próximos passos em segundos. CRM atualizado sem o vendedor sentar pra escrever. Funciona com volume — não dá pra usar modelo caro pra cada uma das 30 calls da semana.
+Leitura em massa de documentos
+Contratos, propostas recebidas, notas fiscais, relatórios de fornecedor. O Flash extrai os campos que importam, marca o que tá fora do padrão e devolve planilha pronta. Ideal pra quem revisa volume alto de doc parecido.
+Acessar a ferramenta →
+Updates Hub
+•    Rolou na quinta:  masterclass  AI Design Sprint , com um especialista que liderou transformação digital em banco grande e hoje conduz times de produto e IA. A aula mostrou o framework pra desenhar estratégia de IA além de automação — quem perdeu, vale procurar a gravação no Hub.
+•    Próximo encontro ao vivo  é confirmado ainda esta semana — tema:  como aplicar agente de IA na operação em escala , com um especialista de IA com bagagem em comunidades e múltiplos projetos via no-code.  Fica de olho na agenda do Hub.
+Sua vez
+Duas coisas  antes  de você fechar o e-mail.
+Desafio do mês
+O case do mês ganha  prêmio.
+A votação tá pegando — Graziele, Marcus, Felipe e mais gente postaram cases fortes na semana. O case mais curtido do mês no grupo  Compartilhe seu case  ganha mentoria individual, entrevista no canal do YouTube do Bruno ou almoço/jantar com a gente.
+Pra participar, manda o prompt-base pro seu agente — ele te entrevista, monta o case no formato certo e te devolve um post pronto pro grupo. Prompt completo no link.
+Ver cases e votar →
+30 segundos
+O que tá  funcionando  pra você?
+Form rápido com 2 perguntas + 1 espaço pra sugestão de pauta: dá nota pro Hub, dá nota pra essa newsletter e nos diz o que você quer ver na próxima edição. A gente lê tudo e responde.
+Deixar feedback →
+Até semana que vem.
+— Matheus, Cayo & Bruno
+Você recebe a Pixel AI news porque é parte do  Pixel AI Hub . Toda semana, em 10 minutos.
+Pixel Educação · São Paulo, BR
+Cancelar inscrição
+·
+Ver no navegador
