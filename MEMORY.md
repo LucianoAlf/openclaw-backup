@@ -119,3 +119,16 @@ _Atualizado: 2026-04-03_
 
 <!-- openclaw-memory-promotion:memory:memory/sessions/2026-05-05.md:1:43 -->
 - # Sessão — 2026-05-05 ## CEO Quest — refatoração do briefing matinal ### Decisão de produto O briefing matinal do CEO Quest foi refatorado para sair do modelo de 3 reinos fixos e migrar para um modelo mais aderente ao uso real do Alf. ### Novo modelo matinal - Streak - Hoje no tabuleiro - Pendência viva - Ação CEO do dia - Próxima ação - Performance ### Motivos - a vida do Alf é dinâmica demais para forçar 3 reinos toda manhã - os reinos continuavam bonitos como lore e leitura estratégica, mas pouco funcionais como molde diário obrigatório - o briefing precisava nascer do TickTick real, não de interpretação simbólica demais ### Documentação atualizada - `memory/governanca/ceo-quest-prd.md` - `memory/governanca/ceo-quest-skill.md` - `memory/governanca/ceo-quest-ticktick-map.md` - `memory/governanca/ceo-quest-refatoracao-plano-2026-05-05.md` - `memory/governanca/ceo-quest-arquitetura-runtime-whatsapp-2026-05-05.md` ### Runtime atualizado - cron `CEO Quest — Briefing matinal` passou a entregar no WhatsApp `5521981278047` - briefing matinal deixa de usar reinos fixos - briefing passa a consultar explicitamente docs centrais + TickTick ### Reorganização completa dos crons - trilha operacional pessoal formalmente separada da trilha CEO Quest - 7h = briefing operacional pessoal - 7h30 = pendências do dia anterior - 19h30 = fechamento operacional pessoal - 8h = briefing CEO Quest - 20h = fechamento CEO Quest - domingo 8h = ritual CEO Quest no WhatsApp - risk-check 19h do CEO Quest desativado para não competir com a noite operacional ### Documentação complementar criada [score=0.812 recalls=5 avg=0.407 source=memory/sessions/2026-05-05.md:1-43]
+
+## Promoted From Short-Term Memory (2026-05-28)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-21.md:7:7 -->
+- Decisão operacional aplicada: [score=0.894 recalls=0 avg=0.620 source=memory/2026-05-21.md:7-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-21.md:17:17 -->
+- Correções aplicadas: [score=0.894 recalls=0 avg=0.620 source=memory/2026-05-21.md:17-17]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-21.md:22:22 -->
+- Próximo teste correto: [score=0.894 recalls=0 avg=0.620 source=memory/2026-05-21.md:22-22]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-22.md:5:5 -->
+- Alf avaliou o card/imagem do carrossel School respiração/canto V2 como “nota 10”. Este é marco importante após a crise do Mike: [score=0.894 recalls=0 avg=0.620 source=memory/2026-05-22.md:5-5]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-22.md:11:11 -->
+- Lição: a melhoria veio menos de “mais prompt” e mais de processo criativo correto com veto antes do render. Guardar como evidência de que o pipeline por modos é o caminho oficial para Mike. [score=0.894 recalls=0 avg=0.620 source=memory/2026-05-22.md:11-11]

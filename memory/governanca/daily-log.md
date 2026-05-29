@@ -80,3 +80,23 @@
 
 ### Skips / pausas
 - (vazio)
+
+## 2026-05-28
+
+### Ações de cobrança/verificação com time
+- (vazio)
+
+### Decisões tomadas
+- Fechamento 20h consolidado sem evidência CEO no dia; streak segue zerada por falta de ação concreta
+
+### Tarefas criadas/atualizadas
+- Streak, scorecard e revisão semanal ajustados para o fechamento do dia
+
+### Ações pessoais
+- (vazio)
+
+### Ritual de domingo
+- (vazio)
+
+### Skips / pausas
+- (vazio)

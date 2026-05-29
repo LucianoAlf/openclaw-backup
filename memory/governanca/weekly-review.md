@@ -12,4 +12,5 @@
 - Fechamento 20h do dia 2026-05-24 registrado; consolidação final continua pendente das respostas do Alf
 - Fechamento 20h do dia 2026-05-25 registrado; consolidação final continua pendente das respostas do Alf
 - Fechamento 20h do dia 2026-05-27 registrado; consolidação final continua pendente das respostas do Alf
+- Fechamento 20h do dia 2026-05-28 registrado; sem evidência CEO nova no dia; consolidação final continua pendente das respostas do Alf
 - Próxima atualização deste arquivo: após as respostas do ritual e a consolidação da semana
