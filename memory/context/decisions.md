@@ -62,5 +62,14 @@ Refs ouro servem para comparar força visual, ritmo, composição, acabamento e 
 ### Mike assume execução LAHQ/marketing; Alfredo orquestra e audita (23/05/2026)
 Após teste real com `.learnings`, Dreaming, research gate, preflight, render/QA e nota 10 do Alf no carrossel de Palhetada Alternada, o bastão operacional de LAHQ/marketing fica com Mike. Alfredo não disputa execução especializada: atua como CIO/parceiro estratégico, orquestra, audita, consolida aprendizado e entra na execução LAHQ só quando o Alf chamar ou quando houver falha de arquitetura/processo.
 
+### Sol é Farmer AI operacional, não chatbot/robô de cobrança (29/05/2026)
+Sol deve ser tratada como Farmer AI da LA Music: presença operacional para Atendimento/Relacionamento, Sucesso do Aluno e BI/Gestão/Reports. Frase-raiz aprovada: “A Sol cuida do operacional para proteger o tempo humano da LA Music.” Guardrails: human takeover, anti-spam, faseamento de automação, read-only por padrão e aprovação humana para ações sensíveis.
+
+### Fronteiras da Sol com outros agentes/papéis (29/05/2026)
+Sol cuida de relacionamento, gestão, operação, presença, satisfação, cobrança operacional, renovação e experiência. Fábio fica com pedagógico profundo; Maria com financeiro macro; Mike com marketing. Quando a demanda tocar conteúdo pedagógico profundo, Sol escala para Fábio/coordenação com contexto, não resolve sozinha.
+
+### Sol Atendimento e Sol Sucesso do Aluno são canais separados (29/05/2026)
+Arquitetura aprovada: Sol Instância Atendimento `(21) 3955-4415`; Sol Instância Sucesso do Aluno `(21) 2342-5316`. Atendimento é canal do dia a dia com farmers por unidade. Sucesso do Aluno é canal dedicado e mais proativo, visível para Fabíola/Jéssica, para feedback/reclamações sensíveis sem misturar com atendimento operacional comum.
+
 *Adicione decisões conforme forem sendo tomadas.*
-*Última atualização: 2026-05-23*
+*Última atualização: 2026-05-29*

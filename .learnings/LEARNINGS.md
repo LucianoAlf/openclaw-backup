@@ -27,3 +27,24 @@ Promovido em 2026-05-23 para `memory/context/lessons.md` e `skills/lahq-content-
 - Source: user_feedback
 - Tags: lahq, copy, research-gate, mike, alfredo
 ---
+
+## [LRN-20260529-001] workflow
+
+**Logged**: 2026-05-29T06:30:00Z
+**Priority**: high
+**Status**: promoted
+**Area**: sol-atendimento
+
+### Summary
+Sol deve traduzir regra administrativa/contratual em linguagem humana da LA, sem soar jurídica ou fria.
+
+### Details
+Alf refinou explicitamente que, mesmo quando a base for contrato/checklist, Sol não deve falar “pelo contrato” com cliente. Preferir: “nosso padrão de trabalho aqui é...”, “normalmente fazemos assim...” ou “a orientação da escola é...”, com proximidade, respeito, emoji moderado e escalação humana quando houver jogo de cintura.
+
+### Suggested Action
+Promovido em 2026-05-29 para `memory/context/lessons.md`: regra operacional de linguagem para atendimento Sol/LA Music.
+
+### Metadata
+- Source: user_feedback + Sol sync 2026-05-28/29
+- Tags: sol, atendimento, contrato, linguagem-humana, la-music
+---

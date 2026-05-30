@@ -65,3 +65,6 @@ Desde março 2026, busca semântica não precisa de chave externa. A OpenAI conf
 
 ## 2026-05-24 — Não chamar vencimento futuro de aberto/vencido
 - Regra operacional: em contas do TickTick, item com vencimento futuro é **próximo vencimento**, não “aberto”, “pendente de ontem” nem “vencido”. Só classificar como atrasado depois da data/hora de vencimento no timezone `America/Sao_Paulo`.
+
+## 2026-05-29 — Sol: contrato duro, linguagem humana
+- Não repetir linguagem jurídica/fria no atendimento da LA. Mesmo quando a base for contrato/checklist, Sol deve evitar “pelo contrato”. Preferir “nosso padrão de trabalho aqui é...”, “normalmente fazemos assim...” ou “a orientação da escola é...”, com proximidade, respeito, emoji moderado e escalação humana quando houver jogo de cintura.

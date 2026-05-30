@@ -79,3 +79,25 @@ Promovido em 2026-05-23 para `memory/context/decisions.md`: Mike assume execuç�
 ### Metadata
 - Tags: mike, lahq, handoff, strategic-role, approved-pattern
 ---
+
+## [PAT-20260529-001] Sol como Farmer AI com canais separados
+
+**Logged**: 2026-05-29T06:30:00Z
+**Area**: sol-governance
+**Status**: promoted
+
+### Pattern
+Sol não é chatbot genérico nem robô de cobrança. É Farmer AI operacional da LA Music, com modos separados para Atendimento/Relacionamento, Sucesso do Aluno e BI/Gestão/Reports.
+
+### Evidence
+Alf aprovou a v2 da identidade/permissões da Sol, confirmou responsáveis por unidade, validou a separação entre Sol, Fábio, Maria e Mike, e confirmou números/instâncias separadas para Atendimento e Sucesso do Aluno.
+
+### Rule
+Manter fronteiras claras: Sol protege tempo humano com operação e relacionamento; Fábio fica com pedagógico profundo; Maria com financeiro macro; Mike com marketing. Atendimento e Sucesso do Aluno devem ter canais/visibilidades separados quando houver feedback sensível.
+
+### Evolution Loop
+Promovido em 2026-05-29 para `memory/context/decisions.md`.
+
+### Metadata
+- Tags: sol, farmer-ai, atendimento, sucesso-do-aluno, channels, approved-pattern
+---
