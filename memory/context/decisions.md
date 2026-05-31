@@ -71,5 +71,8 @@ Sol cuida de relacionamento, gestão, operação, presença, satisfação, cobra
 ### Sol Atendimento e Sol Sucesso do Aluno são canais separados (29/05/2026)
 Arquitetura aprovada: Sol Instância Atendimento `(21) 3955-4415`; Sol Instância Sucesso do Aluno `(21) 2342-5316`. Atendimento é canal do dia a dia com farmers por unidade. Sucesso do Aluno é canal dedicado e mais proativo, visível para Fabíola/Jéssica, para feedback/reclamações sensíveis sem misturar com atendimento operacional comum.
 
+### Sol/Chatwoot: bridge externo é porteiro determinístico de segurança (30/05/2026)
+Em canais externos como WhatsApp/Chatwoot, o bridge da Sol não pode ser cérebro do atendimento nem simples repassador do que a LLM decidiu. Ele deve funcionar como porteiro/validador: só envia resposta externa quando risco, permissão, handoff e conteúdo passam nas travas; casos sensíveis viram nota interna. Dados internos/agregados da LA — alunos, matrículas, pagantes, ativos, KPIs, faturamento, inadimplência, listas, rankings, scores e similares — são bloqueados por regra determinística e forçam handoff humano, mesmo que a Sol classifique como baixo risco.
+
 *Adicione decisões conforme forem sendo tomadas.*
-*Última atualização: 2026-05-29*
+*Última atualização: 2026-05-30*

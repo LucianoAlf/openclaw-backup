@@ -68,3 +68,6 @@ Desde março 2026, busca semântica não precisa de chave externa. A OpenAI conf
 
 ## 2026-05-29 — Sol: contrato duro, linguagem humana
 - Não repetir linguagem jurídica/fria no atendimento da LA. Mesmo quando a base for contrato/checklist, Sol deve evitar “pelo contrato”. Preferir “nosso padrão de trabalho aqui é...”, “normalmente fazemos assim...” ou “a orientação da escola é...”, com proximidade, respeito, emoji moderado e escalação humana quando houver jogo de cintura.
+
+## 2026-05-30 — Sol/Chatwoot: prompt não é guardrail suficiente para dado interno
+- Não repetir o erro: em teste real, a Sol respondeu externamente no WhatsApp com KPI interno da unidade Barra. Para canais externos, decisão estruturada da LLM ajuda, mas não pode ser a única barreira. O bridge precisa bloquear por regra determinística pedidos de alunos/matrículas/pagantes/ativos, KPIs, faturamento, inadimplência, listas, rankings, scores e dados internos/agregados, forçando nota interna/handoff humano.

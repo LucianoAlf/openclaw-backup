@@ -48,3 +48,24 @@ Promovido em 2026-05-29 para `memory/context/lessons.md`: regra operacional de l
 - Source: user_feedback + Sol sync 2026-05-28/29
 - Tags: sol, atendimento, contrato, linguagem-humana, la-music
 ---
+
+## [LRN-20260530-001] workflow
+
+**Logged**: 2026-05-30T06:30:00Z
+**Priority**: high
+**Status**: promoted
+**Area**: sol-chatwoot-bridge
+
+### Summary
+Bridge Chatwoot/Sol precisa ser porteiro determinístico de segurança, não cérebro do atendimento nem porteira aberta baseada só em prompt.
+
+### Details
+Após teste real, a Sol respondeu externamente pelo WhatsApp com KPI interno da Barra (alunos/matrículas). Isso provou que decisão estruturada por LLM não basta para categorias críticas. O bridge deve bloquear por regra determinística dados internos/agregados, KPIs, faturamento, inadimplência, listas, rankings e assuntos sensíveis, criando nota interna/handoff em vez de resposta ao cliente.
+
+### Suggested Action
+Promovido em 2026-05-30 para `memory/context/lessons.md` e `memory/context/decisions.md`: guardrails determinísticos obrigatórios no bridge externo da Sol.
+
+### Metadata
+- Source: real Chatwoot/WhatsApp test + patch 2026-05-30
+- Tags: sol, chatwoot, whatsapp, guardrails, internal-data, privacy, handoff
+---
