@@ -69,3 +69,24 @@ Promovido em 2026-05-30 para `memory/context/lessons.md` e `memory/context/decis
 - Source: real Chatwoot/WhatsApp test + patch 2026-05-30
 - Tags: sol, chatwoot, whatsapp, guardrails, internal-data, privacy, handoff
 ---
+
+## [LRN-20260531-001] correction
+
+**Logged**: 2026-05-31T06:30:00Z
+**Priority**: medium
+**Status**: pending
+**Area**: la-organizer-positioning
+
+### Summary
+LA Organizer não deve ser interpretado como app pessoal do Alf; é um app de Governança e Organização Pessoal para colaboradores.
+
+### Details
+Alf corrigiu explicitamente a leitura quando foi mostrado o módulo de finanças pessoais. A feature de finanças pessoais deve ser entendida como benefício/camada de organização da vida do colaborador, não como financeiro da LA nem finanças pessoais do Alf. TOM já opera como camada conversacional/operacional dentro desse produto.
+
+### Suggested Action
+Manter como aprendizado de projeto por enquanto. Se aparecer de novo em PRD, pitch, UI ou arquitetura, promover para `memory/projects/la-organizer-*.md` como posicionamento canônico do produto.
+
+### Metadata
+- Source: user_correction + memory/sessions/2026-05-31.md
+- Tags: la-organizer, tom, colaboradores, governanca, produto
+---

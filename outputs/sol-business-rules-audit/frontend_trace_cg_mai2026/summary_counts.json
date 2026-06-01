@@ -1,0 +1,15 @@
+{
+  "total_matriculas_status_ativo_trancado": 565,
+  "pessoas_por_nome_aprox": 500,
+  "status": {
+    "ativo": 560,
+    "trancado": 5
+  },
+  "tipo_aluno": {
+    "pagante": 539,
+    "bolsista_parcial": 11,
+    "bolsista_integral": 15
+  },
+  "is_segundo_curso_true": 66,
+  "valor_parcela_zero_or_null": 67
+}

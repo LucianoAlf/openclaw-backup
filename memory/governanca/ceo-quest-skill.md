@@ -6,3 +6,4 @@
 - A entrega ao Alf deve sair limpa, sem prefixos técnicos, sem destino e sem instruções de envio.
 - O ritual continua separado da trilha operacional pessoal.
 - 2026-05-24: Ritual da Virada conduzido; revisão semanal aberta aguardando respostas para consolidação.
+- 2026-05-31: Ritual da Virada reaberto no domingo 8h; trilha CEO Quest segue separada da operacional pessoal e aguarda respostas do Alf para fechamento.

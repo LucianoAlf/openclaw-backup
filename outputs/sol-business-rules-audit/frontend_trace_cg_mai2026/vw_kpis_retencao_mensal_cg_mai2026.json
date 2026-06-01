@@ -1,0 +1,21 @@
+[
+  {
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92",
+    "unidade_nome": "Campo Grande",
+    "ano": 2026,
+    "mes": 5,
+    "total_evasoes": 21,
+    "evasoes_interrompidas": 8,
+    "avisos_previos": 8,
+    "transferencias": 0,
+    "taxa_evasao": 4.42,
+    "mrr_perdido": 1719.0,
+    "renovacoes_previstas": 38,
+    "renovacoes_realizadas": 38,
+    "nao_renovacoes": 5,
+    "renovacoes_pendentes": 0,
+    "renovacoes_atrasadas": 0,
+    "taxa_renovacao": 100.0,
+    "taxa_nao_renovacao": 0.0
+  }
+]

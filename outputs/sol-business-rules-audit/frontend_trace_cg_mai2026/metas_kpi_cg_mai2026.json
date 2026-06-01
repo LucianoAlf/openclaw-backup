@@ -1,0 +1,82 @@
+[
+  {
+    "tipo": "alunos_atual",
+    "valor": 414.0,
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92"
+  },
+  {
+    "tipo": "alunos_pagantes",
+    "valor": 479.0,
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92"
+  },
+  {
+    "tipo": "churn_rate",
+    "valor": 4.0,
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92"
+  },
+  {
+    "tipo": "experimentais",
+    "valor": 35.0,
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92"
+  },
+  {
+    "tipo": "inadimplencia",
+    "valor": 1.5,
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92"
+  },
+  {
+    "tipo": "leads",
+    "valor": 234.0,
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92"
+  },
+  {
+    "tipo": "matriculas",
+    "valor": 28.0,
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92"
+  },
+  {
+    "tipo": "mrr",
+    "valor": 207045.0,
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92"
+  },
+  {
+    "tipo": "reajuste_medio",
+    "valor": 10.0,
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92"
+  },
+  {
+    "tipo": "taxa_conversao",
+    "valor": 12.0,
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92"
+  },
+  {
+    "tipo": "taxa_exp_mat",
+    "valor": 80.0,
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92"
+  },
+  {
+    "tipo": "taxa_lead_exp",
+    "valor": 15.0,
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92"
+  },
+  {
+    "tipo": "taxa_renovacao",
+    "valor": 90.0,
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92"
+  },
+  {
+    "tipo": "tempo_permanencia",
+    "valor": 15.0,
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92"
+  },
+  {
+    "tipo": "ticket_medio",
+    "valor": 387.0,
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92"
+  },
+  {
+    "tipo": "ticket_parcela",
+    "valor": 387.0,
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92"
+  }
+]

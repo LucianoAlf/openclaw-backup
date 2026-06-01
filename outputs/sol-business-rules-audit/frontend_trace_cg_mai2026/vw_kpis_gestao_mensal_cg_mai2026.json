@@ -1,0 +1,31 @@
+[
+  {
+    "unidade_id": "2ec861f6-023f-4d7b-9927-3960ad8c2a92",
+    "unidade_nome": "Campo Grande",
+    "ano": 2026,
+    "mes": 5,
+    "total_alunos_ativos": 499,
+    "total_alunos_pagantes": 475,
+    "total_bolsistas_integrais": 14,
+    "total_bolsistas_parciais": 10,
+    "total_banda": 41,
+    "total_segundo_curso": 66,
+    "ticket_medio": 385.35,
+    "mrr": 176695.73,
+    "arr": 2120348.76,
+    "tempo_permanencia_medio": 19.6,
+    "ltv_medio": 7552.82,
+    "inadimplencia_pct": 1.26,
+    "faturamento_previsto": 176695.73,
+    "faturamento_realizado": 174637.73,
+    "total_leads": 450,
+    "experimentais_agendadas": 9,
+    "experimentais_realizadas": 10,
+    "novas_matriculas": 23,
+    "total_evasoes": 13,
+    "churn_rate": 2.74,
+    "renovacoes": 61,
+    "taxa_renovacao": 100.0,
+    "reajuste_medio": 0.0
+  }
+]

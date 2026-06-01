@@ -74,5 +74,8 @@ Arquitetura aprovada: Sol Instância Atendimento `(21) 3955-4415`; Sol Instânci
 ### Sol/Chatwoot: bridge externo é porteiro determinístico de segurança (30/05/2026)
 Em canais externos como WhatsApp/Chatwoot, o bridge da Sol não pode ser cérebro do atendimento nem simples repassador do que a LLM decidiu. Ele deve funcionar como porteiro/validador: só envia resposta externa quando risco, permissão, handoff e conteúdo passam nas travas; casos sensíveis viram nota interna. Dados internos/agregados da LA — alunos, matrículas, pagantes, ativos, KPIs, faturamento, inadimplência, listas, rankings, scores e similares — são bloqueados por regra determinística e forçam handoff humano, mesmo que a Sol classifique como baixo risco.
 
+### LA Report/Sol: definição canônica de evasão (31/05/2026)
+No contexto de KPIs da LA Music, **Evasão** é o guarda-chuva de saída realizada do aluno: **cliente que interrompeu/cancelou no meio do contrato + cliente que não renovou ao fim do contrato**. Definições: `interrompido/evasão interrompida` = cancelou no meio do contrato; `não renovação` = não quis renovar e seguir com as aulas; `evasão/total de evasões/churn` = interrompido + não renovação. `Aviso prévio` não é evasão realizada: é sinalização/risco e deve aparecer separado até virar saída efetiva.
+
 *Adicione decisões conforme forem sendo tomadas.*
-*Última atualização: 2026-05-30*
+*Última atualização: 2026-05-31*

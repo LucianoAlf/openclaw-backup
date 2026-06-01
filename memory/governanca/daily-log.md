@@ -1,5 +1,27 @@
 # Log Diário — CEO Quest
 
+## 2026-05-31
+
+### Ações de cobrança/verificação com time
+- Ritual da Virada do CEO Quest iniciado no domingo 8h/11h
+
+### Decisões tomadas
+- Abrir a revisão semanal, fechar pendências e organizar prioridades da semana atual por dia
+- Fechamento 20h de domingo consolidado; revisão semanal segue aberta aguardando respostas do Alf
+
+### Tarefas criadas/atualizadas
+- Weekly review, streak e trilha CEO Quest atualizados para a virada de domingo
+- Fechamento 20h consolidado com streak fechando em 2 dias
+
+### Ações pessoais
+- (vazio)
+
+### Ritual de domingo
+- Ritual da Virada conduzido e aguardando respostas do Alf para consolidação
+
+### Skips / pausas
+- (vazio)
+
 ## 2026-05-30
 
 ### Ações de cobrança/verificação com time

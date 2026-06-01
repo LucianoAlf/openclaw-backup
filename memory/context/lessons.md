@@ -71,3 +71,15 @@ Desde março 2026, busca semântica não precisa de chave externa. A OpenAI conf
 
 ## 2026-05-30 — Sol/Chatwoot: prompt não é guardrail suficiente para dado interno
 - Não repetir o erro: em teste real, a Sol respondeu externamente no WhatsApp com KPI interno da unidade Barra. Para canais externos, decisão estruturada da LLM ajuda, mas não pode ser a única barreira. O bridge precisa bloquear por regra determinística pedidos de alunos/matrículas/pagantes/ativos, KPIs, faturamento, inadimplência, listas, rankings, scores e dados internos/agregados, forçando nota interna/handoff humano.
+
+## LA Report — cuidado com banco legado e fonte canônica
+
+- O LA Report nasceu com dados históricos normalizados/importados para comparação de início de ano e evoluiu para sistema central; por isso o banco mistura legado, snapshots e dados atuais.
+- Nunca assumir que uma tabela/view é fonte canônica só porque existe no Supabase.
+- `dados_mensais`, `evasoes_v2` e migrations antigas podem estar defasadas ou parcialmente abandonadas.
+- Para regras de negócio da Sol/LA Report, Alf é a fonte final; banco/frontend/Windsurf/equipe são evidências a cruzar.
+- Antes de criar skill canônica, validar regra por unidade e marcar status: canônica, dúvida, divergente ou legado.
+
+## 2026-06-01 — Sol precisa auditar inconsistências, não só responder consulta
+
+Auditoria CG/Maio provou que números oficiais da equipe podem estar contaminados por duplicidade, bolsista/professor marcado como pagante, faturas removidas, aluno novo com passaporte e pagamento no mês seguinte, curso divergente e aluno ativo sem frequência/pagamento. Alf perdeu tempo de CEO fazendo auditoria manual. Regra: projetos da Sol/LA Report devem priorizar cruzamento automático de Emusys + LA Report + faturas + presença + tipo de matrícula, gerando alertas nominais para equipe corrigir. Não confiar cegamente em `valor_parcela`, `conta_como_pagante` ou número informado por equipe.

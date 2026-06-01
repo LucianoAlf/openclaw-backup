@@ -1,0 +1,444 @@
+{
+  "active_rows": 499,
+  "ex_rows": 1490,
+  "ex_event_counts": {
+    "interrompido": 1624,
+    "concluido": 159
+  },
+  "results": [
+    {
+      "lote": "A",
+      "id": 106,
+      "nome": "Emilly Souza de Oliveira",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "exact",
+      "ex": [
+        {
+          "nome": "Emilly Souza de Oliveira",
+          "summary": "interrompido 2026-03-05",
+          "data_matric": "30/01/2025\n\n",
+          "conclusao": "28/02/2026\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B1",
+      "id": 1450,
+      "nome": "Maria Eduarda de Lima Bomfim Pedro",
+      "active_match_kind": "exact",
+      "active": [
+        {
+          "nome": "Maria Eduarda de Lima  Bomfim Pedro",
+          "summary": "andamento até 2027-03-09",
+          "qtd": "1",
+          "mensalidades": "0,00"
+        }
+      ],
+      "ex_match_kind": null,
+      "ex": []
+    },
+    {
+      "lote": "B2",
+      "id": 85,
+      "nome": "Davi Borges da Silva Nascimento",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "exact",
+      "ex": [
+        {
+          "nome": "Davi Borges da Silva Nascimento",
+          "summary": "concluido 2026-04-25; interrompido 2019-10-29; concluido 2023-02-14",
+          "data_matric": "03/05/2018\n\n\n15/02/2019\n\n\n29/10/2019\n\n",
+          "conclusao": "25/04/2026\n\n\n19/10/2019\n\n\n14/02/2023\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B2",
+      "id": 94,
+      "nome": "Davi Rosendo Chaves Vieira",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "exact",
+      "ex": [
+        {
+          "nome": "Davi Rosendo Chaves Vieira",
+          "summary": "concluido 2026-04-01",
+          "data_matric": "31/10/2024\n\n",
+          "conclusao": "01/04/2026\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B2",
+      "id": 131,
+      "nome": "Gabriel Pereira Morais",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "exact",
+      "ex": [
+        {
+          "nome": "Gabriel Pereira Morais",
+          "summary": "concluido 2026-03-03",
+          "data_matric": "24/10/2024\n\n",
+          "conclusao": "03/03/2026\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B2",
+      "id": 137,
+      "nome": "Georgie Jefferson de Mello Basílio",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "fuzzy 0.88",
+      "ex": [
+        {
+          "nome": "Georgie Jefferson de Mello Basílio da Silva",
+          "summary": "concluido 2026-05-07",
+          "data_matric": "13/02/2025\n\n",
+          "conclusao": "07/05/2026\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B2",
+      "id": 149,
+      "nome": "Guilherme Gama Clavelario Nunes",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "exact",
+      "ex": [
+        {
+          "nome": "Guilherme Gama Clavelario Nunes",
+          "summary": "concluido 2026-05-04",
+          "data_matric": "29/02/2024\n\n",
+          "conclusao": "04/05/2026\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B2",
+      "id": 165,
+      "nome": "Heitor Thadeu Caciano",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "exact",
+      "ex": [
+        {
+          "nome": "Heitor Thadeu Caciano",
+          "summary": "concluido 2026-04-11",
+          "data_matric": "28/01/2023\n\n",
+          "conclusao": "11/04/2026\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B2",
+      "id": 224,
+      "nome": "Laura Peres de Souza",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "exact",
+      "ex": [
+        {
+          "nome": "Laura Peres de Souza",
+          "summary": "concluido 2026-04-02",
+          "data_matric": "24/01/2025\n\n",
+          "conclusao": "02/04/2026\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B2",
+      "id": 258,
+      "nome": "Luís Rafael Sousa dos Santos",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "exact",
+      "ex": [
+        {
+          "nome": "Luís Rafael Sousa dos Santos",
+          "summary": "concluido 2026-05-06",
+          "data_matric": "14/04/2025\n\n",
+          "conclusao": "06/05/2026\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B2",
+      "id": 270,
+      "nome": "Manuela Piveta Schulz",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "exact",
+      "ex": [
+        {
+          "nome": "Manuela Piveta Schulz",
+          "summary": "concluido 2026-04-02; interrompido 2025-05-21; interrompido 2021-01-21",
+          "data_matric": "30/11/2024\n\n\n09/04/2024\n\n\n07/11/2019\n\n",
+          "conclusao": "02/04/2026\n\n\n15/05/2025\n\n\n31/12/2020\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B2",
+      "id": 327,
+      "nome": "Murilo Martellote de Assis",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "exact",
+      "ex": [
+        {
+          "nome": "Murilo  Martellote de Assis",
+          "summary": "interrompido 2025-01-27; interrompido 2026-03-06",
+          "data_matric": "23/09/2024\n\n\n15/05/2021\n\n",
+          "conclusao": "07/12/2024\n\n\n28/02/2026\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B2",
+      "id": 354,
+      "nome": "Pedro Martellote de Assis",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "exact",
+      "ex": [
+        {
+          "nome": "Pedro Martellote de Assis",
+          "summary": "interrompido 2025-01-27; interrompido 2026-03-06",
+          "data_matric": "23/09/2024\n\n\n15/05/2021\n\n",
+          "conclusao": "07/12/2024\n\n\n28/02/2026\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B2",
+      "id": 384,
+      "nome": "Sophia Maciel Magalhaes",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "exact",
+      "ex": [
+        {
+          "nome": "Sophia Maciel Magalhaes",
+          "summary": "concluido 2026-04-10",
+          "data_matric": "14/11/2024\n\n",
+          "conclusao": "10/04/2026\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B2",
+      "id": 945,
+      "nome": "Luciano da Silva Bernardino",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": null,
+      "ex": []
+    },
+    {
+      "lote": "B2",
+      "id": 11,
+      "nome": "Alexandre Wallace Bispo Oliveira",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "exact",
+      "ex": [
+        {
+          "nome": "Alexandre Wallace Bispo Oliveira",
+          "summary": "concluido 2026-03-14",
+          "data_matric": "30/11/2024\n\n",
+          "conclusao": "14/03/2026\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B2",
+      "id": 118,
+      "nome": "Felipe Marques Gevezier",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "exact",
+      "ex": [
+        {
+          "nome": "Felipe  Marques Gevezier",
+          "summary": "interrompido 2026-03-02; interrompido 2026-03-23",
+          "data_matric": "07/08/2025\n\n\n29/09/2025\n\n",
+          "conclusao": "09/02/2026\n\n\n16/03/2026\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B2",
+      "id": 1375,
+      "nome": "Alan Samico do Nascimento",
+      "active_match_kind": "exact",
+      "active": [
+        {
+          "nome": "Alan Samico do Nascimento",
+          "summary": "andamento até 2026-08-15",
+          "qtd": "1",
+          "mensalidades": "0,00"
+        }
+      ],
+      "ex_match_kind": null,
+      "ex": []
+    },
+    {
+      "lote": "B2",
+      "id": 1377,
+      "nome": "Alexandre de Sousa Serra",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "exact",
+      "ex": [
+        {
+          "nome": "Alexandre de Sousa Serra",
+          "summary": "interrompido 2026-04-01",
+          "data_matric": "22/02/2025\n\n",
+          "conclusao": "28/03/2026\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B2",
+      "id": 1378,
+      "nome": "Ana Julia de Oliveira Gomes",
+      "active_match_kind": "exact",
+      "active": [
+        {
+          "nome": "Ana Júlia de Oliveira Gomes",
+          "summary": "andamento até 2026-08-15",
+          "qtd": "1",
+          "mensalidades": "0,00"
+        }
+      ],
+      "ex_match_kind": null,
+      "ex": []
+    },
+    {
+      "lote": "B2",
+      "id": 1393,
+      "nome": "Leamsi Guedes de Sant'anna",
+      "active_match_kind": "exact",
+      "active": [
+        {
+          "nome": "Leamsi Guedes de Sant'Anna",
+          "summary": "andamento até 2026-08-15",
+          "qtd": "1",
+          "mensalidades": "0,00"
+        }
+      ],
+      "ex_match_kind": null,
+      "ex": []
+    },
+    {
+      "lote": "B2",
+      "id": 1598,
+      "nome": "Alexandre Dos Santos",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": null,
+      "ex": []
+    },
+    {
+      "lote": "B3",
+      "id": 31,
+      "nome": "Anne Krissya Cordeiro da Silva Noé",
+      "active_match_kind": "exact",
+      "active": [
+        {
+          "nome": "Anne Krissya Cordeiro da Silva Noé",
+          "summary": "andamento até 2027-04-06; andamento até 2027-02-16",
+          "qtd": "2",
+          "mensalidades": "0,00"
+        }
+      ],
+      "ex_match_kind": null,
+      "ex": []
+    },
+    {
+      "lote": "B3",
+      "id": 263,
+      "nome": "Luiza Mazeliah do Nascimento",
+      "active_match_kind": "exact",
+      "active": [
+        {
+          "nome": "Luiza Mazeliah do Nascimento",
+          "summary": "andamento até 2027-02-12",
+          "qtd": "1",
+          "mensalidades": "520,00"
+        }
+      ],
+      "ex_match_kind": null,
+      "ex": []
+    },
+    {
+      "lote": "B3",
+      "id": 405,
+      "nome": "Vicente Dias Botelho",
+      "active_match_kind": "exact",
+      "active": [
+        {
+          "nome": "Vicente Dias Botelho",
+          "summary": "andamento até 2026-12-12; andamento até 2027-03-18; andamento até 2026-08-15",
+          "qtd": "3",
+          "mensalidades": "447,00\n0,00"
+        }
+      ],
+      "ex_match_kind": null,
+      "ex": []
+    },
+    {
+      "lote": "B4",
+      "id": 47,
+      "nome": "Arthur Souza Del Bosco",
+      "active_match_kind": null,
+      "active": [],
+      "ex_match_kind": "exact",
+      "ex": [
+        {
+          "nome": "Arthur Souza Del Bosco",
+          "summary": "interrompido 2026-01-09",
+          "data_matric": "09/03/2024\n\n",
+          "conclusao": "29/11/2025\n\n"
+        }
+      ]
+    },
+    {
+      "lote": "B4",
+      "id": 323,
+      "nome": "Miguel Santos Borges",
+      "active_match_kind": "exact",
+      "active": [
+        {
+          "nome": "Miguel Santos Borges",
+          "summary": "andamento até 2026-09-26",
+          "qtd": "1",
+          "mensalidades": "447,00"
+        }
+      ],
+      "ex_match_kind": null,
+      "ex": []
+    },
+    {
+      "lote": "B4",
+      "id": 949,
+      "nome": "Cassyo L P Silva",
+      "active_match_kind": "initials",
+      "active": [
+        {
+          "nome": "Cassyo Lucas Prado Silva",
+          "summary": "andamento até 2026-12-19",
+          "qtd": "1",
+          "mensalidades": "447,00"
+        }
+      ],
+      "ex_match_kind": null,
+      "ex": []
+    }
+  ]
+}

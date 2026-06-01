@@ -1,0 +1,1029 @@
+{
+  "columns": [
+    {
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "table_name": "dados_mensais",
+      "column_name": "id",
+      "is_nullable": "NO",
+      "column_default": "extensions.uuid_generate_v4()"
+    },
+    {
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "table_name": "dados_mensais",
+      "column_name": "unidade_id",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "dados_mensais",
+      "column_name": "ano",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "dados_mensais",
+      "column_name": "mes",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "dados_mensais",
+      "column_name": "alunos_pagantes",
+      "is_nullable": "YES",
+      "column_default": "0"
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "dados_mensais",
+      "column_name": "novas_matriculas",
+      "is_nullable": "YES",
+      "column_default": "0"
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "dados_mensais",
+      "column_name": "evasoes",
+      "is_nullable": "YES",
+      "column_default": "0"
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "dados_mensais",
+      "column_name": "churn_rate",
+      "is_nullable": "YES",
+      "column_default": "0"
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "dados_mensais",
+      "column_name": "ticket_medio",
+      "is_nullable": "YES",
+      "column_default": "0"
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "dados_mensais",
+      "column_name": "taxa_renovacao",
+      "is_nullable": "YES",
+      "column_default": "0"
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "dados_mensais",
+      "column_name": "tempo_permanencia",
+      "is_nullable": "YES",
+      "column_default": "0"
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "dados_mensais",
+      "column_name": "inadimplencia",
+      "is_nullable": "YES",
+      "column_default": "0"
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "dados_mensais",
+      "column_name": "reajuste_parcelas",
+      "is_nullable": "YES",
+      "column_default": "0"
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "dados_mensais",
+      "column_name": "faturamento_estimado",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "dados_mensais",
+      "column_name": "saldo_liquido",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "table_name": "dados_mensais",
+      "column_name": "created_at",
+      "is_nullable": "YES",
+      "column_default": "now()"
+    },
+    {
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "table_name": "dados_mensais",
+      "column_name": "updated_at",
+      "is_nullable": "YES",
+      "column_default": "now()"
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "dados_mensais",
+      "column_name": "ticket_medio_passaporte",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "dados_mensais",
+      "column_name": "faturamento_passaporte",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "dados_mensais",
+      "column_name": "alunos_ativos",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "dados_mensais",
+      "column_name": "matriculas_ativas",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "dados_mensais",
+      "column_name": "matriculas_banda",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "dados_mensais",
+      "column_name": "matriculas_2_curso",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "evasoes_v2",
+      "column_name": "id",
+      "is_nullable": "NO",
+      "column_default": "nextval('evasoes_v2_id_seq'::regclass)"
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "evasoes_v2",
+      "column_name": "aluno_id",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "table_name": "evasoes_v2",
+      "column_name": "unidade_id",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "udt_name": "date",
+      "data_type": "date",
+      "table_name": "evasoes_v2",
+      "column_name": "data_evasao",
+      "is_nullable": "NO",
+      "column_default": "CURRENT_DATE"
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "evasoes_v2",
+      "column_name": "tipo_saida_id",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "evasoes_v2",
+      "column_name": "motivo_saida_id",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "evasoes_v2",
+      "column_name": "professor_id",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "evasoes_v2",
+      "column_name": "valor_parcela",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "varchar",
+      "data_type": "character varying",
+      "table_name": "evasoes_v2",
+      "column_name": "situacao_pagamento",
+      "is_nullable": "YES",
+      "column_default": "'em_dia'::character varying"
+    },
+    {
+      "udt_name": "date",
+      "data_type": "date",
+      "table_name": "evasoes_v2",
+      "column_name": "data_prevista_saida",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "text",
+      "data_type": "text",
+      "table_name": "evasoes_v2",
+      "column_name": "observacoes",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "table_name": "evasoes_v2",
+      "column_name": "created_at",
+      "is_nullable": "YES",
+      "column_default": "now()"
+    },
+    {
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "table_name": "evasoes_v2",
+      "column_name": "updated_at",
+      "is_nullable": "YES",
+      "column_default": "now()"
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "evasoes_v2",
+      "column_name": "created_by",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "evasoes_v2",
+      "column_name": "curso_id",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "varchar",
+      "data_type": "character varying",
+      "table_name": "evasoes_v2",
+      "column_name": "aluno_nome",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "varchar",
+      "data_type": "character varying",
+      "table_name": "evasoes_v2",
+      "column_name": "telefone_snapshot",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "movimentacoes_admin",
+      "column_name": "id",
+      "is_nullable": "NO",
+      "column_default": "nextval('movimentacoes_admin_id_seq'::regclass)"
+    },
+    {
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "table_name": "movimentacoes_admin",
+      "column_name": "unidade_id",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "udt_name": "date",
+      "data_type": "date",
+      "table_name": "movimentacoes_admin",
+      "column_name": "data",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "udt_name": "varchar",
+      "data_type": "character varying",
+      "table_name": "movimentacoes_admin",
+      "column_name": "tipo",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "udt_name": "varchar",
+      "data_type": "character varying",
+      "table_name": "movimentacoes_admin",
+      "column_name": "aluno_nome",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "movimentacoes_admin",
+      "column_name": "aluno_id",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "movimentacoes_admin",
+      "column_name": "professor_id",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "movimentacoes_admin",
+      "column_name": "curso_id",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "movimentacoes_admin",
+      "column_name": "valor_parcela_anterior",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "movimentacoes_admin",
+      "column_name": "valor_parcela_novo",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "movimentacoes_admin",
+      "column_name": "forma_pagamento_id",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "date",
+      "data_type": "date",
+      "table_name": "movimentacoes_admin",
+      "column_name": "mes_saida",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "varchar",
+      "data_type": "character varying",
+      "table_name": "movimentacoes_admin",
+      "column_name": "tipo_evasao",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "text",
+      "data_type": "text",
+      "table_name": "movimentacoes_admin",
+      "column_name": "motivo",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "text",
+      "data_type": "text",
+      "table_name": "movimentacoes_admin",
+      "column_name": "observacoes",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "varchar",
+      "data_type": "character varying",
+      "table_name": "movimentacoes_admin",
+      "column_name": "agente_comercial",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "table_name": "movimentacoes_admin",
+      "column_name": "created_at",
+      "is_nullable": "YES",
+      "column_default": "now()"
+    },
+    {
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "table_name": "movimentacoes_admin",
+      "column_name": "updated_at",
+      "is_nullable": "YES",
+      "column_default": "now()"
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "movimentacoes_admin",
+      "column_name": "tempo_permanencia_meses",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "movimentacoes_admin",
+      "column_name": "valor_parcela_evasao",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "date",
+      "data_type": "date",
+      "table_name": "movimentacoes_admin",
+      "column_name": "previsao_retorno",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "movimentacoes_admin",
+      "column_name": "motivo_saida_id",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "movimentacoes_admin",
+      "column_name": "motivo_trancamento_id",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "varchar",
+      "data_type": "character varying",
+      "table_name": "movimentacoes_admin",
+      "column_name": "telefone_snapshot",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "varchar",
+      "data_type": "character varying",
+      "table_name": "movimentacoes_admin",
+      "column_name": "situacao_pagamento",
+      "is_nullable": "YES",
+      "column_default": "'em_dia'::character varying"
+    },
+    {
+      "udt_name": "date",
+      "data_type": "date",
+      "table_name": "movimentacoes_admin",
+      "column_name": "data_prevista_saida",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "professores_performance",
+      "column_name": "id",
+      "is_nullable": "NO",
+      "column_default": "nextval('professores_performance_id_seq'::regclass)"
+    },
+    {
+      "udt_name": "varchar",
+      "data_type": "character varying",
+      "table_name": "professores_performance",
+      "column_name": "professor",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "udt_name": "varchar",
+      "data_type": "character varying",
+      "table_name": "professores_performance",
+      "column_name": "unidade",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "professores_performance",
+      "column_name": "ano",
+      "is_nullable": "YES",
+      "column_default": "2025"
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "professores_performance",
+      "column_name": "experimentais",
+      "is_nullable": "YES",
+      "column_default": "0"
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "professores_performance",
+      "column_name": "matriculas",
+      "is_nullable": "YES",
+      "column_default": "0"
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "professores_performance",
+      "column_name": "taxa_conversao",
+      "is_nullable": "YES",
+      "column_default": "0"
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "professores_performance",
+      "column_name": "evasoes",
+      "is_nullable": "YES",
+      "column_default": "0"
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "professores_performance",
+      "column_name": "contratos_vencer",
+      "is_nullable": "YES",
+      "column_default": "0"
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "professores_performance",
+      "column_name": "renovacoes",
+      "is_nullable": "YES",
+      "column_default": "0"
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "professores_performance",
+      "column_name": "taxa_renovacao",
+      "is_nullable": "YES",
+      "column_default": "0"
+    },
+    {
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "table_name": "professores_performance",
+      "column_name": "created_at",
+      "is_nullable": "YES",
+      "column_default": "now()"
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "renovacoes",
+      "column_name": "id",
+      "is_nullable": "NO",
+      "column_default": "nextval('renovacoes_id_seq'::regclass)"
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "renovacoes",
+      "column_name": "aluno_id",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "table_name": "renovacoes",
+      "column_name": "unidade_id",
+      "is_nullable": "NO",
+      "column_default": null
+    },
+    {
+      "udt_name": "date",
+      "data_type": "date",
+      "table_name": "renovacoes",
+      "column_name": "data_renovacao",
+      "is_nullable": "NO",
+      "column_default": "CURRENT_DATE"
+    },
+    {
+      "udt_name": "date",
+      "data_type": "date",
+      "table_name": "renovacoes",
+      "column_name": "data_fim_contrato_anterior",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "date",
+      "data_type": "date",
+      "table_name": "renovacoes",
+      "column_name": "data_inicio_novo_contrato",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "date",
+      "data_type": "date",
+      "table_name": "renovacoes",
+      "column_name": "data_fim_novo_contrato",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "renovacoes",
+      "column_name": "valor_parcela_anterior",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "renovacoes",
+      "column_name": "valor_parcela_novo",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "table_name": "renovacoes",
+      "column_name": "percentual_reajuste",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "varchar",
+      "data_type": "character varying",
+      "table_name": "renovacoes",
+      "column_name": "status",
+      "is_nullable": "NO",
+      "column_default": "'renovado'::character varying"
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "renovacoes",
+      "column_name": "motivo_nao_renovacao_id",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "varchar",
+      "data_type": "character varying",
+      "table_name": "renovacoes",
+      "column_name": "agente",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "text",
+      "data_type": "text",
+      "table_name": "renovacoes",
+      "column_name": "observacoes",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "table_name": "renovacoes",
+      "column_name": "created_at",
+      "is_nullable": "YES",
+      "column_default": "now()"
+    },
+    {
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "table_name": "renovacoes",
+      "column_name": "updated_at",
+      "is_nullable": "YES",
+      "column_default": "now()"
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "renovacoes",
+      "column_name": "created_by",
+      "is_nullable": "YES",
+      "column_default": null
+    },
+    {
+      "udt_name": "int4",
+      "data_type": "integer",
+      "table_name": "renovacoes",
+      "column_name": "professor_id",
+      "is_nullable": "YES",
+      "column_default": null
+    }
+  ],
+  "needs_tables": [
+    {
+      "table_name": "dados_mensais"
+    },
+    {
+      "table_name": "evasoes_v2"
+    },
+    {
+      "table_name": "movimentacoes_admin"
+    },
+    {
+      "table_name": "professores_performance"
+    },
+    {
+      "table_name": "renovacoes"
+    }
+  ],
+  "triggers": [
+    {
+      "table_name": "dados_mensais",
+      "trigger_name": "tr_audit_dados_mensais",
+      "action_timing": "AFTER",
+      "action_statement": "EXECUTE FUNCTION audit_dados_mensais()",
+      "event_manipulation": "DELETE"
+    },
+    {
+      "table_name": "dados_mensais",
+      "trigger_name": "tr_audit_dados_mensais",
+      "action_timing": "AFTER",
+      "action_statement": "EXECUTE FUNCTION audit_dados_mensais()",
+      "event_manipulation": "INSERT"
+    },
+    {
+      "table_name": "dados_mensais",
+      "trigger_name": "tr_audit_dados_mensais",
+      "action_timing": "AFTER",
+      "action_statement": "EXECUTE FUNCTION audit_dados_mensais()",
+      "event_manipulation": "UPDATE"
+    },
+    {
+      "table_name": "dados_mensais",
+      "trigger_name": "tr_dados_mensais_updated_at",
+      "action_timing": "BEFORE",
+      "action_statement": "EXECUTE FUNCTION update_updated_at()",
+      "event_manipulation": "UPDATE"
+    },
+    {
+      "table_name": "dados_mensais",
+      "trigger_name": "trg_audit",
+      "action_timing": "AFTER",
+      "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+      "event_manipulation": "DELETE"
+    },
+    {
+      "table_name": "dados_mensais",
+      "trigger_name": "trg_audit",
+      "action_timing": "AFTER",
+      "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+      "event_manipulation": "INSERT"
+    },
+    {
+      "table_name": "dados_mensais",
+      "trigger_name": "trg_audit",
+      "action_timing": "AFTER",
+      "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+      "event_manipulation": "UPDATE"
+    },
+    {
+      "table_name": "evasoes_v2",
+      "trigger_name": "set_updated_at_evasoes_v2",
+      "action_timing": "BEFORE",
+      "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+      "event_manipulation": "UPDATE"
+    },
+    {
+      "table_name": "movimentacoes_admin",
+      "trigger_name": "trg_audit",
+      "action_timing": "AFTER",
+      "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+      "event_manipulation": "DELETE"
+    },
+    {
+      "table_name": "movimentacoes_admin",
+      "trigger_name": "trg_audit",
+      "action_timing": "AFTER",
+      "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+      "event_manipulation": "INSERT"
+    },
+    {
+      "table_name": "movimentacoes_admin",
+      "trigger_name": "trg_audit",
+      "action_timing": "AFTER",
+      "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+      "event_manipulation": "UPDATE"
+    },
+    {
+      "table_name": "movimentacoes_admin",
+      "trigger_name": "trg_sync_evasao_dados_mensais",
+      "action_timing": "AFTER",
+      "action_statement": "EXECUTE FUNCTION sync_evasao_to_dados_mensais()",
+      "event_manipulation": "DELETE"
+    },
+    {
+      "table_name": "movimentacoes_admin",
+      "trigger_name": "trg_sync_evasao_dados_mensais",
+      "action_timing": "AFTER",
+      "action_statement": "EXECUTE FUNCTION sync_evasao_to_dados_mensais()",
+      "event_manipulation": "INSERT"
+    },
+    {
+      "table_name": "movimentacoes_admin",
+      "trigger_name": "trg_sync_evasao_dados_mensais",
+      "action_timing": "AFTER",
+      "action_statement": "EXECUTE FUNCTION sync_evasao_to_dados_mensais()",
+      "event_manipulation": "UPDATE"
+    },
+    {
+      "table_name": "renovacoes",
+      "trigger_name": "trg_audit",
+      "action_timing": "AFTER",
+      "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+      "event_manipulation": "DELETE"
+    },
+    {
+      "table_name": "renovacoes",
+      "trigger_name": "trg_audit",
+      "action_timing": "AFTER",
+      "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+      "event_manipulation": "INSERT"
+    },
+    {
+      "table_name": "renovacoes",
+      "trigger_name": "trg_audit",
+      "action_timing": "AFTER",
+      "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+      "event_manipulation": "UPDATE"
+    },
+    {
+      "table_name": "renovacoes",
+      "trigger_name": "trigger_calcular_reajuste",
+      "action_timing": "BEFORE",
+      "action_statement": "EXECUTE FUNCTION calcular_reajuste_renovacao()",
+      "event_manipulation": "INSERT"
+    },
+    {
+      "table_name": "renovacoes",
+      "trigger_name": "trigger_calcular_reajuste",
+      "action_timing": "BEFORE",
+      "action_statement": "EXECUTE FUNCTION calcular_reajuste_renovacao()",
+      "event_manipulation": "UPDATE"
+    },
+    {
+      "table_name": "renovacoes",
+      "trigger_name": "update_renovacoes_updated_at",
+      "action_timing": "BEFORE",
+      "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+      "event_manipulation": "UPDATE"
+    }
+  ],
+  "functions_like": [
+    {
+      "proname": "atualizar_config_fideliza",
+      "definition": "CREATE OR REPLACE FUNCTION public.atualizar_config_fideliza(p_ano integer, p_campo character varying, p_valor text)\n RETURNS jsonb\n LANGUAGE plpgsql\n SECURITY DEFINER\nAS $function$\nBEGIN\n  EXECUTE format(\n    'UPDATE programa_fideliza_config SET %I = $1, updated_at = NOW() WHERE ano = $2',\n    p_campo\n  ) USING p_valor, p_ano;\n  \n  RETURN jsonb_build_object('success', true);\nEND;\n$function$\n"
+    },
+    {
+      "proname": "calcular_reajuste_renovacao",
+      "definition": "CREATE OR REPLACE FUNCTION public.calcular_reajuste_renovacao()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\nBEGIN\n    IF NEW.valor_parcela_anterior IS NOT NULL AND NEW.valor_parcela_anterior > 0 THEN\n        NEW.percentual_reajuste := ROUND(\n            ((NEW.valor_parcela_novo - NEW.valor_parcela_anterior) / NEW.valor_parcela_anterior) * 100, \n            2\n        );\n    ELSE\n        NEW.percentual_reajuste := 0;\n    END IF;\n    RETURN NEW;\nEND;\n$function$\n"
+    },
+    {
+      "proname": "criar_pesquisa_evasao",
+      "definition": "CREATE OR REPLACE FUNCTION public.criar_pesquisa_evasao(p_evasao_id integer, p_criado_por text)\n RETURNS uuid\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n  v_pesquisa_id UUID;\n  v_evasao RECORD;\nBEGIN\n  SELECT \n    m.id,\n    m.aluno_id,\n    m.unidade_id,\n    m.aluno_nome,\n    COALESCE(m.telefone_snapshot, a.whatsapp, a.telefone) AS telefone_snapshot,\n    m.data AS data_evasao,\n    ms.nome as motivo,\n    c.nome as curso,\n    pr.nome as professor,\n    COALESCE(a.tempo_permanencia_meses, 0) as tempo_meses\n  INTO v_evasao\n  FROM movimentacoes_admin m\n  LEFT JOIN alunos a ON a.id = m.aluno_id\n  LEFT JOIN cursos c ON c.id = COALESCE(m.curso_id, a.curso_id)\n  LEFT JOIN professores pr ON pr.id = COALESCE(m.professor_id, a.professor_atual_id)\n  LEFT JOIN motivos_saida ms ON ms.id = m.motivo_saida_id\n  WHERE m.id = p_evasao_id;\n  \n  IF v_evasao.id IS NULL THEN\n    RAISE EXCEPTION 'Evasão não encontrada: %', p_evasao_id;\n  END IF;\n  \n  IF v_evasao.telefone_snapshot IS NULL THEN\n    RAISE EXCEPTION 'Evasão sem telefone: %', p_evasao_id;\n  END IF;\n  \n  INSERT INTO pesquisa_evasao (\n    evasao_id, aluno_id, unidade_id,\n    aluno_nome, aluno_telefone, aluno_curso, aluno_professor,\n    tempo_permanencia_meses, data_evasao, motivo_cadastrado,\n    status, enviado_em, enviado_por\n  ) VALUES (\n    v_evasao.id, v_evasao.aluno_id, v_evasao.unidade_id,\n    v_evasao.aluno_nome, v_evasao.telefone_snapshot, v_evasao.curso, v_evasao.professor,\n    v_evasao.tempo_meses, v_evasao.data_evasao, v_evasao.motivo,\n    'enviado', now(), p_criado_por\n  )\n  ON CONFLICT (evasao_id) DO UPDATE SET\n    status = 'enviado',\n    enviado_em = now(),\n    enviado_por = p_criado_por,\n    updated_at = now()\n  RETURNING id INTO v_pesquisa_id;\n  \n  RETURN v_pesquisa_id;\nEND;\n$function$\n"
+    },
+    {
+      "proname": "deletar_penalidade_fideliza",
+      "definition": "CREATE OR REPLACE FUNCTION public.deletar_penalidade_fideliza(p_id integer)\n RETURNS jsonb\n LANGUAGE plpgsql\n SECURITY DEFINER\nAS $function$\nBEGIN\n  DELETE FROM programa_fideliza_penalidades WHERE id = p_id;\n  RETURN jsonb_build_object('success', true);\nEND;\n$function$\n"
+    },
+    {
+      "proname": "get_dados_retencao_ia",
+      "definition": "CREATE OR REPLACE FUNCTION public.get_dados_retencao_ia(p_unidade_id uuid, p_ano integer, p_mes integer)\n RETURNS json\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n  resultado JSON;\n  mes_anterior INT;\n  ano_anterior INT;\n  ano_passado INT;\nBEGIN\n  IF p_mes = 1 THEN\n    mes_anterior := 12;\n    ano_anterior := p_ano - 1;\n  ELSE\n    mes_anterior := p_mes - 1;\n    ano_anterior := p_ano;\n  END IF;\n  ano_passado := p_ano - 1;\n\n  SELECT json_build_object(\n    'periodo', json_build_object('ano', p_ano, 'mes', p_mes, 'mes_nome', TRIM(TO_CHAR(TO_DATE(p_mes::text, 'MM'), 'Month'))),\n    'kpis_gestao', (\n      SELECT COALESCE(json_agg(json_build_object(\n        'unidade_id', kg.unidade_id, 'unidade_nome', kg.unidade_nome,\n        'total_alunos_ativos', COALESCE(kg.total_alunos_ativos, 0),\n        'total_alunos_pagantes', COALESCE(kg.total_alunos_pagantes, 0),\n        'ticket_medio', COALESCE(kg.ticket_medio, 0), 'mrr', COALESCE(kg.mrr, 0),\n        'tempo_permanencia_medio', COALESCE(kg.tempo_permanencia_medio, 0),\n        'ltv_medio', COALESCE(kg.ltv_medio, 0), 'inadimplencia_pct', COALESCE(kg.inadimplencia_pct, 0),\n        'faturamento_previsto', COALESCE(kg.faturamento_previsto, 0),\n        'faturamento_realizado', COALESCE(kg.faturamento_realizado, 0),\n        'churn_rate', COALESCE(kg.churn_rate, 0), 'total_evasoes', COALESCE(kg.total_evasoes, 0)\n      )), '[]'::json) FROM vw_kpis_gestao_mensal kg\n      WHERE (p_unidade_id IS NULL OR kg.unidade_id = p_unidade_id) AND kg.ano = p_ano AND kg.mes = p_mes\n    ),\n    'kpis_retencao', (\n      SELECT COALESCE(json_agg(json_build_object(\n        'unidade_id', kr.unidade_id, 'unidade_nome', kr.unidade_nome,\n        'total_evasoes', kr.total_evasoes, 'avisos_previos', kr.avisos_previos,\n        'renovacoes_previstas', kr.renovacoes_previstas, 'renovacoes_realizadas', kr.renovacoes_realizadas,\n        'nao_renovacoes', kr.nao_renovacoes, 'renovacoes_pendentes', kr.renovacoes_pendentes,\n        'taxa_renovacao', kr.taxa_renovacao, 'taxa_nao_renovacao', kr.taxa_nao_renovacao,\n        'mrr_perdido', kr.mrr_perdido\n      )), '[]'::json) FROM vw_kpis_retencao_mensal kr\n      WHERE (p_unidade_id IS NULL OR kr.unidade_id = p_unidade_id) AND kr.ano = p_ano AND kr.mes = p_mes\n    ),\n    'renovacoes_proximas', (SELECT COALESCE(json_agg(row_to_json(rp)), '[]'::json) FROM get_resumo_renovacoes_proximas(p_unidade_id) rp),\n    'alunos_renovacao_urgente', (\n      SELECT COALESCE(json_agg(json_build_object(\n        'aluno_nome', rp.aluno_nome, 'professor_nome', rp.professor_nome, 'curso_nome', rp.curso_nome,\n        'valor_parcela', rp.valor_parcela, 'dias_ate_vencimento', rp.dias_ate_vencimento,\n        'tempo_permanencia_meses', rp.tempo_permanencia_meses, 'telefone', rp.telefone\n      ) ORDER BY rp.dias_ate_vencimento), '[]'::json)\n      FROM vw_renovacoes_proximas rp\n      WHERE (p_unidade_id IS NULL OR rp.unidade_id = p_unidade_id) AND rp.status_renovacao IN ('vencido', 'urgente_7_dias')\n      LIMIT 20\n    ),\n    'mes_anterior', (\n      SELECT COALESCE(json_agg(json_build_object(\n        'alunos_pagantes', dm.alunos_pagantes, 'churn_rate', dm.churn_rate, 'ticket_medio', dm.ticket_medio,\n        'taxa_renovacao', dm.taxa_renovacao, 'inadimplencia', dm.inadimplencia,\n        'tempo_permanencia', dm.tempo_permanencia, 'reajuste_parcelas', dm.reajuste_parcelas\n      )), '[]'::json) FROM dados_mensais dm\n      WHERE (p_unidade_id IS NULL OR dm.unidade_id = p_unidade_id) AND dm.ano = ano_anterior AND dm.mes = mes_anterior\n    ),\n    'mesmo_mes_ano_passado', (\n      SELECT COALESCE(json_agg(json_build_object(\n        'alunos_pagantes', dm.alunos_pagantes, 'churn_rate', dm.churn_rate, 'ticket_medio', dm.ticket_medio,\n        'taxa_renovacao', dm.taxa_renovacao, 'inadimplencia', dm.inadimplencia,\n        'tempo_permanencia', dm.tempo_permanencia, 'reajuste_parcelas', dm.reajuste_parcelas\n      )), '[]'::json) FROM dados_mensais dm\n      WHERE (p_unidade_id IS NULL OR dm.unidade_id = p_unidade_id) AND dm.ano = ano_passado AND dm.mes = p_mes\n    ),\n    'metas', (\n      SELECT COALESCE(json_agg(json_build_object(\n        'unidade_id', mt.unidade_id, 'meta_leads', mt.meta_leads, 'meta_experimentais', mt.meta_experimentais,\n        'meta_matriculas', mt.meta_matriculas, 'meta_taxa_conversao_experimental', mt.meta_taxa_conversao_experimental,\n        'meta_taxa_conversao_lead', mt.meta_taxa_conversao_lead, 'meta_faturamento_passaportes', mt.meta_faturamento_passaportes,\n        'meta_alunos_pagantes', mt.meta_alunos_pagantes, 'meta_alunos_ativos', mt.meta_alunos_ativos,\n        'meta_ticket_medio', mt.meta_ticket_medio, 'meta_churn_maximo', mt.meta_churn_maximo,\n        'meta_evasoes_maximo', mt.meta_evasoes_maximo, 'meta_renovacoes', mt.meta_renovacoes,\n        'meta_taxa_renovacao', mt.meta_taxa_renovacao, 'meta_inadimplencia_maxima', mt.meta_inadimplencia_maxima,\n        'meta_ltv_meses', mt.meta_ltv_meses, 'meta_faturamento_parcelas', mt.meta_faturamento_parcelas\n      )), '[]'::json) FROM metas mt\n      WHERE (p_unidade_id IS NULL OR mt.unidade_id = p_unidade_id OR mt.unidade_id IS NULL)\n        AND mt.ano = p_ano AND (mt.mes = p_mes OR mt.mes IS NULL) AND mt.ativo = true\n    ),\n    'evasoes_recentes', (\n      SELECT COALESCE(json_agg(json_build_object(\n        'aluno_nome', a.nome, 'professor_nome', pr.nome, 'motivo', ms.nome,\n        'tipo_saida', m.tipo, 'valor_parcela', COALESCE(m.valor_parcela_evasao, m.valor_parcela_anterior),\n        'tempo_permanencia', a.tempo_permanencia_meses, 'data_saida', m.data\n      ) ORDER BY m.data DESC), '[]'::json)\n      FROM movimentacoes_admin m\n      LEFT JOIN alunos a ON m.aluno_id = a.id\n      LEFT JOIN professores pr ON m.professor_id = pr.id\n      LEFT JOIN motivos_saida ms ON m.motivo_saida_id = ms.id\n      WHERE m.tipo IN ('evasao', 'nao_renovacao', 'aviso_previo')\n        AND (p_unidade_id IS NULL OR m.unidade_id = p_unidade_id)\n        AND m.data >= (CURRENT_DATE - INTERVAL '30 days')\n      LIMIT 15\n    ),\n    'permanencia_por_faixa', (\n      SELECT COALESCE(json_agg(json_build_object(\n        'faixa', faixa, 'quantidade', quantidade,\n        'percentual', ROUND((quantidade::numeric / NULLIF(total, 0) * 100), 1)\n      ) ORDER BY ordem), '[]'::json)\n      FROM (\n        SELECT CASE WHEN tempo_permanencia_meses < 6 THEN '0-6 meses' WHEN tempo_permanencia_meses < 12 THEN '6-12 meses'\n          WHEN tempo_permanencia_meses < 24 THEN '1-2 anos' WHEN tempo_permanencia_meses < 36 THEN '2-3 anos' ELSE '3+ anos' END as faixa,\n          CASE WHEN tempo_permanencia_meses < 6 THEN 1 WHEN tempo_permanencia_meses < 12 THEN 2\n          WHEN tempo_permanencia_meses < 24 THEN 3 WHEN tempo_permanencia_meses < 36 THEN 4 ELSE 5 END as ordem,\n          COUNT(*) as quantidade, SUM(COUNT(*)) OVER () as total\n        FROM alunos WHERE status = 'ativo' AND (p_unidade_id IS NULL OR unidade_id = p_unidade_id)\n        GROUP BY faixa, ordem\n      ) sub\n    ),\n    'dados_mes_atual', (\n      SELECT COALESCE(json_agg(json_build_object(\n        'alunos_pagantes', dm.alunos_pagantes, 'novas_matriculas', dm.novas_matriculas,\n        'evasoes', dm.evasoes, 'churn_rate', dm.churn_rate, 'ticket_medio', dm.ticket_medio,\n        'taxa_renovacao', dm.taxa_renovacao, 'tempo_permanencia', dm.tempo_permanencia,\n        'inadimplencia', dm.inadimplencia, 'reajuste_parcelas', dm.reajuste_parcelas,\n        'faturamento_estimado', dm.faturamento_estimado, 'saldo_liquido', dm.saldo_liquido\n      )), '[]'::json) FROM dados_mensais dm\n      WHERE (p_unidade_id IS NULL OR dm.unidade_id = p_unidade_id) AND dm.ano = p_ano AND dm.mes = p_mes\n    )\n  ) INTO resultado;\n  \n  RETURN resultado;\nEND;\n$function$\n"
+    },
+    {
+      "proname": "get_kpis_retencao",
+      "definition": "CREATE OR REPLACE FUNCTION public.get_kpis_retencao(p_ano integer DEFAULT 2025, p_unidade character varying DEFAULT NULL::character varying)\n RETURNS TABLE(total_evasoes bigint, total_interrompidos bigint, total_nao_renovacoes bigint, mrr_perdido_total numeric, mrr_perdido_mensal numeric, ticket_medio_evasao numeric, motivo_principal character varying, professor_critico character varying)\n LANGUAGE plpgsql\nAS $function$\r\nBEGIN\r\n  RETURN QUERY\r\n  SELECT \r\n    COUNT(*)::BIGINT,\r\n    COUNT(CASE WHEN e.tipo = 'Interrompido' THEN 1 END)::BIGINT,\r\n    COUNT(CASE WHEN e.tipo = 'Não Renovação' THEN 1 END)::BIGINT,\r\n    COALESCE(SUM(e.parcela), 0)::NUMERIC,\r\n    ROUND(COALESCE(SUM(e.parcela), 0) / 12, 2)::NUMERIC,\r\n    ROUND(COALESCE(AVG(e.parcela), 0), 2)::NUMERIC,\r\n    (SELECT motivo_categoria FROM evasoes \r\n     WHERE EXTRACT(YEAR FROM competencia) = p_ano \r\n     AND (p_unidade IS NULL OR unidade = p_unidade) \r\n     GROUP BY motivo_categoria ORDER BY COUNT(*) DESC LIMIT 1)::VARCHAR,\r\n    (SELECT professor FROM evasoes \r\n     WHERE EXTRACT(YEAR FROM competencia) = p_ano \r\n     AND (p_unidade IS NULL OR unidade = p_unidade) \r\n     AND professor IS NOT NULL AND professor != ''\r\n     GROUP BY professor ORDER BY COUNT(*) DESC LIMIT 1)::VARCHAR\r\n  FROM evasoes e\r\n  WHERE EXTRACT(YEAR FROM e.competencia) = p_ano\r\n    AND (p_unidade IS NULL OR e.unidade = p_unidade);\r\nEND;\r\n$function$\n"
+    },
+    {
+      "proname": "get_programa_fideliza_dados",
+      "definition": "CREATE OR REPLACE FUNCTION public.get_programa_fideliza_dados(p_ano integer DEFAULT 2026, p_trimestre integer DEFAULT NULL::integer, p_unidade_id uuid DEFAULT NULL::uuid)\n RETURNS jsonb\n LANGUAGE plpgsql\n SECURITY DEFINER\nAS $function$\nDECLARE\n  v_config JSONB;\n  v_farmers JSONB;\n  v_penalidades JSONB;\n  v_historico JSONB;\n  v_experiencias JSONB;\n  v_trim_atual INTEGER;\nBEGIN\n  IF p_trimestre IS NULL THEN\n    v_trim_atual := CEIL(EXTRACT(MONTH FROM CURRENT_DATE)::numeric / 3);\n  ELSE\n    v_trim_atual := p_trimestre;\n  END IF;\n\n  SELECT jsonb_build_object(\n    'ano', c.ano,\n    'metas', jsonb_build_object(\n      'churn_maximo', c.meta_churn_maximo, 'inadimplencia_maxima', c.meta_inadimplencia_maxima,\n      'renovacao_minima', c.meta_renovacao_minima, 'reajuste_minimo', c.meta_reajuste_minimo,\n      'lojinha_campo_grande', (c.metas_lojinha->>'2ec861f6-023f-4d7b-9927-3960ad8c2a92')::numeric,\n      'lojinha_recreio', (c.metas_lojinha->>'95553e96-971b-4590-a6eb-0201d013c14d')::numeric,\n      'lojinha_barra', (c.metas_lojinha->>'368d47f5-2d88-4475-bc14-ba084a9a348e')::numeric\n    ),\n    'pontuacao', jsonb_build_object(\n      'churn', c.pontos_churn, 'inadimplencia', c.pontos_inadimplencia,\n      'renovacao', c.pontos_renovacao, 'reajuste', c.pontos_reajuste, 'lojinha', c.pontos_lojinha\n    ),\n    'penalidades', jsonb_build_object(\n      'nao_preencheu_sistema', c.penalidade_nao_preencheu_sistema,\n      'nao_preencheu_lareport', c.penalidade_nao_preencheu_lareport,\n      'reincidencia_mes', c.penalidade_reincidencia_mes\n    ),\n    'nota_corte', c.nota_corte, 'criterio_desempate', c.criterio_desempate\n  ) INTO v_config\n  FROM programa_fideliza_config c WHERE c.ano = p_ano;\n  \n  IF v_config IS NULL THEN\n    v_config := jsonb_build_object(\n      'ano', p_ano,\n      'metas', jsonb_build_object('churn_maximo', 4, 'inadimplencia_maxima', 1, 'renovacao_minima', 90, 'reajuste_minimo', 7, 'lojinha_campo_grande', 5000, 'lojinha_recreio', 3000, 'lojinha_barra', 3000),\n      'pontuacao', jsonb_build_object('churn', 25, 'inadimplencia', 20, 'renovacao', 25, 'reajuste', 15, 'lojinha', 15),\n      'penalidades', jsonb_build_object('nao_preencheu_sistema', 3, 'nao_preencheu_lareport', 3, 'reincidencia_mes', 5),\n      'nota_corte', 60, 'criterio_desempate', 'menor_churn'\n    );\n  END IF;\n\n  WITH meses_trimestre AS (\n    SELECT generate_series(((v_trim_atual - 1) * 3 + 1), (v_trim_atual * 3)) AS mes\n  ),\n  evasoes_mes AS (\n    SELECT m.unidade_id, EXTRACT(MONTH FROM m.data)::INTEGER AS mes, COUNT(*) AS total_evasoes\n    FROM movimentacoes_admin m\n    WHERE m.tipo IN ('evasao', 'nao_renovacao')\n      AND EXTRACT(YEAR FROM m.data) = p_ano\n      AND EXTRACT(MONTH FROM m.data) BETWEEN ((v_trim_atual - 1) * 3 + 1) AND (v_trim_atual * 3)\n      AND (p_unidade_id IS NULL OR m.unidade_id = p_unidade_id)\n    GROUP BY m.unidade_id, EXTRACT(MONTH FROM m.data)\n  ),\n  evasoes_trimestre AS (\n    SELECT unidade_id, SUM(total_evasoes) AS total_evasoes FROM evasoes_mes GROUP BY unidade_id\n  ),\n  alunos_base_mes AS (\n    SELECT u.id AS unidade_id, mt.mes,\n      COALESCE(\n        (SELECT dm.alunos_pagantes FROM dados_mensais dm WHERE dm.unidade_id = u.id \n         AND (CASE WHEN mt.mes = 1 THEN dm.ano = p_ano - 1 AND dm.mes = 12\n              ELSE dm.ano = p_ano AND dm.mes = mt.mes - 1 END)),\n        (SELECT COUNT(*) FROM alunos a WHERE a.unidade_id = u.id AND a.status IN ('ativo', 'trancado'))\n      ) AS alunos_pagantes_anterior\n    FROM unidades u CROSS JOIN meses_trimestre mt\n    WHERE u.ativo = true AND (p_unidade_id IS NULL OR u.id = p_unidade_id)\n  ),\n  alunos_base_trimestre AS (\n    SELECT unidade_id, ROUND(AVG(alunos_pagantes_anterior)::numeric, 0) AS alunos_base_media\n    FROM alunos_base_mes WHERE alunos_pagantes_anterior > 0 GROUP BY unidade_id\n  ),\n  churn_mes AS (\n    SELECT ab.unidade_id, ab.mes, COALESCE(em.total_evasoes, 0) AS evasoes, ab.alunos_pagantes_anterior,\n      CASE WHEN ab.alunos_pagantes_anterior > 0 \n        THEN ROUND(COALESCE(em.total_evasoes, 0)::numeric / ab.alunos_pagantes_anterior * 100, 2) ELSE 0 END AS churn_rate\n    FROM alunos_base_mes ab LEFT JOIN evasoes_mes em ON em.unidade_id = ab.unidade_id AND em.mes = ab.mes\n  ),\n  churn_meses_detalhado AS (\n    SELECT unidade_id, jsonb_agg(jsonb_build_object('mes', mes, 'evasoes', evasoes, 'alunos', alunos_pagantes_anterior, 'taxa', churn_rate) ORDER BY mes) AS meses\n    FROM churn_mes GROUP BY unidade_id\n  ),\n  renovacoes_trim AS (\n    SELECT r.unidade_id, COUNT(*) FILTER (WHERE r.status = 'renovado') AS renovados, COUNT(*) AS total_contratos,\n      COALESCE(AVG(r.percentual_reajuste) FILTER (WHERE r.status = 'renovado'), 0) AS reajuste_medio\n    FROM renovacoes r\n    WHERE EXTRACT(YEAR FROM r.data_renovacao) = p_ano\n      AND EXTRACT(MONTH FROM r.data_renovacao) BETWEEN ((v_trim_atual - 1) * 3 + 1) AND (v_trim_atual * 3)\n      AND (p_unidade_id IS NULL OR r.unidade_id = p_unidade_id)\n    GROUP BY r.unidade_id\n  ),\n  metricas_trimestre AS (\n    SELECT u.id AS unidade_id, u.nome AS unidade_nome,\n      COALESCE((SELECT AVG(cm.churn_rate) FROM churn_mes cm WHERE cm.unidade_id = u.id AND cm.alunos_pagantes_anterior > 0), 0) AS churn_rate,\n      COALESCE((SELECT AVG(dm.inadimplencia) FROM dados_mensais dm WHERE dm.unidade_id = u.id AND dm.ano = p_ano \n        AND dm.mes BETWEEN ((v_trim_atual - 1) * 3 + 1) AND (v_trim_atual * 3) AND dm.inadimplencia > 0), 0) AS inadimplencia_pct,\n      COALESCE(CASE WHEN rt.total_contratos > 0 THEN ROUND(rt.renovados::numeric / rt.total_contratos * 100, 2) ELSE 0 END, 0) AS taxa_renovacao,\n      COALESCE(rt.reajuste_medio, 0) AS reajuste_medio,\n      COALESCE(et.total_evasoes, 0) AS total_evasoes, COALESCE(abt.alunos_base_media, 0) AS alunos_base,\n      COALESCE(rt.renovados, 0) AS renovados, COALESCE(rt.total_contratos, 0) AS total_contratos,\n      COALESCE(cmd.meses, '[]'::jsonb) AS churn_meses\n    FROM unidades u \n    LEFT JOIN renovacoes_trim rt ON rt.unidade_id = u.id\n    LEFT JOIN evasoes_trimestre et ON et.unidade_id = u.id\n    LEFT JOIN alunos_base_trimestre abt ON abt.unidade_id = u.id\n    LEFT JOIN churn_meses_detalhado cmd ON cmd.unidade_id = u.id\n    WHERE u.ativo = true AND (p_unidade_id IS NULL OR u.id = p_unidade_id)\n  ),\n  penalidades_totais AS (\n    SELECT unidade_id, SUM(pontos_descontados) AS total_pontos, COUNT(*) AS quantidade\n    FROM programa_fideliza_penalidades WHERE ano = p_ano AND trimestre = v_trim_atual AND (p_unidade_id IS NULL OR unidade_id = p_unidade_id)\n    GROUP BY unidade_id\n  )\n  SELECT jsonb_agg(jsonb_build_object(\n    'unidade_id', mt.unidade_id, 'unidade_nome', mt.unidade_nome,\n    'farmers', CASE mt.unidade_id\n      WHEN '2ec861f6-023f-4d7b-9927-3960ad8c2a92'::uuid THEN jsonb_build_object('nomes', 'Gabriela e Jhonatan', 'apelidos', 'Gabi & Jhon')\n      WHEN '95553e96-971b-4590-a6eb-0201d013c14d'::uuid THEN jsonb_build_object('nomes', 'Fernanda e Daiana', 'apelidos', 'Fefe & Dai')\n      WHEN '368d47f5-2d88-4475-bc14-ba084a9a348e'::uuid THEN jsonb_build_object('nomes', 'Eduarda e Arthur', 'apelidos', 'Duda & Arthur')\n      ELSE jsonb_build_object('nomes', 'Equipe', 'apelidos', 'Equipe')\n    END,\n    'metricas', jsonb_build_object(\n      'churn_rate', ROUND(mt.churn_rate::numeric, 2), 'inadimplencia_pct', ROUND(mt.inadimplencia_pct::numeric, 2),\n      'taxa_renovacao', ROUND(mt.taxa_renovacao::numeric, 2), 'reajuste_medio', ROUND(mt.reajuste_medio::numeric, 2), 'vendas_lojinha', 0,\n      'churn_bruto', jsonb_build_object('evasoes', mt.total_evasoes, 'alunos_base', mt.alunos_base, 'meses', mt.churn_meses),\n      'renovacao_bruto', jsonb_build_object('renovados', mt.renovados, 'total_contratos', mt.total_contratos)\n    ),\n    'penalidades', jsonb_build_object('total_pontos', COALESCE(pt.total_pontos, 0), 'quantidade', COALESCE(pt.quantidade, 0))\n  )) INTO v_farmers\n  FROM metricas_trimestre mt LEFT JOIN penalidades_totais pt ON pt.unidade_id = mt.unidade_id;\n\n  SELECT jsonb_agg(jsonb_build_object(\n    'id', p.id, 'unidade_id', p.unidade_id, 'unidade_nome', u.nome, 'trimestre', p.trimestre,\n    'tipo', p.tipo, 'descricao', p.descricao, 'pontos_descontados', p.pontos_descontados,\n    'data_ocorrencia', p.data_ocorrencia, 'registrado_por', p.registrado_por, 'created_at', p.created_at\n  ) ORDER BY p.data_ocorrencia DESC) INTO v_penalidades\n  FROM programa_fideliza_penalidades p JOIN unidades u ON u.id = p.unidade_id\n  WHERE p.ano = p_ano AND (p_unidade_id IS NULL OR p.unidade_id = p_unidade_id);\n\n  SELECT jsonb_agg(jsonb_build_object(\n    'ano', h.ano, 'trimestre', h.trimestre, 'unidade_id', h.unidade_id, 'unidade_nome', u.nome,\n    'churn_rate', h.churn_rate, 'inadimplencia_pct', h.inadimplencia_pct, 'taxa_renovacao', h.taxa_renovacao,\n    'reajuste_medio', h.reajuste_medio, 'vendas_lojinha', h.vendas_lojinha,\n    'bateu_churn', h.bateu_churn, 'bateu_inadimplencia', h.bateu_inadimplencia,\n    'bateu_renovacao', h.bateu_renovacao, 'bateu_reajuste', h.bateu_reajuste, 'bateu_lojinha', h.bateu_lojinha,\n    'pontos_total', h.pontos_total, 'posicao', h.posicao, 'experiencia_tipo', h.experiencia_tipo\n  ) ORDER BY h.trimestre) INTO v_historico\n  FROM programa_fideliza_historico h JOIN unidades u ON u.id = h.unidade_id\n  WHERE h.ano = p_ano AND (p_unidade_id IS NULL OR h.unidade_id = p_unidade_id);\n\n  SELECT jsonb_agg(jsonb_build_object(\n    'id', e.id, 'tipo', e.tipo, 'nome', e.nome, 'descricao', e.descricao, 'emoji', e.emoji, 'valor_estimado', e.valor_estimado\n  ) ORDER BY e.tipo, e.nome) INTO v_experiencias\n  FROM programa_fideliza_experiencias e WHERE e.ativo = true;\n\n  RETURN jsonb_build_object(\n    'config', v_config, 'trimestre_atual', v_trim_atual,\n    'farmers', COALESCE(v_farmers, '[]'::jsonb), 'penalidades', COALESCE(v_penalidades, '[]'::jsonb),\n    'historico', COALESCE(v_historico, '[]'::jsonb), 'experiencias', COALESCE(v_experiencias, '[]'::jsonb)\n  );\nEND;\n$function$\n"
+    },
+    {
+      "proname": "get_resumo_renovacoes_proximas",
+      "definition": "CREATE OR REPLACE FUNCTION public.get_resumo_renovacoes_proximas(p_unidade_id uuid DEFAULT NULL::uuid)\n RETURNS TABLE(unidade_id uuid, unidade_nome text, total_ativos bigint, sem_data_contrato bigint, vencidos bigint, urgente_7_dias bigint, atencao_15_dias bigint, proximo_30_dias bigint, ok bigint)\n LANGUAGE plpgsql\nAS $function$\nBEGIN\n  RETURN QUERY\n  SELECT \n    rp.unidade_id,\n    rp.unidade_nome::TEXT,\n    COUNT(*)::BIGINT as total_ativos,\n    COUNT(*) FILTER (WHERE rp.status_renovacao = 'sem_data')::BIGINT as sem_data_contrato,\n    COUNT(*) FILTER (WHERE rp.status_renovacao = 'vencido')::BIGINT as vencidos,\n    COUNT(*) FILTER (WHERE rp.status_renovacao = 'urgente_7_dias')::BIGINT as urgente_7_dias,\n    COUNT(*) FILTER (WHERE rp.status_renovacao = 'atencao_15_dias')::BIGINT as atencao_15_dias,\n    COUNT(*) FILTER (WHERE rp.status_renovacao = 'proximo_30_dias')::BIGINT as proximo_30_dias,\n    COUNT(*) FILTER (WHERE rp.status_renovacao = 'ok')::BIGINT as ok\n  FROM vw_renovacoes_proximas rp\n  WHERE (p_unidade_id IS NULL OR rp.unidade_id = p_unidade_id)\n  GROUP BY rp.unidade_id, rp.unidade_nome;\nEND;\n$function$\n"
+    },
+    {
+      "proname": "pode_enviar_pesquisa_evasao",
+      "definition": "CREATE OR REPLACE FUNCTION public.pode_enviar_pesquisa_evasao(p_evasao_id integer)\n RETURNS boolean\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n  v_data_evasao DATE;\n  v_dias_desde_evasao INTEGER;\nBEGIN\n  SELECT data INTO v_data_evasao\n  FROM movimentacoes_admin\n  WHERE id = p_evasao_id;\n  \n  IF v_data_evasao IS NULL THEN\n    RETURN FALSE;\n  END IF;\n  \n  v_dias_desde_evasao := CURRENT_DATE - v_data_evasao;\n  RETURN v_dias_desde_evasao >= 3;\nEND;\n$function$\n"
+    },
+    {
+      "proname": "registrar_penalidade_fideliza",
+      "definition": "CREATE OR REPLACE FUNCTION public.registrar_penalidade_fideliza(p_ano integer, p_trimestre integer, p_unidade_id uuid, p_tipo character varying, p_descricao text, p_pontos integer, p_data_ocorrencia date, p_registrado_por character varying)\n RETURNS jsonb\n LANGUAGE plpgsql\n SECURITY DEFINER\nAS $function$\nDECLARE\n  v_id INTEGER;\nBEGIN\n  INSERT INTO programa_fideliza_penalidades (\n    ano, trimestre, unidade_id, tipo, descricao, pontos_descontados, data_ocorrencia, registrado_por\n  ) VALUES (\n    p_ano, p_trimestre, p_unidade_id, p_tipo, p_descricao, p_pontos, p_data_ocorrencia, p_registrado_por\n  )\n  RETURNING id INTO v_id;\n  \n  RETURN jsonb_build_object('success', true, 'id', v_id);\nEND;\n$function$\n"
+    },
+    {
+      "proname": "salvar_historico_trimestral_fideliza",
+      "definition": "CREATE OR REPLACE FUNCTION public.salvar_historico_trimestral_fideliza(p_ano integer, p_trimestre integer)\n RETURNS jsonb\n LANGUAGE plpgsql\n SECURITY DEFINER\nAS $function$\nDECLARE\n  v_config programa_fideliza_config%ROWTYPE;\nBEGIN\n  SELECT * INTO v_config FROM programa_fideliza_config WHERE ano = p_ano;\n  \n  INSERT INTO programa_fideliza_historico (\n    ano, trimestre, unidade_id, \n    churn_rate, inadimplencia_pct, taxa_renovacao, reajuste_medio, vendas_lojinha,\n    bateu_churn, bateu_inadimplencia, bateu_renovacao, bateu_reajuste, bateu_lojinha,\n    pontos_base, pontos_penalidades, pontos_total\n  )\n  SELECT \n    p_ano,\n    p_trimestre,\n    u.id,\n    COALESCE(AVG(dm.churn_rate), 0),\n    COALESCE(AVG(dm.inadimplencia), 0),\n    COALESCE(AVG(dm.taxa_renovacao), 0),\n    COALESCE(AVG(dm.reajuste_parcelas), 0),\n    0,\n    COALESCE(AVG(dm.churn_rate), 100) <= v_config.meta_churn_maximo,\n    COALESCE(AVG(dm.inadimplencia), 100) <= v_config.meta_inadimplencia_maxima,\n    COALESCE(AVG(dm.taxa_renovacao), 0) >= v_config.meta_renovacao_minima,\n    COALESCE(AVG(dm.reajuste_parcelas), 0) >= v_config.meta_reajuste_minimo,\n    FALSE,\n    (CASE WHEN COALESCE(AVG(dm.churn_rate), 100) <= v_config.meta_churn_maximo THEN v_config.pontos_churn ELSE 0 END) +\n    (CASE WHEN COALESCE(AVG(dm.inadimplencia), 100) <= v_config.meta_inadimplencia_maxima THEN v_config.pontos_inadimplencia ELSE 0 END) +\n    (CASE WHEN COALESCE(AVG(dm.taxa_renovacao), 0) >= v_config.meta_renovacao_minima THEN v_config.pontos_renovacao ELSE 0 END) +\n    (CASE WHEN COALESCE(AVG(dm.reajuste_parcelas), 0) >= v_config.meta_reajuste_minimo THEN v_config.pontos_reajuste ELSE 0 END),\n    COALESCE((SELECT SUM(pontos_descontados) FROM programa_fideliza_penalidades WHERE ano = p_ano AND trimestre = p_trimestre AND unidade_id = u.id), 0),\n    (CASE WHEN COALESCE(AVG(dm.churn_rate), 100) <= v_config.meta_churn_maximo THEN v_config.pontos_churn ELSE 0 END) +\n    (CASE WHEN COALESCE(AVG(dm.inadimplencia), 100) <= v_config.meta_inadimplencia_maxima THEN v_config.pontos_inadimplencia ELSE 0 END) +\n    (CASE WHEN COALESCE(AVG(dm.taxa_renovacao), 0) >= v_config.meta_renovacao_minima THEN v_config.pontos_renovacao ELSE 0 END) +\n    (CASE WHEN COALESCE(AVG(dm.reajuste_parcelas), 0) >= v_config.meta_reajuste_minimo THEN v_config.pontos_reajuste ELSE 0 END) -\n    COALESCE((SELECT SUM(pontos_descontados) FROM programa_fideliza_penalidades WHERE ano = p_ano AND trimestre = p_trimestre AND unidade_id = u.id), 0)\n  FROM unidades u\n  LEFT JOIN dados_mensais dm ON dm.unidade_id = u.id \n    AND dm.ano = p_ano\n    AND dm.mes BETWEEN ((p_trimestre - 1) * 3 + 1) AND (p_trimestre * 3)\n  WHERE u.ativo = true\n  GROUP BY u.id\n  ON CONFLICT (ano, trimestre, unidade_id) \n  DO UPDATE SET\n    churn_rate = EXCLUDED.churn_rate,\n    inadimplencia_pct = EXCLUDED.inadimplencia_pct,\n    taxa_renovacao = EXCLUDED.taxa_renovacao,\n    reajuste_medio = EXCLUDED.reajuste_medio,\n    vendas_lojinha = EXCLUDED.vendas_lojinha,\n    bateu_churn = EXCLUDED.bateu_churn,\n    bateu_inadimplencia = EXCLUDED.bateu_inadimplencia,\n    bateu_renovacao = EXCLUDED.bateu_renovacao,\n    bateu_reajuste = EXCLUDED.bateu_reajuste,\n    bateu_lojinha = EXCLUDED.bateu_lojinha,\n    pontos_base = EXCLUDED.pontos_base,\n    pontos_penalidades = EXCLUDED.pontos_penalidades,\n    pontos_total = EXCLUDED.pontos_total,\n    updated_at = NOW();\n  \n  WITH ranked AS (\n    SELECT id, ROW_NUMBER() OVER (ORDER BY pontos_total DESC, churn_rate ASC) as pos\n    FROM programa_fideliza_historico\n    WHERE ano = p_ano AND trimestre = p_trimestre\n  )\n  UPDATE programa_fideliza_historico h\n  SET posicao = r.pos\n  FROM ranked r\n  WHERE h.id = r.id;\n  \n  UPDATE programa_fideliza_historico\n  SET experiencia_tipo = CASE \n    WHEN bateu_churn AND bateu_inadimplencia AND bateu_renovacao AND bateu_reajuste AND bateu_lojinha THEN 'premium'\n    WHEN (bateu_churn::int + bateu_inadimplencia::int + bateu_renovacao::int + bateu_reajuste::int + bateu_lojinha::int) >= 4 THEN 'standard'\n    ELSE NULL\n  END\n  WHERE ano = p_ano AND trimestre = p_trimestre;\n  \n  RETURN jsonb_build_object('success', true, 'trimestre', p_trimestre);\nEND;\n$function$\n"
+    },
+    {
+      "proname": "stats_pesquisa_evasao",
+      "definition": "CREATE OR REPLACE FUNCTION public.stats_pesquisa_evasao(p_unidade_id uuid, p_ano integer, p_mes integer)\n RETURNS TABLE(total_evadidos bigint, total_com_telefone bigint, total_pendentes bigint, total_enviados bigint, total_respondidos bigint, total_falhas bigint, taxa_resposta numeric, respondidos_texto bigint, respondidos_audio bigint)\n LANGUAGE plpgsql\nAS $function$\nBEGIN\n  RETURN QUERY\n  WITH evadidos_mes AS (\n    SELECT m.*,\n      COALESCE(m.telefone_snapshot, a.whatsapp, a.telefone) AS tel\n    FROM movimentacoes_admin m\n    LEFT JOIN alunos a ON a.id = m.aluno_id\n    WHERE m.tipo IN ('evasao', 'nao_renovacao')\n      AND EXTRACT(YEAR FROM m.data) = p_ano\n      AND EXTRACT(MONTH FROM m.data) = p_mes\n      AND (p_unidade_id IS NULL OR m.unidade_id = p_unidade_id)\n  ),\n  stats AS (\n    SELECT \n      COUNT(*) AS total,\n      COUNT(*) FILTER (WHERE tel IS NOT NULL) AS com_telefone,\n      COUNT(*) FILTER (WHERE pe.status = 'pendente' OR pe.id IS NULL) AS pendentes,\n      COUNT(*) FILTER (WHERE pe.status = 'enviado') AS enviados,\n      COUNT(*) FILTER (WHERE pe.status = 'respondido') AS respondidos,\n      COUNT(*) FILTER (WHERE pe.status IN ('falha_envio', 'sem_whatsapp')) AS falhas,\n      COUNT(*) FILTER (WHERE pe.status = 'respondido' AND pe.resposta_tipo = 'texto') AS resp_texto,\n      COUNT(*) FILTER (WHERE pe.status = 'respondido' AND pe.resposta_tipo = 'audio') AS resp_audio\n    FROM evadidos_mes em\n    LEFT JOIN pesquisa_evasao pe ON pe.evasao_id = em.id\n  )\n  SELECT \n    s.total AS total_evadidos,\n    s.com_telefone AS total_com_telefone,\n    s.pendentes AS total_pendentes,\n    s.enviados AS total_enviados,\n    s.respondidos AS total_respondidos,\n    s.falhas AS total_falhas,\n    CASE \n      WHEN (s.enviados + s.respondidos) > 0 \n      THEN ROUND(s.respondidos::numeric / (s.enviados + s.respondidos) * 100, 1)\n      ELSE 0 \n    END AS taxa_resposta,\n    s.resp_texto AS respondidos_texto,\n    s.resp_audio AS respondidos_audio\n  FROM stats s;\nEND;\n$function$\n"
+    },
+    {
+      "proname": "sync_evasao_to_dados_mensais",
+      "definition": "CREATE OR REPLACE FUNCTION public.sync_evasao_to_dados_mensais()\n RETURNS trigger\n LANGUAGE plpgsql\nAS $function$\nDECLARE\n  v_ano INT; v_mes INT; v_unidade UUID; v_count INT; v_pagantes INT;\nBEGIN\n  IF TG_OP = 'DELETE' THEN\n    IF OLD.tipo NOT IN ('evasao', 'nao_renovacao', 'aviso_previo') THEN RETURN OLD; END IF;\n    v_ano := EXTRACT(YEAR FROM OLD.data); v_mes := EXTRACT(MONTH FROM OLD.data); v_unidade := OLD.unidade_id;\n  ELSE\n    IF NEW.tipo NOT IN ('evasao', 'nao_renovacao', 'aviso_previo') THEN RETURN NEW; END IF;\n    v_ano := EXTRACT(YEAR FROM NEW.data); v_mes := EXTRACT(MONTH FROM NEW.data); v_unidade := NEW.unidade_id;\n  END IF;\n\n  SELECT COUNT(*) INTO v_count FROM movimentacoes_admin\n  WHERE unidade_id = v_unidade AND tipo IN ('evasao', 'nao_renovacao')\n    AND EXTRACT(YEAR FROM data) = v_ano AND EXTRACT(MONTH FROM data) = v_mes;\n\n  SELECT alunos_pagantes INTO v_pagantes FROM dados_mensais\n  WHERE unidade_id = v_unidade\n    AND ((ano = v_ano AND mes = v_mes - 1) OR (ano = v_ano - 1 AND mes = 12 AND v_mes = 1))\n  LIMIT 1;\n\n  UPDATE dados_mensais\n  SET evasoes = v_count,\n      churn_rate = CASE WHEN COALESCE(v_pagantes, 0) > 0 THEN ROUND((v_count::NUMERIC / v_pagantes) * 100, 2) ELSE 0 END,\n      updated_at = NOW()\n  WHERE unidade_id = v_unidade AND ano = v_ano AND mes = v_mes;\n\n  RETURN COALESCE(NEW, OLD);\nEND;\n$function$\n"
+    }
+  ],
+  "views": [
+    {
+      "viewname": "vw_farmer_renovacoes_proximas",
+      "definition": " SELECT a.id AS aluno_id,\n    a.nome AS aluno_nome,\n    COALESCE(a.whatsapp, a.telefone) AS whatsapp,\n    a.unidade_id,\n    a.data_fim_contrato,\n    a.valor_parcela,\n    p.id AS professor_id,\n    p.nome AS professor_nome,\n    c.nome AS instrumento,\n    (a.data_fim_contrato - CURRENT_DATE) AS dias_para_vencer,\n        CASE\n            WHEN (a.data_fim_contrato < CURRENT_DATE) THEN 'vencido'::text\n            WHEN ((a.data_fim_contrato - CURRENT_DATE) <= 7) THEN 'urgente'::text\n            WHEN ((a.data_fim_contrato - CURRENT_DATE) <= 15) THEN 'atencao'::text\n            ELSE 'normal'::text\n        END AS urgencia\n   FROM ((alunos a\n     LEFT JOIN professores p ON ((a.professor_atual_id = p.id)))\n     LEFT JOIN cursos c ON ((a.curso_id = c.id)))\n  WHERE ((a.data_fim_contrato IS NOT NULL) AND (a.data_fim_contrato <= (CURRENT_DATE + '30 days'::interval)) AND ((a.status)::text = 'ativo'::text));"
+    },
+    {
+      "viewname": "vw_kpis_gestao_mensal",
+      "definition": " WITH matriculas_mes AS (\n         SELECT a.unidade_id,\n            (EXTRACT(year FROM a.data_matricula))::integer AS ano,\n            (EXTRACT(month FROM a.data_matricula))::integer AS mes,\n            count(*) AS novas_matriculas\n           FROM ((alunos a\n             LEFT JOIN tipos_matricula tm ON ((tm.id = a.tipo_matricula_id)))\n             LEFT JOIN cursos c ON ((c.id = a.curso_id)))\n          WHERE ((a.data_matricula IS NOT NULL) AND ((a.is_segundo_curso IS NULL) OR (a.is_segundo_curso = false)) AND ((c.is_projeto_banda IS NULL) OR (c.is_projeto_banda = false)) AND ((c.nome IS NULL) OR ((c.nome)::text !~~* '%canto coral%'::text)) AND ((tm.codigo IS NULL) OR ((tm.codigo)::text <> ALL (ARRAY[('BOLSISTA_INT'::character varying)::text, ('BOLSISTA_PARC'::character varying)::text]))))\n          GROUP BY a.unidade_id, (EXTRACT(year FROM a.data_matricula)), (EXTRACT(month FROM a.data_matricula))\n        ), alunos_ticket AS (\n         SELECT a.unidade_id,\n            ((((lower(TRIM(BOTH FROM a.nome)) || '-'::text) || COALESCE((a.data_nascimento)::text, ''::text)) || '-'::text) || a.unidade_id) AS chave_aluno,\n            sum(a.valor_parcela) AS valor_total\n           FROM (alunos a\n             LEFT JOIN tipos_matricula tm ON ((tm.id = a.tipo_matricula_id)))\n          WHERE (((a.status)::text = ANY (ARRAY[('ativo'::character varying)::text, ('trancado'::character varying)::text])) AND (tm.entra_ticket_medio = true) AND (a.valor_parcela > (0)::numeric))\n          GROUP BY a.unidade_id, ((((lower(TRIM(BOTH FROM a.nome)) || '-'::text) || COALESCE((a.data_nascimento)::text, ''::text)) || '-'::text) || a.unidade_id)\n        ), ticket_por_unidade AS (\n         SELECT alunos_ticket.unidade_id,\n            count(*) AS total_alunos_ticket,\n            sum(alunos_ticket.valor_total) AS soma_parcelas,\n            avg(alunos_ticket.valor_total) AS ticket_medio_calculado\n           FROM alunos_ticket\n          GROUP BY alunos_ticket.unidade_id\n        ), alunos_mes AS (\n         SELECT a.unidade_id,\n            (EXTRACT(year FROM CURRENT_DATE))::integer AS ano,\n            (EXTRACT(month FROM CURRENT_DATE))::integer AS mes,\n            count(*) FILTER (WHERE ((a.is_segundo_curso IS NULL) OR (a.is_segundo_curso = false))) AS total_alunos,\n            count(*) FILTER (WHERE ((tm.conta_como_pagante = true) AND ((a.is_segundo_curso IS NULL) OR (a.is_segundo_curso = false)))) AS alunos_pagantes,\n            count(*) FILTER (WHERE (((tm.codigo)::text = 'BOLSISTA_INT'::text) AND ((a.is_segundo_curso IS NULL) OR (a.is_segundo_curso = false)))) AS bolsistas_integrais,\n            count(*) FILTER (WHERE (((tm.codigo)::text = 'BOLSISTA_PARC'::text) AND ((a.is_segundo_curso IS NULL) OR (a.is_segundo_curso = false)))) AS bolsistas_parciais,\n            count(*) FILTER (WHERE (((c.nome)::text ~~* '%banda%'::text) OR ((c.nome)::text ~~* '%power kids%'::text))) AS total_banda,\n            count(*) FILTER (WHERE (a.is_segundo_curso = true)) AS segundo_curso,\n            sum(a.valor_parcela) FILTER (WHERE ((tm.conta_como_pagante = true) AND ((COALESCE(a.status_pagamento, ''::character varying))::text <> 'sem_parcela'::text))) AS mrr,\n            count(*) FILTER (WHERE (((a.status_pagamento)::text = 'inadimplente'::text) AND (tm.conta_como_pagante = true) AND ((a.is_segundo_curso IS NULL) OR (a.is_segundo_curso = false)))) AS qtd_inadimplentes,\n            COALESCE(sum(a.valor_parcela) FILTER (WHERE (((a.status_pagamento)::text = 'inadimplente'::text) AND (tm.conta_como_pagante = true) AND ((COALESCE(a.status_pagamento, ''::character varying))::text <> 'sem_parcela'::text))), (0)::numeric) AS mrr_inadimplente\n           FROM ((alunos a\n             LEFT JOIN tipos_matricula tm ON ((tm.id = a.tipo_matricula_id)))\n             LEFT JOIN cursos c ON ((c.id = a.curso_id)))\n          WHERE ((a.status)::text = ANY (ARRAY[('ativo'::character varying)::text, ('trancado'::character varying)::text]))\n          GROUP BY a.unidade_id\n        ), permanencia_combinada AS (\n         SELECT alunos_historico.unidade_id,\n            alunos_historico.tempo_permanencia_meses AS meses\n           FROM alunos_historico\n          WHERE (alunos_historico.tempo_permanencia_meses >= (4)::numeric)\n        UNION ALL\n         SELECT a.unidade_id,\n            a.tempo_permanencia_meses\n           FROM (alunos a\n             LEFT JOIN tipos_matricula tm ON ((tm.id = a.tipo_matricula_id)))\n          WHERE (((a.status)::text = ANY (ARRAY[('inativo'::character varying)::text, ('evadido'::character varying)::text])) AND (a.tempo_permanencia_meses >= 4) AND ((tm.codigo IS NULL) OR ((tm.codigo)::text <> ALL (ARRAY[('BOLSISTA_INT'::character varying)::text, ('BOLSISTA_PARC'::character varying)::text, ('BANDA'::character varying)::text]))) AND ((a.is_segundo_curso IS NULL) OR (a.is_segundo_curso = false)))\n        ), permanencia_calc AS (\n         SELECT permanencia_combinada.unidade_id,\n            round(avg(permanencia_combinada.meses), 1) AS tempo_permanencia_medio,\n            count(*) AS total_evasoes_calc\n           FROM permanencia_combinada\n          GROUP BY permanencia_combinada.unidade_id\n        ), evasoes_dedup AS (\n         SELECT DISTINCT ON ((lower(TRIM(BOTH FROM m.aluno_nome))), m.unidade_id, (EXTRACT(year FROM m.data)), (EXTRACT(month FROM m.data))) m.id,\n            m.aluno_id,\n            m.unidade_id,\n            m.data AS data_evasao,\n            m.tipo,\n            COALESCE(m.valor_parcela_evasao, m.valor_parcela_anterior) AS valor_parcela\n           FROM movimentacoes_admin m\n          WHERE ((m.tipo)::text = ANY (ARRAY[('evasao'::character varying)::text, ('nao_renovacao'::character varying)::text]))\n          ORDER BY (lower(TRIM(BOTH FROM m.aluno_nome))), m.unidade_id, (EXTRACT(year FROM m.data)), (EXTRACT(month FROM m.data)), m.aluno_id DESC NULLS LAST, m.data DESC\n        ), evasoes_mes AS (\n         SELECT evasoes_dedup.unidade_id,\n            (EXTRACT(year FROM evasoes_dedup.data_evasao))::integer AS ano,\n            (EXTRACT(month FROM evasoes_dedup.data_evasao))::integer AS mes,\n            count(*) AS total_evasoes\n           FROM evasoes_dedup\n          GROUP BY evasoes_dedup.unidade_id, (EXTRACT(year FROM evasoes_dedup.data_evasao)), (EXTRACT(month FROM evasoes_dedup.data_evasao))\n        ), leads_mes AS (\n         SELECT l.unidade_id,\n            (EXTRACT(year FROM l.data_contato))::integer AS ano,\n            (EXTRACT(month FROM l.data_contato))::integer AS mes,\n            sum(\n                CASE\n                    WHEN ((l.status)::text = ANY (ARRAY[('novo'::character varying)::text, ('agendado'::character varying)::text])) THEN COALESCE(l.quantidade, 1)\n                    ELSE 0\n                END) AS total_leads,\n            sum(\n                CASE\n                    WHEN ((l.status)::text = 'experimental_agendada'::text) THEN COALESCE(l.quantidade, 1)\n                    ELSE 0\n                END) AS experimentais_agendadas,\n            sum(\n                CASE\n                    WHEN ((l.status)::text = ANY (ARRAY[('experimental_realizada'::character varying)::text, ('compareceu'::character varying)::text])) THEN COALESCE(l.quantidade, 1)\n                    ELSE 0\n                END) AS experimentais_realizadas,\n            sum(\n                CASE\n                    WHEN ((l.status)::text = 'experimental_faltou'::text) THEN COALESCE(l.quantidade, 1)\n                    ELSE 0\n                END) AS faltaram,\n            sum(\n                CASE\n                    WHEN (l.arquivado = true) THEN COALESCE(l.quantidade, 1)\n                    ELSE 0\n                END) AS leads_arquivados\n           FROM leads l\n          GROUP BY l.unidade_id, (EXTRACT(year FROM l.data_contato)), (EXTRACT(month FROM l.data_contato))\n        ), renovacoes_mes AS (\n         SELECT r.unidade_id,\n            (EXTRACT(year FROM r.data_renovacao))::integer AS ano,\n            (EXTRACT(month FROM r.data_renovacao))::integer AS mes,\n            count(*) FILTER (WHERE ((r.status)::text = 'renovado'::text)) AS renovacoes,\n            count(*) AS total_contratos,\n            avg(r.percentual_reajuste) FILTER (WHERE ((r.status)::text = 'renovado'::text)) AS reajuste_medio\n           FROM renovacoes r\n          GROUP BY r.unidade_id, (EXTRACT(year FROM r.data_renovacao)), (EXTRACT(month FROM r.data_renovacao))\n        )\n SELECT u.id AS unidade_id,\n    u.nome AS unidade_nome,\n    COALESCE(lm.ano, am.ano, (EXTRACT(year FROM CURRENT_DATE))::integer) AS ano,\n    COALESCE(lm.mes, am.mes, (EXTRACT(month FROM CURRENT_DATE))::integer) AS mes,\n    (COALESCE(am.total_alunos, (0)::bigint))::integer AS total_alunos_ativos,\n    (COALESCE(am.alunos_pagantes, (0)::bigint))::integer AS total_alunos_pagantes,\n    (COALESCE(am.bolsistas_integrais, (0)::bigint))::integer AS total_bolsistas_integrais,\n    (COALESCE(am.bolsistas_parciais, (0)::bigint))::integer AS total_bolsistas_parciais,\n    (COALESCE(am.total_banda, (0)::bigint))::integer AS total_banda,\n    (COALESCE(am.segundo_curso, (0)::bigint))::integer AS total_segundo_curso,\n    (COALESCE(tpu.ticket_medio_calculado, (0)::numeric))::numeric(10,2) AS ticket_medio,\n    (COALESCE(am.mrr, (0)::numeric))::numeric(12,2) AS mrr,\n    ((COALESCE(am.mrr, (0)::numeric) * (12)::numeric))::numeric(14,2) AS arr,\n    (COALESCE(pc.tempo_permanencia_medio, (0)::numeric))::numeric(5,1) AS tempo_permanencia_medio,\n    ((COALESCE(tpu.ticket_medio_calculado, (0)::numeric) * COALESCE(pc.tempo_permanencia_medio, (0)::numeric)))::numeric(12,2) AS ltv_medio,\n    (\n        CASE\n            WHEN (COALESCE(am.alunos_pagantes, (0)::bigint) > 0) THEN round((((COALESCE(am.qtd_inadimplentes, (0)::bigint))::numeric / (am.alunos_pagantes)::numeric) * (100)::numeric), 2)\n            ELSE (0)::numeric\n        END)::numeric(5,2) AS inadimplencia_pct,\n    (COALESCE(am.mrr, (0)::numeric))::numeric(12,2) AS faturamento_previsto,\n    ((COALESCE(am.mrr, (0)::numeric) - COALESCE(am.mrr_inadimplente, (0)::numeric)))::numeric(12,2) AS faturamento_realizado,\n    (COALESCE(lm.total_leads, (0)::bigint))::integer AS total_leads,\n    (COALESCE(lm.experimentais_agendadas, (0)::bigint))::integer AS experimentais_agendadas,\n    (COALESCE(lm.experimentais_realizadas, (0)::bigint))::integer AS experimentais_realizadas,\n    (COALESCE(mm.novas_matriculas, (0)::bigint))::integer AS novas_matriculas,\n    (COALESCE(em.total_evasoes, (0)::bigint))::integer AS total_evasoes,\n    (\n        CASE\n            WHEN (COALESCE(am.alunos_pagantes, (0)::bigint) > 0) THEN round((((COALESCE(em.total_evasoes, (0)::bigint))::numeric / (am.alunos_pagantes)::numeric) * (100)::numeric), 2)\n            ELSE (0)::numeric\n        END)::numeric(5,2) AS churn_rate,\n    (COALESCE(rm.renovacoes, (0)::bigint))::integer AS renovacoes,\n    (\n        CASE\n            WHEN (COALESCE(rm.total_contratos, (0)::bigint) > 0) THEN round((((rm.renovacoes)::numeric / (rm.total_contratos)::numeric) * (100)::numeric), 2)\n            ELSE (0)::numeric\n        END)::numeric(5,2) AS taxa_renovacao,\n    (COALESCE(rm.reajuste_medio, (0)::numeric))::numeric(5,2) AS reajuste_medio\n   FROM (((((((unidades u\n     LEFT JOIN leads_mes lm ON ((lm.unidade_id = u.id)))\n     LEFT JOIN alunos_mes am ON ((am.unidade_id = u.id)))\n     LEFT JOIN ticket_por_unidade tpu ON ((tpu.unidade_id = u.id)))\n     LEFT JOIN permanencia_calc pc ON ((pc.unidade_id = u.id)))\n     LEFT JOIN matriculas_mes mm ON (((mm.unidade_id = u.id) AND (mm.ano = COALESCE(lm.ano, am.ano, (EXTRACT(year FROM CURRENT_DATE))::integer)) AND (mm.mes = COALESCE(lm.mes, am.mes, (EXTRACT(month FROM CURRENT_DATE))::integer)))))\n     LEFT JOIN evasoes_mes em ON (((em.unidade_id = u.id) AND (em.ano = COALESCE(lm.ano, am.ano, (EXTRACT(year FROM CURRENT_DATE))::integer)) AND (em.mes = COALESCE(lm.mes, am.mes, (EXTRACT(month FROM CURRENT_DATE))::integer)))))\n     LEFT JOIN renovacoes_mes rm ON (((rm.unidade_id = u.id) AND (rm.ano = COALESCE(lm.ano, am.ano, (EXTRACT(year FROM CURRENT_DATE))::integer)) AND (rm.mes = COALESCE(lm.mes, am.mes, (EXTRACT(month FROM CURRENT_DATE))::integer)))))\n  WHERE (u.ativo = true);"
+    },
+    {
+      "viewname": "vw_kpis_retencao_mensal",
+      "definition": " WITH evasoes_dedup AS (\n         SELECT DISTINCT ON ((lower(TRIM(BOTH FROM m.aluno_nome))), m.unidade_id, (EXTRACT(year FROM m.data)), (EXTRACT(month FROM m.data))) m.id,\n            m.aluno_id,\n            m.aluno_nome,\n            m.unidade_id,\n            m.data AS data_evasao,\n            m.tipo,\n            m.tipo_evasao,\n            COALESCE(m.valor_parcela_evasao, m.valor_parcela_anterior) AS valor_parcela\n           FROM movimentacoes_admin m\n          WHERE ((m.tipo)::text = ANY (ARRAY['evasao'::text, 'nao_renovacao'::text, 'aviso_previo'::text]))\n          ORDER BY (lower(TRIM(BOTH FROM m.aluno_nome))), m.unidade_id, (EXTRACT(year FROM m.data)), (EXTRACT(month FROM m.data)), m.aluno_id DESC NULLS LAST, m.data DESC\n        ), evasoes_mes AS (\n         SELECT e.unidade_id,\n            (EXTRACT(year FROM e.data_evasao))::integer AS ano,\n            (EXTRACT(month FROM e.data_evasao))::integer AS mes,\n            count(*) AS total_evasoes,\n            count(*) FILTER (WHERE ((e.tipo)::text = 'evasao'::text)) AS evasoes_interrompidas,\n            count(*) FILTER (WHERE ((e.tipo)::text = 'aviso_previo'::text)) AS avisos_previos,\n            count(*) FILTER (WHERE ((e.tipo_evasao)::text = 'transferencia'::text)) AS transferencias,\n            count(*) FILTER (WHERE ((e.tipo)::text = 'nao_renovacao'::text)) AS nao_renovacoes_evasao,\n            sum(e.valor_parcela) AS mrr_perdido\n           FROM evasoes_dedup e\n          GROUP BY e.unidade_id, (EXTRACT(year FROM e.data_evasao)), (EXTRACT(month FROM e.data_evasao))\n        ), renovacoes_mes AS (\n         SELECT movimentacoes_admin.unidade_id,\n            (EXTRACT(year FROM movimentacoes_admin.data))::integer AS ano,\n            (EXTRACT(month FROM movimentacoes_admin.data))::integer AS mes,\n            count(*) AS renovacoes_previstas,\n            count(*) AS renovacoes_realizadas,\n            (0)::bigint AS nao_renovacoes_renovacao,\n            (0)::bigint AS renovacoes_pendentes,\n            (0)::bigint AS renovacoes_atrasadas\n           FROM movimentacoes_admin\n          WHERE ((movimentacoes_admin.tipo)::text = 'renovacao'::text)\n          GROUP BY movimentacoes_admin.unidade_id, (EXTRACT(year FROM movimentacoes_admin.data)), (EXTRACT(month FROM movimentacoes_admin.data))\n        ), periodos AS (\n         SELECT DISTINCT evasoes_mes.unidade_id,\n            evasoes_mes.ano,\n            evasoes_mes.mes\n           FROM evasoes_mes\n        UNION\n         SELECT DISTINCT renovacoes_mes.unidade_id,\n            renovacoes_mes.ano,\n            renovacoes_mes.mes\n           FROM renovacoes_mes\n        ), total_alunos AS (\n         SELECT a.unidade_id,\n            count(*) FILTER (WHERE ((tm.conta_como_pagante = true) AND ((a.is_segundo_curso IS NULL) OR (a.is_segundo_curso = false)))) AS total_pagantes\n           FROM (alunos a\n             LEFT JOIN tipos_matricula tm ON ((tm.id = a.tipo_matricula_id)))\n          WHERE ((a.status)::text = ANY (ARRAY['ativo'::text, 'trancado'::text]))\n          GROUP BY a.unidade_id\n        )\n SELECT u.id AS unidade_id,\n    u.nome AS unidade_nome,\n    p.ano,\n    p.mes,\n    (COALESCE(em.total_evasoes, (0)::bigint))::integer AS total_evasoes,\n    (COALESCE(em.evasoes_interrompidas, (0)::bigint))::integer AS evasoes_interrompidas,\n    (COALESCE(em.avisos_previos, (0)::bigint))::integer AS avisos_previos,\n    (COALESCE(em.transferencias, (0)::bigint))::integer AS transferencias,\n        CASE\n            WHEN (COALESCE(ta.total_pagantes, (0)::bigint) > 0) THEN (((((COALESCE(em.total_evasoes, (0)::bigint) - COALESCE(em.transferencias, (0)::bigint)))::numeric / (ta.total_pagantes)::numeric) * (100)::numeric))::numeric(5,2)\n            ELSE (0)::numeric\n        END AS taxa_evasao,\n    (COALESCE(em.mrr_perdido, (0)::numeric))::numeric(12,2) AS mrr_perdido,\n    (COALESCE(rm.renovacoes_previstas, (0)::bigint))::integer AS renovacoes_previstas,\n    (COALESCE(rm.renovacoes_realizadas, (0)::bigint))::integer AS renovacoes_realizadas,\n    (GREATEST(COALESCE(em.nao_renovacoes_evasao, (0)::bigint), COALESCE(rm.nao_renovacoes_renovacao, (0)::bigint)))::integer AS nao_renovacoes,\n    (COALESCE(rm.renovacoes_pendentes, (0)::bigint))::integer AS renovacoes_pendentes,\n    (COALESCE(rm.renovacoes_atrasadas, (0)::bigint))::integer AS renovacoes_atrasadas,\n        CASE\n            WHEN (COALESCE(rm.renovacoes_previstas, (0)::bigint) > 0) THEN ((((rm.renovacoes_realizadas)::numeric / (rm.renovacoes_previstas)::numeric) * (100)::numeric))::numeric(5,2)\n            ELSE (0)::numeric\n        END AS taxa_renovacao,\n        CASE\n            WHEN (COALESCE(rm.renovacoes_previstas, (0)::bigint) > 0) THEN ((((COALESCE(rm.nao_renovacoes_renovacao, (0)::bigint))::numeric / (rm.renovacoes_previstas)::numeric) * (100)::numeric))::numeric(5,2)\n            ELSE (0)::numeric\n        END AS taxa_nao_renovacao\n   FROM ((((unidades u\n     JOIN periodos p ON ((p.unidade_id = u.id)))\n     LEFT JOIN evasoes_mes em ON (((em.unidade_id = u.id) AND (em.ano = p.ano) AND (em.mes = p.mes))))\n     LEFT JOIN renovacoes_mes rm ON (((rm.unidade_id = u.id) AND (rm.ano = p.ano) AND (rm.mes = p.mes))))\n     LEFT JOIN total_alunos ta ON ((ta.unidade_id = u.id)))\n  WHERE (u.ativo = true);"
+    },
+    {
+      "viewname": "vw_ranking_professores_retencao",
+      "definition": " SELECT u.nome AS unidade,\n    p.nome AS professor,\n    count(a.id) AS total_alunos,\n    count(a.id) FILTER (WHERE ((a.status)::text = 'ativo'::text)) AS alunos_ativos,\n    count(a.id) FILTER (WHERE (a.is_ex_aluno = true)) AS alunos_perdidos,\n    round(avg(a.tempo_permanencia_meses), 1) AS tempo_medio_permanencia,\n    round(avg(a.percentual_presenca), 1) AS presenca_media,\n    round(avg(a.valor_parcela) FILTER (WHERE ((a.status)::text = 'ativo'::text)), 2) AS ticket_medio\n   FROM ((professores p\n     JOIN alunos a ON ((p.id = a.professor_atual_id)))\n     JOIN unidades u ON ((a.unidade_id = u.id)))\n  GROUP BY u.nome, p.nome\n HAVING (count(a.id) >= 3)\n  ORDER BY u.nome, (round(avg(a.tempo_permanencia_meses), 1)) DESC;"
+    },
+    {
+      "viewname": "vw_renovacoes_mensal",
+      "definition": " SELECT u.nome AS unidade,\n    (EXTRACT(year FROM r.data_renovacao))::integer AS ano,\n    (EXTRACT(month FROM r.data_renovacao))::integer AS mes,\n    to_char((r.data_renovacao)::timestamp with time zone, 'YYYY-MM'::text) AS ano_mes,\n    count(*) FILTER (WHERE ((r.status)::text = 'renovado'::text)) AS renovacoes,\n    count(*) FILTER (WHERE ((r.status)::text = 'nao_renovou'::text)) AS nao_renovacoes,\n    count(*) FILTER (WHERE ((r.status)::text = 'pendente'::text)) AS pendentes,\n    count(*) FILTER (WHERE ((r.status)::text = 'negociando'::text)) AS negociando,\n    round(avg(r.percentual_reajuste) FILTER (WHERE ((r.status)::text = 'renovado'::text)), 2) AS reajuste_medio,\n    round(((100.0 * (count(*) FILTER (WHERE ((r.status)::text = 'renovado'::text)))::numeric) / (NULLIF(count(*), 0))::numeric), 1) AS taxa_renovacao\n   FROM (renovacoes r\n     JOIN unidades u ON ((r.unidade_id = u.id)))\n  GROUP BY u.nome, ((EXTRACT(year FROM r.data_renovacao))::integer), ((EXTRACT(month FROM r.data_renovacao))::integer), (to_char((r.data_renovacao)::timestamp with time zone, 'YYYY-MM'::text))\n  ORDER BY (to_char((r.data_renovacao)::timestamp with time zone, 'YYYY-MM'::text)) DESC, u.nome;"
+    },
+    {
+      "viewname": "vw_renovacoes_pendentes",
+      "definition": " SELECT a.unidade_id,\n    u.nome AS unidade_nome,\n    (date_trunc('month'::text, (a.data_fim_contrato)::timestamp with time zone))::date AS mes_vencimento,\n    count(*) AS total_vencendo,\n    count(*) FILTER (WHERE ((r.status)::text = 'realizada'::text)) AS renovadas,\n    count(*) FILTER (WHERE ((r.status)::text = 'nao_renovada'::text)) AS nao_renovadas,\n    count(*) FILTER (WHERE ((r.id IS NULL) AND (a.data_fim_contrato >= CURRENT_DATE))) AS pendentes,\n    count(*) FILTER (WHERE ((r.id IS NULL) AND (a.data_fim_contrato < CURRENT_DATE))) AS atrasadas\n   FROM ((alunos a\n     LEFT JOIN unidades u ON ((a.unidade_id = u.id)))\n     LEFT JOIN renovacoes r ON ((a.id = r.aluno_id)))\n  WHERE (((a.status)::text = 'ativo'::text) AND (a.data_fim_contrato >= (CURRENT_DATE - '60 days'::interval)) AND (a.data_fim_contrato <= (CURRENT_DATE + '60 days'::interval)))\n  GROUP BY a.unidade_id, u.nome, (date_trunc('month'::text, (a.data_fim_contrato)::timestamp with time zone))\n  ORDER BY ((date_trunc('month'::text, (a.data_fim_contrato)::timestamp with time zone))::date);"
+    },
+    {
+      "viewname": "vw_renovacoes_proximas",
+      "definition": " SELECT a.id AS aluno_id,\n    a.nome AS aluno_nome,\n    a.unidade_id,\n    u.nome AS unidade_nome,\n    a.professor_atual_id,\n    p.nome AS professor_nome,\n    c.nome AS curso_nome,\n    a.valor_parcela,\n    a.data_inicio_contrato,\n    a.data_fim_contrato,\n    a.tempo_permanencia_meses,\n    a.classificacao,\n    a.telefone,\n    a.whatsapp,\n    a.email,\n        CASE\n            WHEN (a.data_fim_contrato IS NOT NULL) THEN (a.data_fim_contrato - CURRENT_DATE)\n            ELSE NULL::integer\n        END AS dias_ate_vencimento,\n        CASE\n            WHEN (a.data_fim_contrato IS NULL) THEN 'sem_data'::text\n            WHEN (a.data_fim_contrato < CURRENT_DATE) THEN 'vencido'::text\n            WHEN (a.data_fim_contrato <= (CURRENT_DATE + '7 days'::interval)) THEN 'urgente_7_dias'::text\n            WHEN (a.data_fim_contrato <= (CURRENT_DATE + '15 days'::interval)) THEN 'atencao_15_dias'::text\n            WHEN (a.data_fim_contrato <= (CURRENT_DATE + '30 days'::interval)) THEN 'proximo_30_dias'::text\n            ELSE 'ok'::text\n        END AS status_renovacao\n   FROM (((alunos a\n     LEFT JOIN unidades u ON ((a.unidade_id = u.id)))\n     LEFT JOIN professores p ON ((a.professor_atual_id = p.id)))\n     LEFT JOIN cursos c ON ((a.curso_id = c.id)))\n  WHERE ((a.status)::text = 'ativo'::text);"
+    }
+  ],
+  "counts_safe": [
+    {
+      "table_name": "dados_mensais"
+    },
+    {
+      "table_name": "evasoes_v2"
+    },
+    {
+      "table_name": "movimentacoes_admin"
+    },
+    {
+      "table_name": "renovacoes"
+    }
+  ]
+}
