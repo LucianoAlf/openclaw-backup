@@ -83,3 +83,11 @@ Desde março 2026, busca semântica não precisa de chave externa. A OpenAI conf
 ## 2026-06-01 — Sol precisa auditar inconsistências, não só responder consulta
 
 Auditoria CG/Maio provou que números oficiais da equipe podem estar contaminados por duplicidade, bolsista/professor marcado como pagante, faturas removidas, aluno novo com passaporte e pagamento no mês seguinte, curso divergente e aluno ativo sem frequência/pagamento. Alf perdeu tempo de CEO fazendo auditoria manual. Regra: projetos da Sol/LA Report devem priorizar cruzamento automático de Emusys + LA Report + faturas + presença + tipo de matrícula, gerando alertas nominais para equipe corrigir. Não confiar cegamente em `valor_parcela`, `conta_como_pagante` ou número informado por equipe.
+
+## 2026-06-01 — Não responder picotado quando o Alf está agrupando contexto
+
+Quando Alf enviar sequência de prints, SQLs, relatórios ou trechos para análise, não responder cada fragmento isolado. Aguardar o bloco, integrar do começo ao fim e responder consolidado. Se parecer que ainda vem mais coisa, avisar curto: “vou juntar tudo e responder em bloco”. Para prompts ao Windsurf/Cascade/Claude Code ou mensagens que o Alf precisa encaminhar, entregar uma única mensagem limpa e copiável. Separar sempre o destinatário: prompt técnico para ferramenta/dev não deve misturar justificativa operacional para ADMs/equipe.
+
+## 2026-06-01 — Nomes corretos: LA Report e Cascade
+
+Correção do Alf: não chamar o sistema de “LAHQ” neste contexto. O sistema correto é **LA Report**. O agente/dev no Windsurf é **Cascade**, não “Mutsaf”. Ao preparar mensagem técnica sobre investigação de aluno/ticket/migração financeira, endereçar para o Cascade do Windsurf e citar LA Report.

@@ -90,3 +90,25 @@ Manter como aprendizado de projeto por enquanto. Se aparecer de novo em PRD, pit
 - Source: user_correction + memory/sessions/2026-05-31.md
 - Tags: la-organizer, tom, colaboradores, governanca, produto
 ---
+
+## [LRN-20260601-001] workflow
+
+**Logged**: 2026-06-01T06:30:00Z
+**Priority**: high
+**Status**: promoted
+**Area**: communication-handoff
+
+### Summary
+Quando Alf envia prints/trechos em sequência ou pede prompt para Windsurf/Cascade/terceiros, Alfredo deve esperar o bloco, consolidar em uma mensagem única e separar destinatários.
+
+### Details
+Três feedbacks de 2026-05-31 apontaram o mesmo padrão: respostas picotadas atrapalham quando Alf precisa juntar contexto ou encaminhar instrução. Em auditorias e prompts técnicos, não misturar comunicação para ADMs/equipe com prompt para Cascade/Windsurf. Se ainda estiver chegando contexto, aguardar ou avisar curto que vai responder em bloco.
+
+### Suggested Action
+Promovido em 2026-06-01 para `memory/context/lessons.md`: consolidar mensagens encaminháveis e separar público operacional vs técnico.
+
+### Metadata
+- Source: memory/feedback/2026-05-31-*.md + sessão/auditoria LA Report
+- Tags: comunicacao, handoff, windsurf, cascade, prints, contexto, mensagem-unica
+---
+
