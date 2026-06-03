@@ -78,4 +78,13 @@ Em canais externos como WhatsApp/Chatwoot, o bridge da Sol não pode ser cérebr
 No contexto de KPIs da LA Music, **Evasão** é o guarda-chuva de saída realizada do aluno: **cliente que interrompeu/cancelou no meio do contrato + cliente que não renovou ao fim do contrato**. Definições: `interrompido/evasão interrompida` = cancelou no meio do contrato; `não renovação` = não quis renovar e seguir com as aulas; `evasão/total de evasões/churn` = interrompido + não renovação. `Aviso prévio` não é evasão realizada: é sinalização/risco e deve aparecer separado até virar saída efetiva.
 
 *Adicione decisões conforme forem sendo tomadas.*
-*Última atualização: 2026-05-31*
+*Última atualização: 2026-06-02*
+
+### LA Report: mês fechado é snapshot histórico, não recálculo vivo (02/06/2026)
+Para KPIs mensais da LA Music, `dados_mensais` representa fechamento histórico. Mês fechado não deve ser recalculado a partir de tabela viva (`alunos.status`, cadastros atuais, funções antigas ou cron legado) sem processo formal. Retificação histórica só pode ocorrer com motivo, fonte confiável, diff, audit log, solicitante/aprovador, rollback, transação, trava de exatamente 1 linha/escopo e aprovação explícita do Alf.
+
+### LA Report/Sol: métricas por pessoa vs matrícula são domínios diferentes (02/06/2026)
+`alunos_ativos` e `alunos_pagantes` são métricas por pessoa/aluno deduplicado. `matriculas_ativas`, `matriculas_banda` e `matriculas_2_curso` são métricas por linha/matrícula. Banda/projeto (`cursos.is_projeto_banda=true` / tipo `5 BANDA`) não é segundo curso financeiro. Aluno com curso pagante + banda conta como 1 pagante pelo curso pago; banda não conta ticket/pagante.
+
+### LA Report/Sol: Alf valida regra de negócio; sistemas são evidências (02/06/2026)
+Supabase, LA Report, Emusys, CSVs, prints, frontend e Cascade/Windsurf são evidências a cruzar. Em divergência de regra de negócio, Alf é a fonte final. Antes de migration/backfill/RPC em produção: auditoria SELECT-only, diff nominal, bloqueio de nomes hardcoded e aprovação explícita.

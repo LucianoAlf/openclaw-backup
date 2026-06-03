@@ -112,3 +112,24 @@ Promovido em 2026-06-01 para `memory/context/lessons.md`: consolidar mensagens e
 - Tags: comunicacao, handoff, windsurf, cascade, prints, contexto, mensagem-unica
 ---
 
+
+## [LRN-20260602-001] workflow
+
+**Logged**: 2026-06-02T06:30:00Z
+**Priority**: high
+**Status**: promoted
+**Area**: la-report-kpi-governance
+
+### Summary
+LA Report não pode recalcular mês fechado com tabela viva; fechamento mensal é snapshot histórico/forense e retificação exige controle explícito.
+
+### Details
+Auditoria CG/Maio mostrou que cron legado sobrescreveu `dados_mensais` usando estado atual/cadastro vivo, contaminando histórico. A restauração correta veio do `audit_log`/old_record, com retificação escopada, transação, exatamente 1 linha afetada, registro de auditoria, rollback e preservação financeira. Também ficou consolidado que métricas de alunos ativos/pagantes são por pessoa, enquanto matrículas/banda/segundo curso são por linha, e banda/projeto não é segundo curso financeiro.
+
+### Suggested Action
+Promovido em 2026-06-02 para `memory/context/decisions.md` e `memory/context/lessons.md`: governança permanente de snapshot histórico, retificação controlada e separação pessoa vs matrícula no LA Report/Sol.
+
+### Metadata
+- Source: memory/2026-06-01.md + memory/2026-06-02.md + Dreaming 2026-06-02
+- Tags: la-report, sol, dados-mensais, snapshot, kpi, retificacao, cascade, windsurf
+---

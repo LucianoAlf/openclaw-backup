@@ -91,3 +91,11 @@ Quando Alf enviar sequência de prints, SQLs, relatórios ou trechos para análi
 ## 2026-06-01 — Nomes corretos: LA Report e Cascade
 
 Correção do Alf: não chamar o sistema de “LAHQ” neste contexto. O sistema correto é **LA Report**. O agente/dev no Windsurf é **Cascade**, não “Mutsaf”. Ao preparar mensagem técnica sobre investigação de aluno/ticket/migração financeira, endereçar para o Cascade do Windsurf e citar LA Report.
+
+## 2026-06-02 — LA Report: não recalcular histórico com cadastro vivo
+
+Não repetir o erro arquitetural que contaminou CG/Maio: mês fechado é fotografia histórica, não espelho do cadastro atual. Cron/função que recalcula `dados_mensais` com `alunos.status` vivo pode mudar números passados quando alunos são ajustados depois. Para restaurar mês fechado, usar fonte forense confiável (`audit_log`/snapshot anterior), retificação controlada, rollback e auditoria nominal. Não rodar backfill ou Barra/Recreio antes de fechar uma unidade/mês com SELECT-only.
+
+## 2026-06-02 — LA Report: separar pessoa, matrícula, banda e segundo curso
+
+Não misturar domínios: alunos ativos/pagantes são pessoas; matrículas/banda/segundo curso são linhas. Banda/projeto não é segundo curso financeiro. `valor_parcela > 0` não pode ser filtro global de pagante, porque há passaporte, mensalidade futura, fatura movida e bugs de sincronização; `conta_como_pagante=true` também exige classificação correta de bolsista/professor/estagiário/permuta. Duplicidades e sujeiras devem virar alertas nominais, não hardcode por nome.
