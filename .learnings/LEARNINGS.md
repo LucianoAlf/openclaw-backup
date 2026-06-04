@@ -133,3 +133,25 @@ Promovido em 2026-06-02 para `memory/context/decisions.md` e `memory/context/les
 - Source: memory/2026-06-01.md + memory/2026-06-02.md + Dreaming 2026-06-02
 - Tags: la-report, sol, dados-mensais, snapshot, kpi, retificacao, cascade, windsurf
 ---
+
+## [LRN-20260603-001] workflow
+
+**Logged**: 2026-06-03T06:30:00Z
+**Priority**: high
+**Status**: promoted
+**Area**: la-report-financial-competence
+
+### Summary
+LA Report/Sol precisa separar ativo operacional, pagante contratual e pagante financeiro da competência antes de migrar MRR/ticket/faturamento.
+
+### Details
+Auditorias CG/Maio e Junho mostraram que `conta_como_pagante`, `valor_parcela`, faturas Emusys, passaporte, início real, bolsistas/permutas/professores/estagiários e alunos com pagamento adiado podem divergir. Um aluno pode estar ativo e contratualmente pagante, mas não compor o financeiro daquela competência; também pode haver fatura paga mesmo com `valor_parcela` zerado no LA Report. Financeiro não deve virar migration/backfill enquanto houver lista nominal sem classificação.
+
+### Suggested Action
+Promovido em 2026-06-03 para `memory/context/decisions.md` e `memory/context/lessons.md`: separar KPIs operacionais/contratuais/financeiros e bloquear migration financeira sem reconciliação nominal por competência.
+
+### Metadata
+- Source: memory/2026-05-31.md + memory/2026-06-02.md + Dreaming 2026-06-03
+- Tags: la-report, sol, financeiro, competencia, mrr, ticket-medio, faturas, emusys
+---
+

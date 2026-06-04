@@ -46,6 +46,7 @@ Credenciais/ações:
 - [ ] **Agente financeiro/Rose** — após Mike, preparar agente financeiro para apoiar conversa com Rose; escopo ainda a definir.
 
 ## LA Report / Sol — governança de snapshots mensais (2026-06-02)
+- [ ] Classificar nominalmente pagantes financeiros por competência antes de aprovar MRR/ticket/faturamento: erro de cadastro, tipo_matrícula errado, fatura movida/removida, passaporte/início futuro, cortesia/bolsista/permuta/professor/estagiário ou pagante real.
 - [ ] Revisar próximos entregáveis do Cascade/Windsurf sempre em modo SELECT-only antes de aprovar execution/migration.
 - [ ] Fazer verificação leve dos meses anteriores antes de declarar histórico inteiro fechado.
 - [ ] Auditar Barra/Recreio com SELECT-only antes de qualquer retificação.

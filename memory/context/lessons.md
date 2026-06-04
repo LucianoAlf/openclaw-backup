@@ -99,3 +99,8 @@ Não repetir o erro arquitetural que contaminou CG/Maio: mês fechado é fotogra
 ## 2026-06-02 — LA Report: separar pessoa, matrícula, banda e segundo curso
 
 Não misturar domínios: alunos ativos/pagantes são pessoas; matrículas/banda/segundo curso são linhas. Banda/projeto não é segundo curso financeiro. `valor_parcela > 0` não pode ser filtro global de pagante, porque há passaporte, mensalidade futura, fatura movida e bugs de sincronização; `conta_como_pagante=true` também exige classificação correta de bolsista/professor/estagiário/permuta. Duplicidades e sujeiras devem virar alertas nominais, não hardcode por nome.
+
+
+## 2026-06-03 — LA Report: não transformar sujeira financeira em regra de KPI
+
+Não repetir o erro de tentar resolver MRR/ticket/faturamento só com `valor_parcela > 0` ou `conta_como_pagante=true`. CG/Maio mostrou casos com fatura paga e valor zerado no LA Report, alunos com passaporte/início em junho, faturas removidas/movidas, bolsistas/professores/estagiários/permutas e curso divergente. Regra: separar ativo operacional, pagante contratual e pagante financeiro da competência; financeiro só vira migration/backfill depois de auditoria nominal e classificação caso a caso.

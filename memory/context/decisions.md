@@ -77,8 +77,12 @@ Em canais externos como WhatsApp/Chatwoot, o bridge da Sol não pode ser cérebr
 ### LA Report/Sol: definição canônica de evasão (31/05/2026)
 No contexto de KPIs da LA Music, **Evasão** é o guarda-chuva de saída realizada do aluno: **cliente que interrompeu/cancelou no meio do contrato + cliente que não renovou ao fim do contrato**. Definições: `interrompido/evasão interrompida` = cancelou no meio do contrato; `não renovação` = não quis renovar e seguir com as aulas; `evasão/total de evasões/churn` = interrompido + não renovação. `Aviso prévio` não é evasão realizada: é sinalização/risco e deve aparecer separado até virar saída efetiva.
 
+
+### LA Report/Sol: financeiro por competência não é igual a pagante contratual (03/06/2026)
+Para KPIs financeiros — MRR, ticket médio, faturamento estimado/real, inadimplência por competência — separar três camadas: ativo operacional, pagante contratual e pagante financeiro da competência. `conta_como_pagante=true`, `valor_parcela>0` e existência de fatura isolada não bastam como regra universal. Antes de migration/backfill financeiro: reconciliar nominalmente faturas Emusys/LA Report, passaporte, início real, cobranças movidas/removidas, bolsistas/permutas/professores/estagiários e casos legítimos de cobrança futura. Sem lista nominal fechada, fica SELECT-only.
+
 *Adicione decisões conforme forem sendo tomadas.*
-*Última atualização: 2026-06-02*
+*Última atualização: 2026-06-03*
 
 ### LA Report: mês fechado é snapshot histórico, não recálculo vivo (02/06/2026)
 Para KPIs mensais da LA Music, `dados_mensais` representa fechamento histórico. Mês fechado não deve ser recalculado a partir de tabela viva (`alunos.status`, cadastros atuais, funções antigas ou cron legado) sem processo formal. Retificação histórica só pode ocorrer com motivo, fonte confiável, diff, audit log, solicitante/aprovador, rollback, transação, trava de exatamente 1 linha/escopo e aprovação explícita do Alf.
