@@ -90,7 +90,7 @@ Quando Alf enviar sequência de prints, SQLs, relatórios ou trechos para análi
 
 ## 2026-06-01 — Nomes corretos: LA Report e Cascade
 
-Correção do Alf: não chamar o sistema de “LAHQ” neste contexto. O sistema correto é **LA Report**. O agente/dev no Windsurf é **Cascade**, não “Mutsaf”. Ao preparar mensagem técnica sobre investigação de aluno/ticket/migração financeira, endereçar para o Cascade do Windsurf e citar LA Report.
+Correção do Alf: não chamar o sistema de “LAHQ” neste contexto. O sistema correto é **LA Report**. O agente/dev no Windsurf é **Cascade**, não “Mutsaf”. Ao preparar mensagem técnica sobre investigação de aluno/ticket/migração financeira, endereçar para o Cascade do Windsurf e citar LA Report. Reforço de 2026-06-04: não inventar destinatário/pessoa em prompt encaminhável; Alf corrigiu quando apareceu “Hugo” num prompt que era para Cascade. Se o pedido é Cascade/Windsurf, endereçar só ao Cascade/Windsurf, sem introduzir nome externo não confirmado.
 
 ## 2026-06-02 — LA Report: não recalcular histórico com cadastro vivo
 
@@ -104,3 +104,7 @@ Não misturar domínios: alunos ativos/pagantes são pessoas; matrículas/banda/
 ## 2026-06-03 — LA Report: não transformar sujeira financeira em regra de KPI
 
 Não repetir o erro de tentar resolver MRR/ticket/faturamento só com `valor_parcela > 0` ou `conta_como_pagante=true`. CG/Maio mostrou casos com fatura paga e valor zerado no LA Report, alunos com passaporte/início em junho, faturas removidas/movidas, bolsistas/professores/estagiários/permutas e curso divergente. Regra: separar ativo operacional, pagante contratual e pagante financeiro da competência; financeiro só vira migration/backfill depois de auditoria nominal e classificação caso a caso.
+
+## 2026-06-04 — LA Report: data de lançamento não é data real de evasão
+
+Não repetir o erro de contar tudo que caiu em `movimentacoes_admin` no mês como evasão real do mês. Junho/CG mostrou 22 lançamentos em 01/06, mas validação nominal da Gabi provou que só 5 eram saídas reais de junho; 16 já tinham saído antes, 1 saiu em outro mês e 1 era finalização de segundo curso, não saída da escola. Regra: separar data de lançamento/importação, data real da saída, tipo (`evasao` vs `nao_renovacao`) e competência; finalização de segundo curso não entra como evasão da escola. Para mês corrente em modo tempo real, usar corte operacional `CURRENT_DATE`; `fim_mes` é projeção/fechamento.

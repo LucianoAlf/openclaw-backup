@@ -155,3 +155,45 @@ Promovido em 2026-06-03 para `memory/context/decisions.md` e `memory/context/les
 - Tags: la-report, sol, financeiro, competencia, mrr, ticket-medio, faturas, emusys
 ---
 
+## [LRN-20260604-001] workflow
+
+**Logged**: 2026-06-04T06:30:00Z
+**Priority**: high
+**Status**: promoted
+**Area**: la-report-evasoes-competencia
+
+### Summary
+LA Report/Sol não pode contar evasão pela data em que o registro caiu no sistema; precisa distinguir data de lançamento/importação, data real da saída e natureza da saída.
+
+### Details
+Auditoria Junho/CG mostrou 22 movimentações lançadas em 01/06 como `evasao`. Validação nominal da Gabi mostrou que só 5 eram saídas reais de junho; 16 já tinham saído antes, 1 caiu agora mas saiu em outro mês, e Rayane não saiu da escola — era finalização de segundo curso. Gabi removeu as 22 inválidas; a correção segura exige reinserir/registrar só as 5 reais, classificando 3 evasões e 2 não renovações.
+
+### Suggested Action
+Promovido em 2026-06-04 para `memory/context/decisions.md` e `memory/context/lessons.md`: data de lançamento/importação não define competência de evasão; finalização de segundo curso não é evasão da escola; mês corrente usa corte operacional `CURRENT_DATE` quando o modo for tempo real.
+
+### Metadata
+- Source: memory/.dreams/session-corpus/2026-06-02.txt + DREAMS 2026-06-04 + validação Gabi/Cascade
+- Tags: la-report, sol, evasao, nao-renovacao, competencia, data-real-saida, segundo-curso
+---
+
+## [LRN-20260604-002] correction
+
+**Logged**: 2026-06-04T06:30:00Z
+**Priority**: high
+**Status**: promoted
+**Area**: communication-handoff
+
+### Summary
+Não inventar destinatário/pessoa em prompt encaminhável. Se Alf pede Cascade/Windsurf, endereçar apenas ao Cascade/Windsurf.
+
+### Details
+Alf corrigiu com força quando Alfredo escreveu “Hugo” num texto que deveria ser prompt para Cascade/Windsurf. Esse erro repete a classe já consolidada em 2026-06-01: misturar destinatário e tornar a mensagem não encaminhável. A regra agora fica mais explícita: nunca introduzir nome de pessoa/dev/equipe que não veio do pedido atual ou da fonte confirmada.
+
+### Suggested Action
+Promovido em 2026-06-04 para `memory/context/lessons.md`, reforçando a lição de comunicação/handoff e a regra “LA Report + Cascade”.
+
+### Metadata
+- Source: memory/.dreams/session-corpus/2026-06-02.txt
+- Tags: cascade, windsurf, comunicacao, destinatario, prompt-encaminhavel, erro
+---
+

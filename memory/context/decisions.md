@@ -92,3 +92,6 @@ Para KPIs mensais da LA Music, `dados_mensais` representa fechamento histórico.
 
 ### LA Report/Sol: Alf valida regra de negócio; sistemas são evidências (02/06/2026)
 Supabase, LA Report, Emusys, CSVs, prints, frontend e Cascade/Windsurf são evidências a cruzar. Em divergência de regra de negócio, Alf é a fonte final. Antes de migration/backfill/RPC em produção: auditoria SELECT-only, diff nominal, bloqueio de nomes hardcoded e aprovação explícita.
+
+### LA Report/Sol: evasão depende da data real e da natureza da saída, não da data de lançamento (04/06/2026)
+Movimentação lançada/importada em um mês não significa evasão real daquele mês. Para KPIs de evasão/não renovação, separar: data de lançamento/importação no sistema, data real da saída, tipo de saída e competência do KPI. Baixa antiga, duplicidade, automação Emusys indevida, saída de outro mês e finalização de segundo curso não podem contar como evasão real da escola no mês corrente. Para mês em andamento, modo tempo real usa corte operacional `CURRENT_DATE`; `fim_mes` é projeção/fechamento, não estado vivo.

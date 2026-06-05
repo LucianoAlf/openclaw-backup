@@ -52,3 +52,5 @@ Credenciais/ações:
 - [ ] Auditar Barra/Recreio com SELECT-only antes de qualquer retificação.
 - [ ] Corrigir/documentar bug Kids/School no frontend com regra temporal por competência.
 - [ ] Desenhar Fase 3: snapshot imutável / fechamento mensal assinado para impedir nova contaminação.
+- [ ] Junho/CG: após remoção das 22 movimentações inválidas, validar/reinserir apenas as 5 saídas reais com classificação correta (3 evasões + 2 não renovações), sem ressuscitar baixas antigas nem finalização de segundo curso.
+- [ ] Junho/CG: auditar divergência entre `vw_kpis_gestao_mensal`, `dados_mensais` e cálculo frontend Kids/School antes de declarar painel correto.
