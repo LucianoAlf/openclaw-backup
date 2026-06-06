@@ -1,0 +1,2279 @@
+[
+  {
+    "kind": "table",
+    "name": "admin_conversas",
+    "schema": "public",
+    "comment": "Conversas administrativas com alunos via WhatsApp - uma por aluno por unidade",
+    "total_size": "136 kB",
+    "total_bytes": 139264,
+    "estimated_rows": 2
+  },
+  {
+    "kind": "table",
+    "name": "admin_mensagens",
+    "schema": "public",
+    "comment": "Mensagens das conversas administrativas com alunos",
+    "total_size": "80 kB",
+    "total_bytes": 81920,
+    "estimated_rows": 17
+  },
+  {
+    "kind": "table",
+    "name": "agente_conversas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 1
+  },
+  {
+    "kind": "table",
+    "name": "agente_fila_mensagens",
+    "schema": "public",
+    "comment": null,
+    "total_size": "80 kB",
+    "total_bytes": 81920,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "agentes",
+    "schema": "public",
+    "comment": null,
+    "total_size": "88 kB",
+    "total_bytes": 90112,
+    "estimated_rows": 1
+  },
+  {
+    "kind": "table",
+    "name": "aluno_acoes",
+    "schema": "public",
+    "comment": "Histórico de intervenções realizadas com alunos (ligação, WhatsApp, reunião, etc.)",
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "aluno_contatos",
+    "schema": "public",
+    "comment": null,
+    "total_size": "208 kB",
+    "total_bytes": 212992,
+    "estimated_rows": 640
+  },
+  {
+    "kind": "table",
+    "name": "aluno_feedback_professor",
+    "schema": "public",
+    "comment": "Feedback do professor sobre cada aluno (verde/amarelo/vermelho)",
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "aluno_feedback_sessoes",
+    "schema": "public",
+    "comment": "Sessões de coleta de feedback do professor sobre seus alunos",
+    "total_size": "96 kB",
+    "total_bytes": 98304,
+    "estimated_rows": 1
+  },
+  {
+    "kind": "table",
+    "name": "aluno_metas",
+    "schema": "public",
+    "comment": "Metas individuais definidas para cada aluno",
+    "total_size": "24 kB",
+    "total_bytes": 24576,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "aluno_presenca",
+    "schema": "public",
+    "comment": "Registro de presença dos alunos (tracking via WhatsApp)",
+    "total_size": "9080 kB",
+    "total_bytes": 9297920,
+    "estimated_rows": 30160
+  },
+  {
+    "kind": "table",
+    "name": "alunos",
+    "schema": "public",
+    "comment": null,
+    "total_size": "3040 kB",
+    "total_bytes": 3112960,
+    "estimated_rows": 1505
+  },
+  {
+    "kind": "table",
+    "name": "alunos_arquivados",
+    "schema": "public",
+    "comment": null,
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 18
+  },
+  {
+    "kind": "table",
+    "name": "alunos_health_score_historico",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "alunos_historico",
+    "schema": "public",
+    "comment": "Histórico de ex-alunos para cálculo de LTV (Tempo Médio de Permanência). Só inclui alunos com 4+ meses.",
+    "total_size": "528 kB",
+    "total_bytes": 540672,
+    "estimated_rows": 1421
+  },
+  {
+    "kind": "table",
+    "name": "alunos_turmas",
+    "schema": "public",
+    "comment": "Relacionamento entre alunos e turmas - permite histórico de turmas",
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "anamnese_respostas_perfil",
+    "schema": "public",
+    "comment": "Respostas individuais das 11 perguntas de perfil comportamental. Armazena posição escolhida para auditoria e recálculo.",
+    "total_size": "56 kB",
+    "total_bytes": 57344,
+    "estimated_rows": 22
+  },
+  {
+    "kind": "table",
+    "name": "anamneses",
+    "schema": "public",
+    "comment": "Anamnese do aluno - coleta de perfil pedagógico, saúde, temperamento comportamental. Vinculada a alunos.id (nullable para pré-matrícula).",
+    "total_size": "144 kB",
+    "total_bytes": 147456,
+    "estimated_rows": 2
+  },
+  {
+    "kind": "table",
+    "name": "anotacoes",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "anotacoes_alunos",
+    "schema": "public",
+    "comment": "Anotações e observações sobre alunos",
+    "total_size": "80 kB",
+    "total_bytes": 81920,
+    "estimated_rows": 7
+  },
+  {
+    "kind": "table",
+    "name": "assistente_ia_config",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 1
+  },
+  {
+    "kind": "table",
+    "name": "audit_log",
+    "schema": "public",
+    "comment": null,
+    "total_size": "108 MB",
+    "total_bytes": 113360896,
+    "estimated_rows": 41434
+  },
+  {
+    "kind": "table",
+    "name": "auditoria_acesso",
+    "schema": "public",
+    "comment": "Log de auditoria para ações de acesso e permissões",
+    "total_size": "96 kB",
+    "total_bytes": 98304,
+    "estimated_rows": 3
+  },
+  {
+    "kind": "table",
+    "name": "aulas_emusys",
+    "schema": "public",
+    "comment": "Metadados completos de cada aula importada do Emusys (turma, curso, sala, professor, horários)",
+    "total_size": "10224 kB",
+    "total_bytes": 10469376,
+    "estimated_rows": 26717
+  },
+  {
+    "kind": "table",
+    "name": "automacao_invariantes",
+    "schema": "public",
+    "comment": "Registra violações de invariantes de negócio detectadas nos webhooks Emusys (matrícula em tempo real) ou via cron auditor (lead/experimental/alunos).",
+    "total_size": "384 kB",
+    "total_bytes": 393216,
+    "estimated_rows": 621
+  },
+  {
+    "kind": "table",
+    "name": "automacao_log",
+    "schema": "public",
+    "comment": null,
+    "total_size": "2808 kB",
+    "total_bytes": 2875392,
+    "estimated_rows": 3540
+  },
+  {
+    "kind": "table",
+    "name": "bi_agent_config_lamusic",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 1
+  },
+  {
+    "kind": "table",
+    "name": "bi_ai_query_playbooks",
+    "schema": "public",
+    "comment": null,
+    "total_size": "104 kB",
+    "total_bytes": 106496,
+    "estimated_rows": 19
+  },
+  {
+    "kind": "table",
+    "name": "bi_conversations_lamusic",
+    "schema": "public",
+    "comment": null,
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 16
+  },
+  {
+    "kind": "table",
+    "name": "bi_messages_lamusic",
+    "schema": "public",
+    "comment": null,
+    "total_size": "256 kB",
+    "total_bytes": 262144,
+    "estimated_rows": 63
+  },
+  {
+    "kind": "table",
+    "name": "bi_query_cache_lamusic",
+    "schema": "public",
+    "comment": null,
+    "total_size": "112 kB",
+    "total_bytes": 114688,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "bi_query_templates_lamusic",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 4
+  },
+  {
+    "kind": "table",
+    "name": "campanha_contatos",
+    "schema": "public",
+    "comment": null,
+    "total_size": "608 kB",
+    "total_bytes": 622592,
+    "estimated_rows": 1349
+  },
+  {
+    "kind": "table",
+    "name": "campanhas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 4
+  },
+  {
+    "kind": "table",
+    "name": "campanhas_config",
+    "schema": "public",
+    "comment": null,
+    "total_size": "24 kB",
+    "total_bytes": 24576,
+    "estimated_rows": 1
+  },
+  {
+    "kind": "table",
+    "name": "canais_origem",
+    "schema": "public",
+    "comment": null,
+    "total_size": "56 kB",
+    "total_bytes": 57344,
+    "estimated_rows": 11
+  },
+  {
+    "kind": "table",
+    "name": "catalogo_treinamentos",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 6
+  },
+  {
+    "kind": "table",
+    "name": "colaboradores",
+    "schema": "public",
+    "comment": null,
+    "total_size": "96 kB",
+    "total_bytes": 98304,
+    "estimated_rows": 12
+  },
+  {
+    "kind": "table",
+    "name": "config_health_score",
+    "schema": "public",
+    "comment": "Configuração dos pesos e limites do Health Score do Professor",
+    "total_size": "40 kB",
+    "total_bytes": 40960,
+    "estimated_rows": 1
+  },
+  {
+    "kind": "table",
+    "name": "config_health_score_aluno",
+    "schema": "public",
+    "comment": "Configuração de pesos do Health Score de Alunos - ajustável por unidade",
+    "total_size": "40 kB",
+    "total_bytes": 40960,
+    "estimated_rows": 1
+  },
+  {
+    "kind": "table",
+    "name": "config_health_score_professor",
+    "schema": "public",
+    "comment": "Configuração de pesos do Health Score de Professores - ajustável por unidade",
+    "total_size": "40 kB",
+    "total_bytes": 40960,
+    "estimated_rows": 3
+  },
+  {
+    "kind": "table",
+    "name": "contatos_bloqueados_campanha",
+    "schema": "public",
+    "comment": null,
+    "total_size": "24 kB",
+    "total_bytes": 24576,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "conversa_estado_whatsapp",
+    "schema": "public",
+    "comment": null,
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 1
+  },
+  {
+    "kind": "table",
+    "name": "conversas_campanha",
+    "schema": "public",
+    "comment": null,
+    "total_size": "880 kB",
+    "total_bytes": 901120,
+    "estimated_rows": 1067
+  },
+  {
+    "kind": "table",
+    "name": "crm_conversas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "144 kB",
+    "total_bytes": 147456,
+    "estimated_rows": 5
+  },
+  {
+    "kind": "table",
+    "name": "crm_etiquetas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 8
+  },
+  {
+    "kind": "table",
+    "name": "crm_followups",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "crm_lead_etiquetas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "72 kB",
+    "total_bytes": 73728,
+    "estimated_rows": 2
+  },
+  {
+    "kind": "table",
+    "name": "crm_lead_historico",
+    "schema": "public",
+    "comment": null,
+    "total_size": "96 kB",
+    "total_bytes": 98304,
+    "estimated_rows": 86
+  },
+  {
+    "kind": "table",
+    "name": "crm_mensagens",
+    "schema": "public",
+    "comment": null,
+    "total_size": "128 kB",
+    "total_bytes": 131072,
+    "estimated_rows": 58
+  },
+  {
+    "kind": "table",
+    "name": "crm_mensagens_agendadas",
+    "schema": "public",
+    "comment": "Mensagens agendadas para envio futuro via WhatsApp",
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "crm_metas_andreza",
+    "schema": "public",
+    "comment": null,
+    "total_size": "64 kB",
+    "total_bytes": 65536,
+    "estimated_rows": 3
+  },
+  {
+    "kind": "table",
+    "name": "crm_motivos_nao_comparecimento",
+    "schema": "public",
+    "comment": null,
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 10
+  },
+  {
+    "kind": "table",
+    "name": "crm_pipeline_etapas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "56 kB",
+    "total_bytes": 57344,
+    "estimated_rows": 11
+  },
+  {
+    "kind": "table",
+    "name": "crm_templates_whatsapp",
+    "schema": "public",
+    "comment": null,
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 8
+  },
+  {
+    "kind": "table",
+    "name": "cursos",
+    "schema": "public",
+    "comment": null,
+    "total_size": "96 kB",
+    "total_bytes": 98304,
+    "estimated_rows": 40
+  },
+  {
+    "kind": "table",
+    "name": "cursos_matriculados",
+    "schema": "public",
+    "comment": null,
+    "total_size": "128 kB",
+    "total_bytes": 131072,
+    "estimated_rows": 226
+  },
+  {
+    "kind": "table",
+    "name": "dados_comerciais",
+    "schema": "public",
+    "comment": null,
+    "total_size": "472 kB",
+    "total_bytes": 483328,
+    "estimated_rows": 92
+  },
+  {
+    "kind": "table",
+    "name": "dados_mensais",
+    "schema": "public",
+    "comment": null,
+    "total_size": "120 kB",
+    "total_bytes": 122880,
+    "estimated_rows": 124
+  },
+  {
+    "kind": "table",
+    "name": "dados_mensais_retificacoes",
+    "schema": "public",
+    "comment": "Auditoria de retificações em dados_mensais. Cada registro representa uma retificação aplicada com antes/depois/diff.",
+    "total_size": "64 kB",
+    "total_bytes": 65536,
+    "estimated_rows": 2
+  },
+  {
+    "kind": "table",
+    "name": "dashboard_config",
+    "schema": "public",
+    "comment": null,
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 6
+  },
+  {
+    "kind": "table",
+    "name": "emusys_sync_log",
+    "schema": "public",
+    "comment": null,
+    "total_size": "368 kB",
+    "total_bytes": 376832,
+    "estimated_rows": 745
+  },
+  {
+    "kind": "table",
+    "name": "evasoes_backup_20260215",
+    "schema": "public",
+    "comment": null,
+    "total_size": "136 kB",
+    "total_bytes": 139264,
+    "estimated_rows": 677
+  },
+  {
+    "kind": "table",
+    "name": "evasoes_legacy_backup",
+    "schema": "public",
+    "comment": null,
+    "total_size": "136 kB",
+    "total_bytes": 139264,
+    "estimated_rows": 677
+  },
+  {
+    "kind": "table",
+    "name": "evasoes_v2",
+    "schema": "public",
+    "comment": "BACKUP - Tabela legada. Fonte unica de evasoes agora é movimentacoes_admin. Manter por 30 dias (ate 2026-03-27) para validacao. Nao dropar antes disso.",
+    "total_size": "360 kB",
+    "total_bytes": 368640,
+    "estimated_rows": 740
+  },
+  {
+    "kind": "table",
+    "name": "evasoes_v2_backup",
+    "schema": "public",
+    "comment": null,
+    "total_size": "136 kB",
+    "total_bytes": 139264,
+    "estimated_rows": 740
+  },
+  {
+    "kind": "table",
+    "name": "experimentais_mensal_unidade",
+    "schema": "public",
+    "comment": null,
+    "total_size": "72 kB",
+    "total_bytes": 73728,
+    "estimated_rows": 67
+  },
+  {
+    "kind": "table",
+    "name": "experimentais_professor_mensal",
+    "schema": "public",
+    "comment": null,
+    "total_size": "96 kB",
+    "total_bytes": 98304,
+    "estimated_rows": 140
+  },
+  {
+    "kind": "table",
+    "name": "farmer_checklist_contatos",
+    "schema": "public",
+    "comment": "Carteira de alunos/contatos vinculados a cada checklist, com status de contato",
+    "total_size": "336 kB",
+    "total_bytes": 344064,
+    "estimated_rows": 390
+  },
+  {
+    "kind": "table",
+    "name": "farmer_checklist_items",
+    "schema": "public",
+    "comment": "Itens individuais de cada checklist, com suporte a sub-itens e canais de comunicação",
+    "total_size": "128 kB",
+    "total_bytes": 131072,
+    "estimated_rows": 30
+  },
+  {
+    "kind": "table",
+    "name": "farmer_checklist_templates",
+    "schema": "public",
+    "comment": "Templates reutilizáveis de checklists para o Painel Farmer",
+    "total_size": "64 kB",
+    "total_bytes": 65536,
+    "estimated_rows": 5
+  },
+  {
+    "kind": "table",
+    "name": "farmer_checklists",
+    "schema": "public",
+    "comment": "Checklists do Painel Farmer - listas de tarefas agrupadas com prazo e alertas",
+    "total_size": "112 kB",
+    "total_bytes": 114688,
+    "estimated_rows": 5
+  },
+  {
+    "kind": "table",
+    "name": "farmer_recados",
+    "schema": "public",
+    "comment": "Mensagens enviadas para professores via WhatsApp",
+    "total_size": "64 kB",
+    "total_bytes": 65536,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "farmer_recados_campanhas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "96 kB",
+    "total_bytes": 98304,
+    "estimated_rows": 3
+  },
+  {
+    "kind": "table",
+    "name": "farmer_recados_destinatarios",
+    "schema": "public",
+    "comment": null,
+    "total_size": "160 kB",
+    "total_bytes": 163840,
+    "estimated_rows": 30
+  },
+  {
+    "kind": "table",
+    "name": "farmer_rotinas",
+    "schema": "public",
+    "comment": "Rotinas customizáveis dos Farmers (diárias, semanais, mensais)",
+    "total_size": "112 kB",
+    "total_bytes": 114688,
+    "estimated_rows": 58
+  },
+  {
+    "kind": "table",
+    "name": "farmer_rotinas_execucao",
+    "schema": "public",
+    "comment": "Registro de execução diária das rotinas",
+    "total_size": "128 kB",
+    "total_bytes": 131072,
+    "estimated_rows": 109
+  },
+  {
+    "kind": "table",
+    "name": "farmer_tarefas",
+    "schema": "public",
+    "comment": "To-do list manual dos Farmers",
+    "total_size": "128 kB",
+    "total_bytes": 131072,
+    "estimated_rows": 10
+  },
+  {
+    "kind": "table",
+    "name": "farmer_templates",
+    "schema": "public",
+    "comment": "Templates de mensagens para comunicação com alunos/responsáveis",
+    "total_size": "64 kB",
+    "total_bytes": 65536,
+    "estimated_rows": 14
+  },
+  {
+    "kind": "table",
+    "name": "feriados",
+    "schema": "public",
+    "comment": "Feriados nacionais (BrasilAPI), municipais e recessos. Campo ativo permite desativar manualmente.",
+    "total_size": "64 kB",
+    "total_bytes": 65536,
+    "estimated_rows": 14
+  },
+  {
+    "kind": "table",
+    "name": "fila_relatorios_whatsapp",
+    "schema": "public",
+    "comment": "Fila de envio dos relatórios diários por unidade — processada pelo cron processar-mensagens-agendadas com 1 min de intervalo entre cada envio",
+    "total_size": "104 kB",
+    "total_bytes": 106496,
+    "estimated_rows": 13
+  },
+  {
+    "kind": "table",
+    "name": "formas_pagamento",
+    "schema": "public",
+    "comment": null,
+    "total_size": "56 kB",
+    "total_bytes": 57344,
+    "estimated_rows": 7
+  },
+  {
+    "kind": "table",
+    "name": "historico_pagamentos",
+    "schema": "public",
+    "comment": "Histórico mensal de status de pagamento dos alunos (snapshot antes do reset)",
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "horarios",
+    "schema": "public",
+    "comment": "Faixas de horário para aulas (manhã, tarde, noite)",
+    "total_size": "24 kB",
+    "total_bytes": 24576,
+    "estimated_rows": 3
+  },
+  {
+    "kind": "table",
+    "name": "insights_salvos",
+    "schema": "public",
+    "comment": null,
+    "total_size": "168 kB",
+    "total_bytes": 172032,
+    "estimated_rows": 4
+  },
+  {
+    "kind": "table",
+    "name": "inventario",
+    "schema": "public",
+    "comment": null,
+    "total_size": "200 kB",
+    "total_bytes": 204800,
+    "estimated_rows": 128
+  },
+  {
+    "kind": "table",
+    "name": "inventario_manutencoes",
+    "schema": "public",
+    "comment": null,
+    "total_size": "64 kB",
+    "total_bytes": 65536,
+    "estimated_rows": 3
+  },
+  {
+    "kind": "table",
+    "name": "inventario_movimentacoes",
+    "schema": "public",
+    "comment": null,
+    "total_size": "96 kB",
+    "total_bytes": 98304,
+    "estimated_rows": 1
+  },
+  {
+    "kind": "table",
+    "name": "inventario_pendencias",
+    "schema": "public",
+    "comment": null,
+    "total_size": "80 kB",
+    "total_bytes": 81920,
+    "estimated_rows": 3
+  },
+  {
+    "kind": "table",
+    "name": "lead_experimentais",
+    "schema": "public",
+    "comment": null,
+    "total_size": "328 kB",
+    "total_bytes": 335872,
+    "estimated_rows": 481
+  },
+  {
+    "kind": "table",
+    "name": "leads",
+    "schema": "public",
+    "comment": "Leads comerciais - do primeiro contato até a conversão ou arquivamento",
+    "total_size": "4456 kB",
+    "total_bytes": 4562944,
+    "estimated_rows": 7047
+  },
+  {
+    "kind": "table",
+    "name": "leads_automacao_log",
+    "schema": "public",
+    "comment": null,
+    "total_size": "9568 kB",
+    "total_bytes": 9797632,
+    "estimated_rows": 28205
+  },
+  {
+    "kind": "table",
+    "name": "leads_backup_flags_20260601",
+    "schema": "public",
+    "comment": null,
+    "total_size": "8192 bytes",
+    "total_bytes": 8192,
+    "estimated_rows": 17
+  },
+  {
+    "kind": "table",
+    "name": "leads_diarios_backup",
+    "schema": "public",
+    "comment": null,
+    "total_size": "40 kB",
+    "total_bytes": 40960,
+    "estimated_rows": 100
+  },
+  {
+    "kind": "table",
+    "name": "loja_carteira",
+    "schema": "public",
+    "comment": null,
+    "total_size": "72 kB",
+    "total_bytes": 73728,
+    "estimated_rows": 8
+  },
+  {
+    "kind": "table",
+    "name": "loja_carteira_movimentacoes",
+    "schema": "public",
+    "comment": null,
+    "total_size": "64 kB",
+    "total_bytes": 65536,
+    "estimated_rows": 12
+  },
+  {
+    "kind": "table",
+    "name": "loja_categorias",
+    "schema": "public",
+    "comment": null,
+    "total_size": "24 kB",
+    "total_bytes": 24576,
+    "estimated_rows": 7
+  },
+  {
+    "kind": "table",
+    "name": "loja_configuracoes",
+    "schema": "public",
+    "comment": null,
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 5
+  },
+  {
+    "kind": "table",
+    "name": "loja_estoque",
+    "schema": "public",
+    "comment": null,
+    "total_size": "96 kB",
+    "total_bytes": 98304,
+    "estimated_rows": 30
+  },
+  {
+    "kind": "table",
+    "name": "loja_movimentacoes_estoque",
+    "schema": "public",
+    "comment": null,
+    "total_size": "112 kB",
+    "total_bytes": 114688,
+    "estimated_rows": 6
+  },
+  {
+    "kind": "table",
+    "name": "loja_optin_novidades",
+    "schema": "public",
+    "comment": null,
+    "total_size": "24 kB",
+    "total_bytes": 24576,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "loja_produtos",
+    "schema": "public",
+    "comment": null,
+    "total_size": "96 kB",
+    "total_bytes": 98304,
+    "estimated_rows": 10
+  },
+  {
+    "kind": "table",
+    "name": "loja_reservas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "80 kB",
+    "total_bytes": 81920,
+    "estimated_rows": 2
+  },
+  {
+    "kind": "table",
+    "name": "loja_responsaveis_reposicao",
+    "schema": "public",
+    "comment": null,
+    "total_size": "40 kB",
+    "total_bytes": 40960,
+    "estimated_rows": 3
+  },
+  {
+    "kind": "table",
+    "name": "loja_variacoes",
+    "schema": "public",
+    "comment": null,
+    "total_size": "16 kB",
+    "total_bytes": 16384,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "loja_vendas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "160 kB",
+    "total_bytes": 163840,
+    "estimated_rows": 10
+  },
+  {
+    "kind": "table",
+    "name": "loja_vendas_itens",
+    "schema": "public",
+    "comment": null,
+    "total_size": "72 kB",
+    "total_bytes": 73728,
+    "estimated_rows": 10
+  },
+  {
+    "kind": "table",
+    "name": "mensagens_campanha",
+    "schema": "public",
+    "comment": null,
+    "total_size": "2296 kB",
+    "total_bytes": 2351104,
+    "estimated_rows": 2060
+  },
+  {
+    "kind": "table",
+    "name": "metas",
+    "schema": "public",
+    "comment": "Metas e OKRs unificados por unidade - mensais, trimestrais e anuais.",
+    "total_size": "104 kB",
+    "total_bytes": 106496,
+    "estimated_rows": 7
+  },
+  {
+    "kind": "table",
+    "name": "metas_comerciais",
+    "schema": "public",
+    "comment": "BACKUP: Metas comerciais originais. Dados consolidados na nova tabela metas em 2026-01-16. Pode ser removida após 30 dias de validação.",
+    "total_size": "56 kB",
+    "total_bytes": 57344,
+    "estimated_rows": 4
+  },
+  {
+    "kind": "table",
+    "name": "metas_kpi",
+    "schema": "public",
+    "comment": null,
+    "total_size": "344 kB",
+    "total_bytes": 352256,
+    "estimated_rows": 596
+  },
+  {
+    "kind": "table",
+    "name": "metas_legado",
+    "schema": "public",
+    "comment": "BACKUP: Tabela metas original (estrutura anual). Dados migrados para nova tabela metas em 2026-01-16. Pode ser removida após 30 dias de validação.",
+    "total_size": "72 kB",
+    "total_bytes": 73728,
+    "estimated_rows": 6
+  },
+  {
+    "kind": "table",
+    "name": "metas_professor_turma",
+    "schema": "public",
+    "comment": null,
+    "total_size": "40 kB",
+    "total_bytes": 40960,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "mila_config",
+    "schema": "public",
+    "comment": "Configuração do agente Mila por unidade",
+    "total_size": "96 kB",
+    "total_bytes": 98304,
+    "estimated_rows": 1
+  },
+  {
+    "kind": "table",
+    "name": "mila_message_buffer",
+    "schema": "public",
+    "comment": "Buffer de mensagens para debounce do agente Mila",
+    "total_size": "64 kB",
+    "total_bytes": 65536,
+    "estimated_rows": 13
+  },
+  {
+    "kind": "table",
+    "name": "motivos_arquivamento",
+    "schema": "public",
+    "comment": "Motivos para arquivamento de leads que não converteram",
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 7
+  },
+  {
+    "kind": "table",
+    "name": "motivos_nao_matricula",
+    "schema": "public",
+    "comment": null,
+    "total_size": "24 kB",
+    "total_bytes": 24576,
+    "estimated_rows": 10
+  },
+  {
+    "kind": "table",
+    "name": "motivos_saida",
+    "schema": "public",
+    "comment": null,
+    "total_size": "72 kB",
+    "total_bytes": 73728,
+    "estimated_rows": 15
+  },
+  {
+    "kind": "table",
+    "name": "motivos_trancamento",
+    "schema": "public",
+    "comment": null,
+    "total_size": "24 kB",
+    "total_bytes": 24576,
+    "estimated_rows": 10
+  },
+  {
+    "kind": "table",
+    "name": "movimentacoes",
+    "schema": "public",
+    "comment": "Registro de todas as movimentações de alunos: matrículas, renovações, evasões, transferências, trocas de curso/professor.",
+    "total_size": "144 kB",
+    "total_bytes": 147456,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "movimentacoes_admin",
+    "schema": "public",
+    "comment": "Tabela para registrar movimentações administrativas: renovações, não renovações, avisos prévios e evasões",
+    "total_size": "744 kB",
+    "total_bytes": 761856,
+    "estimated_rows": 1332
+  },
+  {
+    "kind": "table",
+    "name": "notificacao_config",
+    "schema": "public",
+    "comment": null,
+    "total_size": "40 kB",
+    "total_bytes": 40960,
+    "estimated_rows": 4
+  },
+  {
+    "kind": "table",
+    "name": "notificacao_destinatarios",
+    "schema": "public",
+    "comment": null,
+    "total_size": "56 kB",
+    "total_bytes": 57344,
+    "estimated_rows": 2
+  },
+  {
+    "kind": "table",
+    "name": "notificacao_log",
+    "schema": "public",
+    "comment": null,
+    "total_size": "160 kB",
+    "total_bytes": 163840,
+    "estimated_rows": 9
+  },
+  {
+    "kind": "table",
+    "name": "numeros_meta",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 2
+  },
+  {
+    "kind": "table",
+    "name": "origem_leads",
+    "schema": "public",
+    "comment": null,
+    "total_size": "336 kB",
+    "total_bytes": 344064,
+    "estimated_rows": 1009
+  },
+  {
+    "kind": "table",
+    "name": "perfil_permissoes",
+    "schema": "public",
+    "comment": "Relacionamento N:N entre perfis e permissões",
+    "total_size": "104 kB",
+    "total_bytes": 106496,
+    "estimated_rows": 144
+  },
+  {
+    "kind": "table",
+    "name": "perfis",
+    "schema": "public",
+    "comment": "Perfis de acesso do sistema (Admin, Gerente, Farmer, Hunter, etc.)",
+    "total_size": "80 kB",
+    "total_bytes": 81920,
+    "estimated_rows": 6
+  },
+  {
+    "kind": "table",
+    "name": "permissoes",
+    "schema": "public",
+    "comment": "Permissões granulares do sistema (ex: alunos.ver, alunos.editar)",
+    "total_size": "96 kB",
+    "total_bytes": 98304,
+    "estimated_rows": 48
+  },
+  {
+    "kind": "table",
+    "name": "pesquisa_evasao",
+    "schema": "public",
+    "comment": null,
+    "total_size": "112 kB",
+    "total_bytes": 114688,
+    "estimated_rows": 4
+  },
+  {
+    "kind": "table",
+    "name": "planos_acao",
+    "schema": "public",
+    "comment": "Planos de ação gerados pela IA Gemini para cada unidade/período",
+    "total_size": "112 kB",
+    "total_bytes": 114688,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "professor_360_avaliacoes",
+    "schema": "public",
+    "comment": null,
+    "total_size": "56 kB",
+    "total_bytes": 57344,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "professor_360_config",
+    "schema": "public",
+    "comment": null,
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 3
+  },
+  {
+    "kind": "table",
+    "name": "professor_360_criterios",
+    "schema": "public",
+    "comment": null,
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 8
+  },
+  {
+    "kind": "table",
+    "name": "professor_360_ocorrencias",
+    "schema": "public",
+    "comment": null,
+    "total_size": "144 kB",
+    "total_bytes": 147456,
+    "estimated_rows": 89
+  },
+  {
+    "kind": "table",
+    "name": "professor_360_ocorrencias_log",
+    "schema": "public",
+    "comment": null,
+    "total_size": "136 kB",
+    "total_bytes": 139264,
+    "estimated_rows": 75
+  },
+  {
+    "kind": "table",
+    "name": "professor_acoes",
+    "schema": "public",
+    "comment": null,
+    "total_size": "208 kB",
+    "total_bytes": 212992,
+    "estimated_rows": 9
+  },
+  {
+    "kind": "table",
+    "name": "professor_acoes_participantes",
+    "schema": "public",
+    "comment": null,
+    "total_size": "24 kB",
+    "total_bytes": 24576,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "professor_checkpoints",
+    "schema": "public",
+    "comment": null,
+    "total_size": "56 kB",
+    "total_bytes": 57344,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "professor_metas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "112 kB",
+    "total_bytes": 114688,
+    "estimated_rows": 4
+  },
+  {
+    "kind": "table",
+    "name": "professor_videos",
+    "schema": "public",
+    "comment": null,
+    "total_size": "112 kB",
+    "total_bytes": 114688,
+    "estimated_rows": 46
+  },
+  {
+    "kind": "table",
+    "name": "professores",
+    "schema": "public",
+    "comment": null,
+    "total_size": "144 kB",
+    "total_bytes": 147456,
+    "estimated_rows": 57
+  },
+  {
+    "kind": "table",
+    "name": "professores_cursos",
+    "schema": "public",
+    "comment": "Relacionamento N:N entre professores e cursos que lecionam (especialidades)",
+    "total_size": "136 kB",
+    "total_bytes": 139264,
+    "estimated_rows": 207
+  },
+  {
+    "kind": "table",
+    "name": "professores_experimentais",
+    "schema": "public",
+    "comment": null,
+    "total_size": "120 kB",
+    "total_bytes": 122880,
+    "estimated_rows": 284
+  },
+  {
+    "kind": "table",
+    "name": "professores_performance",
+    "schema": "public",
+    "comment": null,
+    "total_size": "120 kB",
+    "total_bytes": 122880,
+    "estimated_rows": 125
+  },
+  {
+    "kind": "table",
+    "name": "professores_sync_log",
+    "schema": "public",
+    "comment": "Auditoria do sync semanal de professores com o Emusys (edge: sync-professores-emusys)",
+    "total_size": "80 kB",
+    "total_bytes": 81920,
+    "estimated_rows": 8
+  },
+  {
+    "kind": "table",
+    "name": "professores_unidades",
+    "schema": "public",
+    "comment": "Relacionamento N:N entre professores e unidades onde atuam",
+    "total_size": "128 kB",
+    "total_bytes": 131072,
+    "estimated_rows": 77
+  },
+  {
+    "kind": "table",
+    "name": "programa_fideliza_config",
+    "schema": "public",
+    "comment": null,
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 1
+  },
+  {
+    "kind": "table",
+    "name": "programa_fideliza_experiencias",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 6
+  },
+  {
+    "kind": "table",
+    "name": "programa_fideliza_historico",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "programa_fideliza_penalidades",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "programa_matriculador_config",
+    "schema": "public",
+    "comment": null,
+    "total_size": "40 kB",
+    "total_bytes": 40960,
+    "estimated_rows": 1
+  },
+  {
+    "kind": "table",
+    "name": "programa_matriculador_historico",
+    "schema": "public",
+    "comment": null,
+    "total_size": "40 kB",
+    "total_bytes": 40960,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "programa_matriculador_penalidades",
+    "schema": "public",
+    "comment": null,
+    "total_size": "80 kB",
+    "total_bytes": 81920,
+    "estimated_rows": 1
+  },
+  {
+    "kind": "table",
+    "name": "projeto_anexos",
+    "schema": "public",
+    "comment": null,
+    "total_size": "40 kB",
+    "total_bytes": 40960,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "projeto_comentarios",
+    "schema": "public",
+    "comment": null,
+    "total_size": "40 kB",
+    "total_bytes": 40960,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "projeto_config_permissoes",
+    "schema": "public",
+    "comment": null,
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 6
+  },
+  {
+    "kind": "table",
+    "name": "projeto_equipe",
+    "schema": "public",
+    "comment": "Pessoas envolvidas em cada projeto (coordenadores, assistentes, professores)",
+    "total_size": "72 kB",
+    "total_bytes": 73728,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "projeto_equipe_membros",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 5
+  },
+  {
+    "kind": "table",
+    "name": "projeto_fases",
+    "schema": "public",
+    "comment": "Fases de cada projeto (Planejamento, Divulgação, Preparação, etc.)",
+    "total_size": "72 kB",
+    "total_bytes": 73728,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "projeto_log_alteracoes",
+    "schema": "public",
+    "comment": null,
+    "total_size": "136 kB",
+    "total_bytes": 139264,
+    "estimated_rows": 67
+  },
+  {
+    "kind": "table",
+    "name": "projeto_tarefas",
+    "schema": "public",
+    "comment": "Tarefas e subtarefas dos projetos pedagógicos",
+    "total_size": "160 kB",
+    "total_bytes": 163840,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "projeto_tipo_fases_template",
+    "schema": "public",
+    "comment": "Template de fases padrão para cada tipo de projeto",
+    "total_size": "96 kB",
+    "total_bytes": 98304,
+    "estimated_rows": 34
+  },
+  {
+    "kind": "table",
+    "name": "projeto_tipo_tarefas_template",
+    "schema": "public",
+    "comment": "Tarefas padrão de cada fase do template",
+    "total_size": "64 kB",
+    "total_bytes": 65536,
+    "estimated_rows": 80
+  },
+  {
+    "kind": "table",
+    "name": "projeto_tipos",
+    "schema": "public",
+    "comment": "Tipos de projeto cadastráveis (Semana Temática, Recital, Show de Banda, etc.)",
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 6
+  },
+  {
+    "kind": "table",
+    "name": "projetos",
+    "schema": "public",
+    "comment": "Projetos pedagógicos da escola (Semanas Temáticas, Recitais, Shows, etc.)",
+    "total_size": "144 kB",
+    "total_bytes": 147456,
+    "estimated_rows": 7
+  },
+  {
+    "kind": "table",
+    "name": "relatorios_diarios",
+    "schema": "public",
+    "comment": "Snapshot diário dos números de cada unidade - histórico para análise",
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "renovacoes",
+    "schema": "public",
+    "comment": "Histórico de renovações de contrato com valores e reajustes",
+    "total_size": "264 kB",
+    "total_bytes": 270336,
+    "estimated_rows": 383
+  },
+  {
+    "kind": "table",
+    "name": "respostas_rapidas_campanha",
+    "schema": "public",
+    "comment": null,
+    "total_size": "16 kB",
+    "total_bytes": 16384,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "salas",
+    "schema": "public",
+    "comment": "Salas de aula de cada unidade com capacidade máxima",
+    "total_size": "112 kB",
+    "total_bytes": 114688,
+    "estimated_rows": 53
+  },
+  {
+    "kind": "table",
+    "name": "simulacoes_metas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "simulacoes_turma",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "templates_cenario",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 3
+  },
+  {
+    "kind": "table",
+    "name": "templates_cenario_unidade",
+    "schema": "public",
+    "comment": null,
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 6
+  },
+  {
+    "kind": "table",
+    "name": "templates_meta",
+    "schema": "public",
+    "comment": null,
+    "total_size": "336 kB",
+    "total_bytes": 344064,
+    "estimated_rows": 30
+  },
+  {
+    "kind": "table",
+    "name": "tipos_matricula",
+    "schema": "public",
+    "comment": null,
+    "total_size": "64 kB",
+    "total_bytes": 65536,
+    "estimated_rows": 5
+  },
+  {
+    "kind": "table",
+    "name": "tipos_saida",
+    "schema": "public",
+    "comment": null,
+    "total_size": "64 kB",
+    "total_bytes": 65536,
+    "estimated_rows": 4
+  },
+  {
+    "kind": "table",
+    "name": "transferencias_mila",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "turmas",
+    "schema": "public",
+    "comment": "Turmas de aula - combinação de professor, dia, horário e sala",
+    "total_size": "72 kB",
+    "total_bytes": 73728,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "turmas_alunos",
+    "schema": "public",
+    "comment": "Relacionamento entre turmas explícitas e alunos",
+    "total_size": "88 kB",
+    "total_bytes": 90112,
+    "estimated_rows": 2
+  },
+  {
+    "kind": "table",
+    "name": "turmas_explicitas",
+    "schema": "public",
+    "comment": "Turmas explícitas criadas manualmente (turmas regulares e bandas)",
+    "total_size": "224 kB",
+    "total_bytes": 229376,
+    "estimated_rows": 404
+  },
+  {
+    "kind": "table",
+    "name": "turmas_historico",
+    "schema": "public",
+    "comment": "Histórico de mudanças em turmas: adições, remoções e movimentações de alunos",
+    "total_size": "128 kB",
+    "total_bytes": 131072,
+    "estimated_rows": 2
+  },
+  {
+    "kind": "table",
+    "name": "unidades",
+    "schema": "public",
+    "comment": null,
+    "total_size": "64 kB",
+    "total_bytes": 65536,
+    "estimated_rows": 3
+  },
+  {
+    "kind": "table",
+    "name": "unidades_cursos",
+    "schema": "public",
+    "comment": "Relacionamento entre unidades e cursos - define quais cursos cada unidade oferece",
+    "total_size": "72 kB",
+    "total_bytes": 73728,
+    "estimated_rows": 71
+  },
+  {
+    "kind": "table",
+    "name": "usuario_onboarding",
+    "schema": "public",
+    "comment": "Tracking do progresso de onboarding de cada usuário",
+    "total_size": "88 kB",
+    "total_bytes": 90112,
+    "estimated_rows": 23
+  },
+  {
+    "kind": "table",
+    "name": "usuario_perfis",
+    "schema": "public",
+    "comment": "Relacionamento N:N entre usuários e perfis, com escopo opcional de unidade",
+    "total_size": "48 kB",
+    "total_bytes": 49152,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "table",
+    "name": "usuarios",
+    "schema": "public",
+    "comment": "Usuários do sistema com controle de acesso por unidade",
+    "total_size": "128 kB",
+    "total_bytes": 131072,
+    "estimated_rows": 27
+  },
+  {
+    "kind": "table",
+    "name": "visitas",
+    "schema": "public",
+    "comment": "Visitas presenciais agendadas por lead. Alternativa a aula experimental.",
+    "total_size": "112 kB",
+    "total_bytes": 114688,
+    "estimated_rows": 42
+  },
+  {
+    "kind": "table",
+    "name": "visitas_config",
+    "schema": "public",
+    "comment": "Configuracao do sistema de visitas por unidade (limite, horarios).",
+    "total_size": "40 kB",
+    "total_bytes": 40960,
+    "estimated_rows": 1
+  },
+  {
+    "kind": "table",
+    "name": "webhook_debug_log",
+    "schema": "public",
+    "comment": null,
+    "total_size": "536 kB",
+    "total_bytes": 548864,
+    "estimated_rows": 317
+  },
+  {
+    "kind": "table",
+    "name": "whatsapp_caixas",
+    "schema": "public",
+    "comment": "Caixas de WhatsApp configuradas para cada unidade",
+    "total_size": "64 kB",
+    "total_bytes": 65536,
+    "estimated_rows": 3
+  },
+  {
+    "kind": "table",
+    "name": "whatsapp_config",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 1
+  },
+  {
+    "kind": "table",
+    "name": "whatsapp_destinatarios_relatorio",
+    "schema": "public",
+    "comment": null,
+    "total_size": "32 kB",
+    "total_bytes": 32768,
+    "estimated_rows": 4
+  },
+  {
+    "kind": "view",
+    "name": "vw_alertas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_alertas_inteligentes",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_aluno_sucesso_lista",
+    "schema": "public",
+    "comment": "View completa de alunos para a feature Sucesso do Cliente",
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_aluno_sucesso_resumo",
+    "schema": "public",
+    "comment": "KPIs resumidos de Sucesso do Cliente por unidade",
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_alunos_ativos",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_consolidado_anual",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_contagem_alunos",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_dashboard_unidade",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_distribuicao_permanencia",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_evasao_por_motivo",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_evasao_por_tipo",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_evasoes_motivos",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_evasoes_professores",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_evasoes_resumo",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_evolucao_alunos",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_farmer_aniversariantes_hoje",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_farmer_checklist_alertas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_farmer_inadimplentes",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_farmer_novos_matriculados",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_farmer_renovacoes_proximas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_farmer_resumo_alertas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_fator_demanda_professor",
+    "schema": "public",
+    "comment": "Calcula o Fator de Demanda Ponderado de cada professor baseado na composição da carteira de alunos",
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_funil_conversao_mensal",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_kpis_comercial_historico",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_kpis_comercial_mensal",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_kpis_gestao_mensal",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_kpis_mensais",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_kpis_professor_completo",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_kpis_professor_historico",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_kpis_professor_mensal",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_kpis_professor_por_unidade",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_kpis_retencao_mensal",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_leads_comercial",
+    "schema": "public",
+    "comment": "View de compatibilidade que emula a estrutura de leads_diarios. Inclui campos resolvidos (nomes) para evitar JOINs via PostgREST.",
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_leads_por_canal",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_ltv_por_categoria",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_ltv_por_unidade",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_ltv_rede",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_ltv_unidade",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_matriculas_por_canal",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_metas_vs_realizado",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_motivos_nao_matricula",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_movimentacoes_mensal",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_movimentacoes_recentes",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_performance_professor_experimental",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_professores_carteira_resumo",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_professores_performance_atual",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_projecao_metas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_ranking_professores_evasoes",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_ranking_professores_retencao",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_ranking_unidades",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_renovacoes_mensal",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_renovacoes_pendentes",
+    "schema": "public",
+    "comment": "Renovações pendentes, atrasadas e realizadas por mês e unidade",
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_renovacoes_proximas",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_sazonalidade",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_taxa_crescimento_professor",
+    "schema": "public",
+    "comment": "Calcula a Taxa de Crescimento por Professor com Fator de Demanda Ponderado",
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_totais_unidade_performance",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_turmas_completa",
+    "schema": "public",
+    "comment": "View com informações completas das turmas incluindo contagem de alunos",
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_turmas_implicitas",
+    "schema": "public",
+    "comment": "View de turmas baseada nos dados existentes de alunos (professor + dia + horário)",
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_turmas_professor_periodo",
+    "schema": "public",
+    "comment": "Turmas reconstruidas a partir de aulas_emusys+aluno_presenca. turma_chave usa COALESCE para nao perder turmas com turma_nome NULL.",
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  },
+  {
+    "kind": "view",
+    "name": "vw_unidade_anual",
+    "schema": "public",
+    "comment": null,
+    "total_size": "0 bytes",
+    "total_bytes": 0,
+    "estimated_rows": 0
+  }
+]

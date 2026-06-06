@@ -1,0 +1,5351 @@
+{
+  "counts": {
+    "table": 193,
+    "view": 60
+  },
+  "total_objects": 253,
+  "functions": 194,
+  "cron_jobs": 17,
+  "top_large": [
+    {
+      "kind": "table",
+      "name": "audit_log",
+      "schema": "public",
+      "comment": null,
+      "total_size": "108 MB",
+      "total_bytes": 113360896,
+      "estimated_rows": 41434,
+      "code_refs": 39,
+      "code_paths": [
+        "docs/MIGRACAO_FASE2B_RETIFICACAO_CG_MAIO_V3_PROPOSTA.sql",
+        "docs/KPIs_LA_MUSIC_PERFORMANCE_REPORT.md",
+        "docs/RELATORIO_AUDITORIA_FORENSE_MAIO_CG_2026.md",
+        "docs/MIGRACAO_FASE2B_RETIFICACAO_CG_MAIO_PROPOSTA.sql",
+        "docs/MIGRACAO_FASE2B_AUDITORIA_NOMINAL_RETIFICACAO_PROPOSTA.sql",
+        "docs/MIGRACAO_FASE2B_RETIFICACAO_CG_MAIO_V2_PROPOSTA.sql",
+        "docs/PRD.md",
+        ".claude/agents/fiscal-dados.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "aulas_emusys",
+      "schema": "public",
+      "comment": "Metadados completos de cada aula importada do Emusys (turma, curso, sala, professor, horários)",
+      "total_size": "10224 kB",
+      "total_bytes": 10469376,
+      "estimated_rows": 26717,
+      "code_refs": 71,
+      "code_paths": [
+        ".claude/agents/fiscal-dados.md",
+        ".claude/memory/pendencias-emusys.md",
+        ".claude/memory/integracao-infra.md",
+        ".claude/memory/dominio-alunos.md",
+        ".claude/memory/regras-negocio.md",
+        ".claude/memory/dominio-operacional.md",
+        "supabase/migrations/20260126_create_get_dados_relatorio_coordenacao.sql",
+        "supabase/functions/sync-presenca-emusys/index.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_turmas_professor_periodo"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "leads_automacao_log",
+      "schema": "public",
+      "comment": null,
+      "total_size": "9568 kB",
+      "total_bytes": 9797632,
+      "estimated_rows": 28205,
+      "code_refs": 27,
+      "code_paths": [
+        ".claude/agents/fiscal-dados.md",
+        ".claude/memory/integracao-infra.md",
+        "supabase/functions/sync-presenca-emusys/index.ts",
+        "src/components/App/Comercial/ComercialPage.tsx",
+        "src/components/App/Entrada/FormLead.tsx",
+        "src/components/App/PreAtendimento/tabs/TabAutomacaoLeads.tsx",
+        "src/components/App/PreAtendimento/components/ModalNovoLead.tsx",
+        "docs/archive/AUDITORIA-SYNC-PRESENCA-MATRICULAS.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "aluno_presenca",
+      "schema": "public",
+      "comment": "Registro de presença dos alunos (tracking via WhatsApp)",
+      "total_size": "9080 kB",
+      "total_bytes": 9297920,
+      "estimated_rows": 30160,
+      "code_refs": 61,
+      "code_paths": [
+        "docs/SUCESSO-DO-ALUNO.md",
+        "docs/QUERIES_AUDITORIA_SOL_READONLY_V3.sql",
+        ".claude/agents/fiscal-dados.md",
+        ".claude/memory/pendencias-emusys.md",
+        ".claude/memory/todos-pendentes.md",
+        ".claude/memory/integracao-infra.md",
+        ".claude/memory/dominio-alunos.md",
+        ".claude/memory/dominio-operacional.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_turmas_professor_periodo"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "leads",
+      "schema": "public",
+      "comment": "Leads comerciais - do primeiro contato até a conversão ou arquivamento",
+      "total_size": "4456 kB",
+      "total_bytes": 4562944,
+      "estimated_rows": 7047,
+      "code_refs": 1422,
+      "code_paths": [
+        "CLAUDE.md",
+        "INSTRUCOES_MIGRATIONS.md",
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "workflow_emusys_fixed.json",
+        "AUDITORIA_DADOS_2026.md",
+        "PLANO_MIGRACAO_LEADS.md",
+        "sql/trigger_sync_leads_to_leads_diarios.sql",
+        "docs/indicadores-matriculas.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_funil_conversao_mensal",
+        "vw_kpis_comercial_mensal",
+        "vw_kpis_gestao_mensal",
+        "vw_kpis_professor_historico",
+        "vw_kpis_professor_mensal",
+        "vw_leads_comercial",
+        "vw_leads_por_canal",
+        "vw_motivos_nao_matricula",
+        "vw_performance_professor_experimental",
+        "vw_professores_performance_atual"
+      ],
+      "flags": [
+        "usado_por_views:10"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "alunos",
+      "schema": "public",
+      "comment": null,
+      "total_size": "3040 kB",
+      "total_bytes": 3112960,
+      "estimated_rows": 1505,
+      "code_refs": 3960,
+      "code_paths": [
+        "CLAUDE.md",
+        "INSTRUCOES_MIGRATIONS.md",
+        "constants.tsx",
+        "App.tsx",
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "types.ts",
+        "tmp_audit_cg_jun.cjs",
+        "AUDITORIA_DADOS_2026.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_alertas_inteligentes",
+        "vw_aluno_sucesso_lista",
+        "vw_alunos_ativos",
+        "vw_contagem_alunos",
+        "vw_dashboard_unidade",
+        "vw_farmer_aniversariantes_hoje",
+        "vw_farmer_inadimplentes",
+        "vw_farmer_novos_matriculados",
+        "vw_farmer_renovacoes_proximas",
+        "vw_fator_demanda_professor",
+        "vw_kpis_comercial_mensal",
+        "vw_kpis_gestao_mensal",
+        "vw_kpis_professor_completo",
+        "vw_kpis_professor_mensal",
+        "vw_kpis_professor_por_unidade",
+        "vw_kpis_retencao_mensal",
+        "vw_ltv_unidade",
+        "vw_movimentacoes_recentes",
+        "vw_professores_carteira_resumo",
+        "vw_professores_performance_atual",
+        "vw_ranking_professores_retencao",
+        "vw_renovacoes_pendentes",
+        "vw_renovacoes_proximas",
+        "vw_taxa_crescimento_professor",
+        "vw_turmas_completa",
+        "vw_turmas_implicitas",
+        "vw_turmas_professor_periodo"
+      ],
+      "flags": [
+        "usado_por_views:27"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "automacao_log",
+      "schema": "public",
+      "comment": null,
+      "total_size": "2808 kB",
+      "total_bytes": 2875392,
+      "estimated_rows": 3540,
+      "code_refs": 97,
+      "code_paths": [
+        ".claude/agents/fiscal-dados.md",
+        ".claude/memory/modulo-saude-automacoes.md",
+        ".claude/memory/integracao-infra.md",
+        ".claude/memory/MEMORY.md",
+        "supabase/migrations/20260520120000_saude_automacoes.sql",
+        "supabase/functions/_shared/invariantes.ts",
+        "supabase/functions/processar-matricula-emusys/index.ts",
+        "supabase/functions/sync-presenca-emusys/index.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "mensagens_campanha",
+      "schema": "public",
+      "comment": null,
+      "total_size": "2296 kB",
+      "total_bytes": 2351104,
+      "estimated_rows": 2060,
+      "code_refs": 32,
+      "code_paths": [
+        "supabase/functions/meta-webhook-campanhas/index.ts",
+        "supabase/functions/bi-agent-lamusic/index.ts",
+        "supabase/functions/bi-agent-lamusic/tools.ts",
+        "supabase/functions/enviar-campanha/index.ts",
+        "supabase/functions/enviar-mensagem-meta/index.ts",
+        "supabase/functions/agente-webhook/index.ts",
+        "src/components/App/Campanhas/CampanhasPage.tsx",
+        "src/components/App/Campanhas/tabs/ConversasTab.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": []
+    },
+    {
+      "kind": "table",
+      "name": "conversas_campanha",
+      "schema": "public",
+      "comment": null,
+      "total_size": "880 kB",
+      "total_bytes": 901120,
+      "estimated_rows": 1067,
+      "code_refs": 28,
+      "code_paths": [
+        "supabase/functions/meta-webhook-campanhas/index.ts",
+        "supabase/functions/bi-agent-lamusic/tools.ts",
+        "supabase/functions/enviar-campanha/index.ts",
+        "supabase/functions/enviar-mensagem-meta/index.ts",
+        "supabase/functions/agente-webhook/index.ts",
+        "src/components/App/Layout/AppSidebar.tsx",
+        "src/components/App/Campanhas/tabs/ConversasTab.tsx",
+        "src/components/App/Campanhas/components/ChatInfoPanel.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": []
+    },
+    {
+      "kind": "table",
+      "name": "movimentacoes_admin",
+      "schema": "public",
+      "comment": "Tabela para registrar movimentações administrativas: renovações, não renovações, avisos prévios e evasões",
+      "total_size": "744 kB",
+      "total_bytes": 761856,
+      "estimated_rows": 1332,
+      "code_refs": 263,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "tmp_audit_cg_jun.cjs",
+        "AUDITORIA_DADOS_2026.md",
+        "docs/MIGRATION-add-trancamento.sql",
+        "docs/audit_ciclo_vida_alunos_CG_MAIO2026_LOTES.md",
+        "docs/RESUMO-IMPLEMENTACAO-SYNC.md",
+        "docs/MIGRACAO_REGLA_KPI_V2.sql",
+        "docs/MIGRACAO_REGLA_KPI_V4_FINANCEIRO.sql"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_alertas_inteligentes",
+        "vw_dashboard_unidade",
+        "vw_evasoes_motivos",
+        "vw_evasoes_professores",
+        "vw_evasoes_resumo",
+        "vw_kpis_gestao_mensal",
+        "vw_kpis_professor_mensal",
+        "vw_kpis_retencao_mensal",
+        "vw_professores_performance_atual",
+        "vw_taxa_crescimento_professor"
+      ],
+      "flags": [
+        "usado_por_views:10"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "campanha_contatos",
+      "schema": "public",
+      "comment": null,
+      "total_size": "608 kB",
+      "total_bytes": 622592,
+      "estimated_rows": 1349,
+      "code_refs": 17,
+      "code_paths": [
+        "supabase/functions/meta-webhook-campanhas/index.ts",
+        "supabase/functions/enviar-campanha/index.ts",
+        "src/components/App/Campanhas/components/ModalNovaCampanha.tsx",
+        "src/components/App/Campanhas/hooks/useCampanhas.ts",
+        "src/components/App/Campanhas/hooks/useKPIsCampanha.ts",
+        "src/components/App/Campanhas/hooks/useContatosCampanha.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": []
+    },
+    {
+      "kind": "table",
+      "name": "webhook_debug_log",
+      "schema": "public",
+      "comment": null,
+      "total_size": "536 kB",
+      "total_bytes": 548864,
+      "estimated_rows": 317,
+      "code_refs": 1,
+      "code_paths": [
+        "supabase/functions/webhook-whatsapp-inbox/index.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "alunos_historico",
+      "schema": "public",
+      "comment": "Histórico de ex-alunos para cálculo de LTV (Tempo Médio de Permanência). Só inclui alunos com 4+ meses.",
+      "total_size": "528 kB",
+      "total_bytes": 540672,
+      "estimated_rows": 1421,
+      "code_refs": 96,
+      "code_paths": [
+        "CLAUDE.md",
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "docs/MIGRACAO_REGLA_KPI_V2.sql",
+        "docs/MIGRACAO_REGLA_KPI_V4_FINANCEIRO.sql",
+        "docs/PLANO-FILTROS-PERIODO-OPERACIONAL.md",
+        "docs/MIGRACAO_REGLA_KPI_V3.sql",
+        "scripts/gerar_sql_batches.cjs",
+        "scripts/gerar_sql_historico_ltv.js"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_dashboard_unidade",
+        "vw_distribuicao_permanencia",
+        "vw_ltv_por_categoria",
+        "vw_ltv_por_unidade",
+        "vw_ltv_rede"
+      ],
+      "flags": [
+        "nome_suspeito",
+        "usado_por_views:5"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "dados_comerciais",
+      "schema": "public",
+      "comment": null,
+      "total_size": "472 kB",
+      "total_bytes": 483328,
+      "estimated_rows": 92,
+      "code_refs": 93,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "AUDITORIA_DADOS_2026.md",
+        "PLANO_MIGRACAO_LEADS.md",
+        "docs/RELATORIO_ANALYTICS.md",
+        "supabase/migrations/20260207_unificar_leads.sql",
+        "src/hooks/useComercialData.ts",
+        "src/components/GestaoMensal/TabProfessoresNew.tsx",
+        "src/components/GestaoMensal/TabComercialNew.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_alertas_inteligentes",
+        "vw_kpis_comercial_historico"
+      ],
+      "flags": [
+        "usado_por_views:2"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "automacao_invariantes",
+      "schema": "public",
+      "comment": "Registra violações de invariantes de negócio detectadas nos webhooks Emusys (matrícula em tempo real) ou via cron auditor (lead/experimental/alunos).",
+      "total_size": "384 kB",
+      "total_bytes": 393216,
+      "estimated_rows": 621,
+      "code_refs": 73,
+      "code_paths": [
+        ".claude/agents/fiscal-dados.md",
+        ".claude/memory/modulo-saude-automacoes.md",
+        ".claude/memory/integracao-infra.md",
+        ".claude/memory/MEMORY.md",
+        "supabase/migrations/20260520120000_saude_automacoes.sql",
+        "supabase/functions/_shared/invariantes.ts",
+        "supabase/functions/processar-matricula-emusys/index.ts",
+        "supabase/functions/auditor-divergencias-emusys/index.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": []
+    },
+    {
+      "kind": "table",
+      "name": "emusys_sync_log",
+      "schema": "public",
+      "comment": null,
+      "total_size": "368 kB",
+      "total_bytes": 376832,
+      "estimated_rows": 745,
+      "code_refs": 17,
+      "code_paths": [
+        ".claude/agents/fiscal-dados.md",
+        ".claude/memory/dominio-alunos.md",
+        "supabase/functions/sync-presenca-emusys/index.ts",
+        "src/components/App/Alunos/SucessoCliente/PresencaTab.tsx",
+        "docs/archive/AUDITORIA-SYNC-PRESENCA-MATRICULAS.md",
+        "docs/superpowers/prompts/fiscal-dados.md",
+        "docs/superpowers/prompts/monitor-crons-sync.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "evasoes_v2",
+      "schema": "public",
+      "comment": "BACKUP - Tabela legada. Fonte unica de evasoes agora é movimentacoes_admin. Manter por 30 dias (ate 2026-03-27) para validacao. Nao dropar antes disso.",
+      "total_size": "360 kB",
+      "total_bytes": 368640,
+      "estimated_rows": 740,
+      "code_refs": 113,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "AUDITORIA_DADOS_2026.md",
+        "docs/ARQUITETURA_FRONTEND_V2.md",
+        "docs/RELATORIO_ANALYTICS.md",
+        "docs/HEALTH-SCORE-V2.md",
+        "docs/PLANO-PAGINA-ADMINISTRATIVA.md",
+        "docs/KPIs_LA_MUSIC_PERFORMANCE_REPORT.md",
+        "docs/PRD.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito",
+        "objeto_critico/legado_conhecido"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "metas_kpi",
+      "schema": "public",
+      "comment": null,
+      "total_size": "344 kB",
+      "total_bytes": 352256,
+      "estimated_rows": 596,
+      "code_refs": 26,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "docs/RELATORIO-MENSAL-ADMINISTRATIVO.md",
+        "docs/PLANO_SIMULADOR_METAS.md",
+        "supabase/migrations/20260125_create_get_dados_comercial_ia.sql",
+        "supabase/migrations/20260126_create_get_dados_relatorio_coordenacao.sql",
+        "supabase/functions/gemini-relatorio-gerencial/index.ts",
+        "src/hooks/useMetasKPI.ts",
+        "src/hooks/useSimulador.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_alertas_inteligentes"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "farmer_checklist_contatos",
+      "schema": "public",
+      "comment": "Carteira de alunos/contatos vinculados a cada checklist, com status de contato",
+      "total_size": "336 kB",
+      "total_bytes": 344064,
+      "estimated_rows": 390,
+      "code_refs": 13,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "docs/PLANO-IMPLEMENTACAO-FINAL.md",
+        "docs/PLANO-CHECKLIST-EXPANSION.md",
+        "src/components/App/Administrativo/PainelFarmer/ChecklistDetail.tsx",
+        "src/components/App/Administrativo/PainelFarmer/hooks/useDashboardStats.ts",
+        "src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": []
+    },
+    {
+      "kind": "table",
+      "name": "origem_leads",
+      "schema": "public",
+      "comment": null,
+      "total_size": "336 kB",
+      "total_bytes": 344064,
+      "estimated_rows": 1009,
+      "code_refs": 44,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "PLANO_MIGRACAO_LEADS.md",
+        "docs/RELATORIO_ANALYTICS.md",
+        "supabase/migrations/20260207_unificar_leads.sql",
+        "src/hooks/useOrigemData.ts",
+        "src/components/GestaoMensal/TabComercialNew.tsx",
+        "docs/archive/AUDITORIA_PROJETO.md",
+        "docs/archive/AUDITORIA-BANCO-DADOS.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": []
+    },
+    {
+      "kind": "table",
+      "name": "templates_meta",
+      "schema": "public",
+      "comment": null,
+      "total_size": "336 kB",
+      "total_bytes": 344064,
+      "estimated_rows": 30,
+      "code_refs": 10,
+      "code_paths": [
+        "supabase/functions/enviar-campanha/index.ts",
+        "supabase/functions/sincronizar-templates/index.ts",
+        "src/components/App/Campanhas/components/CampanhaDrawer.tsx",
+        "src/components/App/Campanhas/hooks/useCampanhas.ts",
+        "src/components/App/Campanhas/hooks/useTemplatesMeta.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "lead_experimentais",
+      "schema": "public",
+      "comment": null,
+      "total_size": "328 kB",
+      "total_bytes": 335872,
+      "estimated_rows": 481,
+      "code_refs": 119,
+      "code_paths": [
+        ".claude/agents/fiscal-dados.md",
+        "supabase/functions/sync-presenca-emusys/index.ts",
+        "supabase/functions/auditor-divergencias-emusys/index.ts",
+        "src/components/App/Comercial/AlertasComercial.tsx",
+        "src/components/App/Comercial/ComercialPage.tsx",
+        "src/components/App/PreAtendimento/types.ts",
+        "src/components/App/Admin/PainelPermissoes/TabAuditoria.tsx",
+        "src/components/App/PreAtendimento/tabs/AgendaTab.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": []
+    },
+    {
+      "kind": "table",
+      "name": "renovacoes",
+      "schema": "public",
+      "comment": "Histórico de renovações de contrato com valores e reajustes",
+      "total_size": "264 kB",
+      "total_bytes": 270336,
+      "estimated_rows": 383,
+      "code_refs": 386,
+      "code_paths": [
+        "CLAUDE.md",
+        "INSTRUCOES_MIGRATIONS.md",
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "AUDITORIA_DADOS_2026.md",
+        "docs/RESUMO-IMPLEMENTACAO-SYNC.md",
+        "docs/MIGRACAO_REGLA_KPI_V2.sql",
+        "docs/MIGRACAO_REGLA_KPI_V4_FINANCEIRO.sql",
+        "docs/PLANO-IMPLEMENTACAO-FINAL.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_alertas_inteligentes",
+        "vw_kpis_gestao_mensal",
+        "vw_renovacoes_mensal",
+        "vw_renovacoes_pendentes"
+      ],
+      "flags": [
+        "objeto_critico/legado_conhecido",
+        "usado_por_views:4"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "bi_messages_lamusic",
+      "schema": "public",
+      "comment": null,
+      "total_size": "256 kB",
+      "total_bytes": 262144,
+      "estimated_rows": 63,
+      "code_refs": 13,
+      "code_paths": [
+        "supabase/functions/bi-agent-lamusic/index.ts",
+        "supabase/functions/bi-agent-lamusic/tools.ts",
+        "src/components/App/Alunos/Auditoria/BiAgentMetrics.tsx",
+        "src/components/App/Alunos/Auditoria/useAgentChat.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": []
+    },
+    {
+      "kind": "table",
+      "name": "turmas_explicitas",
+      "schema": "public",
+      "comment": "Turmas explícitas criadas manualmente (turmas regulares e bandas)",
+      "total_size": "224 kB",
+      "total_bytes": 229376,
+      "estimated_rows": 404,
+      "code_refs": 26,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "AUDITORIA_DADOS_2026.md",
+        "src/hooks/useProfessorDependencies.ts",
+        "src/components/App/Professores/ProfessoresPage.tsx",
+        "src/components/App/Professores/TabPerformanceProfessores.tsx",
+        "src/components/App/Alunos/GestaoTurmas.tsx",
+        "src/components/App/Alunos/AlunosPage.tsx",
+        "src/components/App/Alunos/ModalNovaTurma.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_turmas_implicitas"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    }
+  ],
+  "suspicious_objects": [
+    {
+      "kind": "table",
+      "name": "aluno_acoes",
+      "schema": "public",
+      "comment": "Histórico de intervenções realizadas com alunos (ligação, WhatsApp, reunião, etc.)",
+      "total_size": "32 kB",
+      "total_bytes": 32768,
+      "estimated_rows": 0,
+      "code_refs": 12,
+      "code_paths": [
+        "docs/SUCESSO-DO-ALUNO.md",
+        "supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql",
+        "src/components/App/Alunos/SucessoCliente/ModalDetalhesSucessoAluno.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_aluno_sucesso_lista"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "aluno_feedback_professor",
+      "schema": "public",
+      "comment": "Feedback do professor sobre cada aluno (verde/amarelo/vermelho)",
+      "total_size": "48 kB",
+      "total_bytes": 49152,
+      "estimated_rows": 0,
+      "code_refs": 20,
+      "code_paths": [
+        "docs/SUCESSO-DO-ALUNO.md",
+        "supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql",
+        "supabase/functions/validar-token-feedback/index.ts",
+        "src/hooks/useProfessorDependencies.ts",
+        "src/components/App/Feedback/FeedbackProfessorPage.tsx",
+        "src/components/App/Administrativo/PainelFarmer/hooks/useFeedbackPendente.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_aluno_sucesso_lista"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "aluno_metas",
+      "schema": "public",
+      "comment": "Metas individuais definidas para cada aluno",
+      "total_size": "24 kB",
+      "total_bytes": 24576,
+      "estimated_rows": 0,
+      "code_refs": 12,
+      "code_paths": [
+        "docs/SUCESSO-DO-ALUNO.md",
+        "supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql",
+        "src/components/App/Alunos/SucessoCliente/ModalDetalhesSucessoAluno.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_aluno_sucesso_lista"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "aluno_presenca",
+      "schema": "public",
+      "comment": "Registro de presença dos alunos (tracking via WhatsApp)",
+      "total_size": "9080 kB",
+      "total_bytes": 9297920,
+      "estimated_rows": 30160,
+      "code_refs": 61,
+      "code_paths": [
+        "docs/SUCESSO-DO-ALUNO.md",
+        "docs/QUERIES_AUDITORIA_SOL_READONLY_V3.sql",
+        ".claude/agents/fiscal-dados.md",
+        ".claude/memory/pendencias-emusys.md",
+        ".claude/memory/todos-pendentes.md",
+        ".claude/memory/integracao-infra.md",
+        ".claude/memory/dominio-alunos.md",
+        ".claude/memory/dominio-operacional.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_turmas_professor_periodo"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "alunos",
+      "schema": "public",
+      "comment": null,
+      "total_size": "3040 kB",
+      "total_bytes": 3112960,
+      "estimated_rows": 1505,
+      "code_refs": 3960,
+      "code_paths": [
+        "CLAUDE.md",
+        "INSTRUCOES_MIGRATIONS.md",
+        "constants.tsx",
+        "App.tsx",
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "types.ts",
+        "tmp_audit_cg_jun.cjs",
+        "AUDITORIA_DADOS_2026.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_alertas_inteligentes",
+        "vw_aluno_sucesso_lista",
+        "vw_alunos_ativos",
+        "vw_contagem_alunos",
+        "vw_dashboard_unidade",
+        "vw_farmer_aniversariantes_hoje",
+        "vw_farmer_inadimplentes",
+        "vw_farmer_novos_matriculados",
+        "vw_farmer_renovacoes_proximas",
+        "vw_fator_demanda_professor",
+        "vw_kpis_comercial_mensal",
+        "vw_kpis_gestao_mensal",
+        "vw_kpis_professor_completo",
+        "vw_kpis_professor_mensal",
+        "vw_kpis_professor_por_unidade",
+        "vw_kpis_retencao_mensal",
+        "vw_ltv_unidade",
+        "vw_movimentacoes_recentes",
+        "vw_professores_carteira_resumo",
+        "vw_professores_performance_atual",
+        "vw_ranking_professores_retencao",
+        "vw_renovacoes_pendentes",
+        "vw_renovacoes_proximas",
+        "vw_taxa_crescimento_professor",
+        "vw_turmas_completa",
+        "vw_turmas_implicitas",
+        "vw_turmas_professor_periodo"
+      ],
+      "flags": [
+        "usado_por_views:27"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "alunos_health_score_historico",
+      "schema": "public",
+      "comment": null,
+      "total_size": "32 kB",
+      "total_bytes": 32768,
+      "estimated_rows": 0,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito",
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "alunos_historico",
+      "schema": "public",
+      "comment": "Histórico de ex-alunos para cálculo de LTV (Tempo Médio de Permanência). Só inclui alunos com 4+ meses.",
+      "total_size": "528 kB",
+      "total_bytes": 540672,
+      "estimated_rows": 1421,
+      "code_refs": 96,
+      "code_paths": [
+        "CLAUDE.md",
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "docs/MIGRACAO_REGLA_KPI_V2.sql",
+        "docs/MIGRACAO_REGLA_KPI_V4_FINANCEIRO.sql",
+        "docs/PLANO-FILTROS-PERIODO-OPERACIONAL.md",
+        "docs/MIGRACAO_REGLA_KPI_V3.sql",
+        "scripts/gerar_sql_batches.cjs",
+        "scripts/gerar_sql_historico_ltv.js"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_dashboard_unidade",
+        "vw_distribuicao_permanencia",
+        "vw_ltv_por_categoria",
+        "vw_ltv_por_unidade",
+        "vw_ltv_rede"
+      ],
+      "flags": [
+        "nome_suspeito",
+        "usado_por_views:5"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "alunos_turmas",
+      "schema": "public",
+      "comment": "Relacionamento entre alunos e turmas - permite histórico de turmas",
+      "total_size": "48 kB",
+      "total_bytes": 49152,
+      "estimated_rows": 0,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_turmas_completa"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "audit_log",
+      "schema": "public",
+      "comment": null,
+      "total_size": "108 MB",
+      "total_bytes": 113360896,
+      "estimated_rows": 41434,
+      "code_refs": 39,
+      "code_paths": [
+        "docs/MIGRACAO_FASE2B_RETIFICACAO_CG_MAIO_V3_PROPOSTA.sql",
+        "docs/KPIs_LA_MUSIC_PERFORMANCE_REPORT.md",
+        "docs/RELATORIO_AUDITORIA_FORENSE_MAIO_CG_2026.md",
+        "docs/MIGRACAO_FASE2B_RETIFICACAO_CG_MAIO_PROPOSTA.sql",
+        "docs/MIGRACAO_FASE2B_AUDITORIA_NOMINAL_RETIFICACAO_PROPOSTA.sql",
+        "docs/MIGRACAO_FASE2B_RETIFICACAO_CG_MAIO_V2_PROPOSTA.sql",
+        "docs/PRD.md",
+        ".claude/agents/fiscal-dados.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "aulas_emusys",
+      "schema": "public",
+      "comment": "Metadados completos de cada aula importada do Emusys (turma, curso, sala, professor, horários)",
+      "total_size": "10224 kB",
+      "total_bytes": 10469376,
+      "estimated_rows": 26717,
+      "code_refs": 71,
+      "code_paths": [
+        ".claude/agents/fiscal-dados.md",
+        ".claude/memory/pendencias-emusys.md",
+        ".claude/memory/integracao-infra.md",
+        ".claude/memory/dominio-alunos.md",
+        ".claude/memory/regras-negocio.md",
+        ".claude/memory/dominio-operacional.md",
+        "supabase/migrations/20260126_create_get_dados_relatorio_coordenacao.sql",
+        "supabase/functions/sync-presenca-emusys/index.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_turmas_professor_periodo"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "automacao_log",
+      "schema": "public",
+      "comment": null,
+      "total_size": "2808 kB",
+      "total_bytes": 2875392,
+      "estimated_rows": 3540,
+      "code_refs": 97,
+      "code_paths": [
+        ".claude/agents/fiscal-dados.md",
+        ".claude/memory/modulo-saude-automacoes.md",
+        ".claude/memory/integracao-infra.md",
+        ".claude/memory/MEMORY.md",
+        "supabase/migrations/20260520120000_saude_automacoes.sql",
+        "supabase/functions/_shared/invariantes.ts",
+        "supabase/functions/processar-matricula-emusys/index.ts",
+        "supabase/functions/sync-presenca-emusys/index.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "bi_ai_query_playbooks",
+      "schema": "public",
+      "comment": null,
+      "total_size": "104 kB",
+      "total_bytes": 106496,
+      "estimated_rows": 19,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "bi_query_templates_lamusic",
+      "schema": "public",
+      "comment": null,
+      "total_size": "32 kB",
+      "total_bytes": 32768,
+      "estimated_rows": 4,
+      "code_refs": 4,
+      "code_paths": [
+        "supabase/functions/bi-agent-lamusic/index.ts",
+        "supabase/functions/bi-agent-lamusic/tools.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "canais_origem",
+      "schema": "public",
+      "comment": null,
+      "total_size": "56 kB",
+      "total_bytes": 57344,
+      "estimated_rows": 11,
+      "code_refs": 107,
+      "code_paths": [
+        "INSTRUCOES_MIGRATIONS.md",
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "PLANO_MIGRACAO_LEADS.md",
+        "docs/RELATORIO_ANALYTICS.md",
+        "docs/KPIs_LA_MUSIC_PERFORMANCE_REPORT.md",
+        "docs/PRD.md",
+        "supabase/migrations/20260109_fase1_seed_dados.sql",
+        "supabase/migrations/20260207_unificar_leads.sql"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_leads_comercial",
+        "vw_leads_por_canal",
+        "vw_matriculas_por_canal"
+      ],
+      "flags": [
+        "usado_por_views:3"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "catalogo_treinamentos",
+      "schema": "public",
+      "comment": null,
+      "total_size": "32 kB",
+      "total_bytes": 32768,
+      "estimated_rows": 6,
+      "code_refs": 14,
+      "code_paths": [
+        "supabase/migrations/20260124_professor_performance_tables.sql",
+        "supabase/migrations/20260126_create_get_dados_relatorio_coordenacao.sql",
+        "supabase/functions/gemini-relatorio-coordenacao/index.ts",
+        "src/components/App/Professores/TabAgendaProfessores.tsx",
+        "docs/superpowers/plans/2026-04-13-fix-rpc-relatorio-coordenacao.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "colaboradores",
+      "schema": "public",
+      "comment": null,
+      "total_size": "96 kB",
+      "total_bytes": 98304,
+      "estimated_rows": 12,
+      "code_refs": 140,
+      "code_paths": [
+        "App.tsx",
+        "docs/PLANO-IMPLEMENTACAO-FINAL.md",
+        "docs/APP_TSX_SUPER_FOLHA.md",
+        "docs/PLANO-CHECKLIST-EXPANSION.md",
+        "supabase/migrations/20260202_lojinha_tabelas.sql",
+        "supabase/functions/lojinha-enviar-comprovante/index.ts",
+        "supabase/functions/lojinha-relatorio-vendas/index.ts",
+        "src/types/lojinha.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_farmer_checklist_alertas"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "crm_lead_historico",
+      "schema": "public",
+      "comment": null,
+      "total_size": "96 kB",
+      "total_bytes": 98304,
+      "estimated_rows": 86,
+      "code_refs": 11,
+      "code_paths": [
+        "supabase/migrations/20260213_crm_triggers_e_rpcs.sql",
+        "supabase/functions/mila-processar-mensagem/index.ts",
+        "src/components/App/PreAtendimento/tabs/PipelineTab.tsx",
+        "src/components/App/PreAtendimento/tabs/LeadsTab.tsx",
+        "src/components/App/PreAtendimento/components/ModalMatricular.tsx",
+        "src/components/App/PreAtendimento/components/ModalAgendar.tsx",
+        "src/components/App/PreAtendimento/components/LeadDrawer.tsx",
+        "src/components/App/PreAtendimento/components/ModalMoverEtapa.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "crm_metas_andreza",
+      "schema": "public",
+      "comment": null,
+      "total_size": "64 kB",
+      "total_bytes": 65536,
+      "estimated_rows": 3,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "crm_templates_whatsapp",
+      "schema": "public",
+      "comment": null,
+      "total_size": "48 kB",
+      "total_bytes": 49152,
+      "estimated_rows": 8,
+      "code_refs": 7,
+      "code_paths": [
+        "supabase/migrations/20260213_crm_conversas_mensagens.sql",
+        "src/components/App/PreAtendimento/components/chat/ModalGerenciarTemplates.tsx",
+        "src/components/App/PreAtendimento/components/chat/TemplateSelector.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "cursos",
+      "schema": "public",
+      "comment": null,
+      "total_size": "96 kB",
+      "total_bytes": 98304,
+      "estimated_rows": 40,
+      "code_refs": 1052,
+      "code_paths": [
+        "CLAUDE.md",
+        "INSTRUCOES_MIGRATIONS.md",
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "tmp_audit_cg_jun.cjs",
+        "JARVIS_SETUP.md",
+        "docs/indicadores-matriculas.md",
+        "docs/RESUMO-INTEGRACAO-ADMINISTRATIVO.md",
+        "docs/ESPECIFICACAO_FRONTEND_COMPLETA.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_aluno_sucesso_lista",
+        "vw_alunos_ativos",
+        "vw_farmer_aniversariantes_hoje",
+        "vw_farmer_inadimplentes",
+        "vw_farmer_novos_matriculados",
+        "vw_farmer_renovacoes_proximas",
+        "vw_fator_demanda_professor",
+        "vw_kpis_gestao_mensal",
+        "vw_kpis_professor_mensal",
+        "vw_leads_comercial",
+        "vw_movimentacoes_recentes",
+        "vw_renovacoes_proximas",
+        "vw_turmas_completa",
+        "vw_turmas_implicitas"
+      ],
+      "flags": [
+        "usado_por_views:14"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "dados_comerciais",
+      "schema": "public",
+      "comment": null,
+      "total_size": "472 kB",
+      "total_bytes": 483328,
+      "estimated_rows": 92,
+      "code_refs": 93,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "AUDITORIA_DADOS_2026.md",
+        "PLANO_MIGRACAO_LEADS.md",
+        "docs/RELATORIO_ANALYTICS.md",
+        "supabase/migrations/20260207_unificar_leads.sql",
+        "src/hooks/useComercialData.ts",
+        "src/components/GestaoMensal/TabProfessoresNew.tsx",
+        "src/components/GestaoMensal/TabComercialNew.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_alertas_inteligentes",
+        "vw_kpis_comercial_historico"
+      ],
+      "flags": [
+        "usado_por_views:2"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "dados_mensais",
+      "schema": "public",
+      "comment": null,
+      "total_size": "120 kB",
+      "total_bytes": 122880,
+      "estimated_rows": 124,
+      "code_refs": 351,
+      "code_paths": [
+        "CLAUDE.md",
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "tmp_audit_cg_jun.cjs",
+        "AUDITORIA_DADOS_2026.md",
+        "docs/MIGRACAO_FASE2B_RETIFICACAO_CG_MAIO_V3_PROPOSTA.sql",
+        "docs/RESUMO-IMPLEMENTACAO-SYNC.md",
+        "docs/MIGRACAO_REGLA_KPI_V2.sql",
+        "docs/MIGRACAO_REGLA_KPI_V4_FINANCEIRO.sql"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_alertas_inteligentes",
+        "vw_consolidado_anual",
+        "vw_dashboard_unidade",
+        "vw_ranking_unidades",
+        "vw_sazonalidade",
+        "vw_unidade_anual"
+      ],
+      "flags": [
+        "objeto_critico/legado_conhecido",
+        "usado_por_views:6"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "emusys_sync_log",
+      "schema": "public",
+      "comment": null,
+      "total_size": "368 kB",
+      "total_bytes": 376832,
+      "estimated_rows": 745,
+      "code_refs": 17,
+      "code_paths": [
+        ".claude/agents/fiscal-dados.md",
+        ".claude/memory/dominio-alunos.md",
+        "supabase/functions/sync-presenca-emusys/index.ts",
+        "src/components/App/Alunos/SucessoCliente/PresencaTab.tsx",
+        "docs/archive/AUDITORIA-SYNC-PRESENCA-MATRICULAS.md",
+        "docs/superpowers/prompts/fiscal-dados.md",
+        "docs/superpowers/prompts/monitor-crons-sync.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "evasoes_backup_20260215",
+      "schema": "public",
+      "comment": null,
+      "total_size": "136 kB",
+      "total_bytes": 139264,
+      "estimated_rows": 677,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito",
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "evasoes_legacy_backup",
+      "schema": "public",
+      "comment": null,
+      "total_size": "136 kB",
+      "total_bytes": 139264,
+      "estimated_rows": 677,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito",
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "evasoes_v2",
+      "schema": "public",
+      "comment": "BACKUP - Tabela legada. Fonte unica de evasoes agora é movimentacoes_admin. Manter por 30 dias (ate 2026-03-27) para validacao. Nao dropar antes disso.",
+      "total_size": "360 kB",
+      "total_bytes": 368640,
+      "estimated_rows": 740,
+      "code_refs": 113,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "AUDITORIA_DADOS_2026.md",
+        "docs/ARQUITETURA_FRONTEND_V2.md",
+        "docs/RELATORIO_ANALYTICS.md",
+        "docs/HEALTH-SCORE-V2.md",
+        "docs/PLANO-PAGINA-ADMINISTRATIVA.md",
+        "docs/KPIs_LA_MUSIC_PERFORMANCE_REPORT.md",
+        "docs/PRD.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito",
+        "objeto_critico/legado_conhecido"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "evasoes_v2_backup",
+      "schema": "public",
+      "comment": null,
+      "total_size": "136 kB",
+      "total_bytes": 139264,
+      "estimated_rows": 740,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito",
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "experimentais_mensal_unidade",
+      "schema": "public",
+      "comment": null,
+      "total_size": "72 kB",
+      "total_bytes": 73728,
+      "estimated_rows": 67,
+      "code_refs": 12,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "PLANO_MIGRACAO_LEADS.md",
+        "docs/RELATORIO_ANALYTICS.md",
+        ".claude/memory/dominio-comercial.md",
+        "supabase/migrations/20260207_unificar_leads.sql",
+        "src/components/GestaoMensal/TabProfessoresNew.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_kpis_professor_historico"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "experimentais_professor_mensal",
+      "schema": "public",
+      "comment": null,
+      "total_size": "96 kB",
+      "total_bytes": 98304,
+      "estimated_rows": 140,
+      "code_refs": 28,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "PLANO_MIGRACAO_LEADS.md",
+        "docs/RELATORIO_ANALYTICS.md",
+        ".claude/memory/dominio-comercial.md",
+        "supabase/migrations/20260207_unificar_leads.sql",
+        "src/hooks/useProfessorDependencies.ts",
+        "src/components/GestaoMensal/TabComercialNew.tsx",
+        "docs/archive/AUDITORIA-BANCO-DADOS.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_professores_performance_atual"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "farmer_checklist_items",
+      "schema": "public",
+      "comment": "Itens individuais de cada checklist, com suporte a sub-itens e canais de comunicação",
+      "total_size": "128 kB",
+      "total_bytes": 131072,
+      "estimated_rows": 30,
+      "code_refs": 13,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "docs/PLANO-IMPLEMENTACAO-FINAL.md",
+        "src/components/App/Administrativo/PainelFarmer/ChecklistsTab.tsx",
+        "src/components/App/Administrativo/PainelFarmer/ChecklistDetail.tsx",
+        "src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_farmer_checklist_alertas"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "farmer_checklist_templates",
+      "schema": "public",
+      "comment": "Templates reutilizáveis de checklists para o Painel Farmer",
+      "total_size": "64 kB",
+      "total_bytes": 65536,
+      "estimated_rows": 5,
+      "code_refs": 10,
+      "code_paths": [
+        "docs/PLANO-IMPLEMENTACAO-FINAL.md",
+        "docs/PLANO-CHECKLIST-EXPANSION.md",
+        "src/components/App/Administrativo/PainelFarmer/hooks/useChecklists.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "farmer_checklists",
+      "schema": "public",
+      "comment": "Checklists do Painel Farmer - listas de tarefas agrupadas com prazo e alertas",
+      "total_size": "112 kB",
+      "total_bytes": 114688,
+      "estimated_rows": 5,
+      "code_refs": 24,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "docs/PLANO-IMPLEMENTACAO-FINAL.md",
+        "docs/PLANO-CHECKLIST-EXPANSION.md",
+        "src/components/App/Administrativo/PainelFarmer/ChecklistDetail.tsx",
+        "src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts",
+        "src/components/App/Administrativo/PainelFarmer/hooks/useChecklists.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_farmer_checklist_alertas"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "farmer_templates",
+      "schema": "public",
+      "comment": "Templates de mensagens para comunicação com alunos/responsáveis",
+      "total_size": "64 kB",
+      "total_bytes": 65536,
+      "estimated_rows": 14,
+      "code_refs": 4,
+      "code_paths": [
+        "docs/PLANO-IMPLEMENTACAO-FINAL.md",
+        "docs/PLANO-CHECKLIST-EXPANSION.md",
+        "src/components/App/Administrativo/PainelFarmer/RecadosTab.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "historico_pagamentos",
+      "schema": "public",
+      "comment": "Histórico mensal de status de pagamento dos alunos (snapshot antes do reset)",
+      "total_size": "48 kB",
+      "total_bytes": 49152,
+      "estimated_rows": 0,
+      "code_refs": 1,
+      "code_paths": [
+        "src/components/App/Alunos/TabelaAlunos.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "leads",
+      "schema": "public",
+      "comment": "Leads comerciais - do primeiro contato até a conversão ou arquivamento",
+      "total_size": "4456 kB",
+      "total_bytes": 4562944,
+      "estimated_rows": 7047,
+      "code_refs": 1422,
+      "code_paths": [
+        "CLAUDE.md",
+        "INSTRUCOES_MIGRATIONS.md",
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "workflow_emusys_fixed.json",
+        "AUDITORIA_DADOS_2026.md",
+        "PLANO_MIGRACAO_LEADS.md",
+        "sql/trigger_sync_leads_to_leads_diarios.sql",
+        "docs/indicadores-matriculas.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_funil_conversao_mensal",
+        "vw_kpis_comercial_mensal",
+        "vw_kpis_gestao_mensal",
+        "vw_kpis_professor_historico",
+        "vw_kpis_professor_mensal",
+        "vw_leads_comercial",
+        "vw_leads_por_canal",
+        "vw_motivos_nao_matricula",
+        "vw_performance_professor_experimental",
+        "vw_professores_performance_atual"
+      ],
+      "flags": [
+        "usado_por_views:10"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "leads_automacao_log",
+      "schema": "public",
+      "comment": null,
+      "total_size": "9568 kB",
+      "total_bytes": 9797632,
+      "estimated_rows": 28205,
+      "code_refs": 27,
+      "code_paths": [
+        ".claude/agents/fiscal-dados.md",
+        ".claude/memory/integracao-infra.md",
+        "supabase/functions/sync-presenca-emusys/index.ts",
+        "src/components/App/Comercial/ComercialPage.tsx",
+        "src/components/App/Entrada/FormLead.tsx",
+        "src/components/App/PreAtendimento/tabs/TabAutomacaoLeads.tsx",
+        "src/components/App/PreAtendimento/components/ModalNovoLead.tsx",
+        "docs/archive/AUDITORIA-SYNC-PRESENCA-MATRICULAS.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "leads_backup_flags_20260601",
+      "schema": "public",
+      "comment": null,
+      "total_size": "8192 bytes",
+      "total_bytes": 8192,
+      "estimated_rows": 17,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito",
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "leads_diarios_backup",
+      "schema": "public",
+      "comment": null,
+      "total_size": "40 kB",
+      "total_bytes": 40960,
+      "estimated_rows": 100,
+      "code_refs": 2,
+      "code_paths": [
+        "PLANO_MIGRACAO_LEADS.md",
+        "supabase/migrations/20260207_unificar_leads.sql"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "loja_reservas",
+      "schema": "public",
+      "comment": null,
+      "total_size": "80 kB",
+      "total_bytes": 81920,
+      "estimated_rows": 2,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "metas",
+      "schema": "public",
+      "comment": "Metas e OKRs unificados por unidade - mensais, trimestrais e anuais.",
+      "total_size": "104 kB",
+      "total_bytes": 106496,
+      "estimated_rows": 7,
+      "code_refs": 790,
+      "code_paths": [
+        "CLAUDE.md",
+        "README.md",
+        "INSTRUCOES_MIGRATIONS.md",
+        "App.tsx",
+        "src/router.tsx",
+        "docs/indicadores-matriculas.md",
+        "docs/ESPECIFICACAO_FRONTEND_COMPLETA.md",
+        "docs/ARQUITETURA_FRONTEND_V2.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_metas_vs_realizado",
+        "vw_projecao_metas"
+      ],
+      "flags": [
+        "usado_por_views:2"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "metas_kpi",
+      "schema": "public",
+      "comment": null,
+      "total_size": "344 kB",
+      "total_bytes": 352256,
+      "estimated_rows": 596,
+      "code_refs": 26,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "docs/RELATORIO-MENSAL-ADMINISTRATIVO.md",
+        "docs/PLANO_SIMULADOR_METAS.md",
+        "supabase/migrations/20260125_create_get_dados_comercial_ia.sql",
+        "supabase/migrations/20260126_create_get_dados_relatorio_coordenacao.sql",
+        "supabase/functions/gemini-relatorio-gerencial/index.ts",
+        "src/hooks/useMetasKPI.ts",
+        "src/hooks/useSimulador.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_alertas_inteligentes"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "metas_legado",
+      "schema": "public",
+      "comment": "BACKUP: Tabela metas original (estrutura anual). Dados migrados para nova tabela metas em 2026-01-16. Pode ser removida após 30 dias de validação.",
+      "total_size": "72 kB",
+      "total_bytes": 73728,
+      "estimated_rows": 6,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "motivos_saida",
+      "schema": "public",
+      "comment": null,
+      "total_size": "72 kB",
+      "total_bytes": 73728,
+      "estimated_rows": 15,
+      "code_refs": 68,
+      "code_paths": [
+        "CLAUDE.md",
+        "tmp_audit_cg_jun.cjs",
+        "docs/RELATORIO_ANALYTICS.md",
+        "docs/KPIs_LA_MUSIC_PERFORMANCE_REPORT.md",
+        "docs/PRD.md",
+        ".claude/memory/todos-pendentes.md",
+        ".claude/memory/metricas.md",
+        ".claude/memory/regras-negocio.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_evasao_por_motivo",
+        "vw_evasoes_motivos",
+        "vw_evasoes_professores",
+        "vw_evasoes_resumo",
+        "vw_movimentacoes_recentes"
+      ],
+      "flags": [
+        "usado_por_views:5"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "movimentacoes",
+      "schema": "public",
+      "comment": "Registro de todas as movimentações de alunos: matrículas, renovações, evasões, transferências, trocas de curso/professor.",
+      "total_size": "144 kB",
+      "total_bytes": 147456,
+      "estimated_rows": 0,
+      "code_refs": 71,
+      "code_paths": [
+        "INSTRUCOES_MIGRATIONS.md",
+        "AUDITORIA_DADOS_2026.md",
+        ".claude/memory/dominio-alunos.md",
+        ".claude/memory/dominio-operacional.md",
+        "supabase/migrations/fase5_5b_criar_politicas_rls.sql",
+        "supabase/functions/lojinha-relatorio-professor/index.ts",
+        "supabase/functions/relatorio-admin-whatsapp/index.ts",
+        "src/types/supabase.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_evasao_por_motivo",
+        "vw_evasao_por_tipo",
+        "vw_evolucao_alunos",
+        "vw_kpis_mensais",
+        "vw_matriculas_por_canal",
+        "vw_movimentacoes_mensal",
+        "vw_movimentacoes_recentes"
+      ],
+      "flags": [
+        "usado_por_views:7"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "movimentacoes_admin",
+      "schema": "public",
+      "comment": "Tabela para registrar movimentações administrativas: renovações, não renovações, avisos prévios e evasões",
+      "total_size": "744 kB",
+      "total_bytes": 761856,
+      "estimated_rows": 1332,
+      "code_refs": 263,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "tmp_audit_cg_jun.cjs",
+        "AUDITORIA_DADOS_2026.md",
+        "docs/MIGRATION-add-trancamento.sql",
+        "docs/audit_ciclo_vida_alunos_CG_MAIO2026_LOTES.md",
+        "docs/RESUMO-IMPLEMENTACAO-SYNC.md",
+        "docs/MIGRACAO_REGLA_KPI_V2.sql",
+        "docs/MIGRACAO_REGLA_KPI_V4_FINANCEIRO.sql"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_alertas_inteligentes",
+        "vw_dashboard_unidade",
+        "vw_evasoes_motivos",
+        "vw_evasoes_professores",
+        "vw_evasoes_resumo",
+        "vw_kpis_gestao_mensal",
+        "vw_kpis_professor_mensal",
+        "vw_kpis_retencao_mensal",
+        "vw_professores_performance_atual",
+        "vw_taxa_crescimento_professor"
+      ],
+      "flags": [
+        "usado_por_views:10"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "notificacao_log",
+      "schema": "public",
+      "comment": null,
+      "total_size": "160 kB",
+      "total_bytes": 163840,
+      "estimated_rows": 9,
+      "code_refs": 13,
+      "code_paths": [
+        "docs/BRIEFING_GESTAO_PROJETOS_PEDAGOGICOS.md",
+        "supabase/migrations/20260129_create_notificacao_tables.sql",
+        "supabase/functions/projeto-alertas-whatsapp/index.ts",
+        "src/hooks/useNotificacoes.ts",
+        "src/components/App/Projetos/views/ConfiguracoesView.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "professor_360_ocorrencias_log",
+      "schema": "public",
+      "comment": null,
+      "total_size": "136 kB",
+      "total_bytes": 139264,
+      "estimated_rows": 75,
+      "code_refs": 27,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "sql/professor_360_tables.sql",
+        "supabase/migrations/20260202_ocorrencias_crud_logs.sql",
+        "src/hooks/useProfessor360.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "professores",
+      "schema": "public",
+      "comment": null,
+      "total_size": "144 kB",
+      "total_bytes": 147456,
+      "estimated_rows": 57,
+      "code_refs": 1362,
+      "code_paths": [
+        "CLAUDE.md",
+        "INSTRUCOES_MIGRATIONS.md",
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "AUDITORIA_DADOS_2026.md",
+        "PLANO_MIGRACAO_LEADS.md",
+        ".claude/settings.local.json",
+        "sql/professor_360_tables.sql",
+        "src/router.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_aluno_sucesso_lista",
+        "vw_alunos_ativos",
+        "vw_evasoes_professores",
+        "vw_farmer_aniversariantes_hoje",
+        "vw_farmer_inadimplentes",
+        "vw_farmer_novos_matriculados",
+        "vw_farmer_renovacoes_proximas",
+        "vw_fator_demanda_professor",
+        "vw_kpis_professor_completo",
+        "vw_kpis_professor_historico",
+        "vw_kpis_professor_mensal",
+        "vw_kpis_professor_por_unidade",
+        "vw_leads_comercial",
+        "vw_performance_professor_experimental",
+        "vw_professores_carteira_resumo",
+        "vw_professores_performance_atual",
+        "vw_ranking_professores_retencao",
+        "vw_renovacoes_proximas",
+        "vw_taxa_crescimento_professor",
+        "vw_turmas_completa",
+        "vw_turmas_implicitas"
+      ],
+      "flags": [
+        "usado_por_views:21"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "professores_performance",
+      "schema": "public",
+      "comment": null,
+      "total_size": "120 kB",
+      "total_bytes": 122880,
+      "estimated_rows": 125,
+      "code_refs": 40,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "docs/RELATORIO_ANALYTICS.md",
+        "src/hooks/useProfessoresPerformance.ts",
+        "src/components/GestaoMensal/TabProfessoresNew.tsx",
+        "src/components/App/Dashboard/DashboardPage.tsx",
+        "docs/archive/AUDITORIA_FILTRO_UNIDADE.md",
+        "docs/archive/AUDITORIA-BANCO-DADOS.md",
+        "docs/archive/AUDITORIA_COMPLETA.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_ranking_professores_evasoes",
+        "vw_totais_unidade_performance"
+      ],
+      "flags": [
+        "usado_por_views:2"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "professores_sync_log",
+      "schema": "public",
+      "comment": "Auditoria do sync semanal de professores com o Emusys (edge: sync-professores-emusys)",
+      "total_size": "80 kB",
+      "total_bytes": 81920,
+      "estimated_rows": 8,
+      "code_refs": 12,
+      "code_paths": [
+        ".claude/agents/fiscal-dados.md",
+        ".claude/memory/integracao-infra.md",
+        ".claude/memory/dominio-operacional.md",
+        "supabase/functions/sync-professores-emusys/index.ts",
+        "docs/superpowers/plans/2026-05-20-saude-automacoes.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "professores_unidades",
+      "schema": "public",
+      "comment": "Relacionamento N:N entre professores e unidades onde atuam",
+      "total_size": "128 kB",
+      "total_bytes": 131072,
+      "estimated_rows": 77,
+      "code_refs": 56,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        ".claude/memory/pendencias-emusys.md",
+        ".claude/memory/todos-pendentes.md",
+        ".claude/memory/integracao-infra.md",
+        ".claude/memory/regras-negocio.md",
+        ".claude/memory/dominio-operacional.md",
+        "supabase/migrations/20260207_unificar_leads.sql",
+        "supabase/functions/sync-professores-emusys/index.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_alertas_inteligentes",
+        "vw_professores_performance_atual"
+      ],
+      "flags": [
+        "usado_por_views:2"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "programa_fideliza_historico",
+      "schema": "public",
+      "comment": null,
+      "total_size": "32 kB",
+      "total_bytes": 32768,
+      "estimated_rows": 0,
+      "code_refs": 8,
+      "code_paths": [
+        "supabase/migrations/20260201230000_programa_fideliza_tabelas.sql"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "programa_matriculador_historico",
+      "schema": "public",
+      "comment": null,
+      "total_size": "40 kB",
+      "total_bytes": 40960,
+      "estimated_rows": 0,
+      "code_refs": 4,
+      "code_paths": [
+        "supabase/migrations/20260201223000_programa_matriculador_tabelas.sql"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "projeto_log_alteracoes",
+      "schema": "public",
+      "comment": null,
+      "total_size": "136 kB",
+      "total_bytes": 139264,
+      "estimated_rows": 67,
+      "code_refs": 1,
+      "code_paths": [
+        "src/components/App/Projetos/components/ModalDetalhesTarefa.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "projeto_tipo_fases_template",
+      "schema": "public",
+      "comment": "Template de fases padrão para cada tipo de projeto",
+      "total_size": "96 kB",
+      "total_bytes": 98304,
+      "estimated_rows": 34,
+      "code_refs": 25,
+      "code_paths": [
+        "docs/BRIEFING_GESTAO_PROJETOS_PEDAGOGICOS.md",
+        "supabase/migrations/20260128_create_projetos_tables.sql",
+        "src/hooks/useProjetos.ts",
+        "src/components/App/Projetos/views/ConfiguracoesView.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "projeto_tipo_tarefas_template",
+      "schema": "public",
+      "comment": "Tarefas padrão de cada fase do template",
+      "total_size": "64 kB",
+      "total_bytes": 65536,
+      "estimated_rows": 80,
+      "code_refs": 8,
+      "code_paths": [
+        "docs/BRIEFING_GESTAO_PROJETOS_PEDAGOGICOS.md",
+        "supabase/migrations/20260128_create_projetos_tables.sql",
+        "src/hooks/useProjetos.ts",
+        "src/components/App/Projetos/views/ConfiguracoesView.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "relatorios_diarios",
+      "schema": "public",
+      "comment": "Snapshot diário dos números de cada unidade - histórico para análise",
+      "total_size": "48 kB",
+      "total_bytes": 49152,
+      "estimated_rows": 0,
+      "code_refs": 51,
+      "code_paths": [
+        "INSTRUCOES_MIGRATIONS.md",
+        "AUDITORIA_DADOS_2026.md",
+        "docs/KPIs_LA_MUSIC_PERFORMANCE_REPORT.md",
+        "docs/PRD.md",
+        "supabase/migrations/fase5_5b_criar_politicas_rls.sql",
+        "src/types/supabase.ts",
+        "src/components/App/Snapshot/SnapshotDiario.tsx",
+        "src/components/App/Entrada/RelatorioDiario.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_alertas",
+        "vw_metas_vs_realizado",
+        "vw_projecao_metas"
+      ],
+      "flags": [
+        "usado_por_views:3"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "renovacoes",
+      "schema": "public",
+      "comment": "Histórico de renovações de contrato com valores e reajustes",
+      "total_size": "264 kB",
+      "total_bytes": 270336,
+      "estimated_rows": 383,
+      "code_refs": 386,
+      "code_paths": [
+        "CLAUDE.md",
+        "INSTRUCOES_MIGRATIONS.md",
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "AUDITORIA_DADOS_2026.md",
+        "docs/RESUMO-IMPLEMENTACAO-SYNC.md",
+        "docs/MIGRACAO_REGLA_KPI_V2.sql",
+        "docs/MIGRACAO_REGLA_KPI_V4_FINANCEIRO.sql",
+        "docs/PLANO-IMPLEMENTACAO-FINAL.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_alertas_inteligentes",
+        "vw_kpis_gestao_mensal",
+        "vw_renovacoes_mensal",
+        "vw_renovacoes_pendentes"
+      ],
+      "flags": [
+        "objeto_critico/legado_conhecido",
+        "usado_por_views:4"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "salas",
+      "schema": "public",
+      "comment": "Salas de aula de cada unidade com capacidade máxima",
+      "total_size": "112 kB",
+      "total_bytes": 114688,
+      "estimated_rows": 53,
+      "code_refs": 200,
+      "code_paths": [
+        "CLAUDE.md",
+        "sql/professor_360_tables.sql",
+        "src/router.tsx",
+        "docs/BRIEFING_GESTAO_PROJETOS_PEDAGOGICOS.md",
+        "docs/PLANO_ONBOARDING.md",
+        "docs/RELATORIO_TESTES_E2E.md",
+        "docs/EDGE_FUNCTION_PROFESSOR_INSIGHTS.md",
+        "docs/MILA.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_turmas_completa",
+        "vw_turmas_implicitas"
+      ],
+      "flags": [
+        "usado_por_views:2"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "templates_cenario",
+      "schema": "public",
+      "comment": null,
+      "total_size": "32 kB",
+      "total_bytes": 32768,
+      "estimated_rows": 3,
+      "code_refs": 1,
+      "code_paths": [
+        "src/components/App/Metas/Simulador/TemplatesCenario.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "templates_cenario_unidade",
+      "schema": "public",
+      "comment": null,
+      "total_size": "48 kB",
+      "total_bytes": 49152,
+      "estimated_rows": 6,
+      "code_refs": 2,
+      "code_paths": [
+        "src/components/App/Metas/Simulador/TemplatesCenario.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "templates_meta",
+      "schema": "public",
+      "comment": null,
+      "total_size": "336 kB",
+      "total_bytes": 344064,
+      "estimated_rows": 30,
+      "code_refs": 10,
+      "code_paths": [
+        "supabase/functions/enviar-campanha/index.ts",
+        "supabase/functions/sincronizar-templates/index.ts",
+        "src/components/App/Campanhas/components/CampanhaDrawer.tsx",
+        "src/components/App/Campanhas/hooks/useCampanhas.ts",
+        "src/components/App/Campanhas/hooks/useTemplatesMeta.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "tipos_matricula",
+      "schema": "public",
+      "comment": null,
+      "total_size": "64 kB",
+      "total_bytes": 65536,
+      "estimated_rows": 5,
+      "code_refs": 184,
+      "code_paths": [
+        "tmp_audit_cg_jun.cjs",
+        "docs/MIGRACAO_REGLA_KPI_V2.sql",
+        "docs/MIGRACAO_REGLA_KPI_V4_FINANCEIRO.sql",
+        "docs/ESTRUTURA-BANCO-ALUNOS.md",
+        "docs/RELATORIO_TECNICO_REGLAS_KPI.md",
+        "docs/SIMULACAO_SANEAMENTO_CG_MAIO2026_V4.sql",
+        "docs/VALIDACAO_KPI_CG_MAIO2026_V5_FINANCEIRO.sql",
+        "docs/MIGRACAO_REGLA_KPI_V5_ALUNOS.sql"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_alunos_ativos",
+        "vw_contagem_alunos",
+        "vw_dashboard_unidade",
+        "vw_kpis_gestao_mensal",
+        "vw_kpis_retencao_mensal",
+        "vw_ltv_unidade"
+      ],
+      "flags": [
+        "usado_por_views:6"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "tipos_saida",
+      "schema": "public",
+      "comment": null,
+      "total_size": "64 kB",
+      "total_bytes": 65536,
+      "estimated_rows": 4,
+      "code_refs": 37,
+      "code_paths": [
+        "docs/RELATORIO_ANALYTICS.md",
+        "docs/KPIs_LA_MUSIC_PERFORMANCE_REPORT.md",
+        "docs/PRD.md",
+        "supabase/migrations/fase3_views_kpis.sql",
+        "supabase/migrations/20260109_fase1_seed_dados.sql",
+        "supabase/migrations/20260124_retencao_insights.sql",
+        "supabase/migrations/20260109_fase2_tabela_alunos.sql",
+        "supabase/migrations/20260109_fase1_tabelas_mestras.sql"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_evasao_por_tipo"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "transferencias_mila",
+      "schema": "public",
+      "comment": null,
+      "total_size": "32 kB",
+      "total_bytes": 32768,
+      "estimated_rows": 0,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "turmas",
+      "schema": "public",
+      "comment": "Turmas de aula - combinação de professor, dia, horário e sala",
+      "total_size": "72 kB",
+      "total_bytes": 73728,
+      "estimated_rows": 0,
+      "code_refs": 353,
+      "code_paths": [
+        "CLAUDE.md",
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "AUDITORIA_DADOS_2026.md",
+        "docs/indicadores-matriculas.md",
+        "docs/SUCESSO-DO-ALUNO.md",
+        "docs/PLANO-FILTROS-PERIODO-OPERACIONAL.md",
+        "docs/RELATORIO_ANALYTICS.md",
+        "docs/HEALTH-SCORE-V2.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_turmas_completa"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "turmas_explicitas",
+      "schema": "public",
+      "comment": "Turmas explícitas criadas manualmente (turmas regulares e bandas)",
+      "total_size": "224 kB",
+      "total_bytes": 229376,
+      "estimated_rows": 404,
+      "code_refs": 26,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "AUDITORIA_DADOS_2026.md",
+        "src/hooks/useProfessorDependencies.ts",
+        "src/components/App/Professores/ProfessoresPage.tsx",
+        "src/components/App/Professores/TabPerformanceProfessores.tsx",
+        "src/components/App/Alunos/GestaoTurmas.tsx",
+        "src/components/App/Alunos/AlunosPage.tsx",
+        "src/components/App/Alunos/ModalNovaTurma.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_turmas_implicitas"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "turmas_historico",
+      "schema": "public",
+      "comment": "Histórico de mudanças em turmas: adições, remoções e movimentações de alunos",
+      "total_size": "128 kB",
+      "total_bytes": 131072,
+      "estimated_rows": 2,
+      "code_refs": 2,
+      "code_paths": [
+        "src/components/App/Alunos/AlunosPage.tsx",
+        "src/components/App/Alunos/ModalAdicionarAlunoTurma.tsx"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "unidades",
+      "schema": "public",
+      "comment": null,
+      "total_size": "64 kB",
+      "total_bytes": 65536,
+      "estimated_rows": 3,
+      "code_refs": 1029,
+      "code_paths": [
+        "CLAUDE.md",
+        "INSTRUCOES_MIGRATIONS.md",
+        "GEMINI.md",
+        "App.tsx",
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "PROBLEMA_LOGIN_SOLUCAO.md",
+        "JARVIS_SETUP.md",
+        "AUDITORIA_DADOS_2026.md"
+      ],
+      "view_sources": [],
+      "view_consumers": [
+        "vw_alertas",
+        "vw_alertas_inteligentes",
+        "vw_aluno_sucesso_lista",
+        "vw_alunos_ativos",
+        "vw_contagem_alunos",
+        "vw_dashboard_unidade",
+        "vw_evasao_por_motivo",
+        "vw_evasao_por_tipo",
+        "vw_evasoes_motivos",
+        "vw_evasoes_professores",
+        "vw_evasoes_resumo",
+        "vw_evolucao_alunos",
+        "vw_farmer_resumo_alertas",
+        "vw_funil_conversao_mensal",
+        "vw_kpis_comercial_historico",
+        "vw_kpis_comercial_mensal",
+        "vw_kpis_gestao_mensal",
+        "vw_kpis_mensais",
+        "vw_kpis_retencao_mensal",
+        "vw_leads_comercial",
+        "vw_leads_por_canal",
+        "vw_ltv_por_unidade",
+        "vw_ltv_unidade",
+        "vw_matriculas_por_canal",
+        "vw_metas_vs_realizado",
+        "vw_motivos_nao_matricula",
+        "vw_movimentacoes_mensal",
+        "vw_movimentacoes_recentes",
+        "vw_performance_professor_experimental",
+        "vw_professores_performance_atual",
+        "vw_projecao_metas",
+        "vw_ranking_professores_retencao",
+        "vw_ranking_unidades",
+        "vw_renovacoes_mensal",
+        "vw_renovacoes_pendentes",
+        "vw_renovacoes_proximas",
+        "vw_sazonalidade",
+        "vw_turmas_completa",
+        "vw_turmas_implicitas",
+        "vw_unidade_anual"
+      ],
+      "flags": [
+        "usado_por_views:40"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "webhook_debug_log",
+      "schema": "public",
+      "comment": null,
+      "total_size": "536 kB",
+      "total_bytes": 548864,
+      "estimated_rows": 317,
+      "code_refs": 1,
+      "code_paths": [
+        "supabase/functions/webhook-whatsapp-inbox/index.ts"
+      ],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "view",
+      "name": "vw_aluno_sucesso_lista",
+      "schema": "public",
+      "comment": "View completa de alunos para a feature Sucesso do Cliente",
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 8,
+      "code_paths": [
+        "docs/SUCESSO-DO-ALUNO.md",
+        "supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql",
+        "src/components/App/Alunos/SucessoCliente/TabSucessoAluno.tsx"
+      ],
+      "view_sources": [
+        "aluno_acoes",
+        "aluno_feedback_professor",
+        "aluno_metas",
+        "alunos",
+        "cursos",
+        "professores",
+        "unidades"
+      ],
+      "view_consumers": [
+        "vw_aluno_sucesso_resumo"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "view",
+      "name": "vw_farmer_aniversariantes_hoje",
+      "schema": "public",
+      "comment": null,
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 3,
+      "code_paths": [
+        "AUDITORIA_DADOS_2026.md",
+        "docs/PLANO-IMPLEMENTACAO-FINAL.md",
+        "src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts"
+      ],
+      "view_sources": [
+        "alunos",
+        "cursos",
+        "professores"
+      ],
+      "view_consumers": [
+        "vw_farmer_resumo_alertas"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "view",
+      "name": "vw_farmer_inadimplentes",
+      "schema": "public",
+      "comment": null,
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 2,
+      "code_paths": [
+        "docs/PLANO-IMPLEMENTACAO-FINAL.md",
+        "src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts"
+      ],
+      "view_sources": [
+        "alunos",
+        "cursos",
+        "professores"
+      ],
+      "view_consumers": [
+        "vw_farmer_resumo_alertas"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "view",
+      "name": "vw_farmer_novos_matriculados",
+      "schema": "public",
+      "comment": null,
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 3,
+      "code_paths": [
+        "AUDITORIA_DADOS_2026.md",
+        "docs/PLANO-IMPLEMENTACAO-FINAL.md",
+        "src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts"
+      ],
+      "view_sources": [
+        "alunos",
+        "cursos",
+        "professores"
+      ],
+      "view_consumers": [
+        "vw_farmer_resumo_alertas"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "view",
+      "name": "vw_farmer_renovacoes_proximas",
+      "schema": "public",
+      "comment": null,
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 3,
+      "code_paths": [
+        "AUDITORIA_DADOS_2026.md",
+        "docs/PLANO-IMPLEMENTACAO-FINAL.md",
+        "src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts"
+      ],
+      "view_sources": [
+        "alunos",
+        "cursos",
+        "professores"
+      ],
+      "view_consumers": [
+        "vw_farmer_resumo_alertas"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "view",
+      "name": "vw_fator_demanda_professor",
+      "schema": "public",
+      "comment": "Calcula o Fator de Demanda Ponderado de cada professor baseado na composição da carteira de alunos",
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 2,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "src/components/App/Professores/TabPerformanceProfessores.tsx"
+      ],
+      "view_sources": [
+        "alunos",
+        "cursos",
+        "professores"
+      ],
+      "view_consumers": [
+        "vw_taxa_crescimento_professor"
+      ],
+      "flags": [
+        "usado_por_views:1"
+      ]
+    },
+    {
+      "kind": "view",
+      "name": "vw_kpis_comercial_historico",
+      "schema": "public",
+      "comment": null,
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 25,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "docs/RELATORIO_ANALYTICS.md",
+        "src/hooks/useDadosHistoricos.ts",
+        "src/components/GestaoMensal/TabComercialNew.tsx",
+        "src/components/App/Dashboard/DashboardPage.tsx",
+        "docs/archive/AUDITORIA_FILTRO_UNIDADE.md",
+        "docs/archive/AUDITORIA-BANCO-DADOS.md",
+        "docs/archive/AUDITORIA_COMPLETA_BACKEND.md"
+      ],
+      "view_sources": [
+        "dados_comerciais",
+        "unidades"
+      ],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "view",
+      "name": "vw_kpis_professor_historico",
+      "schema": "public",
+      "comment": null,
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 8,
+      "code_paths": [
+        "docs/RELATORIO_ANALYTICS.md",
+        "scripts/check-views.ts",
+        "src/components/GestaoMensal/TabProfessoresNew.tsx",
+        "docs/archive/AUDITORIA-BANCO-DADOS.md"
+      ],
+      "view_sources": [
+        "experimentais_mensal_unidade",
+        "leads",
+        "professores"
+      ],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito"
+      ]
+    },
+    {
+      "kind": "view",
+      "name": "vw_kpis_professor_por_unidade",
+      "schema": "public",
+      "comment": null,
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [
+        "alunos",
+        "professores"
+      ],
+      "view_consumers": [],
+      "flags": [
+        "view_sem_ref_codigo"
+      ]
+    },
+    {
+      "kind": "view",
+      "name": "vw_leads_comercial",
+      "schema": "public",
+      "comment": "View de compatibilidade que emula a estrutura de leads_diarios. Inclui campos resolvidos (nomes) para evitar JOINs via PostgREST.",
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [
+        "canais_origem",
+        "cursos",
+        "leads",
+        "professores",
+        "unidades"
+      ],
+      "view_consumers": [],
+      "flags": [
+        "view_sem_ref_codigo"
+      ]
+    },
+    {
+      "kind": "view",
+      "name": "vw_professores_carteira_resumo",
+      "schema": "public",
+      "comment": null,
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [
+        "alunos",
+        "professores"
+      ],
+      "view_consumers": [],
+      "flags": [
+        "view_sem_ref_codigo"
+      ]
+    },
+    {
+      "kind": "view",
+      "name": "vw_turmas_implicitas",
+      "schema": "public",
+      "comment": "View de turmas baseada nos dados existentes de alunos (professor + dia + horário)",
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 33,
+      "code_paths": [
+        "MAPEAMENTO_FRONTEND_DADOS.md",
+        "AUDITORIA_DADOS_2026.md",
+        "src/components/GestaoMensal/TabProfessoresNew.tsx",
+        "src/components/App/Dashboard/DashboardPage.tsx",
+        "src/components/App/Professores/TabCarteiraProfessores.tsx",
+        "src/components/App/Professores/ProfessoresPage.tsx",
+        "src/components/App/Professores/TabPerformanceProfessores.tsx",
+        "src/components/App/Alunos/TabelaAlunos.tsx"
+      ],
+      "view_sources": [
+        "alunos",
+        "cursos",
+        "professores",
+        "salas",
+        "turmas_explicitas",
+        "unidades"
+      ],
+      "view_consumers": [
+        "vw_alertas_inteligentes",
+        "vw_kpis_professor_mensal"
+      ],
+      "flags": [
+        "usado_por_views:2"
+      ]
+    },
+    {
+      "kind": "view",
+      "name": "vw_turmas_professor_periodo",
+      "schema": "public",
+      "comment": "Turmas reconstruidas a partir de aulas_emusys+aluno_presenca. turma_chave usa COALESCE para nao perder turmas com turma_nome NULL.",
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [
+        "aluno_presenca",
+        "alunos",
+        "aulas_emusys"
+      ],
+      "view_consumers": [],
+      "flags": [
+        "view_sem_ref_codigo"
+      ]
+    }
+  ],
+  "view_risks": [
+    {
+      "view": "vw_alertas_inteligentes",
+      "risks": [
+        "count(*)",
+        "renovacoes",
+        "dados_mensais"
+      ],
+      "sources": [
+        "alunos",
+        "dados_comerciais",
+        "dados_mensais",
+        "metas_kpi",
+        "movimentacoes_admin",
+        "professores_unidades",
+        "renovacoes",
+        "unidades",
+        "vw_turmas_implicitas"
+      ],
+      "code_refs": 10
+    },
+    {
+      "view": "vw_aluno_sucesso_lista",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "aluno_acoes",
+        "aluno_feedback_professor",
+        "aluno_metas",
+        "alunos",
+        "cursos",
+        "professores",
+        "unidades"
+      ],
+      "code_refs": 8
+    },
+    {
+      "view": "vw_aluno_sucesso_resumo",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "vw_aluno_sucesso_lista"
+      ],
+      "code_refs": 6
+    },
+    {
+      "view": "vw_alunos_ativos",
+      "risks": [
+        "classificacao"
+      ],
+      "sources": [
+        "alunos",
+        "cursos",
+        "professores",
+        "tipos_matricula",
+        "unidades"
+      ],
+      "code_refs": 4
+    },
+    {
+      "view": "vw_consolidado_anual",
+      "risks": [
+        "dados_mensais"
+      ],
+      "sources": [
+        "dados_mensais"
+      ],
+      "code_refs": 14
+    },
+    {
+      "view": "vw_contagem_alunos",
+      "risks": [
+        "count(*)",
+        "classificacao"
+      ],
+      "sources": [
+        "alunos",
+        "tipos_matricula",
+        "unidades"
+      ],
+      "code_refs": 4
+    },
+    {
+      "view": "vw_dashboard_unidade",
+      "risks": [
+        "count(*)",
+        "renovacoes",
+        "dados_mensais"
+      ],
+      "sources": [
+        "alunos",
+        "alunos_historico",
+        "dados_mensais",
+        "movimentacoes_admin",
+        "tipos_matricula",
+        "unidades"
+      ],
+      "code_refs": 50
+    },
+    {
+      "view": "vw_distribuicao_permanencia",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "alunos_historico"
+      ],
+      "code_refs": 2
+    },
+    {
+      "view": "vw_evasao_por_motivo",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "motivos_saida",
+        "movimentacoes",
+        "unidades"
+      ],
+      "code_refs": 1
+    },
+    {
+      "view": "vw_evasao_por_tipo",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "movimentacoes",
+        "tipos_saida",
+        "unidades"
+      ],
+      "code_refs": 1
+    },
+    {
+      "view": "vw_evasoes_motivos",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "motivos_saida",
+        "movimentacoes_admin",
+        "unidades"
+      ],
+      "code_refs": 7
+    },
+    {
+      "view": "vw_evasoes_professores",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "motivos_saida",
+        "movimentacoes_admin",
+        "professores",
+        "unidades"
+      ],
+      "code_refs": 6
+    },
+    {
+      "view": "vw_evasoes_resumo",
+      "risks": [
+        "count(*)",
+        "renovacoes"
+      ],
+      "sources": [
+        "motivos_saida",
+        "movimentacoes_admin",
+        "unidades"
+      ],
+      "code_refs": 7
+    },
+    {
+      "view": "vw_farmer_aniversariantes_hoje",
+      "risks": [
+        "classificacao"
+      ],
+      "sources": [
+        "alunos",
+        "cursos",
+        "professores"
+      ],
+      "code_refs": 3
+    },
+    {
+      "view": "vw_farmer_novos_matriculados",
+      "risks": [
+        "classificacao"
+      ],
+      "sources": [
+        "alunos",
+        "cursos",
+        "professores"
+      ],
+      "code_refs": 3
+    },
+    {
+      "view": "vw_farmer_resumo_alertas",
+      "risks": [
+        "count(*)",
+        "renovacoes"
+      ],
+      "sources": [
+        "unidades",
+        "vw_farmer_aniversariantes_hoje",
+        "vw_farmer_inadimplentes",
+        "vw_farmer_novos_matriculados",
+        "vw_farmer_renovacoes_proximas"
+      ],
+      "code_refs": 2
+    },
+    {
+      "view": "vw_fator_demanda_professor",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "alunos",
+        "cursos",
+        "professores"
+      ],
+      "code_refs": 2
+    },
+    {
+      "view": "vw_funil_conversao_mensal",
+      "risks": [
+        "count(*)",
+        "data_contato"
+      ],
+      "sources": [
+        "leads",
+        "unidades"
+      ],
+      "code_refs": 5
+    },
+    {
+      "view": "vw_kpis_comercial_mensal",
+      "risks": [
+        "count(*)",
+        "data_contato"
+      ],
+      "sources": [
+        "alunos",
+        "leads",
+        "unidades"
+      ],
+      "code_refs": 32
+    },
+    {
+      "view": "vw_kpis_gestao_mensal",
+      "risks": [
+        "count(*)",
+        "data_contato",
+        "renovacoes",
+        "canto coral"
+      ],
+      "sources": [
+        "alunos",
+        "cursos",
+        "leads",
+        "movimentacoes_admin",
+        "renovacoes",
+        "tipos_matricula",
+        "unidades"
+      ],
+      "code_refs": 144
+    },
+    {
+      "view": "vw_kpis_mensais",
+      "risks": [
+        "renovacoes"
+      ],
+      "sources": [
+        "movimentacoes",
+        "unidades"
+      ],
+      "code_refs": 7
+    },
+    {
+      "view": "vw_kpis_professor_completo",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "alunos",
+        "professores"
+      ],
+      "code_refs": 33
+    },
+    {
+      "view": "vw_kpis_professor_historico",
+      "risks": [
+        "data_contato"
+      ],
+      "sources": [
+        "experimentais_mensal_unidade",
+        "leads",
+        "professores"
+      ],
+      "code_refs": 8
+    },
+    {
+      "view": "vw_kpis_professor_mensal",
+      "risks": [
+        "count(*)",
+        "data_contato",
+        "renovacoes"
+      ],
+      "sources": [
+        "alunos",
+        "cursos",
+        "leads",
+        "movimentacoes_admin",
+        "professores",
+        "vw_turmas_implicitas"
+      ],
+      "code_refs": 29
+    },
+    {
+      "view": "vw_kpis_professor_por_unidade",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "alunos",
+        "professores"
+      ],
+      "code_refs": 0
+    },
+    {
+      "view": "vw_kpis_retencao_mensal",
+      "risks": [
+        "count(*)",
+        "renovacoes"
+      ],
+      "sources": [
+        "alunos",
+        "movimentacoes_admin",
+        "tipos_matricula",
+        "unidades"
+      ],
+      "code_refs": 52
+    },
+    {
+      "view": "vw_leads_comercial",
+      "risks": [
+        "data_contato"
+      ],
+      "sources": [
+        "canais_origem",
+        "cursos",
+        "leads",
+        "professores",
+        "unidades"
+      ],
+      "code_refs": 0
+    },
+    {
+      "view": "vw_leads_por_canal",
+      "risks": [
+        "count(*)",
+        "data_contato"
+      ],
+      "sources": [
+        "canais_origem",
+        "leads",
+        "unidades"
+      ],
+      "code_refs": 4
+    },
+    {
+      "view": "vw_ltv_por_categoria",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "alunos_historico"
+      ],
+      "code_refs": 1
+    },
+    {
+      "view": "vw_ltv_por_unidade",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "alunos_historico",
+        "unidades"
+      ],
+      "code_refs": 5
+    },
+    {
+      "view": "vw_ltv_rede",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "alunos_historico"
+      ],
+      "code_refs": 2
+    },
+    {
+      "view": "vw_ltv_unidade",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "alunos",
+        "tipos_matricula",
+        "unidades"
+      ],
+      "code_refs": 3
+    },
+    {
+      "view": "vw_matriculas_por_canal",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "canais_origem",
+        "movimentacoes",
+        "unidades"
+      ],
+      "code_refs": 3
+    },
+    {
+      "view": "vw_metas_vs_realizado",
+      "risks": [
+        "renovacoes"
+      ],
+      "sources": [
+        "metas",
+        "relatorios_diarios",
+        "unidades"
+      ],
+      "code_refs": 5
+    },
+    {
+      "view": "vw_motivos_nao_matricula",
+      "risks": [
+        "count(*)",
+        "data_contato"
+      ],
+      "sources": [
+        "leads",
+        "unidades"
+      ],
+      "code_refs": 3
+    },
+    {
+      "view": "vw_movimentacoes_mensal",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "movimentacoes",
+        "unidades"
+      ],
+      "code_refs": 1
+    },
+    {
+      "view": "vw_performance_professor_experimental",
+      "risks": [
+        "count(*)",
+        "data_contato"
+      ],
+      "sources": [
+        "leads",
+        "professores",
+        "unidades"
+      ],
+      "code_refs": 7
+    },
+    {
+      "view": "vw_professores_performance_atual",
+      "risks": [
+        "count(*)",
+        "data_contato"
+      ],
+      "sources": [
+        "alunos",
+        "experimentais_professor_mensal",
+        "leads",
+        "movimentacoes_admin",
+        "professores",
+        "professores_unidades",
+        "unidades"
+      ],
+      "code_refs": 7
+    },
+    {
+      "view": "vw_ranking_professores_evasoes",
+      "risks": [
+        "renovacoes"
+      ],
+      "sources": [
+        "professores_performance"
+      ],
+      "code_refs": 8
+    },
+    {
+      "view": "vw_ranking_unidades",
+      "risks": [
+        "dados_mensais"
+      ],
+      "sources": [
+        "dados_mensais",
+        "unidades"
+      ],
+      "code_refs": 5
+    },
+    {
+      "view": "vw_renovacoes_mensal",
+      "risks": [
+        "count(*)",
+        "renovacoes"
+      ],
+      "sources": [
+        "renovacoes",
+        "unidades"
+      ],
+      "code_refs": 2
+    },
+    {
+      "view": "vw_renovacoes_pendentes",
+      "risks": [
+        "count(*)",
+        "renovacoes"
+      ],
+      "sources": [
+        "alunos",
+        "renovacoes",
+        "unidades"
+      ],
+      "code_refs": 6
+    },
+    {
+      "view": "vw_renovacoes_proximas",
+      "risks": [
+        "classificacao"
+      ],
+      "sources": [
+        "alunos",
+        "cursos",
+        "professores",
+        "unidades"
+      ],
+      "code_refs": 7
+    },
+    {
+      "view": "vw_sazonalidade",
+      "risks": [
+        "dados_mensais"
+      ],
+      "sources": [
+        "dados_mensais",
+        "unidades"
+      ],
+      "code_refs": 15
+    },
+    {
+      "view": "vw_taxa_crescimento_professor",
+      "risks": [
+        "count(*)",
+        "renovacoes"
+      ],
+      "sources": [
+        "alunos",
+        "movimentacoes_admin",
+        "professores",
+        "vw_fator_demanda_professor"
+      ],
+      "code_refs": 5
+    },
+    {
+      "view": "vw_totais_unidade_performance",
+      "risks": [
+        "renovacoes"
+      ],
+      "sources": [
+        "professores_performance"
+      ],
+      "code_refs": 5
+    },
+    {
+      "view": "vw_turmas_implicitas",
+      "risks": [
+        "count(*)"
+      ],
+      "sources": [
+        "alunos",
+        "cursos",
+        "professores",
+        "salas",
+        "turmas_explicitas",
+        "unidades"
+      ],
+      "code_refs": 33
+    },
+    {
+      "view": "vw_unidade_anual",
+      "risks": [
+        "dados_mensais"
+      ],
+      "sources": [
+        "dados_mensais",
+        "unidades"
+      ],
+      "code_refs": 15
+    }
+  ],
+  "function_risks": [
+    {
+      "function": "admin_conversa_nova_mensagem(p_conversa_id uuid, p_preview text, p_whatsapp_jid text)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "create "
+      ],
+      "code_refs": 3
+    },
+    {
+      "function": "admin_update_user_password(target_user_id uuid, new_password text)",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "ajustar_estoque_manual(p_produto_id integer, p_unidade_id uuid, p_delta integer, p_motivo text, p_via_audit text, p_variacao_id integer)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "atualizar_config_fideliza(p_ano integer, p_campo character varying, p_valor text)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "create ",
+        "execute "
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "atualizar_config_matriculador(p_ano integer, p_config jsonb)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "create "
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "atualizar_conversa_on_mensagem()",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "create "
+      ],
+      "code_refs": 3
+    },
+    {
+      "function": "atualizar_health_score(p_aluno_id integer, p_professor_id integer, p_health_score character varying, p_observacao text)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "atualizar_lead_experimental(p_telefone text, p_nome text, p_unidade_id uuid, p_status text, p_etapa integer, p_data_experimental date, p_horario_experimental time without time zone, p_professor_id integer)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "create "
+      ],
+      "code_refs": 3
+    },
+    {
+      "function": "atualizar_percentual_presenca(p_unidade_id uuid)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "create ",
+        "count(*)"
+      ],
+      "code_refs": 3
+    },
+    {
+      "function": "atualizar_updated_at_conversas()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 2
+    },
+    {
+      "function": "audit_dados_mensais()",
+      "security_definer": false,
+      "risks": [
+        "insert ",
+        "create ",
+        "dados_mensais"
+      ],
+      "code_refs": 1
+    },
+    {
+      "function": "audit_metas()",
+      "security_definer": false,
+      "risks": [
+        "insert ",
+        "create "
+      ],
+      "code_refs": 1
+    },
+    {
+      "function": "buscar_anamnese_pendente(p_nome text, p_unidade_id uuid)",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 2
+    },
+    {
+      "function": "buscar_anamneses_pendentes(p_aluno_id integer)",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "buscar_anamneses_pendentes_todas(p_unidade_id uuid)",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "buscar_produto_fuzzy(p_termo text, p_unidade_id uuid)",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "calc_classificacao(idade integer)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "calc_idade(data_nasc date)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "calcular_campos_aluno()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 9
+    },
+    {
+      "function": "calcular_comissao_venda()",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "calcular_health_score_aluno(p_aluno_id integer)",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 5
+    },
+    {
+      "function": "calcular_health_score_alunos_batch(p_unidade_id uuid)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "create "
+      ],
+      "code_refs": 6
+    },
+    {
+      "function": "calcular_pontos_perdidos_com_tolerancia(p_professor_id integer, p_unidade_id uuid, p_criterio_id integer, p_competencia character varying)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "count(*)"
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "calcular_reajuste_renovacao()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "calcular_tempo_medio_resposta_crm(p_inicio text, p_fim text)",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 2
+    },
+    {
+      "function": "calcular_variacao(valor_atual numeric, valor_anterior numeric)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 2
+    },
+    {
+      "function": "check_automacao_professor_vinculado()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "cleanup_bi_conversations()",
+      "security_definer": true,
+      "risks": [
+        "delete ",
+        "update ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "consolidar_dados_comerciais_mes(p_ano integer, p_mes integer)",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "insert ",
+        "create ",
+        "data_contato"
+      ],
+      "code_refs": 5
+    },
+    {
+      "function": "consolidar_origem_leads_mes(p_ano integer, p_mes integer)",
+      "security_definer": false,
+      "risks": [
+        "delete ",
+        "insert ",
+        "create ",
+        "data_contato"
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "creditar_lalita_matricula()",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "criar_checklist_from_template(p_template_id uuid, p_colaborador_id integer, p_unidade_id uuid, p_titulo character varying, p_data_prazo date)",
+      "security_definer": true,
+      "risks": [
+        "insert ",
+        "create "
+      ],
+      "code_refs": 3
+    },
+    {
+      "function": "criar_conversa_lead(p_lead_id integer, p_atribuido_a character varying)",
+      "security_definer": true,
+      "risks": [
+        "insert ",
+        "create "
+      ],
+      "code_refs": 2
+    },
+    {
+      "function": "criar_pesquisa_evasao(p_evasao_id integer, p_criado_por text)",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 1
+    },
+    {
+      "function": "deletar_penalidade_fideliza(p_id integer)",
+      "security_definer": true,
+      "risks": [
+        "delete ",
+        "create "
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "deletar_penalidade_matriculador(p_id integer)",
+      "security_definer": true,
+      "risks": [
+        "delete ",
+        "create "
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "editar_ocorrencia(p_ocorrencia_id integer, p_usuario_id uuid, p_usuario_nome character varying, p_justificativa text, p_data_ocorrencia date, p_descricao text, p_minutos_atraso integer)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "create "
+      ],
+      "code_refs": 3
+    },
+    {
+      "function": "enqueue_sync_student_studio()",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "estoque_disponivel(p_produto_id integer, p_unidade_id uuid, p_variacao_id integer)",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "estornar_venda(p_venda_id integer, p_motivo text, p_via_audit text)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "exec_readonly_sql(query text)",
+      "security_definer": true,
+      "risks": [
+        "create ",
+        "execute "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "executar_query_auditoria(p_sql text)",
+      "security_definer": true,
+      "risks": [
+        "create ",
+        "execute "
+      ],
+      "code_refs": 26
+    },
+    {
+      "function": "executar_query_readonly(query_sql text)",
+      "security_definer": true,
+      "risks": [
+        "create ",
+        "execute "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "execute_bi_query_lamusic(query_text text, p_unidade_id uuid, max_rows integer)",
+      "security_definer": true,
+      "risks": [
+        "create ",
+        "execute "
+      ],
+      "code_refs": 11
+    },
+    {
+      "function": "fechar_dados_mensais(p_ano integer, p_mes integer)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create ",
+        "count(*)",
+        "dados_mensais"
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "fn_aluno_ativo_sem_data_saida()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 1
+    },
+    {
+      "function": "fn_alunos_reentrada_historico()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "fn_atualizar_aluno_anamnese()",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "fn_audit_log()",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 1
+    },
+    {
+      "function": "fn_bi_conversation_autofill()",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "fn_log_ocorrencia_criada()",
+      "security_definer": true,
+      "risks": [
+        "insert ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "fn_vincular_anamnese_pendente()",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "get_anamnese_by_token(p_token character varying)",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "get_anamnese_publica(p_token text)",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "get_carteira_professores(p_unidade_id uuid)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "count(*)"
+      ],
+      "code_refs": 3
+    },
+    {
+      "function": "get_checklist_detail(p_checklist_id uuid)",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 2
+    },
+    {
+      "function": "get_checklists_farmer(p_colaborador_id integer, p_unidade_id uuid, p_status text)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "count(*)"
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "get_comparativo_anos(p_ano_atual integer, p_ano_anterior integer)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "dados_mensais"
+      ],
+      "code_refs": 6
+    },
+    {
+      "function": "get_cron_health()",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 5
+    },
+    {
+      "function": "get_dados_comercial_ia(p_unidade_id uuid, p_ano integer, p_mes integer)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "data_contato",
+        "count(*)"
+      ],
+      "code_refs": 6
+    },
+    {
+      "function": "get_dados_relatorio_coordenacao(p_unidade_id uuid, p_ano integer, p_mes integer)",
+      "security_definer": true,
+      "risks": [
+        "create ",
+        "data_contato",
+        "count(*)",
+        "renovacoes"
+      ],
+      "code_refs": 16
+    },
+    {
+      "function": "get_dados_relatorio_gerencial(p_unidade_id uuid, p_ano integer, p_mes integer)",
+      "security_definer": true,
+      "risks": [
+        "create ",
+        "data_contato",
+        "count(*)",
+        "dados_mensais"
+      ],
+      "code_refs": 7
+    },
+    {
+      "function": "get_dados_retencao_ia(p_unidade_id uuid, p_ano integer, p_mes integer)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "count(*)",
+        "renovacoes",
+        "dados_mensais"
+      ],
+      "code_refs": 3
+    },
+    {
+      "function": "get_divergencias_alunos()",
+      "security_definer": true,
+      "risks": [
+        "create ",
+        "count(*)"
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "get_heatmap_data(p_ano integer, p_metrica character varying)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "dados_mensais"
+      ],
+      "code_refs": 6
+    },
+    {
+      "function": "get_heatmap_totais(p_ano integer, p_metrica character varying)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "dados_mensais"
+      ],
+      "code_refs": 5
+    },
+    {
+      "function": "get_historico_ltv(p_unidade_id uuid)",
+      "security_definer": true,
+      "risks": [
+        "create ",
+        "count(*)"
+      ],
+      "code_refs": 10
+    },
+    {
+      "function": "get_historico_mensal_matriculador(p_ano integer, p_unidade_id uuid)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "data_contato"
+      ],
+      "code_refs": 3
+    },
+    {
+      "function": "get_historico_rotinas(p_colaborador_id integer, p_dias integer)",
+      "security_definer": true,
+      "risks": [
+        "create ",
+        "count(*)"
+      ],
+      "code_refs": 7
+    },
+    {
+      "function": "get_kpis_consolidados(p_ano integer)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "dados_mensais"
+      ],
+      "code_refs": 9
+    },
+    {
+      "function": "get_kpis_evolucao_mensal(p_unidade_id text, p_meses integer)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "dados_mensais"
+      ],
+      "code_refs": 6
+    },
+    {
+      "function": "get_kpis_experimentais_professor(p_ano integer, p_mes integer, p_unidade_id uuid)",
+      "security_definer": true,
+      "risks": [
+        "create ",
+        "data_contato"
+      ],
+      "code_refs": 1
+    },
+    {
+      "function": "get_kpis_professor_periodo(p_ano integer, p_mes integer, p_unidade_id uuid, p_data_inicio date, p_data_fim date)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "count(*)",
+        "renovacoes"
+      ],
+      "code_refs": 12
+    },
+    {
+      "function": "get_kpis_retencao(p_ano integer, p_unidade character varying)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "count(*)",
+        "renovacoes"
+      ],
+      "code_refs": 1
+    },
+    {
+      "function": "get_kpis_unidade(p_unidade_codigo character varying, p_ano integer)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "dados_mensais"
+      ],
+      "code_refs": 7
+    },
+    {
+      "function": "get_metas_vs_realizado(p_ano integer)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "dados_mensais"
+      ],
+      "code_refs": 2
+    },
+    {
+      "function": "get_ocorrencias_mes(p_professor_id integer, p_unidade_id uuid, p_criterio_id integer, p_competencia character varying)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "count(*)"
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "get_programa_fideliza_dados(p_ano integer, p_trimestre integer, p_unidade_id uuid)",
+      "security_definer": true,
+      "risks": [
+        "create ",
+        "count(*)",
+        "renovacoes",
+        "dados_mensais"
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "get_programa_matriculador_dados(p_ano integer, p_unidade_id uuid)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "data_contato",
+        "count(*)"
+      ],
+      "code_refs": 5
+    },
+    {
+      "function": "get_progresso_rotinas_hoje(p_colaborador_id integer)",
+      "security_definer": true,
+      "risks": [
+        "create ",
+        "count(*)"
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "get_resumo_renovacoes_proximas(p_unidade_id uuid)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "count(*)",
+        "renovacoes"
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "get_rotinas_do_dia(p_colaborador_id integer, p_data date)",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "get_tempo_permanencia(p_unidade_id uuid, p_ano integer, p_mes integer)",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 6
+    },
+    {
+      "function": "get_unidade_usuario()",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "get_user_unidade_id()",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 37
+    },
+    {
+      "function": "gin_extract_query_trgm(text, internal, smallint, internal, internal, internal, internal)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "gin_extract_value_trgm(text, internal)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "gin_trgm_consistent(internal, smallint, text, integer, internal, internal, internal, internal)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "gin_trgm_triconsistent(internal, smallint, text, integer, internal, internal, internal)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "gtrgm_compress(internal)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "gtrgm_consistent(internal, text, smallint, oid, internal)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "gtrgm_decompress(internal)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "gtrgm_distance(internal, text, smallint, oid, internal)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "gtrgm_in(cstring)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "gtrgm_options(internal)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "gtrgm_out(gtrgm)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "gtrgm_penalty(internal, internal, internal)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "gtrgm_picksplit(internal, internal)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "gtrgm_same(gtrgm, gtrgm, internal)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "gtrgm_union(internal, internal)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "introspect_schema_lamusic(table_names text[])",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 3
+    },
+    {
+      "function": "is_admin()",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 63
+    },
+    {
+      "function": "is_admin_usuario()",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "limpar_mila_buffer_antigo()",
+      "security_definer": true,
+      "risks": [
+        "delete ",
+        "create "
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "listar_evadidos_para_pesquisa(p_unidade_id uuid, p_limite integer, p_offset integer, p_status character varying)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 1
+    },
+    {
+      "function": "listar_evadidos_para_pesquisa(p_unidade_id uuid, p_limite integer, p_offset integer, p_status character varying, p_ano integer, p_mes integer)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 1
+    },
+    {
+      "function": "log_projeto_alteracao()",
+      "security_definer": false,
+      "risks": [
+        "delete ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "log_tarefa_alteracao()",
+      "security_definer": false,
+      "risks": [
+        "insert ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "marcar_checklist_item(p_item_id uuid, p_concluida boolean, p_colaborador_id integer)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "create ",
+        "count(*)"
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "marcar_conversa_lida(p_conversa_id uuid)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "create "
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "marcar_inadimplentes_apos_vencimento()",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "create ",
+        "count(*)"
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "marcar_rotina_concluida(p_rotina_id uuid, p_colaborador_id integer, p_concluida boolean, p_data date)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "mila_check_disponibilidade_visita(p_unidade_id uuid, p_data date, p_horario time without time zone, p_telefone text)",
+      "security_definer": true,
+      "risks": [
+        "create ",
+        "count(*)"
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "normalize_phone(tel text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "normalize_telefone(tel text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "pode_enviar_pesquisa_evasao(p_evasao_id integer)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "preencher_unidade_conversa()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 3
+    },
+    {
+      "function": "recalcular_dados_mensais(p_ano integer, p_mes integer, p_unidade_id uuid)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create ",
+        "count(*)",
+        "dados_mensais"
+      ],
+      "code_refs": 58
+    },
+    {
+      "function": "registrar_entrada_estoque(p_produto_id integer, p_unidade_id uuid, p_quantidade integer, p_via_audit text, p_variacao_id integer, p_observacoes text)",
+      "security_definer": true,
+      "risks": [
+        "insert ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "registrar_entrada_estoque_v2(p_unidade_id uuid, p_itens jsonb, p_via_audit text, p_nf text, p_fornecedor text, p_observacoes text)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "registrar_experimental(p_telefone text, p_nome_aluno text, p_unidade_id uuid, p_status text, p_etapa integer, p_data_experimental date, p_horario_experimental time without time zone, p_professor_id integer, p_emusys_lead_id integer)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 18
+    },
+    {
+      "function": "registrar_experimental(p_telefone text, p_nome_aluno text, p_unidade_id uuid, p_status text, p_etapa integer, p_data_experimental date, p_horario_experimental time without time zone, p_professor_id integer, p_emusys_lead_id integer, p_created_at timestamp with time zone)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 18
+    },
+    {
+      "function": "registrar_log_ocorrencia(p_ocorrencia_id integer, p_acao character varying, p_usuario_id uuid, p_usuario_nome character varying, p_justificativa text, p_dados_anteriores jsonb, p_dados_novos jsonb)",
+      "security_definer": true,
+      "risks": [
+        "insert ",
+        "create "
+      ],
+      "code_refs": 6
+    },
+    {
+      "function": "registrar_movimentacao(p_aluno_id integer, p_unidade_id uuid, p_tipo character varying, p_curso_id integer, p_professor_id integer, p_motivo_saida_id integer, p_tipo_saida_id integer, p_canal_origem_id integer, p_valor_mensalidade numeric, p_observacoes text, p_created_by character varying)",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "registrar_penalidade_fideliza(p_ano integer, p_trimestre integer, p_unidade_id uuid, p_tipo character varying, p_descricao text, p_pontos integer, p_data_ocorrencia date, p_registrado_por character varying)",
+      "security_definer": true,
+      "risks": [
+        "insert ",
+        "create "
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "registrar_penalidade_matriculador(p_ano integer, p_unidade_id uuid, p_tipo character varying, p_descricao text, p_pontos integer, p_data_ocorrencia date, p_registrado_por character varying)",
+      "security_definer": true,
+      "risks": [
+        "insert ",
+        "create "
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "registrar_venda_legacy(p_produto_id integer, p_unidade_id uuid, p_quantidade integer, p_forma_pagamento character varying, p_via_audit text, p_variacao_id integer, p_tipo_cliente character varying, p_cliente_nome character varying, p_aluno_id integer, p_professor_indicador_id integer, p_desconto numeric, p_parcelas integer, p_observacoes text)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "registrar_venda_v2(p_unidade_id uuid, p_itens jsonb, p_forma_pagamento character varying, p_via_audit text, p_tipo_cliente character varying, p_cliente_nome character varying, p_aluno_id integer, p_colaborador_cliente_id integer, p_professor_indicador_id integer, p_desconto numeric, p_desconto_tipo character varying, p_parcelas integer, p_observacoes text)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "resetar_teste_mila(p_lead_id integer)",
+      "security_definer": true,
+      "risks": [
+        "delete ",
+        "update ",
+        "create "
+      ],
+      "code_refs": 3
+    },
+    {
+      "function": "restaurar_ocorrencia(p_ocorrencia_id integer, p_usuario_id uuid, p_usuario_nome character varying, p_justificativa text)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "create "
+      ],
+      "code_refs": 3
+    },
+    {
+      "function": "reverter_ocorrencia(p_ocorrencia_id integer, p_usuario_id uuid, p_usuario_nome character varying, p_justificativa text)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "create "
+      ],
+      "code_refs": 3
+    },
+    {
+      "function": "rpc_analise_turmas(p_unidade_id uuid, p_ano integer, p_mes integer)",
+      "security_definer": true,
+      "risks": [
+        "create ",
+        "count(*)"
+      ],
+      "code_refs": 11
+    },
+    {
+      "function": "rpc_marcar_inadimplentes()",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "salvar_historico_trimestral_fideliza(p_ano integer, p_trimestre integer)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create ",
+        "dados_mensais"
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "set_limit(real)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "set_updated_at()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "show_limit()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "show_trgm(text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "similarity(text, text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 3
+    },
+    {
+      "function": "similarity_dist(text, text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "similarity_op(text, text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "sincronizar_grade_horaria_alunos()",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "create ",
+        "count(*)"
+      ],
+      "code_refs": 6
+    },
+    {
+      "function": "snapshot_dados_mensais(p_ano integer, p_mes integer)",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "insert ",
+        "create ",
+        "data_contato",
+        "count(*)",
+        "dados_mensais",
+        "snapshot_dados_mensais"
+      ],
+      "code_refs": 14
+    },
+    {
+      "function": "stats_pesquisa_evasao(p_unidade_id uuid, p_ano integer, p_mes integer)",
+      "security_definer": false,
+      "risks": [
+        "create ",
+        "count(*)"
+      ],
+      "code_refs": 1
+    },
+    {
+      "function": "strict_word_similarity(text, text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "strict_word_similarity_commutator_op(text, text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "strict_word_similarity_dist_commutator_op(text, text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "strict_word_similarity_dist_op(text, text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "strict_word_similarity_op(text, text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "sync_aluno_contatos_from_legacy()",
+      "security_definer": false,
+      "risks": [
+        "insert ",
+        "create "
+      ],
+      "code_refs": 2
+    },
+    {
+      "function": "sync_aluno_to_leads()",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "insert ",
+        "create ",
+        "data_contato"
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "sync_evasao_to_dados_mensais()",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "create ",
+        "count(*)",
+        "dados_mensais"
+      ],
+      "code_refs": 1
+    },
+    {
+      "function": "sync_experimentais_professor()",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "insert ",
+        "create ",
+        "data_contato"
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "sync_experimentais_unidade()",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "insert ",
+        "create ",
+        "data_contato"
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "sync_lead_etapa_status_on_insert()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "sync_lead_etapa_to_status()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "sync_leads_to_dados_comerciais()",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create ",
+        "data_contato"
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "sync_leads_to_origem_leads()",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create ",
+        "data_contato"
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "toggle_mila_conversa(p_conversa_id uuid, p_pausar boolean, p_operador character varying)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "toggle_relatorio_cron(p_unidade_id uuid, p_ativo boolean)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "create "
+      ],
+      "code_refs": 1
+    },
+    {
+      "function": "transferir_estoque(p_produto_id integer, p_variacao_id integer, p_unidade_origem uuid, p_unidade_destino uuid, p_quantidade integer, p_motivo text, p_via_audit text)",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "transferir_estoque(p_produto_id uuid, p_variacao_id uuid, p_unidade_origem uuid, p_unidade_destino uuid, p_quantidade integer, p_motivo text, p_via_audit text)",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "trigger_normalize_telefone()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "unaccent(regdictionary, text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "unaccent(text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "unaccent_init(internal)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "unaccent_lexize(internal, internal, internal, internal)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "update_config_health_score_professor_updated_at()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "update_insights_salvos_timestamp()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "update_inventario_updated_at()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "update_mila_config_updated_at()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 4
+    },
+    {
+      "function": "update_onboarding_updated_at()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "update_pendencias_updated_at()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "update_planos_acao_updated_at()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "update_projeto_fases_updated_at()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 2
+    },
+    {
+      "function": "update_projeto_tarefas_updated_at()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 2
+    },
+    {
+      "function": "update_projeto_tipos_updated_at()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 2
+    },
+    {
+      "function": "update_projetos_updated_at()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 2
+    },
+    {
+      "function": "update_updated_at()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 1
+    },
+    {
+      "function": "update_updated_at_column()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 24
+    },
+    {
+      "function": "upsert_dados_mensais(p_unidade_codigo character varying, p_ano integer, p_mes integer, p_alunos_pagantes integer, p_novas_matriculas integer, p_evasoes integer, p_churn_rate numeric, p_ticket_medio numeric, p_taxa_renovacao numeric, p_tempo_permanencia integer, p_inadimplencia numeric, p_reajuste_parcelas numeric)",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "insert ",
+        "create ",
+        "dados_mensais"
+      ],
+      "code_refs": 5
+    },
+    {
+      "function": "upsert_lead(p_nome text, p_telefone text, p_email text, p_unidade_id uuid, p_curso text, p_canal text, p_source_id integer, p_source_type text, p_arquivar boolean, p_data_contato date)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "insert ",
+        "create ",
+        "data_contato"
+      ],
+      "code_refs": 18
+    },
+    {
+      "function": "upsert_metas(p_unidade_codigo character varying, p_ano integer, p_meta_alunos integer, p_meta_matriculas_mes integer, p_meta_evasoes_max integer, p_meta_churn numeric, p_meta_renovacao numeric, p_meta_ticket numeric, p_meta_permanencia integer, p_meta_inadimplencia numeric, p_meta_faturamento numeric)",
+      "security_definer": false,
+      "risks": [
+        "update ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 3
+    },
+    {
+      "function": "usuario_perfis_lista(p_usuario_id integer)",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 2
+    },
+    {
+      "function": "usuario_permissoes(p_usuario_id integer)",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 1
+    },
+    {
+      "function": "usuario_tem_permissao(p_usuario_id integer, p_codigo_permissao character varying, p_unidade_id uuid)",
+      "security_definer": true,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "vincular_alunos_checklist(p_checklist_id uuid, p_farmer_id integer, p_tipo_vinculo text, p_filtro_ids integer[])",
+      "security_definer": true,
+      "risks": [
+        "delete ",
+        "insert ",
+        "create "
+      ],
+      "code_refs": 2
+    },
+    {
+      "function": "vincular_anamnese_aluno(p_anamnese_id integer, p_aluno_id integer)",
+      "security_definer": true,
+      "risks": [
+        "update ",
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "visitas_set_updated_at()",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "word_similarity(text, text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "word_similarity_commutator_op(text, text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "word_similarity_dist_commutator_op(text, text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "word_similarity_dist_op(text, text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    },
+    {
+      "function": "word_similarity_op(text, text)",
+      "security_definer": false,
+      "risks": [
+        "create "
+      ],
+      "code_refs": 0
+    }
+  ],
+  "unreferenced_tables": [
+    {
+      "kind": "table",
+      "name": "alunos_health_score_historico",
+      "schema": "public",
+      "comment": null,
+      "total_size": "32 kB",
+      "total_bytes": 32768,
+      "estimated_rows": 0,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito",
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "bi_ai_query_playbooks",
+      "schema": "public",
+      "comment": null,
+      "total_size": "104 kB",
+      "total_bytes": 106496,
+      "estimated_rows": 19,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "crm_metas_andreza",
+      "schema": "public",
+      "comment": null,
+      "total_size": "64 kB",
+      "total_bytes": 65536,
+      "estimated_rows": 3,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "evasoes_backup_20260215",
+      "schema": "public",
+      "comment": null,
+      "total_size": "136 kB",
+      "total_bytes": 139264,
+      "estimated_rows": 677,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito",
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "evasoes_legacy_backup",
+      "schema": "public",
+      "comment": null,
+      "total_size": "136 kB",
+      "total_bytes": 139264,
+      "estimated_rows": 677,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito",
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "evasoes_v2_backup",
+      "schema": "public",
+      "comment": null,
+      "total_size": "136 kB",
+      "total_bytes": 139264,
+      "estimated_rows": 740,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito",
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "leads_backup_flags_20260601",
+      "schema": "public",
+      "comment": null,
+      "total_size": "8192 bytes",
+      "total_bytes": 8192,
+      "estimated_rows": 17,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "nome_suspeito",
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "loja_reservas",
+      "schema": "public",
+      "comment": null,
+      "total_size": "80 kB",
+      "total_bytes": 81920,
+      "estimated_rows": 2,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "metas_legado",
+      "schema": "public",
+      "comment": "BACKUP: Tabela metas original (estrutura anual). Dados migrados para nova tabela metas em 2026-01-16. Pode ser removida após 30 dias de validação.",
+      "total_size": "72 kB",
+      "total_bytes": 73728,
+      "estimated_rows": 6,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "sem_ref_codigo_sem_view"
+      ]
+    },
+    {
+      "kind": "table",
+      "name": "transferencias_mila",
+      "schema": "public",
+      "comment": null,
+      "total_size": "32 kB",
+      "total_bytes": 32768,
+      "estimated_rows": 0,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [],
+      "view_consumers": [],
+      "flags": [
+        "sem_ref_codigo_sem_view"
+      ]
+    }
+  ],
+  "unreferenced_views": [
+    {
+      "kind": "view",
+      "name": "vw_kpis_professor_por_unidade",
+      "schema": "public",
+      "comment": null,
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [
+        "alunos",
+        "professores"
+      ],
+      "view_consumers": [],
+      "flags": [
+        "view_sem_ref_codigo"
+      ]
+    },
+    {
+      "kind": "view",
+      "name": "vw_leads_comercial",
+      "schema": "public",
+      "comment": "View de compatibilidade que emula a estrutura de leads_diarios. Inclui campos resolvidos (nomes) para evitar JOINs via PostgREST.",
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [
+        "canais_origem",
+        "cursos",
+        "leads",
+        "professores",
+        "unidades"
+      ],
+      "view_consumers": [],
+      "flags": [
+        "view_sem_ref_codigo"
+      ]
+    },
+    {
+      "kind": "view",
+      "name": "vw_professores_carteira_resumo",
+      "schema": "public",
+      "comment": null,
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [
+        "alunos",
+        "professores"
+      ],
+      "view_consumers": [],
+      "flags": [
+        "view_sem_ref_codigo"
+      ]
+    },
+    {
+      "kind": "view",
+      "name": "vw_turmas_professor_periodo",
+      "schema": "public",
+      "comment": "Turmas reconstruidas a partir de aulas_emusys+aluno_presenca. turma_chave usa COALESCE para nao perder turmas com turma_nome NULL.",
+      "total_size": "0 bytes",
+      "total_bytes": 0,
+      "estimated_rows": 0,
+      "code_refs": 0,
+      "code_paths": [],
+      "view_sources": [
+        "aluno_presenca",
+        "alunos",
+        "aulas_emusys"
+      ],
+      "view_consumers": [],
+      "flags": [
+        "view_sem_ref_codigo"
+      ]
+    }
+  ]
+}

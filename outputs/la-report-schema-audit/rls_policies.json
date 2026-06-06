@@ -1,0 +1,6470 @@
+[
+  {
+    "cmd": "ALL",
+    "qual": "((unidade_id IN ( SELECT u.unidade_id\n   FROM usuarios u\n  WHERE ((u.email)::text = auth.email()))) OR (EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE (((u.email)::text = auth.email()) AND ((u.perfil)::text = 'admin'::text)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "admin_conversas",
+    "permissive": "PERMISSIVE",
+    "policyname": "admin_conversas_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "((conversa_id IN ( SELECT ac.id\n   FROM admin_conversas ac\n  WHERE (ac.unidade_id IN ( SELECT u.unidade_id\n           FROM usuarios u\n          WHERE ((u.email)::text = auth.email()))))) OR (EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE (((u.email)::text = auth.email()) AND ((u.perfil)::text = 'admin'::text)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "admin_mensagens",
+    "permissive": "PERMISSIVE",
+    "policyname": "admin_mensagens_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "agente_conversas",
+    "permissive": "PERMISSIVE",
+    "policyname": "agente_conversas_all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "agente_fila_mensagens",
+    "permissive": "PERMISSIVE",
+    "policyname": "agente_fila_all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "is_admin_usuario()",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "agentes",
+    "permissive": "PERMISSIVE",
+    "policyname": "agentes_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "agentes",
+    "permissive": "PERMISSIVE",
+    "policyname": "agentes_insert",
+    "schemaname": "public",
+    "with_check": "is_admin_usuario()"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "agentes",
+    "permissive": "PERMISSIVE",
+    "policyname": "agentes_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "is_admin_usuario()",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "agentes",
+    "permissive": "PERMISSIVE",
+    "policyname": "agentes_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "(auth.role() = 'authenticated'::text)",
+    "roles": [
+      "public"
+    ],
+    "tablename": "aluno_acoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can manage actions",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "aluno_contatos",
+    "permissive": "PERMISSIVE",
+    "policyname": "aluno_contatos_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "aluno_contatos",
+    "permissive": "PERMISSIVE",
+    "policyname": "aluno_contatos_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "aluno_contatos",
+    "permissive": "PERMISSIVE",
+    "policyname": "aluno_contatos_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "aluno_contatos",
+    "permissive": "PERMISSIVE",
+    "policyname": "aluno_contatos_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "(auth.role() = 'authenticated'::text)",
+    "roles": [
+      "public"
+    ],
+    "tablename": "aluno_feedback_professor",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can manage feedback",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(auth.role() = 'authenticated'::text)",
+    "roles": [
+      "public"
+    ],
+    "tablename": "aluno_feedback_professor",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can read all feedback",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "aluno_feedback_professor",
+    "permissive": "PERMISSIVE",
+    "policyname": "Public can insert feedback via session",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "ALL",
+    "qual": "(auth.role() = 'authenticated'::text)",
+    "roles": [
+      "public"
+    ],
+    "tablename": "aluno_feedback_sessoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can manage feedback sessions",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "aluno_feedback_sessoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Public can read sessions by token",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "(auth.role() = 'authenticated'::text)",
+    "roles": [
+      "public"
+    ],
+    "tablename": "aluno_metas",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can manage goals",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "(auth.role() = 'authenticated'::text)",
+    "roles": [
+      "public"
+    ],
+    "tablename": "aluno_presenca",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can manage attendance",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "((token IS NOT NULL) AND ((status)::text = 'pendente'::text))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "aluno_presenca",
+    "permissive": "PERMISSIVE",
+    "policyname": "Public can update attendance via token",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "aluno_presenca",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "alunos",
+    "permissive": "PERMISSIVE",
+    "policyname": "alunos_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "alunos",
+    "permissive": "PERMISSIVE",
+    "policyname": "alunos_insert_policy",
+    "schemaname": "public",
+    "with_check": "(is_admin() OR (unidade_id = get_user_unidade_id()))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "alunos",
+    "permissive": "PERMISSIVE",
+    "policyname": "alunos_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "alunos",
+    "permissive": "PERMISSIVE",
+    "policyname": "alunos_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "alunos",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "alunos_health_score_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "health_score_historico_all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "alunos_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "alunos_historico_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "alunos_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "alunos_historico_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "alunos_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "alunos_historico_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "alunos_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "alunos_historico_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "alunos_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM (alunos a\n     JOIN usuarios u ON ((u.auth_user_id = auth.uid())))\n  WHERE ((a.id = alunos_turmas.aluno_id) AND (a.unidade_id = u.unidade_id)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "alunos_turmas",
+    "permissive": "PERMISSIVE",
+    "policyname": "alunos_turmas_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "alunos_turmas",
+    "permissive": "PERMISSIVE",
+    "policyname": "alunos_turmas_insert_policy",
+    "schemaname": "public",
+    "with_check": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM (alunos a\n     JOIN usuarios u ON ((u.auth_user_id = auth.uid())))\n  WHERE ((a.id = alunos_turmas.aluno_id) AND (a.unidade_id = u.unidade_id)))))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM (alunos a\n     JOIN usuarios u ON ((u.auth_user_id = auth.uid())))\n  WHERE ((a.id = alunos_turmas.aluno_id) AND (a.unidade_id = u.unidade_id)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "alunos_turmas",
+    "permissive": "PERMISSIVE",
+    "policyname": "alunos_turmas_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM (alunos a\n     JOIN usuarios u ON ((u.auth_user_id = auth.uid())))\n  WHERE ((a.id = alunos_turmas.aluno_id) AND (a.unidade_id = u.unidade_id)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "alunos_turmas",
+    "permissive": "PERMISSIVE",
+    "policyname": "alunos_turmas_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "(anamnese_id IN ( SELECT a.id\n   FROM anamneses a\n  WHERE ((a.unidade_id IN ( SELECT u.unidade_id\n           FROM usuarios u\n          WHERE (u.auth_user_id = auth.uid()))) OR (EXISTS ( SELECT 1\n           FROM usuarios u\n          WHERE ((u.auth_user_id = auth.uid()) AND ((u.perfil)::text = 'admin'::text)))))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "anamnese_respostas_perfil",
+    "permissive": "PERMISSIVE",
+    "policyname": "respostas_perfil_via_anamnese",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "((unidade_id IN ( SELECT u.unidade_id\n   FROM usuarios u\n  WHERE (u.auth_user_id = auth.uid()))) OR (EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE ((u.auth_user_id = auth.uid()) AND ((u.perfil)::text = 'admin'::text)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "anamneses",
+    "permissive": "PERMISSIVE",
+    "policyname": "anamneses_por_unidade",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "anotacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir escrita publica anotacoes",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "anotacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir leitura publica anotacoes",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "anotacoes_alunos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir atualização de anotações para autenticados",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "anotacoes_alunos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir criação de anotações para autenticados",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "anotacoes_alunos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir exclusão de anotações para autenticados",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "anotacoes_alunos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir leitura de anotações para todos",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE ((u.auth_user_id = auth.uid()) AND ((u.perfil)::text = 'admin'::text))))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "assistente_ia_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "Admins can update config",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "assistente_ia_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can read config",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "audit_log",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir insercao publica audit_log",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "audit_log",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir leitura publica audit_log",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "auditoria_acesso",
+    "permissive": "PERMISSIVE",
+    "policyname": "Auditoria: admin pode ver",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "auditoria_acesso",
+    "permissive": "PERMISSIVE",
+    "policyname": "Auditoria: sistema pode inserir",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "aulas_emusys",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can read aulas_emusys",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "service_role"
+    ],
+    "tablename": "aulas_emusys",
+    "permissive": "PERMISSIVE",
+    "policyname": "Service role can manage aulas_emusys",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "aulas_emusys",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "automacao_invariantes",
+    "permissive": "PERMISSIVE",
+    "policyname": "automacao_invariantes_select_authenticated",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE ((u.auth_user_id = auth.uid()) AND ((u.perfil)::text = 'admin'::text))))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "automacao_invariantes",
+    "permissive": "PERMISSIVE",
+    "policyname": "automacao_invariantes_update_admin",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "automacao_log",
+    "permissive": "PERMISSIVE",
+    "policyname": "Allow insert for all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "automacao_log",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can read",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "service_role"
+    ],
+    "tablename": "automacao_log",
+    "permissive": "PERMISSIVE",
+    "policyname": "Service role can insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "automacao_log",
+    "permissive": "PERMISSIVE",
+    "policyname": "automacao_log_select_authenticated",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "bi_agent_config_lamusic",
+    "permissive": "PERMISSIVE",
+    "policyname": "bi_config_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "false",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "bi_ai_query_playbooks",
+    "permissive": "PERMISSIVE",
+    "policyname": "deny_all_user_access",
+    "schemaname": "public",
+    "with_check": "false"
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "bi_ai_query_playbooks",
+    "permissive": "PERMISSIVE",
+    "policyname": "sol_acesso_restrito_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "bi_ai_query_playbooks",
+    "permissive": "PERMISSIVE",
+    "policyname": "sol_acesso_restrito_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "bi_ai_query_playbooks",
+    "permissive": "PERMISSIVE",
+    "policyname": "sol_acesso_restrito_update",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "bi_conversations_lamusic",
+    "permissive": "PERMISSIVE",
+    "policyname": "bi_conv_insert",
+    "schemaname": "public",
+    "with_check": "(auth.uid() = user_id)"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(auth.uid() = user_id)",
+    "roles": [
+      "public"
+    ],
+    "tablename": "bi_conversations_lamusic",
+    "permissive": "PERMISSIVE",
+    "policyname": "bi_conv_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(auth.uid() = user_id)",
+    "roles": [
+      "public"
+    ],
+    "tablename": "bi_conversations_lamusic",
+    "permissive": "PERMISSIVE",
+    "policyname": "bi_conv_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "bi_conversations_lamusic",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "bi_messages_lamusic",
+    "permissive": "PERMISSIVE",
+    "policyname": "bi_msg_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "bi_messages_lamusic",
+    "permissive": "PERMISSIVE",
+    "policyname": "bi_msg_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "bi_messages_lamusic",
+    "permissive": "PERMISSIVE",
+    "policyname": "bi_msg_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "bi_messages_lamusic",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "bi_query_cache_lamusic",
+    "permissive": "PERMISSIVE",
+    "policyname": "bi_cache_all",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "bi_query_templates_lamusic",
+    "permissive": "PERMISSIVE",
+    "policyname": "bi_templates_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "campanha_contatos",
+    "permissive": "PERMISSIVE",
+    "policyname": "campanha_contatos_all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "campanhas",
+    "permissive": "PERMISSIVE",
+    "policyname": "campanhas_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "campanhas",
+    "permissive": "PERMISSIVE",
+    "policyname": "campanhas_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "((unidade_id IS NULL) OR (unidade_id = get_unidade_usuario()) OR is_admin_usuario())",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "campanhas",
+    "permissive": "PERMISSIVE",
+    "policyname": "campanhas_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "campanhas",
+    "permissive": "PERMISSIVE",
+    "policyname": "campanhas_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "campanhas_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "Admin pode atualizar config",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "campanhas_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "Autenticados podem ler config",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "canais_origem",
+    "permissive": "PERMISSIVE",
+    "policyname": "canais_origem_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "canais_origem",
+    "permissive": "PERMISSIVE",
+    "policyname": "canais_origem_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "canais_origem",
+    "permissive": "PERMISSIVE",
+    "policyname": "canais_origem_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "canais_origem",
+    "permissive": "PERMISSIVE",
+    "policyname": "canais_origem_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "catalogo_treinamentos",
+    "permissive": "PERMISSIVE",
+    "policyname": "catalogo_treinamentos_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "colaboradores",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita colaboradores",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "colaboradores",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura colaboradores",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "colaboradores",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "config_health_score",
+    "permissive": "PERMISSIVE",
+    "policyname": "config_health_score_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE ((u.auth_user_id = auth.uid()) AND ((u.perfil)::text = ANY ((ARRAY['admin'::character varying, 'super_admin'::character varying])::text[])))))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "config_health_score",
+    "permissive": "PERMISSIVE",
+    "policyname": "config_health_score_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "(auth.role() = 'authenticated'::text)",
+    "roles": [
+      "public"
+    ],
+    "tablename": "config_health_score_aluno",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can manage config",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(auth.role() = 'authenticated'::text)",
+    "roles": [
+      "public"
+    ],
+    "tablename": "config_health_score_aluno",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can read config",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "(auth.role() = 'authenticated'::text)",
+    "roles": [
+      "public"
+    ],
+    "tablename": "config_health_score_professor",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can manage professor health config",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(auth.role() = 'authenticated'::text)",
+    "roles": [
+      "public"
+    ],
+    "tablename": "config_health_score_professor",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can read professor health config",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "is_admin_usuario()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "contatos_bloqueados_campanha",
+    "permissive": "PERMISSIVE",
+    "policyname": "Admin full access contatos_bloqueados",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "(unidade_id = get_unidade_usuario())",
+    "roles": [
+      "public"
+    ],
+    "tablename": "contatos_bloqueados_campanha",
+    "permissive": "PERMISSIVE",
+    "policyname": "Unit access contatos_bloqueados",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "conversa_estado_whatsapp",
+    "permissive": "PERMISSIVE",
+    "policyname": "conversa_estado_all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "conversas_campanha",
+    "permissive": "PERMISSIVE",
+    "policyname": "conversas_campanha_all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "crm_conversas",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_conversas_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "crm_conversas",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_conversas_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "crm_conversas",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_conversas_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "crm_conversas",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_conversas_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "crm_etiquetas",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_etiquetas_all",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "crm_etiquetas",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_etiquetas_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "is_admin()",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_followups",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_followups_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_followups",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_followups_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(is_admin() OR (EXISTS ( SELECT 1\n   FROM leads\n  WHERE ((leads.id = crm_followups.lead_id) AND (leads.unidade_id = get_user_unidade_id())))))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_followups",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_followups_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "is_admin()",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_followups",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_followups_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "crm_lead_etiquetas",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_lead_etiquetas_all",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "crm_lead_etiquetas",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_lead_etiquetas_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "is_admin()",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_lead_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_lead_historico_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_lead_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_lead_historico_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(is_admin() OR (EXISTS ( SELECT 1\n   FROM leads\n  WHERE ((leads.id = crm_lead_historico.lead_id) AND (leads.unidade_id = get_user_unidade_id())))))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_lead_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_lead_historico_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "is_admin()",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_lead_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_lead_historico_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "crm_mensagens",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_mensagens_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "crm_mensagens",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_mensagens_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "crm_mensagens",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_mensagens_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "crm_mensagens",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_mensagens_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_mensagens_agendadas",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can manage scheduled messages",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "is_admin()",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_metas_andreza",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_metas_andreza_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_metas_andreza",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_metas_andreza_insert",
+    "schemaname": "public",
+    "with_check": "is_admin()"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_metas_andreza",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_metas_andreza_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "is_admin()",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_metas_andreza",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_metas_andreza_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "is_admin()",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_motivos_nao_comparecimento",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_motivos_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_motivos_nao_comparecimento",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_motivos_insert",
+    "schemaname": "public",
+    "with_check": "is_admin()"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_motivos_nao_comparecimento",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_motivos_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "is_admin()",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_motivos_nao_comparecimento",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_motivos_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "is_admin()",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_pipeline_etapas",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_pipeline_etapas_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_pipeline_etapas",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_pipeline_etapas_insert",
+    "schemaname": "public",
+    "with_check": "is_admin()"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_pipeline_etapas",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_pipeline_etapas_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "is_admin()",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "crm_pipeline_etapas",
+    "permissive": "PERMISSIVE",
+    "policyname": "crm_pipeline_etapas_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "crm_pipeline_etapas",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "cursos",
+    "permissive": "PERMISSIVE",
+    "policyname": "cursos_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "cursos",
+    "permissive": "PERMISSIVE",
+    "policyname": "cursos_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "cursos",
+    "permissive": "PERMISSIVE",
+    "policyname": "cursos_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "cursos",
+    "permissive": "PERMISSIVE",
+    "policyname": "cursos_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "cursos",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "cursos_matriculados",
+    "permissive": "PERMISSIVE",
+    "policyname": "cursos_matriculados_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "cursos_matriculados",
+    "permissive": "PERMISSIVE",
+    "policyname": "cursos_matriculados_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "cursos_matriculados",
+    "permissive": "PERMISSIVE",
+    "policyname": "cursos_matriculados_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "cursos_matriculados",
+    "permissive": "PERMISSIVE",
+    "policyname": "cursos_matriculados_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "dados_comerciais",
+    "permissive": "PERMISSIVE",
+    "policyname": "dados_comerciais_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "dados_comerciais",
+    "permissive": "PERMISSIVE",
+    "policyname": "dados_comerciais_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "dados_comerciais",
+    "permissive": "PERMISSIVE",
+    "policyname": "dados_comerciais_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "dados_comerciais",
+    "permissive": "PERMISSIVE",
+    "policyname": "dados_comerciais_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "dados_mensais",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir escrita publica dados_mensais",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "dados_mensais",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir leitura publica dados_mensais",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "dados_mensais",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "dashboard_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir escrita publica dashboard_config",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "dashboard_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir leitura publica dashboard_config",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text)))) OR (unidade_id IN ( SELECT usuarios.unidade_id\n   FROM usuarios\n  WHERE (usuarios.auth_user_id = auth.uid()))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "evasoes_v2",
+    "permissive": "PERMISSIVE",
+    "policyname": "evasoes_v2_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "evasoes_v2",
+    "permissive": "PERMISSIVE",
+    "policyname": "evasoes_v2_insert",
+    "schemaname": "public",
+    "with_check": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text)))) OR (unidade_id IN ( SELECT usuarios.unidade_id\n   FROM usuarios\n  WHERE (usuarios.auth_user_id = auth.uid()))))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text)))) OR (unidade_id IN ( SELECT usuarios.unidade_id\n   FROM usuarios\n  WHERE (usuarios.auth_user_id = auth.uid()))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "evasoes_v2",
+    "permissive": "PERMISSIVE",
+    "policyname": "evasoes_v2_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text)))) OR (unidade_id IN ( SELECT usuarios.unidade_id\n   FROM usuarios\n  WHERE (usuarios.auth_user_id = auth.uid()))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "evasoes_v2",
+    "permissive": "PERMISSIVE",
+    "policyname": "evasoes_v2_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "experimentais_mensal_unidade",
+    "permissive": "PERMISSIVE",
+    "policyname": "experimentais_mensal_unidade_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "experimentais_mensal_unidade",
+    "permissive": "PERMISSIVE",
+    "policyname": "experimentais_mensal_unidade_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "experimentais_mensal_unidade",
+    "permissive": "PERMISSIVE",
+    "policyname": "experimentais_mensal_unidade_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "experimentais_mensal_unidade",
+    "permissive": "PERMISSIVE",
+    "policyname": "experimentais_mensal_unidade_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "experimentais_professor_mensal",
+    "permissive": "PERMISSIVE",
+    "policyname": "experimentais_professor_mensal_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "experimentais_professor_mensal",
+    "permissive": "PERMISSIVE",
+    "policyname": "experimentais_professor_mensal_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "experimentais_professor_mensal",
+    "permissive": "PERMISSIVE",
+    "policyname": "experimentais_professor_mensal_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "experimentais_professor_mensal",
+    "permissive": "PERMISSIVE",
+    "policyname": "experimentais_professor_mensal_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_checklist_contatos",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_checklist_contatos_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_checklist_contatos",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_checklist_contatos_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_checklist_contatos",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_checklist_contatos_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_checklist_contatos",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_checklist_contatos_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_checklist_items",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_checklist_items_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_checklist_items",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_checklist_items_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_checklist_items",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_checklist_items_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_checklist_items",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_checklist_items_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_checklist_templates",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_checklist_templates_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_checklist_templates",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_checklist_templates_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_checklist_templates",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_checklist_templates_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_checklists",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_checklists_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_checklists",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_checklists_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_checklists",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_checklists_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_checklists",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_checklists_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_recados",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_recados_insert",
+    "schemaname": "public",
+    "with_check": "((colaborador_id IN ( SELECT colaboradores.id\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid()))) OR (NOT (EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid())))))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "((colaborador_id IN ( SELECT colaboradores.id\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid()))) OR (EXISTS ( SELECT 1\n   FROM colaboradores c\n  WHERE ((c.usuario_id = auth.uid()) AND ((c.tipo)::text = ANY ((ARRAY['gerente'::character varying, 'admin'::character varying])::text[]))))) OR (NOT (EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid())))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_recados",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_recados_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_recados_campanhas",
+    "permissive": "PERMISSIVE",
+    "policyname": "recados_campanhas_all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_recados_destinatarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "recados_destinatarios_all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "((colaborador_id IN ( SELECT colaboradores.id\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid()))) OR (NOT (EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid())))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_rotinas",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_rotinas_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_rotinas",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_rotinas_insert",
+    "schemaname": "public",
+    "with_check": "((colaborador_id IN ( SELECT colaboradores.id\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid()))) OR (NOT (EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid())))))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "((colaborador_id IN ( SELECT colaboradores.id\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid()))) OR (EXISTS ( SELECT 1\n   FROM colaboradores c\n  WHERE ((c.usuario_id = auth.uid()) AND ((c.tipo)::text = ANY ((ARRAY['gerente'::character varying, 'admin'::character varying])::text[])) AND ((c.unidade_id = farmer_rotinas.unidade_id) OR ((c.tipo)::text = 'admin'::text))))) OR (NOT (EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid())))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_rotinas",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_rotinas_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "((colaborador_id IN ( SELECT colaboradores.id\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid()))) OR (NOT (EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid())))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_rotinas",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_rotinas_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_rotinas_execucao",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_rotinas_exec_insert",
+    "schemaname": "public",
+    "with_check": "((colaborador_id IN ( SELECT colaboradores.id\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid()))) OR (NOT (EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid())))))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "((colaborador_id IN ( SELECT colaboradores.id\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid()))) OR (EXISTS ( SELECT 1\n   FROM colaboradores c\n  WHERE ((c.usuario_id = auth.uid()) AND ((c.tipo)::text = ANY ((ARRAY['gerente'::character varying, 'admin'::character varying])::text[]))))) OR (NOT (EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid())))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_rotinas_execucao",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_rotinas_exec_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "((colaborador_id IN ( SELECT colaboradores.id\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid()))) OR (NOT (EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid())))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_rotinas_execucao",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_rotinas_exec_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "((colaborador_id IN ( SELECT colaboradores.id\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid()))) OR (NOT (EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid())))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_tarefas",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_tarefas_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_tarefas",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_tarefas_insert",
+    "schemaname": "public",
+    "with_check": "((colaborador_id IN ( SELECT colaboradores.id\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid()))) OR (NOT (EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid())))))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "((colaborador_id IN ( SELECT colaboradores.id\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid()))) OR (EXISTS ( SELECT 1\n   FROM colaboradores c\n  WHERE ((c.usuario_id = auth.uid()) AND ((c.tipo)::text = ANY ((ARRAY['gerente'::character varying, 'admin'::character varying])::text[])) AND ((c.unidade_id = farmer_tarefas.unidade_id) OR ((c.tipo)::text = 'admin'::text))))) OR (NOT (EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid())))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_tarefas",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_tarefas_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "((colaborador_id IN ( SELECT colaboradores.id\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid()))) OR (NOT (EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid())))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_tarefas",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_tarefas_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_templates",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_templates_insert",
+    "schemaname": "public",
+    "with_check": "((EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE ((colaboradores.usuario_id = auth.uid()) AND ((colaboradores.tipo)::text = 'admin'::text)))) OR (NOT (EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid())))))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "((unidade_id IS NULL) OR (unidade_id IN ( SELECT colaboradores.unidade_id\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid()))) OR (NOT (EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid())))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_templates",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_templates_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "((EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE ((colaboradores.usuario_id = auth.uid()) AND ((colaboradores.tipo)::text = 'admin'::text)))) OR (NOT (EXISTS ( SELECT 1\n   FROM colaboradores\n  WHERE (colaboradores.usuario_id = auth.uid())))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "farmer_templates",
+    "permissive": "PERMISSIVE",
+    "policyname": "farmer_templates_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "feriados",
+    "permissive": "PERMISSIVE",
+    "policyname": "feriados_auth_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "feriados",
+    "permissive": "PERMISSIVE",
+    "policyname": "feriados_auth_write",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "service_role"
+    ],
+    "tablename": "feriados",
+    "permissive": "PERMISSIVE",
+    "policyname": "feriados_service_role",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "formas_pagamento",
+    "permissive": "PERMISSIVE",
+    "policyname": "formas_pagamento_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "formas_pagamento",
+    "permissive": "PERMISSIVE",
+    "policyname": "formas_pagamento_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "formas_pagamento",
+    "permissive": "PERMISSIVE",
+    "policyname": "formas_pagamento_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "formas_pagamento",
+    "permissive": "PERMISSIVE",
+    "policyname": "formas_pagamento_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "historico_pagamentos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir atualização de histórico para autenticados",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "historico_pagamentos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir criação de histórico para autenticados",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "historico_pagamentos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir exclusão de histórico para autenticados",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "historico_pagamentos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir leitura de histórico para autenticados",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "horarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem ler horarios",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "horarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "horarios_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "horarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "horarios_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "horarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "horarios_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(user_id = auth.uid())",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "insights_salvos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários atualizam seus insights",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "insights_salvos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários criam seus insights",
+    "schemaname": "public",
+    "with_check": "(user_id = auth.uid())"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "(user_id = auth.uid())",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "insights_salvos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários deletam seus insights",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(user_id = auth.uid())",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "insights_salvos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários veem seus insights",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "anon"
+    ],
+    "tablename": "inventario",
+    "permissive": "PERMISSIVE",
+    "policyname": "anon_select_inventario",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "inventario",
+    "permissive": "PERMISSIVE",
+    "policyname": "inventario_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "inventario",
+    "permissive": "PERMISSIVE",
+    "policyname": "inventario_insert_policy",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "inventario",
+    "permissive": "PERMISSIVE",
+    "policyname": "inventario_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "inventario",
+    "permissive": "PERMISSIVE",
+    "policyname": "inventario_update_policy",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "anon"
+    ],
+    "tablename": "inventario_manutencoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "anon_select_inventario_manutencoes",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "inventario_manutencoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "manutencoes_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "inventario_manutencoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "manutencoes_insert_policy",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "inventario_manutencoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "manutencoes_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "inventario_manutencoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "manutencoes_update_policy",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "anon"
+    ],
+    "tablename": "inventario_movimentacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "anon_select_inventario_movimentacoes",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "inventario_movimentacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "movimentacoes_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "inventario_movimentacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "movimentacoes_insert_policy",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "inventario_movimentacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "movimentacoes_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "inventario_movimentacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "movimentacoes_update_policy",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "leads",
+    "permissive": "PERMISSIVE",
+    "policyname": "leads_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "leads",
+    "permissive": "PERMISSIVE",
+    "policyname": "leads_insert_policy",
+    "schemaname": "public",
+    "with_check": "(is_admin() OR (unidade_id = get_user_unidade_id()))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "leads",
+    "permissive": "PERMISSIVE",
+    "policyname": "leads_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "leads",
+    "permissive": "PERMISSIVE",
+    "policyname": "leads_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "leads",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_carteira",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita carteira",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_carteira",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura carteira",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_carteira_movimentacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita carteira_mov",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_carteira_movimentacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura carteira_mov",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_categorias",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita categorias",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_categorias",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura categorias",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "anon"
+    ],
+    "tablename": "loja_categorias",
+    "permissive": "PERMISSIVE",
+    "policyname": "anon_select_loja_categorias",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_configuracoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita configuracoes",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_configuracoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura configuracoes",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_estoque",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita estoque",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_estoque",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura estoque",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "anon"
+    ],
+    "tablename": "loja_estoque",
+    "permissive": "PERMISSIVE",
+    "policyname": "anon_select_loja_estoque",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_movimentacoes_estoque",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita mov_estoque",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_movimentacoes_estoque",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura mov_estoque",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_optin_novidades",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita optin",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_optin_novidades",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura optin",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_produtos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita produtos",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_produtos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura produtos",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "anon"
+    ],
+    "tablename": "loja_produtos",
+    "permissive": "PERMISSIVE",
+    "policyname": "anon_select_loja_produtos",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_responsaveis_reposicao",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita responsaveis",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_responsaveis_reposicao",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura responsaveis",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_variacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita variacoes",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_variacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura variacoes",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_vendas",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita vendas",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_vendas",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura vendas",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_vendas_itens",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita vendas_itens",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "loja_vendas_itens",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura vendas_itens",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "mensagens_campanha",
+    "permissive": "PERMISSIVE",
+    "policyname": "mensagens_campanha_all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "metas",
+    "permissive": "PERMISSIVE",
+    "policyname": "metas_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "metas",
+    "permissive": "PERMISSIVE",
+    "policyname": "metas_insert_policy",
+    "schemaname": "public",
+    "with_check": "(is_admin() OR (unidade_id = get_user_unidade_id()))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "metas",
+    "permissive": "PERMISSIVE",
+    "policyname": "metas_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "metas",
+    "permissive": "PERMISSIVE",
+    "policyname": "metas_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "metas_comerciais",
+    "permissive": "PERMISSIVE",
+    "policyname": "metas_comerciais_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "metas_comerciais",
+    "permissive": "PERMISSIVE",
+    "policyname": "metas_comerciais_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "metas_comerciais",
+    "permissive": "PERMISSIVE",
+    "policyname": "metas_comerciais_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "metas_comerciais",
+    "permissive": "PERMISSIVE",
+    "policyname": "metas_comerciais_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "metas_kpi",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can delete metas_kpi",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "metas_kpi",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can insert metas_kpi",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "metas_kpi",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can read metas_kpi",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "metas_kpi",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can update metas_kpi",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "metas_legado",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir escrita publica metas",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "metas_legado",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir leitura publica metas",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "metas_professor_turma",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir acesso total para usuários autenticados",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "mila_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "mila_config_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "mila_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "mila_config_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "mila_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "mila_config_update",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "mila_message_buffer",
+    "permissive": "PERMISSIVE",
+    "policyname": "mila_buffer_select_all",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "(auth.role() = 'service_role'::text)",
+    "roles": [
+      "public"
+    ],
+    "tablename": "mila_message_buffer",
+    "permissive": "PERMISSIVE",
+    "policyname": "mila_buffer_service_role",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "motivos_arquivamento",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem ler motivos_arquivamento",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "motivos_arquivamento",
+    "permissive": "PERMISSIVE",
+    "policyname": "motivos_arquivamento_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "motivos_arquivamento",
+    "permissive": "PERMISSIVE",
+    "policyname": "motivos_arquivamento_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "motivos_arquivamento",
+    "permissive": "PERMISSIVE",
+    "policyname": "motivos_arquivamento_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "motivos_nao_matricula",
+    "permissive": "PERMISSIVE",
+    "policyname": "motivos_nao_matricula_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "motivos_nao_matricula",
+    "permissive": "PERMISSIVE",
+    "policyname": "motivos_nao_matricula_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "motivos_nao_matricula",
+    "permissive": "PERMISSIVE",
+    "policyname": "motivos_nao_matricula_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "motivos_nao_matricula",
+    "permissive": "PERMISSIVE",
+    "policyname": "motivos_nao_matricula_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "motivos_saida",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "motivos_saida",
+    "permissive": "PERMISSIVE",
+    "policyname": "motivos_saida_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "motivos_saida",
+    "permissive": "PERMISSIVE",
+    "policyname": "motivos_saida_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "motivos_saida",
+    "permissive": "PERMISSIVE",
+    "policyname": "motivos_saida_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "motivos_saida",
+    "permissive": "PERMISSIVE",
+    "policyname": "motivos_saida_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "motivos_trancamento",
+    "permissive": "PERMISSIVE",
+    "policyname": "Motivos trancamento são públicos para leitura",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "motivos_trancamento",
+    "permissive": "PERMISSIVE",
+    "policyname": "motivos_trancamento_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "motivos_trancamento",
+    "permissive": "PERMISSIVE",
+    "policyname": "motivos_trancamento_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "motivos_trancamento",
+    "permissive": "PERMISSIVE",
+    "policyname": "motivos_trancamento_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "movimentacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "movimentacoes_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "movimentacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "movimentacoes_insert_policy",
+    "schemaname": "public",
+    "with_check": "(is_admin() OR (unidade_id = get_user_unidade_id()))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "movimentacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "movimentacoes_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "movimentacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "movimentacoes_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "movimentacoes_admin",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir acesso total para usuários autenticados",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "movimentacoes_admin",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "service_role"
+    ],
+    "tablename": "notificacao_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "Service role pode ler config",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "notificacao_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem gerenciar config",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "notificacao_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem ler config",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "service_role"
+    ],
+    "tablename": "notificacao_destinatarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "Service role pode ler destinatarios",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "notificacao_destinatarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem gerenciar destinatarios",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "notificacao_destinatarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem ler destinatarios",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "service_role"
+    ],
+    "tablename": "notificacao_log",
+    "permissive": "PERMISSIVE",
+    "policyname": "Service role pode inserir log",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "service_role"
+    ],
+    "tablename": "notificacao_log",
+    "permissive": "PERMISSIVE",
+    "policyname": "Service role pode ler log",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "notificacao_log",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem inserir log",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "notificacao_log",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem ler log",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "is_admin_usuario()",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "numeros_meta",
+    "permissive": "PERMISSIVE",
+    "policyname": "numeros_meta_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "numeros_meta",
+    "permissive": "PERMISSIVE",
+    "policyname": "numeros_meta_insert",
+    "schemaname": "public",
+    "with_check": "is_admin_usuario()"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "((unidade_id IS NULL) OR (unidade_id = get_unidade_usuario()) OR is_admin_usuario())",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "numeros_meta",
+    "permissive": "PERMISSIVE",
+    "policyname": "numeros_meta_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "is_admin_usuario()",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "numeros_meta",
+    "permissive": "PERMISSIVE",
+    "policyname": "numeros_meta_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "origem_leads",
+    "permissive": "PERMISSIVE",
+    "policyname": "origem_leads_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "origem_leads",
+    "permissive": "PERMISSIVE",
+    "policyname": "origem_leads_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "origem_leads",
+    "permissive": "PERMISSIVE",
+    "policyname": "origem_leads_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "origem_leads",
+    "permissive": "PERMISSIVE",
+    "policyname": "origem_leads_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "perfil_permissoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Perfil_permissoes: admin pode tudo",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "perfil_permissoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Perfil_permissoes: leitura pública",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "perfis",
+    "permissive": "PERMISSIVE",
+    "policyname": "Perfis: admin pode tudo",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "perfis",
+    "permissive": "PERMISSIVE",
+    "policyname": "Perfis: leitura pública",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "permissoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permissoes: admin pode tudo",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "permissoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permissoes: leitura pública",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "pesquisa_evasao",
+    "permissive": "PERMISSIVE",
+    "policyname": "pesquisa_evasao_all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "planos_acao",
+    "permissive": "PERMISSIVE",
+    "policyname": "planos_acao_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "planos_acao",
+    "permissive": "PERMISSIVE",
+    "policyname": "planos_acao_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "planos_acao",
+    "permissive": "PERMISSIVE",
+    "policyname": "planos_acao_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "planos_acao",
+    "permissive": "PERMISSIVE",
+    "policyname": "planos_acao_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_360_avaliacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita avaliacoes",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_360_avaliacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura avaliacoes",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_360_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita config",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_360_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura config",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_360_criterios",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita criterios",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_360_criterios",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura criterios",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_360_ocorrencias",
+    "permissive": "PERMISSIVE",
+    "policyname": "Escrita ocorrencias",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_360_ocorrencias",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura ocorrencias",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "professor_360_ocorrencias_log",
+    "permissive": "PERMISSIVE",
+    "policyname": "admin_professor_360_ocorrencias_log",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "professor_360_ocorrencias_log",
+    "permissive": "PERMISSIVE",
+    "policyname": "select_professor_360_ocorrencias_log",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "(EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE ((u.auth_user_id = auth.uid()) AND (((u.perfil)::text = 'admin'::text) OR (u.unidade_id = professor_acoes.unidade_id) OR (professor_acoes.unidade_id IS NULL)))))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_acoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "professor_acoes_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_acoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "professor_acoes_insert",
+    "schemaname": "public",
+    "with_check": "(EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE ((u.auth_user_id = auth.uid()) AND (((u.perfil)::text = 'admin'::text) OR (u.unidade_id = professor_acoes.unidade_id)))))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE ((u.auth_user_id = auth.uid()) AND (((u.perfil)::text = 'admin'::text) OR (u.unidade_id = professor_acoes.unidade_id) OR (professor_acoes.unidade_id IS NULL)))))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_acoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "professor_acoes_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE ((u.auth_user_id = auth.uid()) AND (((u.perfil)::text = 'admin'::text) OR (u.unidade_id = professor_acoes.unidade_id)))))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_acoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "professor_acoes_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "(EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE ((u.auth_user_id = auth.uid()) AND ((u.perfil)::text = 'admin'::text))))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_acoes_participantes",
+    "permissive": "PERMISSIVE",
+    "policyname": "professor_acoes_participantes_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_acoes_participantes",
+    "permissive": "PERMISSIVE",
+    "policyname": "professor_acoes_participantes_insert",
+    "schemaname": "public",
+    "with_check": "(EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE (u.auth_user_id = auth.uid())))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_acoes_participantes",
+    "permissive": "PERMISSIVE",
+    "policyname": "professor_acoes_participantes_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE (u.auth_user_id = auth.uid())))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_acoes_participantes",
+    "permissive": "PERMISSIVE",
+    "policyname": "professor_acoes_participantes_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_checkpoints",
+    "permissive": "PERMISSIVE",
+    "policyname": "professor_checkpoints_insert",
+    "schemaname": "public",
+    "with_check": "(EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE ((u.auth_user_id = auth.uid()) AND (((u.perfil)::text = 'admin'::text) OR (u.unidade_id = professor_checkpoints.unidade_id)))))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE ((u.auth_user_id = auth.uid()) AND (((u.perfil)::text = 'admin'::text) OR (u.unidade_id = professor_checkpoints.unidade_id) OR (professor_checkpoints.unidade_id IS NULL)))))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_checkpoints",
+    "permissive": "PERMISSIVE",
+    "policyname": "professor_checkpoints_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "(EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE ((u.auth_user_id = auth.uid()) AND ((u.perfil)::text = 'admin'::text))))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_metas",
+    "permissive": "PERMISSIVE",
+    "policyname": "professor_metas_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_metas",
+    "permissive": "PERMISSIVE",
+    "policyname": "professor_metas_insert",
+    "schemaname": "public",
+    "with_check": "(EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE ((u.auth_user_id = auth.uid()) AND (((u.perfil)::text = 'admin'::text) OR (u.unidade_id = professor_metas.unidade_id)))))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE ((u.auth_user_id = auth.uid()) AND (((u.perfil)::text = 'admin'::text) OR (u.unidade_id = professor_metas.unidade_id) OR (professor_metas.unidade_id IS NULL)))))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_metas",
+    "permissive": "PERMISSIVE",
+    "policyname": "professor_metas_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(EXISTS ( SELECT 1\n   FROM usuarios u\n  WHERE ((u.auth_user_id = auth.uid()) AND (((u.perfil)::text = 'admin'::text) OR (u.unidade_id = professor_metas.unidade_id)))))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professor_metas",
+    "permissive": "PERMISSIVE",
+    "policyname": "professor_metas_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "(auth.role() = 'authenticated'::text)",
+    "roles": [
+      "public"
+    ],
+    "tablename": "professor_videos",
+    "permissive": "PERMISSIVE",
+    "policyname": "professor_videos_modify",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "professor_videos",
+    "permissive": "PERMISSIVE",
+    "policyname": "professor_videos_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "professores",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "professores",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professores",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_delete_all",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "professores",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professores",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_insert_all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professores",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_select_all",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "professores",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "professores",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professores",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_update_all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professores_cursos",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_cursos_delete_all",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professores_cursos",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_cursos_insert_all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professores_cursos",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_cursos_select_all",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professores_cursos",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_cursos_update_all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "professores_experimentais",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_experimentais_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "professores_experimentais",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_experimentais_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "professores_experimentais",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_experimentais_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "professores_experimentais",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_experimentais_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "professores_performance",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_performance_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "professores_performance",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_performance_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "professores_performance",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_performance_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "professores_performance",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_performance_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professores_unidades",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_unidades_delete_all",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professores_unidades",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_unidades_insert_all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professores_unidades",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_unidades_select_all",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "professores_unidades",
+    "permissive": "PERMISSIVE",
+    "policyname": "professores_unidades_update_all",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "ALL",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "programa_fideliza_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "admin_programa_fideliza_config",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "programa_fideliza_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "select_programa_fideliza_config",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "programa_fideliza_experiencias",
+    "permissive": "PERMISSIVE",
+    "policyname": "admin_programa_fideliza_experiencias",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "programa_fideliza_experiencias",
+    "permissive": "PERMISSIVE",
+    "policyname": "select_programa_fideliza_experiencias",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "programa_fideliza_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "admin_programa_fideliza_historico",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "programa_fideliza_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "select_programa_fideliza_historico",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "programa_fideliza_penalidades",
+    "permissive": "PERMISSIVE",
+    "policyname": "admin_programa_fideliza_penalidades",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "programa_fideliza_penalidades",
+    "permissive": "PERMISSIVE",
+    "policyname": "select_programa_fideliza_penalidades",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "programa_matriculador_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "Admin gerencia config",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "programa_matriculador_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura config programa",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "programa_matriculador_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "Admin gerencia historico",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "programa_matriculador_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura historico programa",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "programa_matriculador_penalidades",
+    "permissive": "PERMISSIVE",
+    "policyname": "Admin gerencia penalidades",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "programa_matriculador_penalidades",
+    "permissive": "PERMISSIVE",
+    "policyname": "Leitura penalidades programa",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_anexos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem inserir anexos",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_anexos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem ver anexos",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "((uploaded_by_tipo)::text = 'usuario'::text)",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_anexos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários podem deletar próprios anexos",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_comentarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem criar comentários",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_comentarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem ver comentários",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "((autor_tipo)::text = 'usuario'::text)",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_comentarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários podem deletar próprios comentários",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "((autor_tipo)::text = 'usuario'::text)",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_comentarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários podem editar próprios comentários",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_equipe",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem gerenciar equipe",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_equipe",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem ler equipe",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_equipe",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_equipe_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_equipe",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_equipe_insert_policy",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_equipe",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_equipe_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_equipe",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_equipe_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_fases",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem atualizar fases",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_fases",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem inserir fases",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_fases",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem ler fases",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_fases",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_fases_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_fases",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_fases_insert_policy",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_fases",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_fases_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_fases",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_fases_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_log_alteracoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Sistema pode inserir logs",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_log_alteracoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem ver logs",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_tarefas",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem atualizar tarefas",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_tarefas",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem inserir tarefas",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_tarefas",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem ler tarefas",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_tarefas",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_tarefas_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_tarefas",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_tarefas_insert_policy",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_tarefas",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_tarefas_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_tarefas",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_tarefas_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_tipo_fases_template",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem ler fases template",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_tipo_fases_template",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_tipo_fases_template_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_tipo_fases_template",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_tipo_fases_template_insert_policy",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_tipo_fases_template",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_tipo_fases_template_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_tipo_fases_template",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_tipo_fases_template_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_tipo_tarefas_template",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem ler tarefas template",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_tipo_tarefas_template",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_tipo_tarefas_template_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_tipo_tarefas_template",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_tipo_tarefas_template_insert_policy",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_tipo_tarefas_template",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_tipo_tarefas_template_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_tipo_tarefas_template",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_tipo_tarefas_template_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projeto_tipos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem ler tipos",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_tipos",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_tipos_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_tipos",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_tipos_insert_policy",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_tipos",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_tipos_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projeto_tipos",
+    "permissive": "PERMISSIVE",
+    "policyname": "projeto_tipos_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projetos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem atualizar projetos",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projetos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem inserir projetos",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "projetos",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários autenticados podem ler projetos",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projetos",
+    "permissive": "PERMISSIVE",
+    "policyname": "projetos_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "projetos",
+    "permissive": "PERMISSIVE",
+    "policyname": "projetos_insert_policy",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projetos",
+    "permissive": "PERMISSIVE",
+    "policyname": "projetos_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "projetos",
+    "permissive": "PERMISSIVE",
+    "policyname": "projetos_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "relatorios_diarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "relatorios_diarios_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "relatorios_diarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "relatorios_diarios_insert_policy",
+    "schemaname": "public",
+    "with_check": "(is_admin() OR (unidade_id = get_user_unidade_id()))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "relatorios_diarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "relatorios_diarios_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "relatorios_diarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "relatorios_diarios_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "renovacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "renovacoes_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "renovacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "renovacoes_insert_policy",
+    "schemaname": "public",
+    "with_check": "(is_admin() OR (unidade_id = get_user_unidade_id()))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "renovacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "renovacoes_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "renovacoes",
+    "permissive": "PERMISSIVE",
+    "policyname": "renovacoes_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "is_admin_usuario()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "respostas_rapidas_campanha",
+    "permissive": "PERMISSIVE",
+    "policyname": "Admin full access respostas_rapidas",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "(unidade_id = get_unidade_usuario())",
+    "roles": [
+      "public"
+    ],
+    "tablename": "respostas_rapidas_campanha",
+    "permissive": "PERMISSIVE",
+    "policyname": "Unit access respostas_rapidas",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "anon"
+    ],
+    "tablename": "salas",
+    "permissive": "PERMISSIVE",
+    "policyname": "anon_select_salas",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "salas",
+    "permissive": "PERMISSIVE",
+    "policyname": "salas_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "salas",
+    "permissive": "PERMISSIVE",
+    "policyname": "salas_insert",
+    "schemaname": "public",
+    "with_check": "(is_admin() OR (unidade_id = get_user_unidade_id()))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "salas",
+    "permissive": "PERMISSIVE",
+    "policyname": "salas_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(is_admin() OR (unidade_id = get_user_unidade_id()))",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "salas",
+    "permissive": "PERMISSIVE",
+    "policyname": "salas_update",
+    "schemaname": "public",
+    "with_check": "(is_admin() OR (unidade_id = get_user_unidade_id()))"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "simulacoes_metas",
+    "permissive": "PERMISSIVE",
+    "policyname": "delete_simulacoes",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "simulacoes_metas",
+    "permissive": "PERMISSIVE",
+    "policyname": "insert_simulacoes",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "simulacoes_metas",
+    "permissive": "PERMISSIVE",
+    "policyname": "select_simulacoes",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "simulacoes_metas",
+    "permissive": "PERMISSIVE",
+    "policyname": "update_simulacoes",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "simulacoes_turma",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir acesso total para usuários autenticados",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "templates_cenario",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can insert templates",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "templates_cenario",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can read templates",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "templates_cenario",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can update templates",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "templates_cenario",
+    "permissive": "PERMISSIVE",
+    "policyname": "templates_cenario_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "templates_cenario_unidade",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can delete template unidade",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "templates_cenario_unidade",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can insert template unidade",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "templates_cenario_unidade",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can read template unidade",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "templates_cenario_unidade",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can update template unidade",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "templates_meta",
+    "permissive": "PERMISSIVE",
+    "policyname": "templates_meta_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "templates_meta",
+    "permissive": "PERMISSIVE",
+    "policyname": "templates_meta_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "templates_meta",
+    "permissive": "PERMISSIVE",
+    "policyname": "templates_meta_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "tipos_matricula",
+    "permissive": "PERMISSIVE",
+    "policyname": "tipos_matricula_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "tipos_matricula",
+    "permissive": "PERMISSIVE",
+    "policyname": "tipos_matricula_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "tipos_matricula",
+    "permissive": "PERMISSIVE",
+    "policyname": "tipos_matricula_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "tipos_matricula",
+    "permissive": "PERMISSIVE",
+    "policyname": "tipos_matricula_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "tipos_saida",
+    "permissive": "PERMISSIVE",
+    "policyname": "tipos_saida_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "tipos_saida",
+    "permissive": "PERMISSIVE",
+    "policyname": "tipos_saida_insert",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "tipos_saida",
+    "permissive": "PERMISSIVE",
+    "policyname": "tipos_saida_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "tipos_saida",
+    "permissive": "PERMISSIVE",
+    "policyname": "tipos_saida_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "turmas",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND (usuarios.unidade_id = turmas.unidade_id)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "turmas",
+    "permissive": "PERMISSIVE",
+    "policyname": "turmas_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "turmas",
+    "permissive": "PERMISSIVE",
+    "policyname": "turmas_insert_policy",
+    "schemaname": "public",
+    "with_check": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND (usuarios.unidade_id = turmas.unidade_id)))))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND (usuarios.unidade_id = turmas.unidade_id)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "turmas",
+    "permissive": "PERMISSIVE",
+    "policyname": "turmas_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND (usuarios.unidade_id = turmas.unidade_id)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "turmas",
+    "permissive": "PERMISSIVE",
+    "policyname": "turmas_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM (turmas t\n     JOIN usuarios u ON ((u.auth_user_id = auth.uid())))\n  WHERE ((t.id = turmas_alunos.turma_id) AND (t.unidade_id = u.unidade_id)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "turmas_alunos",
+    "permissive": "PERMISSIVE",
+    "policyname": "turmas_alunos_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "turmas_alunos",
+    "permissive": "PERMISSIVE",
+    "policyname": "turmas_alunos_insert_policy",
+    "schemaname": "public",
+    "with_check": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM (turmas t\n     JOIN usuarios u ON ((u.auth_user_id = auth.uid())))\n  WHERE ((t.id = turmas_alunos.turma_id) AND (t.unidade_id = u.unidade_id)))))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM (turmas t\n     JOIN usuarios u ON ((u.auth_user_id = auth.uid())))\n  WHERE ((t.id = turmas_alunos.turma_id) AND (t.unidade_id = u.unidade_id)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "turmas_alunos",
+    "permissive": "PERMISSIVE",
+    "policyname": "turmas_alunos_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM (turmas t\n     JOIN usuarios u ON ((u.auth_user_id = auth.uid())))\n  WHERE ((t.id = turmas_alunos.turma_id) AND (t.unidade_id = u.unidade_id)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "turmas_alunos",
+    "permissive": "PERMISSIVE",
+    "policyname": "turmas_alunos_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND (usuarios.unidade_id = turmas_explicitas.unidade_id)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "turmas_explicitas",
+    "permissive": "PERMISSIVE",
+    "policyname": "turmas_explicitas_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "turmas_explicitas",
+    "permissive": "PERMISSIVE",
+    "policyname": "turmas_explicitas_insert_policy",
+    "schemaname": "public",
+    "with_check": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND (usuarios.unidade_id = turmas_explicitas.unidade_id)))))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND (usuarios.unidade_id = turmas_explicitas.unidade_id)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "turmas_explicitas",
+    "permissive": "PERMISSIVE",
+    "policyname": "turmas_explicitas_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND (usuarios.unidade_id = turmas_explicitas.unidade_id)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "turmas_explicitas",
+    "permissive": "PERMISSIVE",
+    "policyname": "turmas_explicitas_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM (turmas t\n     JOIN usuarios u ON ((u.auth_user_id = auth.uid())))\n  WHERE ((t.id = turmas_historico.turma_id) AND (t.unidade_id = u.unidade_id)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "turmas_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "turmas_historico_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "turmas_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "turmas_historico_insert_policy",
+    "schemaname": "public",
+    "with_check": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM (turmas t\n     JOIN usuarios u ON ((u.auth_user_id = auth.uid())))\n  WHERE ((t.id = turmas_historico.turma_id) AND (t.unidade_id = u.unidade_id)))))"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM (turmas t\n     JOIN usuarios u ON ((u.auth_user_id = auth.uid())))\n  WHERE ((t.id = turmas_historico.turma_id) AND (t.unidade_id = u.unidade_id)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "turmas_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "turmas_historico_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "((EXISTS ( SELECT 1\n   FROM usuarios\n  WHERE ((usuarios.auth_user_id = auth.uid()) AND ((usuarios.perfil)::text = 'admin'::text) AND (usuarios.unidade_id IS NULL)))) OR (EXISTS ( SELECT 1\n   FROM (turmas t\n     JOIN usuarios u ON ((u.auth_user_id = auth.uid())))\n  WHERE ((t.id = turmas_historico.turma_id) AND (t.unidade_id = u.unidade_id)))))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "turmas_historico",
+    "permissive": "PERMISSIVE",
+    "policyname": "turmas_historico_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "unidades",
+    "permissive": "PERMISSIVE",
+    "policyname": "Permitir leitura publica unidades",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "unidades",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "unidades",
+    "permissive": "PERMISSIVE",
+    "policyname": "unidades_delete",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "unidades",
+    "permissive": "PERMISSIVE",
+    "policyname": "unidades_insert",
+    "schemaname": "public",
+    "with_check": "is_admin()"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "unidades",
+    "permissive": "PERMISSIVE",
+    "policyname": "unidades_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "unidades",
+    "permissive": "PERMISSIVE",
+    "policyname": "unidades_update",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "unidades_cursos",
+    "permissive": "PERMISSIVE",
+    "policyname": "admin_unidades_cursos",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "unidades_cursos",
+    "permissive": "PERMISSIVE",
+    "policyname": "select_unidades_cursos",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "usuario_onboarding",
+    "permissive": "PERMISSIVE",
+    "policyname": "Sistema pode inserir onboarding",
+    "schemaname": "public",
+    "with_check": "(usuario_id IN ( SELECT usuarios.id\n   FROM usuarios\n  WHERE (usuarios.auth_user_id = auth.uid())))"
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(usuario_id IN ( SELECT usuarios.id\n   FROM usuarios\n  WHERE (usuarios.auth_user_id = auth.uid())))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "usuario_onboarding",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários podem atualizar seu próprio onboarding",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "(usuario_id IN ( SELECT usuarios.id\n   FROM usuarios\n  WHERE (usuarios.auth_user_id = auth.uid())))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "usuario_onboarding",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários podem gerenciar seu próprio onboarding",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "(usuario_id IN ( SELECT usuarios.id\n   FROM usuarios\n  WHERE (usuarios.auth_user_id = auth.uid())))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "usuario_onboarding",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuários podem ver seu próprio onboarding",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "usuario_perfis",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuario_perfis: admin pode tudo",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "((usuario_id IN ( SELECT usuarios.id\n   FROM usuarios\n  WHERE (usuarios.auth_user_id = auth.uid()))) OR is_admin())",
+    "roles": [
+      "public"
+    ],
+    "tablename": "usuario_perfis",
+    "permissive": "PERMISSIVE",
+    "policyname": "Usuario_perfis: usuário vê próprios",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "is_admin()",
+    "roles": [
+      "public"
+    ],
+    "tablename": "usuarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "usuarios_delete_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "usuarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "usuarios_insert_policy",
+    "schemaname": "public",
+    "with_check": "is_admin()"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "usuarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "usuarios_select_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "(is_admin() OR (auth_user_id = auth.uid()))",
+    "roles": [
+      "public"
+    ],
+    "tablename": "usuarios",
+    "permissive": "PERMISSIVE",
+    "policyname": "usuarios_update_policy",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "sol_acesso_restrito"
+    ],
+    "tablename": "visitas",
+    "permissive": "PERMISSIVE",
+    "policyname": "lume_readonly_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "visitas",
+    "permissive": "PERMISSIVE",
+    "policyname": "visitas_auth_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "visitas",
+    "permissive": "PERMISSIVE",
+    "policyname": "visitas_auth_write",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "service_role"
+    ],
+    "tablename": "visitas",
+    "permissive": "PERMISSIVE",
+    "policyname": "visitas_service_role",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "visitas_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "visitas_config_auth_select",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "visitas_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "visitas_config_auth_write",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "service_role"
+    ],
+    "tablename": "visitas_config",
+    "permissive": "PERMISSIVE",
+    "policyname": "visitas_config_service_role",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "DELETE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "whatsapp_caixas",
+    "permissive": "PERMISSIVE",
+    "policyname": "whatsapp_caixas_delete_auth",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "INSERT",
+    "qual": null,
+    "roles": [
+      "public"
+    ],
+    "tablename": "whatsapp_caixas",
+    "permissive": "PERMISSIVE",
+    "policyname": "whatsapp_caixas_insert_auth",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "whatsapp_caixas",
+    "permissive": "PERMISSIVE",
+    "policyname": "whatsapp_caixas_select_all",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "UPDATE",
+    "qual": "true",
+    "roles": [
+      "public"
+    ],
+    "tablename": "whatsapp_caixas",
+    "permissive": "PERMISSIVE",
+    "policyname": "whatsapp_caixas_update_auth",
+    "schemaname": "public",
+    "with_check": null
+  },
+  {
+    "cmd": "ALL",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "whatsapp_destinatarios_relatorio",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can manage destinatarios",
+    "schemaname": "public",
+    "with_check": "true"
+  },
+  {
+    "cmd": "SELECT",
+    "qual": "true",
+    "roles": [
+      "authenticated"
+    ],
+    "tablename": "whatsapp_destinatarios_relatorio",
+    "permissive": "PERMISSIVE",
+    "policyname": "Authenticated users can read destinatarios",
+    "schemaname": "public",
+    "with_check": null
+  }
+]

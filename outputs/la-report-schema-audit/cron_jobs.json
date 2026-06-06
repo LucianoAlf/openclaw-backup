@@ -1,0 +1,121 @@
+[
+  {
+    "jobid": 2,
+    "active": true,
+    "command": "\n  SELECT net.http_post(\n    url := 'https://ouqwbbermlzqqvtqwlul.supabase.co/functions/v1/projeto-alertas-whatsapp',\n    headers := '{\"Content-Type\": \"application/json\", \"apikey\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91cXdiYmVybWx6cXF2dHF3bHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc1Nzg5NTgsImV4cCI6MjA4MzE1NDk1OH0.KGEzs2T-NPBc1DaWjgIVbJkEsjAdluT4q5kHrFvIJus\", \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91cXdiYmVybWx6cXF2dHF3bHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc1Nzg5NTgsImV4cCI6MjA4MzE1NDk1OH0.KGEzs2T-NPBc1DaWjgIVbJkEsjAdluT4q5kHrFvIJus\"}'::jsonb,\n    body := '{\"action\": \"all\"}'::jsonb\n  );\n  ",
+    "jobname": "alertas-diarios",
+    "schedule": "0 11 * * *"
+  },
+  {
+    "jobid": 1,
+    "active": true,
+    "command": "\n  SELECT net.http_post(\n    url := 'https://ouqwbbermlzqqvtqwlul.supabase.co/functions/v1/projeto-alertas-whatsapp',\n    headers := '{\"Content-Type\": \"application/json\", \"apikey\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91cXdiYmVybWx6cXF2dHF3bHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc1Nzg5NTgsImV4cCI6MjA4MzE1NDk1OH0.KGEzs2T-NPBc1DaWjgIVbJkEsjAdluT4q5kHrFvIJus\", \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91cXdiYmVybWx6cXF2dHF3bHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc1Nzg5NTgsImV4cCI6MjA4MzE1NDk1OH0.KGEzs2T-NPBc1DaWjgIVbJkEsjAdluT4q5kHrFvIJus\"}'::jsonb,\n    body := '{\"action\": \"tarefa_atrasada\"}'::jsonb\n  );\n  ",
+    "jobname": "alertas-tarefas-atrasadas",
+    "schedule": "0 11,13,15,17,19,21,23 * * *"
+  },
+  {
+    "jobid": 16,
+    "active": true,
+    "command": "\n    SELECT net.http_post(\n      url := 'https://ouqwbbermlzqqvtqwlul.supabase.co/functions/v1/auditor-divergencias-emusys',\n      headers := jsonb_build_object(\n        'Authorization', 'Bearer ' || COALESCE(\n          current_setting('app.settings.anon_key', true),\n          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91cXdiYmVybWx6cXF2dHF3bHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc1Nzg5NTgsImV4cCI6MjA4MzE1NDk1OH0.KGEzs2T-NPBc1DaWjgIVbJkEsjAdluT4q5kHrFvIJus'\n        ),\n        'Content-Type', 'application/json'\n      ),\n      body := jsonb_build_object('trigger', 'cron')\n    );\n  ",
+    "jobname": "auditor-divergencias-cron",
+    "schedule": "0 * * * *"
+  },
+  {
+    "jobid": 12,
+    "active": true,
+    "command": "DELETE FROM audit_log WHERE created_at < NOW() - interval '90 days'",
+    "jobname": "cleanup-audit-log",
+    "schedule": "0 6 * * 0"
+  },
+  {
+    "jobid": 10,
+    "active": true,
+    "command": "SELECT cleanup_bi_conversations()",
+    "jobname": "cleanup-bi-conversations",
+    "schedule": "0 6 * * *"
+  },
+  {
+    "jobid": 5,
+    "active": true,
+    "command": "\n  SELECT net.http_post(\n    url := 'https://ouqwbbermlzqqvtqwlul.supabase.co/functions/v1/processar-mensagens-agendadas',\n    headers := '{\"Content-Type\": \"application/json\", \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91cXdiYmVybWx6cXF2dHF3bHVsIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcyMjg3NjQ3NiwiZXhwIjoyMDM4NDUyNDc2fQ.tVsn5u3YOmFSEHIciMk7ekNJFBu0jbfFifBbpFKA8Qs\"}'::jsonb,\n    body := '{}'::jsonb\n  );\n  ",
+    "jobname": "processar-mensagens-agendadas",
+    "schedule": "* * * * *"
+  },
+  {
+    "jobid": 13,
+    "active": true,
+    "command": "\n  SELECT net.http_post(\n    url := 'https://ouqwbbermlzqqvtqwlul.supabase.co/functions/v1/relatorio-admin-whatsapp',\n    headers := '{\"Content-Type\": \"application/json\", \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91cXdiYmVybWx6cXF2dHF3bHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc1Nzg5NTgsImV4cCI6MjA4MzE1NDk1OH0.KGEzs2T-NPBc1DaWjgIVbJkEsjAdluT4q5kHrFvIJus\"}'::jsonb,\n    body := '{\"modo\": \"cron\"}'::jsonb\n  );\n  ",
+    "jobname": "relatorio-diario-20h",
+    "schedule": "0 23 * * 1-5"
+  },
+  {
+    "jobid": 22,
+    "active": true,
+    "command": "\n  SELECT net.http_post(\n    url := 'https://ouqwbbermlzqqvtqwlul.supabase.co/functions/v1/relatorio-admin-whatsapp',\n    headers := '{\"Content-Type\": \"application/json\", \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91cXdiYmVybWx6cXF2dHF3bHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc1Nzg5NTgsImV4cCI6MjA4MzE1NDk1OH0.KGEzs2T-NPBc1DaWjgIVbJkEsjAdluT4q5kHrFvIJus\"}'::jsonb,\n    body := '{\"modo\": \"cron\"}'::jsonb\n  );\n  ",
+    "jobname": "relatorio-diario-sabado-16h",
+    "schedule": "0 19 * * 6"
+  },
+  {
+    "jobid": 21,
+    "active": true,
+    "command": "\n    UPDATE public.bi_messages_lamusic\n    SET   status        = 'pending',\n          locked_at     = NULL,\n          attempt_count = attempt_count + 1\n    WHERE status      = 'processing'\n      AND updated_at  < now() - interval '10 minutes'\n      AND attempt_count < 3;\n\n    UPDATE public.bi_messages_lamusic\n    SET   status        = 'error',\n          error_message = 'Máximo de tentativas atingido'\n    WHERE status      = 'processing'\n      AND updated_at  < now() - interval '10 minutes'\n      AND attempt_count >= 3;\n  ",
+    "jobname": "reset-sol-stuck-messages",
+    "schedule": "*/5 * * * *"
+  },
+  {
+    "jobid": 3,
+    "active": true,
+    "command": "\n  SELECT net.http_post(\n    url := 'https://ouqwbbermlzqqvtqwlul.supabase.co/functions/v1/projeto-alertas-whatsapp',\n    headers := '{\"Content-Type\": \"application/json\", \"apikey\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91cXdiYmVybWx6cXF2dHF3bHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc1Nzg5NTgsImV4cCI6MjA4MzE1NDk1OH0.KGEzs2T-NPBc1DaWjgIVbJkEsjAdluT4q5kHrFvIJus\", \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91cXdiYmVybWx6cXF2dHF3bHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc1Nzg5NTgsImV4cCI6MjA4MzE1NDk1OH0.KGEzs2T-NPBc1DaWjgIVbJkEsjAdluT4q5kHrFvIJus\"}'::jsonb,\n    body := '{\"action\": \"resumo_semanal\"}'::jsonb\n  );\n  ",
+    "jobname": "resumo-semanal",
+    "schedule": "0 12 * * 1"
+  },
+  {
+    "jobid": 17,
+    "active": true,
+    "command": " SELECT public.sincronizar_grade_horaria_alunos(); ",
+    "jobname": "sincronizar-grade-horaria",
+    "schedule": "30 1 * * *"
+  },
+  {
+    "jobid": 14,
+    "active": true,
+    "command": "\n  SELECT net.http_post(\n    url := 'https://ouqwbbermlzqqvtqwlul.supabase.co/functions/v1/sync-feriados',\n    headers := '{\"Content-Type\": \"application/json\", \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91cXdiYmVybWx6cXF2dHF3bHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc1Nzg5NTgsImV4cCI6MjA4MzE1NDk1OH0.KGEzs2T-NPBc1DaWjgIVbJkEsjAdluT4q5kHrFvIJus\"}'::jsonb,\n    body := '{}'::jsonb\n  );\n  ",
+    "jobname": "sync-feriados-anual",
+    "schedule": "0 12 1 1 *"
+  },
+  {
+    "jobid": 19,
+    "active": true,
+    "command": "\n  SELECT net.http_post(\n    url := 'https://ouqwbbermlzqqvtqwlul.supabase.co/functions/v1/sync-presenca-emusys',\n    headers := '{\"Content-Type\": \"application/json\", \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91cXdiYmVybWx6cXF2dHF3bHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc1Nzg5NTgsImV4cCI6MjA4MzE1NDk1OH0.KGEzs2T-NPBc1DaWjgIVbJkEsjAdluT4q5kHrFvIJus\"}'::jsonb,\n    body := '{\"dias\": 7, \"unidade_index\": 1}'::jsonb\n  );\n  ",
+    "jobname": "sync-presenca-barra",
+    "schedule": "20 1 * * *"
+  },
+  {
+    "jobid": 18,
+    "active": true,
+    "command": "\n  SELECT net.http_post(\n    url := 'https://ouqwbbermlzqqvtqwlul.supabase.co/functions/v1/sync-presenca-emusys',\n    headers := '{\"Content-Type\": \"application/json\", \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91cXdiYmVybWx6cXF2dHF3bHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc1Nzg5NTgsImV4cCI6MjA4MzE1NDk1OH0.KGEzs2T-NPBc1DaWjgIVbJkEsjAdluT4q5kHrFvIJus\"}'::jsonb,\n    body := '{\"dias\": 5, \"unidade_index\": 0}'::jsonb\n  );\n  ",
+    "jobname": "sync-presenca-cg",
+    "schedule": "0 1 * * *"
+  },
+  {
+    "jobid": 20,
+    "active": true,
+    "command": "\n  SELECT net.http_post(\n    url := 'https://ouqwbbermlzqqvtqwlul.supabase.co/functions/v1/sync-presenca-emusys',\n    headers := '{\"Content-Type\": \"application/json\", \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91cXdiYmVybWx6cXF2dHF3bHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc1Nzg5NTgsImV4cCI6MjA4MzE1NDk1OH0.KGEzs2T-NPBc1DaWjgIVbJkEsjAdluT4q5kHrFvIJus\"}'::jsonb,\n    body := '{\"dias\": 7, \"unidade_index\": 2}'::jsonb\n  );\n  ",
+    "jobname": "sync-presenca-recreio",
+    "schedule": "40 1 * * *"
+  },
+  {
+    "jobid": 15,
+    "active": true,
+    "command": "\n  SELECT net.http_post(\n    url := 'https://ouqwbbermlzqqvtqwlul.supabase.co/functions/v1/sync-professores-emusys',\n    headers := '{\"Content-Type\": \"application/json\", \"Authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im91cXdiYmVybWx6cXF2dHF3bHVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc1Nzg5NTgsImV4cCI6MjA4MzE1NDk1OH0.KGEzs2T-NPBc1DaWjgIVbJkEsjAdluT4q5kHrFvIJus\"}'::jsonb,\n    body := '{}'::jsonb\n  );\n  ",
+    "jobname": "sync-professores-emusys-semanal",
+    "schedule": "0 7 * * 0"
+  },
+  {
+    "jobid": 9,
+    "active": true,
+    "command": "\n    select net.http_post(\n      url := 'https://ouqwbbermlzqqvtqwlul.supabase.co/functions/v1/enviar-mensagem-admin',\n      headers := '{\"Content-Type\": \"application/json\"}'::jsonb,\n      body := '{\"ping\": true}'::jsonb\n    );\n  ",
+    "jobname": "warm-enviar-mensagem-admin",
+    "schedule": "*/5 * * * *"
+  }
+]

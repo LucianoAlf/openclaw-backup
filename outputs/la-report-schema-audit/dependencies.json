@@ -1,0 +1,1554 @@
+[
+  {
+    "source_kind": "table",
+    "source_object": "relatorios_diarios",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_alertas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_alertas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_alertas_inteligentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "dados_comerciais",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_alertas_inteligentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "dados_mensais",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_alertas_inteligentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "metas_kpi",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_alertas_inteligentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes_admin",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_alertas_inteligentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores_unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_alertas_inteligentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "renovacoes",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_alertas_inteligentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_alertas_inteligentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "view",
+    "source_object": "vw_turmas_implicitas",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_alertas_inteligentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "aluno_acoes",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_aluno_sucesso_lista",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "aluno_feedback_professor",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_aluno_sucesso_lista",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "aluno_metas",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_aluno_sucesso_lista",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_aluno_sucesso_lista",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "cursos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_aluno_sucesso_lista",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_aluno_sucesso_lista",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_aluno_sucesso_lista",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "view",
+    "source_object": "vw_aluno_sucesso_lista",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_aluno_sucesso_resumo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_alunos_ativos",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "cursos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_alunos_ativos",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_alunos_ativos",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "tipos_matricula",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_alunos_ativos",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_alunos_ativos",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "dados_mensais",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_consolidado_anual",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_contagem_alunos",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "tipos_matricula",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_contagem_alunos",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_contagem_alunos",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_dashboard_unidade",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos_historico",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_dashboard_unidade",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "dados_mensais",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_dashboard_unidade",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes_admin",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_dashboard_unidade",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "tipos_matricula",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_dashboard_unidade",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_dashboard_unidade",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos_historico",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_distribuicao_permanencia",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "motivos_saida",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evasao_por_motivo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evasao_por_motivo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evasao_por_motivo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evasao_por_tipo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "tipos_saida",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evasao_por_tipo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evasao_por_tipo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "motivos_saida",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evasoes_motivos",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes_admin",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evasoes_motivos",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evasoes_motivos",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "motivos_saida",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evasoes_professores",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes_admin",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evasoes_professores",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evasoes_professores",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evasoes_professores",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "motivos_saida",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evasoes_resumo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes_admin",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evasoes_resumo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evasoes_resumo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evolucao_alunos",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_evolucao_alunos",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_aniversariantes_hoje",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "cursos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_aniversariantes_hoje",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_aniversariantes_hoje",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "colaboradores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_checklist_alertas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "farmer_checklist_items",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_checklist_alertas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "farmer_checklists",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_checklist_alertas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_inadimplentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "cursos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_inadimplentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_inadimplentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_novos_matriculados",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "cursos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_novos_matriculados",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_novos_matriculados",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_renovacoes_proximas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "cursos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_renovacoes_proximas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_renovacoes_proximas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_resumo_alertas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "view",
+    "source_object": "vw_farmer_aniversariantes_hoje",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_resumo_alertas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "view",
+    "source_object": "vw_farmer_inadimplentes",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_resumo_alertas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "view",
+    "source_object": "vw_farmer_novos_matriculados",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_resumo_alertas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "view",
+    "source_object": "vw_farmer_renovacoes_proximas",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_farmer_resumo_alertas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_fator_demanda_professor",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "cursos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_fator_demanda_professor",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_fator_demanda_professor",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "leads",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_funil_conversao_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_funil_conversao_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "dados_comerciais",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_comercial_historico",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_comercial_historico",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_comercial_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "leads",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_comercial_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_comercial_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_gestao_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "cursos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_gestao_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "leads",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_gestao_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes_admin",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_gestao_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "renovacoes",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_gestao_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "tipos_matricula",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_gestao_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_gestao_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_mensais",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_mensais",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_professor_completo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_professor_completo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "experimentais_mensal_unidade",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_professor_historico",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "leads",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_professor_historico",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_professor_historico",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_professor_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "cursos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_professor_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "leads",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_professor_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes_admin",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_professor_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_professor_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "view",
+    "source_object": "vw_turmas_implicitas",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_professor_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_professor_por_unidade",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_professor_por_unidade",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_retencao_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes_admin",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_retencao_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "tipos_matricula",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_retencao_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_kpis_retencao_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "canais_origem",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_leads_comercial",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "cursos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_leads_comercial",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "leads",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_leads_comercial",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_leads_comercial",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_leads_comercial",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "canais_origem",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_leads_por_canal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "leads",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_leads_por_canal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_leads_por_canal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos_historico",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_ltv_por_categoria",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos_historico",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_ltv_por_unidade",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_ltv_por_unidade",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos_historico",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_ltv_rede",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_ltv_unidade",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "tipos_matricula",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_ltv_unidade",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_ltv_unidade",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "canais_origem",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_matriculas_por_canal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_matriculas_por_canal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_matriculas_por_canal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "metas",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_metas_vs_realizado",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "relatorios_diarios",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_metas_vs_realizado",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_metas_vs_realizado",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "leads",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_motivos_nao_matricula",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_motivos_nao_matricula",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_movimentacoes_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_movimentacoes_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_movimentacoes_recentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "cursos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_movimentacoes_recentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "motivos_saida",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_movimentacoes_recentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_movimentacoes_recentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_movimentacoes_recentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "leads",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_performance_professor_experimental",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_performance_professor_experimental",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_performance_professor_experimental",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_professores_carteira_resumo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_professores_carteira_resumo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_professores_performance_atual",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "experimentais_professor_mensal",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_professores_performance_atual",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "leads",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_professores_performance_atual",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes_admin",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_professores_performance_atual",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_professores_performance_atual",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores_unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_professores_performance_atual",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_professores_performance_atual",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "metas",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_projecao_metas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "relatorios_diarios",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_projecao_metas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_projecao_metas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores_performance",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_ranking_professores_evasoes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_ranking_professores_retencao",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_ranking_professores_retencao",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_ranking_professores_retencao",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "dados_mensais",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_ranking_unidades",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_ranking_unidades",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "renovacoes",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_renovacoes_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_renovacoes_mensal",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_renovacoes_pendentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "renovacoes",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_renovacoes_pendentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_renovacoes_pendentes",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_renovacoes_proximas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "cursos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_renovacoes_proximas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_renovacoes_proximas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_renovacoes_proximas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "dados_mensais",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_sazonalidade",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_sazonalidade",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_taxa_crescimento_professor",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "movimentacoes_admin",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_taxa_crescimento_professor",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_taxa_crescimento_professor",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "view",
+    "source_object": "vw_fator_demanda_professor",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_taxa_crescimento_professor",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores_performance",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_totais_unidade_performance",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_turmas_completa",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos_turmas",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_turmas_completa",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "cursos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_turmas_completa",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_turmas_completa",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "salas",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_turmas_completa",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "turmas",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_turmas_completa",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_turmas_completa",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_turmas_implicitas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "cursos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_turmas_implicitas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "professores",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_turmas_implicitas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "salas",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_turmas_implicitas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "turmas_explicitas",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_turmas_implicitas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_turmas_implicitas",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "aluno_presenca",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_turmas_professor_periodo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "alunos",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_turmas_professor_periodo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "aulas_emusys",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_turmas_professor_periodo",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "dados_mensais",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_unidade_anual",
+    "dependent_schema": "public"
+  },
+  {
+    "source_kind": "table",
+    "source_object": "unidades",
+    "source_schema": "public",
+    "dependent_kind": "view",
+    "dependent_object": "vw_unidade_anual",
+    "dependent_schema": "public"
+  }
+]

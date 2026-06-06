@@ -1,0 +1,4310 @@
+[
+  {
+    "definition": "CHECK (((aluno_id IS NOT NULL) OR (telefone_externo IS NOT NULL)))",
+    "table_name": "admin_conversas",
+    "constraint_name": "chk_conversa_contato",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id)",
+    "table_name": "admin_conversas",
+    "constraint_name": "admin_conversas_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (caixa_id) REFERENCES whatsapp_caixas(id) ON DELETE SET NULL",
+    "table_name": "admin_conversas",
+    "constraint_name": "admin_conversas_caixa_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "admin_conversas",
+    "constraint_name": "admin_conversas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "admin_conversas",
+    "constraint_name": "admin_conversas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((direcao)::text = ANY ((ARRAY['entrada'::character varying, 'saida'::character varying])::text[])))",
+    "table_name": "admin_mensagens",
+    "constraint_name": "admin_mensagens_direcao_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((remetente)::text = ANY ((ARRAY['aluno'::character varying, 'admin'::character varying, 'sistema'::character varying, 'externo'::character varying])::text[])))",
+    "table_name": "admin_mensagens",
+    "constraint_name": "admin_mensagens_remetente_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((status_entrega)::text = ANY ((ARRAY['enviando'::character varying, 'enviada'::character varying, 'entregue'::character varying, 'lida'::character varying, 'erro'::character varying])::text[])))",
+    "table_name": "admin_mensagens",
+    "constraint_name": "admin_mensagens_status_entrega_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((tipo)::text = ANY ((ARRAY['texto'::character varying, 'imagem'::character varying, 'audio'::character varying, 'video'::character varying, 'documento'::character varying, 'sticker'::character varying, 'sistema'::character varying])::text[])))",
+    "table_name": "admin_mensagens",
+    "constraint_name": "admin_mensagens_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id)",
+    "table_name": "admin_mensagens",
+    "constraint_name": "admin_mensagens_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (conversa_id) REFERENCES admin_conversas(id) ON DELETE CASCADE",
+    "table_name": "admin_mensagens",
+    "constraint_name": "admin_mensagens_conversa_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "admin_mensagens",
+    "constraint_name": "admin_mensagens_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (whatsapp_message_id)",
+    "table_name": "admin_mensagens",
+    "constraint_name": "admin_mensagens_whatsapp_message_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (agente_id) REFERENCES agentes(id) ON DELETE CASCADE",
+    "table_name": "agente_conversas",
+    "constraint_name": "agente_conversas_agente_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (pausado_por) REFERENCES auth.users(id) ON DELETE SET NULL",
+    "table_name": "agente_conversas",
+    "constraint_name": "agente_conversas_pausado_por_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE SET NULL",
+    "table_name": "agente_conversas",
+    "constraint_name": "agente_conversas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "agente_conversas",
+    "constraint_name": "agente_conversas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (agente_id) REFERENCES agentes(id) ON DELETE CASCADE",
+    "table_name": "agente_fila_mensagens",
+    "constraint_name": "agente_fila_mensagens_agente_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE SET NULL",
+    "table_name": "agente_fila_mensagens",
+    "constraint_name": "agente_fila_mensagens_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "agente_fila_mensagens",
+    "constraint_name": "agente_fila_mensagens_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (agente_id, telefone)",
+    "table_name": "agente_fila_mensagens",
+    "constraint_name": "agente_fila_mensagens_agente_id_telefone_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (numero_meta_id) REFERENCES numeros_meta(id) ON DELETE SET NULL",
+    "table_name": "agentes",
+    "constraint_name": "agentes_numero_meta_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE SET NULL",
+    "table_name": "agentes",
+    "constraint_name": "agentes_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "agentes",
+    "constraint_name": "agentes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((tipo)::text = ANY ((ARRAY['ligacao'::character varying, 'whatsapp'::character varying, 'reuniao'::character varying, 'observacao'::character varying, 'plano_ia'::character varying, 'email'::character varying, 'visita'::character varying, 'outro'::character varying])::text[])))",
+    "table_name": "aluno_acoes",
+    "constraint_name": "aluno_acoes_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id) ON DELETE CASCADE",
+    "table_name": "aluno_acoes",
+    "constraint_name": "aluno_acoes_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (realizado_por) REFERENCES auth.users(id)",
+    "table_name": "aluno_acoes",
+    "constraint_name": "aluno_acoes_realizado_por_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "aluno_acoes",
+    "constraint_name": "aluno_acoes_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "aluno_acoes",
+    "constraint_name": "aluno_acoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id) ON DELETE CASCADE",
+    "table_name": "aluno_contatos",
+    "constraint_name": "aluno_contatos_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "aluno_contatos",
+    "constraint_name": "aluno_contatos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((feedback)::text = ANY ((ARRAY['verde'::character varying, 'amarelo'::character varying, 'vermelho'::character varying])::text[])))",
+    "table_name": "aluno_feedback_professor",
+    "constraint_name": "aluno_feedback_professor_feedback_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id) ON DELETE CASCADE",
+    "table_name": "aluno_feedback_professor",
+    "constraint_name": "aluno_feedback_professor_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id) ON DELETE CASCADE",
+    "table_name": "aluno_feedback_professor",
+    "constraint_name": "aluno_feedback_professor_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (sessao_id) REFERENCES aluno_feedback_sessoes(id) ON DELETE SET NULL",
+    "table_name": "aluno_feedback_professor",
+    "constraint_name": "aluno_feedback_professor_sessao_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "aluno_feedback_professor",
+    "constraint_name": "aluno_feedback_professor_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "aluno_feedback_professor",
+    "constraint_name": "aluno_feedback_professor_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (aluno_id, professor_id, competencia)",
+    "table_name": "aluno_feedback_professor",
+    "constraint_name": "aluno_feedback_professor_aluno_id_professor_id_competencia_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['pendente'::character varying, 'parcial'::character varying, 'concluido'::character varying])::text[])))",
+    "table_name": "aluno_feedback_sessoes",
+    "constraint_name": "aluno_feedback_sessoes_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (enviado_por) REFERENCES auth.users(id)",
+    "table_name": "aluno_feedback_sessoes",
+    "constraint_name": "aluno_feedback_sessoes_enviado_por_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id) ON DELETE CASCADE",
+    "table_name": "aluno_feedback_sessoes",
+    "constraint_name": "aluno_feedback_sessoes_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "aluno_feedback_sessoes",
+    "constraint_name": "aluno_feedback_sessoes_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "aluno_feedback_sessoes",
+    "constraint_name": "aluno_feedback_sessoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (token)",
+    "table_name": "aluno_feedback_sessoes",
+    "constraint_name": "aluno_feedback_sessoes_token_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['ativa'::character varying, 'concluida'::character varying, 'cancelada'::character varying])::text[])))",
+    "table_name": "aluno_metas",
+    "constraint_name": "aluno_metas_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((tipo)::text = ANY ((ARRAY['presenca'::character varying, 'pagamento'::character varying, 'engajamento'::character varying, 'renovacao'::character varying, 'custom'::character varying])::text[])))",
+    "table_name": "aluno_metas",
+    "constraint_name": "aluno_metas_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id) ON DELETE CASCADE",
+    "table_name": "aluno_metas",
+    "constraint_name": "aluno_metas_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (criado_por) REFERENCES auth.users(id)",
+    "table_name": "aluno_metas",
+    "constraint_name": "aluno_metas_criado_por_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "aluno_metas",
+    "constraint_name": "aluno_metas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "aluno_metas",
+    "constraint_name": "aluno_metas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((respondido_por)::text = ANY ((ARRAY['professor_whatsapp'::character varying, 'manual'::character varying, 'sistema'::character varying, 'emusys'::character varying])::text[])))",
+    "table_name": "aluno_presenca",
+    "constraint_name": "aluno_presenca_respondido_por_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['presente'::character varying, 'ausente'::character varying, 'remarcou'::character varying, 'pendente'::character varying])::text[])))",
+    "table_name": "aluno_presenca",
+    "constraint_name": "aluno_presenca_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id) ON DELETE CASCADE",
+    "table_name": "aluno_presenca",
+    "constraint_name": "aluno_presenca_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (aula_emusys_id) REFERENCES aulas_emusys(id)",
+    "table_name": "aluno_presenca",
+    "constraint_name": "aluno_presenca_aula_emusys_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id) ON DELETE CASCADE",
+    "table_name": "aluno_presenca",
+    "constraint_name": "aluno_presenca_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "aluno_presenca",
+    "constraint_name": "aluno_presenca_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "aluno_presenca",
+    "constraint_name": "aluno_presenca_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (aluno_id, aula_emusys_id)",
+    "table_name": "aluno_presenca",
+    "constraint_name": "uq_presenca_aluno_aula",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((dia_vencimento >= 1) AND (dia_vencimento <= 31)))",
+    "table_name": "alunos",
+    "constraint_name": "alunos_dia_vencimento_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((nps_saida >= 0) AND (nps_saida <= 10)))",
+    "table_name": "alunos",
+    "constraint_name": "alunos_nps_saida_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['ativo'::character varying, 'inativo'::character varying, 'aviso_previo'::character varying, 'trancado'::character varying, 'evadido'::character varying])::text[])))",
+    "table_name": "alunos",
+    "constraint_name": "alunos_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((tipo_aluno)::text = ANY ((ARRAY['pagante'::character varying, 'pagante_2_curso'::character varying, 'bolsista_integral'::character varying, 'bolsista_parcial'::character varying, 'nao_pagante'::character varying])::text[])))",
+    "table_name": "alunos",
+    "constraint_name": "alunos_tipo_aluno_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (canal_origem_id) REFERENCES canais_origem(id)",
+    "table_name": "alunos",
+    "constraint_name": "alunos_canal_origem_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (curso_id) REFERENCES cursos(id)",
+    "table_name": "alunos",
+    "constraint_name": "alunos_curso_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (forma_pagamento_id) REFERENCES formas_pagamento(id)",
+    "table_name": "alunos",
+    "constraint_name": "alunos_forma_pagamento_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (lead_origem_id) REFERENCES leads(id) ON DELETE SET NULL",
+    "table_name": "alunos",
+    "constraint_name": "alunos_lead_origem_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (motivo_saida_id) REFERENCES motivos_saida(id)",
+    "table_name": "alunos",
+    "constraint_name": "alunos_motivo_saida_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_atual_id) REFERENCES professores(id)",
+    "table_name": "alunos",
+    "constraint_name": "alunos_professor_atual_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_experimental_id) REFERENCES professores(id)",
+    "table_name": "alunos",
+    "constraint_name": "alunos_professor_experimental_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (tipo_matricula_id) REFERENCES tipos_matricula(id)",
+    "table_name": "alunos",
+    "constraint_name": "alunos_tipo_matricula_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (tipo_saida_id) REFERENCES tipos_saida(id)",
+    "table_name": "alunos",
+    "constraint_name": "alunos_tipo_saida_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "alunos",
+    "constraint_name": "alunos_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "alunos",
+    "constraint_name": "alunos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (telefone, unidade_id, nome, curso_id)",
+    "table_name": "alunos",
+    "constraint_name": "idx_alunos_telefone_unidade_nome_curso_unique",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((health_score)::text = ANY ((ARRAY['verde'::character varying, 'amarelo'::character varying, 'vermelho'::character varying])::text[])))",
+    "table_name": "alunos_health_score_historico",
+    "constraint_name": "alunos_health_score_historico_health_score_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id) ON DELETE CASCADE",
+    "table_name": "alunos_health_score_historico",
+    "constraint_name": "alunos_health_score_historico_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id)",
+    "table_name": "alunos_health_score_historico",
+    "constraint_name": "alunos_health_score_historico_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "alunos_health_score_historico",
+    "constraint_name": "alunos_health_score_historico_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id) ON DELETE SET NULL",
+    "table_name": "alunos_historico",
+    "constraint_name": "alunos_historico_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "alunos_historico",
+    "constraint_name": "alunos_historico_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "alunos_historico",
+    "constraint_name": "alunos_historico_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id) ON DELETE CASCADE",
+    "table_name": "alunos_turmas",
+    "constraint_name": "alunos_turmas_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (turma_id) REFERENCES turmas(id) ON DELETE CASCADE",
+    "table_name": "alunos_turmas",
+    "constraint_name": "alunos_turmas_turma_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "alunos_turmas",
+    "constraint_name": "alunos_turmas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (aluno_id, turma_id)",
+    "table_name": "alunos_turmas",
+    "constraint_name": "alunos_turmas_aluno_id_turma_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((pergunta_numero >= 1) AND (pergunta_numero <= 11)))",
+    "table_name": "anamnese_respostas_perfil",
+    "constraint_name": "anamnese_respostas_perfil_pergunta_numero_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((resposta_posicao >= 0) AND (resposta_posicao <= 5)))",
+    "table_name": "anamnese_respostas_perfil",
+    "constraint_name": "anamnese_respostas_perfil_resposta_posicao_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (anamnese_id) REFERENCES anamneses(id) ON DELETE CASCADE",
+    "table_name": "anamnese_respostas_perfil",
+    "constraint_name": "anamnese_respostas_perfil_anamnese_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "anamnese_respostas_perfil",
+    "constraint_name": "anamnese_respostas_perfil_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((modo_resposta)::text = ANY ((ARRAY['presencial'::character varying, 'online'::character varying])::text[])))",
+    "table_name": "anamneses",
+    "constraint_name": "anamneses_modo_resposta_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((possui_instrumento)::text = ANY ((ARRAY['sim'::character varying, 'nao'::character varying, 'planejando'::character varying])::text[])))",
+    "table_name": "anamneses",
+    "constraint_name": "anamneses_possui_instrumento_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['rascunho'::character varying, 'completa'::character varying])::text[])))",
+    "table_name": "anamneses",
+    "constraint_name": "anamneses_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((tipo_formulario)::text = ANY ((ARRAY['EMLA'::character varying, 'LAMK'::character varying])::text[])))",
+    "table_name": "anamneses",
+    "constraint_name": "anamneses_tipo_formulario_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((vinculo_status)::text = ANY ((ARRAY['vinculado'::character varying, 'pendente'::character varying, 'ignorado'::character varying])::text[])))",
+    "table_name": "anamneses",
+    "constraint_name": "anamneses_vinculo_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id) ON DELETE SET NULL",
+    "table_name": "anamneses",
+    "constraint_name": "anamneses_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (created_by) REFERENCES usuarios(id)",
+    "table_name": "anamneses",
+    "constraint_name": "anamneses_created_by_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "anamneses",
+    "constraint_name": "anamneses_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "anamneses",
+    "constraint_name": "anamneses_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "anotacoes",
+    "constraint_name": "anotacoes_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "anotacoes",
+    "constraint_name": "anotacoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id) ON DELETE CASCADE",
+    "table_name": "anotacoes_alunos",
+    "constraint_name": "anotacoes_alunos_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "anotacoes_alunos",
+    "constraint_name": "anotacoes_alunos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK ((id = 1))",
+    "table_name": "assistente_ia_config",
+    "constraint_name": "assistente_ia_config_id_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "assistente_ia_config",
+    "constraint_name": "assistente_ia_config_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "audit_log",
+    "constraint_name": "audit_log_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE SET NULL",
+    "table_name": "auditoria_acesso",
+    "constraint_name": "auditoria_acesso_usuario_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "auditoria_acesso",
+    "constraint_name": "auditoria_acesso_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id)",
+    "table_name": "aulas_emusys",
+    "constraint_name": "aulas_emusys_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "aulas_emusys",
+    "constraint_name": "aulas_emusys_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "aulas_emusys",
+    "constraint_name": "aulas_emusys_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (emusys_id, unidade_id)",
+    "table_name": "aulas_emusys",
+    "constraint_name": "aulas_emusys_emusys_id_unidade_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK ((severidade = ANY (ARRAY['critico'::text, 'aviso'::text])))",
+    "table_name": "automacao_invariantes",
+    "constraint_name": "automacao_invariantes_severidade_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (log_id) REFERENCES automacao_log(id) ON DELETE CASCADE",
+    "table_name": "automacao_invariantes",
+    "constraint_name": "automacao_invariantes_log_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "automacao_invariantes",
+    "constraint_name": "automacao_invariantes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK ((status = ANY (ARRAY['ok'::text, 'warn'::text, 'erro'::text])))",
+    "table_name": "automacao_log",
+    "constraint_name": "automacao_log_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "automacao_log",
+    "constraint_name": "automacao_log_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "bi_agent_config_lamusic",
+    "constraint_name": "bi_agent_config_lamusic_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK ((required_scope = ANY (ARRAY['none'::text, 'unit'::text, 'own'::text, 'all_admin'::text, 'unit_or_all_admin'::text])))",
+    "table_name": "bi_ai_query_playbooks",
+    "constraint_name": "bi_ai_query_playbooks_scope_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK ((review_status = ANY (ARRAY['draft'::text, 'approved'::text, 'disabled'::text])))",
+    "table_name": "bi_ai_query_playbooks",
+    "constraint_name": "bi_ai_query_playbooks_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK ((query_type = ANY (ARRAY['select'::text, 'aggregate'::text, 'lookup'::text])))",
+    "table_name": "bi_ai_query_playbooks",
+    "constraint_name": "bi_ai_query_playbooks_type_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "bi_ai_query_playbooks",
+    "constraint_name": "bi_ai_query_playbooks_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (intent)",
+    "table_name": "bi_ai_query_playbooks",
+    "constraint_name": "bi_ai_query_playbooks_intent_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (colaborador_id) REFERENCES colaboradores(id)",
+    "table_name": "bi_conversations_lamusic",
+    "constraint_name": "bi_conversations_lamusic_colaborador_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "bi_conversations_lamusic",
+    "constraint_name": "bi_conversations_lamusic_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (user_id) REFERENCES auth.users(id)",
+    "table_name": "bi_conversations_lamusic",
+    "constraint_name": "bi_conversations_lamusic_user_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "bi_conversations_lamusic",
+    "constraint_name": "bi_conversations_lamusic_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK ((status = ANY (ARRAY['pending'::text, 'processing'::text, 'done'::text, 'error'::text])))",
+    "table_name": "bi_messages_lamusic",
+    "constraint_name": "bi_messages_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (conversation_id) REFERENCES bi_conversations_lamusic(id) ON DELETE CASCADE",
+    "table_name": "bi_messages_lamusic",
+    "constraint_name": "bi_messages_lamusic_conversation_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "bi_messages_lamusic",
+    "constraint_name": "bi_messages_lamusic_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "bi_query_cache_lamusic",
+    "constraint_name": "bi_query_cache_lamusic_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (user_id, query_hash)",
+    "table_name": "bi_query_cache_lamusic",
+    "constraint_name": "bi_query_cache_lamusic_user_id_query_hash_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "bi_query_templates_lamusic",
+    "constraint_name": "bi_query_templates_lamusic_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (campanha_id) REFERENCES campanhas(id) ON DELETE CASCADE",
+    "table_name": "campanha_contatos",
+    "constraint_name": "campanha_contatos_campanha_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "campanha_contatos",
+    "constraint_name": "campanha_contatos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (criado_por) REFERENCES auth.users(id) ON DELETE SET NULL",
+    "table_name": "campanhas",
+    "constraint_name": "campanhas_criado_por_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (numero_meta_id) REFERENCES numeros_meta(id) ON DELETE SET NULL",
+    "table_name": "campanhas",
+    "constraint_name": "campanhas_numero_meta_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (template_id) REFERENCES templates_meta(id) ON DELETE SET NULL",
+    "table_name": "campanhas",
+    "constraint_name": "campanhas_template_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE SET NULL",
+    "table_name": "campanhas",
+    "constraint_name": "campanhas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "campanhas",
+    "constraint_name": "campanhas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (updated_by) REFERENCES auth.users(id)",
+    "table_name": "campanhas_config",
+    "constraint_name": "campanhas_config_updated_by_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "campanhas_config",
+    "constraint_name": "campanhas_config_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "canais_origem",
+    "constraint_name": "canais_origem_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (nome_normalizado)",
+    "table_name": "canais_origem",
+    "constraint_name": "uk_canais_nome_normalizado",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "catalogo_treinamentos",
+    "constraint_name": "catalogo_treinamentos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((tipo)::text = ANY ((ARRAY['farmer'::character varying, 'hunter'::character varying, 'gerente'::character varying, 'admin'::character varying, 'pre_atendimento'::character varying])::text[])))",
+    "table_name": "colaboradores",
+    "constraint_name": "colaboradores_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE SET NULL",
+    "table_name": "colaboradores",
+    "constraint_name": "colaboradores_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (usuario_id) REFERENCES auth.users(id) ON DELETE SET NULL",
+    "table_name": "colaboradores",
+    "constraint_name": "colaboradores_usuario_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "colaboradores",
+    "constraint_name": "colaboradores_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((((((peso_taxa_crescimento + peso_media_turma) + peso_retencao) + peso_conversao) + peso_presenca) + peso_evasoes) = 100))",
+    "table_name": "config_health_score",
+    "constraint_name": "config_health_score_pesos_somam_100",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "config_health_score",
+    "constraint_name": "config_health_score_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "config_health_score",
+    "constraint_name": "config_health_score_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (unidade_id)",
+    "table_name": "config_health_score",
+    "constraint_name": "config_health_score_unidade_unique",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "config_health_score_aluno",
+    "constraint_name": "config_health_score_aluno_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "config_health_score_aluno",
+    "constraint_name": "config_health_score_aluno_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (unidade_id)",
+    "table_name": "config_health_score_aluno",
+    "constraint_name": "config_health_score_aluno_unidade_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((((((peso_taxa_crescimento + peso_media_turma) + peso_retencao) + peso_conversao) + peso_presenca) + peso_evasoes) = 100))",
+    "table_name": "config_health_score_professor",
+    "constraint_name": "pesos_professor_somam_100",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "config_health_score_professor",
+    "constraint_name": "config_health_score_professor_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "config_health_score_professor",
+    "constraint_name": "config_health_score_professor_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE NULLS NOT DISTINCT (unidade_id)",
+    "table_name": "config_health_score_professor",
+    "constraint_name": "config_health_prof_unidade_unique",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "contatos_bloqueados_campanha",
+    "constraint_name": "contatos_bloqueados_campanha_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "contatos_bloqueados_campanha",
+    "constraint_name": "contatos_bloqueados_campanha_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (unidade_id, telefone)",
+    "table_name": "contatos_bloqueados_campanha",
+    "constraint_name": "contatos_bloqueados_campanha_unidade_id_telefone_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "conversa_estado_whatsapp",
+    "constraint_name": "conversa_estado_whatsapp_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (whatsapp_numero)",
+    "table_name": "conversa_estado_whatsapp",
+    "constraint_name": "conversa_estado_whatsapp_whatsapp_numero_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (numero_meta_id) REFERENCES numeros_meta(id) ON DELETE SET NULL",
+    "table_name": "conversas_campanha",
+    "constraint_name": "conversas_campanha_numero_meta_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE SET NULL",
+    "table_name": "conversas_campanha",
+    "constraint_name": "conversas_campanha_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "conversas_campanha",
+    "constraint_name": "conversas_campanha_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (numero_meta_id, telefone)",
+    "table_name": "conversas_campanha",
+    "constraint_name": "conversas_campanha_numero_meta_id_telefone_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((atribuido_a)::text = ANY ((ARRAY['mila'::character varying, 'andreza'::character varying, 'nao_atribuido'::character varying])::text[])))",
+    "table_name": "crm_conversas",
+    "constraint_name": "crm_conversas_atribuido_a_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['aberta'::character varying, 'pausada'::character varying, 'encerrada'::character varying, 'aguardando'::character varying])::text[])))",
+    "table_name": "crm_conversas",
+    "constraint_name": "crm_conversas_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (caixa_id) REFERENCES whatsapp_caixas(id) ON DELETE SET NULL",
+    "table_name": "crm_conversas",
+    "constraint_name": "crm_conversas_caixa_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (lead_id) REFERENCES leads(id) ON DELETE CASCADE",
+    "table_name": "crm_conversas",
+    "constraint_name": "crm_conversas_lead_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "crm_conversas",
+    "constraint_name": "crm_conversas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "crm_conversas",
+    "constraint_name": "crm_conversas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (lead_id)",
+    "table_name": "crm_conversas",
+    "constraint_name": "crm_conversas_lead_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "crm_etiquetas",
+    "constraint_name": "crm_etiquetas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (nome)",
+    "table_name": "crm_etiquetas",
+    "constraint_name": "crm_etiquetas_nome_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (created_by) REFERENCES colaboradores(id)",
+    "table_name": "crm_followups",
+    "constraint_name": "crm_followups_created_by_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (lead_id) REFERENCES leads(id) ON DELETE CASCADE",
+    "table_name": "crm_followups",
+    "constraint_name": "crm_followups_lead_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "crm_followups",
+    "constraint_name": "crm_followups_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (etiqueta_id) REFERENCES crm_etiquetas(id) ON DELETE CASCADE",
+    "table_name": "crm_lead_etiquetas",
+    "constraint_name": "crm_lead_etiquetas_etiqueta_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (lead_id) REFERENCES leads(id) ON DELETE CASCADE",
+    "table_name": "crm_lead_etiquetas",
+    "constraint_name": "crm_lead_etiquetas_lead_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "crm_lead_etiquetas",
+    "constraint_name": "crm_lead_etiquetas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (lead_id, etiqueta_id)",
+    "table_name": "crm_lead_etiquetas",
+    "constraint_name": "crm_lead_etiquetas_lead_id_etiqueta_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (created_by) REFERENCES colaboradores(id)",
+    "table_name": "crm_lead_historico",
+    "constraint_name": "crm_lead_historico_created_by_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (lead_id) REFERENCES leads(id) ON DELETE CASCADE",
+    "table_name": "crm_lead_historico",
+    "constraint_name": "crm_lead_historico_lead_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "crm_lead_historico",
+    "constraint_name": "crm_lead_historico_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((direcao)::text = ANY ((ARRAY['entrada'::character varying, 'saida'::character varying])::text[])))",
+    "table_name": "crm_mensagens",
+    "constraint_name": "crm_mensagens_direcao_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((remetente)::text = ANY ((ARRAY['lead'::character varying, 'mila'::character varying, 'andreza'::character varying, 'sistema'::character varying])::text[])))",
+    "table_name": "crm_mensagens",
+    "constraint_name": "crm_mensagens_remetente_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((status_entrega)::text = ANY ((ARRAY['enviando'::character varying, 'enviada'::character varying, 'entregue'::character varying, 'lida'::character varying, 'erro'::character varying])::text[])))",
+    "table_name": "crm_mensagens",
+    "constraint_name": "crm_mensagens_status_entrega_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((tipo)::text = ANY ((ARRAY['texto'::character varying, 'imagem'::character varying, 'audio'::character varying, 'video'::character varying, 'documento'::character varying, 'sticker'::character varying, 'localizacao'::character varying, 'contato'::character varying, 'sistema'::character varying])::text[])))",
+    "table_name": "crm_mensagens",
+    "constraint_name": "crm_mensagens_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (conversa_id) REFERENCES crm_conversas(id) ON DELETE CASCADE",
+    "table_name": "crm_mensagens",
+    "constraint_name": "crm_mensagens_conversa_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (lead_id) REFERENCES leads(id) ON DELETE CASCADE",
+    "table_name": "crm_mensagens",
+    "constraint_name": "crm_mensagens_lead_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (reply_to_id) REFERENCES crm_mensagens(id)",
+    "table_name": "crm_mensagens",
+    "constraint_name": "crm_mensagens_reply_to_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (template_id) REFERENCES crm_templates_whatsapp(id)",
+    "table_name": "crm_mensagens",
+    "constraint_name": "crm_mensagens_template_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "crm_mensagens",
+    "constraint_name": "crm_mensagens_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (whatsapp_message_id)",
+    "table_name": "crm_mensagens",
+    "constraint_name": "crm_mensagens_whatsapp_message_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (conversa_id) REFERENCES crm_conversas(id) ON DELETE CASCADE",
+    "table_name": "crm_mensagens_agendadas",
+    "constraint_name": "crm_mensagens_agendadas_conversa_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (lead_id) REFERENCES leads(id) ON DELETE CASCADE",
+    "table_name": "crm_mensagens_agendadas",
+    "constraint_name": "crm_mensagens_agendadas_lead_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "crm_mensagens_agendadas",
+    "constraint_name": "crm_mensagens_agendadas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "crm_metas_andreza",
+    "constraint_name": "crm_metas_andreza_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "crm_metas_andreza",
+    "constraint_name": "crm_metas_andreza_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (ano, mes, unidade_id)",
+    "table_name": "crm_metas_andreza",
+    "constraint_name": "crm_metas_andreza_ano_mes_unidade_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "crm_motivos_nao_comparecimento",
+    "constraint_name": "crm_motivos_nao_comparecimento_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "crm_pipeline_etapas",
+    "constraint_name": "crm_pipeline_etapas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (slug)",
+    "table_name": "crm_pipeline_etapas",
+    "constraint_name": "crm_pipeline_etapas_slug_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "crm_templates_whatsapp",
+    "constraint_name": "crm_templates_whatsapp_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (slug)",
+    "table_name": "crm_templates_whatsapp",
+    "constraint_name": "crm_templates_whatsapp_slug_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK ((fator_demanda = ANY (ARRAY[1.0, 1.5, 2.0, 2.5, 3.0])))",
+    "table_name": "cursos",
+    "constraint_name": "cursos_fator_demanda_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "cursos",
+    "constraint_name": "cursos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (nome_normalizado)",
+    "table_name": "cursos",
+    "constraint_name": "uk_cursos_nome_normalizado",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "cursos_matriculados",
+    "constraint_name": "cursos_matriculados_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (competencia, unidade, curso)",
+    "table_name": "cursos_matriculados",
+    "constraint_name": "cursos_matriculados_competencia_unidade_curso_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "dados_comerciais",
+    "constraint_name": "dados_comerciais_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (competencia, unidade)",
+    "table_name": "dados_comerciais",
+    "constraint_name": "dados_comerciais_competencia_unidade_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((ano >= 2020) AND (ano <= 2030)))",
+    "table_name": "dados_mensais",
+    "constraint_name": "dados_mensais_ano_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((mes >= 1) AND (mes <= 12)))",
+    "table_name": "dados_mensais",
+    "constraint_name": "dados_mensais_mes_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "dados_mensais",
+    "constraint_name": "dados_mensais_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "dados_mensais",
+    "constraint_name": "dados_mensais_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (unidade_id, ano, mes)",
+    "table_name": "dados_mensais",
+    "constraint_name": "dados_mensais_unidade_id_ano_mes_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((mes >= 1) AND (mes <= 12)))",
+    "table_name": "dados_mensais_retificacoes",
+    "constraint_name": "dados_mensais_retificacoes_mes_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "dados_mensais_retificacoes",
+    "constraint_name": "dados_mensais_retificacoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "dashboard_config",
+    "constraint_name": "dashboard_config_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (chave)",
+    "table_name": "dashboard_config",
+    "constraint_name": "dashboard_config_chave_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "emusys_sync_log",
+    "constraint_name": "emusys_sync_log_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "emusys_sync_log",
+    "constraint_name": "emusys_sync_log_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((situacao_pagamento)::text = ANY ((ARRAY['em_dia'::character varying, 'inadimplente'::character varying])::text[])))",
+    "table_name": "evasoes_v2",
+    "constraint_name": "evasoes_v2_situacao_pagamento_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id)",
+    "table_name": "evasoes_v2",
+    "constraint_name": "evasoes_v2_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (created_by) REFERENCES usuarios(id)",
+    "table_name": "evasoes_v2",
+    "constraint_name": "evasoes_v2_created_by_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (curso_id) REFERENCES cursos(id)",
+    "table_name": "evasoes_v2",
+    "constraint_name": "evasoes_v2_curso_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (motivo_saida_id) REFERENCES motivos_saida(id)",
+    "table_name": "evasoes_v2",
+    "constraint_name": "evasoes_v2_motivo_saida_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id)",
+    "table_name": "evasoes_v2",
+    "constraint_name": "evasoes_v2_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (tipo_saida_id) REFERENCES tipos_saida(id)",
+    "table_name": "evasoes_v2",
+    "constraint_name": "evasoes_v2_tipo_saida_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "evasoes_v2",
+    "constraint_name": "evasoes_v2_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "evasoes_v2",
+    "constraint_name": "evasoes_v2_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (aluno_id, curso_id)",
+    "table_name": "evasoes_v2",
+    "constraint_name": "evasoes_v2_aluno_curso_unique",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "experimentais_mensal_unidade",
+    "constraint_name": "experimentais_mensal_unidade_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "experimentais_mensal_unidade",
+    "constraint_name": "experimentais_mensal_unidade_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (unidade_id, ano, mes)",
+    "table_name": "experimentais_mensal_unidade",
+    "constraint_name": "experimentais_mensal_unidade_unidade_id_ano_mes_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id)",
+    "table_name": "experimentais_professor_mensal",
+    "constraint_name": "experimentais_professor_mensal_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "experimentais_professor_mensal",
+    "constraint_name": "experimentais_professor_mensal_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "experimentais_professor_mensal",
+    "constraint_name": "experimentais_professor_mensal_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (professor_id, unidade_id, ano, mes)",
+    "table_name": "experimentais_professor_mensal",
+    "constraint_name": "experimentais_professor_mensa_professor_id_unidade_id_ano_m_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id)",
+    "table_name": "farmer_checklist_contatos",
+    "constraint_name": "farmer_checklist_contatos_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (checklist_id) REFERENCES farmer_checklists(id) ON DELETE CASCADE",
+    "table_name": "farmer_checklist_contatos",
+    "constraint_name": "farmer_checklist_contatos_checklist_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (farmer_id) REFERENCES colaboradores(id)",
+    "table_name": "farmer_checklist_contatos",
+    "constraint_name": "farmer_checklist_contatos_farmer_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "farmer_checklist_contatos",
+    "constraint_name": "farmer_checklist_contatos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (checklist_id, aluno_id)",
+    "table_name": "farmer_checklist_contatos",
+    "constraint_name": "unique_checklist_aluno",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (checklist_id) REFERENCES farmer_checklists(id) ON DELETE CASCADE",
+    "table_name": "farmer_checklist_items",
+    "constraint_name": "farmer_checklist_items_checklist_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (concluida_por) REFERENCES colaboradores(id)",
+    "table_name": "farmer_checklist_items",
+    "constraint_name": "farmer_checklist_items_concluida_por_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (parent_id) REFERENCES farmer_checklist_items(id)",
+    "table_name": "farmer_checklist_items",
+    "constraint_name": "farmer_checklist_items_parent_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (responsavel_id) REFERENCES usuarios(id) ON DELETE SET NULL",
+    "table_name": "farmer_checklist_items",
+    "constraint_name": "farmer_checklist_items_responsavel_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "farmer_checklist_items",
+    "constraint_name": "farmer_checklist_items_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "farmer_checklist_templates",
+    "constraint_name": "farmer_checklist_templates_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "farmer_checklist_templates",
+    "constraint_name": "farmer_checklist_templates_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (colaborador_id) REFERENCES colaboradores(id)",
+    "table_name": "farmer_checklists",
+    "constraint_name": "farmer_checklists_colaborador_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (responsavel_id) REFERENCES usuarios(id) ON DELETE SET NULL",
+    "table_name": "farmer_checklists",
+    "constraint_name": "farmer_checklists_responsavel_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (template_id) REFERENCES farmer_checklist_templates(id)",
+    "table_name": "farmer_checklists",
+    "constraint_name": "farmer_checklists_template_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "farmer_checklists",
+    "constraint_name": "farmer_checklists_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "farmer_checklists",
+    "constraint_name": "farmer_checklists_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['enviado'::character varying, 'entregue'::character varying, 'lido'::character varying, 'erro'::character varying])::text[])))",
+    "table_name": "farmer_recados",
+    "constraint_name": "farmer_recados_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id)",
+    "table_name": "farmer_recados",
+    "constraint_name": "farmer_recados_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (colaborador_id) REFERENCES colaboradores(id)",
+    "table_name": "farmer_recados",
+    "constraint_name": "farmer_recados_colaborador_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id)",
+    "table_name": "farmer_recados",
+    "constraint_name": "farmer_recados_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "farmer_recados",
+    "constraint_name": "farmer_recados_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "farmer_recados",
+    "constraint_name": "farmer_recados_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['rascunho'::character varying, 'agendada'::character varying, 'enviando'::character varying, 'concluida'::character varying, 'cancelada'::character varying])::text[])))",
+    "table_name": "farmer_recados_campanhas",
+    "constraint_name": "farmer_recados_campanhas_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((tipo)::text = ANY ((ARRAY['health_score'::character varying, 'video'::character varying, 'relatorio'::character varying, 'aviso'::character varying, 'outro'::character varying])::text[])))",
+    "table_name": "farmer_recados_campanhas",
+    "constraint_name": "farmer_recados_campanhas_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (colaborador_id) REFERENCES colaboradores(id)",
+    "table_name": "farmer_recados_campanhas",
+    "constraint_name": "farmer_recados_campanhas_colaborador_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (template_id) REFERENCES farmer_templates(id)",
+    "table_name": "farmer_recados_campanhas",
+    "constraint_name": "farmer_recados_campanhas_template_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "farmer_recados_campanhas",
+    "constraint_name": "farmer_recados_campanhas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "farmer_recados_campanhas",
+    "constraint_name": "farmer_recados_campanhas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['pendente'::character varying, 'enviado'::character varying, 'erro'::character varying, 'cancelado'::character varying])::text[])))",
+    "table_name": "farmer_recados_destinatarios",
+    "constraint_name": "farmer_recados_destinatarios_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (campanha_id) REFERENCES farmer_recados_campanhas(id) ON DELETE CASCADE",
+    "table_name": "farmer_recados_destinatarios",
+    "constraint_name": "farmer_recados_destinatarios_campanha_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id)",
+    "table_name": "farmer_recados_destinatarios",
+    "constraint_name": "farmer_recados_destinatarios_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "farmer_recados_destinatarios",
+    "constraint_name": "farmer_recados_destinatarios_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((dia_mes IS NULL) OR ((dia_mes >= 1) AND (dia_mes <= 31))))",
+    "table_name": "farmer_rotinas",
+    "constraint_name": "farmer_rotinas_dia_mes_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((frequencia)::text = ANY ((ARRAY['diario'::character varying, 'semanal'::character varying, 'mensal'::character varying])::text[])))",
+    "table_name": "farmer_rotinas",
+    "constraint_name": "farmer_rotinas_frequencia_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((prioridade)::text = ANY ((ARRAY['normal'::character varying, 'alta'::character varying])::text[])))",
+    "table_name": "farmer_rotinas",
+    "constraint_name": "farmer_rotinas_prioridade_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (colaborador_id) REFERENCES colaboradores(id) ON DELETE CASCADE",
+    "table_name": "farmer_rotinas",
+    "constraint_name": "farmer_rotinas_colaborador_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "farmer_rotinas",
+    "constraint_name": "farmer_rotinas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "farmer_rotinas",
+    "constraint_name": "farmer_rotinas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (colaborador_id) REFERENCES colaboradores(id)",
+    "table_name": "farmer_rotinas_execucao",
+    "constraint_name": "farmer_rotinas_execucao_colaborador_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (rotina_id) REFERENCES farmer_rotinas(id) ON DELETE CASCADE",
+    "table_name": "farmer_rotinas_execucao",
+    "constraint_name": "farmer_rotinas_execucao_rotina_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "farmer_rotinas_execucao",
+    "constraint_name": "farmer_rotinas_execucao_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (rotina_id, data_execucao)",
+    "table_name": "farmer_rotinas_execucao",
+    "constraint_name": "farmer_rotinas_execucao_rotina_id_data_execucao_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((contexto)::text = ANY ((ARRAY['farmer'::character varying, 'comercial'::character varying, 'pre_atendimento'::character varying])::text[])))",
+    "table_name": "farmer_tarefas",
+    "constraint_name": "farmer_tarefas_contexto_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((prioridade)::text = ANY ((ARRAY['alta'::character varying, 'media'::character varying, 'baixa'::character varying])::text[])))",
+    "table_name": "farmer_tarefas",
+    "constraint_name": "farmer_tarefas_prioridade_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id)",
+    "table_name": "farmer_tarefas",
+    "constraint_name": "farmer_tarefas_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (colaborador_id) REFERENCES colaboradores(id) ON DELETE CASCADE",
+    "table_name": "farmer_tarefas",
+    "constraint_name": "farmer_tarefas_colaborador_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "farmer_tarefas",
+    "constraint_name": "farmer_tarefas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "farmer_tarefas",
+    "constraint_name": "farmer_tarefas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "farmer_templates",
+    "constraint_name": "farmer_templates_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "farmer_templates",
+    "constraint_name": "farmer_templates_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK ((tipo = ANY (ARRAY['national'::text, 'municipal'::text, 'recesso'::text])))",
+    "table_name": "feriados",
+    "constraint_name": "feriados_tipo_chk",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "feriados",
+    "constraint_name": "feriados_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (data)",
+    "table_name": "feriados",
+    "constraint_name": "feriados_data_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK ((status = ANY (ARRAY['pendente'::text, 'enviando'::text, 'enviada'::text, 'erro'::text])))",
+    "table_name": "fila_relatorios_whatsapp",
+    "constraint_name": "fila_relatorios_whatsapp_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "fila_relatorios_whatsapp",
+    "constraint_name": "fila_relatorios_whatsapp_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "fila_relatorios_whatsapp",
+    "constraint_name": "fila_relatorios_whatsapp_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "formas_pagamento",
+    "constraint_name": "formas_pagamento_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (nome)",
+    "table_name": "formas_pagamento",
+    "constraint_name": "uk_formas_nome",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((mes >= 1) AND (mes <= 12)))",
+    "table_name": "historico_pagamentos",
+    "constraint_name": "historico_pagamentos_mes_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id) ON DELETE CASCADE",
+    "table_name": "historico_pagamentos",
+    "constraint_name": "historico_pagamentos_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "historico_pagamentos",
+    "constraint_name": "historico_pagamentos_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "historico_pagamentos",
+    "constraint_name": "historico_pagamentos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (aluno_id, ano, mes)",
+    "table_name": "historico_pagamentos",
+    "constraint_name": "historico_pagamentos_aluno_id_ano_mes_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "horarios",
+    "constraint_name": "horarios_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE SET NULL",
+    "table_name": "insights_salvos",
+    "constraint_name": "insights_salvos_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (user_id) REFERENCES auth.users(id) ON DELETE CASCADE",
+    "table_name": "insights_salvos",
+    "constraint_name": "insights_salvos_user_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "insights_salvos",
+    "constraint_name": "insights_salvos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (created_by) REFERENCES auth.users(id)",
+    "table_name": "inventario",
+    "constraint_name": "inventario_created_by_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (sala_id) REFERENCES salas(id)",
+    "table_name": "inventario",
+    "constraint_name": "inventario_sala_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "inventario",
+    "constraint_name": "inventario_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "inventario",
+    "constraint_name": "inventario_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (codigo_patrimonio)",
+    "table_name": "inventario",
+    "constraint_name": "inventario_codigo_patrimonio_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (created_by) REFERENCES auth.users(id)",
+    "table_name": "inventario_manutencoes",
+    "constraint_name": "inventario_manutencoes_created_by_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (item_id) REFERENCES inventario(id) ON DELETE CASCADE",
+    "table_name": "inventario_manutencoes",
+    "constraint_name": "inventario_manutencoes_item_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "inventario_manutencoes",
+    "constraint_name": "inventario_manutencoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (item_id) REFERENCES inventario(id) ON DELETE CASCADE",
+    "table_name": "inventario_movimentacoes",
+    "constraint_name": "inventario_movimentacoes_item_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (sala_destino_id) REFERENCES salas(id)",
+    "table_name": "inventario_movimentacoes",
+    "constraint_name": "inventario_movimentacoes_sala_destino_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (sala_origem_id) REFERENCES salas(id)",
+    "table_name": "inventario_movimentacoes",
+    "constraint_name": "inventario_movimentacoes_sala_origem_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (usuario_id) REFERENCES auth.users(id)",
+    "table_name": "inventario_movimentacoes",
+    "constraint_name": "inventario_movimentacoes_usuario_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "inventario_movimentacoes",
+    "constraint_name": "inventario_movimentacoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((prioridade)::text = ANY ((ARRAY['urgente'::character varying, 'importante'::character varying, 'futuramente'::character varying])::text[])))",
+    "table_name": "inventario_pendencias",
+    "constraint_name": "inventario_pendencias_prioridade_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['aberta'::character varying, 'em_andamento'::character varying, 'concluida'::character varying, 'cancelada'::character varying])::text[])))",
+    "table_name": "inventario_pendencias",
+    "constraint_name": "inventario_pendencias_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (item_vinculado_id) REFERENCES inventario(id)",
+    "table_name": "inventario_pendencias",
+    "constraint_name": "inventario_pendencias_item_vinculado_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (sala_id) REFERENCES salas(id)",
+    "table_name": "inventario_pendencias",
+    "constraint_name": "inventario_pendencias_sala_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "inventario_pendencias",
+    "constraint_name": "inventario_pendencias_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "inventario_pendencias",
+    "constraint_name": "inventario_pendencias_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id)",
+    "table_name": "lead_experimentais",
+    "constraint_name": "lead_experimentais_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (curso_interesse_id) REFERENCES cursos(id)",
+    "table_name": "lead_experimentais",
+    "constraint_name": "lead_experimentais_curso_interesse_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (etapa_pipeline_id) REFERENCES crm_pipeline_etapas(id)",
+    "table_name": "lead_experimentais",
+    "constraint_name": "lead_experimentais_etapa_pipeline_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (lead_id) REFERENCES leads(id) ON DELETE CASCADE",
+    "table_name": "lead_experimentais",
+    "constraint_name": "lead_experimentais_lead_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_experimental_id) REFERENCES professores(id)",
+    "table_name": "lead_experimentais",
+    "constraint_name": "lead_experimentais_professor_experimental_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "lead_experimentais",
+    "constraint_name": "lead_experimentais_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "lead_experimentais",
+    "constraint_name": "lead_experimentais_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (lead_id, data_experimental)",
+    "table_name": "lead_experimentais",
+    "constraint_name": "lead_experimentais_lead_data_unique",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((faixa_etaria)::text = ANY ((ARRAY['LAMK'::character varying, 'EMLA'::character varying])::text[])))",
+    "table_name": "leads",
+    "constraint_name": "leads_faixa_etaria_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY (ARRAY['novo'::text, 'em_contato'::text, 'agendado'::text, 'realizado'::text, 'convertido'::text, 'arquivado'::text, 'perdido'::text, 'experimental_agendada'::text, 'experimental_realizada'::text, 'experimental_faltou'::text, 'visita_escola'::text, 'matriculado'::text])))",
+    "table_name": "leads",
+    "constraint_name": "leads_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((temperatura)::text = ANY ((ARRAY['quente'::character varying, 'morno'::character varying, 'frio'::character varying])::text[])))",
+    "table_name": "leads",
+    "constraint_name": "leads_temperatura_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((tipo_agendamento)::text = ANY ((ARRAY['experimental'::character varying, 'visita'::character varying])::text[])))",
+    "table_name": "leads",
+    "constraint_name": "leads_tipo_agendamento_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id)",
+    "table_name": "leads",
+    "constraint_name": "leads_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (atendido_por_id) REFERENCES colaboradores(id)",
+    "table_name": "leads",
+    "constraint_name": "leads_atendido_por_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (canal_origem_id) REFERENCES canais_origem(id)",
+    "table_name": "leads",
+    "constraint_name": "leads_canal_origem_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (consultor_id) REFERENCES colaboradores(id)",
+    "table_name": "leads",
+    "constraint_name": "leads_consultor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (created_by) REFERENCES usuarios(id)",
+    "table_name": "leads",
+    "constraint_name": "leads_created_by_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (curso_interesse_id) REFERENCES cursos(id)",
+    "table_name": "leads",
+    "constraint_name": "leads_curso_interesse_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (etapa_pipeline_id) REFERENCES crm_pipeline_etapas(id)",
+    "table_name": "leads",
+    "constraint_name": "leads_etapa_pipeline_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (forma_pagamento_id) REFERENCES formas_pagamento(id)",
+    "table_name": "leads",
+    "constraint_name": "leads_forma_pagamento_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (forma_pagamento_passaporte_id) REFERENCES formas_pagamento(id)",
+    "table_name": "leads",
+    "constraint_name": "leads_forma_pagamento_passaporte_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (motivo_arquivamento_id) REFERENCES motivos_arquivamento(id)",
+    "table_name": "leads",
+    "constraint_name": "leads_motivo_arquivamento_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (motivo_nao_comparecimento_id) REFERENCES crm_motivos_nao_comparecimento(id)",
+    "table_name": "leads",
+    "constraint_name": "leads_motivo_nao_comparecimento_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (motivo_nao_matricula_id) REFERENCES motivos_nao_matricula(id)",
+    "table_name": "leads",
+    "constraint_name": "leads_motivo_nao_matricula_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_experimental_id) REFERENCES professores(id)",
+    "table_name": "leads",
+    "constraint_name": "leads_professor_experimental_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_fixo_id) REFERENCES professores(id)",
+    "table_name": "leads",
+    "constraint_name": "leads_professor_fixo_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "leads",
+    "constraint_name": "leads_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "leads",
+    "constraint_name": "leads_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (chatwoot_conversation_id)",
+    "table_name": "leads",
+    "constraint_name": "leads_chatwoot_conversation_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "leads_automacao_log",
+    "constraint_name": "leads_automacao_log_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((((tipo_titular)::text = 'farmer'::text) AND (colaborador_id IS NOT NULL) AND (professor_id IS NULL)) OR (((tipo_titular)::text = 'professor'::text) AND (professor_id IS NOT NULL) AND (colaborador_id IS NULL))))",
+    "table_name": "loja_carteira",
+    "constraint_name": "carteira_titular_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((tipo_titular)::text = ANY ((ARRAY['farmer'::character varying, 'professor'::character varying])::text[])))",
+    "table_name": "loja_carteira",
+    "constraint_name": "loja_carteira_tipo_titular_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (colaborador_id) REFERENCES colaboradores(id) ON DELETE CASCADE",
+    "table_name": "loja_carteira",
+    "constraint_name": "loja_carteira_colaborador_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id) ON DELETE CASCADE",
+    "table_name": "loja_carteira",
+    "constraint_name": "loja_carteira_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE SET NULL",
+    "table_name": "loja_carteira",
+    "constraint_name": "loja_carteira_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "loja_carteira",
+    "constraint_name": "loja_carteira_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((tipo)::text = ANY ((ARRAY['comissao_venda'::character varying, 'comissao_indicacao'::character varying, 'moeda_la'::character varying, 'saque'::character varying, 'compra_loja'::character varying, 'estorno_comissao'::character varying, 'ajuste'::character varying])::text[])))",
+    "table_name": "loja_carteira_movimentacoes",
+    "constraint_name": "loja_carteira_movimentacoes_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (carteira_id) REFERENCES loja_carteira(id) ON DELETE CASCADE",
+    "table_name": "loja_carteira_movimentacoes",
+    "constraint_name": "loja_carteira_movimentacoes_carteira_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "loja_carteira_movimentacoes",
+    "constraint_name": "loja_carteira_movimentacoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "loja_categorias",
+    "constraint_name": "loja_categorias_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "loja_configuracoes",
+    "constraint_name": "loja_configuracoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (chave)",
+    "table_name": "loja_configuracoes",
+    "constraint_name": "loja_configuracoes_chave_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (produto_id) REFERENCES loja_produtos(id) ON DELETE CASCADE",
+    "table_name": "loja_estoque",
+    "constraint_name": "loja_estoque_produto_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "loja_estoque",
+    "constraint_name": "loja_estoque_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (variacao_id) REFERENCES loja_variacoes(id) ON DELETE CASCADE",
+    "table_name": "loja_estoque",
+    "constraint_name": "loja_estoque_variacao_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "loja_estoque",
+    "constraint_name": "loja_estoque_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((tipo)::text = ANY (ARRAY[('entrada'::character varying)::text, ('venda'::character varying)::text, ('estorno'::character varying)::text, ('ajuste'::character varying)::text, ('saida_transferencia'::character varying)::text, ('entrada_transferencia'::character varying)::text])))",
+    "table_name": "loja_movimentacoes_estoque",
+    "constraint_name": "loja_movimentacoes_estoque_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (colaborador_id) REFERENCES colaboradores(id) ON DELETE SET NULL",
+    "table_name": "loja_movimentacoes_estoque",
+    "constraint_name": "loja_movimentacoes_estoque_colaborador_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (produto_id) REFERENCES loja_produtos(id) ON DELETE SET NULL",
+    "table_name": "loja_movimentacoes_estoque",
+    "constraint_name": "loja_movimentacoes_estoque_produto_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE SET NULL",
+    "table_name": "loja_movimentacoes_estoque",
+    "constraint_name": "loja_movimentacoes_estoque_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (variacao_id) REFERENCES loja_variacoes(id) ON DELETE SET NULL",
+    "table_name": "loja_movimentacoes_estoque",
+    "constraint_name": "loja_movimentacoes_estoque_variacao_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "loja_movimentacoes_estoque",
+    "constraint_name": "loja_movimentacoes_estoque_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id) ON DELETE CASCADE",
+    "table_name": "loja_optin_novidades",
+    "constraint_name": "loja_optin_novidades_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "loja_optin_novidades",
+    "constraint_name": "loja_optin_novidades_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "loja_optin_novidades",
+    "constraint_name": "loja_optin_novidades_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (aluno_id, unidade_id)",
+    "table_name": "loja_optin_novidades",
+    "constraint_name": "loja_optin_novidades_aluno_id_unidade_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (categoria_id) REFERENCES loja_categorias(id) ON DELETE SET NULL",
+    "table_name": "loja_produtos",
+    "constraint_name": "loja_produtos_categoria_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "loja_produtos",
+    "constraint_name": "loja_produtos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (sku)",
+    "table_name": "loja_produtos",
+    "constraint_name": "loja_produtos_sku_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK ((quantidade > 0))",
+    "table_name": "loja_reservas",
+    "constraint_name": "loja_reservas_quantidade_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['ativa'::character varying, 'finalizada'::character varying, 'expirada'::character varying, 'cancelada'::character varying])::text[])))",
+    "table_name": "loja_reservas",
+    "constraint_name": "loja_reservas_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id)",
+    "table_name": "loja_reservas",
+    "constraint_name": "loja_reservas_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (finalizada_venda_id) REFERENCES loja_vendas(id)",
+    "table_name": "loja_reservas",
+    "constraint_name": "loja_reservas_finalizada_venda_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (produto_id) REFERENCES loja_produtos(id)",
+    "table_name": "loja_reservas",
+    "constraint_name": "loja_reservas_produto_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "loja_reservas",
+    "constraint_name": "loja_reservas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (variacao_id) REFERENCES loja_variacoes(id)",
+    "table_name": "loja_reservas",
+    "constraint_name": "loja_reservas_variacao_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "loja_reservas",
+    "constraint_name": "loja_reservas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "loja_responsaveis_reposicao",
+    "constraint_name": "loja_responsaveis_reposicao_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "loja_responsaveis_reposicao",
+    "constraint_name": "loja_responsaveis_reposicao_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (produto_id) REFERENCES loja_produtos(id) ON DELETE CASCADE",
+    "table_name": "loja_variacoes",
+    "constraint_name": "loja_variacoes_produto_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "loja_variacoes",
+    "constraint_name": "loja_variacoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((desconto_tipo)::text = ANY ((ARRAY['valor'::character varying, 'percentual'::character varying])::text[])))",
+    "table_name": "loja_vendas",
+    "constraint_name": "loja_vendas_desconto_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((forma_pagamento)::text = ANY ((ARRAY['pix'::character varying, 'dinheiro'::character varying, 'debito'::character varying, 'credito'::character varying, 'folha'::character varying, 'saldo'::character varying])::text[])))",
+    "table_name": "loja_vendas",
+    "constraint_name": "loja_vendas_forma_pagamento_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['concluida'::character varying, 'estornada'::character varying])::text[])))",
+    "table_name": "loja_vendas",
+    "constraint_name": "loja_vendas_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((tipo_cliente)::text = ANY ((ARRAY['aluno'::character varying, 'colaborador'::character varying, 'avulso'::character varying])::text[])))",
+    "table_name": "loja_vendas",
+    "constraint_name": "loja_vendas_tipo_cliente_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id) ON DELETE SET NULL",
+    "table_name": "loja_vendas",
+    "constraint_name": "loja_vendas_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (colaborador_cliente_id) REFERENCES colaboradores(id) ON DELETE SET NULL",
+    "table_name": "loja_vendas",
+    "constraint_name": "loja_vendas_colaborador_cliente_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (estornada_por) REFERENCES colaboradores(id) ON DELETE SET NULL",
+    "table_name": "loja_vendas",
+    "constraint_name": "loja_vendas_estornada_por_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_indicador_id) REFERENCES professores(id) ON DELETE SET NULL",
+    "table_name": "loja_vendas",
+    "constraint_name": "loja_vendas_professor_indicador_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE SET NULL",
+    "table_name": "loja_vendas",
+    "constraint_name": "loja_vendas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (vendedor_id) REFERENCES colaboradores(id) ON DELETE SET NULL",
+    "table_name": "loja_vendas",
+    "constraint_name": "loja_vendas_vendedor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "loja_vendas",
+    "constraint_name": "loja_vendas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (produto_id) REFERENCES loja_produtos(id) ON DELETE SET NULL",
+    "table_name": "loja_vendas_itens",
+    "constraint_name": "loja_vendas_itens_produto_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (variacao_id) REFERENCES loja_variacoes(id) ON DELETE SET NULL",
+    "table_name": "loja_vendas_itens",
+    "constraint_name": "loja_vendas_itens_variacao_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (venda_id) REFERENCES loja_vendas(id) ON DELETE CASCADE",
+    "table_name": "loja_vendas_itens",
+    "constraint_name": "loja_vendas_itens_venda_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "loja_vendas_itens",
+    "constraint_name": "loja_vendas_itens_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (campanha_id) REFERENCES campanhas(id) ON DELETE SET NULL",
+    "table_name": "mensagens_campanha",
+    "constraint_name": "mensagens_campanha_campanha_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (conversa_id) REFERENCES conversas_campanha(id) ON DELETE CASCADE",
+    "table_name": "mensagens_campanha",
+    "constraint_name": "mensagens_campanha_conversa_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (enviado_por_agente) REFERENCES agentes(id) ON DELETE SET NULL",
+    "table_name": "mensagens_campanha",
+    "constraint_name": "mensagens_campanha_enviado_por_agente_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE SET NULL",
+    "table_name": "mensagens_campanha",
+    "constraint_name": "mensagens_campanha_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "mensagens_campanha",
+    "constraint_name": "mensagens_campanha_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((ano >= 2020) AND (ano <= 2035)))",
+    "table_name": "metas",
+    "constraint_name": "metas_ano_check1",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((mes >= 1) AND (mes <= 12)))",
+    "table_name": "metas",
+    "constraint_name": "metas_mes_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((tipo_periodo)::text = ANY ((ARRAY['mensal'::character varying, 'trimestral'::character varying, 'anual'::character varying])::text[])))",
+    "table_name": "metas",
+    "constraint_name": "metas_tipo_periodo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((trimestre >= 1) AND (trimestre <= 4)))",
+    "table_name": "metas",
+    "constraint_name": "metas_trimestre_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "metas",
+    "constraint_name": "metas_unidade_id_fkey1",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "metas",
+    "constraint_name": "metas_pkey1",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "metas_comerciais",
+    "constraint_name": "metas_comerciais_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (ano, unidade)",
+    "table_name": "metas_comerciais",
+    "constraint_name": "metas_comerciais_ano_unidade_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "metas_kpi",
+    "constraint_name": "metas_kpi_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "metas_kpi",
+    "constraint_name": "metas_kpi_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (ano, mes, unidade_id, tipo)",
+    "table_name": "metas_kpi",
+    "constraint_name": "metas_kpi_ano_mes_unidade_id_tipo_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((ano >= 2020) AND (ano <= 2030)))",
+    "table_name": "metas_legado",
+    "constraint_name": "metas_ano_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "metas_legado",
+    "constraint_name": "metas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "metas_legado",
+    "constraint_name": "metas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (unidade_id, ano)",
+    "table_name": "metas_legado",
+    "constraint_name": "metas_unidade_id_ano_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id)",
+    "table_name": "metas_professor_turma",
+    "constraint_name": "metas_professor_turma_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "metas_professor_turma",
+    "constraint_name": "metas_professor_turma_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "metas_professor_turma",
+    "constraint_name": "metas_professor_turma_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (professor_id, ano, mes)",
+    "table_name": "metas_professor_turma",
+    "constraint_name": "metas_professor_turma_professor_id_ano_mes_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "mila_config",
+    "constraint_name": "mila_config_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "mila_config",
+    "constraint_name": "mila_config_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (unidade_id)",
+    "table_name": "mila_config",
+    "constraint_name": "mila_config_unidade_unique",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "mila_message_buffer",
+    "constraint_name": "mila_message_buffer_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "motivos_arquivamento",
+    "constraint_name": "motivos_arquivamento_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "motivos_nao_matricula",
+    "constraint_name": "motivos_nao_matricula_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((categoria)::text = ANY ((ARRAY['financeiro'::character varying, 'tempo'::character varying, 'mudanca'::character varying, 'saude'::character varying, 'desistencia'::character varying, 'estudos'::character varying, 'inadimplencia'::character varying, 'outro'::character varying])::text[])))",
+    "table_name": "motivos_saida",
+    "constraint_name": "motivos_saida_categoria_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "motivos_saida",
+    "constraint_name": "motivos_saida_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (nome_normalizado)",
+    "table_name": "motivos_saida",
+    "constraint_name": "uk_motivos_nome_normalizado",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "motivos_trancamento",
+    "constraint_name": "motivos_trancamento_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((tipo)::text = ANY ((ARRAY['matricula'::character varying, 'renovacao'::character varying, 'evasao'::character varying, 'transferencia'::character varying, 'troca_curso'::character varying, 'troca_professor'::character varying])::text[])))",
+    "table_name": "movimentacoes",
+    "constraint_name": "movimentacoes_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id)",
+    "table_name": "movimentacoes",
+    "constraint_name": "movimentacoes_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (canal_origem_id) REFERENCES canais_origem(id)",
+    "table_name": "movimentacoes",
+    "constraint_name": "movimentacoes_canal_origem_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (curso_anterior_id) REFERENCES cursos(id)",
+    "table_name": "movimentacoes",
+    "constraint_name": "movimentacoes_curso_anterior_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (curso_id) REFERENCES cursos(id)",
+    "table_name": "movimentacoes",
+    "constraint_name": "movimentacoes_curso_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (motivo_saida_id) REFERENCES motivos_saida(id)",
+    "table_name": "movimentacoes",
+    "constraint_name": "movimentacoes_motivo_saida_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_anterior_id) REFERENCES professores(id)",
+    "table_name": "movimentacoes",
+    "constraint_name": "movimentacoes_professor_anterior_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id)",
+    "table_name": "movimentacoes",
+    "constraint_name": "movimentacoes_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (tipo_saida_id) REFERENCES tipos_saida(id)",
+    "table_name": "movimentacoes",
+    "constraint_name": "movimentacoes_tipo_saida_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_destino_id) REFERENCES unidades(id)",
+    "table_name": "movimentacoes",
+    "constraint_name": "movimentacoes_unidade_destino_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "movimentacoes",
+    "constraint_name": "movimentacoes_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_origem_id) REFERENCES unidades(id)",
+    "table_name": "movimentacoes",
+    "constraint_name": "movimentacoes_unidade_origem_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "movimentacoes",
+    "constraint_name": "movimentacoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((tipo)::text = ANY ((ARRAY['renovacao'::character varying, 'nao_renovacao'::character varying, 'aviso_previo'::character varying, 'evasao'::character varying, 'trancamento'::character varying])::text[])))",
+    "table_name": "movimentacoes_admin",
+    "constraint_name": "movimentacoes_admin_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((tipo_evasao)::text = ANY ((ARRAY['interrompido'::character varying, 'nao_renovou'::character varying, 'interrompido_2_curso'::character varying, 'interrompido_bolsista'::character varying, 'interrompido_banda'::character varying, 'transferencia'::character varying])::text[])))",
+    "table_name": "movimentacoes_admin",
+    "constraint_name": "movimentacoes_admin_tipo_evasao_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (motivo_saida_id) REFERENCES motivos_saida(id)",
+    "table_name": "movimentacoes_admin",
+    "constraint_name": "movimentacoes_admin_motivo_saida_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (motivo_trancamento_id) REFERENCES motivos_trancamento(id)",
+    "table_name": "movimentacoes_admin",
+    "constraint_name": "movimentacoes_admin_motivo_trancamento_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "movimentacoes_admin",
+    "constraint_name": "movimentacoes_admin_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "movimentacoes_admin",
+    "constraint_name": "movimentacoes_admin_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "notificacao_config",
+    "constraint_name": "notificacao_config_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (tipo)",
+    "table_name": "notificacao_config",
+    "constraint_name": "notificacao_config_tipo_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((canal)::text = ANY ((ARRAY['whatsapp'::character varying, 'sistema'::character varying, 'ambos'::character varying])::text[])))",
+    "table_name": "notificacao_destinatarios",
+    "constraint_name": "notificacao_destinatarios_canal_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((pessoa_tipo)::text = ANY ((ARRAY['usuario'::character varying, 'professor'::character varying])::text[])))",
+    "table_name": "notificacao_destinatarios",
+    "constraint_name": "notificacao_destinatarios_pessoa_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (config_id) REFERENCES notificacao_config(id) ON DELETE CASCADE",
+    "table_name": "notificacao_destinatarios",
+    "constraint_name": "notificacao_destinatarios_config_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "notificacao_destinatarios",
+    "constraint_name": "notificacao_destinatarios_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (config_id, pessoa_tipo, pessoa_id)",
+    "table_name": "notificacao_destinatarios",
+    "constraint_name": "notificacao_destinatarios_config_id_pessoa_tipo_pessoa_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['pendente'::character varying, 'enviado'::character varying, 'erro'::character varying, 'lido'::character varying])::text[])))",
+    "table_name": "notificacao_log",
+    "constraint_name": "notificacao_log_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (config_id) REFERENCES notificacao_config(id) ON DELETE SET NULL",
+    "table_name": "notificacao_log",
+    "constraint_name": "notificacao_log_config_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (projeto_id) REFERENCES projetos(id) ON DELETE SET NULL",
+    "table_name": "notificacao_log",
+    "constraint_name": "notificacao_log_projeto_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (tarefa_id) REFERENCES projeto_tarefas(id) ON DELETE SET NULL",
+    "table_name": "notificacao_log",
+    "constraint_name": "notificacao_log_tarefa_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "notificacao_log",
+    "constraint_name": "notificacao_log_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE SET NULL",
+    "table_name": "numeros_meta",
+    "constraint_name": "numeros_meta_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "numeros_meta",
+    "constraint_name": "numeros_meta_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "origem_leads",
+    "constraint_name": "origem_leads_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (competencia, unidade, canal, tipo)",
+    "table_name": "origem_leads",
+    "constraint_name": "origem_leads_competencia_unidade_canal_tipo_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (perfil_id) REFERENCES perfis(id) ON DELETE CASCADE",
+    "table_name": "perfil_permissoes",
+    "constraint_name": "perfil_permissoes_perfil_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (permissao_id) REFERENCES permissoes(id) ON DELETE CASCADE",
+    "table_name": "perfil_permissoes",
+    "constraint_name": "perfil_permissoes_permissao_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "perfil_permissoes",
+    "constraint_name": "perfil_permissoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (perfil_id, permissao_id)",
+    "table_name": "perfil_permissoes",
+    "constraint_name": "perfil_permissoes_perfil_id_permissao_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "perfis",
+    "constraint_name": "perfis_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (nome)",
+    "table_name": "perfis",
+    "constraint_name": "perfis_nome_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "permissoes",
+    "constraint_name": "permissoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (codigo)",
+    "table_name": "permissoes",
+    "constraint_name": "permissoes_codigo_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((resposta_tipo)::text = ANY ((ARRAY['texto'::character varying, 'audio'::character varying])::text[])))",
+    "table_name": "pesquisa_evasao",
+    "constraint_name": "pesquisa_evasao_resposta_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((sentimento)::text = ANY ((ARRAY['positivo'::character varying, 'neutro'::character varying, 'negativo'::character varying])::text[])))",
+    "table_name": "pesquisa_evasao",
+    "constraint_name": "pesquisa_evasao_sentimento_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['pendente'::character varying, 'enviado'::character varying, 'respondido'::character varying, 'sem_whatsapp'::character varying, 'falha_envio'::character varying, 'ignorado'::character varying])::text[])))",
+    "table_name": "pesquisa_evasao",
+    "constraint_name": "pesquisa_evasao_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id)",
+    "table_name": "pesquisa_evasao",
+    "constraint_name": "pesquisa_evasao_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (evasao_id) REFERENCES evasoes_v2(id)",
+    "table_name": "pesquisa_evasao",
+    "constraint_name": "pesquisa_evasao_evasao_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "pesquisa_evasao",
+    "constraint_name": "pesquisa_evasao_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "pesquisa_evasao",
+    "constraint_name": "pesquisa_evasao_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (evasao_id)",
+    "table_name": "pesquisa_evasao",
+    "constraint_name": "pesquisa_evasao_evasao_id_unique",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (criado_por) REFERENCES usuarios(id)",
+    "table_name": "planos_acao",
+    "constraint_name": "planos_acao_criado_por_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "planos_acao",
+    "constraint_name": "planos_acao_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "planos_acao",
+    "constraint_name": "planos_acao_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id) ON DELETE CASCADE",
+    "table_name": "professor_360_avaliacoes",
+    "constraint_name": "professor_360_avaliacoes_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "professor_360_avaliacoes",
+    "constraint_name": "professor_360_avaliacoes_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "professor_360_avaliacoes",
+    "constraint_name": "professor_360_avaliacoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (professor_id, unidade_id, competencia)",
+    "table_name": "professor_360_avaliacoes",
+    "constraint_name": "professor_360_avaliacoes_professor_id_unidade_id_competenci_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "professor_360_config",
+    "constraint_name": "professor_360_config_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (chave)",
+    "table_name": "professor_360_config",
+    "constraint_name": "professor_360_config_chave_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "professor_360_criterios",
+    "constraint_name": "professor_360_criterios_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (codigo)",
+    "table_name": "professor_360_criterios",
+    "constraint_name": "professor_360_criterios_codigo_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (criterio_id) REFERENCES professor_360_criterios(id)",
+    "table_name": "professor_360_ocorrencias",
+    "constraint_name": "professor_360_ocorrencias_criterio_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id) ON DELETE CASCADE",
+    "table_name": "professor_360_ocorrencias",
+    "constraint_name": "professor_360_ocorrencias_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "professor_360_ocorrencias",
+    "constraint_name": "professor_360_ocorrencias_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "professor_360_ocorrencias",
+    "constraint_name": "professor_360_ocorrencias_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((acao)::text = ANY ((ARRAY['criado'::character varying, 'editado'::character varying, 'revertido'::character varying, 'restaurado'::character varying])::text[])))",
+    "table_name": "professor_360_ocorrencias_log",
+    "constraint_name": "professor_360_ocorrencias_log_acao_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "professor_360_ocorrencias_log",
+    "constraint_name": "professor_360_ocorrencias_log_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (created_by) REFERENCES auth.users(id)",
+    "table_name": "professor_acoes",
+    "constraint_name": "professor_acoes_created_by_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (meta_id) REFERENCES professor_metas(id) ON DELETE SET NULL",
+    "table_name": "professor_acoes",
+    "constraint_name": "professor_acoes_meta_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id) ON DELETE CASCADE",
+    "table_name": "professor_acoes",
+    "constraint_name": "professor_acoes_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (treinamento_id) REFERENCES catalogo_treinamentos(id) ON DELETE SET NULL",
+    "table_name": "professor_acoes",
+    "constraint_name": "professor_acoes_treinamento_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "professor_acoes",
+    "constraint_name": "professor_acoes_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "professor_acoes",
+    "constraint_name": "professor_acoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (acao_id) REFERENCES professor_acoes(id) ON DELETE CASCADE",
+    "table_name": "professor_acoes_participantes",
+    "constraint_name": "professor_acoes_participantes_acao_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id) ON DELETE CASCADE",
+    "table_name": "professor_acoes_participantes",
+    "constraint_name": "professor_acoes_participantes_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "professor_acoes_participantes",
+    "constraint_name": "professor_acoes_participantes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (acao_id, professor_id)",
+    "table_name": "professor_acoes_participantes",
+    "constraint_name": "professor_acoes_participantes_acao_id_professor_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (created_by) REFERENCES auth.users(id)",
+    "table_name": "professor_checkpoints",
+    "constraint_name": "professor_checkpoints_created_by_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id) ON DELETE CASCADE",
+    "table_name": "professor_checkpoints",
+    "constraint_name": "professor_checkpoints_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "professor_checkpoints",
+    "constraint_name": "professor_checkpoints_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "professor_checkpoints",
+    "constraint_name": "professor_checkpoints_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (professor_id, unidade_id, competencia)",
+    "table_name": "professor_checkpoints",
+    "constraint_name": "professor_checkpoints_professor_id_unidade_id_competencia_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (created_by) REFERENCES auth.users(id)",
+    "table_name": "professor_metas",
+    "constraint_name": "professor_metas_created_by_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id) ON DELETE CASCADE",
+    "table_name": "professor_metas",
+    "constraint_name": "professor_metas_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "professor_metas",
+    "constraint_name": "professor_metas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "professor_metas",
+    "constraint_name": "professor_metas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((tipo)::text = ANY ((ARRAY['experimental'::character varying, 'matricula'::character varying])::text[])))",
+    "table_name": "professor_videos",
+    "constraint_name": "professor_videos_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (curso_id) REFERENCES cursos(id) ON DELETE CASCADE",
+    "table_name": "professor_videos",
+    "constraint_name": "professor_videos_curso_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id) ON DELETE CASCADE",
+    "table_name": "professor_videos",
+    "constraint_name": "professor_videos_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "professor_videos",
+    "constraint_name": "professor_videos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (professor_id, curso_id, tipo)",
+    "table_name": "professor_videos",
+    "constraint_name": "professor_videos_professor_id_curso_id_tipo_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "professores",
+    "constraint_name": "professores_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (nome_normalizado)",
+    "table_name": "professores",
+    "constraint_name": "uk_professores_nome_normalizado",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (curso_id) REFERENCES cursos(id) ON DELETE CASCADE",
+    "table_name": "professores_cursos",
+    "constraint_name": "professores_cursos_curso_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id) ON DELETE CASCADE",
+    "table_name": "professores_cursos",
+    "constraint_name": "professores_cursos_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "professores_cursos",
+    "constraint_name": "professores_cursos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (professor_id, curso_id)",
+    "table_name": "professores_cursos",
+    "constraint_name": "professores_cursos_professor_id_curso_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "professores_experimentais",
+    "constraint_name": "professores_experimentais_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (competencia, unidade, professor)",
+    "table_name": "professores_experimentais",
+    "constraint_name": "professores_experimentais_competencia_unidade_professor_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "professores_performance",
+    "constraint_name": "professores_performance_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (professor, unidade, ano)",
+    "table_name": "professores_performance",
+    "constraint_name": "professores_performance_professor_unidade_ano_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id) ON DELETE SET NULL",
+    "table_name": "professores_sync_log",
+    "constraint_name": "professores_sync_log_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "professores_sync_log",
+    "constraint_name": "professores_sync_log_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "professores_sync_log",
+    "constraint_name": "professores_sync_log_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id) ON DELETE CASCADE",
+    "table_name": "professores_unidades",
+    "constraint_name": "professores_unidades_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "professores_unidades",
+    "constraint_name": "professores_unidades_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "professores_unidades",
+    "constraint_name": "professores_unidades_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (professor_id, unidade_id)",
+    "table_name": "professores_unidades",
+    "constraint_name": "professores_unidades_professor_id_unidade_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "programa_fideliza_config",
+    "constraint_name": "programa_fideliza_config_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (ano)",
+    "table_name": "programa_fideliza_config",
+    "constraint_name": "programa_fideliza_config_ano_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((tipo)::text = ANY ((ARRAY['standard'::character varying, 'premium'::character varying])::text[])))",
+    "table_name": "programa_fideliza_experiencias",
+    "constraint_name": "programa_fideliza_experiencias_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "programa_fideliza_experiencias",
+    "constraint_name": "programa_fideliza_experiencias_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((trimestre >= 1) AND (trimestre <= 4)))",
+    "table_name": "programa_fideliza_historico",
+    "constraint_name": "programa_fideliza_historico_trimestre_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "programa_fideliza_historico",
+    "constraint_name": "programa_fideliza_historico_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "programa_fideliza_historico",
+    "constraint_name": "programa_fideliza_historico_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (ano, trimestre, unidade_id)",
+    "table_name": "programa_fideliza_historico",
+    "constraint_name": "programa_fideliza_historico_ano_trimestre_unidade_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((trimestre >= 1) AND (trimestre <= 4)))",
+    "table_name": "programa_fideliza_penalidades",
+    "constraint_name": "programa_fideliza_penalidades_trimestre_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "programa_fideliza_penalidades",
+    "constraint_name": "programa_fideliza_penalidades_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "programa_fideliza_penalidades",
+    "constraint_name": "programa_fideliza_penalidades_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "programa_matriculador_config",
+    "constraint_name": "programa_matriculador_config_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (ano)",
+    "table_name": "programa_matriculador_config",
+    "constraint_name": "programa_matriculador_config_ano_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((mes >= 1) AND (mes <= 12)))",
+    "table_name": "programa_matriculador_historico",
+    "constraint_name": "programa_matriculador_historico_mes_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "programa_matriculador_historico",
+    "constraint_name": "programa_matriculador_historico_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "programa_matriculador_historico",
+    "constraint_name": "programa_matriculador_historico_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (ano, mes, unidade_id)",
+    "table_name": "programa_matriculador_historico",
+    "constraint_name": "programa_matriculador_historico_ano_mes_unidade_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((tipo)::text = ANY ((ARRAY['nao_preencheu_emusys'::character varying, 'nao_preencheu_lareport'::character varying, 'lead_abandonado'::character varying, 'tarefas_atrasadas'::character varying, 'reincidencia'::character varying, 'outro'::character varying])::text[])))",
+    "table_name": "programa_matriculador_penalidades",
+    "constraint_name": "programa_matriculador_penalidades_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "programa_matriculador_penalidades",
+    "constraint_name": "programa_matriculador_penalidades_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "programa_matriculador_penalidades",
+    "constraint_name": "programa_matriculador_penalidades_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((projeto_id IS NOT NULL) OR (tarefa_id IS NOT NULL)))",
+    "table_name": "projeto_anexos",
+    "constraint_name": "anexo_vinculo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((uploaded_by_tipo)::text = ANY ((ARRAY['usuario'::character varying, 'professor'::character varying])::text[])))",
+    "table_name": "projeto_anexos",
+    "constraint_name": "projeto_anexos_uploaded_by_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (projeto_id) REFERENCES projetos(id) ON DELETE CASCADE",
+    "table_name": "projeto_anexos",
+    "constraint_name": "projeto_anexos_projeto_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (tarefa_id) REFERENCES projeto_tarefas(id) ON DELETE CASCADE",
+    "table_name": "projeto_anexos",
+    "constraint_name": "projeto_anexos_tarefa_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "projeto_anexos",
+    "constraint_name": "projeto_anexos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((projeto_id IS NOT NULL) OR (tarefa_id IS NOT NULL)))",
+    "table_name": "projeto_comentarios",
+    "constraint_name": "comentario_vinculo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((autor_tipo)::text = ANY ((ARRAY['usuario'::character varying, 'professor'::character varying])::text[])))",
+    "table_name": "projeto_comentarios",
+    "constraint_name": "projeto_comentarios_autor_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (projeto_id) REFERENCES projetos(id) ON DELETE CASCADE",
+    "table_name": "projeto_comentarios",
+    "constraint_name": "projeto_comentarios_projeto_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (tarefa_id) REFERENCES projeto_tarefas(id) ON DELETE CASCADE",
+    "table_name": "projeto_comentarios",
+    "constraint_name": "projeto_comentarios_tarefa_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "projeto_comentarios",
+    "constraint_name": "projeto_comentarios_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "projeto_config_permissoes",
+    "constraint_name": "projeto_config_permissoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (chave)",
+    "table_name": "projeto_config_permissoes",
+    "constraint_name": "projeto_config_permissoes_chave_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((pessoa_tipo)::text = ANY ((ARRAY['usuario'::character varying, 'professor'::character varying])::text[])))",
+    "table_name": "projeto_equipe",
+    "constraint_name": "projeto_equipe_pessoa_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (projeto_id) REFERENCES projetos(id) ON DELETE CASCADE",
+    "table_name": "projeto_equipe",
+    "constraint_name": "projeto_equipe_projeto_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "projeto_equipe",
+    "constraint_name": "projeto_equipe_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (projeto_id, pessoa_tipo, pessoa_id)",
+    "table_name": "projeto_equipe",
+    "constraint_name": "projeto_equipe_unique",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE",
+    "table_name": "projeto_equipe_membros",
+    "constraint_name": "projeto_equipe_membros_usuario_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "projeto_equipe_membros",
+    "constraint_name": "projeto_equipe_membros_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((data_fim IS NULL) OR (data_inicio IS NULL) OR (data_fim >= data_inicio)))",
+    "table_name": "projeto_fases",
+    "constraint_name": "projeto_fases_datas_validas",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['pendente'::character varying, 'em_andamento'::character varying, 'concluida'::character varying, 'cancelada'::character varying])::text[])))",
+    "table_name": "projeto_fases",
+    "constraint_name": "projeto_fases_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (projeto_id) REFERENCES projetos(id) ON DELETE CASCADE",
+    "table_name": "projeto_fases",
+    "constraint_name": "projeto_fases_projeto_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "projeto_fases",
+    "constraint_name": "projeto_fases_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((autor_tipo)::text = ANY ((ARRAY['usuario'::character varying, 'professor'::character varying, 'sistema'::character varying])::text[])))",
+    "table_name": "projeto_log_alteracoes",
+    "constraint_name": "projeto_log_alteracoes_autor_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (projeto_id) REFERENCES projetos(id) ON DELETE SET NULL",
+    "table_name": "projeto_log_alteracoes",
+    "constraint_name": "projeto_log_alteracoes_projeto_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (tarefa_id) REFERENCES projeto_tarefas(id) ON DELETE SET NULL",
+    "table_name": "projeto_log_alteracoes",
+    "constraint_name": "projeto_log_alteracoes_tarefa_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "projeto_log_alteracoes",
+    "constraint_name": "projeto_log_alteracoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((prioridade)::text = ANY ((ARRAY['normal'::character varying, 'alta'::character varying, 'urgente'::character varying])::text[])))",
+    "table_name": "projeto_tarefas",
+    "constraint_name": "projeto_tarefas_prioridade_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((responsavel_tipo)::text = ANY ((ARRAY['usuario'::character varying, 'professor'::character varying])::text[])))",
+    "table_name": "projeto_tarefas",
+    "constraint_name": "projeto_tarefas_responsavel_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['pendente'::character varying, 'em_andamento'::character varying, 'concluida'::character varying, 'cancelada'::character varying])::text[])))",
+    "table_name": "projeto_tarefas",
+    "constraint_name": "projeto_tarefas_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (created_by) REFERENCES usuarios(id) ON DELETE SET NULL",
+    "table_name": "projeto_tarefas",
+    "constraint_name": "projeto_tarefas_created_by_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (dependencia_id) REFERENCES projeto_tarefas(id) ON DELETE SET NULL",
+    "table_name": "projeto_tarefas",
+    "constraint_name": "projeto_tarefas_dependencia_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (fase_id) REFERENCES projeto_fases(id) ON DELETE SET NULL",
+    "table_name": "projeto_tarefas",
+    "constraint_name": "projeto_tarefas_fase_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (projeto_id) REFERENCES projetos(id) ON DELETE CASCADE",
+    "table_name": "projeto_tarefas",
+    "constraint_name": "projeto_tarefas_projeto_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (tarefa_pai_id) REFERENCES projeto_tarefas(id) ON DELETE CASCADE",
+    "table_name": "projeto_tarefas",
+    "constraint_name": "projeto_tarefas_tarefa_pai_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "projeto_tarefas",
+    "constraint_name": "projeto_tarefas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (tipo_id) REFERENCES projeto_tipos(id) ON DELETE CASCADE",
+    "table_name": "projeto_tipo_fases_template",
+    "constraint_name": "projeto_tipo_fases_template_tipo_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "projeto_tipo_fases_template",
+    "constraint_name": "projeto_tipo_fases_template_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (fase_template_id) REFERENCES projeto_tipo_fases_template(id) ON DELETE CASCADE",
+    "table_name": "projeto_tipo_tarefas_template",
+    "constraint_name": "projeto_tipo_tarefas_template_fase_template_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "projeto_tipo_tarefas_template",
+    "constraint_name": "projeto_tipo_tarefas_template_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "projeto_tipos",
+    "constraint_name": "projeto_tipos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK ((data_fim >= data_inicio))",
+    "table_name": "projetos",
+    "constraint_name": "projetos_datas_validas",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((prioridade)::text = ANY ((ARRAY['normal'::character varying, 'alta'::character varying, 'urgente'::character varying])::text[])))",
+    "table_name": "projetos",
+    "constraint_name": "projetos_prioridade_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((responsavel_tipo)::text = ANY ((ARRAY['usuario'::character varying, 'professor'::character varying])::text[])))",
+    "table_name": "projetos",
+    "constraint_name": "projetos_responsavel_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['planejamento'::character varying, 'em_andamento'::character varying, 'revisao'::character varying, 'concluido'::character varying, 'pausado'::character varying, 'cancelado'::character varying])::text[])))",
+    "table_name": "projetos",
+    "constraint_name": "projetos_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (created_by) REFERENCES usuarios(id) ON DELETE SET NULL",
+    "table_name": "projetos",
+    "constraint_name": "projetos_created_by_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (tipo_id) REFERENCES projeto_tipos(id) ON DELETE RESTRICT",
+    "table_name": "projetos",
+    "constraint_name": "projetos_tipo_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE SET NULL",
+    "table_name": "projetos",
+    "constraint_name": "projetos_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "projetos",
+    "constraint_name": "projetos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (created_by) REFERENCES usuarios(id)",
+    "table_name": "relatorios_diarios",
+    "constraint_name": "relatorios_diarios_created_by_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "relatorios_diarios",
+    "constraint_name": "relatorios_diarios_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "relatorios_diarios",
+    "constraint_name": "relatorios_diarios_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((status)::text = ANY ((ARRAY['renovado'::character varying, 'nao_renovou'::character varying, 'pendente'::character varying, 'negociando'::character varying])::text[])))",
+    "table_name": "renovacoes",
+    "constraint_name": "renovacoes_status_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id)",
+    "table_name": "renovacoes",
+    "constraint_name": "renovacoes_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (created_by) REFERENCES usuarios(id)",
+    "table_name": "renovacoes",
+    "constraint_name": "renovacoes_created_by_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (motivo_nao_renovacao_id) REFERENCES motivos_saida(id)",
+    "table_name": "renovacoes",
+    "constraint_name": "renovacoes_motivo_nao_renovacao_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id)",
+    "table_name": "renovacoes",
+    "constraint_name": "renovacoes_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "renovacoes",
+    "constraint_name": "renovacoes_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "renovacoes",
+    "constraint_name": "renovacoes_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "respostas_rapidas_campanha",
+    "constraint_name": "respostas_rapidas_campanha_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "respostas_rapidas_campanha",
+    "constraint_name": "respostas_rapidas_campanha_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "salas",
+    "constraint_name": "salas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "salas",
+    "constraint_name": "salas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "simulacoes_metas",
+    "constraint_name": "simulacoes_metas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (unidade_id, ano, nome)",
+    "table_name": "simulacoes_metas",
+    "constraint_name": "simulacoes_metas_unidade_id_ano_nome_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "simulacoes_turma",
+    "constraint_name": "simulacoes_turma_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "simulacoes_turma",
+    "constraint_name": "simulacoes_turma_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "templates_cenario",
+    "constraint_name": "templates_cenario_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (template_id) REFERENCES templates_cenario(id) ON DELETE CASCADE",
+    "table_name": "templates_cenario_unidade",
+    "constraint_name": "templates_cenario_unidade_template_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "templates_cenario_unidade",
+    "constraint_name": "templates_cenario_unidade_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (template_id, unidade_id)",
+    "table_name": "templates_cenario_unidade",
+    "constraint_name": "templates_cenario_unidade_template_id_unidade_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (numero_meta_id) REFERENCES numeros_meta(id) ON DELETE CASCADE",
+    "table_name": "templates_meta",
+    "constraint_name": "templates_meta_numero_meta_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "templates_meta",
+    "constraint_name": "templates_meta_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (meta_template_id, numero_meta_id)",
+    "table_name": "templates_meta",
+    "constraint_name": "templates_meta_meta_template_id_numero_meta_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "tipos_matricula",
+    "constraint_name": "tipos_matricula_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (codigo)",
+    "table_name": "tipos_matricula",
+    "constraint_name": "uk_tipos_matricula_codigo",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "tipos_saida",
+    "constraint_name": "tipos_saida_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (codigo)",
+    "table_name": "tipos_saida",
+    "constraint_name": "uk_tipos_saida_codigo",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (conversa_id) REFERENCES crm_conversas(id) ON DELETE SET NULL",
+    "table_name": "transferencias_mila",
+    "constraint_name": "transferencias_mila_conversa_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (lead_id) REFERENCES leads(id) ON DELETE SET NULL",
+    "table_name": "transferencias_mila",
+    "constraint_name": "transferencias_mila_lead_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "transferencias_mila",
+    "constraint_name": "transferencias_mila_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (curso_id) REFERENCES cursos(id)",
+    "table_name": "turmas",
+    "constraint_name": "turmas_curso_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id)",
+    "table_name": "turmas",
+    "constraint_name": "turmas_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (sala_id) REFERENCES salas(id)",
+    "table_name": "turmas",
+    "constraint_name": "turmas_sala_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "turmas",
+    "constraint_name": "turmas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "turmas",
+    "constraint_name": "turmas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (unidade_id, professor_id, dia_semana, horario_inicio)",
+    "table_name": "turmas",
+    "constraint_name": "turmas_unidade_id_professor_id_dia_semana_horario_inicio_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id) ON DELETE CASCADE",
+    "table_name": "turmas_alunos",
+    "constraint_name": "turmas_alunos_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (turma_id) REFERENCES turmas_explicitas(id) ON DELETE CASCADE",
+    "table_name": "turmas_alunos",
+    "constraint_name": "turmas_alunos_turma_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "turmas_alunos",
+    "constraint_name": "turmas_alunos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (turma_id, aluno_id)",
+    "table_name": "turmas_alunos",
+    "constraint_name": "turmas_alunos_turma_id_aluno_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK (((tipo)::text = ANY ((ARRAY['turma'::character varying, 'banda'::character varying])::text[])))",
+    "table_name": "turmas_explicitas",
+    "constraint_name": "turmas_explicitas_tipo_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (curso_id) REFERENCES cursos(id) ON DELETE SET NULL",
+    "table_name": "turmas_explicitas",
+    "constraint_name": "turmas_explicitas_curso_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (professor_id) REFERENCES professores(id) ON DELETE CASCADE",
+    "table_name": "turmas_explicitas",
+    "constraint_name": "turmas_explicitas_professor_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (sala_id) REFERENCES salas(id) ON DELETE SET NULL",
+    "table_name": "turmas_explicitas",
+    "constraint_name": "turmas_explicitas_sala_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "turmas_explicitas",
+    "constraint_name": "turmas_explicitas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "turmas_explicitas",
+    "constraint_name": "turmas_explicitas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((acao)::text = ANY ((ARRAY['adicionar'::character varying, 'remover'::character varying, 'mover'::character varying])::text[])))",
+    "table_name": "turmas_historico",
+    "constraint_name": "turmas_historico_acao_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (aluno_id) REFERENCES alunos(id) ON DELETE CASCADE",
+    "table_name": "turmas_historico",
+    "constraint_name": "turmas_historico_aluno_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (turma_destino_id) REFERENCES turmas_explicitas(id) ON DELETE SET NULL",
+    "table_name": "turmas_historico",
+    "constraint_name": "turmas_historico_turma_destino_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (turma_id) REFERENCES turmas_explicitas(id) ON DELETE CASCADE",
+    "table_name": "turmas_historico",
+    "constraint_name": "turmas_historico_turma_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (turma_origem_id) REFERENCES turmas_explicitas(id) ON DELETE SET NULL",
+    "table_name": "turmas_historico",
+    "constraint_name": "turmas_historico_turma_origem_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (usuario_id) REFERENCES auth.users(id) ON DELETE SET NULL",
+    "table_name": "turmas_historico",
+    "constraint_name": "turmas_historico_usuario_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "turmas_historico",
+    "constraint_name": "turmas_historico_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "unidades",
+    "constraint_name": "unidades_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (codigo)",
+    "table_name": "unidades",
+    "constraint_name": "unidades_codigo_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "UNIQUE (nome)",
+    "table_name": "unidades",
+    "constraint_name": "unidades_nome_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (curso_id) REFERENCES cursos(id) ON DELETE CASCADE",
+    "table_name": "unidades_cursos",
+    "constraint_name": "unidades_cursos_curso_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "unidades_cursos",
+    "constraint_name": "unidades_cursos_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "unidades_cursos",
+    "constraint_name": "unidades_cursos_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (unidade_id, curso_id)",
+    "table_name": "unidades_cursos",
+    "constraint_name": "unidades_cursos_unidade_id_curso_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE",
+    "table_name": "usuario_onboarding",
+    "constraint_name": "usuario_onboarding_usuario_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "usuario_onboarding",
+    "constraint_name": "usuario_onboarding_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (usuario_id)",
+    "table_name": "usuario_onboarding",
+    "constraint_name": "usuario_onboarding_usuario_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "FOREIGN KEY (perfil_id) REFERENCES perfis(id) ON DELETE CASCADE",
+    "table_name": "usuario_perfis",
+    "constraint_name": "usuario_perfis_perfil_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id) ON DELETE CASCADE",
+    "table_name": "usuario_perfis",
+    "constraint_name": "usuario_perfis_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE",
+    "table_name": "usuario_perfis",
+    "constraint_name": "usuario_perfis_usuario_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "usuario_perfis",
+    "constraint_name": "usuario_perfis_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((perfil)::text = ANY ((ARRAY['admin'::character varying, 'unidade'::character varying])::text[])))",
+    "table_name": "usuarios",
+    "constraint_name": "usuarios_perfil_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "usuarios",
+    "constraint_name": "usuarios_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "usuarios",
+    "constraint_name": "usuarios_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (auth_user_id)",
+    "table_name": "usuarios",
+    "constraint_name": "usuarios_auth_user_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "UNIQUE (email)",
+    "table_name": "usuarios",
+    "constraint_name": "usuarios_email_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "CHECK ((criado_por = ANY (ARRAY['mila'::text, 'manual'::text])))",
+    "table_name": "visitas",
+    "constraint_name": "visitas_criado_por_chk",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK (((EXTRACT(minute FROM horario) = (0)::numeric) AND (EXTRACT(second FROM horario) = (0)::numeric)))",
+    "table_name": "visitas",
+    "constraint_name": "visitas_hora_cheia_chk",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "CHECK ((status = ANY (ARRAY['agendada'::text, 'realizada'::text, 'nao_compareceu'::text, 'cancelada'::text])))",
+    "table_name": "visitas",
+    "constraint_name": "visitas_status_chk",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (lead_id) REFERENCES leads(id)",
+    "table_name": "visitas",
+    "constraint_name": "visitas_lead_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "visitas",
+    "constraint_name": "visitas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "visitas",
+    "constraint_name": "visitas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK (((max_visitas_por_horario > 0) AND (max_visitas_por_horario <= 20)))",
+    "table_name": "visitas_config",
+    "constraint_name": "visitas_config_limite_chk",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "visitas_config",
+    "constraint_name": "visitas_config_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "visitas_config",
+    "constraint_name": "visitas_config_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "UNIQUE (unidade_id)",
+    "table_name": "visitas_config",
+    "constraint_name": "visitas_config_unidade_id_key",
+    "constraint_type": "u"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "webhook_debug_log",
+    "constraint_name": "webhook_debug_log_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "CHECK ((funcao = ANY (ARRAY['agente'::text, 'sistema'::text, 'ambos'::text, 'administrativo'::text])))",
+    "table_name": "whatsapp_caixas",
+    "constraint_name": "whatsapp_caixas_funcao_check",
+    "constraint_type": "c"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "whatsapp_caixas",
+    "constraint_name": "whatsapp_caixas_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "whatsapp_caixas",
+    "constraint_name": "whatsapp_caixas_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "whatsapp_config",
+    "constraint_name": "whatsapp_config_pkey",
+    "constraint_type": "p"
+  },
+  {
+    "definition": "FOREIGN KEY (unidade_id) REFERENCES unidades(id)",
+    "table_name": "whatsapp_destinatarios_relatorio",
+    "constraint_name": "whatsapp_destinatarios_relatorio_unidade_id_fkey",
+    "constraint_type": "f"
+  },
+  {
+    "definition": "PRIMARY KEY (id)",
+    "table_name": "whatsapp_destinatarios_relatorio",
+    "constraint_name": "whatsapp_destinatarios_relatorio_pkey",
+    "constraint_type": "p"
+  }
+]

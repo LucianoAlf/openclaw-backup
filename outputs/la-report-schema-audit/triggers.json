@@ -1,0 +1,1192 @@
+[
+  {
+    "table_name": "agente_conversas",
+    "trigger_name": "set_updated_at_agente_conversas",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION set_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "agentes",
+    "trigger_name": "set_updated_at_agentes",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION set_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "alunos",
+    "trigger_name": "trg_aluno_ativo_sem_data_saida",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION fn_aluno_ativo_sem_data_saida()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "alunos",
+    "trigger_name": "trg_aluno_ativo_sem_data_saida",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION fn_aluno_ativo_sem_data_saida()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "alunos",
+    "trigger_name": "trg_alunos_calcular_campos",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION calcular_campos_aluno()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "alunos",
+    "trigger_name": "trg_alunos_calcular_campos",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION calcular_campos_aluno()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "alunos",
+    "trigger_name": "trg_alunos_reentrada_historico",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION fn_alunos_reentrada_historico()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "alunos",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "alunos",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "alunos",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "alunos",
+    "trigger_name": "trg_enqueue_sync_student_studio",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION enqueue_sync_student_studio()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "alunos",
+    "trigger_name": "trg_enqueue_sync_student_studio",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION enqueue_sync_student_studio()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "alunos",
+    "trigger_name": "trg_sync_aluno_contatos",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_aluno_contatos_from_legacy()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "alunos",
+    "trigger_name": "trg_sync_aluno_contatos",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_aluno_contatos_from_legacy()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "alunos",
+    "trigger_name": "trg_vincular_anamnese_na_matricula",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_vincular_anamnese_pendente()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "alunos",
+    "trigger_name": "trigger_sync_aluno_to_leads",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_aluno_to_leads()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "alunos",
+    "trigger_name": "trigger_sync_aluno_to_leads",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_aluno_to_leads()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "alunos_historico",
+    "trigger_name": "update_alunos_historico_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "anamneses",
+    "trigger_name": "trg_anamnese_atualiza_aluno",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_atualizar_aluno_anamnese()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "anamneses",
+    "trigger_name": "trg_anamnese_atualiza_aluno",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_atualizar_aluno_anamnese()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "anotacoes",
+    "trigger_name": "tr_anotacoes_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "automacao_log",
+    "trigger_name": "trg_automacao_check_professor",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION check_automacao_professor_vinculado()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "bi_ai_query_playbooks",
+    "trigger_name": "trg_bi_ai_query_playbooks_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION set_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "bi_conversations_lamusic",
+    "trigger_name": "trg_bi_conversation_autofill",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION fn_bi_conversation_autofill()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "bi_conversations_lamusic",
+    "trigger_name": "trg_bi_conversations_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION set_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "bi_messages_lamusic",
+    "trigger_name": "trg_bi_messages_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION set_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "campanhas",
+    "trigger_name": "set_updated_at_campanhas",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION set_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "colaboradores",
+    "trigger_name": "update_colaboradores_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "config_health_score_professor",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "config_health_score_professor",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "config_health_score_professor",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "config_health_score_professor",
+    "trigger_name": "trigger_update_config_health_score_professor",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_config_health_score_professor_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "conversa_estado_whatsapp",
+    "trigger_name": "tr_updated_at_conversa_estado",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "conversas_campanha",
+    "trigger_name": "set_updated_at_conversas_campanha",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION set_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "crm_conversas",
+    "trigger_name": "tr_preencher_unidade_conversa",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION preencher_unidade_conversa()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "crm_conversas",
+    "trigger_name": "tr_updated_at_conversas",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION atualizar_updated_at_conversas()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "crm_mensagens",
+    "trigger_name": "tr_atualizar_conversa_on_mensagem",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION atualizar_conversa_on_mensagem()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "crm_pipeline_etapas",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "crm_pipeline_etapas",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "crm_pipeline_etapas",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "cursos",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "cursos",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "cursos",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "cursos",
+    "trigger_name": "trg_cursos_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "dados_mensais",
+    "trigger_name": "tr_audit_dados_mensais",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION audit_dados_mensais()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "dados_mensais",
+    "trigger_name": "tr_audit_dados_mensais",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION audit_dados_mensais()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "dados_mensais",
+    "trigger_name": "tr_audit_dados_mensais",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION audit_dados_mensais()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "dados_mensais",
+    "trigger_name": "tr_dados_mensais_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "dados_mensais",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "dados_mensais",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "dados_mensais",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "dashboard_config",
+    "trigger_name": "tr_dashboard_config_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "evasoes_v2",
+    "trigger_name": "set_updated_at_evasoes_v2",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "feriados",
+    "trigger_name": "feriados_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION visitas_set_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "insights_salvos",
+    "trigger_name": "trigger_update_insights_salvos_timestamp",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_insights_salvos_timestamp()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "inventario",
+    "trigger_name": "trigger_inventario_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_inventario_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "inventario_pendencias",
+    "trigger_name": "trg_pendencias_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_pendencias_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "lead_experimentais",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "lead_experimentais",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "lead_experimentais",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "tr_normalize_telefone_leads",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION trigger_normalize_telefone()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "tr_normalize_telefone_leads",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION trigger_normalize_telefone()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "tr_sync_etapa_status_on_insert",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION sync_lead_etapa_status_on_insert()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "tr_sync_etapa_to_status",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION sync_lead_etapa_to_status()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "tr_sync_experimentais_professor",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_experimentais_professor()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "tr_sync_experimentais_professor",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_experimentais_professor()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "tr_sync_experimentais_professor",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_experimentais_professor()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "tr_sync_experimentais_unidade",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_experimentais_unidade()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "tr_sync_experimentais_unidade",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_experimentais_unidade()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "tr_sync_experimentais_unidade",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_experimentais_unidade()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "tr_sync_leads_comerciais",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_leads_to_dados_comerciais()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "tr_sync_leads_comerciais",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_leads_to_dados_comerciais()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "tr_sync_leads_comerciais",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_leads_to_dados_comerciais()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "tr_sync_leads_origem",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_leads_to_origem_leads()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "tr_sync_leads_origem",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_leads_to_origem_leads()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "tr_sync_leads_origem",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_leads_to_origem_leads()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "leads",
+    "trigger_name": "update_leads_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "loja_carteira",
+    "trigger_name": "update_loja_carteira_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "loja_configuracoes",
+    "trigger_name": "update_loja_configuracoes_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "loja_estoque",
+    "trigger_name": "update_loja_estoque_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "loja_produtos",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "loja_produtos",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "loja_produtos",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "loja_produtos",
+    "trigger_name": "update_loja_produtos_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "loja_vendas",
+    "trigger_name": "trigger_calcular_comissao_venda",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION calcular_comissao_venda()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "metas",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "metas",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "metas",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "metas",
+    "trigger_name": "update_metas_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "metas_kpi",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "metas_kpi",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "metas_kpi",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "metas_legado",
+    "trigger_name": "tr_audit_metas",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION audit_metas()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "metas_legado",
+    "trigger_name": "tr_audit_metas",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION audit_metas()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "metas_legado",
+    "trigger_name": "tr_audit_metas",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION audit_metas()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "metas_legado",
+    "trigger_name": "tr_metas_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "mila_config",
+    "trigger_name": "trigger_mila_config_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_mila_config_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "movimentacoes",
+    "trigger_name": "update_movimentacoes_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "movimentacoes_admin",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "movimentacoes_admin",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "movimentacoes_admin",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "movimentacoes_admin",
+    "trigger_name": "trg_sync_evasao_dados_mensais",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_evasao_to_dados_mensais()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "movimentacoes_admin",
+    "trigger_name": "trg_sync_evasao_dados_mensais",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_evasao_to_dados_mensais()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "movimentacoes_admin",
+    "trigger_name": "trg_sync_evasao_dados_mensais",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION sync_evasao_to_dados_mensais()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "notificacao_config",
+    "trigger_name": "update_notificacao_config_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "numeros_meta",
+    "trigger_name": "set_updated_at_numeros_meta",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION set_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "pesquisa_evasao",
+    "trigger_name": "tr_updated_at_pesquisa_evasao",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "planos_acao",
+    "trigger_name": "trigger_planos_acao_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_planos_acao_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "professor_360_avaliacoes",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "professor_360_avaliacoes",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "professor_360_avaliacoes",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "professor_360_ocorrencias",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "professor_360_ocorrencias",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "professor_360_ocorrencias",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "professor_360_ocorrencias",
+    "trigger_name": "trg_log_ocorrencia_criada",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_log_ocorrencia_criada()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "professor_acoes",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "professor_acoes",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "professor_acoes",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "professores",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "professores",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "professores",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "professores",
+    "trigger_name": "trg_professores_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "projeto_comentarios",
+    "trigger_name": "update_comentarios_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "projeto_fases",
+    "trigger_name": "trigger_projeto_fases_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_projeto_fases_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "projeto_fases",
+    "trigger_name": "update_projeto_fases_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "projeto_tarefas",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "projeto_tarefas",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "projeto_tarefas",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "projeto_tarefas",
+    "trigger_name": "trigger_log_tarefa_delete",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION log_tarefa_alteracao()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "projeto_tarefas",
+    "trigger_name": "trigger_log_tarefa_insert_update",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION log_tarefa_alteracao()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "projeto_tarefas",
+    "trigger_name": "trigger_log_tarefa_insert_update",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION log_tarefa_alteracao()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "projeto_tarefas",
+    "trigger_name": "trigger_projeto_tarefas_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_projeto_tarefas_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "projeto_tarefas",
+    "trigger_name": "update_projeto_tarefas_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "projeto_tipos",
+    "trigger_name": "trigger_projeto_tipos_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_projeto_tipos_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "projeto_tipos",
+    "trigger_name": "update_projeto_tipos_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "projetos",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "projetos",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "projetos",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "projetos",
+    "trigger_name": "trigger_log_projeto_delete",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION log_projeto_alteracao()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "projetos",
+    "trigger_name": "trigger_log_projeto_insert_update",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION log_projeto_alteracao()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "projetos",
+    "trigger_name": "trigger_log_projeto_insert_update",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION log_projeto_alteracao()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "projetos",
+    "trigger_name": "trigger_projetos_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_projetos_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "projetos",
+    "trigger_name": "update_projetos_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "renovacoes",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "renovacoes",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "renovacoes",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "renovacoes",
+    "trigger_name": "trigger_calcular_reajuste",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION calcular_reajuste_renovacao()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "renovacoes",
+    "trigger_name": "trigger_calcular_reajuste",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION calcular_reajuste_renovacao()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "renovacoes",
+    "trigger_name": "update_renovacoes_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "salas",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "salas",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "salas",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "templates_meta",
+    "trigger_name": "set_updated_at_templates_meta",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION set_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "turmas_alunos",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "turmas_alunos",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "turmas_alunos",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "turmas_explicitas",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "turmas_explicitas",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "turmas_explicitas",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "unidades",
+    "trigger_name": "tr_unidades_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "unidades",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "unidades",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "DELETE"
+  },
+  {
+    "table_name": "unidades",
+    "trigger_name": "trg_audit",
+    "action_timing": "AFTER",
+    "action_statement": "EXECUTE FUNCTION fn_audit_log()",
+    "event_manipulation": "INSERT"
+  },
+  {
+    "table_name": "usuario_onboarding",
+    "trigger_name": "update_usuario_onboarding_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_onboarding_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "usuarios",
+    "trigger_name": "update_usuarios_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION update_updated_at_column()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "visitas",
+    "trigger_name": "visitas_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION visitas_set_updated_at()",
+    "event_manipulation": "UPDATE"
+  },
+  {
+    "table_name": "visitas_config",
+    "trigger_name": "visitas_config_updated_at",
+    "action_timing": "BEFORE",
+    "action_statement": "EXECUTE FUNCTION visitas_set_updated_at()",
+    "event_manipulation": "UPDATE"
+  }
+]
