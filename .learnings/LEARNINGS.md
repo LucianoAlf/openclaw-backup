@@ -197,3 +197,24 @@ Promovido em 2026-06-04 para `memory/context/lessons.md`, reforçando a lição 
 - Tags: cascade, windsurf, comunicacao, destinatario, prompt-encaminhavel, erro
 ---
 
+
+## [LRN-20260606-001] workflow
+
+**Logged**: 2026-06-06T06:30:00Z
+**Priority**: high
+**Status**: promoted
+**Area**: la-report-business-rules
+
+### Summary
+LA Report/Sol agora tem um bloco canônico de regras de KPI validadas pelo Alf, e qualquer documento/código divergente deve ser tratado como legado ou possível bug até validação SELECT-only.
+
+### Details
+Sessão de 2026-06-05 consolidou regras P1–P7/P9/P10: churn, inadimplência por cabeças, ticket por pessoa, `is_coral`, bolsista parcial fora de pagante/ticket, passaporte fora do MRR, conversão por professor só com experimental realizada, LTV simples no frontend por enquanto e Kids/School por idade atual. Também ficou claro que P8/P11 `dados_mensais` continua bloqueado para produção: precisa SELECT-only, congelamento, audit trail/versionamento e bloqueio contra sobrescrita histórica antes de migration/backfill.
+
+### Suggested Action
+Promovido em 2026-06-06 para `memory/context/decisions.md`. Skill `sol-la-report-business-rules` já criada/registrada; manter como procedimento operacional obrigatório para LA Report/Sol.
+
+### Metadata
+- Source: memory/sessions/2026-06-05.md + DREAMS 2026-06-06
+- Tags: la-report, sol, regras-canonicas, kpi, dados-mensais, select-only, cascade, windsurf
+---

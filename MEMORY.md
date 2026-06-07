@@ -146,3 +146,10 @@ _Atualizado: 2026-04-03_
 
 <!-- openclaw-memory-promotion:memory:memory/2026-05-30.md:9:9 -->
 - Manter o bridge, mas corrigir seu papel: ele deve ser porteiro/validador de segurança, não cérebro do atendimento nem porteira aberta. Arquitetura desejada: Chatwoot → bridge seguro → Sol decide intenção/risco → bridge envia ou cria nota interna. [score=0.874 recalls=0 avg=0.620 source=memory/2026-05-30.md:9-9]
+
+## Promoted From Short-Term Memory (2026-06-06)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-30.md:12:14 -->
+- Arquivo alterado no host da Sol: `/home/sol/.openclaw/workspace/scripts/chatwoot-sol-bridge.js`. Backup criado: `/home/sol/.openclaw/workspace/backups/chatwoot-sol-bridge.20260530-020625.js`. [score=0.893 recalls=0 avg=0.620 source=memory/2026-05-30.md:12-13]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-30.md:32:32 -->
+- Testar em conversa pendente controlada: [score=0.893 recalls=0 avg=0.620 source=memory/2026-05-30.md:32-32]
