@@ -164,3 +164,18 @@ _Atualizado: 2026-04-03_
 - Sistemas, CSVs, Supabase, LA Report, Emusys, prints e Cascade são evidências, mas a validação final de regra de negócio é do Alf. [score=0.873 recalls=0 avg=0.620 source=memory/2026-06-01.md:23-23]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-01.md:26:26 -->
 - Durante auditoria: [score=0.873 recalls=0 avg=0.620 source=memory/2026-06-01.md:26-26]
+
+## Promoted From Short-Term Memory (2026-06-08)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-31.md:239:255 -->
+- 2. Miguel Gomes — professor/bolsista, corrigido para Bolsista Integral. 3. Matheus Reis — estagiário/bolsista integral, corrigido. 4. Carlos Eduardo — permuta/parceria com empresa do pai, bolsista integral nos dois cursos, corrigido. 5. Marcos Saturnino — professor bolsista integral, ativo/lixo no Emusys, faltando muito e não pagando; corrigido. - Pendências atuais: Ana Clara e Anna Clara com faturas removidas/movidas pela Gabi; Sofia Elaile e Sofia Lauermann novas com passaporte e primeira parcela em junho. - Lição estrutural: Sol deve separar ativo operacional, pagante contratual, pagante financeiro da competência, bolsista/permutado/professor/estagiário e sujeira operacional; precisa cruzar cadastro, faturas, presença, passaporte, início real, curso/professor e duplicidade. - Arquivos salvos: - `outputs/sol-business-rules-audit/fechamento_provisorio_cg_maio_470_pagantes_e_papel_sol_2026-06-01.md` - `outputs/sol-business-rules-audit/prompt_cascade_auditoria_sol_consistencia_cg_maio_470_2026-06-01.md` --- ## Evidência visual final CG/Mai — 497/470/562 e Marcos bolsista — 2026-06-01 00:27 UTC - Alf enviou print da tela Gestão de Alunos filtrada Campo Grande / Mai 2026. - KPIs visíveis confirmam: 562 matrículas ativas, 497 alunos ativos, 470 pagantes, 27 bolsistas, 27 segundo curso, 41 banda, 0 coral, ticket médio R$386. - Busca por Marcos mostra Marcos da Silva Saturnino com tag Bolsista, parcela “-”, status Ativo, curso Violino, professor Joel, terça 13:00. [score=0.880 recalls=9 avg=0.415 source=memory/2026-05-31.md:239-255]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-01.md:33:33 -->
+- `dados_mensais` representa fechamento/histórico. Estado atual de `alunos.status` não é automaticamente verdade histórica de meses passados. [score=0.878 recalls=0 avg=0.620 source=memory/2026-06-01.md:33-33]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-01.md:12:12 -->
+- Objetivos práticos: [score=0.867 recalls=0 avg=0.620 source=memory/2026-06-01.md:12-12]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-31.md:7:10 -->
+- --- [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-31.md:3-4]
+
+## Regra canônica LA Report/Sol — alunos ativos vs matrículas ativas (2026-06-08)
+
+Validado pelo Alf: `alunos_ativos` conta pessoas/alunos únicos ativos, incluindo pagantes, bolsistas integrais, bolsistas parciais e alunos que estão só em banda/projeto. Segundo curso e múltiplas matrículas não duplicam aluno ativo. Kids/School usa a mesma base de alunos ativos; `Kids + School + Sem classificação` precisa fechar com `alunos_ativos`. `matriculas_ativas` é outro KPI: conta vínculos/registros/matrículas e inclui curso regular, segundo curso, banda/projeto, coral, bolsistas e pagantes; por isso pode ser maior que `alunos_ativos`.

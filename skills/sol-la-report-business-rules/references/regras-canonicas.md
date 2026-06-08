@@ -24,15 +24,22 @@ Classificação:
 
 ### Total alunos ativos
 
-- 📋 Base = pessoas, não matrículas.
-- 📋 Inclui `ativo` + `trancado`.
-- 📋 Exclui `is_segundo_curso = true`.
-- 🚫 `COUNT(*)` para ativos/pagantes é possível bug.
+✅ Regra validada pelo Alf em 2026-06-08:
+
+- Base = **pessoas/alunos únicos**, não matrículas/vínculos.
+- Inclui alunos com `status IN ('ativo', 'trancado')`.
+- Inclui pagantes, bolsistas integrais, bolsistas parciais e alunos que estão só em banda/projeto.
+- Segundo curso e múltiplas matrículas do mesmo aluno **não duplicam** aluno ativo.
+- Kids/School deve usar a mesma base de alunos ativos; `Kids + School + Sem classificação` deve fechar com `alunos_ativos`.
+- 🚫 `COUNT(*)` sobre linhas de `alunos` para ativos/pagantes é bug quando duplica pessoa por matrícula, segundo curso ou vínculo adicional.
 
 ### Matrículas ativas
 
-- 📋 Base = registros.
-- 📋 Inclui primeiro curso, segundo curso, banda e coral.
+✅ Regra validada pelo Alf em 2026-06-08:
+
+- Base = **registros/vínculos/matrículas**, não pessoas únicas.
+- Inclui curso regular, segundo curso, banda/projeto, coral, bolsistas integrais/parciais e pagantes.
+- Pode ser maior que `alunos_ativos`, porque um aluno pode ter mais de uma matrícula/vínculo.
 
 ---
 
