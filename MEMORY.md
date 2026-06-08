@@ -179,3 +179,7 @@ _Atualizado: 2026-04-03_
 ## Regra canônica LA Report/Sol — alunos ativos vs matrículas ativas (2026-06-08)
 
 Validado pelo Alf: `alunos_ativos` conta pessoas/alunos únicos ativos, incluindo pagantes, bolsistas integrais, bolsistas parciais e alunos que estão só em banda/projeto. Segundo curso e múltiplas matrículas não duplicam aluno ativo. Kids/School usa a mesma base de alunos ativos; `Kids + School + Sem classificação` precisa fechar com `alunos_ativos`. `matriculas_ativas` é outro KPI: conta vínculos/registros/matrículas e inclui curso regular, segundo curso, banda/projeto, coral, bolsistas e pagantes; por isso pode ser maior que `alunos_ativos`.
+
+## Regra canônica LA Report/Sol — MRR e segundo curso pagante (2026-06-08)
+
+Validado/reforçado pelo Alf: MRR = soma das parcelas/mensalidades recorrentes pagantes. Segundo curso pagante entra no MRR/faturamento; segundo curso não duplica a pessoa no denominador de `alunos_pagantes` nem de ticket médio. Bolsistas integrais/parciais ficam fora do MRR/ticket; Passaporte é receita à parte.

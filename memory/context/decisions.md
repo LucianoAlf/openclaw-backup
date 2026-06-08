@@ -122,3 +122,7 @@ Correção explícita do Alf: ticket médio não é `AVG(valor_parcela)` por mat
 ### LA Report/Sol: alunos ativos são pessoas; matrículas ativas são vínculos (08/06/2026)
 
 Validado pelo Alf: `alunos_ativos` deve contar pessoas/alunos únicos ativos, incluindo pagantes, bolsistas integrais, bolsistas parciais e alunos que estão só em banda/projeto. Segundo curso e múltiplas matrículas não duplicam aluno ativo. Kids/School usa a mesma base de alunos ativos; `Kids + School + Sem classificação` precisa fechar com `alunos_ativos`. `matriculas_ativas` é outro KPI: conta vínculos/registros/matrículas e inclui curso regular, segundo curso, banda/projeto, coral, bolsistas e pagantes; por isso pode ser maior que `alunos_ativos`.
+
+### LA Report/Sol: MRR inclui segundo curso pagante (08/06/2026)
+
+Validado/reforçado pelo Alf: MRR = soma das parcelas/mensalidades recorrentes pagantes. Segundo curso pagante entra no MRR/faturamento porque é recorrência real paga pelo aluno. Segundo curso não duplica a pessoa no denominador de alunos pagantes nem de ticket médio. Bolsistas integrais/parciais ficam fora do MRR/ticket; Passaporte é receita à parte.
