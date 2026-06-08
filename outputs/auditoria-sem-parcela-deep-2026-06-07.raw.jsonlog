@@ -1,0 +1,241 @@
+◇ injected env (38) from .env // tip: ⌘ suppress logs { quiet: true }
+
+## columns historico_pagamentos/presenca
+[
+  {
+    "data_type": "uuid",
+    "table_name": "aluno_presenca",
+    "column_name": "id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "aluno_presenca",
+    "column_name": "aluno_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "aluno_presenca",
+    "column_name": "professor_id"
+  },
+  {
+    "data_type": "uuid",
+    "table_name": "aluno_presenca",
+    "column_name": "unidade_id"
+  },
+  {
+    "data_type": "date",
+    "table_name": "aluno_presenca",
+    "column_name": "data_aula"
+  },
+  {
+    "data_type": "time without time zone",
+    "table_name": "aluno_presenca",
+    "column_name": "horario_aula"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "aluno_presenca",
+    "column_name": "status"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "aluno_presenca",
+    "column_name": "respondido_por"
+  },
+  {
+    "data_type": "timestamp with time zone",
+    "table_name": "aluno_presenca",
+    "column_name": "respondido_em"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "aluno_presenca",
+    "column_name": "mensagem_uazapi_id"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "aluno_presenca",
+    "column_name": "token"
+  },
+  {
+    "data_type": "timestamp with time zone",
+    "table_name": "aluno_presenca",
+    "column_name": "created_at"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "aluno_presenca",
+    "column_name": "aula_emusys_id"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "aluno_presenca",
+    "column_name": "curso_nome"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "aluno_presenca",
+    "column_name": "turma_nome"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "aluno_presenca",
+    "column_name": "sala_nome"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "aulas_emusys",
+    "column_name": "id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "aulas_emusys",
+    "column_name": "emusys_id"
+  },
+  {
+    "data_type": "uuid",
+    "table_name": "aulas_emusys",
+    "column_name": "unidade_id"
+  },
+  {
+    "data_type": "date",
+    "table_name": "aulas_emusys",
+    "column_name": "data_aula"
+  },
+  {
+    "data_type": "timestamp with time zone",
+    "table_name": "aulas_emusys",
+    "column_name": "data_hora_inicio"
+  },
+  {
+    "data_type": "timestamp with time zone",
+    "table_name": "aulas_emusys",
+    "column_name": "data_hora_fim"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "aulas_emusys",
+    "column_name": "duracao_minutos"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "aulas_emusys",
+    "column_name": "tipo"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "aulas_emusys",
+    "column_name": "categoria"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "aulas_emusys",
+    "column_name": "turma_nome"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "aulas_emusys",
+    "column_name": "curso_emusys_id"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "aulas_emusys",
+    "column_name": "curso_nome"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "aulas_emusys",
+    "column_name": "sala_nome"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "aulas_emusys",
+    "column_name": "professor_nome"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "aulas_emusys",
+    "column_name": "professor_id"
+  },
+  {
+    "data_type": "boolean",
+    "table_name": "aulas_emusys",
+    "column_name": "cancelada"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "aulas_emusys",
+    "column_name": "nr_da_aula"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "aulas_emusys",
+    "column_name": "qtd_alunos"
+  },
+  {
+    "data_type": "text",
+    "table_name": "aulas_emusys",
+    "column_name": "anotacoes"
+  },
+  {
+    "data_type": "timestamp with time zone",
+    "table_name": "aulas_emusys",
+    "column_name": "created_at"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "historico_pagamentos",
+    "column_name": "id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "historico_pagamentos",
+    "column_name": "aluno_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "historico_pagamentos",
+    "column_name": "ano"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "historico_pagamentos",
+    "column_name": "mes"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "historico_pagamentos",
+    "column_name": "status_pagamento"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "historico_pagamentos",
+    "column_name": "valor_parcela"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "historico_pagamentos",
+    "column_name": "dia_vencimento"
+  },
+  {
+    "data_type": "uuid",
+    "table_name": "historico_pagamentos",
+    "column_name": "unidade_id"
+  },
+  {
+    "data_type": "timestamp with time zone",
+    "table_name": "historico_pagamentos",
+    "column_name": "created_at"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "historico_pagamentos",
+    "column_name": "created_by"
+  }
+]
+
+## historico_pagamentos dos 28 ativos sem_parcela
+
+## resumo historico_pagamentos por aluno
+
+## presencas/aulas dos 28 ativos sem_parcela

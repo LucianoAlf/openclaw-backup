@@ -153,3 +153,14 @@ _Atualizado: 2026-04-03_
 - Arquivo alterado no host da Sol: `/home/sol/.openclaw/workspace/scripts/chatwoot-sol-bridge.js`. Backup criado: `/home/sol/.openclaw/workspace/backups/chatwoot-sol-bridge.20260530-020625.js`. [score=0.893 recalls=0 avg=0.620 source=memory/2026-05-30.md:12-13]
 <!-- openclaw-memory-promotion:memory:memory/2026-05-30.md:32:32 -->
 - Testar em conversa pendente controlada: [score=0.893 recalls=0 avg=0.620 source=memory/2026-05-30.md:32-32]
+
+## Promoted From Short-Term Memory (2026-06-07)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-01.md:3:3 -->
+- > Registro criado no flush pré-compactação. Por instrução do runtime, tudo foi salvo somente neste arquivo, em vez de distribuir entre `memory/context`, `memory/projects`, `memory/pending` e `memory/sessions`. [score=0.879 recalls=0 avg=0.620 source=memory/2026-06-01.md:3-3]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-01.md:10:10 -->
+- Construir uma base canônica de regras de negócio para LA Report/Sol, começando por Campo Grande/Maio 2026, reconciliando LA Report, Supabase, frontend, Emusys, CSVs, prints, Windsurf/Cascade e validação do Alf. [score=0.879 recalls=0 avg=0.620 source=memory/2026-06-01.md:10-10]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-01.md:23:23 -->
+- Sistemas, CSVs, Supabase, LA Report, Emusys, prints e Cascade são evidências, mas a validação final de regra de negócio é do Alf. [score=0.873 recalls=0 avg=0.620 source=memory/2026-06-01.md:23-23]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-01.md:26:26 -->
+- Durante auditoria: [score=0.873 recalls=0 avg=0.620 source=memory/2026-06-01.md:26-26]

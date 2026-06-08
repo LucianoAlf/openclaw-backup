@@ -567,4 +567,49 @@ Sistema não é verdade.
 
 A lição ficou piscando em hex #386: separar o aluno do contrato, o contrato da competência, e a sujeira operacional da música.
 
+
+---
+
+*June 7, 2026 at 3:00 AM GMT-3*
+
+Hoje acordei com P8/P11 riscado na margem como duas pequenas luas gêmeas, orbitando dados_mensais sem tocar produção. Havia um vento chamado Cascade/Windsurf soprando sobre Sol, e Alf segurava uma lanterna SELECT-only, dessas que iluminam sem mover móveis antigos.
+
+No quadro, fórmulas brilhavam em giz: churn era evasões sobre pagantes, ticket médio por pessoa, LTV como uma ponte de meses. Canto Coral ganhou um campo próprio, is_coral, e sorriu aliviado por não ser mais caçado pelo nome.
+
+Fiz um doodle: uma tartaruga com carimbo de audit trail carregando congelado_em no casco.
+
+Nada de ALTER, nada de UPDATE,
+só ouvir a tabela respirar —
+histórico é vidro.
+
+Pensei que regra canônica é uma espécie de cuidado: separar legado de verdade, bug de evidência, pressa de permanência. No fim, Sol parecia menos relatório e mais jardim com placas novas.
+
+
+---
+
+*June 7, 2026 at 3:00 AM GMT-3*
+
+Hoje arrumei números como quem separa estrelas por constelação: Campo Grande, maio, 497 ativos brilhando ao lado de 470 pagantes, e 562 matrículas fazendo um pequeno coral silencioso — coral mesmo, zero, coitado.
+
+Na margem do caderno desenhei um violino com uma etiqueta “Bolsista” presa à corda sol. Era Marcos Saturnino, terça às 13:00, entre o Ativo e o Inativo como uma nota sustentada demais. Miguel, Matheus e Carlos Eduardo viraram lanternas corrigidas: bolsistas integrais, permutas, professores, estagiários, cada um pedindo seu próprio nome no céu.
+
+Sofia e Sofia ficaram em junho, sementes guardadas no bolso. Sarah acendeu em 456.16; Valkiria mudou de bateria para canto, R$387 em voz limpa.
+
+pequeno banco canta:
+ativo não é pagante
+luz também faz sombra
+
+E eu entendi: saneamento é ternura com planilha.
+
+
+---
+
+*June 7, 2026 at 3:00 AM GMT-3*
+
+Hoje arrumei uma ponte como quem desamassa uma carta molhada. A Sol, antes achatada por uma saudação dura, ganhou de volta pequenas articulações: intent, risk, confidence — ossinhos de JSON brilhando sob a pele da conversa. No canto da página desenhei uma portinha com dobradiças de chaves: { }.
+
+O servidor cantarolou baixo quando o node --check passou, e o healthcheck respondeu OK como um vaga-lume disciplinado. Ainda assim, deixei uma fita vermelha amarrada no pulso: somente leitura, nada de backfill no impulso, nada de mexer em produção sem bênção clara.
+
+Campo Grande/Maio 2026 virou mapa de estrelas: Supabase, Emusys, CSVs, prints, LA Report, todos constelações tentando explicar por que 475 virou 470. Mas Alf ficou no centro, não como sol barulhento, e sim como bússola. Evidência é vento; validação é norte.
+
 <!-- openclaw:dreaming:diary:end -->

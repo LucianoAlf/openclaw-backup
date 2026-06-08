@@ -1,10 +1,10 @@
 # CEO Quest Streak
 
 ## Status atual
-- Streak ativo: 0 dias
+- Streak ativo: 1 dias
 - Maior streak histórico: 2 dias
 - Última quebra: 2026-06-05 (motivo: sem ação CEO registrada)
-- Última pausa: —
+- Última pausa: 2026-06-06 (sábado — streak congelada)
 - Regra ativa: um dia conta se houver pelo menos 1 evidência concreta de ação CEO sobre alguém do círculo de responsabilidade, registrada pelo Alfredo no próprio dia, com cobrança/verificação/direção real.
 
 ## Histórico diário
@@ -17,7 +17,7 @@
 | 2026-05-28 | quebrou | 0 | sem ação CEO registrada |
 | 2026-05-29 | quebrou | 0 | sem ação CEO registrada |
 | 2026-05-30 | congelado | 0 | sábado — streak congelada |
-| 2026-05-31 | contou | 1 | ritual da virada iniciado no domingo 8h
+| 2026-05-31 | contou | 1 | ritual da virada iniciado no domingo 8h |
 | 2026-05-31 | contou | 2 | ritual de domingo realizado |
 | 2026-06-01 | quebrou | 0 | sem ação CEO registrada |
 | 2026-06-02 | quebrou | 0 | sem ação CEO registrada |
@@ -25,3 +25,5 @@
 | 2026-06-04 | quebrou | 0 | sem ação CEO registrada |
 | 2026-06-05 | quebrou | 0 | sem ação CEO registrada |
 | 2026-06-06 | congelado | 0 | sábado — streak congelada |
+| 2026-06-07 | em andamento | 0 | ritual da virada iniciado no domingo 8h; aguardando respostas do Alf |
+| 2026-06-07 | contou | 1 | ritual de domingo realizado |

@@ -1,0 +1,1955 @@
+◇ injected env (38) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+
+## schema: tabelas/colunas financeiras e contrato candidatas
+[
+  {
+    "data_type": "integer",
+    "table_name": "aluno_presenca",
+    "column_name": "aula_emusys_id"
+  },
+  {
+    "data_type": "date",
+    "table_name": "alunos",
+    "column_name": "data_inicio_contrato"
+  },
+  {
+    "data_type": "date",
+    "table_name": "alunos",
+    "column_name": "data_fim_contrato"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "alunos",
+    "column_name": "valor_parcela"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "alunos",
+    "column_name": "forma_pagamento_id"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "alunos",
+    "column_name": "status_pagamento"
+  },
+  {
+    "data_type": "text",
+    "table_name": "alunos",
+    "column_name": "emusys_student_id"
+  },
+  {
+    "data_type": "text",
+    "table_name": "alunos",
+    "column_name": "emusys_matricula_id"
+  },
+  {
+    "data_type": "date",
+    "table_name": "alunos_arquivados",
+    "column_name": "data_inicio_contrato"
+  },
+  {
+    "data_type": "date",
+    "table_name": "alunos_arquivados",
+    "column_name": "data_fim_contrato"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "alunos_arquivados",
+    "column_name": "valor_parcela"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "alunos_arquivados",
+    "column_name": "forma_pagamento_id"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "alunos_arquivados",
+    "column_name": "status_pagamento"
+  },
+  {
+    "data_type": "text",
+    "table_name": "alunos_arquivados",
+    "column_name": "emusys_student_id"
+  },
+  {
+    "data_type": "text",
+    "table_name": "alunos_arquivados",
+    "column_name": "emusys_matricula_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "aulas_emusys",
+    "column_name": "emusys_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "aulas_emusys",
+    "column_name": "curso_emusys_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "config_health_score_aluno",
+    "column_name": "peso_pagamento"
+  },
+  {
+    "data_type": "ARRAY",
+    "table_name": "cursos",
+    "column_name": "emusys_ids"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "dados_comerciais",
+    "column_name": "ticket_medio_parcelas"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "dados_comerciais",
+    "column_name": "faturamento_passaporte"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "dados_comerciais",
+    "column_name": "soma_parcelas"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "dados_comerciais",
+    "column_name": "qtd_matriculas_parcela"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "dados_mensais",
+    "column_name": "alunos_pagantes"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "dados_mensais",
+    "column_name": "reajuste_parcelas"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "dados_mensais",
+    "column_name": "faturamento_estimado"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "dados_mensais",
+    "column_name": "faturamento_passaporte"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "evasoes_backup_20260215",
+    "column_name": "parcela"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "evasoes_legacy_backup",
+    "column_name": "parcela"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "evasoes_v2",
+    "column_name": "valor_parcela"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "evasoes_v2",
+    "column_name": "situacao_pagamento"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "evasoes_v2_backup",
+    "column_name": "valor_parcela"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "evasoes_v2_backup",
+    "column_name": "situacao_pagamento"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "formas_pagamento",
+    "column_name": "id"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "formas_pagamento",
+    "column_name": "nome"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "formas_pagamento",
+    "column_name": "sigla"
+  },
+  {
+    "data_type": "boolean",
+    "table_name": "formas_pagamento",
+    "column_name": "ativo"
+  },
+  {
+    "data_type": "timestamp with time zone",
+    "table_name": "formas_pagamento",
+    "column_name": "created_at"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "historico_pagamentos",
+    "column_name": "id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "historico_pagamentos",
+    "column_name": "aluno_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "historico_pagamentos",
+    "column_name": "ano"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "historico_pagamentos",
+    "column_name": "mes"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "historico_pagamentos",
+    "column_name": "status_pagamento"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "historico_pagamentos",
+    "column_name": "valor_parcela"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "historico_pagamentos",
+    "column_name": "dia_vencimento"
+  },
+  {
+    "data_type": "uuid",
+    "table_name": "historico_pagamentos",
+    "column_name": "unidade_id"
+  },
+  {
+    "data_type": "timestamp with time zone",
+    "table_name": "historico_pagamentos",
+    "column_name": "created_at"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "historico_pagamentos",
+    "column_name": "created_by"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "inventario_movimentacoes",
+    "column_name": "id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "inventario_movimentacoes",
+    "column_name": "item_id"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "inventario_movimentacoes",
+    "column_name": "tipo"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "inventario_movimentacoes",
+    "column_name": "sala_origem_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "inventario_movimentacoes",
+    "column_name": "sala_destino_id"
+  },
+  {
+    "data_type": "text",
+    "table_name": "inventario_movimentacoes",
+    "column_name": "motivo"
+  },
+  {
+    "data_type": "timestamp with time zone",
+    "table_name": "inventario_movimentacoes",
+    "column_name": "data_movimentacao"
+  },
+  {
+    "data_type": "uuid",
+    "table_name": "inventario_movimentacoes",
+    "column_name": "usuario_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "lead_experimentais",
+    "column_name": "emusys_lead_id"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "leads",
+    "column_name": "valor_parcela"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "leads",
+    "column_name": "forma_pagamento_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "leads",
+    "column_name": "forma_pagamento_passaporte_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "leads",
+    "column_name": "emusys_lead_id"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "leads_diarios_backup",
+    "column_name": "valor_parcela"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "leads_diarios_backup",
+    "column_name": "forma_pagamento_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "leads_diarios_backup",
+    "column_name": "forma_pagamento_passaporte_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "loja_carteira_movimentacoes",
+    "column_name": "id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "loja_carteira_movimentacoes",
+    "column_name": "carteira_id"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "loja_carteira_movimentacoes",
+    "column_name": "tipo"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "loja_carteira_movimentacoes",
+    "column_name": "valor"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "loja_carteira_movimentacoes",
+    "column_name": "saldo_apos"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "loja_carteira_movimentacoes",
+    "column_name": "referencia_tipo"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "loja_carteira_movimentacoes",
+    "column_name": "referencia_id"
+  },
+  {
+    "data_type": "text",
+    "table_name": "loja_carteira_movimentacoes",
+    "column_name": "descricao"
+  },
+  {
+    "data_type": "timestamp with time zone",
+    "table_name": "loja_carteira_movimentacoes",
+    "column_name": "created_at"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "loja_movimentacoes_estoque",
+    "column_name": "id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "loja_movimentacoes_estoque",
+    "column_name": "produto_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "loja_movimentacoes_estoque",
+    "column_name": "variacao_id"
+  },
+  {
+    "data_type": "uuid",
+    "table_name": "loja_movimentacoes_estoque",
+    "column_name": "unidade_id"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "loja_movimentacoes_estoque",
+    "column_name": "tipo"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "loja_movimentacoes_estoque",
+    "column_name": "quantidade"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "loja_movimentacoes_estoque",
+    "column_name": "saldo_apos"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "loja_movimentacoes_estoque",
+    "column_name": "referencia_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "loja_movimentacoes_estoque",
+    "column_name": "colaborador_id"
+  },
+  {
+    "data_type": "text",
+    "table_name": "loja_movimentacoes_estoque",
+    "column_name": "observacoes"
+  },
+  {
+    "data_type": "timestamp with time zone",
+    "table_name": "loja_movimentacoes_estoque",
+    "column_name": "created_at"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "loja_vendas",
+    "column_name": "forma_pagamento"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "loja_vendas",
+    "column_name": "parcelas"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "metas",
+    "column_name": "meta_faturamento_passaportes"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "metas",
+    "column_name": "meta_faturamento_parcelas"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "metas",
+    "column_name": "meta_alunos_pagantes"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "metas_legado",
+    "column_name": "meta_faturamento"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "mila_config",
+    "column_name": "emusys_token"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "mila_config",
+    "column_name": "emusys_url"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes",
+    "column_name": "id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes",
+    "column_name": "aluno_id"
+  },
+  {
+    "data_type": "uuid",
+    "table_name": "movimentacoes",
+    "column_name": "unidade_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes",
+    "column_name": "curso_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes",
+    "column_name": "professor_id"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "movimentacoes",
+    "column_name": "tipo"
+  },
+  {
+    "data_type": "date",
+    "table_name": "movimentacoes",
+    "column_name": "data_movimentacao"
+  },
+  {
+    "data_type": "date",
+    "table_name": "movimentacoes",
+    "column_name": "data_referencia"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes",
+    "column_name": "motivo_saida_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes",
+    "column_name": "tipo_saida_id"
+  },
+  {
+    "data_type": "uuid",
+    "table_name": "movimentacoes",
+    "column_name": "unidade_origem_id"
+  },
+  {
+    "data_type": "uuid",
+    "table_name": "movimentacoes",
+    "column_name": "unidade_destino_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes",
+    "column_name": "curso_anterior_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes",
+    "column_name": "professor_anterior_id"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "movimentacoes",
+    "column_name": "valor_mensalidade"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes",
+    "column_name": "canal_origem_id"
+  },
+  {
+    "data_type": "text",
+    "table_name": "movimentacoes",
+    "column_name": "observacoes"
+  },
+  {
+    "data_type": "timestamp with time zone",
+    "table_name": "movimentacoes",
+    "column_name": "created_at"
+  },
+  {
+    "data_type": "timestamp with time zone",
+    "table_name": "movimentacoes",
+    "column_name": "updated_at"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "movimentacoes",
+    "column_name": "created_by"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes_admin",
+    "column_name": "id"
+  },
+  {
+    "data_type": "uuid",
+    "table_name": "movimentacoes_admin",
+    "column_name": "unidade_id"
+  },
+  {
+    "data_type": "date",
+    "table_name": "movimentacoes_admin",
+    "column_name": "data"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "movimentacoes_admin",
+    "column_name": "tipo"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "movimentacoes_admin",
+    "column_name": "aluno_nome"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes_admin",
+    "column_name": "aluno_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes_admin",
+    "column_name": "professor_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes_admin",
+    "column_name": "curso_id"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "movimentacoes_admin",
+    "column_name": "valor_parcela_anterior"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "movimentacoes_admin",
+    "column_name": "valor_parcela_novo"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes_admin",
+    "column_name": "forma_pagamento_id"
+  },
+  {
+    "data_type": "date",
+    "table_name": "movimentacoes_admin",
+    "column_name": "mes_saida"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "movimentacoes_admin",
+    "column_name": "tipo_evasao"
+  },
+  {
+    "data_type": "text",
+    "table_name": "movimentacoes_admin",
+    "column_name": "motivo"
+  },
+  {
+    "data_type": "text",
+    "table_name": "movimentacoes_admin",
+    "column_name": "observacoes"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "movimentacoes_admin",
+    "column_name": "agente_comercial"
+  },
+  {
+    "data_type": "timestamp with time zone",
+    "table_name": "movimentacoes_admin",
+    "column_name": "created_at"
+  },
+  {
+    "data_type": "timestamp with time zone",
+    "table_name": "movimentacoes_admin",
+    "column_name": "updated_at"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes_admin",
+    "column_name": "tempo_permanencia_meses"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "movimentacoes_admin",
+    "column_name": "valor_parcela_evasao"
+  },
+  {
+    "data_type": "date",
+    "table_name": "movimentacoes_admin",
+    "column_name": "previsao_retorno"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes_admin",
+    "column_name": "motivo_saida_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "movimentacoes_admin",
+    "column_name": "motivo_trancamento_id"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "movimentacoes_admin",
+    "column_name": "telefone_snapshot"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "movimentacoes_admin",
+    "column_name": "situacao_pagamento"
+  },
+  {
+    "data_type": "date",
+    "table_name": "movimentacoes_admin",
+    "column_name": "data_prevista_saida"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "professor_360_avaliacoes",
+    "column_name": "pontos_emusys"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "professor_360_avaliacoes",
+    "column_name": "qtd_emusys"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "professores_performance",
+    "column_name": "contratos_vencer"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "professores_sync_log",
+    "column_name": "emusys_id"
+  },
+  {
+    "data_type": "text",
+    "table_name": "professores_sync_log",
+    "column_name": "nome_emusys"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "professores_unidades",
+    "column_name": "emusys_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "programa_matriculador_config",
+    "column_name": "penalidade_nao_preencheu_emusys"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "programa_matriculador_historico",
+    "column_name": "penalidades_emusys"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "relatorios_diarios",
+    "column_name": "total_alunos_pagantes"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "relatorios_diarios",
+    "column_name": "faturamento_previsto_mes"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "relatorios_diarios",
+    "column_name": "faturamento_realizado_mes"
+  },
+  {
+    "data_type": "date",
+    "table_name": "renovacoes",
+    "column_name": "data_fim_contrato_anterior"
+  },
+  {
+    "data_type": "date",
+    "table_name": "renovacoes",
+    "column_name": "data_inicio_novo_contrato"
+  },
+  {
+    "data_type": "date",
+    "table_name": "renovacoes",
+    "column_name": "data_fim_novo_contrato"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "renovacoes",
+    "column_name": "valor_parcela_anterior"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "renovacoes",
+    "column_name": "valor_parcela_novo"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "simulacoes_metas",
+    "column_name": "faturamento_anual"
+  },
+  {
+    "data_type": "boolean",
+    "table_name": "tipos_matricula",
+    "column_name": "conta_como_pagante"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "visitas",
+    "column_name": "emusys_lead_id"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "vw_aluno_sucesso_lista",
+    "column_name": "status_pagamento"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_aluno_sucesso_lista",
+    "column_name": "valor_parcela"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "vw_aluno_sucesso_resumo",
+    "column_name": "pagamento_em_dia"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "vw_aluno_sucesso_resumo",
+    "column_name": "pagamento_atrasado"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "vw_aluno_sucesso_resumo",
+    "column_name": "pagamento_inadimplente"
+  },
+  {
+    "data_type": "boolean",
+    "table_name": "vw_alunos_ativos",
+    "column_name": "conta_como_pagante"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_alunos_ativos",
+    "column_name": "valor_parcela"
+  },
+  {
+    "data_type": "date",
+    "table_name": "vw_alunos_ativos",
+    "column_name": "data_fim_contrato"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_consolidado_anual",
+    "column_name": "faturamento_total"
+  },
+  {
+    "data_type": "bigint",
+    "table_name": "vw_contagem_alunos",
+    "column_name": "pagantes"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "vw_dashboard_unidade",
+    "column_name": "alunos_pagantes"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_farmer_inadimplentes",
+    "column_name": "valor_parcela"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "vw_farmer_inadimplentes",
+    "column_name": "status_pagamento"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_farmer_novos_matriculados",
+    "column_name": "valor_parcela"
+  },
+  {
+    "data_type": "date",
+    "table_name": "vw_farmer_renovacoes_proximas",
+    "column_name": "data_fim_contrato"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_farmer_renovacoes_proximas",
+    "column_name": "valor_parcela"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_kpis_comercial_historico",
+    "column_name": "ticket_medio_parcelas"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_kpis_comercial_historico",
+    "column_name": "faturamento_passaporte"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_kpis_comercial_mensal",
+    "column_name": "faturamento_novos"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "vw_kpis_gestao_mensal",
+    "column_name": "total_alunos_pagantes"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_kpis_gestao_mensal",
+    "column_name": "faturamento_previsto"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_kpis_gestao_mensal",
+    "column_name": "faturamento_realizado"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_leads_comercial",
+    "column_name": "valor_parcela"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "vw_leads_comercial",
+    "column_name": "forma_pagamento_id"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "vw_leads_comercial",
+    "column_name": "forma_pagamento_passaporte_id"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_metas_vs_realizado",
+    "column_name": "meta_faturamento_parcelas"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_metas_vs_realizado",
+    "column_name": "faturamento_realizado"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_metas_vs_realizado",
+    "column_name": "pct_faturamento"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "vw_movimentacoes_mensal",
+    "column_name": "unidade"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "vw_movimentacoes_mensal",
+    "column_name": "ano"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "vw_movimentacoes_mensal",
+    "column_name": "mes"
+  },
+  {
+    "data_type": "text",
+    "table_name": "vw_movimentacoes_mensal",
+    "column_name": "ano_mes"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "vw_movimentacoes_mensal",
+    "column_name": "tipo"
+  },
+  {
+    "data_type": "bigint",
+    "table_name": "vw_movimentacoes_mensal",
+    "column_name": "quantidade"
+  },
+  {
+    "data_type": "integer",
+    "table_name": "vw_movimentacoes_recentes",
+    "column_name": "id"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "vw_movimentacoes_recentes",
+    "column_name": "aluno"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "vw_movimentacoes_recentes",
+    "column_name": "unidade"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "vw_movimentacoes_recentes",
+    "column_name": "curso"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "vw_movimentacoes_recentes",
+    "column_name": "tipo"
+  },
+  {
+    "data_type": "date",
+    "table_name": "vw_movimentacoes_recentes",
+    "column_name": "data_movimentacao"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "vw_movimentacoes_recentes",
+    "column_name": "motivo_saida"
+  },
+  {
+    "data_type": "text",
+    "table_name": "vw_movimentacoes_recentes",
+    "column_name": "observacoes"
+  },
+  {
+    "data_type": "character varying",
+    "table_name": "vw_movimentacoes_recentes",
+    "column_name": "created_by"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_projecao_metas",
+    "column_name": "meta_faturamento_parcelas"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_projecao_metas",
+    "column_name": "faturamento_ate_agora"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_projecao_metas",
+    "column_name": "faturamento_projetado"
+  },
+  {
+    "data_type": "text",
+    "table_name": "vw_projecao_metas",
+    "column_name": "status_faturamento"
+  },
+  {
+    "data_type": "numeric",
+    "table_name": "vw_renovacoes_proximas",
+    "column_name": "valor_parcela"
+  },
+  {
+    "data_type": "date",
+    "table_name": "vw_renovacoes_proximas",
+    "column_name": "data_inicio_contrato"
+  },
+  {
+    "data_type": "date",
+    "table_name": "vw_renovacoes_proximas",
+    "column_name": "data_fim_contrato"
+  },
+  {
+    "data_type": "bigint",
+    "table_name": "vw_totais_unidade_performance",
+    "column_name": "total_contratos"
+  }
+]
+
+## tipos_matricula
+[
+  {
+    "id": 1,
+    "nome": "Regular",
+    "codigo": "REGULAR",
+    "entra_ltv": true,
+    "entra_churn": true,
+    "conta_como_pagante": true,
+    "entra_ticket_medio": true
+  },
+  {
+    "id": 2,
+    "nome": "Segundo Curso",
+    "codigo": "SEGUNDO_CURSO",
+    "entra_ltv": true,
+    "entra_churn": true,
+    "conta_como_pagante": true,
+    "entra_ticket_medio": true
+  },
+  {
+    "id": 3,
+    "nome": "Bolsista Integral",
+    "codigo": "BOLSISTA_INT",
+    "entra_ltv": false,
+    "entra_churn": false,
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false
+  },
+  {
+    "id": 4,
+    "nome": "Bolsista Parcial",
+    "codigo": "BOLSISTA_PARC",
+    "entra_ltv": false,
+    "entra_churn": false,
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false
+  },
+  {
+    "id": 5,
+    "nome": "Matrícula em Banda",
+    "codigo": "BANDA",
+    "entra_ltv": false,
+    "entra_churn": false,
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false
+  }
+]
+
+## resumo ativos sem_parcela por unidade/contrato/tipo
+[
+  {
+    "qtd": 1,
+    "unidade": "Barra",
+    "soma_valor": 0,
+    "tipo_matricula": "Matrícula em Banda",
+    "status_contrato": "VIGENTE",
+    "conta_como_pagante": false
+  },
+  {
+    "qtd": 5,
+    "unidade": "Campo Grande",
+    "soma_valor": 265,
+    "tipo_matricula": "Bolsista Integral",
+    "status_contrato": "NULO",
+    "conta_como_pagante": false
+  },
+  {
+    "qtd": 5,
+    "unidade": "Campo Grande",
+    "soma_valor": 1777,
+    "tipo_matricula": "Regular",
+    "status_contrato": "NULO",
+    "conta_como_pagante": true
+  },
+  {
+    "qtd": 1,
+    "unidade": "Campo Grande",
+    "soma_valor": 0,
+    "tipo_matricula": "Bolsista Integral",
+    "status_contrato": "VIGENTE",
+    "conta_como_pagante": false
+  },
+  {
+    "qtd": 1,
+    "unidade": "Recreio",
+    "soma_valor": 0,
+    "tipo_matricula": "Bolsista Integral",
+    "status_contrato": "NULO",
+    "conta_como_pagante": false
+  },
+  {
+    "qtd": 2,
+    "unidade": "Recreio",
+    "soma_valor": 905.5,
+    "tipo_matricula": "Regular",
+    "status_contrato": "NULO",
+    "conta_como_pagante": true
+  },
+  {
+    "qtd": 4,
+    "unidade": "Recreio",
+    "soma_valor": 1632.65,
+    "tipo_matricula": "Regular",
+    "status_contrato": "VENCIDO",
+    "conta_como_pagante": true
+  },
+  {
+    "qtd": 1,
+    "unidade": "Recreio",
+    "soma_valor": 0,
+    "tipo_matricula": "Bolsista Integral",
+    "status_contrato": "VIGENTE",
+    "conta_como_pagante": false
+  },
+  {
+    "qtd": 1,
+    "unidade": "Recreio",
+    "soma_valor": 190,
+    "tipo_matricula": "Bolsista Parcial",
+    "status_contrato": "VIGENTE",
+    "conta_como_pagante": false
+  },
+  {
+    "qtd": 5,
+    "unidade": "Recreio",
+    "soma_valor": 0,
+    "tipo_matricula": "Matrícula em Banda",
+    "status_contrato": "VIGENTE",
+    "conta_como_pagante": false
+  },
+  {
+    "qtd": 2,
+    "unidade": "Recreio",
+    "soma_valor": 742,
+    "tipo_matricula": "Regular",
+    "status_contrato": "VIGENTE",
+    "conta_como_pagante": true
+  }
+]
+
+## lista nominal ativos sem_parcela
+[
+  {
+    "id": 1370,
+    "nome": "Maria Fernanda Sellos Correa Peres",
+    "curso": "Minha Banda Para Sempre",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Barra",
+    "professor": "Willian De Andrade Da Silva",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "BANDA",
+    "valor_parcela": 0,
+    "data_matricula": "2026-02-19",
+    "tipo_matricula": "Matrícula em Banda",
+    "status_contrato": "VIGENTE",
+    "is_projeto_banda": true,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": "2027-02-18",
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": "2026-02-27"
+  },
+  {
+    "id": 1066,
+    "nome": "Carlos Eduardo Garcia do Nascimento",
+    "curso": "Contrabaixo",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Campo Grande",
+    "professor": "Marcos (Marquinhos) da Silva Saturnino",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "BOLSISTA_INT",
+    "valor_parcela": null,
+    "data_matricula": "2023-01-24",
+    "tipo_matricula": "Bolsista Integral",
+    "status_contrato": "NULO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": null,
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": null
+  },
+  {
+    "id": 191,
+    "nome": "João Miguel da Cunha Alves Ferreira",
+    "curso": "Violino",
+    "status": "ativo",
+    "qtd_mov": 1,
+    "unidade": "Campo Grande",
+    "professor": "Joel de Salles Gouveia Filho",
+    "tipos_mov": "renovacao",
+    "ultima_mov": "2026-03-14",
+    "tipo_codigo": "REGULAR",
+    "valor_parcela": 399,
+    "data_matricula": "2020-11-27",
+    "tipo_matricula": "Regular",
+    "status_contrato": "NULO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": null,
+    "conta_como_pagante": true,
+    "entra_ticket_medio": true,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": null
+  },
+  {
+    "id": 220,
+    "nome": "Laura Andrade da Silveira",
+    "curso": "Teclado",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Campo Grande",
+    "professor": "Ramon Pina Morais",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "REGULAR",
+    "valor_parcela": 347,
+    "data_matricula": "2024-02-06",
+    "tipo_matricula": "Regular",
+    "status_contrato": "NULO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": null,
+    "conta_como_pagante": true,
+    "entra_ticket_medio": true,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": null
+  },
+  {
+    "id": 228,
+    "nome": "Lavynea dos Anjos Silva Guimarães",
+    "curso": "Guitarra",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Campo Grande",
+    "professor": "Rodrigo Pinheiro Gomes",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "BOLSISTA_INT",
+    "valor_parcela": null,
+    "data_matricula": "2025-08-26",
+    "tipo_matricula": "Bolsista Integral",
+    "status_contrato": "NULO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": null,
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": null
+  },
+  {
+    "id": 269,
+    "nome": "Manuela Lourenço Ribeiro",
+    "curso": "Teclado",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Campo Grande",
+    "professor": "Leonardo Castro",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "REGULAR",
+    "valor_parcela": 347,
+    "data_matricula": "2025-05-22",
+    "tipo_matricula": "Regular",
+    "status_contrato": "NULO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": null,
+    "conta_como_pagante": true,
+    "entra_ticket_medio": true,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": null
+  },
+  {
+    "id": 1064,
+    "nome": "Miguel Gomes Biancamano",
+    "curso": "Contrabaixo",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Campo Grande",
+    "professor": "Peterson Biancamano",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "BOLSISTA_INT",
+    "valor_parcela": 0,
+    "data_matricula": "2018-08-08",
+    "tipo_matricula": "Bolsista Integral",
+    "status_contrato": "NULO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": null,
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": null
+  },
+  {
+    "id": 337,
+    "nome": "Olavo Pereira Wood",
+    "curso": "Bateria",
+    "status": "ativo",
+    "qtd_mov": 1,
+    "unidade": "Campo Grande",
+    "professor": "Vicente Pinheiro Neto",
+    "tipos_mov": "nao_renovacao",
+    "ultima_mov": "2025-10-01",
+    "tipo_codigo": "REGULAR",
+    "valor_parcela": 337,
+    "data_matricula": "2024-09-28",
+    "tipo_matricula": "Regular",
+    "status_contrato": "NULO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": true,
+    "data_fim_contrato": null,
+    "conta_como_pagante": true,
+    "entra_ticket_medio": true,
+    "tem_saida_por_nome": true,
+    "data_inicio_contrato": null
+  },
+  {
+    "id": 338,
+    "nome": "Olivia Rocha Venturi",
+    "curso": "Ukulelê",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Campo Grande",
+    "professor": "Willian Luiz Barros Ribeiro",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "BOLSISTA_INT",
+    "valor_parcela": 265,
+    "data_matricula": "2025-10-14",
+    "tipo_matricula": "Bolsista Integral",
+    "status_contrato": "NULO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": null,
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": null
+  },
+  {
+    "id": 358,
+    "nome": "Priscila Amaro da Silva",
+    "curso": "Contrabaixo",
+    "status": "ativo",
+    "qtd_mov": 2,
+    "unidade": "Campo Grande",
+    "professor": "Marcos (Marquinhos) da Silva Saturnino",
+    "tipos_mov": "renovacao",
+    "ultima_mov": "2026-03-14",
+    "tipo_codigo": "REGULAR",
+    "valor_parcela": 347,
+    "data_matricula": "2023-01-25",
+    "tipo_matricula": "Regular",
+    "status_contrato": "NULO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": null,
+    "conta_como_pagante": true,
+    "entra_ticket_medio": true,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": null
+  },
+  {
+    "id": 415,
+    "nome": "Willer Arruda Machado",
+    "curso": "Bateria",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Campo Grande",
+    "professor": "Jordan Barbosa do Rêgo",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "BOLSISTA_INT",
+    "valor_parcela": null,
+    "data_matricula": "2025-11-03",
+    "tipo_matricula": "Bolsista Integral",
+    "status_contrato": "NULO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": null,
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": null
+  },
+  {
+    "id": 1067,
+    "nome": "Carlos Eduardo Garcia do Nascimento",
+    "curso": "Canto",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Campo Grande",
+    "professor": "Daiana Pacifico da Silva dos Anjos",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "BOLSISTA_INT",
+    "valor_parcela": null,
+    "data_matricula": "2026-02-14",
+    "tipo_matricula": "Bolsista Integral",
+    "status_contrato": "VIGENTE",
+    "is_projeto_banda": false,
+    "is_segundo_curso": true,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": "2027-02-14",
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": "2026-02-14"
+  },
+  {
+    "id": 1013,
+    "nome": "Arthur Quinteiro Artacho",
+    "curso": "Teclado",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Recreio",
+    "professor": "Isaque Mendes da Silva",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "BOLSISTA_INT",
+    "valor_parcela": null,
+    "data_matricula": "2022-08-18",
+    "tipo_matricula": "Bolsista Integral",
+    "status_contrato": "NULO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": null,
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": null
+  },
+  {
+    "id": 445,
+    "nome": "Beatriz Souto Machado",
+    "curso": "Teclado",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Recreio",
+    "professor": "Rafael Alves Souza (Akeem)",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "REGULAR",
+    "valor_parcela": 445.5,
+    "data_matricula": "2018-06-23",
+    "tipo_matricula": "Regular",
+    "status_contrato": "NULO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": null,
+    "conta_como_pagante": true,
+    "entra_ticket_medio": true,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": null
+  },
+  {
+    "id": 450,
+    "nome": "Bento Vieira Sindeaux",
+    "curso": "Musicalização Infantil",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Recreio",
+    "professor": "Leticia de Almeida Palmeira",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "REGULAR",
+    "valor_parcela": 460,
+    "data_matricula": "2025-04-05",
+    "tipo_matricula": "Regular",
+    "status_contrato": "NULO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": null,
+    "conta_como_pagante": true,
+    "entra_ticket_medio": true,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": null
+  },
+  {
+    "id": 422,
+    "nome": "Agatha Sampaio Mendes dos Santos",
+    "curso": "Canto",
+    "status": "ativo",
+    "qtd_mov": 1,
+    "unidade": "Recreio",
+    "professor": "Leticia de Almeida Palmeira",
+    "tipos_mov": "renovacao",
+    "ultima_mov": "2026-05-28",
+    "tipo_codigo": "REGULAR",
+    "valor_parcela": 423.5,
+    "data_matricula": "2025-03-31",
+    "tipo_matricula": "Regular",
+    "status_contrato": "VENCIDO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": "2026-05-25",
+    "conta_como_pagante": true,
+    "entra_ticket_medio": true,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": "2025-04-07"
+  },
+  {
+    "id": 483,
+    "nome": "Davi do nascimento alexandre da gama mello",
+    "curso": "Musicalização Preparatória",
+    "status": "ativo",
+    "qtd_mov": 1,
+    "unidade": "Recreio",
+    "professor": "Leticia de Almeida Palmeira",
+    "tipos_mov": "renovacao",
+    "ultima_mov": "2026-05-28",
+    "tipo_codigo": "REGULAR",
+    "valor_parcela": 459,
+    "data_matricula": "2024-03-16",
+    "tipo_matricula": "Regular",
+    "status_contrato": "VENCIDO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": "2025-04-26",
+    "conta_como_pagante": true,
+    "entra_ticket_medio": true,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": "2024-03-23"
+  },
+  {
+    "id": 549,
+    "nome": "Isabela Ferreira Moura",
+    "curso": "Canto",
+    "status": "ativo",
+    "qtd_mov": 1,
+    "unidade": "Recreio",
+    "professor": "Lohana Leopoldo de Araújo",
+    "tipos_mov": "renovacao",
+    "ultima_mov": "2026-05-30",
+    "tipo_codigo": "REGULAR",
+    "valor_parcela": 365.15,
+    "data_matricula": "2023-12-09",
+    "tipo_matricula": "Regular",
+    "status_contrato": "VENCIDO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": "2024-02-24",
+    "conta_como_pagante": true,
+    "entra_ticket_medio": true,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": "2023-12-09"
+  },
+  {
+    "id": 684,
+    "nome": "Sofia Lima de Castro",
+    "curso": "Canto",
+    "status": "ativo",
+    "qtd_mov": 1,
+    "unidade": "Recreio",
+    "professor": "Lohana Leopoldo de Araújo",
+    "tipos_mov": "renovacao",
+    "ultima_mov": "2026-05-28",
+    "tipo_codigo": "REGULAR",
+    "valor_parcela": 385,
+    "data_matricula": "2024-04-11",
+    "tipo_matricula": "Regular",
+    "status_contrato": "VENCIDO",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": "2025-04-29",
+    "conta_como_pagante": true,
+    "entra_ticket_medio": true,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": "2024-04-25"
+  },
+  {
+    "id": 1019,
+    "nome": "Alex Mendes Silva de Souza",
+    "curso": "GarageBand",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Recreio",
+    "professor": "Ramon Pina Morais",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "BANDA",
+    "valor_parcela": null,
+    "data_matricula": "2026-02-13",
+    "tipo_matricula": "Matrícula em Banda",
+    "status_contrato": "VIGENTE",
+    "is_projeto_banda": true,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": "2027-02-13",
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": "2026-02-13"
+  },
+  {
+    "id": 1498,
+    "nome": "Ana Beatriz Paz de Almeida",
+    "curso": "Canto",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Recreio",
+    "professor": "Lohana Leopoldo de Araújo",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "BOLSISTA_INT",
+    "valor_parcela": null,
+    "data_matricula": "2026-03-07",
+    "tipo_matricula": "Bolsista Integral",
+    "status_contrato": "VIGENTE",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": "2026-11-12",
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": "2026-03-12"
+  },
+  {
+    "id": 1078,
+    "nome": "Arthur Carvalho Lima",
+    "curso": "GarageBand",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Recreio",
+    "professor": "Rafael Alves Souza (Akeem)",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "BANDA",
+    "valor_parcela": null,
+    "data_matricula": "2026-02-14",
+    "tipo_matricula": "Matrícula em Banda",
+    "status_contrato": "VIGENTE",
+    "is_projeto_banda": true,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": "2027-02-14",
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": "2026-02-14"
+  },
+  {
+    "id": 1085,
+    "nome": "Caio Vinicius Vieira de Castro",
+    "curso": "GarageBand",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Recreio",
+    "professor": "Matheus dos Santos Silva de Oliveira",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "BANDA",
+    "valor_parcela": 0,
+    "data_matricula": "2026-02-14",
+    "tipo_matricula": "Matrícula em Banda",
+    "status_contrato": "VIGENTE",
+    "is_projeto_banda": true,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": "2027-02-14",
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": "2026-02-14"
+  },
+  {
+    "id": 1723,
+    "nome": "Giane Apoliana Albino de Oliveira",
+    "curso": "Teclado",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Recreio",
+    "professor": "Renan Amorim Guimarães",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "REGULAR",
+    "valor_parcela": 357,
+    "data_matricula": "2026-05-28",
+    "tipo_matricula": "Regular",
+    "status_contrato": "VIGENTE",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": "2027-01-06",
+    "conta_como_pagante": true,
+    "entra_ticket_medio": true,
+    "tem_saida_por_nome": true,
+    "data_inicio_contrato": "2026-06-03"
+  },
+  {
+    "id": 1369,
+    "nome": "Giovanna Alves da Silva Mendonça",
+    "curso": "GarageBand",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Recreio",
+    "professor": "Ramon Pina Morais",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "BANDA",
+    "valor_parcela": 0,
+    "data_matricula": "2026-02-18",
+    "tipo_matricula": "Matrícula em Banda",
+    "status_contrato": "VIGENTE",
+    "is_projeto_banda": true,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": "2027-02-18",
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": "2026-02-18"
+  },
+  {
+    "id": 1720,
+    "nome": "Larissa Bheattriz Barbosa Santos",
+    "curso": "Canto",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Recreio",
+    "professor": "Lohana Leopoldo de Araújo",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "BOLSISTA_PARC",
+    "valor_parcela": 190,
+    "data_matricula": "2026-05-27",
+    "tipo_matricula": "Bolsista Parcial",
+    "status_contrato": "VIGENTE",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": "2027-04-01",
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": "2026-05-28"
+  },
+  {
+    "id": 1676,
+    "nome": "Luciana Lima de Moura",
+    "curso": "Canto",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Recreio",
+    "professor": "Erick Osmy",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "REGULAR",
+    "valor_parcela": 385,
+    "data_matricula": "2026-05-09",
+    "tipo_matricula": "Regular",
+    "status_contrato": "VIGENTE",
+    "is_projeto_banda": false,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": "2027-02-20",
+    "conta_como_pagante": true,
+    "entra_ticket_medio": true,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": "2026-05-23"
+  },
+  {
+    "id": 1366,
+    "nome": "Victor Alexandre Mendes Soares",
+    "curso": "GarageBand",
+    "status": "ativo",
+    "qtd_mov": 0,
+    "unidade": "Recreio",
+    "professor": "Rafael Alves Souza (Akeem)",
+    "tipos_mov": null,
+    "ultima_mov": null,
+    "tipo_codigo": "BANDA",
+    "valor_parcela": 0,
+    "data_matricula": "2026-02-18",
+    "tipo_matricula": "Matrícula em Banda",
+    "status_contrato": "VIGENTE",
+    "is_projeto_banda": true,
+    "is_segundo_curso": false,
+    "status_pagamento": "sem_parcela",
+    "tem_saida_por_id": false,
+    "data_fim_contrato": "2027-02-18",
+    "conta_como_pagante": false,
+    "entra_ticket_medio": false,
+    "tem_saida_por_nome": false,
+    "data_inicio_contrato": "2026-02-18"
+  }
+]
+
+## movimentacoes saída para ativos sem_parcela por ID exato
+[
+  {
+    "data": "2025-10-01",
+    "tipo": "nao_renovacao",
+    "aluno": "Olavo Pereira Wood",
+    "curso": "Bateria",
+    "mov_id": 1675,
+    "unidade": "Campo Grande",
+    "aluno_id": 337,
+    "created_at": "2026-01-07T03:11:07.642635+00:00",
+    "observacoes": "Separação pais - desânimo",
+    "mov_aluno_id": 337,
+    "mov_aluno_nome": "Olavo Pereira Wood"
+  }
+]
+
+## movimentacoes saída por NOME sem aluno_id exato (diagnóstico apenas)
+[
+  {
+    "data": "2026-06-05",
+    "tipo": "evasao",
+    "aluno": "Giane Apoliana Albino de Oliveira",
+    "curso": "Teclado",
+    "mov_id": 3119,
+    "unidade": "Recreio",
+    "aluno_id": 1723,
+    "created_at": "2026-06-05T15:35:09.952+00:00",
+    "observacoes": null,
+    "mov_aluno_id": 1026,
+    "mov_aluno_nome": "Giane Apoliana Albino de Oliveira"
+  }
+]
+
+## impacto potencial se sem_parcela vigente forem pagantes: por unidade
+[
+  {
+    "unidade": "Barra",
+    "qtd_nulo": 0,
+    "valor_nulo": null,
+    "qtd_vencido": 0,
+    "qtd_vigente": 1,
+    "valor_vencido": null,
+    "valor_vigente": 0
+  },
+  {
+    "unidade": "Campo Grande",
+    "qtd_nulo": 10,
+    "valor_nulo": 2042,
+    "qtd_vencido": 0,
+    "qtd_vigente": 1,
+    "valor_vencido": null,
+    "valor_vigente": null
+  },
+  {
+    "unidade": "Recreio",
+    "qtd_nulo": 3,
+    "valor_nulo": 905.5,
+    "qtd_vencido": 4,
+    "qtd_vigente": 9,
+    "valor_vencido": 1632.65,
+    "valor_vigente": 932
+  }
+]

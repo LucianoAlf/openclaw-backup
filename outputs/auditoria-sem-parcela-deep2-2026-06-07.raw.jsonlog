@@ -1,0 +1,703 @@
+◇ injected env (38) from .env // tip: ◈ encrypted .env [www.dotenvx.com]
+
+## resumo historico_pagamentos por aluno
+[
+  {
+    "id": 1370,
+    "nome": "Maria Fernanda Sellos Correa Peres",
+    "unidade": "Barra",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 1066,
+    "nome": "Carlos Eduardo Garcia do Nascimento",
+    "unidade": "Campo Grande",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 1067,
+    "nome": "Carlos Eduardo Garcia do Nascimento",
+    "unidade": "Campo Grande",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 191,
+    "nome": "João Miguel da Cunha Alves Ferreira",
+    "unidade": "Campo Grande",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 220,
+    "nome": "Laura Andrade da Silveira",
+    "unidade": "Campo Grande",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 228,
+    "nome": "Lavynea dos Anjos Silva Guimarães",
+    "unidade": "Campo Grande",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 269,
+    "nome": "Manuela Lourenço Ribeiro",
+    "unidade": "Campo Grande",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 1064,
+    "nome": "Miguel Gomes Biancamano",
+    "unidade": "Campo Grande",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 337,
+    "nome": "Olavo Pereira Wood",
+    "unidade": "Campo Grande",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 338,
+    "nome": "Olivia Rocha Venturi",
+    "unidade": "Campo Grande",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 358,
+    "nome": "Priscila Amaro da Silva",
+    "unidade": "Campo Grande",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 415,
+    "nome": "Willer Arruda Machado",
+    "unidade": "Campo Grande",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 422,
+    "nome": "Agatha Sampaio Mendes dos Santos",
+    "unidade": "Recreio",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 1019,
+    "nome": "Alex Mendes Silva de Souza",
+    "unidade": "Recreio",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 1498,
+    "nome": "Ana Beatriz Paz de Almeida",
+    "unidade": "Recreio",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 1078,
+    "nome": "Arthur Carvalho Lima",
+    "unidade": "Recreio",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 1013,
+    "nome": "Arthur Quinteiro Artacho",
+    "unidade": "Recreio",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 445,
+    "nome": "Beatriz Souto Machado",
+    "unidade": "Recreio",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 450,
+    "nome": "Bento Vieira Sindeaux",
+    "unidade": "Recreio",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 1085,
+    "nome": "Caio Vinicius Vieira de Castro",
+    "unidade": "Recreio",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 483,
+    "nome": "Davi do nascimento alexandre da gama mello",
+    "unidade": "Recreio",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 1723,
+    "nome": "Giane Apoliana Albino de Oliveira",
+    "unidade": "Recreio",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 1369,
+    "nome": "Giovanna Alves da Silva Mendonça",
+    "unidade": "Recreio",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 549,
+    "nome": "Isabela Ferreira Moura",
+    "unidade": "Recreio",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 1720,
+    "nome": "Larissa Bheattriz Barbosa Santos",
+    "unidade": "Recreio",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 1676,
+    "nome": "Luciana Lima de Moura",
+    "unidade": "Recreio",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 684,
+    "nome": "Sofia Lima de Castro",
+    "unidade": "Recreio",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  },
+  {
+    "id": 1366,
+    "nome": "Victor Alexandre Mendes Soares",
+    "unidade": "Recreio",
+    "qtd_hist": 0,
+    "status_hist": null,
+    "soma_valor_hist": 0,
+    "ultima_competencia": null,
+    "qtd_status_nao_sem_parcela": 0
+  }
+]
+
+## historico_pagamentos últimos dos casos regulares
+[
+  {
+    "ano": null,
+    "mes": null,
+    "nome": "João Miguel da Cunha Alves Ferreira",
+    "unidade": "Campo Grande",
+    "aluno_id": 191,
+    "created_at": null,
+    "valor_parcela": null,
+    "status_pagamento": null
+  },
+  {
+    "ano": null,
+    "mes": null,
+    "nome": "Laura Andrade da Silveira",
+    "unidade": "Campo Grande",
+    "aluno_id": 220,
+    "created_at": null,
+    "valor_parcela": null,
+    "status_pagamento": null
+  },
+  {
+    "ano": null,
+    "mes": null,
+    "nome": "Manuela Lourenço Ribeiro",
+    "unidade": "Campo Grande",
+    "aluno_id": 269,
+    "created_at": null,
+    "valor_parcela": null,
+    "status_pagamento": null
+  },
+  {
+    "ano": null,
+    "mes": null,
+    "nome": "Olavo Pereira Wood",
+    "unidade": "Campo Grande",
+    "aluno_id": 337,
+    "created_at": null,
+    "valor_parcela": null,
+    "status_pagamento": null
+  },
+  {
+    "ano": null,
+    "mes": null,
+    "nome": "Priscila Amaro da Silva",
+    "unidade": "Campo Grande",
+    "aluno_id": 358,
+    "created_at": null,
+    "valor_parcela": null,
+    "status_pagamento": null
+  },
+  {
+    "ano": null,
+    "mes": null,
+    "nome": "Agatha Sampaio Mendes dos Santos",
+    "unidade": "Recreio",
+    "aluno_id": 422,
+    "created_at": null,
+    "valor_parcela": null,
+    "status_pagamento": null
+  },
+  {
+    "ano": null,
+    "mes": null,
+    "nome": "Beatriz Souto Machado",
+    "unidade": "Recreio",
+    "aluno_id": 445,
+    "created_at": null,
+    "valor_parcela": null,
+    "status_pagamento": null
+  },
+  {
+    "ano": null,
+    "mes": null,
+    "nome": "Bento Vieira Sindeaux",
+    "unidade": "Recreio",
+    "aluno_id": 450,
+    "created_at": null,
+    "valor_parcela": null,
+    "status_pagamento": null
+  },
+  {
+    "ano": null,
+    "mes": null,
+    "nome": "Davi do nascimento alexandre da gama mello",
+    "unidade": "Recreio",
+    "aluno_id": 483,
+    "created_at": null,
+    "valor_parcela": null,
+    "status_pagamento": null
+  },
+  {
+    "ano": null,
+    "mes": null,
+    "nome": "Giane Apoliana Albino de Oliveira",
+    "unidade": "Recreio",
+    "aluno_id": 1723,
+    "created_at": null,
+    "valor_parcela": null,
+    "status_pagamento": null
+  },
+  {
+    "ano": null,
+    "mes": null,
+    "nome": "Isabela Ferreira Moura",
+    "unidade": "Recreio",
+    "aluno_id": 549,
+    "created_at": null,
+    "valor_parcela": null,
+    "status_pagamento": null
+  },
+  {
+    "ano": null,
+    "mes": null,
+    "nome": "Luciana Lima de Moura",
+    "unidade": "Recreio",
+    "aluno_id": 1676,
+    "created_at": null,
+    "valor_parcela": null,
+    "status_pagamento": null
+  },
+  {
+    "ano": null,
+    "mes": null,
+    "nome": "Sofia Lima de Castro",
+    "unidade": "Recreio",
+    "aluno_id": 684,
+    "created_at": null,
+    "valor_parcela": null,
+    "status_pagamento": null
+  }
+]
+
+## presencas dos 28 ativos sem_parcela
+[
+  {
+    "id": 1370,
+    "nome": "Maria Fernanda Sellos Correa Peres",
+    "unidade": "Barra",
+    "qtd_faltas": 0,
+    "qtd_presentes": 20,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-05-16",
+    "qtd_presencas_registros": 43
+  },
+  {
+    "id": 1066,
+    "nome": "Carlos Eduardo Garcia do Nascimento",
+    "unidade": "Campo Grande",
+    "qtd_faltas": 0,
+    "qtd_presentes": 11,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-06-06",
+    "qtd_presencas_registros": 16
+  },
+  {
+    "id": 1067,
+    "nome": "Carlos Eduardo Garcia do Nascimento",
+    "unidade": "Campo Grande",
+    "qtd_faltas": 0,
+    "qtd_presentes": 12,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-05-16",
+    "qtd_presencas_registros": 48
+  },
+  {
+    "id": 191,
+    "nome": "João Miguel da Cunha Alves Ferreira",
+    "unidade": "Campo Grande",
+    "qtd_faltas": 0,
+    "qtd_presentes": 15,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-05-28",
+    "qtd_presencas_registros": 25
+  },
+  {
+    "id": 220,
+    "nome": "Laura Andrade da Silveira",
+    "unidade": "Campo Grande",
+    "qtd_faltas": 0,
+    "qtd_presentes": 0,
+    "status_presenca": "ausente",
+    "ultima_aula_report": "2026-03-30",
+    "qtd_presencas_registros": 11
+  },
+  {
+    "id": 228,
+    "nome": "Lavynea dos Anjos Silva Guimarães",
+    "unidade": "Campo Grande",
+    "qtd_faltas": 0,
+    "qtd_presentes": 21,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-06-02",
+    "qtd_presencas_registros": 27
+  },
+  {
+    "id": 269,
+    "nome": "Manuela Lourenço Ribeiro",
+    "unidade": "Campo Grande",
+    "qtd_faltas": 0,
+    "qtd_presentes": 6,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-06-01",
+    "qtd_presencas_registros": 29
+  },
+  {
+    "id": 1064,
+    "nome": "Miguel Gomes Biancamano",
+    "unidade": "Campo Grande",
+    "qtd_faltas": 0,
+    "qtd_presentes": 15,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-06-03",
+    "qtd_presencas_registros": 46
+  },
+  {
+    "id": 337,
+    "nome": "Olavo Pereira Wood",
+    "unidade": "Campo Grande",
+    "qtd_faltas": 0,
+    "qtd_presentes": 0,
+    "status_presenca": null,
+    "ultima_aula_report": null,
+    "qtd_presencas_registros": 0
+  },
+  {
+    "id": 338,
+    "nome": "Olivia Rocha Venturi",
+    "unidade": "Campo Grande",
+    "qtd_faltas": 0,
+    "qtd_presentes": 6,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-06-03",
+    "qtd_presencas_registros": 29
+  },
+  {
+    "id": 358,
+    "nome": "Priscila Amaro da Silva",
+    "unidade": "Campo Grande",
+    "qtd_faltas": 0,
+    "qtd_presentes": 11,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-05-26",
+    "qtd_presencas_registros": 16
+  },
+  {
+    "id": 415,
+    "nome": "Willer Arruda Machado",
+    "unidade": "Campo Grande",
+    "qtd_faltas": 0,
+    "qtd_presentes": 15,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-06-01",
+    "qtd_presencas_registros": 27
+  },
+  {
+    "id": 422,
+    "nome": "Agatha Sampaio Mendes dos Santos",
+    "unidade": "Recreio",
+    "qtd_faltas": 0,
+    "qtd_presentes": 12,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-06-01",
+    "qtd_presencas_registros": 26
+  },
+  {
+    "id": 1019,
+    "nome": "Alex Mendes Silva de Souza",
+    "unidade": "Recreio",
+    "qtd_faltas": 0,
+    "qtd_presentes": 20,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-05-20",
+    "qtd_presencas_registros": 45
+  },
+  {
+    "id": 1498,
+    "nome": "Ana Beatriz Paz de Almeida",
+    "unidade": "Recreio",
+    "qtd_faltas": 0,
+    "qtd_presentes": 17,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-05-26",
+    "qtd_presencas_registros": 20
+  },
+  {
+    "id": 1078,
+    "nome": "Arthur Carvalho Lima",
+    "unidade": "Recreio",
+    "qtd_faltas": 0,
+    "qtd_presentes": 17,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-05-13",
+    "qtd_presencas_registros": 38
+  },
+  {
+    "id": 1013,
+    "nome": "Arthur Quinteiro Artacho",
+    "unidade": "Recreio",
+    "qtd_faltas": 0,
+    "qtd_presentes": 9,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-06-02",
+    "qtd_presencas_registros": 25
+  },
+  {
+    "id": 445,
+    "nome": "Beatriz Souto Machado",
+    "unidade": "Recreio",
+    "qtd_faltas": 0,
+    "qtd_presentes": 18,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-06-06",
+    "qtd_presencas_registros": 21
+  },
+  {
+    "id": 450,
+    "nome": "Bento Vieira Sindeaux",
+    "unidade": "Recreio",
+    "qtd_faltas": 0,
+    "qtd_presentes": 14,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-06-06",
+    "qtd_presencas_registros": 21
+  },
+  {
+    "id": 1085,
+    "nome": "Caio Vinicius Vieira de Castro",
+    "unidade": "Recreio",
+    "qtd_faltas": 0,
+    "qtd_presentes": 23,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-05-14",
+    "qtd_presencas_registros": 38
+  },
+  {
+    "id": 483,
+    "nome": "Davi do nascimento alexandre da gama mello",
+    "unidade": "Recreio",
+    "qtd_faltas": 0,
+    "qtd_presentes": 12,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-06-03",
+    "qtd_presencas_registros": 23
+  },
+  {
+    "id": 1723,
+    "nome": "Giane Apoliana Albino de Oliveira",
+    "unidade": "Recreio",
+    "qtd_faltas": 0,
+    "qtd_presentes": 2,
+    "status_presenca": "presente",
+    "ultima_aula_report": "2026-06-03",
+    "qtd_presencas_registros": 2
+  },
+  {
+    "id": 1369,
+    "nome": "Giovanna Alves da Silva Mendonça",
+    "unidade": "Recreio",
+    "qtd_faltas": 0,
+    "qtd_presentes": 7,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-05-11",
+    "qtd_presencas_registros": 21
+  },
+  {
+    "id": 549,
+    "nome": "Isabela Ferreira Moura",
+    "unidade": "Recreio",
+    "qtd_faltas": 0,
+    "qtd_presentes": 21,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-06-06",
+    "qtd_presencas_registros": 23
+  },
+  {
+    "id": 1720,
+    "nome": "Larissa Bheattriz Barbosa Santos",
+    "unidade": "Recreio",
+    "qtd_faltas": 0,
+    "qtd_presentes": 2,
+    "status_presenca": "presente",
+    "ultima_aula_report": "2026-05-28",
+    "qtd_presencas_registros": 2
+  },
+  {
+    "id": 1676,
+    "nome": "Luciana Lima de Moura",
+    "unidade": "Recreio",
+    "qtd_faltas": 0,
+    "qtd_presentes": 4,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-06-06",
+    "qtd_presencas_registros": 6
+  },
+  {
+    "id": 684,
+    "nome": "Sofia Lima de Castro",
+    "unidade": "Recreio",
+    "qtd_faltas": 0,
+    "qtd_presentes": 3,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-06-02",
+    "qtd_presencas_registros": 6
+  },
+  {
+    "id": 1366,
+    "nome": "Victor Alexandre Mendes Soares",
+    "unidade": "Recreio",
+    "qtd_faltas": 0,
+    "qtd_presentes": 12,
+    "status_presenca": "ausente, presente",
+    "ultima_aula_report": "2026-06-03",
+    "qtd_presencas_registros": 43
+  }
+]

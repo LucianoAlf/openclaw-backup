@@ -101,3 +101,16 @@ Para o LA Music Performance Report/Sol, respeitar estas regras até nova decisã
 
 ### LA Report/Sol: `dados_mensais` não pode ser sobrescrito sem congelamento e trilha de auditoria (06/06/2026)
 P8/P11 confirmou que `dados_mensais` é tabela de snapshot e que UPSERT/recalcular pode sobrescrever histórico. Antes de qualquer migration/backfill/recalcular em produção: fazer SELECT-only, confirmar funções/cron/frontend, impedir recálculo de mês fechado, adicionar congelamento/audit trail/versionamento/rollback auditado e obter aprovação explícita do Alf. Script automático de replace/migration não deve ser executado só porque foi gerado pelo Cascade/Windsurf.
+
+### LA Report/Sol: transferência interna entre unidades não é evasão global (07/06/2026)
+
+Validado pelo Alf no caso Giane/Geane Apoliana: quando o aluno sai de uma unidade e continua ativo em outra unidade, isso é **transferência interna**, não evasão/churn global da LA Music. Para análise por unidade, pode aparecer como saída operacional da unidade origem e entrada na unidade destino, mas deve ficar separado de `evasao`/`nao_renovacao`. Para análise global LA Music, não entra no numerador de churn.
+
+### LA Report/Sol: aviso prévio conta na competência da saída real, não do aviso (07/06/2026)
+
+Validado pelo Alf: quando o aviso prévio é dado em maio, o aluno ainda cumpre/assiste maio, junho e julho; se não houver reversão, a saída real é julho. Portanto, aviso prévio dado em maio não é evasão/churn de maio. Para KPI, separar data do aviso, período de cumprimento e data real de encerramento/saída. Aviso prévio só pode impactar evasão/churn na competência da saída real, não na competência em que foi comunicado.
+
+### LA Report/Fideliza+: recorte oficial é trimestral (07/06/2026)
+
+Validado pelo Alf: o programa Fideliza+ deve calcular por trimestre civil: Q1 = Jan/Fev/Mar; Q2 = Abr/Mai/Jun; Q3 = Jul/Ago/Set; Q4 = Out/Nov/Dez. O painel não deve parecer mensal quando estiver mostrando métrica trimestral. Se a página estiver em Mai/2026, o Fideliza+ Q2 deve aparecer explicitamente como Q2 — Abr/Mai/Jun.
+

@@ -1,0 +1,1795 @@
+# supabase from/rpc refs
+src/types/database.types.ts:17:      dados_mensais: {
+src/types/database.types.ts:41:        Insert: Omit<Database['public']['Tables']['dados_mensais']['Row'], 'id' | 'created_at' | 'updated_at' | 'faturamento_estimado' | 'saldo_liquido'>
+src/types/database.types.ts:42:        Update: Partial<Database['public']['Tables']['dados_mensais']['Insert']>
+src/types/database.types.ts:118:      vw_consolidado_anual: {
+src/types/database.types.ts:132:      vw_unidade_anual: {
+src/types/database.types.ts:148:      vw_sazonalidade: {
+src/types/database.types.ts:160:      vw_kpis_professor_completo: {
+src/types/database.types.ts:187:      vw_renovacoes_pendentes: {
+src/types/database.types.ts:261:export type DadosMensais = Database['public']['Tables']['dados_mensais']['Row']
+src/types/database.types.ts:268:export type ConsolidadoAnual = Database['public']['Views']['vw_consolidado_anual']['Row']
+src/types/database.types.ts:269:export type UnidadeAnual = Database['public']['Views']['vw_unidade_anual']['Row']
+src/types/database.types.ts:270:export type Sazonalidade = Database['public']['Views']['vw_sazonalidade']['Row']
+src/types/database.types.ts:271:export type KPIProfessorCompleto = Database['public']['Views']['vw_kpis_professor_completo']['Row']
+src/types/database.types.ts:272:export type RenovacoesPendentes = Database['public']['Views']['vw_renovacoes_pendentes']['Row']
+src/lib/uploadImage.ts:44:      .from('avatars')
+src/lib/uploadImage.ts:58:      .from('avatars')
+src/lib/uploadImage.ts:83:      .from('avatars')
+src/components/ui/AutocompleteAluno.tsx:87:        .from('alunos')
+src/components/ui/AutocompleteAluno.tsx:125:          ? supabase.from('cursos').select('id, nome').in('id', cursoIds)
+src/components/ui/AutocompleteAluno.tsx:128:          ? supabase.from('professores').select('id, nome').in('id', professorIds)
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:128:      .from('projeto_tarefas')
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:139:      .from('projeto_anexos')
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:150:      .from('projeto_comentarios')
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:161:              .from('usuarios')
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:168:              .from('professores')
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:186:      .from('projeto_log_alteracoes')
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:201:        .from('projeto_tarefas')
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:231:        .from('projeto_tarefas')
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:251:        .from('projeto_tarefas')
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:274:        .from('projeto_tarefas')
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:301:        .from('projeto-anexos')
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:308:        .from('projeto-anexos')
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:312:      const { error: dbError } = await supabase.from('projeto_anexos').insert({
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:344:        .from('projeto-anexos')
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:349:        .from('projeto_anexos')
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:368:      const { error } = await supabase.from('projeto_comentarios').insert({
+src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:392:        .from('projeto_comentarios')
+src/components/App/Projetos/views/CalendarioView.tsx:78:          .from('projeto_tarefas')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:190:        .from('projeto_tipos')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:219:        .from('projeto_tipo_fases_template')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:230:            .from('projeto_tipo_tarefas_template')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:311:          .from('projeto_tipo_fases_template')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:326:          .from('projeto_tipo_fases_template')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:363:        .from('projeto_tipo_tarefas_template')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:369:        .from('projeto_tipo_fases_template')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:379:          .from('projeto_tipo_fases_template')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:431:          .from('projeto_tipo_fases_template')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:706:        .from('projeto_tipos')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:716:            .from('projetos')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:772:          .from('projeto_tipos')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:787:          .from('projeto_tipos')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:822:        .from('projeto_tipos')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:843:        .from('projeto_tipos')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:1378:        .from('projeto_equipe_membros')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:1396:        .from('projeto_config_permissoes')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:1457:          .from('projeto_equipe_membros')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:1472:          .from('projeto_equipe_membros')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:1507:        .from('projeto_equipe_membros')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:1528:        .from('projeto_config_permissoes')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:1553:          .from('projeto_config_permissoes')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:1995:        .from('whatsapp_config')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:2019:        .from('whatsapp_config')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:2056:        .from('notificacao_log')
+src/components/App/Projetos/views/ConfiguracoesView.tsx:2483:        .from('notificacao_log')
+src/components/App/Layout/AppHeader.tsx:33:      .from('unidades')
+src/components/App/Layout/AppSidebar.tsx:91:    supabase.from('campanhas_config').select('visibilidade_global').single()
+src/components/App/Layout/AppSidebar.tsx:101:    supabase.from('conversas_campanha').select('nao_lidas').gt('nao_lidas', 0)
+src/components/App/Layout/AppSidebar.tsx:110:        supabase.from('conversas_campanha').select('nao_lidas').gt('nao_lidas', 0)
+src/components/App/Layout/ModalEditarPerfil.tsx:96:        .from('avatars')
+src/components/App/Layout/ModalEditarPerfil.tsx:106:        .from('avatars')
+src/components/App/Layout/ModalEditarPerfil.tsx:137:        .from('usuarios')
+src/components/App/Dashboard/DashboardPage.tsx:165:        .from('alunos')
+src/components/App/Dashboard/DashboardPage.tsx:210:        .from('movimentacoes_admin')
+src/components/App/Dashboard/DashboardPage.tsx:245:        .from('leads')
+src/components/App/Dashboard/DashboardPage.tsx:285:        .from('leads')
+src/components/App/Dashboard/DashboardPage.tsx:327:          .from('vw_dashboard_unidade')
+src/components/App/Dashboard/DashboardPage.tsx:342:          .from('vw_alertas_inteligentes')
+src/components/App/Dashboard/DashboardPage.tsx:370:            .from('vw_kpis_gestao_mensal')
+src/components/App/Dashboard/DashboardPage.tsx:382:          // PERÍODO HISTÓRICO: tentar dados_mensais primeiro, senão calcular das tabelas base
+src/components/App/Dashboard/DashboardPage.tsx:384:            .from('dados_mensais')
+src/components/App/Dashboard/DashboardPage.tsx:409:              .from('alunos')
+src/components/App/Dashboard/DashboardPage.tsx:419:              .from('alunos')
+src/components/App/Dashboard/DashboardPage.tsx:428:            // Buscar evasões do período via vw_kpis_retencao_mensal
+src/components/App/Dashboard/DashboardPage.tsx:430:              .from('vw_kpis_retencao_mensal')
+src/components/App/Dashboard/DashboardPage.tsx:500:        // Para histórico, usar vw_kpis_comercial_historico
+src/components/App/Dashboard/DashboardPage.tsx:504:          // Período histórico: usar vw_kpis_comercial_historico com range de meses
+src/components/App/Dashboard/DashboardPage.tsx:506:            .from('vw_kpis_comercial_historico')
+src/components/App/Dashboard/DashboardPage.tsx:550:            .from('leads')
+src/components/App/Dashboard/DashboardPage.tsx:587:            .from('alunos')
+src/components/App/Dashboard/DashboardPage.tsx:627:        // Buscar renovações e não renovações de movimentacoes_admin (fonte de verdade)
+src/components/App/Dashboard/DashboardPage.tsx:629:          .from('movimentacoes_admin')
+src/components/App/Dashboard/DashboardPage.tsx:639:          supabase.from('professores').select('id, nome, ativo').eq('ativo', true),
+src/components/App/Dashboard/DashboardPage.tsx:640:          supabase.from('professores_unidades').select('professor_id, unidade_id'),
+src/components/App/Dashboard/DashboardPage.tsx:641:          supabase.from('vw_turmas_implicitas').select('professor_id, total_alunos, unidade_id'),
+src/components/App/Dashboard/DashboardPage.tsx:642:          supabase.from('professores_performance').select('*').eq('ano', ano),
+src/components/App/Dashboard/DashboardPage.tsx:707:        // Taxa de renovação: usar movimentacoes_admin (fonte de verdade)
+src/components/App/Dashboard/DashboardPage.tsx:736:        // Histórico vem de dados_mensais; mês corrente vem de vw_dashboard_unidade (tempo real)
+src/components/App/Dashboard/DashboardPage.tsx:742:          .from('dados_mensais')
+src/components/App/Dashboard/DashboardPage.tsx:753:          .from('vw_dashboard_unidade')
+src/components/App/Dashboard/DashboardPage.tsx:798:          // Para período atual, usar vw_dashboard_unidade (dados em tempo real)
+src/components/App/Dashboard/DashboardPage.tsx:800:            .from('vw_dashboard_unidade')
+src/components/App/Dashboard/DashboardPage.tsx:822:          // Para períodos históricos, usar dados_mensais
+src/components/App/Dashboard/DashboardPage.tsx:825:            .from('unidades')
+src/components/App/Dashboard/DashboardPage.tsx:836:            // Filtrar dados_mensais por unidade se não for consolidado
+src/components/App/Dashboard/DashboardPage.tsx:838:              .from('dados_mensais')
+src/components/App/Dashboard/DashboardPage.tsx:873:                .from('vw_dashboard_unidade')
+src/components/App/Professores/JornadaProfessor.tsx:58:        .from('professor_metas')
+src/components/App/Professores/JornadaProfessor.tsx:74:          .from('professor_acoes')
+src/components/App/Professores/ModalDetalhesConversao.tsx:109:          .from('leads')
+src/components/App/Professores/ModalDetalhesPresenca.tsx:56:        let query = supabase.rpc('get_presenca_por_aluno_professor', {
+src/components/App/Professores/ModalDetalhesPresenca.tsx:69:            .from('aluno_presenca')
+src/components/App/Professores/ModalRelatorioCoordenacao.tsx:71:        .rpc('get_dados_relatorio_coordenacao', {
+src/components/App/Professores/TabCarteiraProfessores.tsx:92:        .from('cursos')
+src/components/App/Professores/TabCarteiraProfessores.tsx:98:      // Buscar carteira agregada via RPC (evita truncamento de 1000 linhas e RLS bypass da vw_turmas_implicitas)
+src/components/App/Professores/TabCarteiraProfessores.tsx:100:      const { data: carteiraData } = await supabase.rpc('get_carteira_professores', rpcParams);
+src/components/App/Professores/TabCarteiraProfessores.tsx:113:        .from('vw_kpis_professor_mensal')
+src/components/App/Professores/TabCarteiraProfessores.tsx:190:        .from('alunos')
+src/components/App/Professores/ProfessoresPage.tsx:137:        .from('unidades')
+src/components/App/Professores/ProfessoresPage.tsx:145:        .from('cursos')
+src/components/App/Professores/ProfessoresPage.tsx:165:        .from('professores')
+src/components/App/Professores/ProfessoresPage.tsx:173:        .from('professores_unidades')
+src/components/App/Professores/ProfessoresPage.tsx:184:        .from('professores_cursos')
+src/components/App/Professores/ProfessoresPage.tsx:192:      // Buscar turmas da view vw_turmas_implicitas (mesma fonte da aba Distribuição)
+src/components/App/Professores/ProfessoresPage.tsx:195:        .from('vw_turmas_implicitas')
+src/components/App/Professores/ProfessoresPage.tsx:199:      // Usar apenas vw_turmas_implicitas (mesma fonte do Analytics)
+src/components/App/Professores/ProfessoresPage.tsx:232:      // Usar apenas vw_turmas_implicitas (mesma fonte do Analytics)
+src/components/App/Professores/ProfessoresPage.tsx:461:          .from('professores')
+src/components/App/Professores/ProfessoresPage.tsx:475:          await supabase.from('professores_unidades').insert(unidadesInsert);
+src/components/App/Professores/ProfessoresPage.tsx:484:          await supabase.from('professores_cursos').insert(cursosInsert);
+src/components/App/Professores/ProfessoresPage.tsx:493:          .from('professores')
+src/components/App/Professores/ProfessoresPage.tsx:500:        await supabase.from('professores_unidades').delete().eq('professor_id', professorId);
+src/components/App/Professores/ProfessoresPage.tsx:507:          await supabase.from('professores_unidades').insert(unidadesInsert);
+src/components/App/Professores/ProfessoresPage.tsx:511:        await supabase.from('professores_cursos').delete().eq('professor_id', professorId);
+src/components/App/Professores/ProfessoresPage.tsx:517:          await supabase.from('professores_cursos').insert(cursosInsert);
+src/components/App/Professores/ProfessoresPage.tsx:535:        .from('professores')
+src/components/App/Professores/ProfessoresPage.tsx:554:        .from('professores')
+src/components/App/Professores/ProfessoresPage.tsx:575:      await supabase.from('professores_unidades').delete().eq('professor_id', professorParaExcluir.id);
+src/components/App/Professores/ProfessoresPage.tsx:576:      await supabase.from('professores_cursos').delete().eq('professor_id', professorParaExcluir.id);
+src/components/App/Professores/ProfessoresPage.tsx:580:        .from('professores')
+src/components/App/Professores/ModalDetalhesTurmas.tsx:79:        .from('alunos')
+src/components/App/Professores/FatorDemandaCursos.tsx:53:        .from('cursos')
+src/components/App/Professores/FatorDemandaCursos.tsx:63:        .from('alunos')
+src/components/App/Professores/FatorDemandaCursos.tsx:131:          .from('cursos')
+src/components/App/Professores/Modal360Ocorrencia.tsx:101:          .from('professor_360_ocorrencias')
+src/components/App/Professores/ModalNovaAcao.tsx:159:          .from('professor_acoes')
+src/components/App/Professores/ModalNovaAcao.tsx:167:          .from('professor_acoes')
+src/components/App/Professores/ModalNovaAcao.tsx:191:        .from('professor_acoes')
+src/components/App/Professores/PlanilhaProfessores.tsx:44:        supabase.from('professores').select('*').order('nome'),
+src/components/App/Professores/PlanilhaProfessores.tsx:45:        supabase.from('unidades').select('id, nome'),
+src/components/App/Professores/PlanilhaProfessores.tsx:96:            .from('professores')
+src/components/App/Professores/PlanilhaProfessores.tsx:117:            .from('professores')
+src/components/App/Professores/PlanilhaProfessores.tsx:151:        .from('professores')
+src/components/App/Professores/ModalNovaMeta.tsx:67:        .from('professor_metas')
+src/components/App/Professores/ModalDetalhesRetencao.tsx:66:          .from('movimentacoes_admin')
+src/components/App/Professores/ModalDetalhesRetencao.tsx:80:          supabase.from('motivos_saida').select('id, nome, conta_score_professor').eq('ativo', true),
+src/components/App/Professores/ModalCarteiraProfessor.tsx:60:        .from('alunos')
+src/components/App/Professores/TabPerformanceProfessores.tsx:187:        .from('professores')
+src/components/App/Professores/TabPerformanceProfessores.tsx:204:        .rpc('get_kpis_professor_periodo', rpcParams);
+src/components/App/Professores/TabPerformanceProfessores.tsx:210:        .from('vw_kpis_professor_mensal')
+src/components/App/Professores/TabPerformanceProfessores.tsx:224:        .from('vw_fator_demanda_professor')
+src/components/App/Professores/TabPerformanceProfessores.tsx:235:        .from('professores_unidades')
+src/components/App/Professores/TabPerformanceProfessores.tsx:240:        .from('professores_cursos')
+src/components/App/Professores/TabPerformanceProfessores.tsx:243:      // Buscar turmas da view vw_turmas_implicitas (filtrado por unidade se selecionada)
+src/components/App/Professores/TabPerformanceProfessores.tsx:245:        .from('vw_turmas_implicitas')
+src/components/App/Professores/TabPerformanceProfessores.tsx:256:        .from('turmas_explicitas')
+src/components/App/Professores/TabPerformanceProfessores.tsx:268:        .from('turmas_alunos')
+src/components/App/Professores/TabPerformanceProfessores.tsx:400:          // Turmas e alunos via carteira (fallback para vw_turmas_implicitas se RPC retornar 0)
+src/components/App/Professores/TabPerformanceProfessores.tsx:410:          // Métricas REAIS da view vw_kpis_professor_mensal
+src/components/App/Professores/TabPerformanceProfessores.tsx:438:            taxaCrescimentoAjustada: 0, // TODO: buscar da view vw_taxa_crescimento_professor
+src/components/App/Professores/ModalDetalhesProfessorPerformance.tsx:153:        .from('professor_metas')
+src/components/App/Professores/ModalDetalhesProfessorPerformance.tsx:167:        .from('professor_acoes')
+src/components/App/Professores/ModalDetalhesProfessorPerformance.tsx:183:        .from('alunos')
+src/components/App/Professores/ModalDetalhesProfessorPerformance.tsx:196:        .from('alunos')
+src/components/App/Professores/ModalDetalhesProfessorPerformance.tsx:209:        .from('movimentacoes_admin')
+src/components/App/Professores/ModalDetalhesProfessorPerformance.tsx:232:        .from('leads')
+src/components/App/Professores/ModalDetalhesProfessorPerformance.tsx:264:        .from('alunos')
+src/components/App/Professores/ModalDetalhesProfessorPerformance.tsx:273:        .from('movimentacoes_admin')
+src/components/App/Professores/ModalDetalhesProfessorPerformance.tsx:295:    await supabase.from('professor_metas').update({ status, updated_at: new Date().toISOString() }).eq('id', metaId);
+src/components/App/Professores/ModalDetalhesProfessorPerformance.tsx:300:    await supabase.from('professor_metas').delete().eq('id', metaId);
+src/components/App/Professores/ModalDetalhesProfessorPerformance.tsx:315:    await supabase.from('professor_metas').update({
+src/components/App/Professores/TabAgendaProfessores.tsx:347:            .from('professor_acoes')
+src/components/App/Professores/TabAgendaProfessores.tsx:466:        .from('professor_acoes')
+src/components/App/Professores/TabAgendaProfessores.tsx:481:        .from('professor_acoes')
+src/components/App/Professores/TabAgendaProfessores.tsx:501:        .from('catalogo_treinamentos')
+src/components/App/Professores/TabAgendaProfessores.tsx:510:        .from('professores')
+src/components/App/Professores/TabAgendaProfessores.tsx:519:        .from('professor_metas')
+src/components/App/Professores/TabAgendaProfessores.tsx:533:              .from('professor_acoes')
+src/components/App/Professores/TabAgendaProfessores.tsx:566:        .from('professor_acoes')
+src/components/App/Professores/TabAgendaProfessores.tsx:599:        .from('professor_acoes')
+src/components/App/Professores/TabAgendaProfessores.tsx:630:        .from('professor_acoes')
+src/components/App/Professores/TabAgendaProfessores.tsx:1443:                .from('professor_acoes')
+src/components/App/Professores/ModalDetalhesEvasoes.tsx:70:          .from('movimentacoes_admin')
+src/components/App/Professores/ModalDetalhesEvasoes.tsx:84:          supabase.from('motivos_saida').select('id, nome, conta_score_professor').eq('ativo', true),
+src/components/App/Feedback/FeedbackProfessorPage.tsx:169:        .from('aluno_feedback_professor')
+src/components/App/Feedback/FeedbackProfessorPage.tsx:178:        .from('aluno_feedback_sessoes')
+src/components/App/Snapshot/SnapshotDiario.tsx:70:        const { data } = await supabase.from('unidades').select('id, nome').order('nome');
+src/components/App/Snapshot/SnapshotDiario.tsx:99:        .from('relatorios_diarios')
+src/components/App/Snapshot/SnapshotDiario.tsx:131:        .from('leads')
+src/components/App/Snapshot/SnapshotDiario.tsx:139:        .from('movimentacoes_admin')
+src/components/App/Snapshot/SnapshotDiario.tsx:148:        .from('renovacoes')
+src/components/App/Snapshot/SnapshotDiario.tsx:254:          .from('relatorios_diarios')
+src/components/App/Snapshot/SnapshotDiario.tsx:262:          .from('relatorios_diarios')
+src/components/App/Lojinha/ModalEntradaLote.tsx:58:        .from('loja_produtos')
+src/components/App/Lojinha/ModalEntradaLote.tsx:77:              .from('loja_estoque')
+src/components/App/Lojinha/ModalEntradaLote.tsx:96:            .from('loja_estoque')
+src/components/App/Lojinha/ModalEntradaLote.tsx:144:          .from('loja_estoque')
+src/components/App/Lojinha/ModalEntradaLote.tsx:154:            .from('loja_estoque')
+src/components/App/Lojinha/ModalEntradaLote.tsx:160:            .from('loja_estoque')
+src/components/App/Lojinha/ModalEntradaLote.tsx:171:          .from('loja_movimentacoes_estoque')
+src/components/App/Lojinha/ModalHistoricoCarteira.tsx:39:        .from('loja_carteira_movimentacoes')
+src/components/App/Lojinha/TabComissoes.tsx:44:        .from('loja_carteira')
+src/components/App/Lojinha/TabComissoes.tsx:62:        .from('loja_carteira')
+src/components/App/Lojinha/TabComissoes.tsx:80:        .from('loja_carteira_movimentacoes')
+src/components/App/Lojinha/ModalProduto.tsx:85:        .from('lojinha-produtos')
+src/components/App/Lojinha/ModalProduto.tsx:92:        .from('lojinha-produtos')
+src/components/App/Lojinha/ModalProduto.tsx:213:          .from('loja_produtos')
+src/components/App/Lojinha/ModalProduto.tsx:222:          .from('loja_produtos')
+src/components/App/Lojinha/ModalProduto.tsx:244:            .from('loja_variacoes')
+src/components/App/Lojinha/ModalProduto.tsx:249:            .from('loja_variacoes')
+src/components/App/Lojinha/TabConfiguracoes.tsx:59:        .from('loja_configuracoes')
+src/components/App/Lojinha/TabConfiguracoes.tsx:70:        .from('loja_responsaveis_reposicao')
+src/components/App/Lojinha/TabConfiguracoes.tsx:78:        .from('loja_categorias')
+src/components/App/Lojinha/TabConfiguracoes.tsx:96:        .from('loja_configuracoes')
+src/components/App/Lojinha/TabConfiguracoes.tsx:103:          .from('loja_configuracoes')
+src/components/App/Lojinha/TabConfiguracoes.tsx:108:          .from('loja_configuracoes')
+src/components/App/Lojinha/TabConfiguracoes.tsx:161:        .from('loja_responsaveis_reposicao')
+src/components/App/Lojinha/TabConfiguracoes.tsx:200:          .from('loja_configuracoes')
+src/components/App/Lojinha/TabConfiguracoes.tsx:552:          .from('loja_responsaveis_reposicao')
+src/components/App/Lojinha/TabConfiguracoes.tsx:559:          .from('loja_responsaveis_reposicao')
+src/components/App/Lojinha/TabConfiguracoes.tsx:650:          .from('loja_categorias')
+src/components/App/Lojinha/TabConfiguracoes.tsx:656:          .from('loja_categorias')
+src/components/App/Lojinha/TabConfiguracoes.tsx:663:          .from('loja_categorias')
+src/components/App/Lojinha/ModalUsarLoja.tsx:68:        .from('loja_carteira')
+src/components/App/Lojinha/ModalUsarLoja.tsx:74:        .from('loja_carteira_movimentacoes')
+src/components/App/Lojinha/ModalSaque.tsx:65:        .from('loja_carteira')
+src/components/App/Lojinha/ModalSaque.tsx:71:        .from('loja_carteira_movimentacoes')
+src/components/App/Lojinha/TabProdutos.tsx:47:        .from('loja_categorias')
+src/components/App/Lojinha/TabProdutos.tsx:56:        .from('loja_produtos')
+src/components/App/Lojinha/TabProdutos.tsx:69:              .from('loja_estoque')
+src/components/App/Lojinha/TabEstoque.tsx:37:        .from('loja_estoque')
+src/components/App/Lojinha/TabEstoque.tsx:74:        .from('loja_movimentacoes_estoque')
+src/components/App/Lojinha/TabVendas.tsx:81:        .from('loja_produtos')
+src/components/App/Lojinha/TabVendas.tsx:95:              .from('loja_estoque')
+src/components/App/Lojinha/TabVendas.tsx:108:        .from('loja_vendas')
+src/components/App/Lojinha/TabVendas.tsx:135:      .from('colaboradores')
+src/components/App/Lojinha/TabVendas.tsx:198:      .from('alunos')
+src/components/App/Lojinha/TabVendas.tsx:221:      .from('professores')
+src/components/App/Lojinha/TabVendas.tsx:267:        .from('loja_vendas')
+src/components/App/Lojinha/TabVendas.tsx:293:          .from('loja_vendas_itens')
+src/components/App/Lojinha/TabVendas.tsx:307:          .from('loja_estoque')
+src/components/App/Lojinha/TabVendas.tsx:317:            .from('loja_estoque')
+src/components/App/Lojinha/ModalEstorno.tsx:52:        .from('loja_vendas')
+src/components/App/Lojinha/ModalEstorno.tsx:63:          .from('loja_estoque')
+src/components/App/Lojinha/ModalEstorno.tsx:73:            .from('loja_estoque')
+src/components/App/Lojinha/ModalEstorno.tsx:79:            .from('loja_movimentacoes_estoque')
+src/components/App/Alunos/TabelaAlunos.tsx:348:  // IMPORTANTE: Deve usar a mesma lógica da view vw_turmas_implicitas
+src/components/App/Alunos/TabelaAlunos.tsx:353:    // Filtrar apenas alunos ATIVOS com professor/dia/horário (mesma lógica da vw_turmas_implicitas)
+src/components/App/Alunos/TabelaAlunos.tsx:363:        // (mesma lógica da view vw_turmas_implicitas)
+src/components/App/Alunos/TabelaAlunos.tsx:490:      .from('alunos')
+src/components/App/Alunos/TabelaAlunos.tsx:506:      .from('alunos')
+src/components/App/Alunos/TabelaAlunos.tsx:530:      .from('alunos')
+src/components/App/Alunos/TabelaAlunos.tsx:553:        .from('movimentacoes_admin')
+src/components/App/Alunos/TabelaAlunos.tsx:560:        .from('renovacoes')
+src/components/App/Alunos/TabelaAlunos.tsx:567:        .from('anotacoes_alunos')
+src/components/App/Alunos/TabelaAlunos.tsx:654:        .from('anotacoes_alunos')
+src/components/App/Alunos/TabelaAlunos.tsx:671:        .from('anotacoes_alunos')
+src/components/App/Alunos/TabelaAlunos.tsx:695:        .from('anotacoes_alunos')
+src/components/App/Alunos/TabelaAlunos.tsx:720:        .from('anotacoes_alunos')
+src/components/App/Alunos/TabelaAlunos.tsx:757:        .from('anotacoes_alunos')
+src/components/App/Alunos/TabelaAlunos.tsx:811:        .from('alunos')
+src/components/App/Alunos/TabelaAlunos.tsx:834:        .from('alunos')
+src/components/App/Alunos/TabelaAlunos.tsx:862:        .from('alunos')
+src/components/App/Alunos/TabelaAlunos.tsx:884:          .from('historico_pagamentos')
+src/components/App/Alunos/TabelaAlunos.tsx:892:        .from('alunos')
+src/components/App/Alunos/TabelaAlunos.tsx:918:        .from('alunos')
+src/components/App/Alunos/ModalFichaAluno.tsx:314:        .from('alunos')
+src/components/App/Alunos/ModalFichaAluno.tsx:323:        supabase.from('canais_origem').select('id, nome').eq('ativo', true),
+src/components/App/Alunos/ModalFichaAluno.tsx:324:        supabase.from('formas_pagamento').select('id, nome').eq('ativo', true),
+src/components/App/Alunos/ModalFichaAluno.tsx:337:          .from('movimentacoes_admin')
+src/components/App/Alunos/ModalFichaAluno.tsx:343:          .from('renovacoes')
+src/components/App/Alunos/ModalFichaAluno.tsx:349:          .from('anotacoes_alunos')
+src/components/App/Alunos/ModalFichaAluno.tsx:357:        .from('anamneses')
+src/components/App/Alunos/ModalFichaAluno.tsx:373:          .from('alunos')
+src/components/App/Alunos/ModalFichaAluno.tsx:449:        .from('alunos')
+src/components/App/Alunos/ModalFichaAluno.tsx:485:      // Se valor_parcela mudou, criar registro em movimentacoes_admin
+src/components/App/Alunos/ModalFichaAluno.tsx:488:          .from('movimentacoes_admin')
+src/components/App/Alunos/ModalFichaAluno.tsx:530:        .from('vw_turmas_implicitas')
+src/components/App/Alunos/ModalFichaAluno.tsx:565:          .from('alunos')
+src/components/App/Alunos/ModalFichaAluno.tsx:588:      const { error } = await supabase.from('alunos').insert({
+src/components/App/Alunos/ContatoPopover.tsx:73:      .from('aluno_contatos')
+src/components/App/Alunos/ContatoPopover.tsx:105:    const { error } = await supabase.from('aluno_contatos').insert({
+src/components/App/Alunos/Auditoria/BiAgentMetrics.tsx:36:        supabase.rpc('execute_bi_query_lamusic', {
+src/components/App/Alunos/Auditoria/BiAgentMetrics.tsx:59:        supabase.rpc('execute_bi_query_lamusic', {
+src/components/App/Alunos/Auditoria/useAuditoriaEmusys.ts:67:        .from('alunos')
+src/components/App/Alunos/Auditoria/useAgentChat.ts:63:            .from('bi_conversations_lamusic')
+src/components/App/Alunos/Auditoria/useAgentChat.ts:78:        .from('bi_messages_lamusic')
+src/components/App/Alunos/Auditoria/useAgentChat.ts:146:        .from('bi_conversations_lamusic')
+src/components/App/Alunos/Auditoria/useAgentChat.ts:159:        .from('bi_messages_lamusic')
+src/components/App/Alunos/Auditoria/useAgentChat.ts:180:    await supabase.from('bi_messages_lamusic').update({ feedback_rating: rating }).eq('id', messageId);
+src/components/App/Alunos/Auditoria/ConfigIA.tsx:29:        supabase.from('bi_agent_config_lamusic').select('model').eq('is_active', true).limit(1).single()
+src/components/App/Alunos/Auditoria/ConfigIA.tsx:33:            supabase.from('assistente_ia_config').select('openai_api_key').limit(1).single()
+src/components/App/Alunos/Auditoria/ConfigIA.tsx:42:        await supabase.from('bi_agent_config_lamusic').update({ model: newModel }).eq('is_active', true);
+src/components/App/Alunos/Auditoria/ConfigIA.tsx:54:            await supabase.from('assistente_ia_config').update({
+src/components/App/Alunos/Auditoria/AuditoriaWidget.tsx:137:            supabase.from('unidades').select('id, nome').eq('ativo', true).order('nome')
+src/components/App/Alunos/Auditoria/AuditoriaWidget.tsx:274:                        .from('bi-uploads')
+src/components/App/Alunos/Auditoria/AuditoriaWidget.tsx:280:                        .from('bi-uploads')
+src/components/App/Alunos/SucessoCliente/PesquisaEvasaoTab.tsx:229:        .from('movimentacoes_admin')
+src/components/App/Alunos/SucessoCliente/PesquisaEvasaoTab.tsx:239:      // Atualizar telefone_snapshot em movimentacoes_admin
+src/components/App/Alunos/SucessoCliente/PesquisaEvasaoTab.tsx:241:        .from('movimentacoes_admin')
+src/components/App/Alunos/SucessoCliente/PesquisaEvasaoTab.tsx:248:          .from('alunos')
+src/components/App/Alunos/SucessoCliente/ModalDetalhesSucessoAluno.tsx:114:        .from('aluno_metas')
+src/components/App/Alunos/SucessoCliente/ModalDetalhesSucessoAluno.tsx:123:        .from('aluno_acoes')
+src/components/App/Alunos/SucessoCliente/ModalDetalhesSucessoAluno.tsx:264:      .from('aluno_presenca')
+src/components/App/Alunos/SucessoCliente/TabSucessoAluno.tsx:84:        .from('vw_aluno_sucesso_lista')
+src/components/App/Alunos/SucessoCliente/TabSucessoAluno.tsx:106:      const { data, error } = await supabase.rpc('calcular_health_score_alunos_batch', {
+src/components/App/Alunos/SucessoCliente/PresencaTab.tsx:128:          .from('alunos')
+src/components/App/Alunos/SucessoCliente/PresencaTab.tsx:158:        .from('emusys_sync_log')
+src/components/App/Alunos/SucessoCliente/PresencaTab.tsx:181:        .from('aluno_presenca')
+src/components/App/Alunos/SucessoCliente/PresencaTab.tsx:223:      .from('aluno_presenca')
+src/components/App/Alunos/SucessoCliente/PresencaTab.tsx:280:          .from('aluno_presenca')
+src/components/App/Alunos/SucessoCliente/PresencaTab.tsx:363:        .from('aluno_presenca')
+src/components/App/Alunos/SucessoCliente/ModalEnviarFeedback.tsx:96:        .from('professores')
+src/components/App/Alunos/SucessoCliente/ModalEnviarFeedback.tsx:105:        .from('professores_unidades')
+src/components/App/Alunos/SucessoCliente/ModalEnviarFeedback.tsx:128:        .from('alunos')
+src/components/App/Alunos/SucessoCliente/ModalEnviarFeedback.tsx:151:        .from('aluno_feedback_sessoes')
+src/components/App/Alunos/SucessoCliente/ModalEnviarFeedback.tsx:254:            .from('aluno_feedback_sessoes')
+src/components/App/Alunos/ModalNovoAluno.tsx:197:        .from('professores_unidades')
+src/components/App/Alunos/ModalNovoAluno.tsx:217:        .from('professores_cursos')
+src/components/App/Alunos/ModalNovoAluno.tsx:255:        supabase.from('canais_origem').select('id, nome').eq('ativo', true),
+src/components/App/Alunos/ModalNovoAluno.tsx:256:        supabase.from('formas_pagamento').select('id, nome').eq('ativo', true),
+src/components/App/Alunos/ModalNovoAluno.tsx:257:        supabase.from('unidades').select('id, nome').eq('ativo', true),
+src/components/App/Alunos/ModalNovoAluno.tsx:286:      const { data, error } = await supabase.rpc('buscar_anamnese_pendente', {
+src/components/App/Alunos/ModalNovoAluno.tsx:339:        .from('alunos')
+src/components/App/Alunos/GestaoTurmas.tsx:96:        .from('salas')
+src/components/App/Alunos/GestaoTurmas.tsx:124:          .from('turmas_explicitas')
+src/components/App/Alunos/GestaoTurmas.tsx:138:          .from('turmas_explicitas')
+src/components/App/Alunos/GestaoTurmas.tsx:150:          .from('turmas_explicitas')
+src/components/App/Alunos/ModalVincularAlunoTurma.tsx:77:        .from('vw_turmas_implicitas')
+src/components/App/Alunos/ModalVincularAlunoTurma.tsx:89:        .from('cursos')
+src/components/App/Alunos/ModalVincularAlunoTurma.tsx:139:      const { error } = await supabase.from('alunos').insert({
+src/components/App/Alunos/AlunosPage.tsx:323:      let q = supabase.from('alunos').select(selectFields).order('nome');
+src/components/App/Alunos/AlunosPage.tsx:333:          let q = supabase.from('alunos').select(selectFields).not('data_saida', 'is', null)
+src/components/App/Alunos/AlunosPage.tsx:343:    let qTurmasView = supabase.from('vw_turmas_implicitas').select('*');
+src/components/App/Alunos/AlunosPage.tsx:352:      supabase.from('anotacoes_alunos')
+src/components/App/Alunos/AlunosPage.tsx:361:      supabase.rpc('get_tempo_permanencia', {
+src/components/App/Alunos/AlunosPage.tsx:384:        .from('anamneses')
+src/components/App/Alunos/AlunosPage.tsx:521:      // Mesma régua da view vw_kpis_gestao_mensal: pessoas distintas (ativo+trancado),
+src/components/App/Alunos/AlunosPage.tsx:637:      .from('turmas_explicitas')
+src/components/App/Alunos/AlunosPage.tsx:655:        .from('turmas_alunos')
+src/components/App/Alunos/AlunosPage.tsx:699:          .from('professores_unidades')
+src/components/App/Alunos/AlunosPage.tsx:705:            .from('professores').select('id, nome')
+src/components/App/Alunos/AlunosPage.tsx:712:        .from('professores').select('id, nome').eq('ativo', true).order('nome');
+src/components/App/Alunos/AlunosPage.tsx:718:      .from('salas').select('id, nome, capacidade_maxima')
+src/components/App/Alunos/AlunosPage.tsx:728:      supabase.from('cursos').select('id, nome, is_projeto_banda').eq('ativo', true).order('nome'),
+src/components/App/Alunos/AlunosPage.tsx:729:      supabase.from('tipos_matricula').select('id, nome').eq('ativo', true).order('id'),
+src/components/App/Alunos/AlunosPage.tsx:731:      supabase.from('horarios').select('id, nome, hora_inicio').eq('ativo', true).order('hora_inicio'),
+src/components/App/Alunos/AlunosPage.tsx:968:        .from('turmas_alunos')
+src/components/App/Alunos/AlunosPage.tsx:974:        .from('turmas_explicitas')
+src/components/App/Alunos/AlunosPage.tsx:998:          .from('turmas_alunos')
+src/components/App/Alunos/AlunosPage.tsx:1006:        .from('alunos')
+src/components/App/Alunos/AlunosPage.tsx:1013:          .from('turmas_historico')
+src/components/App/Alunos/AlunosPage.tsx:1110:          .from('salas')
+src/components/App/Alunos/AlunosPage.tsx:1138:            .from('turmas_explicitas')
+src/components/App/Alunos/AlunosPage.tsx:1152:            .from('turmas_explicitas')
+src/components/App/Alunos/AlunosPage.tsx:1164:            .from('turmas_explicitas')
+src/components/App/Alunos/AlunosPage.tsx:1406:                      const { data, error } = await supabase.rpc('recalcular_dados_mensais', {
+src/components/App/Alunos/Automacao/TabAutomacao.tsx:64:        .from('automacao_log')
+src/components/App/Alunos/ModalNovaTurma.tsx:79:      const { data } = await supabase.from('unidades').select('id, nome').eq('ativo', true);
+src/components/App/Alunos/ModalNovaTurma.tsx:95:        .from('professores_cursos')
+src/components/App/Alunos/ModalNovaTurma.tsx:122:        .from('professores_unidades')
+src/components/App/Alunos/ModalNovaTurma.tsx:152:        .from('salas')
+src/components/App/Alunos/ModalNovaTurma.tsx:175:        .from('professores_unidades')
+src/components/App/Alunos/ModalNovaTurma.tsx:500:        .from('turmas_explicitas')
+src/components/App/Alunos/ModalNovaTurma.tsx:520:          .from('turmas_alunos')
+src/components/App/Alunos/ModalNovaTurma.tsx:533:              .from('alunos')
+src/components/App/Alunos/ModalAdicionarAlunoTurma.tsx:294:          .from('turmas_alunos')
+src/components/App/Alunos/ModalAdicionarAlunoTurma.tsx:302:        .from('alunos')
+src/components/App/Alunos/ModalAdicionarAlunoTurma.tsx:318:          .from('turmas_alunos')
+src/components/App/Alunos/ModalAdicionarAlunoTurma.tsx:330:          .from('turmas_historico')
+src/components/App/Comercial/PlanoAcaoComercial.tsx:190:        .from('insights_salvos')
+src/components/App/Comercial/PlanoAcaoComercial.tsx:221:        .from('insights_salvos')
+src/components/App/Comercial/PlanoAcaoComercial.tsx:260:        .from('insights_salvos')
+src/components/App/Comercial/AlertasComercial.tsx:150:        .from('leads')
+src/components/App/Comercial/AlertasComercial.tsx:179:        .from('lead_experimentais')
+src/components/App/Comercial/PlanilhaComercial.tsx:76:          sb.from('canais_origem').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/Comercial/PlanilhaComercial.tsx:77:          sb.from('cursos').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/Comercial/PlanilhaComercial.tsx:78:          sb.from('professores').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/Comercial/PlanilhaComercial.tsx:79:          sb.from('formas_pagamento').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/Comercial/PlanilhaComercial.tsx:102:        .from('leads')
+src/components/App/Comercial/PlanilhaComercial.tsx:233:          .from('leads')
+src/components/App/Comercial/PlanilhaComercial.tsx:249:          .from('leads')
+src/components/App/Comercial/PlanilhaComercial.tsx:287:        .from('leads')
+src/components/App/Comercial/TabProgramaMatriculador.tsx:104:        .from('programa_matriculador_config')
+src/components/App/Comercial/ComercialPage.tsx:541:      .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:618:      const { data, error } = await supabase.rpc('buscar_anamnese_pendente', {
+src/components/App/Comercial/ComercialPage.tsx:712:          supabase.from('canais_origem').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/Comercial/ComercialPage.tsx:713:          supabase.from('professores').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/Comercial/ComercialPage.tsx:714:          supabase.from('formas_pagamento').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/Comercial/ComercialPage.tsx:715:          supabase.from('unidades').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/Comercial/ComercialPage.tsx:723:            .from('unidades_cursos')
+src/components/App/Comercial/ComercialPage.tsx:741:              .from('cursos')
+src/components/App/Comercial/ComercialPage.tsx:750:            .from('cursos')
+src/components/App/Comercial/ComercialPage.tsx:782:        .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:820:          .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:870:      // Se não houver registros em leads, tentar buscar de dados_comerciais (histórico)
+src/components/App/Comercial/ComercialPage.tsx:878:        // Buscar dados históricos de dados_comerciais
+src/components/App/Comercial/ComercialPage.tsx:880:          .from('dados_comerciais')
+src/components/App/Comercial/ComercialPage.tsx:888:            .from('unidades')
+src/components/App/Comercial/ComercialPage.tsx:898:            .from('unidades')
+src/components/App/Comercial/ComercialPage.tsx:960:        .from('alunos')
+src/components/App/Comercial/ComercialPage.tsx:1015:            ? supabase.from('professores').select('id, nome').in('id', Array.from(profIds))
+src/components/App/Comercial/ComercialPage.tsx:1018:            ? supabase.from('formas_pagamento').select('id, nome, sigla').in('id', Array.from(formaIds))
+src/components/App/Comercial/ComercialPage.tsx:1021:            ? supabase.from('leads').select('id, nome, aluno_id, canal_origem_id, data_contato, canais_origem(nome)').in('aluno_id', alunoIds)
+src/components/App/Comercial/ComercialPage.tsx:1090:            .from('professores')
+src/components/App/Comercial/ComercialPage.tsx:1107:          .from('lead_experimentais')
+src/components/App/Comercial/ComercialPage.tsx:1165:            .from('lead_experimentais')
+src/components/App/Comercial/ComercialPage.tsx:1243:          uni(supabase.from('leads')
+src/components/App/Comercial/ComercialPage.tsx:1249:          uni(supabase.from('lead_experimentais')
+src/components/App/Comercial/ComercialPage.tsx:1255:          uni(supabase.from('alunos')
+src/components/App/Comercial/ComercialPage.tsx:1297:        .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:1360:        .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:1444:      const { error } = await supabase.from('leads').update({
+src/components/App/Comercial/ComercialPage.tsx:1467:        const { data: inserted } = await supabase.from('lead_experimentais').upsert(expRecord, {
+src/components/App/Comercial/ComercialPage.tsx:1518:        const { error } = await supabase.from('leads').update({
+src/components/App/Comercial/ComercialPage.tsx:1574:          const { error } = await supabase.from('leads').update({ canal_origem_id: valor }).eq('id', leadId);
+src/components/App/Comercial/ComercialPage.tsx:1577:          const { error } = await supabase.from('alunos').update({ canal_origem_id: valor }).eq('id', matriculaId);
+src/components/App/Comercial/ComercialPage.tsx:1582:        const { error } = await supabase.from('leads').update({ [LEAD_COL_MAP[campo]]: valor }).eq('id', leadId);
+src/components/App/Comercial/ComercialPage.tsx:1587:        const { error } = await supabase.from('alunos').update({ [col]: valor }).eq('id', matriculaId);
+src/components/App/Comercial/ComercialPage.tsx:1620:      const { error } = await supabase.from('leads').update({ [col]: valor }).eq('id', leadId);
+src/components/App/Comercial/ComercialPage.tsx:1665:        .from('lead_experimentais')
+src/components/App/Comercial/ComercialPage.tsx:1708:        await supabase.from('leads_automacao_log').insert(
+src/components/App/Comercial/ComercialPage.tsx:1713:        await supabase.from('automacao_log').insert(
+src/components/App/Comercial/ComercialPage.tsx:1736:        .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:1768:      const { error } = await supabase.from('alunos').delete().eq('id', deleteMatriculaId);
+src/components/App/Comercial/ComercialPage.tsx:1820:      const { error } = await supabase.from('leads').delete().in('id', liberados);
+src/components/App/Comercial/ComercialPage.tsx:1865:          .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:2022:      const { error } = await supabase.from('leads').insert(registros);
+src/components/App/Comercial/ComercialPage.tsx:2074:      .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:2110:        .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:2154:        const { error } = await supabase.from('leads').update({
+src/components/App/Comercial/ComercialPage.tsx:2171:            .from('alunos')
+src/components/App/Comercial/ComercialPage.tsx:2179:            .from('alunos')
+src/components/App/Comercial/ComercialPage.tsx:2195:        const { data: newLead, error } = await supabase.from('leads').insert({
+src/components/App/Comercial/ComercialPage.tsx:2219:      const { error: expErr } = await supabase.from('lead_experimentais').upsert({
+src/components/App/Comercial/ComercialPage.tsx:2337:        const { data: leadData, error } = await supabase.from('leads').insert(registro).select().single();
+src/components/App/Comercial/ComercialPage.tsx:2348:          .from('lead_experimentais')
+src/components/App/Comercial/ComercialPage.tsx:2412:        const { data: alunoData, error: alunoError } = await supabase.from('alunos').insert(novoAluno).select().single();
+src/components/App/Comercial/ComercialPage.tsx:2475:      .from('alunos')
+src/components/App/Comercial/ComercialPage.tsx:2506:        .from('unidades')
+src/components/App/Comercial/ComercialPage.tsx:2519:      .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:2530:      .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:2539:      const { data: profs } = await supabase.from('professores').select('id, nome').in('id', expProfIds);
+src/components/App/Comercial/ComercialPage.tsx:2545:      .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:2617:        .from('unidades')
+src/components/App/Comercial/ComercialPage.tsx:2630:      .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:2706:        .from('unidades')
+src/components/App/Comercial/ComercialPage.tsx:2719:      .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:2729:      .from('lead_experimentais')
+src/components/App/Comercial/ComercialPage.tsx:2936:        .from('unidades')
+src/components/App/Comercial/ComercialPage.tsx:3080:        .from('unidades')
+src/components/App/Comercial/ComercialPage.tsx:3096:      .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:3107:      .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:3178:        .from('unidades')
+src/components/App/Comercial/ComercialPage.tsx:3194:      .from('leads')
+src/components/App/Comercial/ComercialPage.tsx:3205:      .from('leads')
+src/components/App/Campanhas/tabs/ConfigTab.tsx:397:    supabase.from('contatos_bloqueados_campanha').select('*').order('bloqueado_em', { ascending: false }).then(({ data }) => {
+src/components/App/Campanhas/tabs/ConfigTab.tsx:404:    const { error } = await supabase.from('contatos_bloqueados_campanha').delete().eq('id', id)
+src/components/App/Campanhas/tabs/ConfigTab.tsx:448:    supabase.from('respostas_rapidas_campanha').select('*').order('titulo').then(({ data }) => {
+src/components/App/Campanhas/tabs/ConfigTab.tsx:456:    const { data, error } = await supabase.from('respostas_rapidas_campanha').insert({ titulo: novoTitulo.trim(), conteudo: novoConteudo.trim() }).select().single()
+src/components/App/Campanhas/tabs/ConfigTab.tsx:465:    const { error } = await supabase.from('respostas_rapidas_campanha').delete().eq('id', id)
+src/components/App/Campanhas/tabs/ConversasTab.tsx:249:    supabase.from('respostas_rapidas_campanha').select('*').order('titulo').then(({ data }) => {
+src/components/App/Campanhas/tabs/ConversasTab.tsx:440:    supabase.from('agente_conversas').select('bot_ativo').eq('telefone', tel).order('ultima_mensagem_em', { ascending: false }).limit(1).maybeSingle().then(({ data }) => {
+src/components/App/Campanhas/tabs/ConversasTab.tsx:455:      const { data } = await supabase.from('agente_conversas')
+src/components/App/Campanhas/tabs/ConversasTab.tsx:515:      const { data: conv } = await supabase.from('conversas_campanha').select('id, telefone').eq('id', conversaId).single()
+src/components/App/Campanhas/tabs/ConversasTab.tsx:517:        await supabase.from('mensagens_campanha').insert({
+src/components/App/Campanhas/tabs/ConversasTab.tsx:590:    const { error } = await supabase.from('contatos_bloqueados_campanha').upsert({ telefone, motivo: 'Bloqueado manualmente via chat' }, { onConflict: 'unidade_id,telefone' })
+src/components/App/Campanhas/tabs/ConversasTab.tsx:602:    const { data: existing } = await supabase.from('agente_conversas').select('id').eq('telefone', tel).limit(1).maybeSingle()
+src/components/App/Campanhas/tabs/ConversasTab.tsx:606:      const { error } = await supabase.from('agente_conversas')
+src/components/App/Campanhas/tabs/ConversasTab.tsx:612:      const { data: conv } = await supabase.from('conversas_campanha').select('numero_meta_id, unidade_id').eq('id', conversaId).single()
+src/components/App/Campanhas/tabs/ConversasTab.tsx:616:      const { data: agente } = await supabase.from('agentes')
+src/components/App/Campanhas/tabs/ConversasTab.tsx:624:      const { error } = await supabase.from('agente_conversas').insert({
+src/components/App/Campanhas/tabs/AnalyticsTab.tsx:319:      let q = supabase.from('campanhas').select('id, nome, enviados, entregues, lidos, respondidos, falhas, custo_estimado, custo_real, created_at, total_contatos')
+src/components/App/Campanhas/tabs/AnalyticsTab.tsx:348:      let qNum = supabase.from('numeros_meta').select('orcamento_mensal').limit(1)
+src/components/App/Campanhas/tabs/AnalyticsTab.tsx:359:      const { data: msgs } = await supabase.from('mensagens_campanha').select('created_at').eq('direcao', 'inbound')
+src/components/App/Campanhas/components/ModalNovaCampanha.tsx:175:    supabase.from('unidades').select('id, nome').eq('ativo', true).order('nome').then(({ data }) => setUnidades(data ?? []))
+src/components/App/Campanhas/components/ModalNovaCampanha.tsx:180:    supabase.from('cursos').select('id, nome').eq('ativo', true).order('nome').then(({ data }) => setCursosLista(data ?? []))
+src/components/App/Campanhas/components/ModalNovaCampanha.tsx:188:      .from('alunos')
+src/components/App/Campanhas/components/ModalNovaCampanha.tsx:679:        .from('whatsapp-media-campanhas')
+src/components/App/Campanhas/components/ModalNovaCampanha.tsx:683:        .from('whatsapp-media-campanhas')
+src/components/App/Campanhas/components/ModalNovaCampanha.tsx:838:        .from('campanhas')
+src/components/App/Campanhas/components/ModalNovaCampanha.tsx:863:        const { error } = await supabase.from('campanha_contatos').insert(batch)
+src/components/App/Campanhas/components/CampanhaDrawer.tsx:50:      .from('templates_meta')
+src/components/App/Campanhas/components/ChatInfoPanel.tsx:44:        .from('conversas_campanha')
+src/components/App/Campanhas/components/ChatInfoPanel.tsx:49:        .from('conversas_campanha').select('id').eq('telefone', telefone)
+src/components/App/Campanhas/components/ChatInfoPanel.tsx:57:          .from('mensagens_campanha')
+src/components/App/Campanhas/components/ChatInfoPanel.tsx:69:        .from('agente_conversas')
+src/components/App/Campanhas/components/ChatInfoPanel.tsx:77:        const { data: agente } = await supabase.from('agentes').select('nome, modelo, provider').eq('id', agenteConv.agente_id).single()
+src/components/App/Campanhas/hooks/useCampanhasConfig.ts:17:      .from('campanhas_config')
+src/components/App/Campanhas/hooks/useCampanhasConfig.ts:29:      .from('campanhas_config')
+src/components/App/Campanhas/hooks/useCampanhas.ts:44:        .from('campanhas')
+src/components/App/Campanhas/hooks/useCampanhas.ts:123:      .from('campanhas')
+src/components/App/Campanhas/hooks/useCampanhas.ts:148:      .from('campanha_contatos')
+src/components/App/Campanhas/hooks/useCampanhas.ts:170:      .from('campanha_contatos')
+src/components/App/Campanhas/hooks/useCampanhas.ts:177:    await supabase.from('campanhas').update({ falhas: 0, status: 'executando', updated_at: new Date().toISOString() }).eq('id', campanhaId)
+src/components/App/Campanhas/hooks/useCampanhas.ts:192:    await supabase.from('mensagens_campanha').delete().eq('campanha_id', campanhaId)
+src/components/App/Campanhas/hooks/useCampanhas.ts:193:    await supabase.from('campanha_contatos').delete().eq('campanha_id', campanhaId)
+src/components/App/Campanhas/hooks/useCampanhas.ts:195:      .from('campanhas')
+src/components/App/Campanhas/hooks/useTemplatesMeta.ts:38:        .from('templates_meta')
+src/components/App/Campanhas/hooks/useAgentes.ts:41:      let query = supabase.from('agentes').select('*').order('nome')
+src/components/App/Campanhas/hooks/useAgentes.ts:64:    const { error: err } = await supabase.from('agentes').insert(sanitizeForm(form))
+src/components/App/Campanhas/hooks/useAgentes.ts:71:    const { error: err } = await supabase.from('agentes')
+src/components/App/Campanhas/hooks/useAgentes.ts:80:    const { error: err } = await supabase.from('agentes').delete().eq('id', id)
+src/components/App/Campanhas/hooks/useAgentes.ts:108:        supabase.from('agente_conversas').select('*', { count: 'exact', head: true }).eq('agente_id', id),
+src/components/App/Campanhas/hooks/useAgentes.ts:109:        supabase.from('mensagens_campanha').select('*', { count: 'exact', head: true }).eq('enviado_por_agente', id),
+src/components/App/Campanhas/hooks/useAgentes.ts:110:        supabase.from('agente_conversas').select('*', { count: 'exact', head: true }).eq('agente_id', id).eq('status', 'transferred'),
+src/components/App/Campanhas/hooks/useKPIsCampanha.ts:32:      let qCampanhas = supabase.from('campanhas').select('status, enviados, entregues, lidos, respondidos, falhas, custo_estimado, custo_real, created_at')
+src/components/App/Campanhas/hooks/useKPIsCampanha.ts:53:      let qNumero = supabase.from('numeros_meta').select('orcamento_mensal, limite_diario').limit(1)
+src/components/App/Campanhas/hooks/useKPIsCampanha.ts:63:        .from('campanha_contatos')
+src/components/App/Campanhas/hooks/useKPIsCampanha.ts:70:      let qAgentes = supabase.from('agentes').select('id', { count: 'exact', head: true }).eq('is_active', true).eq('status', 'active')
+src/components/App/Campanhas/hooks/useKPIsCampanha.ts:75:      let qConversas = supabase.from('conversas_campanha').select('id', { count: 'exact', head: true }).eq('status', 'open')
+src/components/App/Campanhas/hooks/useConversasCampanha.ts:58:        .from('conversas_campanha')
+src/components/App/Campanhas/hooks/useConversasCampanha.ts:88:        .from('conversas_campanha')
+src/components/App/Campanhas/hooks/useConversasCampanha.ts:115:    supabase.from('conversas_campanha').select('id').eq('telefone', telefone).then(({ data }) => {
+src/components/App/Campanhas/hooks/useConversasCampanha.ts:126:        .from('mensagens_campanha')
+src/components/App/Campanhas/hooks/useConversasCampanha.ts:171:    supabase.from('conversas_campanha').update({ nao_lidas: 0 }).eq('id', conversaId).then(() => {})
+src/components/App/Campanhas/hooks/useConversasCampanha.ts:175:    const { data } = await supabase.from('conversas_campanha').select('numero_meta_id, telefone').eq('id', conversaId!).single()
+src/components/App/Campanhas/hooks/useConversasCampanha.ts:199:    const { error: uploadErr } = await supabase.storage.from('whatsapp-media-campanhas').upload(filePath, arquivo, { contentType: arquivo.type })
+src/components/App/Campanhas/hooks/useConversasCampanha.ts:201:    const { data: { publicUrl } } = supabase.storage.from('whatsapp-media-campanhas').getPublicUrl(filePath)
+src/components/App/Campanhas/hooks/useConversasCampanha.ts:220:    const { error: dbErr } = await supabase.from('mensagens_campanha')
+src/components/App/Campanhas/hooks/useConversasCampanha.ts:245:    const { data: convs } = await supabase.from('conversas_campanha').select('id').eq('telefone', telefone)
+src/components/App/Campanhas/hooks/useConversasCampanha.ts:250:      const { error: delErr } = await supabase.from('mensagens_campanha').delete().in('conversa_id', ids)
+src/components/App/Campanhas/hooks/useConversasCampanha.ts:255:    await supabase.from('agente_conversas')
+src/components/App/Campanhas/hooks/useConversasCampanha.ts:260:    await supabase.from('conversas_campanha')
+src/components/App/Campanhas/hooks/useConversasCampanha.ts:265:    await supabase.from('agente_fila_mensagens').delete().eq('telefone', telefone)
+src/components/App/Campanhas/hooks/useContatosCampanha.ts:26:      .from('campanha_contatos')
+src/components/App/Campanhas/hooks/useNumerosMeta.ts:45:        .from('numeros_meta')
+src/components/App/Campanhas/hooks/useNumerosMeta.ts:66:    const { error: err } = await supabase.from('numeros_meta').insert({
+src/components/App/Campanhas/hooks/useNumerosMeta.ts:77:      .from('numeros_meta')
+src/components/App/Campanhas/hooks/useNumerosMeta.ts:86:    const { error: err } = await supabase.from('numeros_meta').delete().eq('id', id)
+src/components/App/Metas/MetasPage.tsx:60:          .from('metas')
+src/components/App/Metas/MetasPage.tsx:64:        supabase.from('unidades').select('id, nome'),
+src/components/App/Metas/MetasPage.tsx:108:            .from('metas')
+src/components/App/Metas/MetasPage.tsx:113:            .from('metas')
+src/components/App/Metas/SimuladorTurma/SimuladorTurmaPage.tsx:81:        .from('simulacoes_turma')
+src/components/App/Metas/SimuladorTurma/SimuladorTurmaPage.tsx:128:        .from('simulacoes_turma')
+src/components/App/Metas/SimuladorTurma/RankingProfessores.tsx:49:        .from('metas_professor_turma')
+src/components/App/Metas/MetasPageNew.tsx:159:          .from('metas_kpi')
+src/components/App/Metas/MetasPageNew.tsx:163:        supabase.from('unidades').select('id, nome'),
+src/components/App/Metas/MetasPageNew.tsx:241:          await supabase.from('metas_kpi').delete().eq('id', existing.id);
+src/components/App/Metas/MetasPageNew.tsx:246:          .from('metas_kpi')
+src/components/App/Metas/MetasPageNew.tsx:252:          .from('metas_kpi')
+src/components/App/Metas/Simulador/InsightsIA.tsx:205:        .from('planos_acao')
+src/components/App/Metas/Simulador/InsightsIA.tsx:226:        .from('planos_acao')
+src/components/App/Metas/Simulador/InsightsIA.tsx:269:        .from('planos_acao')
+src/components/App/Metas/Simulador/InsightsIA.tsx:299:        .from('planos_acao')
+src/components/App/Metas/Simulador/SimuladorPage.tsx:93:        .from('metas_kpi')
+src/components/App/Metas/Simulador/TemplatesCenario.tsx:98:        .from('templates_cenario')
+src/components/App/Metas/Simulador/TemplatesCenario.tsx:107:        .from('templates_cenario_unidade')
+src/components/App/Metas/Simulador/TemplatesCenario.tsx:224:        .from('templates_cenario_unidade')
+src/components/App/Admin/GerenciarUsuarios.tsx:76:        .from('usuarios')
+src/components/App/Admin/GerenciarUsuarios.tsx:91:        .from('unidades')
+src/components/App/Admin/GerenciarUsuarios.tsx:197:          .from('usuarios')
+src/components/App/Admin/GerenciarUsuarios.tsx:234:        .from('usuarios')
+src/components/App/Admin/PainelPermissoes/ModalEditarPerfisUsuario.tsx:58:        .from('usuario_perfis')
+src/components/App/Admin/PainelPermissoes/ModalEditarPerfisUsuario.tsx:82:        .from('unidades')
+src/components/App/Admin/PainelPermissoes/ModalEditarPerfisUsuario.tsx:99:        .from('usuario_perfis')
+src/components/App/Admin/PainelPermissoes/ModalEditarPerfisUsuario.tsx:106:      await supabase.from('auditoria_acesso').insert({
+src/components/App/Admin/PainelPermissoes/ModalEditarPerfisUsuario.tsx:126:        .from('usuario_perfis')
+src/components/App/Admin/PainelPermissoes/ModalEditarPerfisUsuario.tsx:167:      await supabase.from('auditoria_acesso').insert({
+src/components/App/Admin/PainelPermissoes/ModalNovoPerfil.tsx:65:        .from('perfis')
+src/components/App/Admin/PainelPermissoes/ModalNovoPerfil.tsx:89:          .from('perfil_permissoes')
+src/components/App/Admin/PainelPermissoes/ModalNovoPerfil.tsx:99:          await supabase.from('perfil_permissoes').insert(inserts);
+src/components/App/Admin/PainelPermissoes/ModalNovoPerfil.tsx:104:      await supabase.from('auditoria_acesso').insert({
+src/components/App/Admin/PainelPermissoes/TabUsuariosPerfil.tsx:31:        .from('usuarios')
+src/components/App/Admin/PainelPermissoes/TabUsuariosPerfil.tsx:41:              .rpc('usuario_perfis_lista', { p_usuario_id: u.id });
+src/components/App/Admin/PainelPermissoes/ModalAtribuirPerfil.tsx:48:        supabase.from('usuarios').select('id, nome, email').eq('ativo', true).order('nome'),
+src/components/App/Admin/PainelPermissoes/ModalAtribuirPerfil.tsx:49:        supabase.from('unidades').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/Admin/PainelPermissoes/ModalAtribuirPerfil.tsx:66:      const { error } = await supabase.from('usuario_perfis').insert({
+src/components/App/Admin/PainelPermissoes/ModalAtribuirPerfil.tsx:85:      await supabase.from('auditoria_acesso').insert({
+src/components/App/Admin/PainelPermissoes/index.tsx:69:        .from('perfis')
+src/components/App/Admin/PainelPermissoes/index.tsx:79:              .from('perfil_permissoes')
+src/components/App/Admin/PainelPermissoes/index.tsx:95:        .from('permissoes')
+src/components/App/Admin/PainelPermissoes/TabAuditoria.tsx:40:  movimentacoes_admin: 'Movimentações',
+src/components/App/Admin/PainelPermissoes/TabAuditoria.tsx:51:  dados_mensais: 'Dados Mensais',
+src/components/App/Admin/PainelPermissoes/TabAuditoria.tsx:139:        .from('audit_log')
+src/components/App/Admin/PainelPermissoes/TabMatrizPermissoes.tsx:85:        .from('perfil_permissoes')
+src/components/App/Admin/PainelPermissoes/TabMatrizPermissoes.tsx:109:          .from('perfil_permissoes')
+src/components/App/Admin/PainelPermissoes/TabMatrizPermissoes.tsx:117:          .from('perfil_permissoes')
+src/components/App/Admin/PainelPermissoes/TabMatrizPermissoes.tsx:128:      await supabase.from('auditoria_acesso').insert({
+src/components/App/Admin/PainelPermissoes/TabMatrizPermissoes.tsx:162:        .from('perfil_permissoes')
+src/components/App/Admin/PainelPermissoes/TabMatrizPermissoes.tsx:172:      await supabase.from('perfil_permissoes').insert(inserts);
+src/components/App/Admin/PainelPermissoes/TabMatrizPermissoes.tsx:188:        .from('perfil_permissoes')
+src/components/App/Config/ConfigPage.tsx:138:        .from('unidades_cursos')
+src/components/App/Config/ConfigPage.tsx:160:        supabase.from('unidades').select('*').order('nome'),
+src/components/App/Config/ConfigPage.tsx:161:        supabase.from('canais_origem').select('*').order('nome'),
+src/components/App/Config/ConfigPage.tsx:162:        supabase.from('motivos_saida').select('*').order('nome'),
+src/components/App/Config/ConfigPage.tsx:163:        supabase.from('tipos_saida').select('*').order('nome'),
+src/components/App/Config/ConfigPage.tsx:164:        supabase.from('cursos').select('*').order('nome'),
+src/components/App/Config/ConfigPage.tsx:202:          await supabase.from('unidades').update({
+src/components/App/Config/ConfigPage.tsx:257:      const { error } = await supabase.from('canais_origem').insert({ nome: newCanal, ativo: true });
+src/components/App/Config/ConfigPage.tsx:269:      await supabase.from('canais_origem').update({ ativo: !ativo }).eq('id', id);
+src/components/App/Config/ConfigPage.tsx:281:        .from('canais_origem')
+src/components/App/Config/ConfigPage.tsx:306:      const { error } = await supabase.from('motivos_saida').insert({ nome: newMotivo });
+src/components/App/Config/ConfigPage.tsx:321:        .from('motivos_saida')
+src/components/App/Config/ConfigPage.tsx:346:      const { error } = await supabase.from('tipos_saida').insert({ nome: newTipo });
+src/components/App/Config/ConfigPage.tsx:361:        .from('tipos_saida')
+src/components/App/Config/ConfigPage.tsx:386:      const { error } = await supabase.from('cursos').insert({ nome: newCurso, ativo: true });
+src/components/App/Config/ConfigPage.tsx:403:        await supabase.from('cursos').update({ ativo: !ativo }).eq('id', id);
+src/components/App/Config/ConfigPage.tsx:413:      await supabase.from('cursos').update({ is_projeto_banda: !atual }).eq('id', id);
+src/components/App/Config/ConfigPage.tsx:428:        .from('unidades_cursos')
+src/components/App/Config/ConfigPage.tsx:437:          .from('unidades_cursos')
+src/components/App/Config/ConfigPage.tsx:444:          .from('unidades_cursos')
+src/components/App/Config/ConfigPage.tsx:474:        .from('cursos')
+src/components/App/Config/ConfigPage.tsx:503:        .from('cursos')
+src/components/App/Config/DestinatariosRelatorioManager.tsx:55:      .from('whatsapp_destinatarios_relatorio')
+src/components/App/Config/DestinatariosRelatorioManager.tsx:64:      .from('unidades')
+src/components/App/Config/DestinatariosRelatorioManager.tsx:102:          .from('whatsapp_destinatarios_relatorio')
+src/components/App/Config/DestinatariosRelatorioManager.tsx:109:          .from('whatsapp_destinatarios_relatorio')
+src/components/App/Config/DestinatariosRelatorioManager.tsx:127:        .from('whatsapp_destinatarios_relatorio')
+src/components/App/Config/DestinatariosRelatorioManager.tsx:142:      .from('whatsapp_destinatarios_relatorio')
+src/components/App/Retencao/PlanilhaRetencao.tsx:37:  tabela?: 'movimentacoes_admin' | 'renovacoes';
+src/components/App/Retencao/PlanilhaRetencao.tsx:74:          sb.from('professores').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/Retencao/PlanilhaRetencao.tsx:75:          sb.from('motivos_saida').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/Retencao/PlanilhaRetencao.tsx:76:          sb.from('tipos_saida').select('id, nome').eq('ativo', true).order('id'),
+src/components/App/Retencao/PlanilhaRetencao.tsx:101:        .from('movimentacoes_admin')
+src/components/App/Retencao/PlanilhaRetencao.tsx:116:        .from('renovacoes')
+src/components/App/Retencao/PlanilhaRetencao.tsx:152:            tabela: 'movimentacoes_admin',
+src/components/App/Retencao/PlanilhaRetencao.tsx:218:      tabela: 'movimentacoes_admin',
+src/components/App/Retencao/PlanilhaRetencao.tsx:238:          newRows[index].tabela = 'movimentacoes_admin';
+src/components/App/Retencao/PlanilhaRetencao.tsx:242:          newRows[index].tabela = 'movimentacoes_admin';
+src/components/App/Retencao/PlanilhaRetencao.tsx:246:          newRows[index].tabela = 'movimentacoes_admin';
+src/components/App/Retencao/PlanilhaRetencao.tsx:305:      if (row.tabela === 'movimentacoes_admin') {
+src/components/App/Retencao/PlanilhaRetencao.tsx:324:            .from('movimentacoes_admin')
+src/components/App/Retencao/PlanilhaRetencao.tsx:338:            .from('movimentacoes_admin')
+src/components/App/Retencao/PlanilhaRetencao.tsx:368:            .from('renovacoes')
+src/components/App/Retencao/PlanilhaRetencao.tsx:382:            .from('renovacoes')
+src/components/App/Retencao/PlanilhaRetencao.tsx:562:                            if (row.tabela === 'movimentacoes_admin') {
+src/components/App/Administrativo/ModalEvasao.tsx:64:          .from('motivos_saida')
+src/components/App/Administrativo/ModalEvasao.tsx:70:          .from('tipos_saida')
+src/components/App/Administrativo/AlertasRetencao.tsx:46:  // Dados reais calculados pelo AdministrativoPage (fonte: movimentacoes_admin)
+src/components/App/Administrativo/AlertasRetencao.tsx:77:        .rpc('get_resumo_renovacoes_proximas', {
+src/components/App/Administrativo/AlertasRetencao.tsx:126:  // (fonte: movimentacoes_admin, calculados pelo AdministrativoPage)
+src/components/App/Administrativo/AlertasRetencao.tsx:158:  // Inadimplência (fonte: dados_mensais — mantém pois não há tabela-fonte alternativa)
+src/components/App/Administrativo/PainelFarmer/DashboardTab.tsx:122:        .from('colaboradores')
+src/components/App/Administrativo/PainelFarmer/DashboardTab.tsx:164:        .from('farmer_tarefas')
+src/components/App/Administrativo/PainelFarmer/ChecklistsTab.tsx:95:        .from('colaboradores')
+src/components/App/Administrativo/PainelFarmer/ChecklistsTab.tsx:114:        .from('alunos')
+src/components/App/Administrativo/PainelFarmer/ChecklistsTab.tsx:131:        .from('alunos')
+src/components/App/Administrativo/PainelFarmer/ChecklistsTab.tsx:282:          .from('farmer_checklist_items')
+src/components/App/Administrativo/PainelFarmer/ChecklistsTab.tsx:304:            await supabase.from('farmer_checklist_items').insert(subsParaInserir);
+src/components/App/Administrativo/PainelFarmer/ChecklistsTab.tsx:317:        await supabase.rpc('vincular_alunos_checklist', {
+src/components/App/Administrativo/PainelFarmer/TarefasTab.tsx:68:        .from('colaboradores')
+src/components/App/Administrativo/PainelFarmer/hooks/useColaboradorAtual.ts:22:            .from('colaboradores')
+src/components/App/Administrativo/PainelFarmer/hooks/useColaboradorAtual.ts:42:          .from('colaboradores')
+src/components/App/Administrativo/PainelFarmer/hooks/useColaboradorAtual.ts:51:            .from('colaboradores')
+src/components/App/Administrativo/PainelFarmer/hooks/useColaboradorAtual.ts:64:            .from('colaboradores')
+src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts:29:        .from('vw_farmer_aniversariantes_hoje')
+src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts:41:        .from('vw_farmer_inadimplentes')
+src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts:54:        .from('vw_farmer_novos_matriculados')
+src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts:67:        .from('vw_farmer_renovacoes_proximas')
+src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts:80:        .from('vw_farmer_resumo_alertas')
+src/components/App/Administrativo/PainelFarmer/hooks/useDashboardStats.ts:44:        .from('vw_farmer_checklist_alertas')
+src/components/App/Administrativo/PainelFarmer/hooks/useDashboardStats.ts:56:      const { data: checklistsData } = await supabase.rpc('get_checklists_farmer', {
+src/components/App/Administrativo/PainelFarmer/hooks/useDashboardStats.ts:66:        .from('farmer_tarefas')
+src/components/App/Administrativo/PainelFarmer/hooks/useDashboardStats.ts:79:        .from('farmer_checklist_contatos')
+src/components/App/Administrativo/PainelFarmer/hooks/useRotinas.ts:18:        .from('farmer_rotinas')
+src/components/App/Administrativo/PainelFarmer/hooks/useRotinas.ts:39:        .rpc('get_rotinas_do_dia', { p_colaborador_id: colaboradorId });
+src/components/App/Administrativo/PainelFarmer/hooks/useRotinas.ts:55:        .rpc('get_progresso_rotinas_hoje', { p_colaborador_id: colaboradorId });
+src/components/App/Administrativo/PainelFarmer/hooks/useRotinas.ts:85:        .rpc('marcar_rotina_concluida', {
+src/components/App/Administrativo/PainelFarmer/hooks/useRotinas.ts:113:        .from('farmer_rotinas')
+src/components/App/Administrativo/PainelFarmer/hooks/useRotinas.ts:132:        .from('farmer_rotinas')
+src/components/App/Administrativo/PainelFarmer/hooks/useRotinas.ts:148:        .from('farmer_rotinas')
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:65:        .rpc('get_checklist_detail', { p_checklist_id: checklistId });
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:74:        .from('farmer_checklist_items')
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:97:        .from('farmer_checklist_contatos')
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:142:        .from('farmer_checklists')
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:158:      await supabase.rpc('marcar_checklist_item', {
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:182:          supabase.rpc('marcar_checklist_item', {
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:201:      .from('farmer_checklist_items')
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:220:      .from('farmer_checklist_items')
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:231:      .from('farmer_checklist_items')
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:252:      .from('farmer_checklist_contatos')
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:287:      .from('usuarios')
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:309:      .from('alunos')
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:327:      .from('alunos')
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:352:      .from('farmer_checklists')
+src/components/App/Administrativo/PainelFarmer/hooks/useTarefas.ts:26:        .from('farmer_tarefas')
+src/components/App/Administrativo/PainelFarmer/hooks/useTarefas.ts:70:        .from('farmer_tarefas')
+src/components/App/Administrativo/PainelFarmer/hooks/useTarefas.ts:89:        .from('farmer_tarefas')
+src/components/App/Administrativo/PainelFarmer/hooks/useTarefas.ts:112:        .from('farmer_tarefas')
+src/components/App/Administrativo/PainelFarmer/hooks/useTarefas.ts:128:        .from('farmer_tarefas')
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklists.ts:24:      const { data, error } = await supabase.rpc('get_checklists_farmer', {
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklists.ts:42:        .from('farmer_checklist_templates')
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklists.ts:80:      .from('farmer_checklists')
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklists.ts:109:    const { data, error } = await supabase.rpc('criar_checklist_from_template', {
+src/components/App/Administrativo/PainelFarmer/hooks/useChecklists.ts:125:      .from('farmer_checklists')
+src/components/App/Administrativo/PainelFarmer/hooks/useSucessoAlunoAlertas.ts:36:          .from('alunos')
+src/components/App/Administrativo/PainelFarmer/hooks/useFeedbackPendente.ts:34:          .from('professores')
+src/components/App/Administrativo/PainelFarmer/hooks/useFeedbackPendente.ts:57:          .from('aluno_feedback_professor')
+src/components/App/Administrativo/PainelFarmer/hooks/useFeedbackPendente.ts:75:          .from('alunos')
+src/components/App/Administrativo/PainelFarmer/hooks/useFarmersUnidade.ts:21:          .from('colaboradores')
+src/components/App/Administrativo/PainelFarmer/NovoChecklistModal.tsx:97:        .from('colaboradores')
+src/components/App/Administrativo/PainelFarmer/NovoChecklistModal.tsx:117:        .from('alunos')
+src/components/App/Administrativo/PainelFarmer/NovoChecklistModal.tsx:134:        .from('alunos')
+src/components/App/Administrativo/PainelFarmer/ChecklistDetail.tsx:144:        .from('farmer_checklists')
+src/components/App/Administrativo/PainelFarmer/ChecklistDetail.tsx:171:      await supabase.from('farmer_checklist_items').delete().eq('checklist_id', detail.checklist_id);
+src/components/App/Administrativo/PainelFarmer/ChecklistDetail.tsx:172:      await supabase.from('farmer_checklist_contatos').delete().eq('checklist_id', detail.checklist_id);
+src/components/App/Administrativo/PainelFarmer/ChecklistDetail.tsx:173:      await supabase.from('farmer_checklists').delete().eq('id', detail.checklist_id);
+src/components/App/Administrativo/PainelFarmer/HistoricoTab.tsx:34:          .rpc('get_historico_rotinas', {
+src/components/App/Administrativo/PainelFarmer/RecadosTab.tsx:113:        .from('professores')
+src/components/App/Administrativo/PainelFarmer/RecadosTab.tsx:125:        .from('alunos')
+src/components/App/Administrativo/PainelFarmer/RecadosTab.tsx:148:        .from('farmer_templates')
+src/components/App/Administrativo/PainelFarmer/RecadosTab.tsx:158:        .from('farmer_recados_campanhas')
+src/components/App/Administrativo/PainelFarmer/RecadosTab.tsx:208:        .from('farmer_recados_campanhas')
+src/components/App/Administrativo/PainelFarmer/RecadosTab.tsx:243:        await supabase.from('farmer_recados_destinatarios').insert({
+src/components/App/Administrativo/PainelFarmer/RecadosTab.tsx:259:          .from('farmer_recados_destinatarios')
+src/components/App/Administrativo/PainelFarmer/RecadosTab.tsx:284:        .from('farmer_recados_campanhas')
+src/components/App/Administrativo/ModalAvisoPrevio.tsx:47:        .from('motivos_saida')
+src/components/App/Administrativo/ModalNaoRenovacao.tsx:49:        .from('motivos_saida')
+src/components/App/Administrativo/TabelaTrancamentos.tsx:35:        .from('motivos_trancamento')
+src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:72:        .from('alunos')
+src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:118:          .from('alunos')
+src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:163:        .from('admin_conversas')
+src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:171:          .from('admin_conversas')
+src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:176:          .from('whatsapp_caixas')
+src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:184:          .from('admin_conversas')
+src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:218:        .from('admin_conversas')
+src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:227:          .from('admin_conversas')
+src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:232:          .from('whatsapp_caixas')
+src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:240:          .from('admin_conversas')
+src/components/App/Administrativo/CaixaEntrada/hooks/useAdminMensagens.ts:32:        .from('admin_mensagens')
+src/components/App/Administrativo/CaixaEntrada/hooks/useAdminMensagens.ts:205:        .from('crm-midia')
+src/components/App/Administrativo/CaixaEntrada/hooks/useAdminMensagens.ts:214:        .from('crm-midia')
+src/components/App/Administrativo/CaixaEntrada/hooks/useAdminConversas.ts:28:        .from('admin_conversas')
+src/components/App/Administrativo/CaixaEntrada/hooks/useAdminConversas.ts:135:        .from('admin_conversas')
+src/components/App/Administrativo/TabProgramaFideliza.tsx:122:        .from('programa_fideliza_config')
+src/components/App/Administrativo/ModalRelatorio.tsx:80:        .from('unidades')
+src/components/App/Administrativo/ModalRelatorio.tsx:95:    const { error } = await supabase.rpc('toggle_relatorio_cron', {
+src/components/App/Administrativo/ModalRelatorio.tsx:131:        .rpc('get_dados_relatorio_gerencial', {
+src/components/App/Administrativo/ModalRelatorio.tsx:202:        .from('unidades')
+src/components/App/Administrativo/ModalRelatorio.tsx:326:      .from('movimentacoes_admin')
+src/components/App/Administrativo/ModalRelatorio.tsx:343:      const { data: profs } = await supabase.from('professores').select('id, nome').in('id', profIds);
+src/components/App/Administrativo/ModalRelatorio.tsx:415:        .from('unidades')
+src/components/App/Administrativo/ModalRelatorio.tsx:428:      .from('metas_kpi')
+src/components/App/Administrativo/AdministrativoPage.tsx:191:        .from('alunos')
+src/components/App/Administrativo/AdministrativoPage.tsx:246:        .from('movimentacoes_admin')
+src/components/App/Administrativo/AdministrativoPage.tsx:255:        .from('movimentacoes_admin')
+src/components/App/Administrativo/AdministrativoPage.tsx:270:        .from('vw_kpis_retencao_mensal')
+src/components/App/Administrativo/AdministrativoPage.tsx:281:        supabase.from('professores').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/Administrativo/AdministrativoPage.tsx:282:        supabase.from('formas_pagamento').select('id, nome, sigla').order('nome'),
+src/components/App/Administrativo/AdministrativoPage.tsx:283:        supabase.from('cursos').select('id, nome').order('nome'),
+src/components/App/Administrativo/AdministrativoPage.tsx:308:          .from('alunos')
+src/components/App/Administrativo/AdministrativoPage.tsx:334:          .from('vw_kpis_gestao_mensal')
+src/components/App/Administrativo/AdministrativoPage.tsx:350:            .from('alunos')
+src/components/App/Administrativo/AdministrativoPage.tsx:389:        // PERÍODO HISTÓRICO: tentar dados_mensais primeiro, senão calcular das tabelas base
+src/components/App/Administrativo/AdministrativoPage.tsx:391:          .from('dados_mensais')
+src/components/App/Administrativo/AdministrativoPage.tsx:413:            // Snapshot de matrículas do dados_mensais (campos novos)
+src/components/App/Administrativo/AdministrativoPage.tsx:422:            .from('alunos')
+src/components/App/Administrativo/AdministrativoPage.tsx:466:      // Para período histórico com snapshot disponível, usar dados do dados_mensais
+src/components/App/Administrativo/AdministrativoPage.tsx:475:        // Usar snapshot histórico do dados_mensais
+src/components/App/Administrativo/AdministrativoPage.tsx:483:          .from('alunos')
+src/components/App/Administrativo/AdministrativoPage.tsx:547:        .from('alunos')
+src/components/App/Administrativo/AdministrativoPage.tsx:583:      // Montar resumo — combinar view + movimentacoes_admin para dados completos
+src/components/App/Administrativo/AdministrativoPage.tsx:585:      // Não renovações vêm de movimentacoes_admin, então usamos Math.max para pegar o maior.
+src/components/App/Administrativo/AdministrativoPage.tsx:625:          .from('movimentacoes_admin')
+src/components/App/Administrativo/AdministrativoPage.tsx:631:          .from('movimentacoes_admin')
+src/components/App/Administrativo/AdministrativoPage.tsx:643:            .from('alunos')
+src/components/App/Administrativo/AdministrativoPage.tsx:662:            .from('alunos')
+src/components/App/Administrativo/AdministrativoPage.tsx:707:        .from('movimentacoes_admin')
+src/components/App/Administrativo/AdministrativoPage.tsx:730:        .from('alunos')
+src/components/App/Administrativo/AdministrativoPage.tsx:742:        .from('alunos')
+src/components/App/Administrativo/AdministrativoPage.tsx:750:        .from('movimentacoes_admin')
+src/components/App/Administrativo/AdministrativoPage.tsx:1396:                    .from('movimentacoes_admin')
+src/components/App/Administrativo/ModalTrancamento.tsx:46:        .from('motivos_trancamento')
+src/components/App/Administrativo/PlanoAcaoRetencao.tsx:243:        .from('insights_salvos')
+src/components/App/Administrativo/PlanoAcaoRetencao.tsx:274:        .from('insights_salvos')
+src/components/App/Administrativo/PlanoAcaoRetencao.tsx:313:        .from('insights_salvos')
+src/components/App/Administrativo/PlanoAcaoRetencao.tsx:342:        .rpc('get_dados_retencao_ia', {
+src/components/App/Entrada/FormEvasao.tsx:111:        .from('motivos_evasao')
+src/components/App/Entrada/FormEvasao.tsx:127:      .from('alunos')
+src/components/App/Entrada/FormEvasao.tsx:160:        .from('alunos')
+src/components/App/Entrada/FormEvasao.tsx:172:        .from('movimentacoes')
+src/components/App/Entrada/FormEvasao.tsx:187:          .from('evasoes')
+src/components/App/Entrada/FormLead.tsx:106:        .from('leads')
+src/components/App/Entrada/FormLead.tsx:167:        supabase.from('unidades').select('id, nome').eq('ativo', true),
+src/components/App/Entrada/FormLead.tsx:168:        supabase.from('canais_origem').select('id, nome').eq('ativo', true),
+src/components/App/Entrada/FormLead.tsx:169:        supabase.from('professores').select('id, nome').eq('ativo', true),
+src/components/App/Entrada/FormLead.tsx:183:      const { data: novoLead, error } = await supabase.from('leads').insert({
+src/components/App/Entrada/FormLead.tsx:208:      await supabase.from('leads_automacao_log').insert({
+src/components/App/Entrada/FormRenovacao.tsx:78:      .from('alunos')
+src/components/App/Entrada/FormRenovacao.tsx:111:      await supabase.from('alunos').update({
+src/components/App/Entrada/FormRenovacao.tsx:116:      await supabase.from('renovacoes').insert({
+src/components/App/Entrada/FormRenovacao.tsx:129:      await supabase.from('movimentacoes').insert({
+src/components/App/Entrada/RelatorioDiario.tsx:69:        .from('relatorios_diarios')
+src/components/App/Entrada/RelatorioDiario.tsx:78:        .from('unidades')
+src/components/App/Entrada/RelatorioDiario.tsx:89:          .from('alunos')
+src/components/App/Entrada/RelatorioDiario.tsx:96:          .from('movimentacoes')
+src/components/App/Entrada/RelatorioDiario.tsx:105:          .from('movimentacoes')
+src/components/App/Entrada/RelatorioDiario.tsx:114:          .from('renovacoes')
+src/components/App/Entrada/RelatorioDiario.tsx:122:          .from('alunos')
+src/components/App/Entrada/RelatorioDiario.tsx:175:      const { error } = await supabase.from('relatorios_diarios').upsert({
+src/components/App/Entrada/FormMatricula.tsx:129:        supabase.from('unidades').select('id, nome').eq('ativo', true),
+src/components/App/Entrada/FormMatricula.tsx:130:        supabase.from('professores').select('id, nome').eq('ativo', true),
+src/components/App/Entrada/FormMatricula.tsx:159:      .from('leads')
+src/components/App/Entrada/FormMatricula.tsx:174:      .from('leads')
+src/components/App/Entrada/FormMatricula.tsx:203:        .from('alunos')
+src/components/App/Entrada/FormMatricula.tsx:229:        .from('movimentacoes')
+src/components/App/Entrada/FormMatricula.tsx:244:          .from('leads')
+src/components/App/PreAtendimento/tabs/DashboardTab.tsx:43:    supabase.from('crm_mensagens')
+src/components/App/PreAtendimento/tabs/DashboardTab.tsx:51:        const msgsHojePromise = supabase.from('crm_mensagens')
+src/components/App/PreAtendimento/tabs/DashboardTab.tsx:68:    supabase.rpc('calcular_tempo_medio_resposta_crm', {
+src/components/App/PreAtendimento/tabs/AgendaTab.tsx:64:          .from('leads')
+src/components/App/PreAtendimento/tabs/AgendaTab.tsx:78:            .from('lead_experimentais')
+src/components/App/PreAtendimento/tabs/AgendaTab.tsx:101:          .from('visitas')
+src/components/App/PreAtendimento/tabs/AgendaTab.tsx:121:      .from('feriados')
+src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:144:      const { data } = await supabase.from('visitas_config').select('*');
+src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:198:        const { error } = await supabase.from('visitas_config').update(payload).eq('id', config.id);
+src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:202:          .from('visitas_config')
+src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:228:        .from('feriados')
+src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:260:      .from('feriados')
+src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:278:      const { error } = await supabase.from('feriados').insert({
+src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:304:    const { error } = await supabase.from('feriados').delete().eq('id', feriado.id);
+src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:320:        .from('mila_config')
+src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:343:        .from('mila_config')
+src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:368:        .from('mila_config')
+src/components/App/PreAtendimento/tabs/PipelineTab.tsx:118:        .from('leads')
+src/components/App/PreAtendimento/tabs/PipelineTab.tsx:137:      await supabase.from('crm_lead_historico').insert({
+src/components/App/PreAtendimento/tabs/TabAutomacaoLeads.tsx:117:        .from('leads_automacao_log')
+src/components/App/PreAtendimento/tabs/LeadsTab.tsx:232:        .from('leads')
+src/components/App/PreAtendimento/tabs/LeadsTab.tsx:250:        .from('leads')
+src/components/App/PreAtendimento/tabs/LeadsTab.tsx:269:      await supabase.from('crm_lead_historico').delete().eq('lead_id', leadParaExcluir.id);
+src/components/App/PreAtendimento/tabs/LeadsTab.tsx:271:      await supabase.from('crm_followups').delete().eq('lead_id', leadParaExcluir.id);
+src/components/App/PreAtendimento/tabs/LeadsTab.tsx:273:      const { error } = await supabase.from('leads').delete().eq('id', leadParaExcluir.id);
+src/components/App/PreAtendimento/components/ModalConfigurarEtapas.tsx:115:            .from('crm_pipeline_etapas')
+src/components/App/PreAtendimento/components/ModalConfigurarEtapas.tsx:128:            .from('crm_pipeline_etapas')
+src/components/App/PreAtendimento/components/ModalMatricular.tsx:34:      supabase.from('professores').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/PreAtendimento/components/ModalMatricular.tsx:35:      supabase.from('cursos').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/PreAtendimento/components/ModalMatricular.tsx:36:      supabase.from('tipos_matricula').select('id, nome').order('nome'),
+src/components/App/PreAtendimento/components/ModalMatricular.tsx:37:      supabase.from('salas').select('id, nome, capacidade_maxima')
+src/components/App/PreAtendimento/components/ModalMatricular.tsx:78:      await supabase.from('leads').update({
+src/components/App/PreAtendimento/components/ModalMatricular.tsx:87:      await supabase.from('crm_lead_historico').insert({
+src/components/App/PreAtendimento/components/ModalNovoLead.tsx:94:      const { data: novoLead, error } = await supabase.from('leads').insert({
+src/components/App/PreAtendimento/components/ModalNovoLead.tsx:116:      await supabase.from('leads_automacao_log').insert({
+src/components/App/PreAtendimento/components/ModalAgendar.tsx:124:      .from('feriados')
+src/components/App/PreAtendimento/components/ModalAgendar.tsx:134:      supabase.from('cursos').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/PreAtendimento/components/ModalAgendar.tsx:135:      supabase.from('professores').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/PreAtendimento/components/ModalAgendar.tsx:136:      supabase.from('professores_cursos').select('professor_id, curso_id'),
+src/components/App/PreAtendimento/components/ModalAgendar.tsx:137:      supabase.from('professores_unidades')
+src/components/App/PreAtendimento/components/ModalAgendar.tsx:140:      supabase.from('vw_turmas_implicitas')
+src/components/App/PreAtendimento/components/ModalAgendar.tsx:175:    supabase.from('professores_unidades')
+src/components/App/PreAtendimento/components/ModalAgendar.tsx:237:    supabase.from('leads')
+src/components/App/PreAtendimento/components/ModalAgendar.tsx:340:      const { error } = await supabase.from('leads').update(updates).eq('id', lead.id);
+src/components/App/PreAtendimento/components/ModalAgendar.tsx:345:        await supabase.from('visitas').insert({
+src/components/App/PreAtendimento/components/ModalAgendar.tsx:360:      await supabase.from('crm_lead_historico').insert({
+src/components/App/PreAtendimento/components/LeadDrawer.tsx:48:        .from('crm_lead_historico')
+src/components/App/PreAtendimento/components/ModalMoverEtapa.tsx:47:        .from('leads')
+src/components/App/PreAtendimento/components/ModalMoverEtapa.tsx:58:      await supabase.from('crm_lead_historico').insert({
+src/components/App/PreAtendimento/components/chat/LeadSidebar.tsx:69:        .from('crm_lead_historico')
+src/components/App/PreAtendimento/components/chat/LeadSidebar.tsx:93:      supabase.from('cursos').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/PreAtendimento/components/chat/LeadSidebar.tsx:94:      supabase.from('canais_origem').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/PreAtendimento/components/chat/LeadSidebar.tsx:109:    supabase.from('crm_etiquetas').select('*').eq('ativo', true).order('ordem')
+src/components/App/PreAtendimento/components/chat/LeadSidebar.tsx:117:      .from('crm_lead_etiquetas')
+src/components/App/PreAtendimento/components/chat/LeadSidebar.tsx:134:        await supabase.from('crm_lead_etiquetas')
+src/components/App/PreAtendimento/components/chat/LeadSidebar.tsx:139:        await supabase.from('crm_lead_etiquetas')
+src/components/App/PreAtendimento/components/chat/LeadSidebar.tsx:158:        .from('leads')
+src/components/App/PreAtendimento/components/chat/CaixasManager.tsx:114:      .from('whatsapp_caixas')
+src/components/App/PreAtendimento/components/chat/CaixasManager.tsx:123:      .from('unidades')
+src/components/App/PreAtendimento/components/chat/CaixasManager.tsx:323:          .from('whatsapp_caixas')
+src/components/App/PreAtendimento/components/chat/CaixasManager.tsx:330:          .from('whatsapp_caixas')
+src/components/App/PreAtendimento/components/chat/CaixasManager.tsx:350:    const { error } = await supabase.from('whatsapp_caixas').delete().eq('id', id);
+src/components/App/PreAtendimento/components/chat/ChatPanel.tsx:102:      .from('crm_mensagens_agendadas')
+src/components/App/PreAtendimento/components/chat/ChatPanel.tsx:120:        .from('crm_mensagens_agendadas')
+src/components/App/PreAtendimento/components/chat/ChatPanel.tsx:150:      .from('crm_mensagens_agendadas')
+src/components/App/PreAtendimento/components/chat/ChatPanel.tsx:746:      const { data } = await supabase.rpc('toggle_mila_conversa', {
+src/components/App/PreAtendimento/components/chat/ModalGerenciarTemplates.tsx:89:        .from('crm_templates_whatsapp')
+src/components/App/PreAtendimento/components/chat/ModalGerenciarTemplates.tsx:148:          .from('crm_templates_whatsapp')
+src/components/App/PreAtendimento/components/chat/ModalGerenciarTemplates.tsx:161:          .from('crm_templates_whatsapp')
+src/components/App/PreAtendimento/components/chat/ModalGerenciarTemplates.tsx:191:        .from('crm_templates_whatsapp')
+src/components/App/PreAtendimento/components/chat/ModalGerenciarTemplates.tsx:210:        .from('crm_templates_whatsapp')
+src/components/App/PreAtendimento/components/chat/TemplateSelector.tsx:63:          .from('crm_templates_whatsapp')
+src/components/App/PreAtendimento/components/ModalArquivar.tsx:57:        .from('leads')
+src/components/App/PreAtendimento/components/ModalArquivar.tsx:69:      await supabase.from('crm_lead_historico').insert({
+src/components/App/PreAtendimento/components/ModalEditarLead.tsx:83:      supabase.from('cursos').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/PreAtendimento/components/ModalEditarLead.tsx:84:      supabase.from('professores').select('id, nome').eq('ativo', true).order('nome'),
+src/components/App/PreAtendimento/components/ModalEditarLead.tsx:85:      supabase.from('canais_origem').select('id, nome').order('nome'),
+src/components/App/PreAtendimento/components/ModalEditarLead.tsx:89:        supabase.from('lead_experimentais').select('created_at, status').eq('id', experimentalId).single()
+src/components/App/PreAtendimento/components/ModalEditarLead.tsx:114:        .from('leads')
+src/components/App/PreAtendimento/components/ModalEditarLead.tsx:131:          .from('lead_experimentais')
+src/components/App/PreAtendimento/hooks/useVisitas.ts:36:        .from('visitas')
+src/components/App/PreAtendimento/hooks/useConversas.ts:22:        .from('crm_conversas')
+src/components/App/PreAtendimento/hooks/useConversas.ts:116:      await supabase.rpc('marcar_conversa_lida', { p_conversa_id: conversaId });
+src/components/App/PreAtendimento/hooks/useMensagens.ts:30:        .from('crm_mensagens')
+src/components/App/PreAtendimento/hooks/useMensagens.ts:225:        .from('crm-midia')
+src/components/App/PreAtendimento/hooks/useMensagens.ts:235:        .from('crm-midia')
+src/components/App/PreAtendimento/hooks/useLeadsCRM.ts:50:            .from('leads')
+src/components/App/PreAtendimento/hooks/useLeadsCRM.ts:76:          .from('crm_pipeline_etapas')
+src/components/App/PreAtendimento/hooks/useLeadsCRM.ts:83:          .from('canais_origem')
+src/components/App/PreAtendimento/hooks/useLeadsCRM.ts:90:          .from('cursos')
+src/components/App/PreAtendimento/hooks/useLeadsCRM.ts:97:          .from('unidades')
+src/components/App/PreAtendimento/hooks/useLeadsCRM.ts:139:        .from('leads')
+src/components/App/PreAtendimento/hooks/useWhatsAppCaixas.ts:17:        .from('whatsapp_caixas')
+src/components/App/Salas/inventario/ModalNovoEquipamento.tsx:74:      .from('inventario')
+src/components/App/Salas/inventario/ModalNovoEquipamento.tsx:103:        .from('inventario-fotos')
+src/components/App/Salas/inventario/ModalNovoEquipamento.tsx:109:        .from('inventario-fotos')
+src/components/App/Salas/inventario/ModalNovoEquipamento.tsx:164:          .from('inventario')
+src/components/App/Salas/inventario/ModalNovoEquipamento.tsx:172:          await supabase.from('inventario_movimentacoes').insert({
+src/components/App/Salas/inventario/ModalNovoEquipamento.tsx:187:          .from('inventario')
+src/components/App/Salas/inventario/ModalNovoEquipamento.tsx:195:        await supabase.from('inventario_movimentacoes').insert({
+src/components/App/Salas/inventario/InventarioPorSala.tsx:49:        .from('inventario')
+src/components/App/Salas/inventario/InventarioTab.tsx:79:        .from('inventario')
+src/components/App/Salas/inventario/InventarioTab.tsx:89:        .from('inventario_pendencias')
+src/components/App/Salas/inventario/InventarioTab.tsx:252:      const { error } = await supabase.from('inventario_pendencias').insert({
+src/components/App/Salas/inventario/InventarioTab.tsx:285:        .from('inventario')
+src/components/App/Salas/inventario/InventarioTable.tsx:57:        .from('inventario')
+src/components/App/Salas/inventario/PendenciasTab.tsx:82:        .from('inventario_pendencias')
+src/components/App/Salas/inventario/PendenciasTab.tsx:92:        .from('inventario')
+src/components/App/Salas/inventario/PendenciasTab.tsx:191:          .from('inventario_pendencias')
+src/components/App/Salas/inventario/PendenciasTab.tsx:198:        const { error } = await supabase.from('inventario_pendencias').insert(dados);
+src/components/App/Salas/inventario/PendenciasTab.tsx:217:        .from('inventario_pendencias')
+src/components/App/Salas/inventario/PendenciasTab.tsx:238:        .from('inventario_pendencias')
+src/components/App/Salas/inventario/PendenciasTab.tsx:268:        .from('inventario_pendencias')
+src/components/App/Salas/ModalEditarSala.tsx:78:        .from('inventario')
+src/components/App/Salas/ModalEditarSala.tsx:136:          .from('salas')
+src/components/App/Salas/ModalEditarSala.tsx:148:          .from('salas')
+src/components/App/Salas/SalasPage.tsx:124:        .from('unidades')
+src/components/App/Salas/SalasPage.tsx:135:        .from('salas')
+src/components/App/Salas/SalasPage.tsx:176:        .from('turmas')
+src/components/App/Salas/SalasPage.tsx:200:        .from('inventario')
+src/components/App/Salas/SalasPage.tsx:359:        .from('salas')
+src/components/App/Salas/ModalOcupacaoSala.tsx:40:        .from('vw_turmas_implicitas')
+src/components/App/Turmas/GradeHoraria/GradeHoraria.tsx:104:        .from('unidades')
+src/components/App/Turmas/GradeHoraria/GradeHoraria.tsx:112:        .from('salas')
+src/components/App/Turmas/GradeHoraria/GradeHoraria.tsx:126:        .from('professores')
+src/components/App/Turmas/GradeHoraria/GradeHoraria.tsx:138:      // Carregar turmas usando a view vw_turmas_implicitas
+src/components/App/Turmas/GradeHoraria/GradeHoraria.tsx:141:        .from('vw_turmas_implicitas')
+src/components/App/Turmas/GradeHoraria/GradeHoraria.tsx:330:        .from('turmas')
+src/components/App/Turmas/GradeHoraria/ModalDetalhesTurma.tsx:49:        .from('salas')
+src/components/App/Turmas/GradeHoraria/ModalDetalhesTurma.tsx:82:          .from('turmas_explicitas')
+src/components/App/Turmas/GradeHoraria/ModalDetalhesTurma.tsx:96:          .from('turmas_explicitas')
+src/components/App/Turmas/GradeHoraria/ModalDetalhesTurma.tsx:112:          .from('turmas_explicitas')
+src/components/shared/TarefasRapidas/TarefasRapidasTab.tsx:57:      .from('unidades')
+src/components/shared/TarefasRapidas/useTarefasRapidas.ts:25:        .from('farmer_tarefas')
+src/components/shared/TarefasRapidas/useTarefasRapidas.ts:67:        .from('farmer_tarefas')
+src/components/shared/TarefasRapidas/useTarefasRapidas.ts:87:        .from('farmer_tarefas')
+src/components/shared/TarefasRapidas/useTarefasRapidas.ts:114:        .from('farmer_tarefas')
+src/components/GestaoMensal/TabGestao.tsx:121:  // Estado para verificar se o mês está fechado (tem dados em dados_mensais)
+src/components/GestaoMensal/TabGestao.tsx:142:          .from('alunos')
+src/components/GestaoMensal/TabGestao.tsx:166:          .from('alunos')
+src/components/GestaoMensal/TabGestao.tsx:182:          .from('alunos')
+src/components/GestaoMensal/TabGestao.tsx:207:        .from('movimentacoes_admin')
+src/components/GestaoMensal/TabGestao.tsx:235:        // Verificar se o mês já foi fechado (existe em dados_mensais)
+src/components/GestaoMensal/TabGestao.tsx:237:          .from('dados_mensais')
+src/components/GestaoMensal/TabGestao.tsx:252:            .from('vw_kpis_gestao_mensal')
+src/components/GestaoMensal/TabGestao.tsx:267:            .from('vw_kpis_retencao_mensal')
+src/components/GestaoMensal/TabGestao.tsx:281:          // PERÍODO HISTÓRICO: usar dados_mensais + vw_kpis_gestao_mensal como fallback para reajuste
+src/components/GestaoMensal/TabGestao.tsx:283:            .from('dados_mensais')
+src/components/GestaoMensal/TabGestao.tsx:295:            .from('vw_kpis_gestao_mensal')
+src/components/GestaoMensal/TabGestao.tsx:322:          // Buscar dados de evasões detalhados de movimentacoes_admin
+src/components/GestaoMensal/TabGestao.tsx:328:            .from('movimentacoes_admin')
+src/components/GestaoMensal/TabGestao.tsx:385:            // FALLBACK: dados_mensais não tem dados, calcular das tabelas base
+src/components/GestaoMensal/TabGestao.tsx:388:              .from('alunos')
+src/components/GestaoMensal/TabGestao.tsx:398:              .from('alunos')
+src/components/GestaoMensal/TabGestao.tsx:409:              .from('renovacoes')
+src/components/GestaoMensal/TabGestao.tsx:493:          .from('dados_mensais')
+src/components/GestaoMensal/TabGestao.tsx:541:          .from('dados_mensais')
+src/components/GestaoMensal/TabGestao.tsx:641:          // Usar dados consolidados da view (período atual) ou dados_mensais (histórico)
+src/components/GestaoMensal/TabGestao.tsx:648:              .from('dados_mensais')
+src/components/GestaoMensal/TabGestao.tsx:659:            // novasMatriculas e evasoes já vêm da view vw_kpis_gestao_mensal (fonte unificada)
+src/components/GestaoMensal/TabGestao.tsx:671:            .from('alunos')
+src/components/GestaoMensal/TabGestao.tsx:707:            .from('alunos')
+src/components/GestaoMensal/TabGestao.tsx:777:            .from('movimentacoes_admin')
+src/components/GestaoMensal/TabGestao.tsx:798:              ? supabase.from('alunos').select('id, curso_id, cursos!left(nome)').in('id', alunoIds)
+src/components/GestaoMensal/TabGestao.tsx:801:              ? supabase.from('professores').select('id, nome').in('id', profIds)
+src/components/GestaoMensal/TabGestao.tsx:914:          .from('dados_mensais')
+src/components/GestaoMensal/TabGestao.tsx:960:        // Buscar dados históricos para gráficos financeiros e retenção (tabela dados_mensais - histórico completo 2023-2026)
+src/components/GestaoMensal/TabGestao.tsx:962:          .from('dados_mensais')
+src/components/GestaoMensal/TabGestao.tsx:978:        // Buscar dados em tempo real do mês atual para complementar dados_mensais
+src/components/GestaoMensal/TabGestao.tsx:984:          .from('vw_kpis_gestao_mensal')
+src/components/GestaoMensal/TabGestao.tsx:1011:        const { data: unidadesData } = await supabase.from('unidades').select('id, nome');
+src/components/GestaoMensal/TabGestao.tsx:1343:                        const { data, error } = await supabase.rpc('recalcular_dados_mensais', {
+src/components/GestaoMensal/TabComercial.tsx:71:          .from('leads')
+src/components/GestaoMensal/TabComercial.tsx:92:          supabase.from('canais_origem').select('id, nome'),
+src/components/GestaoMensal/TabComercial.tsx:93:          supabase.from('professores').select('id, nome'),
+src/components/GestaoMensal/TabComercial.tsx:113:            .from('alunos')
+src/components/GestaoMensal/TabProfessoresNew.tsx:123:        const viewName = isCurrentPeriod ? 'vw_kpis_professor_mensal' : 'vw_kpis_professor_historico';
+src/components/GestaoMensal/TabProfessoresNew.tsx:126:        // Usar tabela dados_mensais que tem dados históricos completos de alunos, matrículas, ticket, etc.
+src/components/GestaoMensal/TabProfessoresNew.tsx:127:        // Usar tabela dados_comerciais para experimentais
+src/components/GestaoMensal/TabProfessoresNew.tsx:131:        // Buscar dados do mês anterior de dados_mensais (alunos, ticket, matrículas)
+src/components/GestaoMensal/TabProfessoresNew.tsx:133:          .from('dados_mensais')
+src/components/GestaoMensal/TabProfessoresNew.tsx:142:        // Buscar dados do mês anterior de dados_comerciais (experimentais)
+src/components/GestaoMensal/TabProfessoresNew.tsx:145:          .from('dados_comerciais')
+src/components/GestaoMensal/TabProfessoresNew.tsx:149:        // Buscar dados do mesmo mês do ano anterior de dados_mensais
+src/components/GestaoMensal/TabProfessoresNew.tsx:151:          .from('dados_mensais')
+src/components/GestaoMensal/TabProfessoresNew.tsx:160:        // Buscar dados do ano anterior de dados_comerciais (experimentais)
+src/components/GestaoMensal/TabProfessoresNew.tsx:163:          .from('dados_comerciais')
+src/components/GestaoMensal/TabProfessoresNew.tsx:241:            .from('unidades')
+src/components/GestaoMensal/TabProfessoresNew.tsx:250:          .from('experimentais_mensal_unidade')
+src/components/GestaoMensal/TabProfessoresNew.tsx:262:          .from('professores_performance')
+src/components/GestaoMensal/TabProfessoresNew.tsx:270:        // Nota: vw_kpis_professor_completo não tem unidade_id, filtro será aplicado após fetch via profIdsNaUnidade
+src/components/GestaoMensal/TabProfessoresNew.tsx:272:          .from('vw_kpis_professor_completo')
+src/components/GestaoMensal/TabProfessoresNew.tsx:277:          .from('vw_evasoes_professores')
+src/components/GestaoMensal/TabProfessoresNew.tsx:283:        // Buscar MRR Perdido do período de movimentacoes_admin (fonte única)
+src/components/GestaoMensal/TabProfessoresNew.tsx:288:        // Query: movimentacoes_admin - só Cancelamento e Não Renovação
+src/components/GestaoMensal/TabProfessoresNew.tsx:290:          .from('movimentacoes_admin')
+src/components/GestaoMensal/TabProfessoresNew.tsx:302:          .from('vw_turmas_implicitas')
+src/components/GestaoMensal/TabProfessoresNew.tsx:311:          .from('professores')
+src/components/GestaoMensal/TabProfessoresNew.tsx:316:          .from('professores_unidades')
+src/components/GestaoMensal/TabProfessoresNew.tsx:325:          .from('alunos')
+src/components/GestaoMensal/TabProfessoresNew.tsx:421:        // Processar MRR Perdido de movimentacoes_admin (fonte única)
+src/components/GestaoMensal/TabProfessoresNew.tsx:500:            // Usar média alunos/turma calculada de vw_turmas_implicitas (mesma fonte da página Professores)
+src/components/GestaoMensal/ModalPermanenciaDetalhe.tsx:39:      const { data, error } = await supabase.rpc('get_historico_ltv', {
+src/components/GestaoMensal/TabProfessores.tsx:62:          .from('vw_kpis_professor_completo')
+src/components/GestaoMensal/TabRetencao.tsx:73:          .from('movimentacoes_admin')
+src/components/GestaoMensal/TabRetencao.tsx:81:          .from('renovacoes')
+src/components/GestaoMensal/TabRetencao.tsx:163:          .from('alunos')
+src/components/GestaoMensal/TabDashboard.tsx:68:          .from('vw_dashboard_unidade')
+src/components/GestaoMensal/TabDashboard.tsx:123:          .from('dados_mensais')
+src/components/GestaoMensal/TabComercialNew.tsx:119:        // Buscar dados do mês anterior de dados_comerciais
+src/components/GestaoMensal/TabComercialNew.tsx:121:          .from('dados_comerciais')
+src/components/GestaoMensal/TabComercialNew.tsx:131:          .from('dados_comerciais')
+src/components/GestaoMensal/TabComercialNew.tsx:139:        // Também buscar de dados_mensais para matrículas (tem dados de 2024)
+src/components/GestaoMensal/TabComercialNew.tsx:141:          .from('dados_mensais')
+src/components/GestaoMensal/TabComercialNew.tsx:151:          .from('dados_mensais')
+src/components/GestaoMensal/TabComercialNew.tsx:231:            .from('vw_kpis_comercial_historico')
+src/components/GestaoMensal/TabComercialNew.tsx:243:            .from('origem_leads')
+src/components/GestaoMensal/TabComercialNew.tsx:260:            .from('experimentais_professor_mensal')
+src/components/GestaoMensal/TabComercialNew.tsx:272:            .from('cursos_matriculados')
+src/components/GestaoMensal/TabComercialNew.tsx:392:          .from('leads')
+src/components/GestaoMensal/TabComercialNew.tsx:414:          .from('dados_mensais')
+src/components/GestaoMensal/TabComercialNew.tsx:426:        // Verificar se o mês está fechado (tem dados em dados_mensais)
+src/components/GestaoMensal/TabComercialNew.tsx:433:          .from('alunos')
+src/components/Comercial/ComercialMetas.tsx:30:      .from('metas_comerciais')
+src/components/Comercial/ComercialCursos.tsx:27:  // Usar dados corretos da tabela dados_comerciais
+src/components/Onboarding/OnboardingChecklist.tsx:373:        .from('avatars')
+src/components/Onboarding/OnboardingChecklist.tsx:382:        .from('avatars')
+src/components/Onboarding/OnboardingChecklist.tsx:417:        .from('usuarios')
+src/hooks/useOrigemData.ts:30:      .from('origem_leads')
+src/hooks/useKPIsRetencao.ts:69:        .from('vw_kpis_retencao_mensal')
+src/hooks/useKPIsRetencao.ts:166:      // Buscar evasões de movimentacoes_admin
+src/hooks/useKPIsRetencao.ts:168:        .from('movimentacoes_admin')
+src/hooks/useKPIsRetencao.ts:182:        .from('renovacoes')
+src/hooks/useKPIsRetencao.ts:195:        .from('alunos')
+src/hooks/useCheckAlunoDuplicado.ts:60:          .from('alunos')
+src/hooks/useMotivos.ts:27:            .from('motivos_saida')
+src/hooks/useMotivos.ts:32:            .from('motivos_trancamento')
+src/hooks/useDadosHistoricos.ts:39:          .from('vw_kpis_gestao_mensal')
+src/hooks/useDadosHistoricos.ts:53:          .from('vw_kpis_gestao_mensal')
+src/hooks/useDadosHistoricos.ts:65:        // Buscar dados comerciais históricos (usar vw_kpis_comercial_historico que tem dados completos)
+src/hooks/useDadosHistoricos.ts:67:          .from('vw_kpis_comercial_historico')
+src/hooks/useDadosHistoricos.ts:80:          .from('unidades')
+src/hooks/useDadosHistoricos.ts:90:          .from('vw_unidade_anual')
+src/hooks/useDadosHistoricos.ts:128:            // Campos corretos da view vw_kpis_comercial_historico
+src/hooks/useDadosHistoricos.ts:151:          // Usar churn da view vw_unidade_anual (dados consolidados de 2025)
+src/hooks/useProfessorDependencies.ts:90:          .from('alunos')
+src/hooks/useProfessorDependencies.ts:95:          .from('aulas_emusys')
+src/hooks/useProfessorDependencies.ts:100:          .from('leads')
+src/hooks/useProfessorDependencies.ts:105:          .from('turmas')
+src/hooks/useProfessorDependencies.ts:110:          .from('movimentacoes')
+src/hooks/useProfessorDependencies.ts:115:          .from('renovacoes')
+src/hooks/useProfessorDependencies.ts:120:          .from('movimentacoes_admin')
+src/hooks/useProfessorDependencies.ts:126:          .from('experimentais_professor_mensal')
+src/hooks/useProfessorDependencies.ts:132:          .from('aluno_presenca')
+src/hooks/useProfessorDependencies.ts:137:          .from('professor_360_avaliacoes')
+src/hooks/useProfessorDependencies.ts:142:          .from('professor_360_ocorrencias')
+src/hooks/useProfessorDependencies.ts:147:          .from('aluno_feedback_professor')
+src/hooks/useProfessorDependencies.ts:152:          .from('professor_acoes')
+src/hooks/useProfessorDependencies.ts:157:          .from('professor_videos')
+src/hooks/useProfessorDependencies.ts:162:          .from('turmas_explicitas')
+src/hooks/useProfessorDependencies.ts:167:          .from('loja_carteira')
+src/hooks/useProfessorDependencies.ts:173:          .from('professores_unidades')
+src/hooks/useProfessorDependencies.ts:178:          .from('professores_cursos')
+src/hooks/useProfessorDependencies.ts:264:          .from('alunos')
+src/hooks/useProfessorDependencies.ts:271:          .from('leads')
+src/hooks/useProfessorDependencies.ts:278:          .from('aulas_emusys')
+src/hooks/useProfessorDependencies.ts:286:          .from('turmas')
+src/hooks/useProfessorDependencies.ts:293:          .from('movimentacoes_admin')
+src/hooks/useProfessorDependencies.ts:302:          .from('experimentais_professor_mensal')
+src/hooks/useProfessorDependencies.ts:310:          .from('aluno_presenca')
+src/hooks/useProfessorDependencies.ts:318:          .from('professor_360_avaliacoes')
+src/hooks/useProfessorDependencies.ts:326:          .from('professor_360_ocorrencias')
+src/hooks/useAnaliseTurmas.ts:69:    const { data: result, error } = await supabase.rpc('rpc_analise_turmas', {
+src/hooks/useSimuladorTurma.ts:88:          .from('alunos')
+src/hooks/useSimuladorTurma.ts:124:          .from('unidades')
+src/hooks/useSimuladorTurma.ts:147:        .from('alunos')
+src/hooks/useKPIsProfessor.ts:86:        .from('vw_kpis_professor_completo')
+src/hooks/useHistoricoLTV.ts:41:      const { data, error } = await supabase.rpc('get_historico_ltv', {
+src/hooks/useHistoricoLTV.ts:182:      .from('alunos_historico')
+src/hooks/useHistoricoLTV.ts:203:      .from('alunos_historico')
+src/hooks/useHistoricoLTV.ts:226:      .from('alunos_historico')
+src/hooks/useHistoricoLTV.ts:246:      .from('alunos_historico')
+src/hooks/useHistoricoLTV.ts:272:      .from('alunos_historico')
+src/hooks/useKPIsGestao.ts:65:        .from('vw_kpis_gestao_mensal')
+src/hooks/useKPIsGestao.ts:115:        // Fallback para dados_mensais se a view não existir
+src/hooks/useKPIsGestao.ts:117:          .from('dados_mensais')
+src/hooks/useKPIsGestao.ts:155:        .from('dados_mensais')
+src/hooks/useSupabaseMutations.ts:10:    .from('dados_mensais')
+src/hooks/useSupabaseMutations.ts:40:    .rpc('upsert_dados_mensais', {
+src/hooks/useSupabaseMutations.ts:62:    .from('metas')
+src/hooks/useSupabaseMutations.ts:90:    .from('unidades')
+src/hooks/useSupabaseMutations.ts:122:    .from('metas')
+src/hooks/useSupabaseMutations.ts:141:    .from('anotacoes')
+src/hooks/useSupabaseMutations.ts:153:    .from('anotacoes')
+src/hooks/useSupabaseMutations.ts:166:    .from('anotacoes')
+src/hooks/useAutomacoesData.ts:89:      .from('automacao_log')
+src/hooks/useAutomacoesData.ts:152:      .from('automacao_invariantes')
+src/hooks/useProjetos.ts:28:        .from('projeto_tipos')
+src/hooks/useProjetos.ts:67:          .from('projeto_tipo_fases_template')
+src/hooks/useProjetos.ts:104:          .from('projeto_tipo_tarefas_template')
+src/hooks/useProjetos.ts:135:        .from('projetos')
+src/hooks/useProjetos.ts:218:        .from('projetos')
+src/hooks/useProjetos.ts:289:        .from('projeto_fases')
+src/hooks/useProjetos.ts:304:        .from('projeto_tarefas')
+src/hooks/useProjetos.ts:350:          .from('projetos')
+src/hooks/useProjetos.ts:467:          .from('projeto_tarefas')
+src/hooks/useProjetos.ts:564:          .from('projetos')
+src/hooks/useProjetos.ts:683:          .from('projetos')
+src/hooks/useProjetos.ts:798:        .from('projetos')
+src/hooks/useProjetos.ts:817:        .from('projeto_tipo_fases_template')
+src/hooks/useProjetos.ts:847:          .from('projeto_fases')
+src/hooks/useProjetos.ts:858:            .from('projeto_tipo_tarefas_template')
+src/hooks/useProjetos.ts:891:                .from('projeto_tarefas')
+src/hooks/useProjetos.ts:909:          .from('projeto_equipe')
+src/hooks/useProjetos.ts:952:        .from('projetos')
+src/hooks/useProjetos.ts:986:        .from('projetos')
+src/hooks/useProjetos.ts:1016:          .from('usuarios')
+src/hooks/useProjetos.ts:1047:          .from('professores')
+src/hooks/useProjetos.ts:1078:          .from('unidades')
+src/hooks/useProjetos.ts:1120:        .from('projeto_tarefas')
+src/hooks/useProjetos.ts:1131:        .from('projeto_tarefas')
+src/hooks/useProjetos.ts:1187:        .from('projeto_tarefas')
+src/hooks/useProjetos.ts:1220:        .from('projeto_tarefas')
+src/hooks/useProjetos.ts:1251:        .from('projeto_tarefas')
+src/hooks/useProjetos.ts:1290:        .from('projetos')
+src/hooks/useProjetos.ts:1384:        .from('projeto_tarefas')
+src/hooks/useProjetos.ts:1419:        supabase.from('usuarios').select('id, nome, cargo'),
+src/hooks/useProjetos.ts:1420:        supabase.from('professores').select('id, nome')
+src/hooks/useComercialData.ts:29:        .from('dados_comerciais')
+src/hooks/useComercialData.ts:63:        .from('metas_comerciais')
+src/hooks/useComercialData.ts:209:        .from('dados_comerciais')
+src/hooks/useContatosAluno.ts:23:      .from('aluno_contatos')
+src/hooks/useContatosAluno.ts:45:        .from('aluno_contatos')
+src/hooks/useContatosAluno.ts:50:      .from('aluno_contatos')
+src/hooks/useContatosAluno.ts:66:        .from('aluno_contatos')
+src/hooks/useContatosAluno.ts:71:      .from('aluno_contatos')
+src/hooks/useContatosAluno.ts:86:      .from('aluno_contatos')
+src/hooks/useContatosAluno.ts:103:      .from('aluno_contatos')
+src/hooks/useContatosAluno.ts:113:    await supabase.from('alunos').update({
+src/hooks/useCursosUnidade.ts:33:          .from('unidades_cursos')
+src/hooks/useCursosUnidade.ts:59:          .from('cursos')
+src/hooks/useProfessoresPerformance.ts:48:        .from('professores_performance')
+src/hooks/useProfessoresPerformance.ts:65:          .from('movimentacoes_admin')
+src/hooks/useMotivosScoreProfessor.ts:27:        .from('motivos_saida')
+src/hooks/useMotivosScoreProfessor.ts:44:      .from('motivos_saida')
+src/hooks/useDivergencias.ts:77:    const { data, error } = await supabase.rpc('get_divergencias_alunos');
+src/hooks/useKPIsComercial.ts:70:        .from('vw_kpis_comercial_mensal')
+src/hooks/useKPIsComercial.ts:173:        .from('leads')
+src/hooks/useKPIsComercial.ts:186:        .from('alunos')
+src/hooks/useFidelizaPrograma.ts:234:      const { data, error: rpcError } = await supabase.rpc('get_programa_fideliza_dados', {
+src/hooks/useFidelizaPrograma.ts:279:      const { error } = await supabase.rpc('registrar_penalidade_fideliza', {
+src/hooks/useFidelizaPrograma.ts:303:      const { error } = await supabase.rpc('deletar_penalidade_fideliza', { p_id: id });
+src/hooks/useFidelizaPrograma.ts:322:        .from('programa_fideliza_penalidades')
+src/hooks/useFidelizaPrograma.ts:339:      const { error } = await supabase.rpc('atualizar_config_fideliza', {
+src/hooks/useFidelizaPrograma.ts:359:        .from('programa_fideliza_config')
+src/hooks/useFidelizaPrograma.ts:376:      const { error } = await supabase.rpc('salvar_historico_trimestral_fideliza', {
+src/hooks/useFidelizaPrograma.ts:405:        .from('programa_fideliza_experiencias')
+src/hooks/useFidelizaPrograma.ts:432:        .from('programa_fideliza_experiencias')
+src/hooks/useFidelizaPrograma.ts:450:        .from('programa_fideliza_experiencias')
+src/hooks/useEvasoesData.ts:30:        .from('evasoes')
+src/hooks/useMetasKPI.ts:67:        .from('metas_kpi')
+src/hooks/useHealthScoreConfig.ts:50:          .from('config_health_score_professor')
+src/hooks/useHealthScoreConfig.ts:88:        .from('config_health_score_professor')
+src/hooks/useProfessoresData.ts:29:      .from('professores_experimentais')
+src/hooks/useSaudeCrons.ts:22:    const { data, error } = await supabase.rpc('get_cron_health');
+src/hooks/useSimulador.ts:121:        .from('simulacoes_metas')
+src/hooks/useSimulador.ts:206:        .from('simulacoes_metas')
+src/hooks/useSimulador.ts:244:        .from('simulacoes_metas')
+src/hooks/useSimulador.ts:291:            .from('metas_kpi')
+src/hooks/useSimulador.ts:307:          .from('simulacoes_metas')
+src/hooks/useProfessorVideos.ts:16:        .from('professor_videos')
+src/hooks/useProfessorVideos.ts:69:        .from('professor-videos')
+src/hooks/useProfessorVideos.ts:79:        .from('professor-videos')
+src/hooks/useProfessorVideos.ts:87:        .from('professor_videos')
+src/hooks/useProfessorVideos.ts:116:        .from('professor-videos')
+src/hooks/useProfessorVideos.ts:125:        .from('professor_videos')
+src/hooks/useDadosMensais.ts:44: * Hook para consultar dados históricos da tabela dados_mensais
+src/hooks/useDadosMensais.ts:64:          .from('dados_mensais')
+src/hooks/useMatriculadorPrograma.ts:189:      const { data, error: rpcError } = await supabase.rpc('get_programa_matriculador_dados', {
+src/hooks/useMatriculadorPrograma.ts:236:      const { data, error } = await supabase.rpc('registrar_penalidade_matriculador', {
+src/hooks/useMatriculadorPrograma.ts:260:      const { data, error } = await supabase.rpc('deletar_penalidade_matriculador', {
+src/hooks/useMatriculadorPrograma.ts:283:        .from('programa_matriculador_penalidades')
+src/hooks/useMatriculadorPrograma.ts:301:      const { data, error } = await supabase.rpc('atualizar_config_matriculador', {
+src/hooks/useMatriculadorPrograma.ts:340:      const { data, error: rpcError } = await supabase.rpc('get_historico_mensal_matriculador', {
+src/hooks/useCompetenciaFiltro.ts:208:        // Buscar anos distintos da tabela dados_mensais
+src/hooks/useCompetenciaFiltro.ts:210:          .from('dados_mensais')
+src/hooks/useBadgeAutomacoes.ts:20:        .from('automacao_invariantes')
+src/hooks/useCheckLeadDuplicado.ts:46:        .from('leads')
+src/hooks/useCheckLeadDuplicado.ts:131:    .from('leads')
+src/hooks/useCheckLeadDuplicado.ts:148:    .from('alunos')
+src/hooks/useCursosData.ts:29:      .from('cursos_matriculados')
+src/hooks/useNotificacoes.ts:72:        .from('notificacao_config')
+src/hooks/useNotificacoes.ts:96:        .from('notificacao_config')
+src/hooks/useNotificacoes.ts:144:        .from('notificacao_destinatarios')
+src/hooks/useNotificacoes.ts:173:        .from('notificacao_destinatarios')
+src/hooks/useNotificacoes.ts:192:        .from('notificacao_destinatarios')
+src/hooks/useNotificacoes.ts:213:        .from('notificacao_destinatarios')
+src/hooks/useNotificacoes.ts:256:        .from('notificacao_log')
+src/hooks/useNotificacoes.ts:291:        .from('notificacao_log')
+src/hooks/useMetas.ts:73:        .from('metas')
+src/hooks/useMetas.ts:100:        .from('alunos')
+src/hooks/useMetas.ts:113:        .from('leads')
+src/hooks/useMetas.ts:126:        .from('leads')
+src/hooks/useMetas.ts:140:        .from('renovacoes')
+src/hooks/useMetas.ts:154:        .from('movimentacoes_admin')
+src/hooks/useSupabase.ts:22:          .from('unidades')
+src/hooks/useSupabase.ts:52:          .rpc('get_kpis_consolidados', { p_ano: ano })
+src/hooks/useSupabase.ts:80:          .rpc('get_kpis_unidade', { 
+src/hooks/useSupabase.ts:110:          .rpc('get_comparativo_anos', { 
+src/hooks/useSupabase.ts:142:          .rpc('get_heatmap_data', { p_ano: ano, p_metrica: metrica })
+src/hooks/useSupabase.ts:148:          .rpc('get_heatmap_totais', { p_ano: ano, p_metrica: metrica })
+src/hooks/useSupabase.ts:177:          .from('dados_mensais')
+src/hooks/useSupabase.ts:215:          .from('metas')
+src/hooks/useSupabase.ts:250:          .from('vw_consolidado_anual')
+src/hooks/useSupabase.ts:279:          .from('vw_unidade_anual')
+src/hooks/useSupabase.ts:313:          .from('vw_sazonalidade')
+src/hooks/useProfessor360.ts:154:        .from('professor_360_criterios')
+src/hooks/useProfessor360.ts:180:      .from('professor_360_criterios')
+src/hooks/useProfessor360.ts:190:      .from('professor_360_criterios')
+src/hooks/useProfessor360.ts:224:        .from('professor_360_config')
+src/hooks/useProfessor360.ts:257:      .from('professor_360_config')
+src/hooks/useProfessor360.ts:281:        .from('professor_360_ocorrencias')
+src/hooks/useProfessor360.ts:329:        .from('professor_360_ocorrencias')
+src/hooks/useProfessor360.ts:335:        .from('professor_360_ocorrencias')
+src/hooks/useProfessor360.ts:350:      .from('professor_360_ocorrencias')
+src/hooks/useProfessor360.ts:360:      .from('professor_360_ocorrencias')
+src/hooks/useProfessor360.ts:393:        .from('professor_360_avaliacoes')
+src/hooks/useProfessor360.ts:424:      .from('professor_360_avaliacoes')
+src/hooks/useProfessor360.ts:477:        .from('professores')
+src/hooks/useProfessor360.ts:483:        .from('professores_unidades')
+src/hooks/useProfessor360.ts:488:        .from('unidades')
+src/hooks/useProfessor360.ts:736:      .from('professor_360_avaliacoes')
+src/hooks/useProfessor360.ts:790:      .from('professor_360_ocorrencias_log')
+src/hooks/useProfessor360.ts:805:      .from('professor_360_ocorrencias')
+src/hooks/useProfessor360.ts:839:      .from('professor_360_ocorrencias')
+src/hooks/useProfessor360.ts:863:      const { data, error } = await supabase.rpc('reverter_ocorrencia', {
+src/hooks/useProfessor360.ts:889:      const { data, error } = await supabase.rpc('restaurar_ocorrencia', {
+src/hooks/useProfessor360.ts:920:      const { data, error } = await supabase.rpc('editar_ocorrencia', {
+src/hooks/useProfessor360.ts:948:      .from('professor_360_ocorrencias')
+src/hooks/useProfessor360.ts:954:      await supabase.rpc('registrar_log_ocorrencia', {
+src/hooks/useProfessor360.ts:991:          .from('professor_360_avaliacoes')
+src/router.tsx:51:    supabase.from('campanhas_config').select('visibilidade_global').single()
+src/contexts/OnboardingContext.tsx:119:        .from('usuario_onboarding')
+src/contexts/OnboardingContext.tsx:127:          .from('usuario_onboarding')
+src/contexts/OnboardingContext.tsx:190:        .from('usuario_onboarding')
+src/contexts/OnboardingContext.tsx:233:        .from('usuario_onboarding')
+src/contexts/AuthContext.tsx:74:        .from('usuarios')
+src/contexts/AuthContext.tsx:97:            .from('usuarios')
+src/contexts/AuthContext.tsx:133:          .from('unidades')
+src/contexts/AuthContext.tsx:163:          .from('permissoes')
+src/contexts/AuthContext.tsx:178:        .rpc('usuario_perfis_lista', { p_usuario_id: usuarioId });
+src/contexts/AuthContext.tsx:186:        .rpc('usuario_permissoes', { p_usuario_id: usuarioId });
+supabase/functions/relatorio-coordenacao-whatsapp/index.ts:105:      .from('whatsapp_destinatarios_relatorio')
+supabase/functions/webhook-whatsapp-status/index.ts:72:          .from('crm_mensagens')
+supabase/functions/lojinha-relatorio-professor/index.ts:196:      .from('professores')
+supabase/functions/lojinha-relatorio-professor/index.ts:217:      .from('loja_carteira')
+supabase/functions/lojinha-relatorio-professor/index.ts:237:      .from('loja_carteira_movimentacoes')
+supabase/functions/lojinha-relatorio-professor/index.ts:245:      .from('loja_configuracoes')
+supabase/functions/gerar-prompt-agente/index.ts:129:      .from('assistente_ia_config')
+supabase/functions/sync-professores-emusys/index.ts:65:  await supabase.from('professores_sync_log').insert({
+supabase/functions/sync-professores-emusys/index.ts:117:    .from('professores_unidades')
+supabase/functions/sync-professores-emusys/index.ts:122:    .from('professores')
+supabase/functions/sync-professores-emusys/index.ts:157:          .from('professores_unidades')
+supabase/functions/sync-professores-emusys/index.ts:176:          .from('professores_unidades')
+supabase/functions/sync-professores-emusys/index.ts:192:        .from('professores')
+supabase/functions/sync-professores-emusys/index.ts:207:        .from('professores_unidades')
+supabase/functions/criar-sessao-feedback/index.ts:39:      .from('alunos')
+supabase/functions/criar-sessao-feedback/index.ts:46:      .from('aluno_feedback_sessoes')
+supabase/functions/criar-sessao-feedback/index.ts:76:        .from('professores')
+supabase/functions/processar-mensagens-agendadas/index.ts:20:    const { data } = await supabase.from('whatsapp_caixas').select(WA_FIELDS).eq('id', caixaId).eq('ativo', true).maybeSingle();
+supabase/functions/processar-mensagens-agendadas/index.ts:24:    const { data } = await supabase.from('whatsapp_caixas').select(WA_FIELDS).eq('ativo', true).eq('unidade_id', unidadeId).in('funcao', [funcao, 'ambos']).limit(1).maybeSingle();
+supabase/functions/processar-mensagens-agendadas/index.ts:28:    const { data } = await supabase.from('whatsapp_caixas').select(WA_FIELDS).eq('ativo', true).in('funcao', [funcao, 'ambos']).limit(1).maybeSingle();
+supabase/functions/processar-mensagens-agendadas/index.ts:31:  const { data } = await supabase.from('whatsapp_caixas').select(WA_FIELDS).eq('ativo', true).limit(1).maybeSingle();
+supabase/functions/processar-mensagens-agendadas/index.ts:56:      .from('crm_mensagens_agendadas')
+supabase/functions/processar-mensagens-agendadas/index.ts:89:          .from('crm_mensagens_agendadas')
+supabase/functions/processar-mensagens-agendadas/index.ts:111:            .from('crm_mensagens_agendadas')
+supabase/functions/processar-mensagens-agendadas/index.ts:119:            .from('crm_mensagens_agendadas')
+supabase/functions/processar-mensagens-agendadas/index.ts:127:          .from('crm_mensagens_agendadas')
+supabase/functions/processar-mensagens-agendadas/index.ts:166:    .from('fila_relatorios_whatsapp')
+supabase/functions/processar-mensagens-agendadas/index.ts:182:    .from('fila_relatorios_whatsapp')
+supabase/functions/processar-mensagens-agendadas/index.ts:211:        .from('fila_relatorios_whatsapp')
+supabase/functions/processar-mensagens-agendadas/index.ts:218:        .from('fila_relatorios_whatsapp')
+supabase/functions/processar-mensagens-agendadas/index.ts:225:      .from('fila_relatorios_whatsapp')
+supabase/functions/processar-mensagens-agendadas/index.ts:241:    .from('agente_fila_mensagens')
+supabase/functions/processar-mensagens-agendadas/index.ts:248:    .from('agente_fila_mensagens')
+supabase/functions/meta-webhook-campanhas/index.ts:23:        .from('numeros_meta')
+supabase/functions/meta-webhook-campanhas/index.ts:90:    .from('numeros_meta')
+supabase/functions/meta-webhook-campanhas/index.ts:105:    .from('mensagens_campanha')
+supabase/functions/meta-webhook-campanhas/index.ts:114:    .from('conversas_campanha')
+supabase/functions/meta-webhook-campanhas/index.ts:129:  await supabase.from('conversas_campanha')
+supabase/functions/meta-webhook-campanhas/index.ts:138:    await supabase.from('mensagens_campanha')
+supabase/functions/meta-webhook-campanhas/index.ts:161:  await supabase.from('mensagens_campanha').insert({
+supabase/functions/meta-webhook-campanhas/index.ts:195:  let qAgConv = supabase.from('agente_conversas').select('id, agente_id, bot_ativo')
+supabase/functions/meta-webhook-campanhas/index.ts:201:    const { data: ag } = await supabase.from('agentes')
+supabase/functions/meta-webhook-campanhas/index.ts:212:    let qTransf = supabase.from('agente_conversas').select('id, agente_id, session_data')
+supabase/functions/meta-webhook-campanhas/index.ts:220:        const { data: transferAgente } = await supabase.from('agentes').select('tools').eq('id', convTransferida.agente_id).single()
+supabase/functions/meta-webhook-campanhas/index.ts:229:        await supabase.from('mensagens_campanha').insert({
+supabase/functions/meta-webhook-campanhas/index.ts:239:    let qAgNum = supabase.from('agentes').select('id, modo_teste, telefone_teste')
+supabase/functions/meta-webhook-campanhas/index.ts:246:      let qAgFallback = supabase.from('agentes').select('id, modo_teste, telefone_teste')
+supabase/functions/meta-webhook-campanhas/index.ts:259:          .from('agente_conversas')
+supabase/functions/meta-webhook-campanhas/index.ts:273:        .from('campanha_contatos')
+supabase/functions/meta-webhook-campanhas/index.ts:284:          .from('mensagens_campanha')
+supabase/functions/meta-webhook-campanhas/index.ts:294:            .from('agentes')
+supabase/functions/meta-webhook-campanhas/index.ts:307:            await supabase.from('mensagens_campanha').insert({
+supabase/functions/meta-webhook-campanhas/index.ts:349:    .from('mensagens_campanha')
+supabase/functions/meta-webhook-campanhas/index.ts:366:    await supabase.from('mensagens_campanha').update(updateData).eq('id', msg.id)
+supabase/functions/meta-webhook-campanhas/index.ts:371:    .from('mensagens_campanha')
+supabase/functions/meta-webhook-campanhas/index.ts:377:    const { data: msgTel } = await supabase.from('mensagens_campanha').select('telefone').eq('id', msg.id).single()
+supabase/functions/meta-webhook-campanhas/index.ts:383:        await supabase.from('campanha_contatos')
+supabase/functions/meta-webhook-campanhas/index.ts:402:        await supabase.from('campanha_contatos')
+supabase/functions/meta-webhook-campanhas/index.ts:412:    const { count: entregues } = await supabase.from('campanha_contatos').select('id', { count: 'exact', head: true }).eq('campanha_id', campanhaId).eq('status', 'entregue')
+supabase/functions/meta-webhook-campanhas/index.ts:413:    const { count: lidos } = await supabase.from('campanha_contatos').select('id', { count: 'exact', head: true }).eq('campanha_id', campanhaId).eq('status', 'lido')
+supabase/functions/meta-webhook-campanhas/index.ts:414:    const { count: falhasCount } = await supabase.from('campanha_contatos').select('id', { count: 'exact', head: true }).eq('campanha_id', campanhaId).in('status', ['falha', 'bloqueado', 'invalido'])
+supabase/functions/meta-webhook-campanhas/index.ts:415:    await supabase.from('campanhas').update({
+supabase/functions/controle-campanha/index.ts:35:      .from('usuarios')
+supabase/functions/controle-campanha/index.ts:43:      .from('campanhas')
+supabase/functions/controle-campanha/index.ts:76:      .from('campanhas')
+supabase/functions/validar-token-feedback/index.ts:32:      .from('aluno_feedback_sessoes')
+supabase/functions/validar-token-feedback/index.ts:79:        .from('aluno_feedback_sessoes')
+supabase/functions/validar-token-feedback/index.ts:86:      .from('alunos')
+supabase/functions/validar-token-feedback/index.ts:105:      .from('aluno_feedback_professor')
+supabase/functions/reagir-mensagem/index.ts:45:      .from('crm_mensagens')
+supabase/functions/reagir-mensagem/index.ts:66:      .from('crm_conversas')
+supabase/functions/reagir-mensagem/index.ts:114:        .from('crm_mensagens')
+supabase/functions/gemini-relatorio-coordenacao/index.ts:55:    let query = client.from('config_health_score_professor').select('*');
+supabase/functions/_shared/invariantes.ts:64:    .from('automacao_log')
+supabase/functions/_shared/invariantes.ts:96:      .from('automacao_invariantes')
+supabase/functions/_shared/uazapi.ts:41:      .from('whatsapp_caixas')
+supabase/functions/_shared/uazapi.ts:56:      .from('whatsapp_caixas')
+supabase/functions/_shared/uazapi.ts:73:      .from('whatsapp_caixas')
+supabase/functions/_shared/uazapi.ts:88:    .from('whatsapp_caixas')
+supabase/functions/_shared/uazapi.ts:158:    const { data } = await supabase.from('whatsapp_caixas').select(WA_FIELDS).eq('id', caixaId).eq('ativo', true).maybeSingle();
+supabase/functions/_shared/uazapi.ts:162:    const { data } = await supabase.from('whatsapp_caixas').select(WA_FIELDS).eq('ativo', true).eq('unidade_id', unidadeId).in('funcao', [funcao, 'ambos']).limit(1).maybeSingle();
+supabase/functions/_shared/uazapi.ts:166:    const { data } = await supabase.from('whatsapp_caixas').select(WA_FIELDS).eq('ativo', true).in('funcao', [funcao, 'ambos']).limit(1).maybeSingle();
+supabase/functions/_shared/uazapi.ts:169:  const { data } = await supabase.from('whatsapp_caixas').select(WA_FIELDS).eq('ativo', true).limit(1).maybeSingle();
+supabase/functions/_shared/whatsapp-meta-api.ts:228:    .from('whatsapp-media-campanhas')
+supabase/functions/_shared/whatsapp-meta-api.ts:234:    .from('whatsapp-media-campanhas')
+supabase/functions/bi-agent-lamusic/index.ts:41:1. Use as tools especializadas primeiro (get_dados_mensais, search_aluno, etc.)
+supabase/functions/bi-agent-lamusic/index.ts:51:- "evasões do professor X" → consultar_banco: SELECT m.aluno_nome, m.data, m.motivo FROM movimentacoes_admin m JOIN professores p ON p.id = m.professor_id WHERE p.nome ILIKE '%X%' AND m.tipo IN ('evasao','cancelamento')
+supabase/functions/bi-agent-lamusic/index.ts:54:- "dados mensais / métricas / faturamento" → get_dados_mensais
+supabase/functions/bi-agent-lamusic/index.ts:107:    const { data: schemaData } = await supabase.rpc('introspect_schema_lamusic', { table_names: tables });
+supabase/functions/bi-agent-lamusic/index.ts:124:    const { data: result } = await supabase.rpc('execute_bi_query_lamusic', {
+supabase/functions/bi-agent-lamusic/index.ts:149:        .from('assistente_ia_config')
+supabase/functions/bi-agent-lamusic/index.ts:167:      .from('usuarios')
+supabase/functions/bi-agent-lamusic/index.ts:188:        .from('unidades').select('nome').eq('id', unidade_id_override).single();
+supabase/functions/bi-agent-lamusic/index.ts:196:      .from('bi_agent_config_lamusic')
+supabase/functions/bi-agent-lamusic/index.ts:216:        .from('bi_conversations_lamusic')
+supabase/functions/bi-agent-lamusic/index.ts:224:        .from('bi_conversations_lamusic')
+supabase/functions/bi-agent-lamusic/index.ts:230:          .from('bi_conversations_lamusic')
+supabase/functions/bi-agent-lamusic/index.ts:238:          await supabase.from('bi_conversations_lamusic')
+supabase/functions/bi-agent-lamusic/index.ts:246:    await supabase.from('bi_messages_lamusic').insert({
+supabase/functions/bi-agent-lamusic/index.ts:252:      .from('bi_messages_lamusic')
+supabase/functions/bi-agent-lamusic/index.ts:260:      .from('bi_query_templates_lamusic')
+supabase/functions/bi-agent-lamusic/index.ts:273:          .from('bi_query_cache_lamusic')
+supabase/functions/bi-agent-lamusic/index.ts:281:          await supabase.from('bi_query_cache_lamusic')
+supabase/functions/bi-agent-lamusic/index.ts:287:          const msg = await supabase.from('bi_messages_lamusic').insert({
+supabase/functions/bi-agent-lamusic/index.ts:295:          await supabase.from('bi_query_templates_lamusic')
+supabase/functions/bi-agent-lamusic/index.ts:307:      const { data: result } = await supabase.rpc('execute_bi_query_lamusic', {
+supabase/functions/bi-agent-lamusic/index.ts:316:        await supabase.from('bi_query_cache_lamusic').upsert({
+supabase/functions/bi-agent-lamusic/index.ts:325:      const msg = await supabase.from('bi_messages_lamusic').insert({
+supabase/functions/bi-agent-lamusic/index.ts:332:      await supabase.from('bi_query_templates_lamusic')
+supabase/functions/bi-agent-lamusic/index.ts:394:                  .from('bi_query_cache_lamusic')
+supabase/functions/bi-agent-lamusic/index.ts:403:                  await supabase.from('bi_query_cache_lamusic')
+supabase/functions/bi-agent-lamusic/index.ts:410:                const { data: result } = await supabase.rpc('execute_bi_query_lamusic', {
+supabase/functions/bi-agent-lamusic/index.ts:431:                    await supabase.from('bi_query_cache_lamusic').upsert({
+supabase/functions/bi-agent-lamusic/index.ts:445:              const dataArray = parsed.dados_mensais || parsed.alunos || parsed.leads || parsed.leads_hoje || parsed.resultado || parsed.unidades;
+supabase/functions/bi-agent-lamusic/index.ts:490:    const { data: savedMsg } = await supabase.from('bi_messages_lamusic').insert({
+supabase/functions/bi-agent-lamusic/index.ts:502:    await supabase.from('bi_conversations_lamusic')
+supabase/functions/bi-agent-lamusic/tools.ts:24:      name: 'get_dados_mensais',
+supabase/functions/bi-agent-lamusic/tools.ts:190:    .from('unidades').select('id').eq('ativo', true)
+supabase/functions/bi-agent-lamusic/tools.ts:204:  const { data, error } = await supabase.from('unidades').select('id, nome, codigo').eq('ativo', true).order('nome');
+supabase/functions/bi-agent-lamusic/tools.ts:211:    .from('dados_mensais')
+supabase/functions/bi-agent-lamusic/tools.ts:222:  return JSON.stringify({ dados_mensais: data, total: data.length });
+supabase/functions/bi-agent-lamusic/tools.ts:227:    .from('alunos')
+supabase/functions/bi-agent-lamusic/tools.ts:252:    .from('alunos').select('id, status, valor_parcela, is_segundo_curso').eq('unidade_id', uid);
+supabase/functions/bi-agent-lamusic/tools.ts:278:  let query = supabase.from('movimentacoes_admin').select('id, tipo').eq('unidade_id', uid);
+supabase/functions/bi-agent-lamusic/tools.ts:295:    .from('leads')
+supabase/functions/bi-agent-lamusic/tools.ts:325:    .from('leads')
+supabase/functions/bi-agent-lamusic/tools.ts:346:  let query = supabase.from('leads').select('id, status, converteu, etapa_pipeline:etapa_pipeline_id(nome)').eq('arquivado', false);
+supabase/functions/bi-agent-lamusic/tools.ts:375:  const { data, error } = await supabase.rpc('execute_bi_query_lamusic', {
+supabase/functions/bi-agent-lamusic/tools.ts:394:  const { data, error } = await supabase.rpc('execute_bi_query_lamusic', {
+supabase/functions/bi-agent-lamusic/tools.ts:419:    const { data } = await supabase.rpc('introspect_schema_lamusic', { table_names: tableNames });
+supabase/functions/bi-agent-lamusic/tools.ts:440:  const { data } = await supabase.rpc('execute_bi_query_lamusic', {
+supabase/functions/bi-agent-lamusic/tools.ts:452:    const { data: schemaData } = await supabase.rpc('introspect_schema_lamusic', { table_names: tableNames });
+supabase/functions/bi-agent-lamusic/tools.ts:488:  const tabelasPermitidas = ['alunos', 'leads', 'professores', 'cursos', 'turmas', 'movimentacoes_admin'];
+supabase/functions/bi-agent-lamusic/tools.ts:504:    const { data: result } = await supabase.rpc('execute_bi_query_lamusic', {
+supabase/functions/bi-agent-lamusic/tools.ts:524:  const { data: allDb } = await supabase.rpc('execute_bi_query_lamusic', {
+supabase/functions/bi-agent-lamusic/tools.ts:555:      case 'get_dados_mensais': return await toolGetDadosMensais(supabase, args, ctx);
+supabase/functions/bi-agent-lamusic/schema.ts:36:- movimentacoes_admin: id (int PK), unidade_id (uuid FK), data (date), tipo ('evasao','cancelamento','renovacao','nao_renovacao','trancamento','aviso_previo'), aluno_nome, aluno_id (int FK), professor_id (int FK), curso_id (int FK), valor_parcela_anterior, valor_parcela_novo, motivo (text), tempo_permanencia_meses
+supabase/functions/bi-agent-lamusic/schema.ts:39:- dados_mensais: unidade_id, ano, mes, alunos_ativos, alunos_pagantes, novas_matriculas, evasoes, churn_rate, ticket_medio, taxa_renovacao, faturamento_estimado, matriculas_banda, matriculas_2_curso
+supabase/functions/bi-agent-lamusic/schema.ts:62:- movimentacoes_admin.unidade_id → unidades.id
+supabase/functions/bi-agent-lamusic/schema.ts:63:- movimentacoes_admin.professor_id → professores.id
+supabase/functions/bi-agent-lamusic/schema.ts:64:- dados_mensais.unidade_id → unidades.id
+supabase/functions/bi-agent-lamusic/schema.ts:77:SELECT p.nome, COUNT(*) as evasoes FROM movimentacoes_admin m JOIN professores p ON p.id = m.professor_id WHERE m.tipo IN ('evasao','cancelamento') AND m.data >= CURRENT_DATE - INTERVAL '3 months' GROUP BY p.nome ORDER BY evasoes DESC;
+supabase/functions/bi-agent-lamusic/schema.ts:88:-- Evolução mensal de alunos ativos (dados_mensais)
+supabase/functions/bi-agent-lamusic/schema.ts:89:SELECT ano, mes, alunos_ativos, alunos_pagantes, evasoes, ticket_medio FROM dados_mensais WHERE unidade_id IS NOT NULL ORDER BY ano, mes;
+supabase/functions/bi-agent-lamusic/schema.ts:95:SELECT m.meta_alunos_ativos, m.meta_matriculas, m.meta_evasoes_maximo, d.alunos_ativos, d.novas_matriculas, d.evasoes FROM metas m LEFT JOIN dados_mensais d ON d.unidade_id = m.unidade_id AND d.ano = m.ano AND d.mes = m.mes WHERE m.ano = EXTRACT(YEAR FROM CURRENT_DATE) AND m.mes = EXTRACT(MONTH FROM CURRENT_DATE);
+supabase/functions/enviar-pesquisa-evasao/index.ts:43:      .from('movimentacoes_admin')
+supabase/functions/enviar-pesquisa-evasao/index.ts:68:    // Criar objeto evasao a partir de movimentacoes_admin (fonte única)
+supabase/functions/enviar-pesquisa-evasao/index.ts:85:      .from('pesquisa_evasao')
+supabase/functions/enviar-pesquisa-evasao/index.ts:117:      .from('alunos')
+supabase/functions/enviar-pesquisa-evasao/index.ts:132:        .from('professores')
+supabase/functions/enviar-pesquisa-evasao/index.ts:143:        .from('cursos')
+supabase/functions/enviar-pesquisa-evasao/index.ts:159:      await supabase.rpc('criar_pesquisa_evasao', {
+supabase/functions/enviar-pesquisa-evasao/index.ts:164:        .from('pesquisa_evasao')
+supabase/functions/enviar-pesquisa-evasao/index.ts:174:    // Criar ou atualizar registro de pesquisa (evasao_id = movimentacoes_admin.id)
+supabase/functions/enviar-pesquisa-evasao/index.ts:178:      .from('pesquisa_evasao')
+supabase/functions/enviar-pesquisa-evasao/index.ts:206:      .from('conversa_estado_whatsapp')
+supabase/functions/enviar-pesquisa-evasao/index.ts:277:        .from('pesquisa_evasao')
+supabase/functions/enviar-pesquisa-evasao/index.ts:292:      .from('pesquisa_evasao')
+supabase/functions/enviar-campanha/index.ts:35:      .from('campanhas')
+supabase/functions/enviar-campanha/index.ts:56:      .from('campanha_contatos')
+supabase/functions/enviar-campanha/index.ts:68:        .from('campanhas')
+supabase/functions/enviar-campanha/index.ts:82:          .from('campanhas')
+supabase/functions/enviar-campanha/index.ts:106:          .from('campanha_contatos')
+supabase/functions/enviar-campanha/index.ts:131:          .from('campanha_contatos')
+supabase/functions/enviar-campanha/index.ts:142:      .from('campanhas')
+supabase/functions/enviar-campanha/index.ts:149:        .from('campanhas')
+supabase/functions/enviar-campanha/index.ts:160:      .from('campanha_contatos')
+supabase/functions/enviar-campanha/index.ts:166:      .from('campanhas')
+supabase/functions/enviar-campanha/index.ts:182:        .from('campanhas')
+supabase/functions/enviar-campanha/index.ts:291:    .from('conversas_campanha')
+supabase/functions/enviar-campanha/index.ts:308:    .from('mensagens_campanha')
+supabase/functions/processar-matricula-emusys/index.ts:196:      .from('cursos')
+supabase/functions/processar-matricula-emusys/index.ts:208:    .from('cursos')
+supabase/functions/processar-matricula-emusys/index.ts:221:        .from('cursos')
+supabase/functions/processar-matricula-emusys/index.ts:239:      .from('professores_unidades')
+supabase/functions/processar-matricula-emusys/index.ts:254:        .from('professores_unidades')
+supabase/functions/processar-matricula-emusys/index.ts:263:            .from('professores_unidades')
+supabase/functions/processar-matricula-emusys/index.ts:291:    const { data } = await supabase.from('alunos')
+supabase/functions/processar-matricula-emusys/index.ts:301:    const { data } = await supabase.from('alunos')
+supabase/functions/processar-matricula-emusys/index.ts:310:  const { data: candidatos } = await supabase.from('alunos')
+supabase/functions/processar-matricula-emusys/index.ts:332:  await supabase.from('alunos')
+supabase/functions/processar-matricula-emusys/index.ts:343:    const { data } = await supabase.from('leads').select('id')
+supabase/functions/processar-matricula-emusys/index.ts:350:    const { data } = await supabase.from('leads').select('id')
+supabase/functions/processar-matricula-emusys/index.ts:356:    const { data } = await supabase.from('leads').select('id')
+supabase/functions/processar-matricula-emusys/index.ts:375:  await supabase.from('leads').update(updates).eq('id', leadId);
+supabase/functions/processar-matricula-emusys/index.ts:388:  const { data: existing } = await supabase.from('movimentacoes_admin')
+supabase/functions/processar-matricula-emusys/index.ts:401:      .from('motivos_saida')
+supabase/functions/processar-matricula-emusys/index.ts:410:  await supabase.from('movimentacoes_admin').insert({
+supabase/functions/processar-matricula-emusys/index.ts:446:        const { data: novoSegundo } = await supabase.from('alunos').insert({
+supabase/functions/processar-matricula-emusys/index.ts:478:        await supabase.from('alunos').update({
+supabase/functions/processar-matricula-emusys/index.ts:504:      const { data: newAluno } = await supabase.from('alunos').insert({
+supabase/functions/processar-matricula-emusys/index.ts:667:    await supabase.from('alunos').update(alunoUpdate).eq('id', aluno.id);
+supabase/functions/processar-matricula-emusys/index.ts:669:    await supabase.rpc('execute_bi_query_lamusic', {
+supabase/functions/processar-matricula-emusys/index.ts:675:    const { data: existente } = await supabase.from('renovacoes')
+supabase/functions/processar-matricula-emusys/index.ts:683:      await supabase.from('renovacoes').insert({
+supabase/functions/processar-matricula-emusys/index.ts:816:    await supabase.from('alunos').update(trancUpdate).eq('id', aluno.id);
+supabase/functions/processar-matricula-emusys/index.ts:895:  const { data: candidatos } = await supabase.from('alunos')
+supabase/functions/processar-matricula-emusys/index.ts:910:  const { data: tiposExcluir } = await supabase.from('tipos_matricula')
+supabase/functions/processar-matricula-emusys/index.ts:947:  const { data: inserido, error } = await supabase.from('alunos_historico').insert({
+supabase/functions/processar-matricula-emusys/index.ts:1030:    await supabase.from('alunos').update(evasaoUpdate).eq('id', aluno.id);
+supabase/functions/deletar-mensagem-lead/index.ts:38:      .from('crm_mensagens')
+supabase/functions/deletar-mensagem-lead/index.ts:61:        .from('crm_mensagens')
+supabase/functions/deletar-mensagem-lead/index.ts:73:      .from('crm_conversas')
+supabase/functions/deletar-mensagem-lead/index.ts:99:        .from('crm_mensagens')
+supabase/functions/sync-feriados/index.ts:43:      .from('feriados')
+supabase/functions/sync-feriados/index.ts:60:        .from('feriados')
+supabase/functions/enviar-mensagem-meta/index.ts:47:      .from('usuarios')
+supabase/functions/enviar-mensagem-meta/index.ts:56:      .from('numeros_meta')
+supabase/functions/enviar-mensagem-meta/index.ts:74:      await supabase.from('mensagens_campanha')
+supabase/functions/enviar-mensagem-meta/index.ts:93:      .from('conversas_campanha')
+supabase/functions/enviar-mensagem-meta/index.ts:111:      .from('mensagens_campanha')
+supabase/functions/enviar-mensagem-admin/index.ts:75:      .from('admin_conversas')
+supabase/functions/enviar-mensagem-admin/index.ts:103:        .from('admin_mensagens')
+supabase/functions/enviar-mensagem-admin/index.ts:227:              .from('admin_mensagens')
+supabase/functions/enviar-mensagem-admin/index.ts:234:              .from('admin_conversas')
+supabase/functions/enviar-mensagem-admin/index.ts:250:            .from('admin_mensagens')
+supabase/functions/enviar-mensagem-admin/index.ts:258:          .from('admin_mensagens')
+supabase/functions/whatsapp-status/index.ts:135:      .from('whatsapp_caixas')
+supabase/functions/admin-create-user/index.ts:45:      .from("usuarios")
+supabase/functions/admin-create-user/index.ts:97:      .from("usuarios")
+supabase/functions/lojinha-alerta-estoque/index.ts:178:      .from('unidades')
+supabase/functions/lojinha-alerta-estoque/index.ts:192:      .from('loja_responsaveis_reposicao')
+supabase/functions/lojinha-alerta-estoque/index.ts:219:        .from('loja_estoque')
+supabase/functions/lojinha-alerta-estoque/index.ts:226:        .lt('quantidade', supabase.rpc('get_estoque_minimo_produto'));
+supabase/functions/lojinha-alerta-estoque/index.ts:230:        .from('loja_estoque')
+supabase/functions/lojinha-alerta-estoque/index.ts:260:      .from('loja_configuracoes')
+supabase/functions/transcrever-audio/index.ts:38:      .from('crm_mensagens')
+supabase/functions/transcrever-audio/index.ts:73:      .from('crm_conversas')
+supabase/functions/transcrever-audio/index.ts:105:          .from('crm_mensagens')
+supabase/functions/enviar-mensagem-lead/index.ts:66:      .from('crm_conversas')
+supabase/functions/enviar-mensagem-lead/index.ts:93:      .from('crm_mensagens')
+supabase/functions/enviar-mensagem-lead/index.ts:134:        .from('crm_mensagens')
+supabase/functions/enviar-mensagem-lead/index.ts:215:        .from('crm_mensagens')
+supabase/functions/enviar-mensagem-lead/index.ts:225:          .from('crm_conversas')
+supabase/functions/enviar-mensagem-lead/index.ts:246:        .from('crm_mensagens')
+supabase/functions/sync-presenca-emusys/index.ts:204:          .from('lead_experimentais')
+supabase/functions/sync-presenca-emusys/index.ts:226:        .from('lead_experimentais')
+supabase/functions/sync-presenca-emusys/index.ts:238:          await supabase.from('lead_experimentais').update({
+supabase/functions/sync-presenca-emusys/index.ts:252:          .from('leads')
+supabase/functions/sync-presenca-emusys/index.ts:266:          .from('leads')
+supabase/functions/sync-presenca-emusys/index.ts:288:        .from('lead_experimentais')
+supabase/functions/sync-presenca-emusys/index.ts:315:    await supabase.from('leads_automacao_log').insert({
+supabase/functions/sync-presenca-emusys/index.ts:349:    .from('lead_experimentais')
+supabase/functions/sync-presenca-emusys/index.ts:356:      await supabase.from('lead_experimentais').update({
+supabase/functions/sync-presenca-emusys/index.ts:360:      await supabase.from('leads').update({
+supabase/functions/sync-presenca-emusys/index.ts:369:    .from('lead_experimentais')
+supabase/functions/sync-presenca-emusys/index.ts:395:      .from('aulas_emusys')
+supabase/functions/sync-presenca-emusys/index.ts:407:        .from('aulas_emusys')
+supabase/functions/sync-presenca-emusys/index.ts:452:        .from('lead_experimentais')
+supabase/functions/sync-presenca-emusys/index.ts:469:      .from('lead_experimentais')
+supabase/functions/sync-presenca-emusys/index.ts:480:      .from('leads')
+supabase/functions/sync-presenca-emusys/index.ts:503:    await supabase.from('leads_automacao_log').insert({
+supabase/functions/sync-presenca-emusys/index.ts:565:        .from('alunos')
+supabase/functions/sync-presenca-emusys/index.ts:582:      .from('professores')
+supabase/functions/sync-presenca-emusys/index.ts:596:      .from('cursos')
+supabase/functions/sync-presenca-emusys/index.ts:669:            .from('aulas_emusys')
+supabase/functions/sync-presenca-emusys/index.ts:720:                await supabase.from('automacao_log').insert({
+supabase/functions/sync-presenca-emusys/index.ts:741:              .from('aluno_presenca')
+supabase/functions/sync-presenca-emusys/index.ts:777:                  .from('alunos')
+supabase/functions/sync-presenca-emusys/index.ts:791:        await supabase.from('emusys_sync_log').insert({
+supabase/functions/sync-presenca-emusys/index.ts:819:      await supabase.rpc('atualizar_percentual_presenca', { p_unidade_id: unidade.id });
+supabase/functions/gemini-ranking-professores/index.ts:49:    let query = client.from('config_health_score_professor').select('*');
+supabase/functions/projeto-alertas-whatsapp/index.ts:25:    .from('notificacao_config')
+supabase/functions/projeto-alertas-whatsapp/index.ts:35:    .from('notificacao_destinatarios')
+supabase/functions/projeto-alertas-whatsapp/index.ts:49:          .from('usuarios')
+supabase/functions/projeto-alertas-whatsapp/index.ts:56:          .from('professores')
+supabase/functions/projeto-alertas-whatsapp/index.ts:118:  await supabase.from('notificacao_log').insert({
+supabase/functions/projeto-alertas-whatsapp/index.ts:148:    .from('projeto_tarefas')
+supabase/functions/projeto-alertas-whatsapp/index.ts:224:    .from('projeto_tarefas')
+supabase/functions/projeto-alertas-whatsapp/index.ts:294:    .from('projetos')
+supabase/functions/projeto-alertas-whatsapp/index.ts:373:    .from('projetos')
+supabase/functions/projeto-alertas-whatsapp/index.ts:378:    .from('projeto_tarefas')
+supabase/functions/projeto-alertas-whatsapp/index.ts:384:    .from('projeto_tarefas')
+supabase/functions/projeto-alertas-whatsapp/index.ts:390:    .from('projeto_tarefas')
+supabase/functions/auditor-divergencias-emusys/index.ts:407:      const { data: rows, error } = await supabase.rpc('executar_query_auditoria', {
+supabase/functions/auditor-divergencias-emusys/index.ts:428:          .from('automacao_log')
+supabase/functions/editar-mensagem-lead/index.ts:38:      .from('crm_mensagens')
+supabase/functions/editar-mensagem-lead/index.ts:75:      .from('crm_conversas')
+supabase/functions/editar-mensagem-lead/index.ts:102:        .from('crm_mensagens')
+supabase/functions/admin-update-password/index.ts:45:      .from("usuarios")
+supabase/functions/sincronizar-templates/index.ts:38:      .from('usuarios')
+supabase/functions/sincronizar-templates/index.ts:47:      .from('numeros_meta')
+supabase/functions/sincronizar-templates/index.ts:79:        .from('templates_meta')
+supabase/functions/sincronizar-templates/index.ts:111:            .from('templates_meta')
+supabase/functions/sincronizar-templates/index.ts:131:                  .from('whatsapp-media-campanhas')
+supabase/functions/sincronizar-templates/index.ts:136:                    .from('whatsapp-media-campanhas')
+supabase/functions/sincronizar-templates/index.ts:140:                    .from('templates_meta')
+supabase/functions/agente-webhook/index.ts:45:      .from('agentes')
+supabase/functions/agente-webhook/index.ts:54:      await supabase.from('agente_fila_mensagens').delete()
+supabase/functions/agente-webhook/index.ts:81:        await supabase.from('agente_fila_mensagens').delete().eq('agente_id', agente_id).eq('telefone', telefone)
+supabase/functions/agente-webhook/index.ts:92:      .from('agente_fila_mensagens')
+supabase/functions/agente-webhook/index.ts:110:        await supabase.from('agente_fila_mensagens').update({ mensagens_acumuladas: acumuladas }).eq('id', filaExistente.id)
+supabase/functions/agente-webhook/index.ts:114:        await supabase.from('agente_fila_mensagens')
+supabase/functions/agente-webhook/index.ts:119:      await supabase.from('agente_fila_mensagens')
+supabase/functions/agente-webhook/index.ts:124:      await supabase.from('agente_fila_mensagens').insert({
+supabase/functions/agente-webhook/index.ts:137:      .from('agente_conversas')
+supabase/functions/agente-webhook/index.ts:151:        .from('agente_conversas')
+supabase/functions/agente-webhook/index.ts:168:        .from('conversas_campanha').select('id')
+supabase/functions/agente-webhook/index.ts:174:          .from('mensagens_campanha')
+supabase/functions/agente-webhook/index.ts:181:          await supabase.from('agente_fila_mensagens').delete().eq('agente_id', agente_id).eq('telefone', telefone)
+supabase/functions/agente-webhook/index.ts:189:      await supabase.from('agente_fila_mensagens').delete().eq('agente_id', agente_id).eq('telefone', telefone)
+supabase/functions/agente-webhook/index.ts:206:      .from('agente_fila_mensagens')
+supabase/functions/agente-webhook/index.ts:216:      .from('assistente_ia_config')
+supabase/functions/agente-webhook/index.ts:236:      await supabase.from('agente_fila_mensagens').delete().eq('agente_id', agente_id).eq('telefone', telefone)
+supabase/functions/agente-webhook/index.ts:242:      .from('conversas_campanha').select('id')
+supabase/functions/agente-webhook/index.ts:247:      .from('mensagens_campanha')
+supabase/functions/agente-webhook/index.ts:309:        await supabase.from('agente_conversas').update({ bot_ativo: false, status: 'error' }).eq('id', conversa.id)
+supabase/functions/agente-webhook/index.ts:311:        await supabase.from('agente_fila_mensagens').delete().eq('agente_id', agente_id).eq('telefone', telefone)
+supabase/functions/agente-webhook/index.ts:367:    await supabase.from('agente_conversas').update({
+supabase/functions/agente-webhook/index.ts:374:    await supabase.from('agente_fila_mensagens').delete().eq('agente_id', agente_id).eq('telefone', telefone)
+supabase/functions/agente-webhook/index.ts:387:    const { data } = await supabase.from('numeros_meta').select('phone_number_id, access_token').eq('id', agente.numero_meta_id).single()
+supabase/functions/agente-webhook/index.ts:390:  const { data } = await supabase.from('numeros_meta').select('phone_number_id, access_token').eq('unidade_id', agente.unidade_id).eq('is_default', true).single()
+supabase/functions/agente-webhook/index.ts:398:    const { data } = await supabase.from('conversas_campanha').select('id')
+supabase/functions/agente-webhook/index.ts:404:    const { data } = await supabase.from('conversas_campanha').select('id')
+supabase/functions/agente-webhook/index.ts:411:    const { data: novaConv } = await supabase.from('conversas_campanha')
+supabase/functions/agente-webhook/index.ts:418:  await supabase.from('mensagens_campanha').insert({
+supabase/functions/agente-webhook/index.ts:479:    .from('agente_conversas')
+supabase/functions/agente-webhook/index.ts:494:  await ctx.supabase.from('agente_conversas').update({
+supabase/functions/webhook-whatsapp-inbox/index.ts:241:      .from('conversa_estado_whatsapp')
+supabase/functions/webhook-whatsapp-inbox/index.ts:256:        .from('conversa_estado_whatsapp')
+supabase/functions/webhook-whatsapp-inbox/index.ts:290:      .from('pesquisa_evasao')
+supabase/functions/webhook-whatsapp-inbox/index.ts:372:      .from('pesquisa_evasao')
+supabase/functions/webhook-whatsapp-inbox/index.ts:385:      .from('conversa_estado_whatsapp')
+supabase/functions/webhook-whatsapp-inbox/index.ts:441:        .from('crm_mensagens')
+supabase/functions/webhook-whatsapp-inbox/index.ts:459:        .from('admin_mensagens')
+supabase/functions/webhook-whatsapp-inbox/index.ts:497:        .from('admin_mensagens')
+supabase/functions/webhook-whatsapp-inbox/index.ts:512:      .from('alunos')
+supabase/functions/webhook-whatsapp-inbox/index.ts:522:        .from('alunos')
+supabase/functions/webhook-whatsapp-inbox/index.ts:556:    .from('admin_conversas')
+supabase/functions/webhook-whatsapp-inbox/index.ts:564:      .from('admin_conversas')
+supabase/functions/webhook-whatsapp-inbox/index.ts:598:    .from('admin_mensagens')
+supabase/functions/webhook-whatsapp-inbox/index.ts:621:  await supabase.rpc('admin_conversa_nova_mensagem', {
+supabase/functions/webhook-whatsapp-inbox/index.ts:643:    .from('admin_conversas')
+supabase/functions/webhook-whatsapp-inbox/index.ts:652:      .from('admin_conversas')
+supabase/functions/webhook-whatsapp-inbox/index.ts:675:        .from('admin_conversas')
+supabase/functions/webhook-whatsapp-inbox/index.ts:697:    .from('admin_mensagens')
+supabase/functions/webhook-whatsapp-inbox/index.ts:720:  await supabase.rpc('admin_conversa_nova_mensagem', {
+supabase/functions/webhook-whatsapp-inbox/index.ts:758:    await supabase.from('webhook_debug_log').insert({ payload });
+supabase/functions/webhook-whatsapp-inbox/index.ts:780:        .from('whatsapp_caixas')
+supabase/functions/webhook-whatsapp-inbox/index.ts:809:      .from('conversa_estado_whatsapp')
+supabase/functions/webhook-whatsapp-inbox/index.ts:870:              .from('crm_mensagens')
+supabase/functions/webhook-whatsapp-inbox/index.ts:881:                .from('admin_mensagens')
+supabase/functions/webhook-whatsapp-inbox/index.ts:931:            .from('crm_mensagens')
+supabase/functions/webhook-whatsapp-inbox/index.ts:944:          .from('leads')
+supabase/functions/webhook-whatsapp-inbox/index.ts:960:          .from('crm_conversas')
+supabase/functions/webhook-whatsapp-inbox/index.ts:968:            .from('crm_conversas')
+supabase/functions/webhook-whatsapp-inbox/index.ts:992:            .from('crm_conversas')
+supabase/functions/webhook-whatsapp-inbox/index.ts:1012:          .from('crm_mensagens')
+supabase/functions/webhook-whatsapp-inbox/index.ts:1036:          .from('crm_conversas')
+supabase/functions/webhook-whatsapp-inbox/index.ts:1051:              .from('crm_conversas')
+supabase/functions/lojinha-enviar-comprovante/index.ts:195:      .from('loja_vendas')
+supabase/functions/lojinha-enviar-comprovante/index.ts:264:      .from('loja_vendas_itens')
+supabase/functions/lojinha-enviar-comprovante/index.ts:289:      .from('loja_configuracoes')
+supabase/functions/lojinha-enviar-comprovante/index.ts:330:        .from('loja_vendas')
+supabase/functions/lojinha-relatorio-vendas/index.ts:270:      .from('loja_vendas')
+supabase/functions/lojinha-relatorio-vendas/index.ts:295:      .from('loja_vendas_itens')
+supabase/functions/lojinha-relatorio-vendas/index.ts:361:        .from('loja_carteira_movimentacoes')
+supabase/functions/lojinha-relatorio-vendas/index.ts:375:        .from('programa_fideliza_config')
+supabase/functions/mila-processar-mensagem/index.ts:166:          .from('cursos')
+supabase/functions/mila-processar-mensagem/index.ts:177:          .from('canais_origem')
+supabase/functions/mila-processar-mensagem/index.ts:192:        await supabase.from('leads').update(updateData).eq('id', leadId);
+supabase/functions/mila-processar-mensagem/index.ts:252:        .from('crm_pipeline_etapas')
+supabase/functions/mila-processar-mensagem/index.ts:258:      await supabase.from('leads').update(updateAgenda).eq('id', leadId);
+supabase/functions/mila-processar-mensagem/index.ts:261:      await supabase.from('crm_lead_historico').insert({
+supabase/functions/mila-processar-mensagem/index.ts:299:        .from('leads')
+supabase/functions/mila-processar-mensagem/index.ts:312:        .from('crm_conversas')
+supabase/functions/mila-processar-mensagem/index.ts:322:      await supabase.from('crm_mensagens').insert({
+supabase/functions/mila-processar-mensagem/index.ts:336:        .from('leads')
+supabase/functions/mila-processar-mensagem/index.ts:364:  await supabase.from('mila_message_buffer').insert({
+supabase/functions/mila-processar-mensagem/index.ts:376:    .from('mila_message_buffer')
+supabase/functions/mila-processar-mensagem/index.ts:389:    .from('mila_message_buffer')
+supabase/functions/mila-processar-mensagem/index.ts:405:    .from('mila_message_buffer')
+supabase/functions/mila-processar-mensagem/index.ts:439:      .from('crm_conversas')
+supabase/functions/mila-processar-mensagem/index.ts:454:      .from('mila_config')
+supabase/functions/mila-processar-mensagem/index.ts:490:      .from('crm_mensagens')
+supabase/functions/mila-processar-mensagem/index.ts:501:      .from('leads')
+supabase/functions/mila-processar-mensagem/index.ts:669:        .from('leads')
+supabase/functions/relatorio-admin-whatsapp/index.ts:41:    const { data } = await supabase.from('whatsapp_caixas').select(FIELDS).eq('id', caixaId).eq('ativo', true).maybeSingle();
+supabase/functions/relatorio-admin-whatsapp/index.ts:45:    const { data } = await supabase.from('whatsapp_caixas').select(FIELDS).eq('ativo', true).eq('unidade_id', unidadeId).in('funcao', [funcao, 'ambos']).limit(1).maybeSingle();
+supabase/functions/relatorio-admin-whatsapp/index.ts:49:    const { data } = await supabase.from('whatsapp_caixas').select(FIELDS).eq('ativo', true).in('funcao', [funcao, 'ambos']).limit(1).maybeSingle();
+supabase/functions/relatorio-admin-whatsapp/index.ts:52:  const { data } = await supabase.from('whatsapp_caixas').select(FIELDS).eq('ativo', true).limit(1).maybeSingle();
+supabase/functions/relatorio-admin-whatsapp/index.ts:145:    .from('unidades')
+supabase/functions/relatorio-admin-whatsapp/index.ts:154:    .from('vw_kpis_gestao_mensal')
+supabase/functions/relatorio-admin-whatsapp/index.ts:169:    .from('alunos')
+supabase/functions/relatorio-admin-whatsapp/index.ts:176:    .from('alunos')
+supabase/functions/relatorio-admin-whatsapp/index.ts:188:    .from('alunos')
+supabase/functions/relatorio-admin-whatsapp/index.ts:208:    .from('vw_kpis_retencao_mensal')
+supabase/functions/relatorio-admin-whatsapp/index.ts:218:    .from('movimentacoes_admin')
+supabase/functions/relatorio-admin-whatsapp/index.ts:234:    const { data: profs } = await supabase.from('professores').select('id, nome').in('id', profIds);
+supabase/functions/relatorio-admin-whatsapp/index.ts:256:    .from('movimentacoes_admin')
+supabase/functions/relatorio-admin-whatsapp/index.ts:266:    const { data: profs } = await supabase.from('professores').select('id, nome').in('id', avisosProfIds);
+supabase/functions/relatorio-admin-whatsapp/index.ts:357:      .from('alunos')
+supabase/functions/relatorio-admin-whatsapp/index.ts:411:    .from('unidades')
+supabase/functions/relatorio-admin-whatsapp/index.ts:431:        .from('whatsapp_destinatarios_relatorio')
+supabase/functions/relatorio-admin-whatsapp/index.ts:450:          .from('fila_relatorios_whatsapp')
+supabase/functions/relatorio-admin-whatsapp/index.ts:529:      .from('whatsapp_destinatarios_relatorio')
+supabase/functions/sync-students-studio/index.ts:131:        .from('alunos')
+supabase/functions/sync-students-studio/index.ts:157:          .from('alunos')
+supabase/migrations/fase3_views_kpis.sql:7:-- 1. VIEW: vw_kpis_gestao_mensal
+supabase/migrations/fase3_views_kpis.sql:10:DROP VIEW IF EXISTS vw_kpis_gestao_mensal;
+supabase/migrations/fase3_views_kpis.sql:12:CREATE OR REPLACE VIEW vw_kpis_gestao_mensal AS
+supabase/migrations/fase3_views_kpis.sql:59:  FROM dados_mensais
+supabase/migrations/fase3_views_kpis.sql:91:-- 2. VIEW: vw_kpis_comercial_mensal
+supabase/migrations/fase3_views_kpis.sql:94:DROP VIEW IF EXISTS vw_kpis_comercial_mensal;
+supabase/migrations/fase3_views_kpis.sql:96:CREATE OR REPLACE VIEW vw_kpis_comercial_mensal AS
+supabase/migrations/fase3_views_kpis.sql:215:-- 3. VIEW: vw_kpis_retencao_mensal
+supabase/migrations/fase3_views_kpis.sql:218:DROP VIEW IF EXISTS vw_kpis_retencao_mensal;
+supabase/migrations/fase3_views_kpis.sql:220:CREATE OR REPLACE VIEW vw_kpis_retencao_mensal AS
+supabase/migrations/fase3_views_kpis.sql:346:-- 4. VIEW: vw_dashboard_unidade (atualizada)
+supabase/migrations/fase3_views_kpis.sql:349:DROP VIEW IF EXISTS vw_dashboard_unidade;
+supabase/migrations/fase3_views_kpis.sql:351:CREATE OR REPLACE VIEW vw_dashboard_unidade AS
+supabase/migrations/fase3_views_kpis.sql:377:LEFT JOIN dados_mensais dm ON dm.unidade_id = u.id 
+supabase/migrations/fase3_views_kpis.sql:413:  FROM dados_mensais dm
+supabase/migrations/fase3_views_kpis.sql:423:GRANT SELECT ON vw_kpis_gestao_mensal TO authenticated;
+supabase/migrations/fase3_views_kpis.sql:424:GRANT SELECT ON vw_kpis_comercial_mensal TO authenticated;
+supabase/migrations/fase3_views_kpis.sql:425:GRANT SELECT ON vw_kpis_retencao_mensal TO authenticated;
+supabase/migrations/fase3_views_kpis.sql:426:GRANT SELECT ON vw_dashboard_unidade TO authenticated;
+supabase/migrations/20260201230000_programa_fideliza_tabelas.sql:262:    LEFT JOIN dados_mensais dm ON dm.unidade_id = u.id 
+supabase/migrations/20260201230000_programa_fideliza_tabelas.sql:493:  LEFT JOIN dados_mensais dm ON dm.unidade_id = u.id 
+supabase/migrations/20260202_ocorrencias_crud_logs.sql:235:CREATE OR REPLACE VIEW vw_professor_360_historico AS
+supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:365:-- 10. VIEW: vw_aluno_sucesso_lista
+supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:368:CREATE OR REPLACE VIEW vw_aluno_sucesso_lista AS
+supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:443:COMMENT ON VIEW vw_aluno_sucesso_lista IS 'View completa de alunos para a feature Sucesso do Cliente';
+supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:446:-- 11. VIEW: vw_aluno_sucesso_resumo
+supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:449:CREATE OR REPLACE VIEW vw_aluno_sucesso_resumo AS
+supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:485:FROM vw_aluno_sucesso_lista
+supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:488:COMMENT ON VIEW vw_aluno_sucesso_resumo IS 'KPIs resumidos de Sucesso do Cliente por unidade';
+supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:537:GRANT SELECT ON vw_aluno_sucesso_lista TO authenticated;
+supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:538:GRANT SELECT ON vw_aluno_sucesso_resumo TO authenticated;
+supabase/migrations/20260125_create_get_dados_comercial_ia.sql:28:  -- KPIs do mês atual (vw_kpis_comercial_mensal)
+supabase/migrations/20260125_create_get_dados_comercial_ia.sql:40:  FROM vw_kpis_comercial_mensal
+supabase/migrations/20260125_create_get_dados_comercial_ia.sql:71:  FROM vw_kpis_comercial_mensal
+supabase/migrations/20260125_create_get_dados_comercial_ia.sql:76:  -- Leads por canal (vw_leads_por_canal)
+supabase/migrations/20260125_create_get_dados_comercial_ia.sql:86:  FROM vw_leads_por_canal
+supabase/migrations/20260125_create_get_dados_comercial_ia.sql:106:  -- Professores que mais matriculam (vw_performance_professor_experimental)
+supabase/migrations/20260125_create_get_dados_comercial_ia.sql:115:  FROM vw_performance_professor_experimental
+supabase/migrations/20260125_create_get_dados_comercial_ia.sql:152:  -- Motivos de não matrícula (vw_motivos_nao_matricula)
+supabase/migrations/20260125_create_get_dados_comercial_ia.sql:161:  FROM vw_motivos_nao_matricula
+supabase/migrations/20260207_unificar_leads.sql:90:-- 3a. sync_leads_to_dados_comerciais (adaptar para ler de leads)
+supabase/migrations/20260207_unificar_leads.sql:91:CREATE OR REPLACE FUNCTION sync_leads_to_dados_comerciais()
+supabase/migrations/20260207_unificar_leads.sql:134:  INSERT INTO dados_comerciais (
+supabase/migrations/20260207_unificar_leads.sql:145:    UPDATE dados_comerciais 
+supabase/migrations/20260207_unificar_leads.sql:151:    UPDATE dados_comerciais 
+supabase/migrations/20260207_unificar_leads.sql:157:    UPDATE dados_comerciais 
+supabase/migrations/20260207_unificar_leads.sql:363:  FOR EACH ROW EXECUTE FUNCTION sync_leads_to_dados_comerciais();
+supabase/migrations/20260207_unificar_leads.sql:421:-- 5a. vw_kpis_gestao_mensal
+supabase/migrations/20260207_unificar_leads.sql:422:CREATE OR REPLACE VIEW vw_kpis_gestao_mensal AS
+supabase/migrations/20260207_unificar_leads.sql:479:    dados_mensais.unidade_id,
+supabase/migrations/20260207_unificar_leads.sql:480:    dados_mensais.ano,
+supabase/migrations/20260207_unificar_leads.sql:481:    dados_mensais.mes,
+supabase/migrations/20260207_unificar_leads.sql:482:    dados_mensais.alunos_pagantes
+supabase/migrations/20260207_unificar_leads.sql:483:  FROM dados_mensais
+supabase/migrations/20260207_unificar_leads.sql:527:-- 5b. vw_kpis_comercial_mensal
+supabase/migrations/20260207_unificar_leads.sql:528:CREATE OR REPLACE VIEW vw_kpis_comercial_mensal AS
+supabase/migrations/20260207_unificar_leads.sql:581:-- 5c. vw_professores_performance_atual
+supabase/migrations/20260207_unificar_leads.sql:582:CREATE OR REPLACE VIEW vw_professores_performance_atual AS
+supabase/migrations/20260207_unificar_leads.sql:656:-- FASE 5d/5e: vw_kpis_professor_mensal e vw_kpis_professor_completo
+supabase/migrations/20260207_unificar_leads.sql:661:-- Nota: vw_kpis_professor_mensal e vw_kpis_professor_completo são views muito grandes.
+supabase/migrations/20260207_unificar_leads.sql:665:-- Para vw_kpis_professor_mensal e vw_kpis_professor_completo, a CTE "experimentais" muda de:
+supabase/migrations/20260207_unificar_leads.sql:674:-- FASE 5 (compatibilidade): Criar view vw_leads_diarios
+supabase/migrations/20260207_unificar_leads.sql:687:-- 6a. consolidar_dados_comerciais_mes
+supabase/migrations/20260207_unificar_leads.sql:688:CREATE OR REPLACE FUNCTION consolidar_dados_comerciais_mes(p_ano INTEGER, p_mes INTEGER)
+supabase/migrations/20260207_unificar_leads.sql:699:    INSERT INTO dados_comerciais (
+supabase/migrations/fase3_01_view_gestao.sql:1:-- FASE 3 - PARTE 1: VIEW vw_kpis_gestao_mensal
+supabase/migrations/fase3_01_view_gestao.sql:4:DROP VIEW IF EXISTS vw_kpis_gestao_mensal;
+supabase/migrations/fase3_01_view_gestao.sql:6:CREATE VIEW vw_kpis_gestao_mensal AS
+supabase/migrations/fase3_01_view_gestao.sql:53:  FROM dados_mensais
+supabase/migrations/fase3_01_view_gestao.sql:85:GRANT SELECT ON vw_kpis_gestao_mensal TO authenticated;
+supabase/migrations/fase3_01_view_gestao.sql:86:GRANT SELECT ON vw_kpis_gestao_mensal TO anon;
+supabase/migrations/20260124_retencao_insights.sql:10:DROP VIEW IF EXISTS vw_renovacoes_proximas;
+supabase/migrations/20260124_retencao_insights.sql:12:CREATE OR REPLACE VIEW vw_renovacoes_proximas AS
+supabase/migrations/20260124_retencao_insights.sql:79:  FROM vw_renovacoes_proximas rp
+supabase/migrations/20260124_retencao_insights.sql:120:      FROM vw_kpis_gestao_mensal kg
+supabase/migrations/20260124_retencao_insights.sql:127:      FROM vw_kpis_retencao_mensal kr
+supabase/migrations/20260124_retencao_insights.sql:148:      FROM vw_renovacoes_proximas
+supabase/migrations/20260124_retencao_insights.sql:158:      FROM dados_mensais dm
+supabase/migrations/20260124_retencao_insights.sql:167:      FROM dados_mensais dm
+supabase/migrations/20260124_retencao_insights.sql:249:GRANT SELECT ON vw_renovacoes_proximas TO authenticated;
+supabase/migrations/20260531_recalcular_dados_mensais_v2.sql:1:-- Migration: recalcular_dados_mensais v2
+supabase/migrations/20260531_recalcular_dados_mensais_v2.sql:6:CREATE OR REPLACE FUNCTION public.recalcular_dados_mensais(
+supabase/migrations/20260531_recalcular_dados_mensais_v2.sql:91:  FROM movimentacoes_admin
+supabase/migrations/20260531_recalcular_dados_mensais_v2.sql:126:    FROM movimentacoes_admin
+supabase/migrations/20260531_recalcular_dados_mensais_v2.sql:146:  FROM movimentacoes_admin
+supabase/migrations/20260531_recalcular_dados_mensais_v2.sql:155:  INSERT INTO dados_mensais (
+supabase/migrations/20260127_sync_movimentacoes_admin.sql:2:-- MIGRAÇÃO: Sincronização Automática movimentacoes_admin
+supabase/migrations/20260127_sync_movimentacoes_admin.sql:124:DROP TRIGGER IF EXISTS tr_sync_evasao ON movimentacoes_admin;
+supabase/migrations/20260127_sync_movimentacoes_admin.sql:126:  AFTER INSERT ON movimentacoes_admin
+supabase/migrations/20260127_sync_movimentacoes_admin.sql:131:DROP TRIGGER IF EXISTS tr_sync_renovacao ON movimentacoes_admin;
+supabase/migrations/20260127_sync_movimentacoes_admin.sql:133:  AFTER INSERT ON movimentacoes_admin
+supabase/migrations/20260127_sync_movimentacoes_admin.sql:142:'Sincroniza automaticamente evasões e não renovações de movimentacoes_admin para a tabela evasoes';
+supabase/migrations/20260127_sync_movimentacoes_admin.sql:145:'Sincroniza automaticamente renovações de movimentacoes_admin para a tabela renovacoes';
+supabase/migrations/20260127_sync_movimentacoes_admin.sql:147:COMMENT ON TRIGGER tr_sync_evasao ON movimentacoes_admin IS 
+supabase/migrations/20260127_sync_movimentacoes_admin.sql:150:COMMENT ON TRIGGER tr_sync_renovacao ON movimentacoes_admin IS 
+supabase/migrations/20260126_create_get_dados_relatorio_coordenacao.sql:5:-- V2: Consulta tabelas base por período (não usa mais vw_kpis_professor_mensal)
+supabase/migrations/20260126_create_get_dados_relatorio_coordenacao.sql:109:        FROM movimentacoes_admin m
+supabase/migrations/20260126_create_get_dados_relatorio_coordenacao.sql:121:        FROM movimentacoes_admin m
+supabase/migrations/20260126_create_get_dados_relatorio_coordenacao.sql:400:        FROM movimentacoes_admin m
+supabase/migrations/20260126_create_get_dados_relatorio_coordenacao.sql:466:        FROM movimentacoes_admin m
+supabase/migrations/20260126_create_get_dados_relatorio_coordenacao.sql:502:COMMENT ON FUNCTION get_dados_relatorio_coordenacao IS 'Funcao para buscar dados do relatorio de coordenacao pedagogica com IA - V2: consulta tabelas base por periodo em vez de vw_kpis_professor_mensal';
+supabase/migrations/20260311_get_kpis_experimentais_professor.sql:2:-- Mesma lógica da CTE experimentais_atual em vw_kpis_professor_mensal
+supabase/migrations/20260109_fase2_tabela_alunos.sql:147:CREATE OR REPLACE VIEW vw_alunos_ativos AS
+supabase/migrations/20260109_fase2_tabela_alunos.sql:173:CREATE OR REPLACE VIEW vw_contagem_alunos AS
+supabase/migrations/20260109_fase2_tabela_alunos.sql:189:CREATE OR REPLACE VIEW vw_ltv_unidade AS
+supabase/migrations/20260531_fix_renovacoes_reajuste_views.sql:8:-- 1. vw_kpis_gestao_mensal
+supabase/migrations/20260531_fix_renovacoes_reajuste_views.sql:11:-- Correção: usar `movimentacoes_admin` com filtros corretos de tipo
+supabase/migrations/20260531_fix_renovacoes_reajuste_views.sql:16:CREATE OR REPLACE VIEW public.vw_kpis_gestao_mensal AS
+supabase/migrations/20260531_fix_renovacoes_reajuste_views.sql:87:    FROM movimentacoes_admin m
+supabase/migrations/20260531_fix_renovacoes_reajuste_views.sql:111:-- >>> CORREÇÃO: trocar fonte de renovacoes para movimentacoes_admin <<<
+supabase/migrations/20260531_fix_renovacoes_reajuste_views.sql:128:    FROM movimentacoes_admin m
+supabase/migrations/20260531_fix_renovacoes_reajuste_views.sql:171:-- 2. vw_kpis_retencao_mensal
+supabase/migrations/20260531_fix_renovacoes_reajuste_views.sql:179:CREATE OR REPLACE VIEW public.vw_kpis_retencao_mensal AS
+supabase/migrations/20260531_fix_renovacoes_reajuste_views.sql:184:    FROM movimentacoes_admin m
+supabase/migrations/20260531_fix_renovacoes_reajuste_views.sql:206:    FROM movimentacoes_admin m
+supabase/migrations/20260531_fix_renovacoes_reajuste_views.sql:220:    FROM movimentacoes_admin m
+supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:71:    FROM vw_kpis_gestao_mensal kg
+supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:78:    FROM vw_kpis_retencao_mensal kr
+supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:85:    FROM vw_kpis_comercial_mensal kc
+supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:145:    FROM dados_mensais dm
+supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:165:    FROM dados_mensais dm
+supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:179:    FROM vw_sazonalidade s
+supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:193:    FROM vw_evasoes_motivos em
+supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:206:    FROM vw_ranking_professores_retencao pr
+supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:219:    FROM vw_kpis_professor_mensal pm
+supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:233:    FROM vw_ranking_professores_retencao pr
+supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:346:    FROM dados_mensais dm
+supabase/migrations/20260127_test_sync.sql:2:-- SCRIPT DE TESTE: Sincronização movimentacoes_admin
+supabase/migrations/20260127_test_sync.sql:28:  INSERT INTO movimentacoes_admin (
+supabase/migrations/20260127_test_sync.sql:60:  DELETE FROM movimentacoes_admin WHERE aluno_nome = 'TESTE - Aluno Renovação';
+supabase/migrations/20260127_test_sync.sql:87:  INSERT INTO movimentacoes_admin (
+supabase/migrations/20260127_test_sync.sql:115:  DELETE FROM movimentacoes_admin WHERE aluno_nome = 'TESTE - Aluno Evasão';
+supabase/migrations/20260127_test_sync.sql:143:  INSERT INTO movimentacoes_admin (
+supabase/migrations/20260127_test_sync.sql:173:  DELETE FROM movimentacoes_admin WHERE aluno_nome = 'TESTE - Aluno Não Renovação';
+sql/professor_360_tables.sql:229:-- VIEW: vw_professor_360_resumo (Resumo mensal por professor/unidade)
+sql/professor_360_tables.sql:231:CREATE OR REPLACE VIEW vw_professor_360_resumo AS

@@ -100,7 +100,7 @@ Para qualquer pergunta sobre Campo Grande/Maio 2026, leia também `historico-cg-
 
 Resumo rápido:
 
-- Churn: `evasoes / alunos_pagantes * 100`.
+- Churn: `evasoes / alunos_pagantes * 100`; transferência interna entre unidades não conta como evasão/churn global.
 - Inadimplência: `% cabeças = qtd_inadimplentes / alunos_pagantes * 100`.
 - Ticket médio: soma/faturamento de todos os cursos dos alunos pagantes ÷ alunos pagantes por pessoa; segundo curso entra no numerador, mas não duplica o denominador; bolsista integral/parcial fora.
 - Canto Coral: usar `cursos.is_coral`; filtro por nome é legado.

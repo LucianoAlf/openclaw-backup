@@ -54,3 +54,26 @@ Credenciais/ações:
 - [ ] Desenhar Fase 3: snapshot imutável / fechamento mensal assinado para impedir nova contaminação.
 - [ ] Junho/CG: após remoção das 22 movimentações inválidas, validar/reinserir apenas as 5 saídas reais com classificação correta (3 evasões + 2 não renovações), sem ressuscitar baixas antigas nem finalização de segundo curso.
 - [ ] Junho/CG: auditar divergência entre `vw_kpis_gestao_mensal`, `dados_mensais` e cálculo frontend Kids/School antes de declarar painel correto.
+
+## LA Report — não perder timing: auditoria `sem_parcela` + transferência Giane (2026-06-07)
+
+Prioridade ativa. Não deixar sair do radar.
+
+Estado atual:
+- Zero UPDATEs de status/status_pagamento/tipo_matricula.
+- Relatório v2 do Cascade melhorou e incorporou presenças, falsos positivos e foco em sync.
+- Ajuste pendente importante: regra de **transferência interna não é evasão** precisa entrar antes de qualquer correção/modelagem.
+- Caso Giane/Geane: matrícula 1026 CG teve saída/evasão lançada, mas ela continuou no Recreio matrícula 1723; isso é transferência CG → Recreio, não churn/evasão global LA.
+- Próximo foco técnico: auditar edge function `processar-matricula-emusys`/sync para `status_pagamento`, contrato/renovação e vínculo por `emusys_matricula_id`/ID, não por nome.
+- Próximo foco de regra: modelar `transferencia_unidade` separada de `evasao`/`nao_renovacao`, com impacto separado para unidade origem/destino e global LA.
+
+## LA Report — sequência estratégica após sem_parcela/Fideliza (2026-06-07)
+
+Alf reforçou que não quer se perder em bug pontual do Fideliza+ antes de resolver bases estruturais que alimentam o Fideliza e Report. Ordem estratégica acordada:
+1. Governança `status_pagamento`: validação ADM dos casos, trava/aviso na UI, alerta de alteração em massa, dono do campo.
+2. Transferência entre unidades: modelar categoria própria; não contar como evasão/churn global; auditar candidatos históricos.
+3. Snapshot mensal `dados_mensais`: impedir overwrite de mês fechado, histórico/audit trail, P8/P11 SELECT-only antes de migration.
+4. Financeiro por competência: separar ativo operacional, pagante contratual e pagante financeiro da competência.
+5. Pendências de regra: taxa renovação com/sem aviso prévio, conversão geral, chave de pessoa.
+
+Fideliza+ depende dessas bases: manter trimestral por regra, corrigir UI, mas adiar cálculo final enquanto transferência/snapshot/financeiro não estiverem alinhados.

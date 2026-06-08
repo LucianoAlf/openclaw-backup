@@ -1,0 +1,3236 @@
+{
+  "campanhas_config": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/router.tsx:51:from",
+      "src/components/App/Layout/AppSidebar.tsx:91:from",
+      "src/components/App/Campanhas/hooks/useCampanhasConfig.ts:17:from",
+      "src/components/App/Campanhas/hooks/useCampanhasConfig.ts:29:from"
+    ]
+  },
+  "dados_mensais": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/types/database.types.ts:17:text",
+      "src/types/database.types.ts:41:text",
+      "src/types/database.types.ts:42:text",
+      "src/types/database.types.ts:261:text",
+      "src/hooks/useKPIsGestao.ts:117:from",
+      "src/hooks/useKPIsGestao.ts:155:from",
+      "src/hooks/useKPIsGestao.ts:115:text",
+      "src/hooks/useKPIsGestao.ts:117:text",
+      "src/hooks/useKPIsGestao.ts:155:text",
+      "src/hooks/useSupabaseMutations.ts:10:from"
+    ]
+  },
+  "vw_consolidado_anual": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/types/database.types.ts:118:text",
+      "src/types/database.types.ts:268:text",
+      "src/hooks/useSupabase.ts:250:from",
+      "src/hooks/useSupabase.ts:250:text"
+    ]
+  },
+  "vw_unidade_anual": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/types/database.types.ts:132:text",
+      "src/types/database.types.ts:269:text",
+      "src/hooks/useDadosHistoricos.ts:90:from",
+      "src/hooks/useDadosHistoricos.ts:90:text",
+      "src/hooks/useDadosHistoricos.ts:151:text",
+      "src/hooks/useSupabase.ts:279:from",
+      "src/hooks/useSupabase.ts:279:text"
+    ]
+  },
+  "vw_sazonalidade": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/types/database.types.ts:148:text",
+      "src/types/database.types.ts:270:text",
+      "src/hooks/useSupabase.ts:313:from",
+      "src/hooks/useSupabase.ts:313:text",
+      "supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:179:text"
+    ]
+  },
+  "vw_kpis_professor_completo": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/types/database.types.ts:160:text",
+      "src/types/database.types.ts:271:text",
+      "src/hooks/useKPIsProfessor.ts:86:from",
+      "src/hooks/useKPIsProfessor.ts:86:text",
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:272:from",
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:270:text",
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:272:text",
+      "src/components/GestaoMensal/TabProfessores.tsx:62:from",
+      "src/components/GestaoMensal/TabProfessores.tsx:62:text",
+      "supabase/migrations/20260207_unificar_leads.sql:656:text"
+    ]
+  },
+  "vw_renovacoes_pendentes": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "src/types/database.types.ts:187:text",
+      "src/types/database.types.ts:272:text"
+    ]
+  },
+  "get_kpis_consolidados": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/types/database.types.ts:201:text",
+      "src/hooks/useSupabase.ts:52:rpc",
+      "src/hooks/useSupabase.ts:52:text"
+    ]
+  },
+  "get_kpis_unidade": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/types/database.types.ts:215:text",
+      "src/hooks/useSupabase.ts:80:rpc",
+      "src/hooks/useSupabase.ts:80:text"
+    ]
+  },
+  "get_comparativo_anos": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/types/database.types.ts:230:text",
+      "src/hooks/useSupabase.ts:110:rpc",
+      "src/hooks/useSupabase.ts:110:text"
+    ]
+  },
+  "get_heatmap_data": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/types/database.types.ts:239:text",
+      "src/hooks/useSupabase.ts:142:rpc",
+      "src/hooks/useSupabase.ts:142:text"
+    ]
+  },
+  "get_heatmap_totais": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/types/database.types.ts:248:text",
+      "src/hooks/useSupabase.ts:148:rpc",
+      "src/hooks/useSupabase.ts:148:text"
+    ]
+  },
+  "avatars": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/lib/uploadImage.ts:44:from",
+      "src/lib/uploadImage.ts:58:from",
+      "src/lib/uploadImage.ts:83:from",
+      "src/components/Onboarding/OnboardingChecklist.tsx:373:from",
+      "src/components/Onboarding/OnboardingChecklist.tsx:382:from",
+      "src/components/App/Layout/ModalEditarPerfil.tsx:96:from",
+      "src/components/App/Layout/ModalEditarPerfil.tsx:106:from"
+    ]
+  },
+  "origem_leads": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useOrigemData.ts:30:from",
+      "src/components/GestaoMensal/TabComercialNew.tsx:243:from"
+    ]
+  },
+  "vw_kpis_retencao_mensal": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/hooks/useKPIsRetencao.ts:69:from",
+      "src/hooks/useKPIsRetencao.ts:69:text",
+      "src/components/GestaoMensal/TabGestao.tsx:267:from",
+      "src/components/GestaoMensal/TabGestao.tsx:267:text",
+      "src/components/App/Dashboard/DashboardPage.tsx:430:from",
+      "src/components/App/Dashboard/DashboardPage.tsx:428:text",
+      "src/components/App/Dashboard/DashboardPage.tsx:430:text",
+      "src/components/App/Administrativo/AdministrativoPage.tsx:270:from",
+      "src/components/App/Administrativo/AdministrativoPage.tsx:270:text",
+      "supabase/migrations/fase3_views_kpis.sql:215:text"
+    ]
+  },
+  "movimentacoes_admin": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/hooks/useKPIsRetencao.ts:168:from",
+      "src/hooks/useKPIsRetencao.ts:166:text",
+      "src/hooks/useKPIsRetencao.ts:168:text",
+      "src/hooks/useProfessorDependencies.ts:120:from",
+      "src/hooks/useProfessorDependencies.ts:293:from",
+      "src/hooks/useProfessorDependencies.ts:120:text",
+      "src/hooks/useProfessorDependencies.ts:293:text",
+      "src/hooks/useProfessoresPerformance.ts:65:from",
+      "src/hooks/useProfessoresPerformance.ts:65:text",
+      "src/hooks/useMetas.ts:154:from"
+    ]
+  },
+  "renovacoes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useKPIsRetencao.ts:182:from",
+      "src/hooks/useProfessorDependencies.ts:115:from",
+      "src/hooks/useMetas.ts:140:from",
+      "src/components/GestaoMensal/TabGestao.tsx:409:from",
+      "src/components/GestaoMensal/TabRetencao.tsx:81:from",
+      "src/components/App/Snapshot/SnapshotDiario.tsx:148:from",
+      "src/components/App/Alunos/TabelaAlunos.tsx:560:from",
+      "src/components/App/Alunos/ModalFichaAluno.tsx:343:from",
+      "src/components/App/Retencao/PlanilhaRetencao.tsx:116:from",
+      "src/components/App/Retencao/PlanilhaRetencao.tsx:368:from"
+    ]
+  },
+  "alunos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useKPIsRetencao.ts:195:from",
+      "src/hooks/useCheckAlunoDuplicado.ts:60:from",
+      "src/hooks/useProfessorDependencies.ts:90:from",
+      "src/hooks/useProfessorDependencies.ts:264:from",
+      "src/hooks/useSimuladorTurma.ts:88:from",
+      "src/hooks/useSimuladorTurma.ts:147:from",
+      "src/hooks/useContatosAluno.ts:113:from",
+      "src/hooks/useKPIsComercial.ts:186:from",
+      "src/hooks/useCheckLeadDuplicado.ts:148:from",
+      "src/hooks/useMetas.ts:100:from"
+    ]
+  },
+  "motivos_saida": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useMotivos.ts:27:from",
+      "src/hooks/useMotivosScoreProfessor.ts:27:from",
+      "src/hooks/useMotivosScoreProfessor.ts:44:from",
+      "src/components/App/Professores/ModalDetalhesRetencao.tsx:80:from",
+      "src/components/App/Professores/ModalDetalhesEvasoes.tsx:84:from",
+      "src/components/App/Config/ConfigPage.tsx:162:from",
+      "src/components/App/Config/ConfigPage.tsx:306:from",
+      "src/components/App/Config/ConfigPage.tsx:321:from",
+      "src/components/App/Retencao/PlanilhaRetencao.tsx:75:from",
+      "src/components/App/Administrativo/ModalEvasao.tsx:64:from"
+    ]
+  },
+  "motivos_trancamento": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useMotivos.ts:32:from",
+      "src/components/App/Administrativo/TabelaTrancamentos.tsx:35:from",
+      "src/components/App/Administrativo/ModalTrancamento.tsx:46:from"
+    ]
+  },
+  "vw_kpis_gestao_mensal": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/hooks/useDadosHistoricos.ts:39:from",
+      "src/hooks/useDadosHistoricos.ts:53:from",
+      "src/hooks/useDadosHistoricos.ts:39:text",
+      "src/hooks/useDadosHistoricos.ts:53:text",
+      "src/hooks/useKPIsGestao.ts:65:from",
+      "src/hooks/useKPIsGestao.ts:65:text",
+      "src/components/GestaoMensal/TabGestao.tsx:252:from",
+      "src/components/GestaoMensal/TabGestao.tsx:295:from",
+      "src/components/GestaoMensal/TabGestao.tsx:984:from",
+      "src/components/GestaoMensal/TabGestao.tsx:252:text"
+    ]
+  },
+  "vw_kpis_comercial_historico": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/hooks/useDadosHistoricos.ts:67:from",
+      "src/hooks/useDadosHistoricos.ts:65:text",
+      "src/hooks/useDadosHistoricos.ts:67:text",
+      "src/hooks/useDadosHistoricos.ts:128:text",
+      "src/components/GestaoMensal/TabComercialNew.tsx:231:from",
+      "src/components/GestaoMensal/TabComercialNew.tsx:231:text",
+      "src/components/App/Dashboard/DashboardPage.tsx:506:from",
+      "src/components/App/Dashboard/DashboardPage.tsx:500:text",
+      "src/components/App/Dashboard/DashboardPage.tsx:504:text",
+      "src/components/App/Dashboard/DashboardPage.tsx:506:text"
+    ]
+  },
+  "unidades": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useDadosHistoricos.ts:80:from",
+      "src/hooks/useSimuladorTurma.ts:124:from",
+      "src/hooks/useSupabaseMutations.ts:90:from",
+      "src/hooks/useProjetos.ts:1078:from",
+      "src/hooks/useSupabase.ts:22:from",
+      "src/hooks/useProfessor360.ts:488:from",
+      "src/contexts/AuthContext.tsx:133:from",
+      "src/components/GestaoMensal/TabGestao.tsx:1011:from",
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:241:from",
+      "src/components/App/Layout/AppHeader.tsx:33:from"
+    ]
+  },
+  "aulas_emusys": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessorDependencies.ts:95:from",
+      "src/hooks/useProfessorDependencies.ts:278:from",
+      "supabase/functions/sync-presenca-emusys/index.ts:395:from",
+      "supabase/functions/sync-presenca-emusys/index.ts:407:from",
+      "supabase/functions/sync-presenca-emusys/index.ts:669:from"
+    ]
+  },
+  "leads": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessorDependencies.ts:100:from",
+      "src/hooks/useProfessorDependencies.ts:271:from",
+      "src/hooks/useKPIsComercial.ts:173:from",
+      "src/hooks/useCheckLeadDuplicado.ts:46:from",
+      "src/hooks/useCheckLeadDuplicado.ts:131:from",
+      "src/hooks/useMetas.ts:113:from",
+      "src/hooks/useMetas.ts:126:from",
+      "src/components/GestaoMensal/TabComercial.tsx:71:from",
+      "src/components/GestaoMensal/TabComercialNew.tsx:392:from",
+      "src/components/App/Dashboard/DashboardPage.tsx:245:from"
+    ]
+  },
+  "turmas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessorDependencies.ts:105:from",
+      "src/hooks/useProfessorDependencies.ts:286:from",
+      "src/components/App/Salas/SalasPage.tsx:176:from",
+      "src/components/App/Turmas/GradeHoraria/GradeHoraria.tsx:330:from"
+    ]
+  },
+  "movimentacoes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessorDependencies.ts:110:from",
+      "src/components/App/Entrada/FormEvasao.tsx:172:from",
+      "src/components/App/Entrada/FormRenovacao.tsx:129:from",
+      "src/components/App/Entrada/RelatorioDiario.tsx:96:from",
+      "src/components/App/Entrada/RelatorioDiario.tsx:105:from",
+      "src/components/App/Entrada/FormMatricula.tsx:229:from"
+    ]
+  },
+  "experimentais_professor_mensal": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessorDependencies.ts:126:from",
+      "src/hooks/useProfessorDependencies.ts:302:from",
+      "src/components/GestaoMensal/TabComercialNew.tsx:260:from"
+    ]
+  },
+  "aluno_presenca": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessorDependencies.ts:132:from",
+      "src/hooks/useProfessorDependencies.ts:310:from",
+      "src/components/App/Professores/ModalDetalhesPresenca.tsx:69:from",
+      "src/components/App/Alunos/SucessoCliente/ModalDetalhesSucessoAluno.tsx:264:from",
+      "src/components/App/Alunos/SucessoCliente/PresencaTab.tsx:181:from",
+      "src/components/App/Alunos/SucessoCliente/PresencaTab.tsx:223:from",
+      "src/components/App/Alunos/SucessoCliente/PresencaTab.tsx:280:from",
+      "src/components/App/Alunos/SucessoCliente/PresencaTab.tsx:363:from",
+      "supabase/functions/sync-presenca-emusys/index.ts:741:from"
+    ]
+  },
+  "professor_360_avaliacoes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessorDependencies.ts:137:from",
+      "src/hooks/useProfessorDependencies.ts:318:from",
+      "src/hooks/useProfessor360.ts:393:from",
+      "src/hooks/useProfessor360.ts:424:from",
+      "src/hooks/useProfessor360.ts:736:from",
+      "src/hooks/useProfessor360.ts:991:from"
+    ]
+  },
+  "professor_360_ocorrencias": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessorDependencies.ts:142:from",
+      "src/hooks/useProfessorDependencies.ts:326:from",
+      "src/hooks/useProfessor360.ts:281:from",
+      "src/hooks/useProfessor360.ts:329:from",
+      "src/hooks/useProfessor360.ts:335:from",
+      "src/hooks/useProfessor360.ts:350:from",
+      "src/hooks/useProfessor360.ts:360:from",
+      "src/hooks/useProfessor360.ts:805:from",
+      "src/hooks/useProfessor360.ts:839:from",
+      "src/hooks/useProfessor360.ts:948:from"
+    ]
+  },
+  "aluno_feedback_professor": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessorDependencies.ts:147:from",
+      "src/components/App/Feedback/FeedbackProfessorPage.tsx:169:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useFeedbackPendente.ts:57:from",
+      "supabase/functions/validar-token-feedback/index.ts:105:from"
+    ]
+  },
+  "professor_acoes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessorDependencies.ts:152:from",
+      "src/components/App/Professores/JornadaProfessor.tsx:74:from",
+      "src/components/App/Professores/ModalNovaAcao.tsx:159:from",
+      "src/components/App/Professores/ModalNovaAcao.tsx:167:from",
+      "src/components/App/Professores/ModalNovaAcao.tsx:191:from",
+      "src/components/App/Professores/ModalDetalhesProfessorPerformance.tsx:167:from",
+      "src/components/App/Professores/TabAgendaProfessores.tsx:347:from",
+      "src/components/App/Professores/TabAgendaProfessores.tsx:466:from",
+      "src/components/App/Professores/TabAgendaProfessores.tsx:481:from",
+      "src/components/App/Professores/TabAgendaProfessores.tsx:533:from"
+    ]
+  },
+  "professor_videos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessorDependencies.ts:157:from",
+      "src/hooks/useProfessorVideos.ts:16:from",
+      "src/hooks/useProfessorVideos.ts:87:from",
+      "src/hooks/useProfessorVideos.ts:125:from"
+    ]
+  },
+  "turmas_explicitas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessorDependencies.ts:162:from",
+      "src/components/App/Professores/TabPerformanceProfessores.tsx:256:from",
+      "src/components/App/Alunos/GestaoTurmas.tsx:124:from",
+      "src/components/App/Alunos/GestaoTurmas.tsx:138:from",
+      "src/components/App/Alunos/GestaoTurmas.tsx:150:from",
+      "src/components/App/Alunos/AlunosPage.tsx:637:from",
+      "src/components/App/Alunos/AlunosPage.tsx:974:from",
+      "src/components/App/Alunos/AlunosPage.tsx:1138:from",
+      "src/components/App/Alunos/AlunosPage.tsx:1152:from",
+      "src/components/App/Alunos/AlunosPage.tsx:1164:from"
+    ]
+  },
+  "loja_carteira": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessorDependencies.ts:167:from",
+      "src/components/App/Lojinha/TabComissoes.tsx:44:from",
+      "src/components/App/Lojinha/TabComissoes.tsx:62:from",
+      "src/components/App/Lojinha/ModalUsarLoja.tsx:68:from",
+      "src/components/App/Lojinha/ModalSaque.tsx:65:from",
+      "supabase/functions/lojinha-relatorio-professor/index.ts:217:from"
+    ]
+  },
+  "professores_unidades": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessorDependencies.ts:173:from",
+      "src/hooks/useProfessor360.ts:483:from",
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:316:from",
+      "src/components/App/Dashboard/DashboardPage.tsx:640:from",
+      "src/components/App/Professores/ProfessoresPage.tsx:173:from",
+      "src/components/App/Professores/ProfessoresPage.tsx:475:from",
+      "src/components/App/Professores/ProfessoresPage.tsx:500:from",
+      "src/components/App/Professores/ProfessoresPage.tsx:507:from",
+      "src/components/App/Professores/ProfessoresPage.tsx:575:from",
+      "src/components/App/Professores/TabPerformanceProfessores.tsx:235:from"
+    ]
+  },
+  "professores_cursos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessorDependencies.ts:178:from",
+      "src/components/App/Professores/ProfessoresPage.tsx:184:from",
+      "src/components/App/Professores/ProfessoresPage.tsx:484:from",
+      "src/components/App/Professores/ProfessoresPage.tsx:511:from",
+      "src/components/App/Professores/ProfessoresPage.tsx:517:from",
+      "src/components/App/Professores/ProfessoresPage.tsx:576:from",
+      "src/components/App/Professores/TabPerformanceProfessores.tsx:240:from",
+      "src/components/App/Alunos/ModalNovoAluno.tsx:217:from",
+      "src/components/App/Alunos/ModalNovaTurma.tsx:95:from",
+      "src/components/App/PreAtendimento/components/ModalAgendar.tsx:136:from"
+    ]
+  },
+  "rpc_analise_turmas": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/hooks/useAnaliseTurmas.ts:69:rpc"
+    ]
+  },
+  "get_dados_turma_unidade": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "src/hooks/useSimuladorTurma.ts:81:text"
+    ]
+  },
+  "alunos_historico": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useHistoricoLTV.ts:182:from",
+      "src/hooks/useHistoricoLTV.ts:203:from",
+      "src/hooks/useHistoricoLTV.ts:226:from",
+      "src/hooks/useHistoricoLTV.ts:246:from",
+      "src/hooks/useHistoricoLTV.ts:272:from",
+      "supabase/functions/processar-matricula-emusys/index.ts:947:from"
+    ]
+  },
+  "get_historico_ltv": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/hooks/useHistoricoLTV.ts:41:rpc",
+      "src/hooks/useHistoricoLTV.ts:41:text",
+      "src/components/GestaoMensal/ModalPermanenciaDetalhe.tsx:39:rpc",
+      "src/components/GestaoMensal/ModalPermanenciaDetalhe.tsx:37:text",
+      "src/components/GestaoMensal/ModalPermanenciaDetalhe.tsx:39:text",
+      "supabase/migrations/20260507_get_tempo_permanencia_wrapper.sql:1:text",
+      "supabase/migrations/20260507_get_tempo_permanencia_wrapper.sql:33:text",
+      "supabase/migrations/20260507_get_tempo_permanencia_wrapper.sql:40:text"
+    ]
+  },
+  "metas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useSupabaseMutations.ts:62:from",
+      "src/hooks/useSupabaseMutations.ts:122:from",
+      "src/hooks/useMetas.ts:73:from",
+      "src/hooks/useSupabase.ts:215:from",
+      "src/components/App/Metas/MetasPage.tsx:60:from",
+      "src/components/App/Metas/MetasPage.tsx:108:from",
+      "src/components/App/Metas/MetasPage.tsx:113:from"
+    ]
+  },
+  "anotacoes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useSupabaseMutations.ts:141:from",
+      "src/hooks/useSupabaseMutations.ts:153:from",
+      "src/hooks/useSupabaseMutations.ts:166:from"
+    ]
+  },
+  "upsert_dados_mensais": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/hooks/useSupabaseMutations.ts:40:rpc"
+    ]
+  },
+  "automacao_log": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useAutomacoesData.ts:89:from",
+      "src/components/App/Comercial/ComercialPage.tsx:1713:from",
+      "src/components/App/Alunos/Automacao/TabAutomacao.tsx:64:from",
+      "supabase/functions/_shared/invariantes.ts:64:from",
+      "supabase/functions/sync-presenca-emusys/index.ts:720:from",
+      "supabase/functions/auditor-divergencias-emusys/index.ts:428:from"
+    ]
+  },
+  "automacao_invariantes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useAutomacoesData.ts:152:from",
+      "src/hooks/useBadgeAutomacoes.ts:20:from",
+      "supabase/functions/_shared/invariantes.ts:96:from"
+    ]
+  },
+  "projeto_tipos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProjetos.ts:28:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:190:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:706:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:772:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:787:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:822:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:843:from"
+    ]
+  },
+  "projeto_tipo_fases_template": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProjetos.ts:67:from",
+      "src/hooks/useProjetos.ts:817:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:219:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:311:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:326:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:369:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:379:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:431:from"
+    ]
+  },
+  "projeto_tipo_tarefas_template": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProjetos.ts:104:from",
+      "src/hooks/useProjetos.ts:858:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:230:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:363:from"
+    ]
+  },
+  "projetos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProjetos.ts:135:from",
+      "src/hooks/useProjetos.ts:218:from",
+      "src/hooks/useProjetos.ts:350:from",
+      "src/hooks/useProjetos.ts:564:from",
+      "src/hooks/useProjetos.ts:683:from",
+      "src/hooks/useProjetos.ts:798:from",
+      "src/hooks/useProjetos.ts:952:from",
+      "src/hooks/useProjetos.ts:986:from",
+      "src/hooks/useProjetos.ts:1290:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:716:from"
+    ]
+  },
+  "projeto_fases": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProjetos.ts:289:from",
+      "src/hooks/useProjetos.ts:847:from"
+    ]
+  },
+  "projeto_tarefas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProjetos.ts:304:from",
+      "src/hooks/useProjetos.ts:467:from",
+      "src/hooks/useProjetos.ts:891:from",
+      "src/hooks/useProjetos.ts:1120:from",
+      "src/hooks/useProjetos.ts:1131:from",
+      "src/hooks/useProjetos.ts:1187:from",
+      "src/hooks/useProjetos.ts:1220:from",
+      "src/hooks/useProjetos.ts:1251:from",
+      "src/hooks/useProjetos.ts:1384:from",
+      "src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:128:from"
+    ]
+  },
+  "projeto_equipe": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProjetos.ts:909:from"
+    ]
+  },
+  "usuarios": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProjetos.ts:1016:from",
+      "src/hooks/useProjetos.ts:1419:from",
+      "src/contexts/AuthContext.tsx:74:from",
+      "src/contexts/AuthContext.tsx:97:from",
+      "src/components/Onboarding/OnboardingChecklist.tsx:417:from",
+      "src/components/App/Layout/ModalEditarPerfil.tsx:137:from",
+      "src/components/App/Admin/GerenciarUsuarios.tsx:76:from",
+      "src/components/App/Admin/GerenciarUsuarios.tsx:197:from",
+      "src/components/App/Admin/GerenciarUsuarios.tsx:234:from",
+      "src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:161:from"
+    ]
+  },
+  "professores": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProjetos.ts:1047:from",
+      "src/hooks/useProjetos.ts:1420:from",
+      "src/hooks/useProfessor360.ts:477:from",
+      "src/components/ui/AutocompleteAluno.tsx:128:from",
+      "src/components/GestaoMensal/TabGestao.tsx:801:from",
+      "src/components/GestaoMensal/TabComercial.tsx:93:from",
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:311:from",
+      "src/components/App/Dashboard/DashboardPage.tsx:639:from",
+      "src/components/App/Professores/ProfessoresPage.tsx:165:from",
+      "src/components/App/Professores/ProfessoresPage.tsx:461:from"
+    ]
+  },
+  "dados_comerciais": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/hooks/useComercialData.ts:29:from",
+      "src/hooks/useComercialData.ts:209:from",
+      "src/hooks/useComercialData.ts:29:text",
+      "src/hooks/useComercialData.ts:209:text",
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:145:from",
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:163:from",
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:127:text",
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:142:text",
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:145:text",
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:160:text"
+    ]
+  },
+  "metas_comerciais": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useComercialData.ts:63:from",
+      "src/components/Comercial/ComercialMetas.tsx:30:from"
+    ]
+  },
+  "aluno_contatos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useContatosAluno.ts:23:from",
+      "src/hooks/useContatosAluno.ts:45:from",
+      "src/hooks/useContatosAluno.ts:50:from",
+      "src/hooks/useContatosAluno.ts:66:from",
+      "src/hooks/useContatosAluno.ts:71:from",
+      "src/hooks/useContatosAluno.ts:86:from",
+      "src/hooks/useContatosAluno.ts:103:from",
+      "src/components/App/Alunos/ContatoPopover.tsx:73:from",
+      "src/components/App/Alunos/ContatoPopover.tsx:105:from"
+    ]
+  },
+  "unidades_cursos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useCursosUnidade.ts:33:from",
+      "src/components/App/Comercial/ComercialPage.tsx:723:from",
+      "src/components/App/Config/ConfigPage.tsx:138:from",
+      "src/components/App/Config/ConfigPage.tsx:428:from",
+      "src/components/App/Config/ConfigPage.tsx:437:from",
+      "src/components/App/Config/ConfigPage.tsx:444:from"
+    ]
+  },
+  "cursos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useCursosUnidade.ts:59:from",
+      "src/components/ui/AutocompleteAluno.tsx:125:from",
+      "src/components/App/Professores/TabCarteiraProfessores.tsx:92:from",
+      "src/components/App/Professores/ProfessoresPage.tsx:145:from",
+      "src/components/App/Professores/FatorDemandaCursos.tsx:53:from",
+      "src/components/App/Professores/FatorDemandaCursos.tsx:131:from",
+      "src/components/App/Alunos/ModalVincularAlunoTurma.tsx:89:from",
+      "src/components/App/Alunos/AlunosPage.tsx:728:from",
+      "src/components/App/Comercial/PlanilhaComercial.tsx:77:from",
+      "src/components/App/Comercial/ComercialPage.tsx:741:from"
+    ]
+  },
+  "professores_performance": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessoresPerformance.ts:48:from",
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:262:from",
+      "src/components/App/Dashboard/DashboardPage.tsx:642:from"
+    ]
+  },
+  "get_divergencias_alunos": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/hooks/useDivergencias.ts:77:rpc",
+      "src/hooks/useDivergencias.ts:77:text"
+    ]
+  },
+  "vw_kpis_comercial_mensal": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/hooks/useKPIsComercial.ts:70:from",
+      "src/hooks/useKPIsComercial.ts:70:text",
+      "supabase/migrations/fase3_views_kpis.sql:91:text",
+      "supabase/migrations/fase3_views_kpis.sql:94:text",
+      "supabase/migrations/fase3_views_kpis.sql:96:text",
+      "supabase/migrations/fase3_views_kpis.sql:424:text",
+      "supabase/migrations/20260125_create_get_dados_comercial_ia.sql:28:text",
+      "supabase/migrations/20260125_create_get_dados_comercial_ia.sql:40:text",
+      "supabase/migrations/20260125_create_get_dados_comercial_ia.sql:71:text",
+      "supabase/migrations/20260207_unificar_leads.sql:527:text"
+    ]
+  },
+  "programa_fideliza_penalidades": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useFidelizaPrograma.ts:322:from"
+    ]
+  },
+  "programa_fideliza_config": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useFidelizaPrograma.ts:359:from",
+      "src/components/App/Administrativo/TabProgramaFideliza.tsx:122:from",
+      "supabase/functions/lojinha-relatorio-vendas/index.ts:375:from"
+    ]
+  },
+  "programa_fideliza_experiencias": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useFidelizaPrograma.ts:405:from",
+      "src/hooks/useFidelizaPrograma.ts:432:from",
+      "src/hooks/useFidelizaPrograma.ts:450:from"
+    ]
+  },
+  "get_programa_fideliza_dados": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/hooks/useFidelizaPrograma.ts:234:rpc",
+      "src/hooks/useFidelizaPrograma.ts:234:text",
+      "supabase/migrations/20260201230000_programa_fideliza_tabelas.sql:163:text",
+      "supabase/migrations/20260201230000_programa_fideliza_tabelas.sql:540:text"
+    ]
+  },
+  "registrar_penalidade_fideliza": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/hooks/useFidelizaPrograma.ts:279:rpc"
+    ]
+  },
+  "deletar_penalidade_fideliza": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/hooks/useFidelizaPrograma.ts:303:rpc"
+    ]
+  },
+  "atualizar_config_fideliza": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/hooks/useFidelizaPrograma.ts:339:rpc"
+    ]
+  },
+  "salvar_historico_trimestral_fideliza": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/hooks/useFidelizaPrograma.ts:376:rpc"
+    ]
+  },
+  "evasoes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useEvasoesData.ts:30:from",
+      "src/components/App/Entrada/FormEvasao.tsx:187:from"
+    ]
+  },
+  "metas_kpi": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useMetasKPI.ts:67:from",
+      "src/hooks/useSimulador.ts:291:from",
+      "src/components/App/Metas/MetasPageNew.tsx:159:from",
+      "src/components/App/Metas/MetasPageNew.tsx:241:from",
+      "src/components/App/Metas/MetasPageNew.tsx:246:from",
+      "src/components/App/Metas/MetasPageNew.tsx:252:from",
+      "src/components/App/Administrativo/ModalRelatorio.tsx:428:from",
+      "src/components/App/Metas/Simulador/SimuladorPage.tsx:93:from"
+    ]
+  },
+  "config_health_score_professor": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useHealthScoreConfig.ts:50:from",
+      "src/hooks/useHealthScoreConfig.ts:88:from",
+      "supabase/functions/gemini-relatorio-coordenacao/index.ts:55:from",
+      "supabase/functions/gemini-ranking-professores/index.ts:49:from"
+    ]
+  },
+  "professores_experimentais": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessoresData.ts:29:from"
+    ]
+  },
+  "get_cron_health": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/hooks/useSaudeCrons.ts:22:rpc",
+      "src/hooks/useSaudeCrons.ts:22:text"
+    ]
+  },
+  "simulacoes_metas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useSimulador.ts:121:from",
+      "src/hooks/useSimulador.ts:206:from",
+      "src/hooks/useSimulador.ts:244:from",
+      "src/hooks/useSimulador.ts:307:from"
+    ]
+  },
+  "professor-videos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessorVideos.ts:69:from",
+      "src/hooks/useProfessorVideos.ts:79:from",
+      "src/hooks/useProfessorVideos.ts:116:from"
+    ]
+  },
+  "programa_matriculador_penalidades": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useMatriculadorPrograma.ts:283:from"
+    ]
+  },
+  "get_programa_matriculador_dados": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/hooks/useMatriculadorPrograma.ts:189:rpc",
+      "src/hooks/useMatriculadorPrograma.ts:189:text",
+      "supabase/migrations/20260201223000_programa_matriculador_tabelas.sql:120:text",
+      "supabase/migrations/20260201223000_programa_matriculador_tabelas.sql:434:text"
+    ]
+  },
+  "registrar_penalidade_matriculador": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/hooks/useMatriculadorPrograma.ts:236:rpc"
+    ]
+  },
+  "deletar_penalidade_matriculador": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/hooks/useMatriculadorPrograma.ts:260:rpc"
+    ]
+  },
+  "atualizar_config_matriculador": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/hooks/useMatriculadorPrograma.ts:301:rpc"
+    ]
+  },
+  "get_historico_mensal_matriculador": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/hooks/useMatriculadorPrograma.ts:340:rpc",
+      "src/hooks/useMatriculadorPrograma.ts:340:text"
+    ]
+  },
+  "cursos_matriculados": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useCursosData.ts:29:from",
+      "src/components/GestaoMensal/TabComercialNew.tsx:272:from"
+    ]
+  },
+  "notificacao_config": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useNotificacoes.ts:72:from",
+      "src/hooks/useNotificacoes.ts:96:from",
+      "supabase/functions/projeto-alertas-whatsapp/index.ts:25:from"
+    ]
+  },
+  "notificacao_destinatarios": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useNotificacoes.ts:144:from",
+      "src/hooks/useNotificacoes.ts:173:from",
+      "src/hooks/useNotificacoes.ts:192:from",
+      "src/hooks/useNotificacoes.ts:213:from",
+      "supabase/functions/projeto-alertas-whatsapp/index.ts:35:from"
+    ]
+  },
+  "notificacao_log": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useNotificacoes.ts:256:from",
+      "src/hooks/useNotificacoes.ts:291:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:2056:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:2483:from",
+      "supabase/functions/projeto-alertas-whatsapp/index.ts:118:from"
+    ]
+  },
+  "professor_360_criterios": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessor360.ts:154:from",
+      "src/hooks/useProfessor360.ts:180:from",
+      "src/hooks/useProfessor360.ts:190:from"
+    ]
+  },
+  "professor_360_config": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessor360.ts:224:from",
+      "src/hooks/useProfessor360.ts:257:from"
+    ]
+  },
+  "professor_360_ocorrencias_log": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/hooks/useProfessor360.ts:790:from"
+    ]
+  },
+  "reverter_ocorrencia": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/hooks/useProfessor360.ts:863:rpc"
+    ]
+  },
+  "restaurar_ocorrencia": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/hooks/useProfessor360.ts:889:rpc"
+    ]
+  },
+  "editar_ocorrencia": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/hooks/useProfessor360.ts:920:rpc"
+    ]
+  },
+  "registrar_log_ocorrencia": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/hooks/useProfessor360.ts:954:rpc"
+    ]
+  },
+  "usuario_onboarding": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/contexts/OnboardingContext.tsx:119:from",
+      "src/contexts/OnboardingContext.tsx:127:from",
+      "src/contexts/OnboardingContext.tsx:190:from",
+      "src/contexts/OnboardingContext.tsx:233:from"
+    ]
+  },
+  "permissoes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/contexts/AuthContext.tsx:163:from",
+      "src/components/App/Admin/PainelPermissoes/index.tsx:95:from"
+    ]
+  },
+  "usuario_perfis_lista": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/contexts/AuthContext.tsx:178:rpc",
+      "src/components/App/Admin/PainelPermissoes/TabUsuariosPerfil.tsx:41:rpc"
+    ]
+  },
+  "usuario_permissoes": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/contexts/AuthContext.tsx:186:rpc"
+    ]
+  },
+  "recalcular_dados_mensais": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/components/GestaoMensal/TabGestao.tsx:1343:rpc",
+      "src/components/App/Alunos/AlunosPage.tsx:1406:rpc"
+    ]
+  },
+  "canais_origem": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/GestaoMensal/TabComercial.tsx:92:from",
+      "src/components/App/Alunos/ModalFichaAluno.tsx:323:from",
+      "src/components/App/Alunos/ModalNovoAluno.tsx:255:from",
+      "src/components/App/Comercial/PlanilhaComercial.tsx:76:from",
+      "src/components/App/Comercial/ComercialPage.tsx:712:from",
+      "src/components/App/Config/ConfigPage.tsx:161:from",
+      "src/components/App/Config/ConfigPage.tsx:257:from",
+      "src/components/App/Config/ConfigPage.tsx:269:from",
+      "src/components/App/Config/ConfigPage.tsx:281:from",
+      "src/components/App/Entrada/FormLead.tsx:168:from"
+    ]
+  },
+  "experimentais_mensal_unidade": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:250:from"
+    ]
+  },
+  "vw_evasoes_professores": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:277:from",
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:277:text"
+    ]
+  },
+  "vw_turmas_implicitas": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:302:from",
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:302:text",
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:500:text",
+      "src/components/App/Dashboard/DashboardPage.tsx:641:from",
+      "src/components/App/Dashboard/DashboardPage.tsx:641:text",
+      "src/components/App/Professores/TabCarteiraProfessores.tsx:98:text",
+      "src/components/App/Professores/ProfessoresPage.tsx:195:from",
+      "src/components/App/Professores/ProfessoresPage.tsx:192:text",
+      "src/components/App/Professores/ProfessoresPage.tsx:195:text",
+      "src/components/App/Professores/ProfessoresPage.tsx:199:text"
+    ]
+  },
+  "vw_kpis_professor_mensal": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:123:text",
+      "src/components/App/Professores/TabCarteiraProfessores.tsx:113:from",
+      "src/components/App/Professores/TabCarteiraProfessores.tsx:113:text",
+      "src/components/App/Professores/TabPerformanceProfessores.tsx:210:from",
+      "src/components/App/Professores/TabPerformanceProfessores.tsx:210:text",
+      "src/components/App/Professores/TabPerformanceProfessores.tsx:410:text",
+      "supabase/migrations/20260207_unificar_leads.sql:656:text",
+      "supabase/migrations/20260207_unificar_leads.sql:661:text",
+      "supabase/migrations/20260207_unificar_leads.sql:665:text",
+      "supabase/migrations/20260126_create_get_dados_relatorio_coordenacao.sql:5:text"
+    ]
+  },
+  "vw_kpis_professor_historico": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "src/components/GestaoMensal/TabProfessoresNew.tsx:123:text"
+    ]
+  },
+  "vw_dashboard_unidade": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/components/GestaoMensal/TabDashboard.tsx:68:from",
+      "src/components/GestaoMensal/TabDashboard.tsx:68:text",
+      "src/components/App/Dashboard/DashboardPage.tsx:327:from",
+      "src/components/App/Dashboard/DashboardPage.tsx:753:from",
+      "src/components/App/Dashboard/DashboardPage.tsx:800:from",
+      "src/components/App/Dashboard/DashboardPage.tsx:873:from",
+      "src/components/App/Dashboard/DashboardPage.tsx:327:text",
+      "src/components/App/Dashboard/DashboardPage.tsx:736:text",
+      "src/components/App/Dashboard/DashboardPage.tsx:753:text",
+      "src/components/App/Dashboard/DashboardPage.tsx:798:text"
+    ]
+  },
+  "conversas_campanha": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Layout/AppSidebar.tsx:101:from",
+      "src/components/App/Layout/AppSidebar.tsx:110:from",
+      "src/components/App/Campanhas/tabs/ConversasTab.tsx:515:from",
+      "src/components/App/Campanhas/tabs/ConversasTab.tsx:612:from",
+      "src/components/App/Campanhas/components/ChatInfoPanel.tsx:44:from",
+      "src/components/App/Campanhas/components/ChatInfoPanel.tsx:49:from",
+      "src/components/App/Campanhas/hooks/useKPIsCampanha.ts:75:from",
+      "src/components/App/Campanhas/hooks/useConversasCampanha.ts:58:from",
+      "src/components/App/Campanhas/hooks/useConversasCampanha.ts:88:from",
+      "src/components/App/Campanhas/hooks/useConversasCampanha.ts:115:from"
+    ]
+  },
+  "vw_alertas_inteligentes": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Dashboard/DashboardPage.tsx:342:from",
+      "src/components/App/Dashboard/DashboardPage.tsx:342:text"
+    ]
+  },
+  "professor_metas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Professores/JornadaProfessor.tsx:58:from",
+      "src/components/App/Professores/ModalNovaMeta.tsx:67:from",
+      "src/components/App/Professores/ModalDetalhesProfessorPerformance.tsx:153:from",
+      "src/components/App/Professores/ModalDetalhesProfessorPerformance.tsx:295:from",
+      "src/components/App/Professores/ModalDetalhesProfessorPerformance.tsx:300:from",
+      "src/components/App/Professores/ModalDetalhesProfessorPerformance.tsx:315:from",
+      "src/components/App/Professores/TabAgendaProfessores.tsx:519:from"
+    ]
+  },
+  "get_presenca_por_aluno_professor": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Professores/ModalDetalhesPresenca.tsx:56:rpc",
+      "src/components/App/Professores/ModalDetalhesPresenca.tsx:56:text"
+    ]
+  },
+  "get_dados_relatorio_coordenacao": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Professores/ModalRelatorioCoordenacao.tsx:71:rpc",
+      "src/components/App/Professores/ModalRelatorioCoordenacao.tsx:71:text",
+      "supabase/migrations/20260126_create_get_dados_relatorio_coordenacao.sql:1:text",
+      "supabase/migrations/20260126_create_get_dados_relatorio_coordenacao.sql:8:text",
+      "supabase/migrations/20260126_create_get_dados_relatorio_coordenacao.sql:502:text"
+    ]
+  },
+  "get_carteira_professores": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Professores/TabCarteiraProfessores.tsx:100:rpc",
+      "src/components/App/Professores/TabCarteiraProfessores.tsx:100:text",
+      "supabase/migrations/20260515_get_carteira_professores.sql:1:text"
+    ]
+  },
+  "get_kpis_professor_periodo": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Professores/ModalDetalhesTurmas.tsx:158:text",
+      "src/components/App/Professores/TabPerformanceProfessores.tsx:204:rpc",
+      "src/components/App/Professores/TabPerformanceProfessores.tsx:204:text"
+    ]
+  },
+  "vw_fator_demanda_professor": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Professores/TabPerformanceProfessores.tsx:224:from",
+      "src/components/App/Professores/TabPerformanceProfessores.tsx:224:text"
+    ]
+  },
+  "turmas_alunos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Professores/TabPerformanceProfessores.tsx:268:from",
+      "src/components/App/Alunos/AlunosPage.tsx:655:from",
+      "src/components/App/Alunos/AlunosPage.tsx:968:from",
+      "src/components/App/Alunos/AlunosPage.tsx:998:from",
+      "src/components/App/Alunos/ModalNovaTurma.tsx:520:from",
+      "src/components/App/Alunos/ModalAdicionarAlunoTurma.tsx:294:from",
+      "src/components/App/Alunos/ModalAdicionarAlunoTurma.tsx:318:from"
+    ]
+  },
+  "vw_taxa_crescimento_professor": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Professores/TabPerformanceProfessores.tsx:438:text"
+    ]
+  },
+  "catalogo_treinamentos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Professores/TabAgendaProfessores.tsx:501:from"
+    ]
+  },
+  "aluno_feedback_sessoes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Feedback/FeedbackProfessorPage.tsx:178:from",
+      "src/components/App/Alunos/SucessoCliente/ModalEnviarFeedback.tsx:151:from",
+      "src/components/App/Alunos/SucessoCliente/ModalEnviarFeedback.tsx:254:from",
+      "supabase/functions/criar-sessao-feedback/index.ts:46:from",
+      "supabase/functions/validar-token-feedback/index.ts:32:from",
+      "supabase/functions/validar-token-feedback/index.ts:79:from"
+    ]
+  },
+  "relatorios_diarios": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Snapshot/SnapshotDiario.tsx:99:from",
+      "src/components/App/Snapshot/SnapshotDiario.tsx:254:from",
+      "src/components/App/Snapshot/SnapshotDiario.tsx:262:from",
+      "src/components/App/Entrada/RelatorioDiario.tsx:69:from",
+      "src/components/App/Entrada/RelatorioDiario.tsx:175:from"
+    ]
+  },
+  "loja_produtos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Lojinha/ModalEntradaLote.tsx:58:from",
+      "src/components/App/Lojinha/ModalProduto.tsx:213:from",
+      "src/components/App/Lojinha/ModalProduto.tsx:222:from",
+      "src/components/App/Lojinha/TabProdutos.tsx:56:from",
+      "src/components/App/Lojinha/TabVendas.tsx:81:from"
+    ]
+  },
+  "loja_estoque": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Lojinha/ModalEntradaLote.tsx:77:from",
+      "src/components/App/Lojinha/ModalEntradaLote.tsx:96:from",
+      "src/components/App/Lojinha/ModalEntradaLote.tsx:144:from",
+      "src/components/App/Lojinha/ModalEntradaLote.tsx:154:from",
+      "src/components/App/Lojinha/ModalEntradaLote.tsx:160:from",
+      "src/components/App/Lojinha/TabProdutos.tsx:69:from",
+      "src/components/App/Lojinha/TabEstoque.tsx:37:from",
+      "src/components/App/Lojinha/TabVendas.tsx:95:from",
+      "src/components/App/Lojinha/TabVendas.tsx:307:from",
+      "src/components/App/Lojinha/TabVendas.tsx:317:from"
+    ]
+  },
+  "loja_movimentacoes_estoque": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Lojinha/ModalEntradaLote.tsx:171:from",
+      "src/components/App/Lojinha/TabEstoque.tsx:74:from",
+      "src/components/App/Lojinha/ModalEstorno.tsx:79:from"
+    ]
+  },
+  "loja_carteira_movimentacoes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Lojinha/ModalHistoricoCarteira.tsx:39:from",
+      "src/components/App/Lojinha/TabComissoes.tsx:80:from",
+      "src/components/App/Lojinha/ModalUsarLoja.tsx:74:from",
+      "src/components/App/Lojinha/ModalSaque.tsx:71:from",
+      "supabase/functions/lojinha-relatorio-professor/index.ts:237:from",
+      "supabase/functions/lojinha-relatorio-vendas/index.ts:361:from"
+    ]
+  },
+  "lojinha-produtos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Lojinha/ModalProduto.tsx:85:from",
+      "src/components/App/Lojinha/ModalProduto.tsx:92:from"
+    ]
+  },
+  "loja_variacoes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Lojinha/ModalProduto.tsx:244:from",
+      "src/components/App/Lojinha/ModalProduto.tsx:249:from"
+    ]
+  },
+  "loja_configuracoes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Lojinha/TabConfiguracoes.tsx:59:from",
+      "src/components/App/Lojinha/TabConfiguracoes.tsx:96:from",
+      "src/components/App/Lojinha/TabConfiguracoes.tsx:103:from",
+      "src/components/App/Lojinha/TabConfiguracoes.tsx:108:from",
+      "src/components/App/Lojinha/TabConfiguracoes.tsx:200:from",
+      "supabase/functions/lojinha-relatorio-professor/index.ts:245:from",
+      "supabase/functions/lojinha-alerta-estoque/index.ts:260:from",
+      "supabase/functions/lojinha-enviar-comprovante/index.ts:289:from"
+    ]
+  },
+  "loja_responsaveis_reposicao": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Lojinha/TabConfiguracoes.tsx:70:from",
+      "src/components/App/Lojinha/TabConfiguracoes.tsx:161:from",
+      "src/components/App/Lojinha/TabConfiguracoes.tsx:552:from",
+      "src/components/App/Lojinha/TabConfiguracoes.tsx:559:from",
+      "supabase/functions/lojinha-alerta-estoque/index.ts:192:from"
+    ]
+  },
+  "loja_categorias": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Lojinha/TabConfiguracoes.tsx:78:from",
+      "src/components/App/Lojinha/TabConfiguracoes.tsx:650:from",
+      "src/components/App/Lojinha/TabConfiguracoes.tsx:656:from",
+      "src/components/App/Lojinha/TabConfiguracoes.tsx:663:from",
+      "src/components/App/Lojinha/TabProdutos.tsx:47:from"
+    ]
+  },
+  "loja_vendas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Lojinha/TabVendas.tsx:108:from",
+      "src/components/App/Lojinha/TabVendas.tsx:267:from",
+      "src/components/App/Lojinha/ModalEstorno.tsx:52:from",
+      "supabase/functions/lojinha-enviar-comprovante/index.ts:195:from",
+      "supabase/functions/lojinha-enviar-comprovante/index.ts:330:from",
+      "supabase/functions/lojinha-relatorio-vendas/index.ts:270:from"
+    ]
+  },
+  "colaboradores": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Lojinha/TabVendas.tsx:135:from",
+      "src/components/App/Administrativo/PainelFarmer/DashboardTab.tsx:122:from",
+      "src/components/App/Administrativo/PainelFarmer/ChecklistsTab.tsx:95:from",
+      "src/components/App/Administrativo/PainelFarmer/TarefasTab.tsx:68:from",
+      "src/components/App/Administrativo/PainelFarmer/NovoChecklistModal.tsx:97:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useColaboradorAtual.ts:22:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useColaboradorAtual.ts:42:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useColaboradorAtual.ts:51:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useColaboradorAtual.ts:64:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useFarmersUnidade.ts:21:from"
+    ]
+  },
+  "loja_vendas_itens": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Lojinha/TabVendas.tsx:293:from",
+      "supabase/functions/lojinha-enviar-comprovante/index.ts:264:from",
+      "supabase/functions/lojinha-relatorio-vendas/index.ts:295:from"
+    ]
+  },
+  "anotacoes_alunos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Alunos/TabelaAlunos.tsx:567:from",
+      "src/components/App/Alunos/TabelaAlunos.tsx:654:from",
+      "src/components/App/Alunos/TabelaAlunos.tsx:671:from",
+      "src/components/App/Alunos/TabelaAlunos.tsx:695:from",
+      "src/components/App/Alunos/TabelaAlunos.tsx:720:from",
+      "src/components/App/Alunos/TabelaAlunos.tsx:757:from",
+      "src/components/App/Alunos/ModalFichaAluno.tsx:349:from",
+      "src/components/App/Alunos/AlunosPage.tsx:352:from"
+    ]
+  },
+  "historico_pagamentos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Alunos/TabelaAlunos.tsx:884:from"
+    ]
+  },
+  "formas_pagamento": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Alunos/ModalFichaAluno.tsx:324:from",
+      "src/components/App/Alunos/ModalNovoAluno.tsx:256:from",
+      "src/components/App/Comercial/PlanilhaComercial.tsx:79:from",
+      "src/components/App/Comercial/ComercialPage.tsx:714:from",
+      "src/components/App/Comercial/ComercialPage.tsx:1018:from",
+      "src/components/App/Administrativo/AdministrativoPage.tsx:282:from"
+    ]
+  },
+  "anamneses": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Alunos/ModalFichaAluno.tsx:357:from",
+      "src/components/App/Alunos/AlunosPage.tsx:384:from"
+    ]
+  },
+  "buscar_anamnese_pendente": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/components/App/Alunos/ModalNovoAluno.tsx:286:rpc",
+      "src/components/App/Comercial/ComercialPage.tsx:618:rpc"
+    ]
+  },
+  "salas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Alunos/GestaoTurmas.tsx:96:from",
+      "src/components/App/Alunos/AlunosPage.tsx:718:from",
+      "src/components/App/Alunos/AlunosPage.tsx:1110:from",
+      "src/components/App/Alunos/ModalNovaTurma.tsx:152:from",
+      "src/components/App/Salas/ModalEditarSala.tsx:136:from",
+      "src/components/App/Salas/ModalEditarSala.tsx:148:from",
+      "src/components/App/Salas/SalasPage.tsx:135:from",
+      "src/components/App/Salas/SalasPage.tsx:359:from",
+      "src/components/App/PreAtendimento/components/ModalMatricular.tsx:37:from",
+      "src/components/App/Turmas/GradeHoraria/GradeHoraria.tsx:112:from"
+    ]
+  },
+  "tipos_matricula": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Alunos/AlunosPage.tsx:729:from",
+      "src/components/App/PreAtendimento/components/ModalMatricular.tsx:36:from",
+      "supabase/functions/processar-matricula-emusys/index.ts:910:from"
+    ]
+  },
+  "horarios": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Alunos/AlunosPage.tsx:731:from"
+    ]
+  },
+  "turmas_historico": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Alunos/AlunosPage.tsx:1013:from",
+      "src/components/App/Alunos/ModalAdicionarAlunoTurma.tsx:330:from"
+    ]
+  },
+  "get_tempo_permanencia": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Alunos/AlunosPage.tsx:361:rpc",
+      "src/components/App/Alunos/AlunosPage.tsx:361:text",
+      "supabase/migrations/20260507_get_tempo_permanencia_wrapper.sql:1:text",
+      "supabase/migrations/20260507_get_tempo_permanencia_wrapper.sql:6:text",
+      "supabase/migrations/20260507_get_tempo_permanencia_wrapper.sql:40:text"
+    ]
+  },
+  "insights_salvos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Comercial/PlanoAcaoComercial.tsx:190:from",
+      "src/components/App/Comercial/PlanoAcaoComercial.tsx:221:from",
+      "src/components/App/Comercial/PlanoAcaoComercial.tsx:260:from",
+      "src/components/App/Administrativo/PlanoAcaoRetencao.tsx:243:from",
+      "src/components/App/Administrativo/PlanoAcaoRetencao.tsx:274:from",
+      "src/components/App/Administrativo/PlanoAcaoRetencao.tsx:313:from"
+    ]
+  },
+  "lead_experimentais": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Comercial/AlertasComercial.tsx:179:from",
+      "src/components/App/Comercial/ComercialPage.tsx:1107:from",
+      "src/components/App/Comercial/ComercialPage.tsx:1165:from",
+      "src/components/App/Comercial/ComercialPage.tsx:1249:from",
+      "src/components/App/Comercial/ComercialPage.tsx:1467:from",
+      "src/components/App/Comercial/ComercialPage.tsx:1665:from",
+      "src/components/App/Comercial/ComercialPage.tsx:2219:from",
+      "src/components/App/Comercial/ComercialPage.tsx:2348:from",
+      "src/components/App/Comercial/ComercialPage.tsx:2729:from",
+      "src/components/App/PreAtendimento/tabs/AgendaTab.tsx:78:from"
+    ]
+  },
+  "programa_matriculador_config": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Comercial/TabProgramaMatriculador.tsx:104:from"
+    ]
+  },
+  "leads_automacao_log": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Comercial/ComercialPage.tsx:1708:from",
+      "src/components/App/Entrada/FormLead.tsx:208:from",
+      "src/components/App/PreAtendimento/tabs/TabAutomacaoLeads.tsx:117:from",
+      "src/components/App/PreAtendimento/components/ModalNovoLead.tsx:116:from",
+      "supabase/functions/sync-presenca-emusys/index.ts:315:from",
+      "supabase/functions/sync-presenca-emusys/index.ts:503:from"
+    ]
+  },
+  "tipos_saida": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Config/ConfigPage.tsx:163:from",
+      "src/components/App/Config/ConfigPage.tsx:346:from",
+      "src/components/App/Config/ConfigPage.tsx:361:from",
+      "src/components/App/Retencao/PlanilhaRetencao.tsx:76:from",
+      "src/components/App/Administrativo/ModalEvasao.tsx:70:from"
+    ]
+  },
+  "whatsapp_destinatarios_relatorio": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Config/DestinatariosRelatorioManager.tsx:55:from",
+      "src/components/App/Config/DestinatariosRelatorioManager.tsx:102:from",
+      "src/components/App/Config/DestinatariosRelatorioManager.tsx:109:from",
+      "src/components/App/Config/DestinatariosRelatorioManager.tsx:127:from",
+      "src/components/App/Config/DestinatariosRelatorioManager.tsx:142:from",
+      "supabase/functions/relatorio-coordenacao-whatsapp/index.ts:105:from",
+      "supabase/functions/relatorio-admin-whatsapp/index.ts:431:from",
+      "supabase/functions/relatorio-admin-whatsapp/index.ts:529:from"
+    ]
+  },
+  "get_resumo_renovacoes_proximas": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/AlertasRetencao.tsx:77:rpc",
+      "src/components/App/Administrativo/AlertasRetencao.tsx:77:text",
+      "supabase/migrations/20260124_retencao_insights.sql:53:text",
+      "supabase/migrations/20260124_retencao_insights.sql:134:text",
+      "supabase/migrations/20260124_retencao_insights.sql:250:text"
+    ]
+  },
+  "toggle_relatorio_cron": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/ModalRelatorio.tsx:95:rpc"
+    ]
+  },
+  "get_dados_relatorio_gerencial": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/ModalRelatorio.tsx:131:rpc",
+      "src/components/App/Administrativo/ModalRelatorio.tsx:131:text",
+      "supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:1:text",
+      "supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:14:text",
+      "supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:15:text"
+    ]
+  },
+  "get_dados_retencao_ia": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PlanoAcaoRetencao.tsx:342:rpc",
+      "src/components/App/Administrativo/PlanoAcaoRetencao.tsx:342:text",
+      "supabase/migrations/20260124_retencao_insights.sql:88:text",
+      "supabase/migrations/20260124_retencao_insights.sql:251:text"
+    ]
+  },
+  "motivos_evasao": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Entrada/FormEvasao.tsx:111:from"
+    ]
+  },
+  "inventario": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Salas/ModalEditarSala.tsx:78:from",
+      "src/components/App/Salas/SalasPage.tsx:200:from",
+      "src/components/App/Salas/inventario/ModalNovoEquipamento.tsx:74:from",
+      "src/components/App/Salas/inventario/ModalNovoEquipamento.tsx:164:from",
+      "src/components/App/Salas/inventario/ModalNovoEquipamento.tsx:187:from",
+      "src/components/App/Salas/inventario/InventarioPorSala.tsx:49:from",
+      "src/components/App/Salas/inventario/InventarioTab.tsx:79:from",
+      "src/components/App/Salas/inventario/InventarioTab.tsx:285:from",
+      "src/components/App/Salas/inventario/InventarioTable.tsx:57:from",
+      "src/components/App/Salas/inventario/PendenciasTab.tsx:92:from"
+    ]
+  },
+  "projeto_anexos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:139:from",
+      "src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:312:from",
+      "src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:349:from"
+    ]
+  },
+  "projeto_comentarios": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:150:from",
+      "src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:368:from",
+      "src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:392:from"
+    ]
+  },
+  "projeto_log_alteracoes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:186:from"
+    ]
+  },
+  "projeto-anexos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:301:from",
+      "src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:308:from",
+      "src/components/App/Projetos/components/ModalDetalhesTarefa.tsx:344:from"
+    ]
+  },
+  "projeto_equipe_membros": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:1378:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:1457:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:1472:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:1507:from"
+    ]
+  },
+  "projeto_config_permissoes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:1396:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:1528:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:1553:from"
+    ]
+  },
+  "whatsapp_config": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:1995:from",
+      "src/components/App/Projetos/views/ConfiguracoesView.tsx:2019:from"
+    ]
+  },
+  "execute_bi_query_lamusic": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/components/App/Alunos/Auditoria/BiAgentMetrics.tsx:36:rpc",
+      "src/components/App/Alunos/Auditoria/BiAgentMetrics.tsx:59:rpc",
+      "supabase/functions/bi-agent-lamusic/index.ts:124:rpc",
+      "supabase/functions/bi-agent-lamusic/index.ts:307:rpc",
+      "supabase/functions/bi-agent-lamusic/index.ts:410:rpc",
+      "supabase/functions/bi-agent-lamusic/tools.ts:375:rpc",
+      "supabase/functions/bi-agent-lamusic/tools.ts:394:rpc",
+      "supabase/functions/bi-agent-lamusic/tools.ts:440:rpc",
+      "supabase/functions/bi-agent-lamusic/tools.ts:504:rpc",
+      "supabase/functions/bi-agent-lamusic/tools.ts:524:rpc"
+    ]
+  },
+  "bi_conversations_lamusic": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Alunos/Auditoria/useAgentChat.ts:63:from",
+      "src/components/App/Alunos/Auditoria/useAgentChat.ts:146:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:216:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:224:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:230:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:238:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:502:from"
+    ]
+  },
+  "bi_messages_lamusic": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Alunos/Auditoria/useAgentChat.ts:78:from",
+      "src/components/App/Alunos/Auditoria/useAgentChat.ts:159:from",
+      "src/components/App/Alunos/Auditoria/useAgentChat.ts:180:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:246:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:252:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:287:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:325:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:490:from"
+    ]
+  },
+  "bi_agent_config_lamusic": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Alunos/Auditoria/ConfigIA.tsx:29:from",
+      "src/components/App/Alunos/Auditoria/ConfigIA.tsx:42:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:196:from"
+    ]
+  },
+  "assistente_ia_config": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Alunos/Auditoria/ConfigIA.tsx:33:from",
+      "src/components/App/Alunos/Auditoria/ConfigIA.tsx:54:from",
+      "supabase/functions/gerar-prompt-agente/index.ts:129:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:149:from",
+      "supabase/functions/agente-webhook/index.ts:216:from"
+    ]
+  },
+  "bi-uploads": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Alunos/Auditoria/AuditoriaWidget.tsx:274:from",
+      "src/components/App/Alunos/Auditoria/AuditoriaWidget.tsx:280:from"
+    ]
+  },
+  "aluno_metas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Alunos/SucessoCliente/ModalDetalhesSucessoAluno.tsx:114:from"
+    ]
+  },
+  "aluno_acoes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Alunos/SucessoCliente/ModalDetalhesSucessoAluno.tsx:123:from"
+    ]
+  },
+  "vw_aluno_sucesso_lista": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Alunos/SucessoCliente/TabSucessoAluno.tsx:84:from",
+      "src/components/App/Alunos/SucessoCliente/TabSucessoAluno.tsx:84:text",
+      "supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:365:text",
+      "supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:368:text",
+      "supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:443:text",
+      "supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:485:text",
+      "supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:537:text"
+    ]
+  },
+  "calcular_health_score_alunos_batch": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/components/App/Alunos/SucessoCliente/TabSucessoAluno.tsx:106:rpc"
+    ]
+  },
+  "emusys_sync_log": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Alunos/SucessoCliente/PresencaTab.tsx:158:from",
+      "supabase/functions/sync-presenca-emusys/index.ts:791:from"
+    ]
+  },
+  "contatos_bloqueados_campanha": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Campanhas/tabs/ConfigTab.tsx:397:from",
+      "src/components/App/Campanhas/tabs/ConfigTab.tsx:404:from",
+      "src/components/App/Campanhas/tabs/ConversasTab.tsx:590:from"
+    ]
+  },
+  "respostas_rapidas_campanha": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Campanhas/tabs/ConfigTab.tsx:448:from",
+      "src/components/App/Campanhas/tabs/ConfigTab.tsx:456:from",
+      "src/components/App/Campanhas/tabs/ConfigTab.tsx:465:from",
+      "src/components/App/Campanhas/tabs/ConversasTab.tsx:249:from"
+    ]
+  },
+  "agente_conversas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Campanhas/tabs/ConversasTab.tsx:440:from",
+      "src/components/App/Campanhas/tabs/ConversasTab.tsx:455:from",
+      "src/components/App/Campanhas/tabs/ConversasTab.tsx:602:from",
+      "src/components/App/Campanhas/tabs/ConversasTab.tsx:606:from",
+      "src/components/App/Campanhas/tabs/ConversasTab.tsx:624:from",
+      "src/components/App/Campanhas/components/ChatInfoPanel.tsx:69:from",
+      "src/components/App/Campanhas/hooks/useAgentes.ts:108:from",
+      "src/components/App/Campanhas/hooks/useAgentes.ts:110:from",
+      "src/components/App/Campanhas/hooks/useConversasCampanha.ts:255:from",
+      "supabase/functions/meta-webhook-campanhas/index.ts:195:from"
+    ]
+  },
+  "mensagens_campanha": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Campanhas/tabs/ConversasTab.tsx:517:from",
+      "src/components/App/Campanhas/tabs/AnalyticsTab.tsx:359:from",
+      "src/components/App/Campanhas/components/ChatInfoPanel.tsx:57:from",
+      "src/components/App/Campanhas/hooks/useCampanhas.ts:192:from",
+      "src/components/App/Campanhas/hooks/useAgentes.ts:109:from",
+      "src/components/App/Campanhas/hooks/useConversasCampanha.ts:126:from",
+      "src/components/App/Campanhas/hooks/useConversasCampanha.ts:220:from",
+      "src/components/App/Campanhas/hooks/useConversasCampanha.ts:250:from",
+      "supabase/functions/meta-webhook-campanhas/index.ts:105:from",
+      "supabase/functions/meta-webhook-campanhas/index.ts:138:from"
+    ]
+  },
+  "agentes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Campanhas/tabs/ConversasTab.tsx:616:from",
+      "src/components/App/Campanhas/components/ChatInfoPanel.tsx:77:from",
+      "src/components/App/Campanhas/hooks/useAgentes.ts:41:from",
+      "src/components/App/Campanhas/hooks/useAgentes.ts:64:from",
+      "src/components/App/Campanhas/hooks/useAgentes.ts:71:from",
+      "src/components/App/Campanhas/hooks/useAgentes.ts:80:from",
+      "src/components/App/Campanhas/hooks/useKPIsCampanha.ts:70:from",
+      "supabase/functions/meta-webhook-campanhas/index.ts:201:from",
+      "supabase/functions/meta-webhook-campanhas/index.ts:220:from",
+      "supabase/functions/meta-webhook-campanhas/index.ts:239:from"
+    ]
+  },
+  "campanhas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Campanhas/tabs/AnalyticsTab.tsx:319:from",
+      "src/components/App/Campanhas/components/ModalNovaCampanha.tsx:838:from",
+      "src/components/App/Campanhas/hooks/useCampanhas.ts:44:from",
+      "src/components/App/Campanhas/hooks/useCampanhas.ts:123:from",
+      "src/components/App/Campanhas/hooks/useCampanhas.ts:177:from",
+      "src/components/App/Campanhas/hooks/useCampanhas.ts:195:from",
+      "src/components/App/Campanhas/hooks/useKPIsCampanha.ts:32:from",
+      "supabase/functions/meta-webhook-campanhas/index.ts:415:from",
+      "supabase/functions/controle-campanha/index.ts:43:from",
+      "supabase/functions/controle-campanha/index.ts:76:from"
+    ]
+  },
+  "numeros_meta": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Campanhas/tabs/AnalyticsTab.tsx:348:from",
+      "src/components/App/Campanhas/hooks/useKPIsCampanha.ts:53:from",
+      "src/components/App/Campanhas/hooks/useNumerosMeta.ts:45:from",
+      "src/components/App/Campanhas/hooks/useNumerosMeta.ts:66:from",
+      "src/components/App/Campanhas/hooks/useNumerosMeta.ts:77:from",
+      "src/components/App/Campanhas/hooks/useNumerosMeta.ts:86:from",
+      "supabase/functions/meta-webhook-campanhas/index.ts:23:from",
+      "supabase/functions/meta-webhook-campanhas/index.ts:90:from",
+      "supabase/functions/enviar-mensagem-meta/index.ts:56:from",
+      "supabase/functions/sincronizar-templates/index.ts:47:from"
+    ]
+  },
+  "whatsapp-media-campanhas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Campanhas/components/ModalNovaCampanha.tsx:679:from",
+      "src/components/App/Campanhas/components/ModalNovaCampanha.tsx:683:from",
+      "src/components/App/Campanhas/hooks/useConversasCampanha.ts:199:from",
+      "src/components/App/Campanhas/hooks/useConversasCampanha.ts:201:from",
+      "supabase/functions/_shared/whatsapp-meta-api.ts:228:from",
+      "supabase/functions/_shared/whatsapp-meta-api.ts:234:from",
+      "supabase/functions/sincronizar-templates/index.ts:131:from",
+      "supabase/functions/sincronizar-templates/index.ts:136:from"
+    ]
+  },
+  "campanha_contatos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Campanhas/components/ModalNovaCampanha.tsx:863:from",
+      "src/components/App/Campanhas/hooks/useCampanhas.ts:148:from",
+      "src/components/App/Campanhas/hooks/useCampanhas.ts:170:from",
+      "src/components/App/Campanhas/hooks/useCampanhas.ts:193:from",
+      "src/components/App/Campanhas/hooks/useKPIsCampanha.ts:63:from",
+      "src/components/App/Campanhas/hooks/useContatosCampanha.ts:26:from",
+      "supabase/functions/meta-webhook-campanhas/index.ts:273:from",
+      "supabase/functions/meta-webhook-campanhas/index.ts:383:from",
+      "supabase/functions/meta-webhook-campanhas/index.ts:402:from",
+      "supabase/functions/meta-webhook-campanhas/index.ts:412:from"
+    ]
+  },
+  "templates_meta": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Campanhas/components/CampanhaDrawer.tsx:50:from",
+      "src/components/App/Campanhas/hooks/useTemplatesMeta.ts:38:from",
+      "supabase/functions/sincronizar-templates/index.ts:79:from",
+      "supabase/functions/sincronizar-templates/index.ts:111:from",
+      "supabase/functions/sincronizar-templates/index.ts:140:from"
+    ]
+  },
+  "agente_fila_mensagens": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Campanhas/hooks/useConversasCampanha.ts:265:from",
+      "supabase/functions/processar-mensagens-agendadas/index.ts:241:from",
+      "supabase/functions/processar-mensagens-agendadas/index.ts:248:from",
+      "supabase/functions/agente-webhook/index.ts:54:from",
+      "supabase/functions/agente-webhook/index.ts:81:from",
+      "supabase/functions/agente-webhook/index.ts:92:from",
+      "supabase/functions/agente-webhook/index.ts:110:from",
+      "supabase/functions/agente-webhook/index.ts:114:from",
+      "supabase/functions/agente-webhook/index.ts:119:from",
+      "supabase/functions/agente-webhook/index.ts:124:from"
+    ]
+  },
+  "simulacoes_turma": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Metas/SimuladorTurma/SimuladorTurmaPage.tsx:81:from",
+      "src/components/App/Metas/SimuladorTurma/SimuladorTurmaPage.tsx:128:from"
+    ]
+  },
+  "metas_professor_turma": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Metas/SimuladorTurma/RankingProfessores.tsx:49:from"
+    ]
+  },
+  "planos_acao": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Metas/Simulador/InsightsIA.tsx:205:from",
+      "src/components/App/Metas/Simulador/InsightsIA.tsx:226:from",
+      "src/components/App/Metas/Simulador/InsightsIA.tsx:269:from",
+      "src/components/App/Metas/Simulador/InsightsIA.tsx:299:from"
+    ]
+  },
+  "templates_cenario": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Metas/Simulador/TemplatesCenario.tsx:98:from"
+    ]
+  },
+  "templates_cenario_unidade": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Metas/Simulador/TemplatesCenario.tsx:107:from",
+      "src/components/App/Metas/Simulador/TemplatesCenario.tsx:224:from"
+    ]
+  },
+  "usuario_perfis": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Admin/PainelPermissoes/ModalEditarPerfisUsuario.tsx:58:from",
+      "src/components/App/Admin/PainelPermissoes/ModalEditarPerfisUsuario.tsx:99:from",
+      "src/components/App/Admin/PainelPermissoes/ModalEditarPerfisUsuario.tsx:126:from",
+      "src/components/App/Admin/PainelPermissoes/ModalAtribuirPerfil.tsx:66:from"
+    ]
+  },
+  "auditoria_acesso": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Admin/PainelPermissoes/ModalEditarPerfisUsuario.tsx:106:from",
+      "src/components/App/Admin/PainelPermissoes/ModalEditarPerfisUsuario.tsx:167:from",
+      "src/components/App/Admin/PainelPermissoes/ModalNovoPerfil.tsx:104:from",
+      "src/components/App/Admin/PainelPermissoes/ModalAtribuirPerfil.tsx:85:from",
+      "src/components/App/Admin/PainelPermissoes/TabMatrizPermissoes.tsx:128:from"
+    ]
+  },
+  "perfis": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Admin/PainelPermissoes/ModalNovoPerfil.tsx:65:from",
+      "src/components/App/Admin/PainelPermissoes/index.tsx:69:from"
+    ]
+  },
+  "perfil_permissoes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Admin/PainelPermissoes/ModalNovoPerfil.tsx:89:from",
+      "src/components/App/Admin/PainelPermissoes/ModalNovoPerfil.tsx:99:from",
+      "src/components/App/Admin/PainelPermissoes/index.tsx:79:from",
+      "src/components/App/Admin/PainelPermissoes/TabMatrizPermissoes.tsx:85:from",
+      "src/components/App/Admin/PainelPermissoes/TabMatrizPermissoes.tsx:109:from",
+      "src/components/App/Admin/PainelPermissoes/TabMatrizPermissoes.tsx:117:from",
+      "src/components/App/Admin/PainelPermissoes/TabMatrizPermissoes.tsx:162:from",
+      "src/components/App/Admin/PainelPermissoes/TabMatrizPermissoes.tsx:172:from",
+      "src/components/App/Admin/PainelPermissoes/TabMatrizPermissoes.tsx:188:from"
+    ]
+  },
+  "audit_log": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Admin/PainelPermissoes/TabAuditoria.tsx:139:from"
+    ]
+  },
+  "farmer_tarefas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/DashboardTab.tsx:164:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useDashboardStats.ts:66:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useTarefas.ts:26:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useTarefas.ts:70:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useTarefas.ts:89:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useTarefas.ts:112:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useTarefas.ts:128:from",
+      "src/components/shared/TarefasRapidas/useTarefasRapidas.ts:25:from",
+      "src/components/shared/TarefasRapidas/useTarefasRapidas.ts:67:from",
+      "src/components/shared/TarefasRapidas/useTarefasRapidas.ts:87:from"
+    ]
+  },
+  "farmer_checklist_items": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/ChecklistsTab.tsx:282:from",
+      "src/components/App/Administrativo/PainelFarmer/ChecklistsTab.tsx:304:from",
+      "src/components/App/Administrativo/PainelFarmer/ChecklistDetail.tsx:171:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:74:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:201:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:220:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:231:from"
+    ]
+  },
+  "vincular_alunos_checklist": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/ChecklistsTab.tsx:317:rpc"
+    ]
+  },
+  "farmer_checklists": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/ChecklistDetail.tsx:144:from",
+      "src/components/App/Administrativo/PainelFarmer/ChecklistDetail.tsx:173:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:142:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:352:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklists.ts:80:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklists.ts:125:from"
+    ]
+  },
+  "farmer_checklist_contatos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/ChecklistDetail.tsx:172:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useDashboardStats.ts:79:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:97:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:252:from"
+    ]
+  },
+  "get_historico_rotinas": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/HistoricoTab.tsx:34:rpc",
+      "src/components/App/Administrativo/PainelFarmer/HistoricoTab.tsx:34:text"
+    ]
+  },
+  "farmer_templates": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/RecadosTab.tsx:148:from"
+    ]
+  },
+  "farmer_recados_campanhas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/RecadosTab.tsx:158:from",
+      "src/components/App/Administrativo/PainelFarmer/RecadosTab.tsx:208:from",
+      "src/components/App/Administrativo/PainelFarmer/RecadosTab.tsx:284:from"
+    ]
+  },
+  "farmer_recados_destinatarios": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/RecadosTab.tsx:243:from",
+      "src/components/App/Administrativo/PainelFarmer/RecadosTab.tsx:259:from"
+    ]
+  },
+  "admin_conversas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:163:from",
+      "src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:171:from",
+      "src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:184:from",
+      "src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:218:from",
+      "src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:227:from",
+      "src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:240:from",
+      "src/components/App/Administrativo/CaixaEntrada/hooks/useAdminConversas.ts:28:from",
+      "src/components/App/Administrativo/CaixaEntrada/hooks/useAdminConversas.ts:135:from",
+      "supabase/functions/enviar-mensagem-admin/index.ts:75:from",
+      "supabase/functions/enviar-mensagem-admin/index.ts:234:from"
+    ]
+  },
+  "whatsapp_caixas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:176:from",
+      "src/components/App/Administrativo/CaixaEntrada/NovaConversaModal.tsx:232:from",
+      "src/components/App/PreAtendimento/hooks/useWhatsAppCaixas.ts:17:from",
+      "src/components/App/PreAtendimento/components/chat/CaixasManager.tsx:114:from",
+      "src/components/App/PreAtendimento/components/chat/CaixasManager.tsx:323:from",
+      "src/components/App/PreAtendimento/components/chat/CaixasManager.tsx:330:from",
+      "src/components/App/PreAtendimento/components/chat/CaixasManager.tsx:350:from",
+      "supabase/functions/processar-mensagens-agendadas/index.ts:20:from",
+      "supabase/functions/processar-mensagens-agendadas/index.ts:24:from",
+      "supabase/functions/processar-mensagens-agendadas/index.ts:28:from"
+    ]
+  },
+  "vw_farmer_aniversariantes_hoje": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts:29:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts:29:text"
+    ]
+  },
+  "vw_farmer_inadimplentes": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts:41:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts:41:text"
+    ]
+  },
+  "vw_farmer_novos_matriculados": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts:54:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts:54:text"
+    ]
+  },
+  "vw_farmer_renovacoes_proximas": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts:67:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts:67:text"
+    ]
+  },
+  "vw_farmer_resumo_alertas": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts:80:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useAlertas.ts:80:text"
+    ]
+  },
+  "vw_farmer_checklist_alertas": {
+    "kinds": [
+      "from",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/hooks/useDashboardStats.ts:44:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useDashboardStats.ts:44:text"
+    ]
+  },
+  "get_checklists_farmer": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/hooks/useDashboardStats.ts:56:rpc",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useDashboardStats.ts:56:text",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklists.ts:24:rpc",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklists.ts:24:text"
+    ]
+  },
+  "farmer_rotinas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/hooks/useRotinas.ts:18:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useRotinas.ts:113:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useRotinas.ts:132:from",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useRotinas.ts:148:from"
+    ]
+  },
+  "get_rotinas_do_dia": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/hooks/useRotinas.ts:39:rpc",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useRotinas.ts:39:text"
+    ]
+  },
+  "get_progresso_rotinas_hoje": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/hooks/useRotinas.ts:55:rpc",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useRotinas.ts:55:text"
+    ]
+  },
+  "marcar_rotina_concluida": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/hooks/useRotinas.ts:85:rpc"
+    ]
+  },
+  "get_checklist_detail": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:65:rpc",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:65:text"
+    ]
+  },
+  "marcar_checklist_item": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:158:rpc",
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklistDetail.ts:182:rpc"
+    ]
+  },
+  "farmer_checklist_templates": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklists.ts:42:from"
+    ]
+  },
+  "criar_checklist_from_template": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/PainelFarmer/hooks/useChecklists.ts:109:rpc"
+    ]
+  },
+  "admin_mensagens": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/CaixaEntrada/hooks/useAdminMensagens.ts:32:from",
+      "supabase/functions/enviar-mensagem-admin/index.ts:103:from",
+      "supabase/functions/enviar-mensagem-admin/index.ts:227:from",
+      "supabase/functions/enviar-mensagem-admin/index.ts:250:from",
+      "supabase/functions/enviar-mensagem-admin/index.ts:258:from",
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:459:from",
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:497:from",
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:598:from",
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:697:from",
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:881:from"
+    ]
+  },
+  "crm-midia": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Administrativo/CaixaEntrada/hooks/useAdminMensagens.ts:205:from",
+      "src/components/App/Administrativo/CaixaEntrada/hooks/useAdminMensagens.ts:214:from",
+      "src/components/App/PreAtendimento/hooks/useMensagens.ts:225:from",
+      "src/components/App/PreAtendimento/hooks/useMensagens.ts:235:from"
+    ]
+  },
+  "crm_mensagens": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/PreAtendimento/tabs/DashboardTab.tsx:43:from",
+      "src/components/App/PreAtendimento/tabs/DashboardTab.tsx:51:from",
+      "src/components/App/PreAtendimento/hooks/useMensagens.ts:30:from",
+      "supabase/functions/webhook-whatsapp-status/index.ts:72:from",
+      "supabase/functions/reagir-mensagem/index.ts:45:from",
+      "supabase/functions/reagir-mensagem/index.ts:114:from",
+      "supabase/functions/deletar-mensagem-lead/index.ts:38:from",
+      "supabase/functions/deletar-mensagem-lead/index.ts:61:from",
+      "supabase/functions/deletar-mensagem-lead/index.ts:99:from",
+      "supabase/functions/transcrever-audio/index.ts:38:from"
+    ]
+  },
+  "calcular_tempo_medio_resposta_crm": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/components/App/PreAtendimento/tabs/DashboardTab.tsx:68:rpc"
+    ]
+  },
+  "visitas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/PreAtendimento/tabs/AgendaTab.tsx:101:from",
+      "src/components/App/PreAtendimento/components/ModalAgendar.tsx:345:from",
+      "src/components/App/PreAtendimento/hooks/useVisitas.ts:36:from"
+    ]
+  },
+  "feriados": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/PreAtendimento/tabs/AgendaTab.tsx:121:from",
+      "src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:228:from",
+      "src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:260:from",
+      "src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:278:from",
+      "src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:304:from",
+      "src/components/App/PreAtendimento/components/ModalAgendar.tsx:124:from",
+      "supabase/functions/sync-feriados/index.ts:43:from",
+      "supabase/functions/sync-feriados/index.ts:60:from"
+    ]
+  },
+  "visitas_config": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:144:from",
+      "src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:198:from",
+      "src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:202:from"
+    ]
+  },
+  "mila_config": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:320:from",
+      "src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:343:from",
+      "src/components/App/PreAtendimento/tabs/ConfigPreAtendimentoTab.tsx:368:from",
+      "supabase/functions/mila-processar-mensagem/index.ts:454:from"
+    ]
+  },
+  "crm_lead_historico": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/PreAtendimento/tabs/PipelineTab.tsx:137:from",
+      "src/components/App/PreAtendimento/tabs/LeadsTab.tsx:269:from",
+      "src/components/App/PreAtendimento/components/ModalMatricular.tsx:87:from",
+      "src/components/App/PreAtendimento/components/ModalAgendar.tsx:360:from",
+      "src/components/App/PreAtendimento/components/LeadDrawer.tsx:48:from",
+      "src/components/App/PreAtendimento/components/ModalMoverEtapa.tsx:58:from",
+      "src/components/App/PreAtendimento/components/ModalArquivar.tsx:69:from",
+      "src/components/App/PreAtendimento/components/chat/LeadSidebar.tsx:69:from",
+      "supabase/functions/mila-processar-mensagem/index.ts:261:from"
+    ]
+  },
+  "crm_followups": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/PreAtendimento/tabs/LeadsTab.tsx:271:from"
+    ]
+  },
+  "crm_pipeline_etapas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/PreAtendimento/components/ModalConfigurarEtapas.tsx:115:from",
+      "src/components/App/PreAtendimento/components/ModalConfigurarEtapas.tsx:128:from",
+      "src/components/App/PreAtendimento/hooks/useLeadsCRM.ts:76:from",
+      "supabase/functions/mila-processar-mensagem/index.ts:252:from"
+    ]
+  },
+  "crm_conversas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/PreAtendimento/hooks/useConversas.ts:22:from",
+      "supabase/functions/reagir-mensagem/index.ts:66:from",
+      "supabase/functions/deletar-mensagem-lead/index.ts:73:from",
+      "supabase/functions/transcrever-audio/index.ts:73:from",
+      "supabase/functions/enviar-mensagem-lead/index.ts:66:from",
+      "supabase/functions/enviar-mensagem-lead/index.ts:225:from",
+      "supabase/functions/editar-mensagem-lead/index.ts:75:from",
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:960:from",
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:968:from",
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:992:from"
+    ]
+  },
+  "marcar_conversa_lida": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/components/App/PreAtendimento/hooks/useConversas.ts:116:rpc"
+    ]
+  },
+  "crm_etiquetas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/PreAtendimento/components/chat/LeadSidebar.tsx:109:from"
+    ]
+  },
+  "crm_lead_etiquetas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/PreAtendimento/components/chat/LeadSidebar.tsx:117:from",
+      "src/components/App/PreAtendimento/components/chat/LeadSidebar.tsx:134:from",
+      "src/components/App/PreAtendimento/components/chat/LeadSidebar.tsx:139:from"
+    ]
+  },
+  "crm_mensagens_agendadas": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/PreAtendimento/components/chat/ChatPanel.tsx:102:from",
+      "src/components/App/PreAtendimento/components/chat/ChatPanel.tsx:120:from",
+      "src/components/App/PreAtendimento/components/chat/ChatPanel.tsx:150:from",
+      "supabase/functions/processar-mensagens-agendadas/index.ts:56:from",
+      "supabase/functions/processar-mensagens-agendadas/index.ts:89:from",
+      "supabase/functions/processar-mensagens-agendadas/index.ts:111:from",
+      "supabase/functions/processar-mensagens-agendadas/index.ts:119:from",
+      "supabase/functions/processar-mensagens-agendadas/index.ts:127:from"
+    ]
+  },
+  "toggle_mila_conversa": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "src/components/App/PreAtendimento/components/chat/ChatPanel.tsx:746:rpc"
+    ]
+  },
+  "crm_templates_whatsapp": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/PreAtendimento/components/chat/ModalGerenciarTemplates.tsx:89:from",
+      "src/components/App/PreAtendimento/components/chat/ModalGerenciarTemplates.tsx:148:from",
+      "src/components/App/PreAtendimento/components/chat/ModalGerenciarTemplates.tsx:161:from",
+      "src/components/App/PreAtendimento/components/chat/ModalGerenciarTemplates.tsx:191:from",
+      "src/components/App/PreAtendimento/components/chat/ModalGerenciarTemplates.tsx:210:from",
+      "src/components/App/PreAtendimento/components/chat/TemplateSelector.tsx:63:from"
+    ]
+  },
+  "inventario-fotos": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Salas/inventario/ModalNovoEquipamento.tsx:103:from",
+      "src/components/App/Salas/inventario/ModalNovoEquipamento.tsx:109:from"
+    ]
+  },
+  "inventario_movimentacoes": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Salas/inventario/ModalNovoEquipamento.tsx:172:from",
+      "src/components/App/Salas/inventario/ModalNovoEquipamento.tsx:195:from"
+    ]
+  },
+  "inventario_pendencias": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "src/components/App/Salas/inventario/InventarioTab.tsx:89:from",
+      "src/components/App/Salas/inventario/InventarioTab.tsx:252:from",
+      "src/components/App/Salas/inventario/PendenciasTab.tsx:82:from",
+      "src/components/App/Salas/inventario/PendenciasTab.tsx:191:from",
+      "src/components/App/Salas/inventario/PendenciasTab.tsx:198:from",
+      "src/components/App/Salas/inventario/PendenciasTab.tsx:217:from",
+      "src/components/App/Salas/inventario/PendenciasTab.tsx:238:from",
+      "src/components/App/Salas/inventario/PendenciasTab.tsx:268:from"
+    ]
+  },
+  "get_kpis_evolucao_mensal": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/fase3_views_kpis.sql:383:text",
+      "supabase/migrations/fase3_views_kpis.sql:386:text",
+      "supabase/migrations/fase3_views_kpis.sql:427:text"
+    ]
+  },
+  "vw_professor_360_historico": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/20260202_ocorrencias_crud_logs.sql:235:text"
+    ]
+  },
+  "vw_aluno_sucesso_resumo": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:446:text",
+      "supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:449:text",
+      "supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:488:text",
+      "supabase/migrations/20260214_sucesso_aluno_fase1_tabelas.sql:538:text"
+    ]
+  },
+  "get_dados_comercial_ia": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/20260125_create_get_dados_comercial_ia.sql:1:text",
+      "supabase/migrations/20260125_create_get_dados_comercial_ia.sql:7:text",
+      "supabase/migrations/20260125_create_get_dados_comercial_ia.sql:196:text",
+      "supabase/functions/gemini-insights-comercial/index.ts:103:text"
+    ]
+  },
+  "vw_leads_por_canal": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/20260125_create_get_dados_comercial_ia.sql:76:text",
+      "supabase/migrations/20260125_create_get_dados_comercial_ia.sql:86:text"
+    ]
+  },
+  "vw_performance_professor_experimental": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/20260125_create_get_dados_comercial_ia.sql:106:text",
+      "supabase/migrations/20260125_create_get_dados_comercial_ia.sql:115:text"
+    ]
+  },
+  "vw_motivos_nao_matricula": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/20260125_create_get_dados_comercial_ia.sql:152:text",
+      "supabase/migrations/20260125_create_get_dados_comercial_ia.sql:161:text"
+    ]
+  },
+  "vw_professores_performance_atual": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/20260207_unificar_leads.sql:581:text",
+      "supabase/migrations/20260207_unificar_leads.sql:582:text"
+    ]
+  },
+  "vw_leads_diarios": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/20260207_unificar_leads.sql:674:text"
+    ]
+  },
+  "vw_renovacoes_proximas": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/20260124_retencao_insights.sql:10:text",
+      "supabase/migrations/20260124_retencao_insights.sql:12:text",
+      "supabase/migrations/20260124_retencao_insights.sql:79:text",
+      "supabase/migrations/20260124_retencao_insights.sql:148:text",
+      "supabase/migrations/20260124_retencao_insights.sql:249:text"
+    ]
+  },
+  "get_user_unidade_id": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/fase5_5b_criar_politicas_rls.sql:33:text",
+      "supabase/migrations/fase5_5b_criar_politicas_rls.sql:50:text",
+      "supabase/migrations/fase5_5b_criar_politicas_rls.sql:56:text",
+      "supabase/migrations/fase5_5b_criar_politicas_rls.sql:62:text",
+      "supabase/migrations/fase5_5b_criar_politicas_rls.sql:77:text",
+      "supabase/migrations/fase5_5b_criar_politicas_rls.sql:83:text",
+      "supabase/migrations/fase5_5b_criar_politicas_rls.sql:89:text",
+      "supabase/migrations/fase5_5b_criar_politicas_rls.sql:104:text",
+      "supabase/migrations/fase5_5b_criar_politicas_rls.sql:110:text",
+      "supabase/migrations/fase5_5b_criar_politicas_rls.sql:116:text"
+    ]
+  },
+  "get_kpis_experimentais_professor": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/20260311_get_kpis_experimentais_professor.sql:3:text"
+    ]
+  },
+  "vw_alunos_ativos": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/20260109_fase2_tabela_alunos.sql:147:text"
+    ]
+  },
+  "vw_contagem_alunos": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/20260109_fase2_tabela_alunos.sql:173:text"
+    ]
+  },
+  "vw_ltv_unidade": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/20260109_fase2_tabela_alunos.sql:189:text"
+    ]
+  },
+  "vw_evasoes_motivos": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:193:text"
+    ]
+  },
+  "vw_ranking_professores_retencao": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:206:text",
+      "supabase/migrations/20260126_update_get_dados_relatorio_gerencial_v2.sql:233:text"
+    ]
+  },
+  "professores_sync_log": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "supabase/functions/sync-professores-emusys/index.ts:65:from"
+    ]
+  },
+  "fila_relatorios_whatsapp": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "supabase/functions/processar-mensagens-agendadas/index.ts:166:from",
+      "supabase/functions/processar-mensagens-agendadas/index.ts:182:from",
+      "supabase/functions/processar-mensagens-agendadas/index.ts:211:from",
+      "supabase/functions/processar-mensagens-agendadas/index.ts:218:from",
+      "supabase/functions/processar-mensagens-agendadas/index.ts:225:from",
+      "supabase/functions/relatorio-admin-whatsapp/index.ts:450:from"
+    ]
+  },
+  "bi_query_templates_lamusic": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "supabase/functions/bi-agent-lamusic/index.ts:260:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:295:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:332:from"
+    ]
+  },
+  "bi_query_cache_lamusic": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "supabase/functions/bi-agent-lamusic/index.ts:273:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:281:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:316:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:394:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:403:from",
+      "supabase/functions/bi-agent-lamusic/index.ts:431:from"
+    ]
+  },
+  "introspect_schema_lamusic": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "supabase/functions/bi-agent-lamusic/index.ts:107:rpc",
+      "supabase/functions/bi-agent-lamusic/tools.ts:419:rpc",
+      "supabase/functions/bi-agent-lamusic/tools.ts:452:rpc"
+    ]
+  },
+  "get_dados_mensais": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/functions/bi-agent-lamusic/index.ts:41:text",
+      "supabase/functions/bi-agent-lamusic/index.ts:54:text",
+      "supabase/functions/bi-agent-lamusic/tools.ts:24:text",
+      "supabase/functions/bi-agent-lamusic/tools.ts:555:text"
+    ]
+  },
+  "get_leads_hoje": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/functions/bi-agent-lamusic/index.ts:55:text",
+      "supabase/functions/bi-agent-lamusic/tools.ts:103:text",
+      "supabase/functions/bi-agent-lamusic/tools.ts:560:text"
+    ]
+  },
+  "get_unidades": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/functions/bi-agent-lamusic/tools.ts:16:text",
+      "supabase/functions/bi-agent-lamusic/tools.ts:554:text"
+    ]
+  },
+  "get_resumo_unidade": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/functions/bi-agent-lamusic/tools.ts:55:text",
+      "supabase/functions/bi-agent-lamusic/tools.ts:557:text"
+    ]
+  },
+  "get_movimentacoes": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/functions/bi-agent-lamusic/tools.ts:69:text",
+      "supabase/functions/bi-agent-lamusic/tools.ts:558:text"
+    ]
+  },
+  "get_funil_leads": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "supabase/functions/bi-agent-lamusic/tools.ts:117:text",
+      "supabase/functions/bi-agent-lamusic/tools.ts:561:text"
+    ]
+  },
+  "pesquisa_evasao": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "supabase/functions/enviar-pesquisa-evasao/index.ts:85:from",
+      "supabase/functions/enviar-pesquisa-evasao/index.ts:164:from",
+      "supabase/functions/enviar-pesquisa-evasao/index.ts:178:from",
+      "supabase/functions/enviar-pesquisa-evasao/index.ts:277:from",
+      "supabase/functions/enviar-pesquisa-evasao/index.ts:292:from",
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:290:from",
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:372:from"
+    ]
+  },
+  "conversa_estado_whatsapp": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "supabase/functions/enviar-pesquisa-evasao/index.ts:206:from",
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:241:from",
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:256:from",
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:385:from",
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:809:from"
+    ]
+  },
+  "criar_pesquisa_evasao": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "supabase/functions/enviar-pesquisa-evasao/index.ts:159:rpc"
+    ]
+  },
+  "get_estoque_minimo_produto": {
+    "kinds": [
+      "rpc",
+      "text"
+    ],
+    "hits": [
+      "supabase/functions/lojinha-alerta-estoque/index.ts:226:rpc",
+      "supabase/functions/lojinha-alerta-estoque/index.ts:226:text"
+    ]
+  },
+  "atualizar_percentual_presenca": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "supabase/functions/sync-presenca-emusys/index.ts:819:rpc"
+    ]
+  },
+  "executar_query_auditoria": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "supabase/functions/auditor-divergencias-emusys/index.ts:407:rpc"
+    ]
+  },
+  "webhook_debug_log": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:758:from"
+    ]
+  },
+  "admin_conversa_nova_mensagem": {
+    "kinds": [
+      "rpc"
+    ],
+    "hits": [
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:621:rpc",
+      "supabase/functions/webhook-whatsapp-inbox/index.ts:720:rpc"
+    ]
+  },
+  "mila_message_buffer": {
+    "kinds": [
+      "from"
+    ],
+    "hits": [
+      "supabase/functions/mila-processar-mensagem/index.ts:364:from",
+      "supabase/functions/mila-processar-mensagem/index.ts:376:from",
+      "supabase/functions/mila-processar-mensagem/index.ts:389:from",
+      "supabase/functions/mila-processar-mensagem/index.ts:405:from"
+    ]
+  },
+  "vw_professor_360_resumo": {
+    "kinds": [
+      "text"
+    ],
+    "hits": [
+      "sql/professor_360_tables.sql:229:text",
+      "sql/professor_360_tables.sql:231:text"
+    ]
+  }
+}
