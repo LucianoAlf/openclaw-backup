@@ -87,6 +87,7 @@ Leia conforme a tarefa:
 - `references/p8-p11-snapshot.md` — `dados_mensais`, congelamento, audit trail, SELECT-only.
 - `references/historico-cg-maio-2026.md` — fechamento validado de Campo Grande/Maio 2026; 470 pagantes é âncora histórica, não bug automático.
 - `references/checklist-sql-seguro.md` — checklist antes de qualquer SQL/migration.
+- `references/emusys-integracao-acesso.md` — acesso operacional Emusys ↔ Report para auditoria cruzada, endpoints disponíveis, limites e riscos de matching.
 
 Para qualquer alteração que afete métrica, consulte primeiro `regras-canonicas.md`.
 
